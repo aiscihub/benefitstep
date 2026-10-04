@@ -1,0 +1,39 @@
+Copper Hill
+Records office • contact@example.invalld
+Dental practice • Account balance
+Treatment charges less insurer adjustment and previous payment. Please remit the amount due.
+Casey Quinn
+1840 Example Lane, Unit 2
+Sacramento, CA 95814
+Reference
+R-12082
+Issue date
+2026-07-28
+Period
+2026-07-01 -2026-07-28
+SERVICE DETAIL
+Item
+Preventive dental treatment
+Administration / service charge
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Payment date 2026-07-28 • Method: received electronically
+Quantity
+Unit amount
+Charge
+$441.00
+$12.00
+$441.00
+$12.00
+Amount
+$87.00
+$453.00
+$-35.00
+$505.00
+Detach and retain account reference R-12082
+Remittance amount
+Fictional training specimen - No real person or transaction • Not valid for submission

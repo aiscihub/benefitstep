@@ -1,0 +1,31 @@
+Alderpoint
+
+Records office · contact@example.invalid
+
+Annual earnings and withholding summary
+
+Annual tax reporting copy. Totals cover the full calendar year and do not identify a current individual wage payment.
+
+Avery Reed
+
+1840 Example Lane, Unit 2
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12110   2026-07-28   2026-07-01 – 2026-07-28
+
+Annual reporting box   Calendar-year amount
+
+Wages and compensation   $28,200.00
+
+Federal tax withheld   $2,679.00
+
+Social security wages   $28,200.00
+
+Medicare wages   $28,200.00
+
+Employee identifier masked. Annual reporting information only; this is not a current-period check stub.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

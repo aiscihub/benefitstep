@@ -1,0 +1,32 @@
+Harborstone
+Records office • contact@example.invalid
+Checking account activity
+Deposits and withdrawals reflect bank activity. A payroll deposit is a net transfer; this bank record does not itemize employer gross
+wages.
+Robin Lane
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+Reference
+R-12101
+Issue date
+Period
+2026-06-28
+2026-06-01- 2026-06-28
+Date
+Transaction
+Money in
+2026-06-01
+2026-06-28
+2026-06-28
+Opening balance
+Employer ACH payroll
+Housing transfer
+$1.437.75
+Checking •••• 0000. No credit or loan terms apply to this fictional account activity summary.
+Money out
+Balance
+$1,400.00
+$2,500.00
+$3,937.75
+$2,537.75
+Fictional training specimen - No real person or transaction - Not valid for submission

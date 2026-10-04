@@ -1,0 +1,46 @@
+Alderpoint
+
+Records   office   ·   contact@example.invalid
+
+Payroll   processing   services   •   Invoice
+
+Bill   to   the   business   customer.   These   are   software   and   payroll   processing   fees,   not   wages   paid   to   an
+employee.
+
+Taylor   Brooks
+
+1840   Example   Lane,   Unit   4
+
+Sacramento,   CA   95814
+
+Reference   Issue   date   Period
+
+R-12076   2026-09-28   2026-09-01   –   2026-09-28
+
+SERVICE   DETAIL
+
+Item   Quantity   Unit   amount   Charge
+
+Payroll   platform   processing   fee   1   $569.00   $569.00
+
+Administration   /   service   charge   1   $12.00   $12.00
+
+ACCOUNT   SUMMARY
+
+Activity   Amount
+
+Balance   brought   forward   $0.00
+
+New   charges   this   period   $581.00
+
+Payment   received   $-35.00
+
+Closing   amount   due   $546.00
+
+Payment   date   2026-09-28   ·   Method:   received   electronically
+
+Detach   and   retain   account   reference   R-12076
+
+Remittance   amount   __________________
+
+Fictional training specimen · No real person or transaction · Not valid for submission

@@ -1,0 +1,49 @@
+Willowbridge
+
+Records office · contact@example.invalid
+
+Payroll register — employee copy
+
+Evening differential and paid leave are included in this pay cycle. Cumulative balances are year to date.
+
+Alex Rowan
+
+1840 Example Lane, Unit 1
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12025   2026-06-28   2026-06-01 – 2026-06-28
+
+EARNINGS
+
+Description   Hours   Rate   Current   YTD
+
+Regular compensation   40   $23.00   $920.00   $8,280.00
+
+Shift differential   —   —   $75.00   $675.00
+
+Total gross earnings   $995.00   $8,955.00
+
+TAXES AND DEDUCTIONS
+
+Description   Current   Year to date
+
+Federal withholding   $99.50   $895.50
+
+Social Security   $61.69   $555.21
+
+Medicare   $14.42   $129.78
+
+State / benefit deduction   $13.44   $120.96
+
+Total deductions   $189.05   $1,701.45
+
+Gross   Deductions   Net wages   Reimbursement   Deposit amount
+
+$995.00   $189.05   $805.95   $0.00   $805.95
+
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

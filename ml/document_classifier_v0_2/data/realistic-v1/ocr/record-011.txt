@@ -1,0 +1,65 @@
+Harborstone
+Records office: contact@example.invalid
+Employee payment voucher
+Retain the detachable stub for your records. The check and the employee copy refer to the same payment.
+Morgan Ellis
+1840 Example Lane, Unit 3
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+R-12011
+2026-08-28
+VOID • NON-NEGOTIABLE SPECIMEN
+Pay to the order of Morgan Ellis
+Account ••.• 0000 Reference R-12011
+Signature intentionally omitted
+EARNINGS
+Description
+Hours
+Rate
+Current
+Regular compensation
+Premium / incentive
+48
+$18.25
+$876.00 |
+$75.00
+Total gross earnings
+$951.00
+TAXES AND DEDUCTIONS
+Description
+Current
+Year to date
+Federal withholding
+Social Security
+Medicare
+$95.10
+$58.96
+$13.78
+State / benefit deduction
+$12.85
+Total deductions
+$180.69
+Gross
+Deductions
+Net wages
+Reimbursement
+$951.00
+$180.69
+$770.31
+$0.00
+RETAIN WITH YOUR RECORDS - REPEATED STUB
+2026-08-01- 2026-08-28
+$770.31
+YTD
+$7,884.00
+$675.00
+$8,559.00
+Deposit amount
+$855.90
+$530.64 (
+$124.02
+$115.65
+$1,626.21
+$770.31

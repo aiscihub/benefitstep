@@ -1,0 +1,66 @@
+Alderpoint
+Records office • contact@example.invalid
+Employer confirmation of wages paid
+Our accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of
+future work.
+Taylor Brooks
+1840 Example Lane, Unit 4
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+R-12044
+2026-09-28
+2026-09-01-2026-09-28
+To whom it may concern: Taylor Brooks is employed by Alderpoint. The completed payroll transaction is summarized below. Please
+contact the payroll office at records@example.invalid for questions about this fictional letter.
+EARNINGS
+Description
+Hours
+Rate
+Current
+YTD
+Regular compensation
+52
+$46.50
+$2,418.00
+$21,762.00
+Premium / incentive
+-
+-
+$75.00
+$675.00
+Total gross earnings
+$2,493.00
+$22,437.00
+TAXES AND DEDUCTIONS
+Description
+Current
+Year to date
+Federal withholding
+$249.30
+$2,243-70
+Social Security
+$154-56
+$1,391.04
+Medicare
+$36.14
+$325.26
+State / benefit deduction
+$33.67
+$303.03
+Total deductions
+$473.67
+$4,263.03
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$2,493.00
+$473.67
+$2,019.33
+$0.00
+$2,019.33
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+Fictional training specimen - No real person or transaction • Not valid for submission

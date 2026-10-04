@@ -1,0 +1,45 @@
+Harborstone
+
+Records office · contact@example.invalid
+
+Resident payment receipt
+
+Payment received and allocated to the rent period below. The security deposit is held separately.
+
+Robin Lane
+
+1840 Example Lane, Unit 1
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12061   2026-06-28   2026-06-01 – 2026-06-28
+
+SERVICE DETAIL
+
+Item   Quantity   Unit amount   Charge
+
+Monthly rent   1   $509.00   $509.00
+
+Administration / service charge   1   $12.00   $12.00
+
+ACCOUNT SUMMARY
+
+Activity   Amount
+
+Balance brought forward   $0.00
+
+New charges this period   $521.00
+
+Payment received   $-521.00
+
+Closing amount due   $0.00
+
+Payment date 2026-06-28 · Method: received electronically
+
+Detach and retain account reference R-12061
+
+Remittance amount __________________
+
+Fictional training specimen · No real person or transaction · Not valid for submission

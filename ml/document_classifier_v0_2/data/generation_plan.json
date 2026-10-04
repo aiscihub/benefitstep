@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "dataset": "benefitstep-realistic-synthetic-v1",
+  "familySplits": [
+    {
+      "id": "pay_statement-hourly",
+      "label": "pay_statement",
+      "subtype": "hourly",
+      "title": "Earnings advice",
+      "description": "Hourly wages posted to payroll. Overtime is shown separately from regular hours.",
+      "split": "train",
+      "ordinal": 0
+    },
+    {
+      "id": "pay_statement-salary",
+      "label": "pay_statement",
+      "subtype": "salary",
+      "title": "Compensation statement",
+      "description": "Salary disbursement for the completed service period. Employer benefits are informational and excluded from cash pay.",
+      "split": "train",
+      "ordinal": 1
+    },
+    {
+      "id": "pay_statement-check_stub",
+      "label": "pay_statement",
+      "subtype": "check_stub",
+      "title": "Employee payment voucher",
+      "description": "Retain the detachable stub for your records. The check and the employee copy refer to the same payment.",
+      "split": "train",
+      "ordinal": 2
+    },
+    {
+      "id": "pay_statement-portal_paid",
+      "label": "pay_statement",
+      "subtype": "portal_paid",
+      "title": "My pay \u2022 Completed payment",
+      "description": "Payment status: deposited. Download history for completed payroll transactions.",
+      "split": "train",
+      "ordinal": 3
+    },
+    {
+      "id": "pay_statement-tips",
+      "label": "pay_statement",
+      "subtype": "tips",
+      "title": "Wages and reported tips",
+      "description": "Cash tips reported during this period are included in taxable earnings. Noncash employer benefits are not deposited.",
+      "split": "train",
+      "ordinal": 4
+    },
+    {
+      "id": "pay_statement-commission",
+      "label": "pay_statement",
+      "subtype": "commission",
+      "title": "Sales earnings detail",
+      "description": "Commission released this cycle relates to previously closed sales. This statement records a completed payroll run.",
+      "split": "train",
+      "ordinal": 5
+    },
+    {
+      "id": "pay_statement-shift",
+      "label": "pay_statement",
+      "subtype": "shift",
+      "title": "Payroll register \u2014 employee copy",
+      "description": "Evening differential and paid leave are included in this pay cycle. Cumulative balances are year to date.",
+      "split": "train",
+      "ordinal": 6
+    },
+    {
+      "id": "pay_statement-reimbursement",
+      "label": "pay_statement",
+      "subtype": "reimbursement",
+      "title": "Remittance and earnings",
+      "description": "Expense reimbursement is paid in addition to wages and is not included in the gross earnings figure.",
+      "split": "train",
+      "ordinal": 7
+    },
+    {
+      "id": "pay_statement-advice",
+      "label": "pay_statement",
+      "subtype": "advice",
+      "title": "Deposit notification and wage detail",
+      "description": "The payroll transfer has been completed. Current earnings and cumulative totals are displayed separately.",
+      "split": "validation",
+      "ordinal": 8
+    },
+    {
+      "id": "pay_statement-weekly",
+      "label": "pay_statement",
+      "subtype": "weekly",
+      "title": "Weekly remuneration record",
+      "description": "Earnings for services already performed. Statutory deductions were withheld from this payment.",
+      "split": "validation",
+      "ordinal": 9
+    },
+    {
+      "id": "pay_statement-employer_record",
+      "label": "pay_statement",
+      "subtype": "employer_record",
+      "title": "Employer confirmation of wages paid",
+      "description": "Our accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of future work.",
+      "split": "test",
+      "ordinal": 10
+    },
+    {
+      "id": "pay_statement-hours_detail",
+      "label": "pay_statement",
+      "subtype": "hours_detail",
+      "title": "Time and earnings reconciliation",
+      "description": "Approved worked hours have been paid in the payroll transaction below. The time ledger is followed by the disbursement detail.",
+      "split": "test",
+      "ordinal": 11
+    },
+    {
+      "id": "invoice_or_receipt-electric_gas",
+      "label": "invoice_or_receipt",
+      "subtype": "electric_gas",
+      "title": "Residential energy account",
+      "description": "This bill includes an unpaid prior balance. Usage charges for the current billing period are separate from the total amount due.",
+      "split": "train",
+      "ordinal": 0
+    },
+    {
+      "id": "invoice_or_receipt-medical_bill",
+      "label": "invoice_or_receipt",
+      "subtype": "medical_bill",
+      "title": "Patient account statement",
+      "description": "Insurance adjustments have been applied. The remaining patient responsibility is payable to the practice.",
+      "split": "train",
+      "ordinal": 1
+    },
+    {
+      "id": "invoice_or_receipt-childcare",
+      "label": "invoice_or_receipt",
+      "subtype": "childcare",
+      "title": "After-school care \u2022 Billing detail",
+      "description": "Attendance charges cover scheduled care days. A payment received after the statement date may appear on the next statement.",
+      "split": "train",
+      "ordinal": 2
+    },
+    {
+      "id": "invoice_or_receipt-rent_receipt",
+      "label": "invoice_or_receipt",
+      "subtype": "rent_receipt",
+      "title": "Resident payment receipt",
+      "description": "Payment received and allocated to the rent period below. The security deposit is held separately.",
+      "split": "train",
+      "ordinal": 3
+    },
+    {
+      "id": "invoice_or_receipt-phone",
+      "label": "invoice_or_receipt",
+      "subtype": "phone",
+      "title": "Wireless service account",
+      "description": "Monthly access and usage charges. Equipment installments are shown separately from the service plan.",
+      "split": "train",
+      "ordinal": 4
+    },
+    {
+      "id": "invoice_or_receipt-water",
+      "label": "invoice_or_receipt",
+      "subtype": "water",
+      "title": "Water and sanitation services",
+      "description": "Meter readings determine usage. Wastewater and refuse collection charges are billed on the same account.",
+      "split": "train",
+      "ordinal": 5
+    },
+    {
+      "id": "invoice_or_receipt-payroll_vendor",
+      "label": "invoice_or_receipt",
+      "subtype": "payroll_vendor",
+      "title": "Payroll processing services \u2022 Invoice",
+      "description": "Bill to the business customer. These are software and payroll processing fees, not wages paid to an employee.",
+      "split": "train",
+      "ordinal": 6
+    },
+    {
+      "id": "invoice_or_receipt-retail",
+      "label": "invoice_or_receipt",
+      "subtype": "retail",
+      "title": "Customer sales receipt",
+      "description": "Items purchased and tender received are listed below. Keep this receipt for returns.",
+      "split": "train",
+      "ordinal": 7
+    },
+    {
+      "id": "invoice_or_receipt-dental",
+      "label": "invoice_or_receipt",
+      "subtype": "dental",
+      "title": "Dental practice \u2022 Account balance",
+      "description": "Treatment charges less insurer adjustment and previous payment. Please remit the amount due.",
+      "split": "validation",
+      "ordinal": 8
+    },
+    {
+      "id": "invoice_or_receipt-bilingual",
+      "label": "invoice_or_receipt",
+      "subtype": "bilingual",
+      "title": "Recibo / Service receipt",
+      "description": "Amount received / Importe recibido. Services completed / Servicios prestados. Paid in full / Pagado.",
+      "split": "validation",
+      "ordinal": 9
+    },
+    {
+      "id": "invoice_or_receipt-homecare",
+      "label": "invoice_or_receipt",
+      "subtype": "homecare",
+      "title": "Support services billing statement",
+      "description": "In-home support visits completed during the service month. The account summary separates new charges from earlier amounts.",
+      "split": "test",
+      "ordinal": 10
+    },
+    {
+      "id": "invoice_or_receipt-rent_ledger",
+      "label": "invoice_or_receipt",
+      "subtype": "rent_ledger",
+      "title": "Housing account transaction record",
+      "description": "Monthly rent assessment, resident payment and closing amount owed. This is a billing ledger, not a lease agreement.",
+      "split": "test",
+      "ordinal": 11
+    },
+    {
+      "id": "other_document-projection",
+      "label": "other_document",
+      "subtype": "projection",
+      "title": "Paycheck details after modeling",
+      "description": "WHAT-IF CALCULATION ONLY. These hypothetical earnings, taxes and deductions have not been paid. Change assumptions to model a future paycheck.",
+      "split": "train",
+      "ordinal": 0
+    },
+    {
+      "id": "other_document-bank",
+      "label": "other_document",
+      "subtype": "bank",
+      "title": "Checking account activity",
+      "description": "Deposits and withdrawals reflect bank activity. A payroll deposit is a net transfer; this bank record does not itemize employer gross wages.",
+      "split": "train",
+      "ordinal": 1
+    },
+    {
+      "id": "other_document-lease",
+      "label": "other_document",
+      "subtype": "lease",
+      "title": "Residential rental agreement",
+      "description": "This agreement sets the future monthly rent and responsibilities of the resident and property manager. It does not acknowledge payment.",
+      "split": "train",
+      "ordinal": 2
+    },
+    {
+      "id": "other_document-tax",
+      "label": "other_document",
+      "subtype": "tax",
+      "title": "Annual earnings and withholding summary",
+      "description": "Annual tax reporting copy. Totals cover the full calendar year and do not identify a current individual wage payment.",
+      "split": "train",
+      "ordinal": 3
+    },
+    {
+      "id": "other_document-offer",
+      "label": "other_document",
+      "subtype": "offer",
+      "title": "Conditional employment offer",
+      "description": "Proposed salary and start date are subject to acceptance. No wages have been disbursed under this offer.",
+      "split": "train",
+      "ordinal": 4
+    },
+    {
+      "id": "other_document-county_notice",
+      "label": "other_document",
+      "subtype": "county_notice",
+      "title": "Request for verification",
+      "description": "Please provide available proof of income and housing costs for the requested period. This notice is not itself a wage or expense record.",
+      "split": "train",
+      "ordinal": 5
+    },
+    {
+      "id": "other_document-coverage",
+      "label": "other_document",
+      "subtype": "coverage",
+      "title": "Health coverage information",
+      "description": "Plan enrollment and member service information. Coverage information is not a medical bill or a receipt for premiums.",
+      "split": "train",
+      "ordinal": 6
+    },
+    {
+      "id": "other_document-school",
+      "label": "other_document",
+      "subtype": "school",
+      "title": "Enrollment confirmation",
+      "description": "The student is enrolled for the stated academic term. Attendance information is supplied on request. This is not a tuition invoice.",
+      "split": "train",
+      "ordinal": 7
+    },
+    {
+      "id": "other_document-benefit_estimator",
+      "label": "other_document",
+      "subtype": "benefit_estimator",
+      "title": "Take-home pay calculator \u2022 Scenario",
+      "description": "Estimated payroll only. The displayed gross, withholding and net values are hypothetical, not an actual payment record.",
+      "split": "validation",
+      "ordinal": 8
+    },
+    {
+      "id": "other_document-bank_letter",
+      "label": "other_document",
+      "subtype": "bank_letter",
+      "title": "Account verification letter",
+      "description": "The named customer holds an active deposit account. Recent incoming transfers are shown for reference; employer gross pay is not certified.",
+      "split": "validation",
+      "ordinal": 9
+    },
+    {
+      "id": "other_document-what_if",
+      "label": "other_document",
+      "subtype": "what_if",
+      "title": "Compensation planning worksheet",
+      "description": "Proposed pay cycle simulation. Salary, deductions and net deposit are estimates for planning; no payment was issued or received.",
+      "split": "test",
+      "ordinal": 10
+    },
+    {
+      "id": "other_document-eob",
+      "label": "other_document",
+      "subtype": "eob",
+      "title": "Explanation of benefits",
+      "description": "THIS IS NOT A BILL. This explanation shows how a health claim was processed. Do not send payment based on this document; the provider bills separately.",
+      "split": "test",
+      "ordinal": 11
+    }
+  ],
+  "recordsPerFamily": 4,
+  "captures": [
+    "pdf_text",
+    "scan_ocr"
+  ],
+  "scope": "Authored scenario families and layout-theme pools split before generation; shared table components remain across splits. Not independent real issuer templates.",
+  "userDocumentsUsed": false,
+  "screenshotUse": "Structural inspiration only. No copied identities, identifiers, amounts, pixels or screenshot OCR.",
+  "seed": 9301
+}

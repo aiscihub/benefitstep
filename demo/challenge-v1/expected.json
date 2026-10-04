@@ -1,0 +1,242 @@
+{
+  "createdAt": "2026-10-04T01:17:47.276180+00:00",
+  "scope": "New authored synthetic challenge, not a representative real-user benchmark. References fixed before this run; not used for model tuning.",
+  "modelSha256": "23ac10b26d73520ed85da16afddf3a0b6dae08e61358187f1b527491642b2cee",
+  "threshold": 0.5,
+  "cases": [
+    {
+      "id": "01",
+      "file": "document-01.pdf",
+      "family": "table-pay",
+      "cohort": "new_text_scenario",
+      "challenge": "Grid layout, gross/net/YTD in adjacent columns",
+      "expectedBroadLabel": "pay_statement",
+      "expectedFields": {
+        "gross_pay": "2384.50",
+        "net_pay": "1925.78",
+        "ytd_gross": "31608.25"
+      },
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "02",
+      "file": "document-02.pdf",
+      "family": "narrative-pay",
+      "cohort": "new_text_scenario",
+      "challenge": "Two-page letter; October payment for September work",
+      "expectedBroadLabel": "pay_statement",
+      "expectedFields": {
+        "gross_pay": "3100.00",
+        "net_pay": "2480.00",
+        "ytd_gross": "27800.00"
+      },
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "03",
+      "file": "document-03.pdf",
+      "family": "payroll-vendor-invoice",
+      "cohort": "new_text_scenario",
+      "challenge": "Invoice contains payroll and earnings vocabulary",
+      "expectedBroadLabel": "invoice_or_receipt",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "04",
+      "file": "document-04.pdf",
+      "family": "spanish-receipt",
+      "cohort": "new_text_scenario",
+      "challenge": "Spanish text and comma-decimal euro amounts",
+      "expectedBroadLabel": "invoice_or_receipt",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "05",
+      "file": "document-05.pdf",
+      "family": "annual-tax",
+      "cohort": "new_text_scenario",
+      "challenge": "Annual wages resemble current earnings",
+      "expectedBroadLabel": "other_document",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "06",
+      "file": "document-06.pdf",
+      "family": "bank-deposits",
+      "cohort": "new_text_scenario",
+      "challenge": "Payroll deposits are not a pay statement",
+      "expectedBroadLabel": "other_document",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "07",
+      "file": "document-07.pdf",
+      "family": "future-offer",
+      "cohort": "new_text_scenario",
+      "challenge": "Proposed future salary, no actual payment",
+      "expectedBroadLabel": "other_document",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "08",
+      "file": "document-08.pdf",
+      "family": "utility-credit",
+      "cohort": "new_text_scenario",
+      "challenge": "Zero amount due despite positive current charges",
+      "expectedBroadLabel": "invoice_or_receipt",
+      "expectedFields": {
+        "current_charges": "108.47",
+        "prior_balance": "-134.22",
+        "amount_due": "0.00"
+      },
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "09",
+      "file": "document-09.pdf",
+      "family": "missing-gross",
+      "cohort": "new_text_scenario",
+      "challenge": "Gross missing; visible net must not become gross",
+      "expectedBroadLabel": "pay_statement",
+      "expectedFields": {
+        "gross_pay": null,
+        "net_pay": "1470.26"
+      },
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "10",
+      "file": "document-10.pdf",
+      "family": "request-not-evidence",
+      "cohort": "new_text_scenario",
+      "challenge": "Notice asks for pay terms but reports no income",
+      "expectedBroadLabel": "other_document",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "11",
+      "file": "document-11.pdf",
+      "family": "payroll-handout",
+      "cohort": "new_text_scenario",
+      "challenge": "Educational examples, no actual earnings",
+      "expectedBroadLabel": "other_document",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "12",
+      "file": "document-12.pdf",
+      "family": "lease-not-receipt",
+      "cohort": "new_text_scenario",
+      "challenge": "Monthly rent versus deposit; no proof of payment",
+      "expectedBroadLabel": "other_document",
+      "expectedFields": {
+        "rent_amount": "1725.00",
+        "amount_paid": null
+      },
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "13",
+      "file": "document-13.pdf",
+      "family": "table-pay",
+      "cohort": "image_variant",
+      "parent": "01",
+      "challenge": "Image-only scan of the pay table",
+      "expectedBroadLabel": null,
+      "expectedBehavior": "unknown_without_text",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "14",
+      "file": "document-14.pdf",
+      "family": "spanish-receipt",
+      "cohort": "image_variant",
+      "parent": "04",
+      "challenge": "Low contrast, skewed receipt scan",
+      "expectedBroadLabel": null,
+      "expectedBehavior": "unknown_without_text",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "15",
+      "file": "document-15.pdf",
+      "family": "table-pay",
+      "cohort": "ocr_text_variant",
+      "parent": "01",
+      "challenge": "Simulated OCR character substitutions and lost layout",
+      "expectedBroadLabel": "pay_statement",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "16",
+      "file": "document-16.pdf",
+      "family": "mixed-pay-bill",
+      "cohort": "mixed_packet",
+      "parents": [
+        "01",
+        "08"
+      ],
+      "challenge": "Searchable pay statement and utility bill in one PDF",
+      "expectedBroadLabel": null,
+      "expectedBehavior": "unknown_mixed_types",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "17",
+      "file": "document-17.pdf",
+      "family": "mixed-text-image",
+      "cohort": "mixed_packet",
+      "parents": [
+        "01",
+        "08"
+      ],
+      "challenge": "Readable pay page plus scanned bill page",
+      "expectedBroadLabel": null,
+      "expectedBehavior": "unknown_partly_unreadable",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    },
+    {
+      "id": "18",
+      "file": "document-18.pdf",
+      "family": "table-pay",
+      "cohort": "exact_duplicate",
+      "parent": "01",
+      "challenge": "Identical PDF with a different name",
+      "expectedBroadLabel": null,
+      "expectedBehavior": "skip_duplicate",
+      "expectedFields": {},
+      "synthetic": true,
+      "inTraining": false
+    }
+  ],
+  "scoring": "Report new text scenarios separately from related variants, image abstention, mixed packets and duplicates. Do not average them into one success percentage. Field tests use the local label reader, not native AI."
+}

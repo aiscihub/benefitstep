@@ -1,0 +1,47 @@
+Alderpoint
+
+Records office · contact@example.invalid
+
+Patient account statement
+
+Insurance adjustments have been applied. The remaining patient responsibility is payable to the practice.
+
+Avery Reed
+
+1840 Example Lane, Unit 2
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12054   2026-07-28   2026-07-01 – 2026-07-28
+
+SERVICE DETAIL
+
+Item   Quantity   Unit amount   Charge
+
+Office consultation and laboratory service   1   $1,088.00   $1,088.00
+
+Administration / service charge   1   $12.00   $12.00
+
+ACCOUNT SUMMARY
+
+Activity   Amount
+
+Balance brought forward   $87.00
+
+New charges this period   $1,100.00
+
+Payment received   $-35.00
+
+Closing amount due   $1,152.00
+
+Claim reference C-100. Charges shown above are after contractual adjustments. No diagnosis or treatment advice is included.
+
+Payment date 2026-07-28 · Method: received electronically
+
+Detach and retain account reference R-12054
+
+Remittance amount __________________
+
+Fictional training specimen · No real person or transaction · Not valid for submission

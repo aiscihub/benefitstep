@@ -1,0 +1,38 @@
+{
+  "workflow": {
+    "realPdfImport": true,
+    "automaticExtraction": true,
+    "modelFailureRecovery": true,
+    "partialConfirmation": true,
+    "duplicates": true,
+    "manualZero": true,
+    "guide": true,
+    "sourceViewer": true,
+    "followup": true,
+    "separatePrograms": true,
+    "selectedOriginalExport": true,
+    "editInvalidation": true,
+    "cancellation": true,
+    "narrowLayout": true
+  },
+  "doctor": {
+    "billPositiveAndNegative": true,
+    "onlyAffectedAnswerPaused": true,
+    "correctionResolves": true,
+    "noticePrefill": true,
+    "requestMismatch": true,
+    "historicalRequestMatch": true,
+    "programIsolation": true,
+    "privateStorageEmpty": true,
+    "hiddenDialogCleared": true,
+    "untrustedDocumentInert": true
+  },
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/154.0.8037.95",
+    "revision": "@05d469856e75794131cc2e5d9b2f6b6f10a70388",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "jsVersion": "15.4.80.19"
+  },
+  "viewport": 360
+}

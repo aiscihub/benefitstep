@@ -1,0 +1,6 @@
+export type DocumentKind = 'paystub'|'rent'|'mortgage'|'utility'|'childcare'|'support'|'medical'|'unknown';
+export interface PageEvidence { page:number; text:string; preview:string; width:number; height:number; error?:string; }
+export interface Fact {key:string; value:string; sourceValue:string; page:number; quote:string; confirmed:boolean; conflict:boolean; sourceVerified:boolean; provenance:'text-quote'|'image-proposed'|'owner-correction'|'owner-entry'; method:string;}
+export interface EvidenceDocument {id:string; hash:string; filename:string; mime:string; bytes:Uint8Array; kind:DocumentKind; pages:PageEvidence[]; fields:Fact[]; warnings:string[]; reviewed:boolean; include:boolean; revision:number; duplicateOf?:string; possibleDuplicateOf?:string; duplicateResolved?:boolean;}
+export interface ApplicantScope {state:string; householdSize:number|null; householdConfirmed:boolean; monthlyGross:string; incomeConfirmed:boolean; allSourcesConfirmed:boolean; specialSituation:'no'|'yes'|'unknown';referenceMonth:string;}
+export interface PreliminaryFinding {qualification:'not_determined';status:'rules_unavailable'|'outside_scope'|'needs_information'|'special_review'|'within_gross_reference'|'above_gross_reference';scope:string;headline:string;detail:string;source:string;ruleVersion:string;unknowns:string[];}

@@ -1,0 +1,63 @@
+Harborstone
+Records office • contact@example.invalid
+Wages and reported tips
+Cash tips reported during this period are included in taxable earnings. Noncash employer benefits are not deposited.
+Morgan Ellis
+1840 Example Lane, Unit 3
+Sacramento, CA 95814
+EARNINGS
+Description
+Regular compensation
+Reported tips
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Federal withholding
+Social Security
+Medicare
+State / benefit deduction
+Total deductions
+Gross
+Deductions
+Reference
+R-12019
+Hours
+48
+-
+Net wages
+Issue date
+2026-08-28
+Rate
+Current
+$59.50
+-
+Current
+$293.10
+$181.72
+$42.49
+$39.58
+$556.89
+Reimbursement
+$2,931.00
+Period
+YTD
+$2,856.00
+$75.00
+$2,931.00
+Year to date
+Deposit amount
+$556.89
+$2,374.11
+$0.00
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+2026-08-01 - 2026-08-28
+$25,704.00
+$675.00
+$26,379.00
+$2,637.90
+$1,635.48
+$382.41
+$356.22
+$5,012.01
+$2,374.11
+Fictional training specimen - No real person or transaction - Not vallid for submission

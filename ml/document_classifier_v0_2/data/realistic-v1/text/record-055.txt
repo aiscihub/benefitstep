@@ -1,0 +1,47 @@
+Willowbridge
+
+Records office · contact@example.invalid
+
+Patient account statement
+
+Insurance adjustments have been applied. The remaining patient responsibility is payable to the practice.
+
+Jamie Ash
+
+1840 Example Lane, Unit 3
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12055   2026-08-28   2026-08-01 – 2026-08-28
+
+SERVICE DETAIL
+
+Item   Quantity   Unit amount   Charge
+
+Office consultation and laboratory service   1   $620.00   $620.00
+
+Administration / service charge   1   $12.00   $12.00
+
+ACCOUNT SUMMARY
+
+Activity   Amount
+
+Balance brought forward   $174.00
+
+New charges this period   $632.00
+
+Payment received   $0.00
+
+Closing amount due   $806.00
+
+Claim reference C-100. Charges shown above are after contractual adjustments. No diagnosis or treatment advice is included.
+
+Payment date 2026-08-28 · Method: not yet received
+
+Detach and retain account reference R-12055
+
+Remittance amount __________________
+
+Fictional training specimen · No real person or transaction · Not valid for submission

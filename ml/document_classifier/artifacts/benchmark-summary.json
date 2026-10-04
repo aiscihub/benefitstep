@@ -1,0 +1,463 @@
+{
+  "benchmarkId": "public-text-v0.1-benchmark-1",
+  "measuredAt": "2026-10-04T00:25:00.511765+00:00",
+  "modelId": "benefitstep-public-text-classifier-v0.1",
+  "modelSha256": "23ac10b26d73520ed85da16afddf3a0b6dae08e61358187f1b527491642b2cee",
+  "splitManifestSha256": "2fbea97cea3f3032b96de67562bc8b715a7d70817f1f8c3ba451068e4afad6a5",
+  "modelBytes": 551368,
+  "datasetCount": 3,
+  "datasets": [
+    {
+      "id": "payslips",
+      "name": "PAYSLIPS",
+      "url": "https://github.com/buthaya/payslips",
+      "revision": "ec64d17fa94d876b1834760594340a058dac5106",
+      "license": "MIT",
+      "downloaded": true,
+      "usedForTraining": true,
+      "eligibleUniqueDocuments": 525,
+      "training": 285,
+      "validation": 123,
+      "test": 117
+    },
+    {
+      "id": "fieldbench",
+      "name": "FieldBench \u2014 selected synthetic CC0 records",
+      "url": "https://github.com/fieldbench/corpus",
+      "revision": "fcfefbfbde1909ea440e058593eb72387b636a3f",
+      "license": "CC0 1.0 (selected synthetic documents only)",
+      "downloaded": true,
+      "usedForTraining": true,
+      "eligibleUniqueDocuments": 205,
+      "training": 155,
+      "validation": 17,
+      "test": 33
+    },
+    {
+      "id": "cord",
+      "name": "CORD-v2 \u2014 bounded text subset",
+      "url": "https://huggingface.co/datasets/naver-clova-ix/cord-v2",
+      "revision": "7f0115a4b758a71d6473b8d085751692da2fef98",
+      "license": "CC BY 4.0",
+      "downloaded": true,
+      "usedForTraining": true,
+      "eligibleUniqueDocuments": 37,
+      "training": 20,
+      "validation": 4,
+      "test": 13
+    }
+  ],
+  "splitCounts": {
+    "train": 460,
+    "validation": 144,
+    "test": 163
+  },
+  "groupCounts": {
+    "train": 147,
+    "validation": 33,
+    "test": 79
+  },
+  "classCounts": {
+    "train": {
+      "pay_statement": 285,
+      "invoice_or_receipt": 120,
+      "other_document": 55
+    },
+    "validation": {
+      "pay_statement": 123,
+      "invoice_or_receipt": 9,
+      "other_document": 12
+    },
+    "test": {
+      "pay_statement": 117,
+      "other_document": 33,
+      "invoice_or_receipt": 13
+    }
+  },
+  "test": {
+    "n": 163,
+    "closed_set_macro_f1": 0.9733169129720854,
+    "closed_set_accuracy": 0.9877300613496932,
+    "closed_set_per_class": {
+      "invoice_or_receipt": {
+        "precision": 0.8666666666666667,
+        "recall": 1.0,
+        "f1-score": 0.9285714285714286,
+        "support": 13.0
+      },
+      "other_document": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 33.0
+      },
+      "pay_statement": {
+        "precision": 1.0,
+        "recall": 0.9829059829059829,
+        "f1-score": 0.9913793103448276,
+        "support": 117.0
+      },
+      "accuracy": 0.9877300613496932,
+      "macro avg": {
+        "precision": 0.9555555555555556,
+        "recall": 0.9943019943019943,
+        "f1-score": 0.9733169129720854,
+        "support": 163.0
+      },
+      "weighted avg": {
+        "precision": 0.989366053169734,
+        "recall": 0.9877300613496932,
+        "f1-score": 0.9881153857777508,
+        "support": 163.0
+      }
+    },
+    "confusion_labels": [
+      "invoice_or_receipt",
+      "other_document",
+      "pay_statement"
+    ],
+    "closed_set_confusion": [
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        0,
+        33,
+        0
+      ],
+      [
+        2,
+        0,
+        115
+      ]
+    ],
+    "threshold": 0.5,
+    "accepted": 126,
+    "abstained": 37,
+    "coverage": 0.7730061349693251,
+    "accepted_accuracy": 1.0,
+    "confident_errors": 0,
+    "per_class_after_abstention": {
+      "invoice_or_receipt": {
+        "n": 13,
+        "correct": 9,
+        "abstained": 4,
+        "wrong_route": 0
+      },
+      "other_document": {
+        "n": 33,
+        "correct": 18,
+        "abstained": 15,
+        "wrong_route": 0
+      },
+      "pay_statement": {
+        "n": 117,
+        "correct": 99,
+        "abstained": 18,
+        "wrong_route": 0
+      }
+    }
+  },
+  "majorityBaseline": {
+    "label": "pay_statement",
+    "accuracy": 0.7177914110429447,
+    "macroF1": 0.2785714285714286
+  },
+  "scoreReliabilityBins": [
+    {
+      "range": "0.4\u20130.6",
+      "n": 64,
+      "meanScore": 0.5082676828935836,
+      "observedTopAccuracy": 0.96875
+    },
+    {
+      "range": "0.6\u20130.8",
+      "n": 95,
+      "meanScore": 0.7039189684625048,
+      "observedTopAccuracy": 1.0
+    },
+    {
+      "range": "0.8\u20131.0",
+      "n": 4,
+      "meanScore": 0.8251779336523688,
+      "observedTopAccuracy": 1.0
+    }
+  ],
+  "speed": {
+    "modelLoadMs": {
+      "n": 5,
+      "mean": 6.079999995231629,
+      "median": 6.199999988079071,
+      "p95NearestRank": 7.299999982118607,
+      "min": 4.9000000059604645,
+      "max": 7.299999982118607
+    },
+    "testTextBatchMs": {
+      "n": 7,
+      "mean": 6.385714288268771,
+      "median": 5.5,
+      "p95NearestRank": 9.5,
+      "min": 4.800000011920929,
+      "max": 9.5
+    },
+    "amortizedTextMs": 0.03917616127772252,
+    "timerResolutionMs": 0.09999999403953552,
+    "rawSingleTextMs": {
+      "n": 1141,
+      "mean": 0.038913234036601914,
+      "median": 0,
+      "p95NearestRank": 0.10000002384185791,
+      "min": 0,
+      "max": 0.20000001788139343
+    },
+    "pdfPreparationMs": {
+      "n": 30,
+      "mean": 62.663333333532016,
+      "median": 66.29999999701977,
+      "p95NearestRank": 67.80000001192093,
+      "min": 48.099999994039536,
+      "max": 90.40000000596046
+    },
+    "tenPdfBatchMs": {
+      "n": 3,
+      "mean": 626.6333333353201,
+      "median": 616.7000000178814,
+      "p95NearestRank": 646.5,
+      "min": 616.6999999880791,
+      "max": 646.5
+    },
+    "pdfPages": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "machine": {
+    "cpu": "Apple M3 Pro",
+    "os": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "browser": "Chrome/154.0.8037.95",
+  "pdfProbes": [
+    {
+      "file": "01-pay-september-15.pdf",
+      "sourceKind": "paystub",
+      "sha256": "8d332a6ea68181c2d2010b3d09f169003c870275a3929d7ee7718298856c4d56",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 128034,
+      "textChars": 842,
+      "parseRenderMs": 85.80000001192093,
+      "classifyAndExtractMs": 4.4000000059604645,
+      "totalProcessingMs": 90.40000000596046,
+      "prediction": "pay_statement",
+      "reason": "model_suggestion",
+      "score": 0.5213993505154285,
+      "extractedKind": "paystub",
+      "fieldCount": 10
+    },
+    {
+      "file": "02-pay-september-30.pdf",
+      "sourceKind": "paystub",
+      "sha256": "35dc0d98d882d3ffe20ef531a44a723113b3bd487b09a204f9de9c6e54111c59",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 130898,
+      "textChars": 860,
+      "parseRenderMs": 58.400000005960464,
+      "classifyAndExtractMs": 0.4000000059604645,
+      "totalProcessingMs": 59,
+      "prediction": "pay_statement",
+      "reason": "model_suggestion",
+      "score": 0.5115095240179287,
+      "extractedKind": "paystub",
+      "fieldCount": 10
+    },
+    {
+      "file": "04-rent.pdf",
+      "sourceKind": "rent",
+      "sha256": "78a2a92c2c7b1d0e3ea90308440fca7fd8567cd9c3b6304d45a67060af70c5b5",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 127630,
+      "textChars": 813,
+      "parseRenderMs": 65,
+      "classifyAndExtractMs": 0.5,
+      "totalProcessingMs": 65.59999999403954,
+      "prediction": "unknown",
+      "reason": "below_threshold",
+      "score": 0.4179642593428474,
+      "extractedKind": "rent",
+      "fieldCount": 8
+    },
+    {
+      "file": "05-utility.pdf",
+      "sourceKind": "utility",
+      "sha256": "af9e2aa828884238f1361c15c4c77b66a10759dedb491901d20627a912b0c1cc",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 133310,
+      "textChars": 823,
+      "parseRenderMs": 65.60000002384186,
+      "classifyAndExtractMs": 0.3999999761581421,
+      "totalProcessingMs": 66.2000000178814,
+      "prediction": "unknown",
+      "reason": "below_threshold",
+      "score": 0.4703573010187902,
+      "extractedKind": "utility",
+      "fieldCount": 8
+    },
+    {
+      "file": "06-childcare.pdf",
+      "sourceKind": "childcare",
+      "sha256": "7767963fc4c6df02941e2e840121d25efad8ed4cdd45c8e40cb62ec16bff3597",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 125640,
+      "textChars": 897,
+      "parseRenderMs": 66.09999999403954,
+      "classifyAndExtractMs": 0.4000000059604645,
+      "totalProcessingMs": 66.59999999403954,
+      "prediction": "unknown",
+      "reason": "below_threshold",
+      "score": 0.4454085850250321,
+      "extractedKind": "childcare",
+      "fieldCount": 9
+    },
+    {
+      "file": "07-support.pdf",
+      "sourceKind": "support",
+      "sha256": "417d24db13807aea22acec77bbe3c05b4424457391388ce91fe5b4ddd24bd69a",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 125004,
+      "textChars": 794,
+      "parseRenderMs": 65.69999998807907,
+      "classifyAndExtractMs": 0.30000001192092896,
+      "totalProcessingMs": 66,
+      "prediction": "unknown",
+      "reason": "below_threshold",
+      "score": 0.4302046118213487,
+      "extractedKind": "support",
+      "fieldCount": 8
+    },
+    {
+      "file": "08-medical.pdf",
+      "sourceKind": "medical",
+      "sha256": "2176be9e92fac1f93cd8fdb4e125fd4051a7fc0aaf2c4d1f19d5e5fb87780365",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 130214,
+      "textChars": 934,
+      "parseRenderMs": 66.40000000596046,
+      "classifyAndExtractMs": 0.5999999940395355,
+      "totalProcessingMs": 67,
+      "prediction": "unknown",
+      "reason": "below_threshold",
+      "score": 0.43369761055846673,
+      "extractedKind": "medical",
+      "fieldCount": 10
+    },
+    {
+      "file": "09-mortgage.pdf",
+      "sourceKind": "mortgage",
+      "sha256": "0cebd1683a734f0cd78eb21dacfc33c5206fe85f6cac22a73a4abb7c2e6403ee",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 131418,
+      "textChars": 910,
+      "parseRenderMs": 66.5,
+      "classifyAndExtractMs": 0.5999999940395355,
+      "totalProcessingMs": 67.09999999403954,
+      "prediction": "unknown",
+      "reason": "below_threshold",
+      "score": 0.4116847265343898,
+      "extractedKind": "mortgage",
+      "fieldCount": 10
+    },
+    {
+      "file": "10-unrelated.pdf",
+      "sourceKind": "unknown",
+      "sha256": "beb88d717ca0e79972ce76f18f8c30d1695411dae48b306021cf810b2a22daeb",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 109268,
+      "textChars": 686,
+      "parseRenderMs": 47.900000005960464,
+      "classifyAndExtractMs": 0.09999999403953552,
+      "totalProcessingMs": 48.099999994039536,
+      "prediction": "unknown",
+      "reason": "below_threshold",
+      "score": 0.4213049272339808,
+      "extractedKind": "unknown",
+      "fieldCount": 0
+    },
+    {
+      "file": "11-incomplete-rent.pdf",
+      "sourceKind": "rent",
+      "sha256": "05e6925bc207caffd08f864945479da30984fa5379617324c43c28bae4cf370f",
+      "pass": 0,
+      "pages": 1,
+      "bytes": 109896,
+      "textChars": 841,
+      "parseRenderMs": 50.10000002384186,
+      "classifyAndExtractMs": 0.3999999761581421,
+      "totalProcessingMs": 50.5,
+      "prediction": "unknown",
+      "reason": "below_threshold",
+      "score": 0.4190764097224533,
+      "extractedKind": "rent",
+      "fieldCount": 6
+    }
+  ],
+  "browserParityDocuments": 163,
+  "privacy": {
+    "remotePageRequests": 0,
+    "runtimeExceptions": 0
+  },
+  "userDocumentAccuracyMeasured": false,
+  "probabilitiesCalibrated": false,
+  "automaticRoutingApproved": false,
+  "limitations": [
+    "Source and class are partly confounded: pay statements come from PAYSLIPS; receipts include an Indonesian CORD sample; other documents are public synthetic FieldBench records.",
+    "Group isolation uses document IDs, declared generator/schema families and a near-duplicate proxy, not a complete issuer/template audit.",
+    "Public synthetic comparison data are not real US benefits documents.",
+    "No target-domain held-out utility, rent, county-notice or image classification accuracy measured.",
+    "Closed-set test metrics do not measure unknown-document false-routing rates.",
+    "Softmax scores are uncalibrated. Do not present them as accuracy or eligibility probabilities.",
+    "Test scores are conditional on preprocessing eligibility; raw short/unreadable records were filtered out.",
+    "Latency is from one Apple M3 Pro with headless Chrome; PDF fixtures are small, searchable, one-page synthetic files.",
+    "Individual text timing is quantized; zero measured duration means below timer resolution, not instant inference.",
+    "Existing PDF examples were used during development and are not a new independent accuracy benchmark."
+  ],
+  "newSyntheticChallenge": {
+    "referenceSha256": "8660b5333081f965642c99ab6095223d601594d9552bf9867e0b6868c1dc8937",
+    "resultsSha256": "2af16bdd1507b4f661606f1c29d646e903af261532f703bf47ea15d18b251716",
+    "newTextScenarios": {
+      "n": 12,
+      "correct": 0,
+      "unknown": 11,
+      "wrongSuggestion": 1,
+      "importErrors": 0
+    },
+    "selectedFieldChecks": {
+      "expectedPresent": 11,
+      "correct": 1,
+      "missing": 10,
+      "wrong": 0,
+      "expectedAbsent": 2,
+      "correctlyAbsent": 2,
+      "invented": 0
+    },
+    "scope": "New synthetic development challenge; not a representative real-user benchmark. Kept separate from original public test."
+  }
+}

@@ -1,0 +1,47 @@
+F I C T I O N A L   D E M O   C O P Y
+
+LL  
+Little Lantern Learning
+
+After-school program · littlelantern.example
+
+Invoice DEMO-SEP-018
+
+Issued September 30, 2026
+
+Child care invoice
+
+Person:   Jordan Rivera
+
+Care provider:   Little Lantern Learning
+
+Child receiving care: Maya Rivera · After-school group
+
+Parent mailing address: 2148 Willowmere Lane, Apt 3B · Sacramento, CA 95814
+
+Service start:   2026-09-01
+
+Service end:   2026-09-30
+
+Document date:   2026-09-30
+
+Service   Quantity   Rate   Amount
+
+After-school care   12 afternoons   $25.00   $300.00
+
+Amount billed:   $300.00
+
+Amount paid:   $200.00
+
+Expense frequency:   monthly
+
+Payment received September 20 by bank transfer, reference DEMO-CARE-0920.
+
+REMAINING BALANCE
+
+$100.00
+
+The amount billed and payment received are separate. This invoice records care charges; it does not determine an allowable benefits
+deduction.
+
+Fictional people, organizations and transactions · Not valid for submission   1 / 1

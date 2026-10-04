@@ -1,0 +1,41 @@
+Harborstone
+Records office• contact@example.Invalld
+Recibo / Service receipt
+Amount received / Importe recibido. Services completed / Servicios prestados. Paid in full / Pagado.
+Robin Lane
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+Reference
+R-12085
+Issue date
+2026-06-28
+Period
+2026-06-01 - 2026-06-28
+SERVICE DETAIL
+Item
+Completed service / Servicio
+Administration / service charge
+Quantity
+Unit amount
+Charge
+1
+1
+$1,364.00
+$12.00
+$1,364.00
+$12.00
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Payment date 2026-06-28 • Method: received electronically
+Amount
+$0.00
+$1,376.00
+$-1,376.00
+$0.00
+Detach and retain account reference R-12085
+Remittance amount
+Fictional training specimen - No real person or transaction - Not valld for submission

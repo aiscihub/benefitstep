@@ -1,0 +1,62 @@
+Copper Hill
+Records office • contactéexample.inval1d
+My pay • Completed payment
+Payment status: deposited. Download history for completed payroll transactions.
+Drew Harper
+1840 Example Lane, Unit 4
+Sacramento, CA 95814
+EARNINGS
+Description
+Regular compensation
+Premium / incentive
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Federal withholding
+Social Security
+Medicare
+State / benefit deduction
+Total deductions
+Reference
+Issue date
+Period
+R-12016
+2026-09-28
+2026-09-01 = 2026-09-28
+Hours
+Rate
+Current
+YTD
+52
+$43.25
+$2,249.00
+$20,241.00
+$75.00
+$675.00
+$2,324.00
+$20,916.00
+Current
+Year to date
+$232.40
+$2,091.60
+$144.08
+$1,296.72
+$33.69 |
+$303.21
+$31.39
+$282.51
+$441.56
+$3,974.04
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$2,324.00
+$441.56
+$1,882.44
+$0.00
+$1,882.44
+Amounts are Illustrative. Withholding tigures are not cax advice. YID values are cumulative and should not be treated as
+current period income.
+Fictional training specimen - No real person or transaction • Not valid for submission

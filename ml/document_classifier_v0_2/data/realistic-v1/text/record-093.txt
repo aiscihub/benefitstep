@@ -1,0 +1,44 @@
+Harborstone  
+Records office · contact@example.invalid
+
+Housing account transaction record
+
+Monthly rent assessment, resident payment and closing amount owed. This is a billing ledger, not a lease agreement.
+
+Robin Lane
+
+1840 Example Lane, Unit 1
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12093   2026-06-28   2026-06-01 – 2026-06-28
+
+SERVICE DETAIL
+
+Item   Quantity   Unit amount   Charge
+
+Monthly rent assessment   1   $932.00   $932.00
+
+Administration / service charge   1   $12.00   $12.00
+
+ACCOUNT SUMMARY
+
+Activity   Amount
+
+Balance brought forward   $0.00
+
+New charges this period   $944.00
+
+Payment received   $0.00
+
+Closing amount due   $944.00
+
+Payment date 2026-06-28 · Method: not yet received
+
+Detach and retain account reference R-12093
+
+Remittance amount __________________
+
+Fictional training specimen · No real person or transaction · Not valid for submission

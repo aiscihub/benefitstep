@@ -1,0 +1,65 @@
+$889.38
+
+Copper Hill
+
+Records office · contact@example.invalid
+
+Employee payment voucher
+
+Retain the detachable stub for your records. The check and the employee copy refer to the same payment.
+
+Casey Quinn
+
+1840 Example Lane, Unit 2
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12010   2026-07-28   2026-07-01 – 2026-07-28
+
+VOID • NON-NEGOTIABLE SPECIMEN
+
+Pay to the order of Casey Quinn
+
+Account •••• 0000   Reference R-12010
+
+Signature intentionally omitted
+
+EARNINGS
+
+Description   Hours   Rate   Current   YTD
+
+Regular compensation   44   $23.25   $1,023.00   $9,207.00
+
+Premium / incentive   —   —   $75.00   $675.00
+
+Total gross earnings   $1,098.00   $9,882.00
+
+TAXES AND DEDUCTIONS
+
+Description   Current   Year to date
+
+Federal withholding   $109.80   $988.20
+
+Social Security   $68.07   $612.63
+
+Medicare   $15.92   $143.28
+
+State / benefit deduction   $14.83   $133.47
+
+Total deductions   $208.62   $1,877.58
+
+Gross   Deductions   Net wages   Reimbursement   Deposit amount
+
+$1,098.00   $208.62   $889.38   $0.00   $889.38
+
+RETAIN WITH YOUR RECORDS — REPEATED STUB
+
+Pay reference   Gross   Net   Pay date
+
+R-12010   $1,098.00   $889.38   2026-07-28
+
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

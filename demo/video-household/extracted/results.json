@@ -1,0 +1,1166 @@
+{
+  "results": [
+    {
+      "file": "01_JuniperMarket_Pay_2026-09-15.pdf",
+      "documentId": "d6248196-1b51-409a-a818-af95025bec58",
+      "classification": {
+        "label": "pay_statement",
+        "topLabel": "pay_statement",
+        "score": 0.5277184170613888,
+        "scores": [
+          0.29102226679034193,
+          0.18125931614826926,
+          0.5277184170613888
+        ],
+        "reason": "model_suggestion",
+        "tokenCount": 98,
+        "experimental": true,
+        "modelId": "benefitstep-public-text-classifier-v0.1",
+        "scoresAreCalibrated": false,
+        "labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "threshold": 0.5,
+        "status": "scored"
+      },
+      "extraction": {
+        "kind": "paystub",
+        "method": "Automatic local text reader (not AI)",
+        "fields": [
+          {
+            "key": "issuer",
+            "value": "Juniper Market",
+            "page": 1,
+            "quote": "Employer:   Juniper Market",
+            "sourceValue": "Juniper Market",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "person",
+            "value": "Jordan Rivera",
+            "page": 1,
+            "quote": "Employee:   Jordan Rivera",
+            "sourceValue": "Jordan Rivera",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_start",
+            "value": "2026-09-01",
+            "page": 1,
+            "quote": "Period start:   2026-09-01",
+            "sourceValue": "2026-09-01",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_end",
+            "value": "2026-09-15",
+            "page": 1,
+            "quote": "Period end:   2026-09-15",
+            "sourceValue": "2026-09-15",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "pay_date",
+            "value": "2026-09-15",
+            "page": 1,
+            "quote": "Pay date:   2026-09-15",
+            "sourceValue": "2026-09-15",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "pay_frequency",
+            "value": "semimonthly",
+            "page": 1,
+            "quote": "Pay frequency:   semimonthly",
+            "sourceValue": "semimonthly",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "gross_pay",
+            "value": "1250.00",
+            "page": 1,
+            "quote": "Gross pay:   $1,250.00",
+            "sourceValue": "1250.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "net_pay",
+            "value": "1054.38",
+            "page": 1,
+            "quote": "Net pay:   $1,054.38",
+            "sourceValue": "1054.38",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "ytd_gross",
+            "value": "22500.00",
+            "page": 1,
+            "quote": "Year-to-date gross:   $22,500.00",
+            "sourceValue": "22500.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          }
+        ],
+        "analysisState": "complete",
+        "warnings": [
+          "Local label parser selected. It supports explicit English labels only; it does not establish document authenticity."
+        ]
+      },
+      "pageCount": 1,
+      "readablePages": 1,
+      "expectedFieldChecks": [
+        {
+          "field": "gross_pay",
+          "expected": "1250.00",
+          "actual": "1250.00",
+          "matches": true
+        },
+        {
+          "field": "net_pay",
+          "expected": "1054.38",
+          "actual": "1054.38",
+          "matches": true
+        },
+        {
+          "field": "ytd_gross",
+          "expected": "22500.00",
+          "actual": "22500.00",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "file": "02_JuniperMarket_Pay_2026-09-30.pdf",
+      "documentId": "5f646c44-d68a-4b28-aa8e-7e5e4cf113a3",
+      "classification": {
+        "label": "pay_statement",
+        "topLabel": "pay_statement",
+        "score": 0.5277184170613888,
+        "scores": [
+          0.29102226679034193,
+          0.18125931614826926,
+          0.5277184170613888
+        ],
+        "reason": "model_suggestion",
+        "tokenCount": 98,
+        "experimental": true,
+        "modelId": "benefitstep-public-text-classifier-v0.1",
+        "scoresAreCalibrated": false,
+        "labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "threshold": 0.5,
+        "status": "scored"
+      },
+      "extraction": {
+        "kind": "paystub",
+        "method": "Automatic local text reader (not AI)",
+        "fields": [
+          {
+            "key": "issuer",
+            "value": "Juniper Market",
+            "page": 1,
+            "quote": "Employer:   Juniper Market",
+            "sourceValue": "Juniper Market",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "person",
+            "value": "Jordan Rivera",
+            "page": 1,
+            "quote": "Employee:   Jordan Rivera",
+            "sourceValue": "Jordan Rivera",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_start",
+            "value": "2026-09-16",
+            "page": 1,
+            "quote": "Period start:   2026-09-16",
+            "sourceValue": "2026-09-16",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_end",
+            "value": "2026-09-30",
+            "page": 1,
+            "quote": "Period end:   2026-09-30",
+            "sourceValue": "2026-09-30",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "pay_date",
+            "value": "2026-09-30",
+            "page": 1,
+            "quote": "Pay date:   2026-09-30",
+            "sourceValue": "2026-09-30",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "pay_frequency",
+            "value": "semimonthly",
+            "page": 1,
+            "quote": "Pay frequency:   semimonthly",
+            "sourceValue": "semimonthly",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "gross_pay",
+            "value": "1300.00",
+            "page": 1,
+            "quote": "Gross pay:   $1,300.00",
+            "sourceValue": "1300.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "net_pay",
+            "value": "1096.55",
+            "page": 1,
+            "quote": "Net pay:   $1,096.55",
+            "sourceValue": "1096.55",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "ytd_gross",
+            "value": "23800.00",
+            "page": 1,
+            "quote": "Year-to-date gross:   $23,800.00",
+            "sourceValue": "23800.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          }
+        ],
+        "analysisState": "complete",
+        "warnings": [
+          "Local label parser selected. It supports explicit English labels only; it does not establish document authenticity."
+        ]
+      },
+      "pageCount": 1,
+      "readablePages": 1,
+      "expectedFieldChecks": [
+        {
+          "field": "gross_pay",
+          "expected": "1300.00",
+          "actual": "1300.00",
+          "matches": true
+        },
+        {
+          "field": "net_pay",
+          "expected": "1096.55",
+          "actual": "1096.55",
+          "matches": true
+        },
+        {
+          "field": "ytd_gross",
+          "expected": "23800.00",
+          "actual": "23800.00",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "file": "03_WillowCourt_Lease.pdf",
+      "documentId": "3840cd1f-4a9a-4747-a92d-a20c1c3c32c1",
+      "classification": {
+        "label": "unknown",
+        "topLabel": "pay_statement",
+        "score": 0.3969942571880581,
+        "scores": [
+          0.3762217246012205,
+          0.22678401821072142,
+          0.3969942571880581
+        ],
+        "reason": "below_threshold",
+        "tokenCount": 248,
+        "experimental": true,
+        "modelId": "benefitstep-public-text-classifier-v0.1",
+        "scoresAreCalibrated": false,
+        "labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "threshold": 0.5,
+        "status": "scored"
+      },
+      "extraction": {
+        "kind": "rent",
+        "method": "Automatic local text reader (not AI)",
+        "fields": [
+          {
+            "key": "issuer",
+            "value": "Willow Court Homes",
+            "page": 1,
+            "quote": "Landlord:   Willow Court Homes",
+            "sourceValue": "Willow Court Homes",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "person",
+            "value": "Jordan Rivera",
+            "page": 1,
+            "quote": "Tenant:   Jordan Rivera",
+            "sourceValue": "Jordan Rivera",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_start",
+            "value": "2026-09-01",
+            "page": 1,
+            "quote": "Lease start:   2026-09-01",
+            "sourceValue": "2026-09-01",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_end",
+            "value": "2027-08-31",
+            "page": 1,
+            "quote": "Lease end:   2027-08-31",
+            "sourceValue": "2027-08-31",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "rent_amount",
+            "value": "1400.00",
+            "page": 1,
+            "quote": "Monthly rent:   $1,400.00",
+            "sourceValue": "1400.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          }
+        ],
+        "analysisState": "complete",
+        "warnings": [
+          "Local label parser selected. It supports explicit English labels only; it does not establish document authenticity."
+        ]
+      },
+      "pageCount": 2,
+      "readablePages": 2,
+      "expectedFieldChecks": [
+        {
+          "field": "rent_amount",
+          "expected": "1400.00",
+          "actual": "1400.00",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "file": "04_WillowCourt_Rent_2026-09.pdf",
+      "documentId": "4eca2bca-459e-47a0-81fa-38359805dd72",
+      "classification": {
+        "label": "unknown",
+        "topLabel": "pay_statement",
+        "score": 0.4203905720470587,
+        "scores": [
+          0.4006910802168506,
+          0.17891834773609067,
+          0.4203905720470587
+        ],
+        "reason": "below_threshold",
+        "tokenCount": 76,
+        "experimental": true,
+        "modelId": "benefitstep-public-text-classifier-v0.1",
+        "scoresAreCalibrated": false,
+        "labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "threshold": 0.5,
+        "status": "scored"
+      },
+      "extraction": {
+        "kind": "rent",
+        "method": "Automatic local text reader (not AI)",
+        "fields": [
+          {
+            "key": "person",
+            "value": "Jordan Rivera",
+            "page": 1,
+            "quote": "Tenant:   Jordan Rivera",
+            "sourceValue": "Jordan Rivera",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "issuer",
+            "value": "Willow Court Homes",
+            "page": 1,
+            "quote": "Landlord:   Willow Court Homes",
+            "sourceValue": "Willow Court Homes",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "document_date",
+            "value": "2026-09-03",
+            "page": 1,
+            "quote": "Receipt date:   2026-09-03",
+            "sourceValue": "2026-09-03",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_start",
+            "value": "2026-09-01",
+            "page": 1,
+            "quote": "Period start:   2026-09-01",
+            "sourceValue": "2026-09-01",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_end",
+            "value": "2026-09-30",
+            "page": 1,
+            "quote": "Period end:   2026-09-30",
+            "sourceValue": "2026-09-30",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "rent_amount",
+            "value": "1400.00",
+            "page": 1,
+            "quote": "Monthly rent:   $1,400.00",
+            "sourceValue": "1400.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "amount_paid",
+            "value": "1400.00",
+            "page": 1,
+            "quote": "Amount paid:   $1,400.00",
+            "sourceValue": "1400.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "expense_frequency",
+            "value": "monthly",
+            "page": 1,
+            "quote": "Expense frequency:   monthly",
+            "sourceValue": "monthly",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          }
+        ],
+        "analysisState": "complete",
+        "warnings": [
+          "Local label parser selected. It supports explicit English labels only; it does not establish document authenticity."
+        ]
+      },
+      "pageCount": 1,
+      "readablePages": 1,
+      "expectedFieldChecks": [
+        {
+          "field": "rent_amount",
+          "expected": "1400.00",
+          "actual": "1400.00",
+          "matches": true
+        },
+        {
+          "field": "amount_paid",
+          "expected": "1400.00",
+          "actual": "1400.00",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "file": "05_JuniperEnergy_2026-09.pdf",
+      "documentId": "3310b2b4-fde8-4c7c-9472-329a24355ced",
+      "classification": {
+        "label": "unknown",
+        "topLabel": "invoice_or_receipt",
+        "score": 0.478520863804884,
+        "scores": [
+          0.478520863804884,
+          0.17255707836384312,
+          0.348922057831273
+        ],
+        "reason": "below_threshold",
+        "tokenCount": 85,
+        "experimental": true,
+        "modelId": "benefitstep-public-text-classifier-v0.1",
+        "scoresAreCalibrated": false,
+        "labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "threshold": 0.5,
+        "status": "scored"
+      },
+      "extraction": {
+        "kind": "utility",
+        "method": "Automatic local text reader (not AI)",
+        "fields": [
+          {
+            "key": "person",
+            "value": "Jordan Rivera",
+            "page": 1,
+            "quote": "Customer:   Jordan Rivera",
+            "sourceValue": "Jordan Rivera",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "issuer",
+            "value": "Juniper Energy",
+            "page": 1,
+            "quote": "Utility provider:   Juniper Energy",
+            "sourceValue": "Juniper Energy",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "document_date",
+            "value": "2026-10-01",
+            "page": 1,
+            "quote": "Statement date:   2026-10-01",
+            "sourceValue": "2026-10-01",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_start",
+            "value": "2026-09-01",
+            "page": 1,
+            "quote": "Service start:   2026-09-01",
+            "sourceValue": "2026-09-01",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_end",
+            "value": "2026-09-30",
+            "page": 1,
+            "quote": "Service end:   2026-09-30",
+            "sourceValue": "2026-09-30",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "prior_balance",
+            "value": "800.00",
+            "page": 1,
+            "quote": "Previous balance:   $800.00",
+            "sourceValue": "800.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "current_charges",
+            "value": "140.00",
+            "page": 1,
+            "quote": "Current charges:   $140.00",
+            "sourceValue": "140.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "amount_due",
+            "value": "940.00",
+            "page": 1,
+            "quote": "Total due:   $940.00",
+            "sourceValue": "940.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          }
+        ],
+        "analysisState": "complete",
+        "warnings": [
+          "Local label parser selected. It supports explicit English labels only; it does not establish document authenticity."
+        ]
+      },
+      "pageCount": 1,
+      "readablePages": 1,
+      "expectedFieldChecks": [
+        {
+          "field": "current_charges",
+          "expected": "140.00",
+          "actual": "140.00",
+          "matches": true
+        },
+        {
+          "field": "prior_balance",
+          "expected": "800.00",
+          "actual": "800.00",
+          "matches": true
+        },
+        {
+          "field": "amount_due",
+          "expected": "940.00",
+          "actual": "940.00",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "file": "06_LittleLantern_Care_2026-09.pdf",
+      "documentId": "4072b80b-7d3d-4371-9265-8a2466d886fa",
+      "classification": {
+        "label": "unknown",
+        "topLabel": "invoice_or_receipt",
+        "score": 0.43975864572818707,
+        "scores": [
+          0.43975864572818707,
+          0.167992972876907,
+          0.39224838139490587
+        ],
+        "reason": "below_threshold",
+        "tokenCount": 100,
+        "experimental": true,
+        "modelId": "benefitstep-public-text-classifier-v0.1",
+        "scoresAreCalibrated": false,
+        "labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "threshold": 0.5,
+        "status": "scored"
+      },
+      "extraction": {
+        "kind": "childcare",
+        "method": "Automatic local text reader (not AI)",
+        "fields": [
+          {
+            "key": "person",
+            "value": "Jordan Rivera",
+            "page": 1,
+            "quote": "Person:   Jordan Rivera",
+            "sourceValue": "Jordan Rivera",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "issuer",
+            "value": "Little Lantern Learning",
+            "page": 1,
+            "quote": "Care provider:   Little Lantern Learning",
+            "sourceValue": "Little Lantern Learning",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_start",
+            "value": "2026-09-01",
+            "page": 1,
+            "quote": "Service start:   2026-09-01",
+            "sourceValue": "2026-09-01",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_end",
+            "value": "2026-09-30",
+            "page": 1,
+            "quote": "Service end:   2026-09-30",
+            "sourceValue": "2026-09-30",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "document_date",
+            "value": "2026-09-30",
+            "page": 1,
+            "quote": "Document date:   2026-09-30",
+            "sourceValue": "2026-09-30",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "amount_billed",
+            "value": "300.00",
+            "page": 1,
+            "quote": "Amount billed:   $300.00",
+            "sourceValue": "300.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "amount_paid",
+            "value": "200.00",
+            "page": 1,
+            "quote": "Amount paid:   $200.00",
+            "sourceValue": "200.00",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "expense_frequency",
+            "value": "monthly",
+            "page": 1,
+            "quote": "Expense frequency:   monthly",
+            "sourceValue": "monthly",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          }
+        ],
+        "analysisState": "complete",
+        "warnings": [
+          "Local label parser selected. It supports explicit English labels only; it does not establish document authenticity."
+        ]
+      },
+      "pageCount": 1,
+      "readablePages": 1,
+      "expectedFieldChecks": [
+        {
+          "field": "amount_billed",
+          "expected": "300.00",
+          "actual": "300.00",
+          "matches": true
+        },
+        {
+          "field": "amount_paid",
+          "expected": "200.00",
+          "actual": "200.00",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "file": "07_AlderCommunity_Checking_2026-09.pdf",
+      "documentId": "99b2414c-880a-4ebe-8a2d-a61a4017681f",
+      "classification": {
+        "label": "unknown",
+        "topLabel": "pay_statement",
+        "score": 0.46888419823260347,
+        "scores": [
+          0.3522517113250288,
+          0.17886409044236778,
+          0.46888419823260347
+        ],
+        "reason": "below_threshold",
+        "tokenCount": 105,
+        "experimental": true,
+        "modelId": "benefitstep-public-text-classifier-v0.1",
+        "scoresAreCalibrated": false,
+        "labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "threshold": 0.5,
+        "status": "scored"
+      },
+      "extraction": {
+        "kind": "unknown",
+        "method": "Automatic local text reader (not AI)",
+        "fields": [],
+        "analysisState": "complete",
+        "warnings": [
+          "Local label parser selected. It supports explicit English labels only; it does not establish document authenticity.",
+          "Document type not established. No eligibility facts inferred."
+        ]
+      },
+      "pageCount": 1,
+      "readablePages": 1,
+      "expectedFieldChecks": []
+    },
+    {
+      "file": "08_ValleyCounty_Request_2026-10-02.pdf",
+      "documentId": "ff3c4857-d637-4a23-8f89-094670f5960a",
+      "classification": {
+        "label": "unknown",
+        "topLabel": "pay_statement",
+        "score": 0.43375899048348393,
+        "scores": [
+          0.3771708454150721,
+          0.1890701641014438,
+          0.43375899048348393
+        ],
+        "reason": "below_threshold",
+        "tokenCount": 143,
+        "experimental": true,
+        "modelId": "benefitstep-public-text-classifier-v0.1",
+        "scoresAreCalibrated": false,
+        "labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "threshold": 0.5,
+        "status": "scored"
+      },
+      "extraction": {
+        "kind": "county_request",
+        "method": "Automatic local text reader (not AI)",
+        "fields": [
+          {
+            "key": "person",
+            "value": "Jordan Rivera",
+            "page": 1,
+            "quote": "Person:   Jordan Rivera",
+            "sourceValue": "Jordan Rivera",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "issuer",
+            "value": "Valley County Services",
+            "page": 1,
+            "quote": "Issuer:   Valley County Services",
+            "sourceValue": "Valley County Services",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "program_stated",
+            "value": "CalFresh",
+            "page": 1,
+            "quote": "Program:   CalFresh",
+            "sourceValue": "CalFresh",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "document_date",
+            "value": "2026-10-02",
+            "page": 1,
+            "quote": "Document date:   2026-10-02",
+            "sourceValue": "2026-10-02",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "request_item",
+            "value": "Income received during September 2026 and current rent expense",
+            "page": 1,
+            "quote": "Requested evidence:   Income received during September 2026 and current rent expense",
+            "sourceValue": "Income received during September 2026 and current rent expense",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_start",
+            "value": "2026-09-01",
+            "page": 1,
+            "quote": "Period start:   2026-09-01",
+            "sourceValue": "2026-09-01",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "period_end",
+            "value": "2026-09-30",
+            "page": 1,
+            "quote": "Period end:   2026-09-30",
+            "sourceValue": "2026-09-30",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          },
+          {
+            "key": "stated_deadline",
+            "value": "October 16, 2026",
+            "page": 1,
+            "quote": "Response deadline:   October 16, 2026",
+            "sourceValue": "October 16, 2026",
+            "sourceVerified": true,
+            "provenance": "text-quote",
+            "confirmed": false,
+            "conflict": false,
+            "method": "label-baseline"
+          }
+        ],
+        "analysisState": "complete",
+        "warnings": [
+          "Local label parser selected. It supports explicit English labels only; it does not establish document authenticity."
+        ]
+      },
+      "pageCount": 1,
+      "readablePages": 1,
+      "expectedFieldChecks": [
+        {
+          "field": "program_stated",
+          "expected": "CalFresh",
+          "actual": "CalFresh",
+          "matches": true
+        },
+        {
+          "field": "person",
+          "expected": "Jordan Rivera",
+          "actual": "Jordan Rivera",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "file": "09_PhoneScan_JuniperEnergy.pdf",
+      "documentId": "c8a7d33b-8cfc-42ef-82f1-a18a6ecb158b",
+      "classification": {
+        "label": "unknown",
+        "scores": [],
+        "reason": "unreadable_pages",
+        "status": "not_run",
+        "experimental": true
+      },
+      "extraction": {
+        "kind": "unknown",
+        "method": "Needs local image AI",
+        "fields": [],
+        "analysisState": "needs-ai",
+        "warnings": [
+          "This file includes a scanned page or photo.",
+          "Local text reading cannot read these images. Set up local AI and retry the batch."
+        ]
+      },
+      "pageCount": 1,
+      "readablePages": 0
+    }
+  ],
+  "doctorCheck": {
+    "available": true,
+    "wrongAmountFlagged": true,
+    "correctedAmountCleared": true,
+    "sourceGrossOrCurrent": "140.00",
+    "demonstrationCorrection": "940.00",
+    "finding": {
+      "id": "PD08|3310b2b4-fde8-4c7c-9472-329a24355ced|7e0acba6-27c9-44ef-809b-cc1d184bfd56:1|2a46b8ee-1672-4fa8-96d4-5cef86c07c94:1|008ac46e-e065-4843-aabc-37707603df90:1|64c19848-ce99-4769-86e5-366cd79dfd4d:1|62bfdd61-a4c5-4c78-b87c-e4f2c4f4ba13:1|e9c1b922-abcd-4d5a-868f-ddd751e65674:1|1757bb76-ac45-45f6-a44b-07380354afb1:2|fe404efc-af44-4a57-b593-571664f53028:1|",
+      "ruleId": "PD08",
+      "version": "1.0.0",
+      "state": "finding",
+      "title": "Previous balance included in current charges",
+      "detail": "The source shows $140.00 current charges + $800.00 previous balance = $940.00 total due. The prepared current-charge answer uses $940.00.",
+      "action": "Compare the source and correct the current-charge answer.",
+      "inputRevisions": [
+        {
+          "id": "7e0acba6-27c9-44ef-809b-cc1d184bfd56",
+          "revision": 1
+        },
+        {
+          "id": "2a46b8ee-1672-4fa8-96d4-5cef86c07c94",
+          "revision": 1
+        },
+        {
+          "id": "008ac46e-e065-4843-aabc-37707603df90",
+          "revision": 1
+        },
+        {
+          "id": "64c19848-ce99-4769-86e5-366cd79dfd4d",
+          "revision": 1
+        },
+        {
+          "id": "62bfdd61-a4c5-4c78-b87c-e4f2c4f4ba13",
+          "revision": 1
+        },
+        {
+          "id": "e9c1b922-abcd-4d5a-868f-ddd751e65674",
+          "revision": 1
+        },
+        {
+          "id": "1757bb76-ac45-45f6-a44b-07380354afb1",
+          "revision": 2
+        },
+        {
+          "id": "fe404efc-af44-4a57-b593-571664f53028",
+          "revision": 1
+        }
+      ],
+      "sourceIds": [
+        "3310b2b4-fde8-4c7c-9472-329a24355ced"
+      ],
+      "blockedFactIds": [
+        "1757bb76-ac45-45f6-a44b-07380354afb1"
+      ],
+      "applicationId": "abf7ecc1-5826-4537-b056-5fabd92af3ca",
+      "officialApplicationRouteVisible": true,
+      "factId": "1757bb76-ac45-45f6-a44b-07380354afb1",
+      "canExplain": true
+    }
+  },
+  "browser": "Chrome/154.0.8037.95",
+  "remotePageRequests": 0,
+  "modelSha256": "23ac10b26d73520ed85da16afddf3a0b6dae08e61358187f1b527491642b2cee",
+  "scope": "Curated video fixtures, not accuracy evaluation; local label reader used for field extraction."
+}

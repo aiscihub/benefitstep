@@ -1,0 +1,6 @@
+{
+  "provenance": "Publisher annotation reference copied from public source; NOT predicted or extracted by BenefitStep",
+  "source": "fieldbench",
+  "fields": [],
+  "note": "Keep original strings and number/date/currency formats. No conversion to USD or benefit eligibility facts. FieldBench structured reference labels were not downloaded, so no reference fields are invented."
+}

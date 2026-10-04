@@ -1,0 +1,7021 @@
+{
+  "version": "1.0.0",
+  "authoredOn": "2026-10-03",
+  "provenance": "AI-authored synthetic QA scenarios, informed by the existing rule/evidence map and implementation review; not collected applicant cases or independent human validation.",
+  "scope": "Doctor and state logic after extraction. No PDF reading, OCR, classifier accuracy, policy eligibility, browser integration, or real applicant success evaluation.",
+  "expectations": "Authored before first execution. Future cases have no pass result. Valid means no finding from the targeted narrow check, not document correctness or applicant eligibility.",
+  "cases": [
+    {
+      "id": "PD01-01",
+      "ruleId": "PD01",
+      "title": "Unreadable rent amount remains unresolved",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {}
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": [
+            "needs_context"
+          ],
+          "key": "rent_amount"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-02",
+      "ruleId": "PD01",
+      "title": "Explicit zero rent is a value",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {
+            "rent_amount": "0.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": [],
+          "key": "rent_amount"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-03",
+      "ruleId": "PD01",
+      "title": "Two extracted rent amounts conflict",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {
+            "rent_amount": "700.00"
+          },
+          "conflicts": [
+            "rent_amount"
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": [
+            "finding"
+          ],
+          "key": "rent_amount"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-04",
+      "ruleId": "PD01",
+      "title": "Failed reader reports source needing help",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {},
+          "analysisState": "failed"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-05",
+      "ruleId": "PD01",
+      "title": "Partial reader retains source warning",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {
+            "rent_amount": "700.00"
+          },
+          "analysisState": "partial"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-06",
+      "ruleId": "PD01",
+      "title": "Moving unreadable source to History removes active warning",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {}
+        },
+        {
+          "op": "history",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-07",
+      "ruleId": "PD01",
+      "title": "Deferring missing amount does not invent zero",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {}
+        },
+        {
+          "op": "defer",
+          "id": "a",
+          "key": "rent_amount"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": [],
+          "key": "rent_amount"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-08",
+      "ruleId": "PD01",
+      "title": "Manual correction can be confirmed",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {}
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "rent_amount",
+          "value": "700"
+        },
+        {
+          "op": "confirm"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": []
+        },
+        {
+          "query": "fact",
+          "expected": true,
+          "id": "a",
+          "key": "rent_amount",
+          "property": "usable"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-09",
+      "ruleId": "PD01",
+      "title": "Batch confirmation leaves unreadable answer unconfirmed",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": [
+            "needs_context"
+          ],
+          "key": "rent_amount"
+        },
+        {
+          "query": "fact",
+          "expected": false,
+          "id": "a",
+          "key": "rent_amount",
+          "property": "usable"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-10",
+      "ruleId": "PD01",
+      "title": "UI correction resolves conflict with explicit review",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {
+            "rent_amount": "700.00"
+          },
+          "conflicts": [
+            "rent_amount"
+          ]
+        },
+        {
+          "op": "uiCorrect",
+          "id": "a",
+          "key": "rent_amount",
+          "value": "700"
+        },
+        {
+          "op": "confirm"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": []
+        },
+        {
+          "query": "fact",
+          "expected": true,
+          "id": "a",
+          "key": "rent_amount",
+          "property": "usable"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-11",
+      "ruleId": "PD01",
+      "title": "One missing field does not produce warning on readable rent",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "rent",
+          "values": {
+            "rent_amount": "700.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "medical",
+          "values": {}
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": [],
+          "document": "a"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD01-12",
+      "ruleId": "PD01",
+      "title": "Deleting failed source removes active warning",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {},
+          "analysisState": "failed"
+        },
+        {
+          "op": "remove",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD01",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "R02",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD03-01",
+      "ruleId": "PD03",
+      "title": "Renamed identical bytes excluded",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same",
+          "filename": "renamed.pdf"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD03",
+          "expected": [
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-02",
+      "ruleId": "PD03",
+      "title": "Same filename with different bytes retained",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "filename": "pay.pdf"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "filename": "pay.pdf"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD03",
+          "expected": []
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-03",
+      "ruleId": "PD03",
+      "title": "Equal payment amounts with distinct bytes retained",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD03",
+          "expected": []
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-04",
+      "ruleId": "PD03",
+      "title": "Different scan of same apparent payment not byte duplicate",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "filename": "scan.pdf"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD03",
+          "expected": []
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-05",
+      "ruleId": "PD03",
+      "title": "Three copies result in two exclusions",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "c",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD03",
+          "expected": [
+            "clear",
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-06",
+      "ruleId": "PD03",
+      "title": "Zero pay is not itself a duplicate signal",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "0.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "0.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD03",
+          "expected": []
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-07",
+      "ruleId": "PD03",
+      "title": "Duplicate creates no second set of facts",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        }
+      ],
+      "checks": [
+        {
+          "query": "factCount",
+          "expected": 0,
+          "document": "b"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-08",
+      "ruleId": "PD03",
+      "title": "Removing duplicate preserves canonical record",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "remove",
+          "id": "b"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD03",
+          "expected": []
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-09",
+      "ruleId": "PD03",
+      "title": "Removing canonical source must not claim orphan duplicate safely excluded",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "remove",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "orphanDuplicateClearCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-10",
+      "ruleId": "PD03",
+      "title": "Reimport reconnects remaining duplicate",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "remove",
+          "id": "a"
+        },
+        {
+          "op": "document",
+          "id": "c",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        }
+      ],
+      "checks": [
+        {
+          "query": "orphanDuplicateClearCount",
+          "expected": 0
+        },
+        {
+          "query": "docProperty",
+          "expected": "c",
+          "id": "b",
+          "property": "duplicateOf"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-11",
+      "ruleId": "PD03",
+      "title": "Deleting all copies removes duplicate facts and sources",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "deleteAll",
+          "id": "b"
+        }
+      ],
+      "checks": [
+        {
+          "query": "docCount",
+          "expected": 0
+        },
+        {
+          "query": "factCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD03-12",
+      "ruleId": "PD03",
+      "title": "Confirming a duplicate batch counts gross once",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "hash": "same"
+        },
+        {
+          "op": "confirm"
+        }
+      ],
+      "checks": [
+        {
+          "query": "usableCount",
+          "expected": 1,
+          "key": "gross_pay"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD04-01",
+      "ruleId": "PD04",
+      "title": "Net entered as gross is flagged",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1000"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-02",
+      "ruleId": "PD04",
+      "title": "YTD entered as current gross is flagged",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "15000"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-03",
+      "ruleId": "PD04",
+      "title": "Correct gross retained",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-04",
+      "ruleId": "PD04",
+      "title": "Equal net and gross creates no basis mismatch",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1250.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-05",
+      "ruleId": "PD04",
+      "title": "First payment YTD equals gross creates no mismatch",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "1250.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-06",
+      "ruleId": "PD04",
+      "title": "Absent source gross cannot establish basis mismatch",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1000"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-07",
+      "ruleId": "PD04",
+      "title": "Absent net and YTD cannot establish basis mismatch",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1000"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-08",
+      "ruleId": "PD04",
+      "title": "Arbitrary correction is outside narrow net/YTD rule",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1400"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-09",
+      "ruleId": "PD04",
+      "title": "Historical wrong basis is excluded from active review",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1000"
+        },
+        {
+          "op": "history",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-10",
+      "ruleId": "PD04",
+      "title": "Correction back to source gross clears mismatch",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1000"
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1250"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-11",
+      "ruleId": "PD04",
+      "title": "Wrong gross cannot be confirmed while net remains usable",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1000"
+        },
+        {
+          "op": "confirm"
+        }
+      ],
+      "checks": [
+        {
+          "query": "fact",
+          "expected": false,
+          "id": "a",
+          "key": "gross_pay",
+          "property": "usable"
+        },
+        {
+          "query": "fact",
+          "expected": true,
+          "id": "a",
+          "key": "net_pay",
+          "property": "usable"
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD04-12",
+      "ruleId": "PD04",
+      "title": "Conflicting source gross cannot establish reliable mismatch",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "conflicts": [
+            "gross_pay"
+          ]
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1000"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD04",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U05",
+        "F02",
+        "P03"
+      ]
+    },
+    {
+      "id": "PD05-01",
+      "ruleId": "PD05",
+      "title": "Exact requested dates covered",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-02",
+      "ruleId": "PD05",
+      "title": "Broader record covers narrower request",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-03",
+          "periodEnd": "2026-09-10",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-03",
+      "ruleId": "PD05",
+      "title": "Half-month record cannot cover full-month request",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-04",
+      "ruleId": "PD05",
+      "title": "Prior month is disjoint",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-05",
+      "ruleId": "PD05",
+      "title": "Next month is disjoint",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-06",
+      "ruleId": "PD05",
+      "title": "Shared boundary day still partial coverage",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-15",
+          "periodEnd": "2026-09-30",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-07",
+      "ruleId": "PD05",
+      "title": "Single day at period end is covered",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-15",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-08",
+      "ruleId": "PD05",
+      "title": "Unconfirmed record cannot positively match",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-09",
+      "ruleId": "PD05",
+      "title": "Unknown request end date cannot positively match",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-10",
+      "ruleId": "PD05",
+      "title": "Historical source must be restored before match",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "history",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-11",
+      "ruleId": "PD05",
+      "title": "Restored and reconfirmed source matches again",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "history",
+          "id": "a"
+        },
+        {
+          "op": "history",
+          "id": "a"
+        },
+        {
+          "op": "confirm"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD05-12",
+      "ruleId": "PD05",
+      "title": "Removed linked source produces context request",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "remove",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "U04",
+        "P03",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-01",
+      "ruleId": "PD06",
+      "title": "Different person is out of scope",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Sam Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-02",
+      "ruleId": "PD06",
+      "title": "Medi-Cal request cannot match CalFresh selection",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "Medi-Cal",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-03",
+      "ruleId": "PD06",
+      "title": "Same program and person match",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-04",
+      "ruleId": "PD06",
+      "title": "Unknown person needs context instead of scope accusation",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": []
+        },
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-05",
+      "ruleId": "PD06",
+      "title": "Unknown date meaning needs context",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": []
+        },
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-06",
+      "ruleId": "PD06",
+      "title": "Earned versus received dates are not interchangeable",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "received",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": []
+        },
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-07",
+      "ruleId": "PD06",
+      "title": "Income versus service dates are not interchangeable",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "service",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": []
+        },
+        {
+          "query": "ruleStates",
+          "rule": "PD05",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-08",
+      "ruleId": "PD06",
+      "title": "Unconfirmed wrong person is unresolved rather than established mismatch",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Sam Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-09",
+      "ruleId": "PD06",
+      "title": "Correcting request link program resolves program mismatch",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "Medi-Cal",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "Medi-Cal",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-10",
+      "ruleId": "PD06",
+      "title": "Person correction requires review before comparison",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "person",
+          "value": "Sam Demo"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-11",
+      "ruleId": "PD06",
+      "title": "Confirmed changed person triggers scope mismatch",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "person",
+          "value": "Sam Demo"
+        },
+        {
+          "op": "confirm"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD06-12",
+      "ruleId": "PD06",
+      "title": "Request from different application cannot match",
+      "caseType": "wrong_scope",
+      "inputMode": "robustness_fixture_mutation",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "fixtureEventPatch",
+          "alias": "req",
+          "values": {
+            "applicationId": "another-application"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD06",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD07-01",
+      "ruleId": "PD07",
+      "title": "Same full payment context with conflicting gross",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-02",
+      "ruleId": "PD07",
+      "title": "Same context with equal gross is not conflict",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-03",
+      "ruleId": "PD07",
+      "title": "Different employer preserves separate income",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Second Employer",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-04",
+      "ruleId": "PD07",
+      "title": "Different person preserves separate income",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Sam Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-05",
+      "ruleId": "PD07",
+      "title": "Different period start is not exact context",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-02",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-06",
+      "ruleId": "PD07",
+      "title": "Different period end is not exact context",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-16",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-07",
+      "ruleId": "PD07",
+      "title": "Different pay date is not exact context",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-19",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-08",
+      "ruleId": "PD07",
+      "title": "Missing issuer prevents comparison",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": null,
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-09",
+      "ruleId": "PD07",
+      "title": "Deferred gross is excluded from comparison",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "defer",
+          "id": "b",
+          "key": "gross_pay"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-10",
+      "ruleId": "PD07",
+      "title": "Superseded paystub removed from active comparison",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "history",
+          "id": "b"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-11",
+      "ruleId": "PD07",
+      "title": "Corrected gross resolves cross-document conflict",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "b",
+          "key": "gross_pay",
+          "value": "1250"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD07-12",
+      "ruleId": "PD07",
+      "title": "Internally conflicting extracted gross must not be treated as established cross-record contradiction",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1300.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          },
+          "conflicts": [
+            "gross_pay"
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD07",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD08-01",
+      "ruleId": "PD08",
+      "title": "Total with arrears entered as current",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "prior_balance": "800.00",
+            "amount_due": "940.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "current_charges",
+          "value": "940"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-02",
+      "ruleId": "PD08",
+      "title": "Correct current charges kept distinct",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "prior_balance": "800.00",
+            "amount_due": "940.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-03",
+      "ruleId": "PD08",
+      "title": "Large current bill with no arrears is valid",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "940.00",
+            "prior_balance": "0.00",
+            "amount_due": "940.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-04",
+      "ruleId": "PD08",
+      "title": "Unexplained arithmetic prompts context",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "prior_balance": "800.00",
+            "amount_due": "900.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "current_charges",
+          "value": "900"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-05",
+      "ruleId": "PD08",
+      "title": "Missing previous balance is not zero",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "amount_due": "940.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "current_charges",
+          "value": "940"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-06",
+      "ruleId": "PD08",
+      "title": "Missing total prevents comparison",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "prior_balance": "800.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-07",
+      "ruleId": "PD08",
+      "title": "Missing current charges prevents comparison",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "prior_balance": "800.00",
+            "amount_due": "940.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-08",
+      "ruleId": "PD08",
+      "title": "Deferred prepared amount needs context",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "prior_balance": "800.00",
+            "amount_due": "940.00"
+          }
+        },
+        {
+          "op": "defer",
+          "id": "a",
+          "key": "current_charges"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-09",
+      "ruleId": "PD08",
+      "title": "Negative prior credit is outside positive arrears rule",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "prior_balance": "-20.00",
+            "amount_due": "120.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "current_charges",
+          "value": "120"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "clear"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-10",
+      "ruleId": "PD08",
+      "title": "Zero current charges with old balance still detects misuse",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "0.00",
+            "prior_balance": "800.00",
+            "amount_due": "800.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "current_charges",
+          "value": "800"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-11",
+      "ruleId": "PD08",
+      "title": "Cent values reconcile exactly",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "0.10",
+            "prior_balance": "0.20",
+            "amount_due": "0.30"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "current_charges",
+          "value": "0.30"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD08-12",
+      "ruleId": "PD08",
+      "title": "Explaining a bill comparison does not confirm answer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "prior_balance": "800.00",
+            "amount_due": "940.00"
+          }
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "current_charges",
+          "value": "940"
+        },
+        {
+          "op": "explain",
+          "rule": "PD08"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD08",
+          "expected": [],
+          "active": true
+        },
+        {
+          "query": "fact",
+          "expected": false,
+          "id": "a",
+          "key": "current_charges",
+          "property": "usable"
+        }
+      ],
+      "sourceIds": [
+        "B01"
+      ]
+    },
+    {
+      "id": "PD12-01",
+      "ruleId": "PD12",
+      "title": "Confirmed request initially outstanding",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-02",
+      "ruleId": "PD12",
+      "title": "Local evidence import is not agency response",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "extra",
+          "kind": "rent",
+          "values": {
+            "rent_amount": "700"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-03",
+      "ruleId": "PD12",
+      "title": "Matching linked upload receipt closes reminder",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "upload",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "upload",
+          "program": "CalFresh",
+          "details": "Files received",
+          "request": "req"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-04",
+      "ruleId": "PD12",
+      "title": "Unlinked upload receipt does not close request",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "upload",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "upload",
+          "program": "CalFresh",
+          "details": "Files received"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-05",
+      "ruleId": "PD12",
+      "title": "Application receipt is not requested evidence response",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "receipt",
+          "kind": "application_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "application_receipt",
+          "sourceId": "receipt",
+          "program": "CalFresh",
+          "details": "Application received"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-06",
+      "ruleId": "PD12",
+      "title": "Self-reported application submission is not response",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "event",
+          "kind": "user_reported_submission",
+          "program": "CalFresh",
+          "details": "I submitted"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-07",
+      "ruleId": "PD12",
+      "title": "Other program unlinked receipt leaves request open",
+      "caseType": "wrong_scope",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "upload",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "upload",
+          "program": "Medi-Cal",
+          "details": "Files received"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-08",
+      "ruleId": "PD12",
+      "title": "Deleting response source and all copies reopens reminder",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "upload",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "upload",
+          "program": "CalFresh",
+          "details": "Files received",
+          "request": "req"
+        },
+        {
+          "op": "deleteAll",
+          "id": "upload"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-09",
+      "ruleId": "PD12",
+      "title": "Deleting request source removes dependent reminder",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "deleteAll",
+          "id": "request"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-10",
+      "ruleId": "PD12",
+      "title": "Two requests with one receipt leave one outstanding",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "upload",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "upload",
+          "program": "CalFresh",
+          "details": "Files received",
+          "request": "req"
+        },
+        {
+          "op": "event",
+          "alias": "req2",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "details": "Provide a second record"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-11",
+      "ruleId": "PD12",
+      "title": "Historical local evidence alone leaves request open",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "history",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD12-12",
+      "ruleId": "PD12",
+      "title": "Receipt from another application must not close current request",
+      "caseType": "wrong_scope",
+      "inputMode": "robustness_fixture_mutation",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "CalFresh",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "upload",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "upload",
+          "program": "CalFresh",
+          "details": "Files received",
+          "request": "req",
+          "alias": "response"
+        },
+        {
+          "op": "fixtureEventPatch",
+          "alias": "response",
+          "values": {
+            "applicationId": "another-application"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD12",
+          "expected": [
+            "finding"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "U03",
+        "R01",
+        "R02",
+        "P01",
+        "F04"
+      ]
+    },
+    {
+      "id": "PD24-01",
+      "ruleId": "PD24",
+      "title": "Unrecognized reader kind prompts review",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {}
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-02",
+      "ruleId": "PD24",
+      "title": "Recognized paystub has no unknown-type warning",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-03",
+      "ruleId": "PD24",
+      "title": "Recognized utility has no unknown-type warning",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "utility",
+          "values": {
+            "current_charges": "140.00",
+            "prior_balance": "800.00",
+            "amount_due": "940.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-04",
+      "ruleId": "PD24",
+      "title": "Recognized receipt has no unknown-type warning",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "upload_receipt",
+          "values": {}
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-05",
+      "ruleId": "PD24",
+      "title": "Unknown source with readable amount remains unknown type",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {
+            "gross_pay": "100.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-06",
+      "ruleId": "PD24",
+      "title": "Failed analysis still retains unknown-type warning",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {},
+          "analysisState": "failed"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-07",
+      "ruleId": "PD24",
+      "title": "Historical unknown source is not active warning",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {}
+        },
+        {
+          "op": "history",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-08",
+      "ruleId": "PD24",
+      "title": "Restoring unknown source restores warning",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {}
+        },
+        {
+          "op": "history",
+          "id": "a"
+        },
+        {
+          "op": "history",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-09",
+      "ruleId": "PD24",
+      "title": "Deleting unknown source removes warning",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {}
+        },
+        {
+          "op": "remove",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-10",
+      "ruleId": "PD24",
+      "title": "Duplicate unknown source gives one type warning",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {},
+          "hash": "same"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "unknown",
+          "values": {},
+          "hash": "same"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-11",
+      "ruleId": "PD24",
+      "title": "Confirming known facts does not assert document type",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {
+            "gross_pay": "100.00"
+          }
+        },
+        {
+          "op": "confirm"
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": [
+            "needs_context"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD24-12",
+      "ruleId": "PD24",
+      "title": "Rereading source as supported type clears type warning",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "unknown",
+          "values": {}
+        },
+        {
+          "op": "remove",
+          "id": "a"
+        },
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "ruleStates",
+          "rule": "PD24",
+          "expected": []
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "F03"
+      ]
+    },
+    {
+      "id": "PD22-01",
+      "ruleId": "PD22",
+      "title": "Unchanged prepared snapshot is current",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": true,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-02",
+      "ruleId": "PD22",
+      "title": "Changed gross invalidates transfer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1300"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": false,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-03",
+      "ruleId": "PD22",
+      "title": "Equivalent normalized value leaves snapshot current",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1250"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": true,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-04",
+      "ruleId": "PD22",
+      "title": "Person correction invalidates attribution and transfer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "person",
+          "value": "Sam Demo"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": false,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-05",
+      "ruleId": "PD22",
+      "title": "New source invalidates prepared transfer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "document",
+          "id": "b",
+          "kind": "rent",
+          "values": {
+            "rent_amount": "700"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": false,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-06",
+      "ruleId": "PD22",
+      "title": "Source removal invalidates prepared transfer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "remove",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": false,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-07",
+      "ruleId": "PD22",
+      "title": "Move to History invalidates prepared transfer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "history",
+          "id": "a"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": false,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-08",
+      "ruleId": "PD22",
+      "title": "New event invalidates prepared transfer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "event",
+          "kind": "user_reported_submission",
+          "program": "CalFresh",
+          "details": "I submitted"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": false,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-09",
+      "ruleId": "PD22",
+      "title": "Read-only Doctor run leaves snapshot current",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "doctor"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": true,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-10",
+      "ruleId": "PD22",
+      "title": "Deferring answer invalidates prepared transfer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "defer",
+          "id": "a",
+          "key": "gross_pay"
+        }
+      ],
+      "checks": [
+        {
+          "query": "transferCurrent",
+          "expected": false,
+          "alias": "before"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-11",
+      "ruleId": "PD22",
+      "title": "Old snapshot preserves old value after correction",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "transfer",
+          "alias": "before"
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1300"
+        }
+      ],
+      "checks": [
+        {
+          "query": "snapshotFact",
+          "expected": "1250.00",
+          "alias": "before",
+          "key": "gross_pay"
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD22-12",
+      "ruleId": "PD22",
+      "title": "Stale confirm click is rejected",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "captureRevision",
+          "alias": "old"
+        },
+        {
+          "op": "edit",
+          "id": "a",
+          "key": "gross_pay",
+          "value": "1300"
+        },
+        {
+          "op": "confirm",
+          "revision": "old",
+          "expectThrow": true
+        }
+      ],
+      "checks": [
+        {
+          "query": "snapshotCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": []
+    },
+    {
+      "id": "PD23-01",
+      "ruleId": "PD23",
+      "title": "Upload receipt cannot be relabeled application receipt",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "receipt",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "application_receipt",
+          "sourceId": "receipt",
+          "program": "CalFresh",
+          "details": "Source reviewed",
+          "expectThrow": true
+        }
+      ],
+      "checks": [
+        {
+          "query": "eventCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-02",
+      "ruleId": "PD23",
+      "title": "Application receipt cannot be relabeled upload receipt",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "receipt",
+          "kind": "application_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "receipt",
+          "program": "CalFresh",
+          "details": "Source reviewed",
+          "expectThrow": true
+        }
+      ],
+      "checks": [
+        {
+          "query": "eventCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-03",
+      "ruleId": "PD23",
+      "title": "Application receipt records CalFresh submission",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "receipt",
+          "kind": "application_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "application_receipt",
+          "sourceId": "receipt",
+          "program": "CalFresh",
+          "details": "Source reviewed",
+          "expectThrow": false
+        }
+      ],
+      "checks": [
+        {
+          "query": "submission",
+          "expected": "Submitted \u2014 receipt recorded",
+          "program": "CalFresh"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-04",
+      "ruleId": "PD23",
+      "title": "Upload receipt never records application submission",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "receipt",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "receipt",
+          "program": "CalFresh",
+          "details": "Source reviewed",
+          "expectThrow": false
+        }
+      ],
+      "checks": [
+        {
+          "query": "submission",
+          "expected": "Submission not recorded",
+          "program": "CalFresh"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-05",
+      "ruleId": "PD23",
+      "title": "Self report remains explicitly user reported",
+      "caseType": "valid",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "event",
+          "kind": "user_reported_submission",
+          "program": "CalFresh",
+          "details": "I submitted"
+        }
+      ],
+      "checks": [
+        {
+          "query": "submission",
+          "expected": "Submitted \u2014 reported by you",
+          "program": "CalFresh"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-06",
+      "ruleId": "PD23",
+      "title": "Receipt event without source is rejected",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "event",
+          "kind": "application_receipt",
+          "program": "CalFresh",
+          "details": "Received",
+          "expectThrow": true
+        }
+      ],
+      "checks": [
+        {
+          "query": "eventCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-07",
+      "ruleId": "PD23",
+      "title": "Unsupported program is rejected",
+      "caseType": "wrong_scope",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "event",
+          "kind": "user_reported_submission",
+          "program": "Other",
+          "details": "Submitted",
+          "expectThrow": true
+        }
+      ],
+      "checks": [
+        {
+          "query": "eventCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-08",
+      "ruleId": "PD23",
+      "title": "Medi-Cal receipt does not submit CalFresh",
+      "caseType": "wrong_scope",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "receipt",
+          "kind": "application_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "application_receipt",
+          "sourceId": "receipt",
+          "program": "Medi-Cal",
+          "details": "Source reviewed",
+          "expectThrow": false
+        }
+      ],
+      "checks": [
+        {
+          "query": "submission",
+          "expected": "Submission not recorded",
+          "program": "CalFresh"
+        },
+        {
+          "query": "submission",
+          "expected": "Submitted \u2014 receipt recorded",
+          "program": "Medi-Cal"
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-09",
+      "ruleId": "PD23",
+      "title": "Wrong-program request link is rejected",
+      "caseType": "wrong_scope",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "a",
+          "kind": "paystub",
+          "values": {
+            "person": "Alex Demo",
+            "issuer": "Fictional Work",
+            "period_start": "2026-09-01",
+            "period_end": "2026-09-15",
+            "pay_date": "2026-09-18",
+            "gross_pay": "1250.00",
+            "net_pay": "1000.00",
+            "ytd_gross": "15000.00"
+          }
+        },
+        {
+          "op": "document",
+          "id": "request",
+          "kind": "county_request",
+          "values": {}
+        },
+        {
+          "op": "confirm"
+        },
+        {
+          "op": "event",
+          "alias": "req",
+          "kind": "evidence_request",
+          "sourceId": "request",
+          "program": "Medi-Cal",
+          "person": "Alex Demo",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-15",
+          "periodBasis": "earned",
+          "details": "Provide the stated income record"
+        },
+        {
+          "op": "link",
+          "request": "req",
+          "documentId": "a",
+          "program": "CalFresh",
+          "recordBasis": "earned"
+        },
+        {
+          "op": "document",
+          "id": "upload",
+          "kind": "upload_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "upload_receipt",
+          "sourceId": "upload",
+          "program": "CalFresh",
+          "details": "Files received",
+          "request": "req",
+          "expectThrow": true
+        }
+      ],
+      "checks": [
+        {
+          "query": "eventCount",
+          "expected": 1
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-10",
+      "ruleId": "PD23",
+      "title": "Invalid receipt date is rejected",
+      "caseType": "issue",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "document",
+          "id": "r",
+          "kind": "application_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "application_receipt",
+          "sourceId": "r",
+          "program": "CalFresh",
+          "details": "Received",
+          "date": "2026-02-30",
+          "expectThrow": true
+        }
+      ],
+      "checks": [
+        {
+          "query": "eventCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-11",
+      "ruleId": "PD23",
+      "title": "Empty event description is rejected",
+      "caseType": "missing_context",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "event",
+          "kind": "user_reported_submission",
+          "program": "CalFresh",
+          "details": " ",
+          "expectThrow": true
+        }
+      ],
+      "checks": [
+        {
+          "query": "eventCount",
+          "expected": 0
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD23-12",
+      "ruleId": "PD23",
+      "title": "Receipt supersedes self-report display without authenticating issuer",
+      "caseType": "lifecycle",
+      "inputMode": "public_state_actions",
+      "status": "executable",
+      "steps": [
+        {
+          "op": "event",
+          "kind": "user_reported_submission",
+          "program": "CalFresh",
+          "details": "I submitted"
+        },
+        {
+          "op": "document",
+          "id": "receipt",
+          "kind": "application_receipt",
+          "values": {}
+        },
+        {
+          "op": "event",
+          "kind": "application_receipt",
+          "sourceId": "receipt",
+          "program": "CalFresh",
+          "details": "Source reviewed",
+          "expectThrow": false
+        }
+      ],
+      "checks": [
+        {
+          "query": "submission",
+          "expected": "Submitted \u2014 receipt recorded",
+          "program": "CalFresh"
+        },
+        {
+          "query": "authenticatedEvents",
+          "expected": 0
+        }
+      ],
+      "sourceIds": [
+        "R01",
+        "P01"
+      ]
+    },
+    {
+      "id": "PD02-F01",
+      "ruleId": "PD02",
+      "title": "Two-page paystub imported without page two",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Request missing page; do not invent its totals.",
+      "sourceIds": [
+        "R01"
+      ]
+    },
+    {
+      "id": "PD02-F02",
+      "ruleId": "PD02",
+      "title": "Complete two-page paystub includes a blank reverse",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not flag a missing page merely because one page is blank.",
+      "sourceIds": [
+        "R01"
+      ]
+    },
+    {
+      "id": "PD09-F01",
+      "ruleId": "PD09",
+      "title": "Rent explicitly includes electricity and household also adds same electricity as extra cost",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Ask whether this is the same included charge.",
+      "sourceIds": []
+    },
+    {
+      "id": "PD09-F02",
+      "ruleId": "PD09",
+      "title": "Separately billed electricity in addition to rent",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Keep both distinct expenses.",
+      "sourceIds": []
+    },
+    {
+      "id": "PD10-F01",
+      "ruleId": "PD10",
+      "title": "Listed expenses exceed income and household has savings",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Ask about context without implying fraud or ineligibility.",
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD10-F02",
+      "ruleId": "PD10",
+      "title": "Expense month differs from income month",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not compare incomparable monthly totals.",
+      "sourceIds": [
+        "P02"
+      ]
+    },
+    {
+      "id": "PD11-F01",
+      "ruleId": "PD11",
+      "title": "Old paystub and later dated employment termination letter",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Ask whether current income changed; preserve historical wages.",
+      "sourceIds": [
+        "U02",
+        "P03",
+        "F02"
+      ]
+    },
+    {
+      "id": "PD11-F02",
+      "ruleId": "PD11",
+      "title": "Two same-employer paystubs without termination evidence",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not infer a job ended.",
+      "sourceIds": [
+        "U02",
+        "P03",
+        "F02"
+      ]
+    },
+    {
+      "id": "PD13-F01",
+      "ruleId": "PD13",
+      "title": "Pay date written 03/04 without locale",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Ask for date interpretation before period matching.",
+      "sourceIds": [
+        "U03",
+        "F02"
+      ]
+    },
+    {
+      "id": "PD13-F02",
+      "ruleId": "PD13",
+      "title": "Employer explicitly states twice monthly",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Preserve semimonthly; do not convert to biweekly.",
+      "sourceIds": [
+        "U03",
+        "F02"
+      ]
+    },
+    {
+      "id": "PD14-F01",
+      "ruleId": "PD14",
+      "title": "Owner enters rent but has no receipt available",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Keep answer and flag supporting evidence gap without blocking official application.",
+      "sourceIds": [
+        "P01",
+        "R01",
+        "R02"
+      ]
+    },
+    {
+      "id": "PD14-F02",
+      "ruleId": "PD14",
+      "title": "A request explicitly names proof due on a stated date",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Surface the actual request separately from a generic suggestion.",
+      "sourceIds": [
+        "P01",
+        "R01",
+        "R02"
+      ]
+    },
+    {
+      "id": "PD15-F01",
+      "ruleId": "PD15",
+      "title": "Suggested proof item has no program name",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Ask which program it belongs to before treating it as required.",
+      "sourceIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "PD15-F02",
+      "ruleId": "PD15",
+      "title": "Suggestion explicitly applies only to Medi-Cal",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not represent it as a CalFresh requirement.",
+      "sourceIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "PD16-F01",
+      "ruleId": "PD16",
+      "title": "Self-employed household uploads revenue and expense receipts",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Keep receipts distinct and request reviewed method context; do not elect deductions.",
+      "sourceIds": [
+        "U01",
+        "R03",
+        "P04"
+      ]
+    },
+    {
+      "id": "PD16-F02",
+      "ruleId": "PD16",
+      "title": "Gross revenue statement without expenses or method",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not silently treat gross receipts as approved net income.",
+      "sourceIds": [
+        "U01",
+        "R03",
+        "P04"
+      ]
+    },
+    {
+      "id": "PD17-F01",
+      "ruleId": "PD17",
+      "title": "Family asks whether a named treatment is covered",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Route to current plan guidance; do not promise coverage.",
+      "sourceIds": [
+        "P05"
+      ]
+    },
+    {
+      "id": "PD17-F02",
+      "ruleId": "PD17",
+      "title": "General medical bill without coverage question",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not infer a coverage dispute.",
+      "sourceIds": [
+        "P05"
+      ]
+    },
+    {
+      "id": "PD18-F01",
+      "ruleId": "PD18",
+      "title": "Notice states denial and provides a dated next action",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Present the source wording and next-action context without deciding appeal merits.",
+      "sourceIds": [
+        "P05",
+        "P06"
+      ]
+    },
+    {
+      "id": "PD18-F02",
+      "ruleId": "PD18",
+      "title": "Upload receipt has no coverage decision wording",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not infer denial or authorization.",
+      "sourceIds": [
+        "P05",
+        "P06"
+      ]
+    },
+    {
+      "id": "PD19-F01",
+      "ruleId": "PD19",
+      "title": "Low-resolution scan has compression artifacts around amount",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not accuse alteration; preserve uncertainty and request clearer source.",
+      "sourceIds": []
+    },
+    {
+      "id": "PD19-F02",
+      "ruleId": "PD19",
+      "title": "Source has a verifiable issuer signature mechanism",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Treat verification as a separate future workflow, not visual authenticity.",
+      "sourceIds": []
+    },
+    {
+      "id": "PD20-F01",
+      "ruleId": "PD20",
+      "title": "Stored policy excerpt has expired effective period",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Identify stale reference before relying on it.",
+      "sourceIds": []
+    },
+    {
+      "id": "PD20-F02",
+      "ruleId": "PD20",
+      "title": "Reference validity has never been checked",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Show verification status unknown rather than claiming currency.",
+      "sourceIds": []
+    },
+    {
+      "id": "PD21-F01",
+      "ruleId": "PD21",
+      "title": "User asks for help with a specific medical condition",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Offer researched referral navigation only after program review.",
+      "sourceIds": [
+        "P07",
+        "P08"
+      ]
+    },
+    {
+      "id": "PD21-F02",
+      "ruleId": "PD21",
+      "title": "No condition or referral request is present",
+      "caseType": "future_design",
+      "inputMode": "narrative_only",
+      "status": "not_implemented",
+      "expectedBehavior": "Do not infer medical status from unrelated documents.",
+      "sourceIds": [
+        "P07",
+        "P08"
+      ]
+    }
+  ]
+}

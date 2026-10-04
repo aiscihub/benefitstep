@@ -1,0 +1,23 @@
+{
+  "modelId": "benefitstep-realistic-text-candidate-v0.2",
+  "browser": "Chrome/154.0.8037.95",
+  "machine": "arm64",
+  "macOS": "26.6.2",
+  "predictionsMatchFrozenPythonResults": 48,
+  "batchSize": 48,
+  "passes": 10,
+  "batchMilliseconds": [
+    3.2000000178813934,
+    2.7999999821186066,
+    2.9000000059604645,
+    2.300000011920929,
+    2.4000000059604645,
+    2.2999999821186066,
+    2.4000000059604645,
+    2.300000011920929,
+    2.2999999821186066,
+    3
+  ],
+  "medianBatchMilliseconds": 2.4000000059604645,
+  "scope": "Warm text classification only. Excludes PDF parsing, OCR, model loading, field extraction and UI. Candidate supplied in memory; deployed extension model unchanged."
+}

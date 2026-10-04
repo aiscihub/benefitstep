@@ -1,0 +1,76 @@
+{
+  "provenance": "Publisher annotation reference copied from public source; NOT predicted or extracted by BenefitStep",
+  "source": "payslips",
+  "fields": [
+    {
+      "field": "PAY_DATE",
+      "value": "06 May 2021",
+      "sourcePage": "3",
+      "wordIndices": [
+        11,
+        12,
+        13
+      ],
+      "sourceSha256": "c09ffb16768a13c3eb378e450320f7d3473da8f6810a8eba195b6799eaccd5ad"
+    },
+    {
+      "field": "BEGIN_PAY_PERIOD",
+      "value": "18 Apr 2021",
+      "sourcePage": "3",
+      "wordIndices": [
+        17,
+        18,
+        19
+      ],
+      "sourceSha256": "c09ffb16768a13c3eb378e450320f7d3473da8f6810a8eba195b6799eaccd5ad"
+    },
+    {
+      "field": "END_PAY_PERIOD",
+      "value": "01 May 2021",
+      "sourcePage": "3",
+      "wordIndices": [
+        21,
+        22,
+        23
+      ],
+      "sourceSha256": "c09ffb16768a13c3eb378e450320f7d3473da8f6810a8eba195b6799eaccd5ad"
+    },
+    {
+      "field": "GROSS_PAY_PER_PERIOD",
+      "value": "4351.86",
+      "sourcePage": "3",
+      "wordIndices": [
+        70
+      ],
+      "sourceSha256": "c09ffb16768a13c3eb378e450320f7d3473da8f6810a8eba195b6799eaccd5ad"
+    },
+    {
+      "field": "GROSS_TAXABLE_PER_PERIOD",
+      "value": "4351.86",
+      "sourcePage": "3",
+      "wordIndices": [
+        73
+      ],
+      "sourceSha256": "c09ffb16768a13c3eb378e450320f7d3473da8f6810a8eba195b6799eaccd5ad"
+    },
+    {
+      "field": "PAYG_TAX_PER_PERIOD",
+      "value": "1136.00",
+      "sourcePage": "3",
+      "wordIndices": [
+        76
+      ],
+      "sourceSha256": "c09ffb16768a13c3eb378e450320f7d3473da8f6810a8eba195b6799eaccd5ad"
+    },
+    {
+      "field": "NET_PAY_PER_PERIOD",
+      "value": "3215.86",
+      "sourcePage": "3",
+      "wordIndices": [
+        79
+      ],
+      "sourceSha256": "c09ffb16768a13c3eb378e450320f7d3473da8f6810a8eba195b6799eaccd5ad"
+    }
+  ],
+  "note": "Keep original strings and number/date/currency formats. No conversion to USD or benefit eligibility facts. FieldBench structured reference labels were not downloaded, so no reference fields are invented."
+}

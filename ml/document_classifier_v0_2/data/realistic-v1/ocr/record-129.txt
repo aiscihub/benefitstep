@@ -1,0 +1,64 @@
+Willowbridge
+Records office • contact@example.Invalld
+Take-home pay calculator • Scenario
+Estimated payroll only. The displayed gross, withholding and net values are hypothetical, not an actual payment
+record.
+Alex Rowan
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+EARNINGS
+Description
+Regular compensation
+Premium / incentive
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Federal withholding
+Social Security
+Medicare
+Reference
+Issue date
+Period
+R-12129
+2026-06-28
+2026-06-01 - 2026-06-28
+Hours
+Rate
+Current
+YTD
+40
+$54.50
+$2,180.00
+$19,620.00
+-
+$75.00
+$675.00
+$2,255.00
+$20,295.00
+Current
+Year to date
+$225.50
+$2,029.50
+$139.81
+$1,258.29
+$32.69
+$294.21
+State / benefit deduction
+$30.45
+$274.05
+$428.45
+$3,856.05
+Total deductions
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$2,255.00
+$428.45
+$1,826.55
+$0.00
+$1,826.55
+Amounts areillustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period
+Income.
+Fictional training specimen - No real person or transaction - Not valld for submission

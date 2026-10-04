@@ -1,0 +1,62 @@
+Copper Hill
+Records office • contact@example.invalid
+Time and earnings reconciliation
+Approved worked hours have been paid in the payroll transaction below. The time ledger is followed by the disbursement detail.
+Drew Harper
+1840 Example Lane, Unit 4
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+R-12048
+2026-09-28
+2026-09-01 -2026-09-28
+EARNINGS
+Description
+Hours
+Rate
+Current
+YTD
+Regular compensation
+52
+$43.75
+$2,275.00
+$20,475.00
+Premium / incentive
+-
+$75.00
+$675.00
+Total gross earnings
+$2,350.00
+$21,150.00
+TAXES AND DEDUCTIONS
+Description
+Current
+Year to date
+Federal withholding
+$235.00
+$2,115.00
+Social Security
+$145.70
+$1,311.30
+Medicare
+$34.07
+$306.63
+State / benefit deduction
+$31.73
+$285-57
+Total deductions
+$446.50
+$4,018.50
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$2,350.00
+$446.50 |
+$1,903.50
+$0.00
+$1,903-50
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+Fictional training specimen - No real person or transaction • Not valid for submission

@@ -1,0 +1,49 @@
+Copper Hill
+
+Records office · contact@example.invalid
+
+Wages and reported tips
+
+Cash tips reported during this period are included in taxable earnings. Noncash employer benefits are not deposited.
+
+Casey Quinn
+
+1840 Example Lane, Unit 2
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12018   2026-07-28   2026-07-01 – 2026-07-28
+
+EARNINGS
+
+Description   Hours   Rate   Current   YTD
+
+Regular compensation   44   $55.50   $2,442.00   $21,978.00
+
+Reported tips   —   —   $75.00   $675.00
+
+Total gross earnings   $2,517.00   $22,653.00
+
+TAXES AND DEDUCTIONS
+
+Description   Current   Year to date
+
+Federal withholding   $251.70   $2,265.30
+
+Social Security   $156.05   $1,404.45
+
+Medicare   $36.49   $328.41
+
+State / benefit deduction   $33.99   $305.91
+
+Total deductions   $478.23   $4,304.07
+
+Gross   Deductions   Net wages   Reimbursement   Deposit amount
+
+$2,517.00   $478.23   $2,038.77   $0.00   $2,038.77
+
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

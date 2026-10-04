@@ -1,0 +1,45 @@
+Alderpoint
+
+Records office · contact@example.invalid
+
+Recibo / Service receipt
+
+Amount received / Importe recibido. Services completed / Servicios prestados. Paid in full / Pagado.
+
+Avery Reed
+
+1840 Example Lane, Unit 2
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12086   2026-07-28   2026-07-01 – 2026-07-28
+
+SERVICE DETAIL
+
+Item   Quantity   Unit amount   Charge
+
+Completed service / Servicio   1   $299.00   $299.00
+
+Administration / service charge   1   $12.00   $12.00
+
+ACCOUNT SUMMARY
+
+Activity   Amount
+
+Balance brought forward   $87.00
+
+New charges this period   $311.00
+
+Payment received   $-311.00
+
+Closing amount due   $87.00
+
+Payment date 2026-07-28 · Method: received electronically
+
+Detach and retain account reference R-12086
+
+Remittance amount __________________
+
+Fictional training specimen · No real person or transaction · Not valid for submission

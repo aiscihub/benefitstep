@@ -1,0 +1,49 @@
+Willowbridge
+
+Records office · contact@example.invalid
+
+Compensation statement
+
+Salary disbursement for the completed service period. Employer benefits are informational and excluded from cash pay.
+
+Jamie Ash
+
+1840 Example Lane, Unit 3
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12007   2026-08-28   2026-08-01 – 2026-08-28
+
+EARNINGS
+
+Description   Hours   Rate   Current   YTD
+
+Regular compensation   48   $45.75   $2,196.00   $19,764.00
+
+Premium / incentive   —   —   $75.00   $675.00
+
+Total gross earnings   $2,271.00   $20,439.00
+
+TAXES AND DEDUCTIONS
+
+Description   Current   Year to date
+
+Federal withholding   $227.10   $2,043.90
+
+Social Security   $140.80   $1,267.20
+
+Medicare   $32.92   $296.28
+
+State / benefit deduction   $30.67   $276.03
+
+Total deductions   $431.49   $3,883.41
+
+Gross   Deductions   Net wages   Reimbursement   Deposit amount
+
+$2,271.00   $431.49   $1,839.51   $0.00   $1,839.51
+
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

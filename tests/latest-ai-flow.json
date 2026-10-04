@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "oneClickDemo": true,
+      "realModelInference": true,
+      "predictions": [
+        {
+          "file": "03-september-pay.pdf",
+          "label": "pay_statement"
+        },
+        {
+          "file": "01-bill-with-previous-balance.pdf",
+          "label": "unknown"
+        },
+        {
+          "file": "05-short-note.txt",
+          "label": "unknown"
+        }
+      ],
+      "separateExtraction": true,
+      "doctorSourceCheck": true,
+      "unknownAbstention": true,
+      "noAutoConfirmation": true,
+      "narrowLayout": true
+    },
+    {
+      "clear": true,
+      "ordinaryBatchImport": true,
+      "filenameIndependent": true,
+      "duplicateExcluded": true,
+      "retry": true,
+      "reimportAfterRemoval": true,
+      "noPersistentStorage": true
+    }
+  ],
+  "remote_page_requests": 0,
+  "runtime_exceptions": 0,
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/154.0.8037.95",
+    "revision": "@05d469856e75794131cc2e5d9b2f6b6f10a70388",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "jsVersion": "15.4.80.19"
+  }
+}

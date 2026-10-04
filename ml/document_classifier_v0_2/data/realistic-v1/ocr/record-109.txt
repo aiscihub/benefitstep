@@ -1,0 +1,25 @@
+Harborstone
+Records office • contact@example.invalid
+Annual earnings and withholding summary
+Annual tax reporting copy. Totals cover the full calendar year and do not identify a current individual wage payment.
+Robin Lane
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+Reforence
+R-12109
+Issue date
+Period
+2026-06-28
+2026-06-01 - 2026-06-28
+Annual reporting box
+Calendar-year amount
+Wages and compensation
+Federal tax withheld
+Social security wages
+Medicare wages
+Employee identifier masked. Annual reporting information only; this is not a current-period check stub.
+$25,800.00
+$2,451.00
+$25,800.00
+$25,800.00
+Fictional training specimen - No real person or transaction - Not valid for submission

@@ -1,0 +1,52 @@
+Copper Hill
+Records office - contact@example.invalid
+Residential energy account
+This bill includes an unpaid prior balance. Usage charges for the current billing period are separate from the total amount due.
+Casey Quinn
+1840 Example Lane, Unit 2
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+R-12050
+2026-07-28
+2026-07-01 -2026-07-28
+SERVICE DETAIL
+Item
+Quantity
+Unit amount
+Charge
+Electricity and gas usage
+$769.00
+$769.00
+Administration / service charge
+1
+$12.00
+$12.00
+ACCOUNT SUMMARY
+Activity
+Amount
+Balance brought forward
+$87.00
+New charges this period
+$781.00
+Payment received
+$-35.00
+Closing amount due
+$833.00
+Meter
+Previous
+Current
+Usage
+Electric
+5120
+5508
+388 kWh
+Gas
+791
+809
+18 therms
+Payment date 2026-07-28 - Method: received electronically
+Detach and retain account reference R-12050|
+Remittance amount
+Fictional training specimen • No real person or transaction : Not valid for submission

@@ -1,0 +1,39 @@
+S Y N T H E T I C   D E M O   /   N O T   VA L I D   E V I D E N C E
+
+Orchard Utility
+
+Billing office · Fictional organization
+
+UTILITY STATEMENT
+
+September 2026 · All people and transactions are fictional
+
+Person: Alex Demo
+
+Issuer: Orchard Utility (fictional)
+
+Period start: 2026-09-01
+
+Period end: 2026-09-30
+
+Current charges: $140.00
+
+Previous balance: $800.00
+
+Total due: $940.00
+
+S TAT E M E N T D E TA I L
+
+Component   Amount
+
+Current service charges   $140.00
+
+Carried balance   $800.00
+
+Total payable   $940.00
+
+The total payable contains an earlier unpaid balance. Current service charges are shown separately.
+
+D E M O C O P Y
+
+Fictional software-testing record. Do not submit to an agency or use as proof.   |   Page 1 of 1

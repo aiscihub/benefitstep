@@ -1,0 +1,45 @@
+Copper   Hill
+
+Records   office   ·   contact@example.invalid
+
+Resident   payment   receipt
+
+Payment   received   and   allocated   to   the   rent   period   below.   The   security   deposit   is   held   separately.
+
+Drew   Harper
+
+1840   Example   Lane,   Unit   4
+
+Sacramento,   CA   95814
+
+Reference   Issue   date   Period
+
+R-12064   2026-09-28   2026-09-01   –   2026-09-28
+
+SERVICE   DETAIL
+
+Item   Quantity   Unit   amount   Charge
+
+Monthly   rent   1   $908.00   $908.00
+
+Administration   /   service   charge   1   $12.00   $12.00
+
+ACCOUNT   SUMMARY
+
+Activity   Amount
+
+Balance   brought   forward   $0.00
+
+New   charges   this   period   $920.00
+
+Payment   received   $-920.00
+
+Closing   amount   due   $0.00
+
+Payment   date   2026-09-28   ·   Method:   received   electronically
+
+Detach   and   retain   account   reference   R-12064
+
+Remittance   amount   __________________
+
+Fictional training specimen · No real person or transaction · Not valid for submission

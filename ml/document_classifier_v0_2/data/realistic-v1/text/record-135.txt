@@ -1,0 +1,30 @@
+Willowbridge
+
+Records office · contact@example.invalid
+
+Account verification letter
+
+The named customer holds an active deposit account. Recent incoming transfers are shown for reference;
+employer gross pay is not certified.
+
+Jamie Ash
+
+1840 Example Lane, Unit 3
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12135   2026-08-28   2026-08-01 – 2026-08-28
+
+Date   Transaction   Money in   Money out   Balance
+
+2026-08-01   Opening balance   $2,500.00
+
+2026-08-28   Employer ACH payroll   $1,664.55   $4,164.55
+
+2026-08-28   Housing transfer   $1,400.00   $2,764.55
+
+Checking •••• 0000. No credit or loan terms apply to this fictional account activity summary.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

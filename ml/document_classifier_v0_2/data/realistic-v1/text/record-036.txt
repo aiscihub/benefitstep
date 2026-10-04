@@ -1,0 +1,50 @@
+Alderpoint
+
+Records office · contact@example.invalid
+
+Deposit notification and wage detail
+
+The payroll transfer has been completed. Current earnings and cumulative totals are displayed separately.
+
+Taylor Brooks
+
+1840 Example Lane, Unit 4
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12036   2026-09-28   2026-09-01 – 2026-09-28
+
+EARNINGS
+
+Description   Hours   Rate   Current   YTD
+
+Regular compensation   52   $55.75   $2,899.00   $26,091.00
+
+Premium / incentive   —   —   $75.00   $675.00
+
+Total gross earnings   $2,974.00   $26,766.00
+
+TAXES AND DEDUCTIONS
+
+Description   Current   Year to date
+
+Federal withholding   $297.40   $2,676.60
+
+Social Security   $184.38   $1,659.42
+
+Medicare   $43.12   $388.08
+
+State / benefit deduction   $40.16   $361.44
+
+Total deductions   $565.06   $5,085.54
+
+Gross   Deductions   Net wages   Reimbursement   Deposit amount
+
+$2,974.00   $565.06   $2,408.94   $0.00   $2,408.94
+
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period
+income.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

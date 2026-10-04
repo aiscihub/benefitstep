@@ -1,0 +1,39 @@
+Harborstone
+Records office• contact@example.invalid
+After-school care • Billing detail
+Attendance charges cover scheduled care days. A payment received after the statement date may appear on the next statement.
+Morgan Ellis
+1840 Example Lane, Unit 3
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+R-12059
+2026-08-28
+2026-08-01 - 2026-08-28
+SERVICE DETAIL
+Item
+Afternoon care sessions
+Administration / service charge
+Quantity
+Unit amount
+Charge
+$530.00
+$12.00
+$530.00
+$12.00
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Amount
+$174.00
+$542.00
+$0.00
+$716.00
+Payment date 2026-08-28 - Method: not yet received
+Detach and retain account reference R-12059
+Remittance amount
+Fictional training specimen - No real person or transaction - Not valld for submission |

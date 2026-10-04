@@ -1,0 +1,49 @@
+Copper Hill
+
+Records office · contact@example.invalid
+
+Earnings advice
+
+Hourly wages posted to payroll. Overtime is shown separately from regular hours.
+
+Casey Quinn
+
+1840 Example Lane, Unit 2
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12002   2026-07-28   2026-07-01 – 2026-07-28
+
+EARNINGS
+
+Description   Hours   Rate   Current   YTD
+
+Regular compensation   44   $41.25   $1,815.00   $16,335.00
+
+Premium / incentive   —   —   $75.00   $675.00
+
+Total gross earnings   $1,890.00   $17,010.00
+
+TAXES AND DEDUCTIONS
+
+Description   Current   Year to date
+
+Federal withholding   $189.00   $1,701.00
+
+Social Security   $117.18   $1,054.62
+
+Medicare   $27.40   $246.60
+
+State / benefit deduction   $25.52   $229.68
+
+Total deductions   $359.10   $3,231.90
+
+Gross   Deductions   Net wages   Reimbursement   Deposit amount
+
+$1,890.00   $359.10   $1,530.90   $0.00   $1,530.90
+
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

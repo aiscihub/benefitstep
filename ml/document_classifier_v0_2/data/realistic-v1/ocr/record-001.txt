@@ -1,0 +1,63 @@
+Willowbridge
+Records office • contact@example.invalid
+Earnings advice
+Hourly wages posted to payroll. Overtime is shown separately from regular hours.
+Alex Rowan
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+R-12001
+2026-06-28
+EARNINGS
+Description
+Hours
+Rate
+Current
+YTD
+Regular compensation
+40
+$38.50
+$1,540.00
+Premium / incentive
+-
+-
+$75.00
+$1,615.00
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Current (
+Year to date
+$161.50
+Federal withholding
+$100.13
+Social Security
+$23.41
+Medicare
+$21.81
+State / benefit deduction
+Total deductions
+$306.85
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$1,615.00
+$306.85
+$1,308.15
+$0.00
+Amounts are illustrative. Withholding figures are not tax advice. YTDvalues are cumulative and should not be treated as current period income.
+2026-06-01 -2026-06-28
+$13,860.00
+$675.00
+$14,535.00
+$1,453.50
+$901.17
+$210.69
+$196.29 |
+$2,761.65
+$1,308.15
+Fictional training specimen - No real person or transaction - Not valid for submission

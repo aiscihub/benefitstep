@@ -1,0 +1,222 @@
+{
+  "createdAt": "2026-10-04T00:58:32.680490+00:00",
+  "purpose": "Presentation demonstration, NOT an independent benchmark",
+  "selection": "First two training records sorted by hashed record ID in each of four source/label strata; selected without model scores. All eight public examples were used in model training. Two separate fictional workflow fixtures added.",
+  "modelSha256": "23ac10b26d73520ed85da16afddf3a0b6dae08e61358187f1b527491642b2cee",
+  "records": [
+    {
+      "file": "01-payslips-pay-statement.pdf",
+      "source": "payslips",
+      "recordId": "0008a594558110ad57fa",
+      "group": "9afeb89031446e32df9b",
+      "modelSplit": "train",
+      "expectedBroadLabel": "pay_statement",
+      "sourceSynthetic": false,
+      "pdfReconstruction": true,
+      "pdfSha256": "651f0049664bc724639d610ce1861df8c086f509d8dc868a917f652c7076a5d8",
+      "sourceTextFile": "source-text/01-payslips-pay-statement.txt",
+      "sourceTextSha256": "d54826375f77e520228f7e73a1b9257cb9fc9b39f04c830cdf9d299ee3eb0bba",
+      "sourceReferences": [
+        {
+          "path": "train/annotations/Customer_02_payslips_3_.json",
+          "sha256": "c09ffb16768a13c3eb378e450320f7d3473da8f6810a8eba195b6799eaccd5ad"
+        }
+      ],
+      "publisherReferenceFile": "publisher-reference/01-payslips-pay-statement.json",
+      "license": "MIT",
+      "sourceRevision": "ec64d17fa94d876b1834760594340a058dac5106",
+      "normalizedModelTextPreserved": true
+    },
+    {
+      "file": "02-payslips-pay-statement.pdf",
+      "source": "payslips",
+      "recordId": "011c4ab774665a41147d",
+      "group": "60a4c26175968ea72713",
+      "modelSplit": "train",
+      "expectedBroadLabel": "pay_statement",
+      "sourceSynthetic": false,
+      "pdfReconstruction": true,
+      "pdfSha256": "4b7fbd7feb62dec08dd5daaf430fea74f5b96721b10482888502771617e81f68",
+      "sourceTextFile": "source-text/02-payslips-pay-statement.txt",
+      "sourceTextSha256": "13d2cb2bac48b69ac1d751b078fdfe4416a4ad29fefbd62146b808549141e8a5",
+      "sourceReferences": [
+        {
+          "path": "train/annotations/Customer_34_payslips_Redacted_15_.json",
+          "sha256": "c11d89b47a669df154f9de6406df823f00e54289e399799aa543efd181128400"
+        }
+      ],
+      "publisherReferenceFile": "publisher-reference/02-payslips-pay-statement.json",
+      "license": "MIT",
+      "sourceRevision": "ec64d17fa94d876b1834760594340a058dac5106",
+      "normalizedModelTextPreserved": true
+    },
+    {
+      "file": "03-fieldbench-invoice-or-receipt.pdf",
+      "source": "fieldbench",
+      "recordId": "01b799872546b48fd416",
+      "group": "ecb894ad3e2e509e8c92",
+      "modelSplit": "train",
+      "expectedBroadLabel": "invoice_or_receipt",
+      "sourceSynthetic": true,
+      "pdfReconstruction": true,
+      "pdfSha256": "ab24c239fda31c6728d8f8006283ba6365441fcb104ba56d751ac086100e1695",
+      "sourceTextFile": "source-text/03-fieldbench-invoice-or-receipt.txt",
+      "sourceTextSha256": "962a696245cbefe36d1501933628797c7e14c7f5323f92910e101d3dff249424",
+      "sourceReferences": [
+        {
+          "path": "invoices/documents/synth_060.md",
+          "sha256": "962a696245cbefe36d1501933628797c7e14c7f5323f92910e101d3dff249424"
+        }
+      ],
+      "publisherReferenceFile": "publisher-reference/03-fieldbench-invoice-or-receipt.json",
+      "license": "CC0 1.0 (selected synthetic documents only)",
+      "sourceRevision": "fcfefbfbde1909ea440e058593eb72387b636a3f",
+      "normalizedModelTextPreserved": true
+    },
+    {
+      "file": "04-fieldbench-invoice-or-receipt.pdf",
+      "source": "fieldbench",
+      "recordId": "01e7a757a068c5af890b",
+      "group": "ecb894ad3e2e509e8c92",
+      "modelSplit": "train",
+      "expectedBroadLabel": "invoice_or_receipt",
+      "sourceSynthetic": true,
+      "pdfReconstruction": true,
+      "pdfSha256": "8d23c9cb8e626b89560f1af9cf7f9eaf2ae62f8457fc90a84156d5e7446b5b7a",
+      "sourceTextFile": "source-text/04-fieldbench-invoice-or-receipt.txt",
+      "sourceTextSha256": "71e9db2995a2245521b95401002578146188b94019afc6689485821f163994c1",
+      "sourceReferences": [
+        {
+          "path": "invoices/documents/synth_051.md",
+          "sha256": "71e9db2995a2245521b95401002578146188b94019afc6689485821f163994c1"
+        }
+      ],
+      "publisherReferenceFile": "publisher-reference/04-fieldbench-invoice-or-receipt.json",
+      "license": "CC0 1.0 (selected synthetic documents only)",
+      "sourceRevision": "fcfefbfbde1909ea440e058593eb72387b636a3f",
+      "normalizedModelTextPreserved": true
+    },
+    {
+      "file": "05-cord-invoice-or-receipt.pdf",
+      "source": "cord",
+      "recordId": "05b04af08478ef73df89",
+      "group": "852be6befa4bd4751e70",
+      "modelSplit": "train",
+      "expectedBroadLabel": "invoice_or_receipt",
+      "sourceSynthetic": false,
+      "pdfReconstruction": true,
+      "pdfSha256": "4a509b345049f938119b8d9798bfc9aa2389c72052755975cc0b4d5bb0947083",
+      "sourceTextFile": "source-text/05-cord-invoice-or-receipt.txt",
+      "sourceTextSha256": "201856824bcbc19f74b31622a26785f534e61dd93f834c650ffc33382ce3c277",
+      "sourceReferences": [
+        {
+          "path": "validation/22.json",
+          "sha256": "f2ecc02356729dc2e270b1df3ac088dff222f9fb32675d3df38ef4ee4dabd529"
+        }
+      ],
+      "publisherReferenceFile": "publisher-reference/05-cord-invoice-or-receipt.json",
+      "license": "CC BY 4.0",
+      "sourceRevision": "7f0115a4b758a71d6473b8d085751692da2fef98",
+      "normalizedModelTextPreserved": true
+    },
+    {
+      "file": "06-cord-invoice-or-receipt.pdf",
+      "source": "cord",
+      "recordId": "132868607ae946451fcc",
+      "group": "536b0898b084f03c4a16",
+      "modelSplit": "train",
+      "expectedBroadLabel": "invoice_or_receipt",
+      "sourceSynthetic": false,
+      "pdfReconstruction": true,
+      "pdfSha256": "7efa85e5a7ac45a8855993fa19e4ba8cfca835c4f06bb190a4042c49c372b0f1",
+      "sourceTextFile": "source-text/06-cord-invoice-or-receipt.txt",
+      "sourceTextSha256": "22e686bde55745be803eba02eda980b414be55f7080fa3d4e5dfb9fd013efa37",
+      "sourceReferences": [
+        {
+          "path": "train/21.json",
+          "sha256": "0a14a73e284a66f99a82f842609692549093513968cb1ea2c9cbc87c7f1a22f0"
+        }
+      ],
+      "publisherReferenceFile": "publisher-reference/06-cord-invoice-or-receipt.json",
+      "license": "CC BY 4.0",
+      "sourceRevision": "7f0115a4b758a71d6473b8d085751692da2fef98",
+      "normalizedModelTextPreserved": true
+    },
+    {
+      "file": "07-fieldbench-other-document.pdf",
+      "source": "fieldbench",
+      "recordId": "044d8b19bc145bc2399e",
+      "group": "99e9ac15d3d161e92f0d",
+      "modelSplit": "train",
+      "expectedBroadLabel": "other_document",
+      "sourceSynthetic": true,
+      "pdfReconstruction": true,
+      "pdfSha256": "7abb07b488639080027aac3ce09508ffcd8973a69d3076fcc1529203a56cf1ca",
+      "sourceTextFile": "source-text/07-fieldbench-other-document.txt",
+      "sourceTextSha256": "cafb18313d3090d5eb34ed4b9e1ea66459297778624871247acaa6ae4e267104",
+      "sourceReferences": [
+        {
+          "path": "irs_forms/documents/synthetic_w2_005.md",
+          "sha256": "cafb18313d3090d5eb34ed4b9e1ea66459297778624871247acaa6ae4e267104"
+        }
+      ],
+      "publisherReferenceFile": "publisher-reference/07-fieldbench-other-document.json",
+      "license": "CC0 1.0 (selected synthetic documents only)",
+      "sourceRevision": "fcfefbfbde1909ea440e058593eb72387b636a3f",
+      "normalizedModelTextPreserved": true
+    },
+    {
+      "file": "08-fieldbench-other-document.pdf",
+      "source": "fieldbench",
+      "recordId": "0d629027894171f35e96",
+      "group": "95235bb23e140530ced7",
+      "modelSplit": "train",
+      "expectedBroadLabel": "other_document",
+      "sourceSynthetic": true,
+      "pdfReconstruction": true,
+      "pdfSha256": "0714cbbf57da85577e4a4d19f92b0b04a2aa6c74ec514fef3cbb556d20bcc500",
+      "sourceTextFile": "source-text/08-fieldbench-other-document.txt",
+      "sourceTextSha256": "fc8994296be1ee35d48383ca4269609403aeaa97cb28f572e6b120b4267164cd",
+      "sourceReferences": [
+        {
+          "path": "insurance_policies/documents/synth_policy_010.md",
+          "sha256": "fc8994296be1ee35d48383ca4269609403aeaa97cb28f572e6b120b4267164cd"
+        }
+      ],
+      "publisherReferenceFile": "publisher-reference/08-fieldbench-other-document.json",
+      "license": "CC0 1.0 (selected synthetic documents only)",
+      "sourceRevision": "fcfefbfbde1909ea440e058593eb72387b636a3f",
+      "normalizedModelTextPreserved": true
+    },
+    {
+      "file": "09-fictional-pay-statement.pdf",
+      "source": "benefitstep-fictional-workflow",
+      "sourceSynthetic": true,
+      "modelSplit": "not_in_training",
+      "pdfReconstruction": false,
+      "pdfSha256": "c2538a05af15a63e5b9729e82e3352915bc0bf67ac6be586a9185b7c3a56131e",
+      "expectedBroadLabel": "pay_statement",
+      "purpose": "Demonstrate source-linked candidate extraction and Doctor independently of the classifier. Existing development fixture, not a held-out evaluation."
+    },
+    {
+      "file": "10-fictional-utility-bill.pdf",
+      "source": "benefitstep-fictional-workflow",
+      "sourceSynthetic": true,
+      "modelSplit": "not_in_training",
+      "pdfReconstruction": false,
+      "pdfSha256": "ec9a53229a225f66cc90c05c596e0f7a12f2ed80cd1ab4835266c7e14f5f7a2b",
+      "expectedBroadLabel": null,
+      "purpose": "Demonstrate source-linked candidate extraction and Doctor independently of the classifier. Existing development fixture, not a held-out evaluation."
+    }
+  ],
+  "publicTrainingRecords": 8,
+  "fictionalWorkflowRecords": 2,
+  "benchmarkMetricsUnchanged": true,
+  "userDocumentsUsed": false,
+  "pdfNote": "Public-source PDFs are plain text reconstructions of available annotations/Markdown, not original document scans. Only DEMO/SAMPLE markers are added; normalized classifier tokens are checked against the original training text.",
+  "privacyCheck": {
+    "remotePageRequests": 0,
+    "runtimeExceptions": 0
+  },
+  "browser": "Chrome/154.0.8037.95"
+}

@@ -1,0 +1,61 @@
+Harborstone
+Records office • contact@example.invalid
+Earnings advice
+Hourly wages posted to payroll. Overtime is shown separately from regular hours.
+Morgan Ellis
+1840 Example Lane, Unit 3
+Sacramento, CA 95814
+EARNINGS
+Description
+Regular compensation
+Premium / incentive
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Federal withholding
+Social Security
+Medicare
+State / benefit deduction
+Total deductions
+Gross
+Deductions
+Reference
+Issue date
+Period
+R-12003
+2026-08-28
+Hours
+Rate
+Current
+48
+$39.00
+$1,872.00
+$75.00
+$1,947.00
+Current
+Year to date
+$194.70
+$120.71
+$28.23
+$26.29
+$369.93
+Net wages
+Reimbursement
+Deposit amount
+$1,947.00
+$369.93
+$1,577.07
+$0.00
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+2026-08-01-2026-08-28
+YTD
+$16,848.00
+$675.00
+$17,523.00
+$1,752.30
+$1,086.39
+$254.07
+$236.61
+$3.329.37
+$1,577.07
+Fictional training specimen - No real person or transaction - Not valld for submission |

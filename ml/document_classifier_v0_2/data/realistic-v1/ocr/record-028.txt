@@ -1,0 +1,61 @@
+Alderpoint
+Records office • contactlexample.inval1d
+Payroll register - employee copy
+Evening differential and pald leave are included in this pay cycle. Cumulative balances are year to date.
+Taylor Brooks
+1840 Example Lane, Unit 4
+Sacramento, CA 95814
+EARNINGS
+Description
+Regular compensation
+Shift differential
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Federal withholding
+Social Security
+Medicare
+State / benefit deduction
+Total deductions
+Reference
+Issue date
+R-12028
+Hours
+52
+Net wages
+Period
+2026-09-28
+2026-09-01 = 2026-09-28
+Current
+YTD
+$47.50
+$2,470.00
+$75.00
+$2,545.00
+Current
+Year to date
+$254.50
+$157.79
+$36.90
+$34.36
+$483.55
+$22,230.00
+$675.00
+$22,905.00
+$2,290.50
+$1,420.11
+$332.10
+$309.24
+$4,351.95
+Gross
+Deductions
+Reimbursement
+Deposit amount
+$2,545.00
+$483.55
+$2,061.45
+$0.00
+$2,061.45
+Amounts are illustrative. Wichholding tigures are not cax advice. YID values are cumulative and should not be treated as
+current period income.
+Fictional training specimen - No real person or transaction • Not valid for submission

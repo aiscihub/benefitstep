@@ -1,0 +1,39 @@
+Harborstone
+Records office • contact@example.invalid
+Wireless service account
+Monthly access and usage charges. Equipment installments are shown separately from the service plan.
+Morgan Ellis
+1840 Example Lane, Unit 3
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+R-12067
+2026-08-28
+2026-08-01 - 2026-08-28
+SERVICE DETAIL
+Item
+Voice and data access
+Administration / service charge
+Quantity
+Unit amount
+Charge
+$152.00
+$12.00
+$152.00
+$12.00
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Amount
+$174.00
+$164.00
+$0.00
+$338.00
+Payment date 2026-08-28 - Method: not yet received
+Detach and retain account reference R-12067
+Remittance amount
+Fictional training specimen - No real persion or transaction - Not valld for submission

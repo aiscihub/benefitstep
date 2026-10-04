@@ -1,0 +1,41 @@
+Copper Hill
+Records office contact@example.inval1d
+Water and sanitation services
+Meter readings determine usage. Wastewater and refuse collection charges are billed
+SCCEL
+Drew Harper
+1840 Example Lane, Unit 4
+Sacramento, CA 95814
+Reference
+R-12072
+Issue date
+Period
+2026-09-28
+2026-09-01 = 2026-09-28
+SERVICE
+DETAIL
+Item
+Water usage and refuse collection
+Administration / service charge
+Quantity
+Unit amount
+Charge
+$874.00
+$12.00
+$874.00
+$12.00
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Amount
+$0.00
+$886.00
+$-35.00
+$851.00
+Payment date 2026-09-28 - Method: received electronically
+Detach and retain account reference R-12012
+Remittance amount
+Fictional training specimen - No real person or transaction • Not valid for submission

@@ -1,0 +1,47 @@
+{
+  "batchImport": true,
+  "sourcePreview": true,
+  "labels": [
+    {
+      "file": "09-fictional-pay-statement.pdf",
+      "label": "pay_statement"
+    },
+    {
+      "file": "10-fictional-utility-bill.pdf",
+      "label": "unknown"
+    },
+    {
+      "file": "01-payslips-pay-statement.pdf",
+      "label": "pay_statement"
+    },
+    {
+      "file": "02-payslips-pay-statement.pdf",
+      "label": "pay_statement"
+    },
+    {
+      "file": "03-fieldbench-invoice-or-receipt.pdf",
+      "label": "invoice_or_receipt"
+    },
+    {
+      "file": "04-fieldbench-invoice-or-receipt.pdf",
+      "label": "invoice_or_receipt"
+    },
+    {
+      "file": "05-cord-invoice-or-receipt.pdf",
+      "label": "invoice_or_receipt"
+    },
+    {
+      "file": "06-cord-invoice-or-receipt.pdf",
+      "label": "invoice_or_receipt"
+    },
+    {
+      "file": "07-fieldbench-other-document.pdf",
+      "label": "other_document"
+    },
+    {
+      "file": "08-fieldbench-other-document.pdf",
+      "label": "other_document"
+    }
+  ],
+  "remotePageRequests": 0
+}

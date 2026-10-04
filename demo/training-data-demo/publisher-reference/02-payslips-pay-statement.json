@@ -1,0 +1,52 @@
+{
+  "provenance": "Publisher annotation reference copied from public source; NOT predicted or extracted by BenefitStep",
+  "source": "payslips",
+  "fields": [
+    {
+      "field": "END_PAY_PERIOD",
+      "value": "30.06.2021",
+      "sourcePage": "15",
+      "wordIndices": [
+        20
+      ],
+      "sourceSha256": "c11d89b47a669df154f9de6406df823f00e54289e399799aa543efd181128400"
+    },
+    {
+      "field": "PAY_DATE",
+      "value": "28.06.2021",
+      "sourcePage": "15",
+      "wordIndices": [
+        26
+      ],
+      "sourceSha256": "c11d89b47a669df154f9de6406df823f00e54289e399799aa543efd181128400"
+    },
+    {
+      "field": "PAYG_TAX_PER_PERIOD",
+      "value": "4,141.00",
+      "sourcePage": "15",
+      "wordIndices": [
+        36
+      ],
+      "sourceSha256": "c11d89b47a669df154f9de6406df823f00e54289e399799aa543efd181128400"
+    },
+    {
+      "field": "NET_PAY_PER_PERIOD",
+      "value": "6,505.60",
+      "sourcePage": "15",
+      "wordIndices": [
+        64
+      ],
+      "sourceSha256": "c11d89b47a669df154f9de6406df823f00e54289e399799aa543efd181128400"
+    },
+    {
+      "field": "GROSS_PAY_PER_PERIOD",
+      "value": "10.646.60",
+      "sourcePage": "15",
+      "wordIndices": [
+        74
+      ],
+      "sourceSha256": "c11d89b47a669df154f9de6406df823f00e54289e399799aa543efd181128400"
+    }
+  ],
+  "note": "Keep original strings and number/date/currency formats. No conversion to USD or benefit eligibility facts. FieldBench structured reference labels were not downloaded, so no reference fields are invented."
+}

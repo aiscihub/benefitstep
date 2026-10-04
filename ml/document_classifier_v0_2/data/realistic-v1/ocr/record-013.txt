@@ -1,0 +1,62 @@
+Harborstone
+Records office • contact@example.invalid
+My pay • Completed payment
+Payment status: deposited. Download history for completed payroll transactions.
+Robin Lane
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+Reforenca
+R-12013
+EARNINGS
+Description
+Hours
+Regular compensation
+40
+Premium / incentive
+-
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Federal withholding
+Social Security
+Medicare
+State / benefit deduction
+Total deductions
+Issue date
+Period
+2026-06-28
+Rate
+Current
+YTD
+$33.25
+$1,330.00
+$75.00
+$1,405.00
+Current
+Year to date
+$140.50
+$87.11
+$20.37
+$18.97
+$266.95
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$1,405.00
+$266.95
+$1,138.05
+$0.00
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+2026-06-01 -2026-06-28
+$11,970.00
+$675.00
+$12,645.00
+$1,264.50
+$783.99
+$183.33
+$170.73 (
+$2.402.55
+$1,138.05
+Fictional training specimen - No real person or transaction - Not valid for submission

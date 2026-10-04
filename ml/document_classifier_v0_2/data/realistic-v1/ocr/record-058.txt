@@ -1,0 +1,41 @@
+Copper Hill
+Records office - contact@example.invalid
+After-school care • Billing detail
+Attendance charges cover scheduled care days.A payment received after the statement date may appear on the next statement.
+Casey Quinn
+1840 Example Lane, Unit 2
+Sacramento, CA 95814
+Reference
+R-12058
+Issue date
+Period
+2026-07-28
+2026-07-01 - 2026-07-28
+SERVICE DETAIL
+Item
+Aiernoon care sessions
+Administration / service charge
+Quantity
+Unit amount
+Charge
+1
+1
+$1,195.00
+$12.00
+$1,195.00
+$12.00
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Payment date 2026-07-28 - Method: received electronically
+Amount
+$87.00
+$1,207.00
+$-35.00
+$1,259.00
+Detach and retain account reference R-12058|
+Remittance amount
+Fictional training specimen • No real person or transaction - Not valid for submission

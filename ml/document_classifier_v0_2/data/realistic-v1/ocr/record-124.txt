@@ -1,0 +1,25 @@
+Alderpoint
+Records oftice.• contactlexample.inval1d
+Health coverage information
+Plan enrollment and member service information. Coverage information is not a medical bill or a receipt
+for premiums.
+Taylor Brooks
+1840 Example Lane, Unit 4
+Sacramento, CA 95814
+Reference
+K12124
+Issue date
+Period
+2026-09-28
+2020-U9-UL - 4U20-U3-40
+Member
+Plan
+Coverage starts
+Taylor Brooks
+Example health network
+2U20-U9-U1
+Member identifier •••• 0000.
+Primary care and pharmacy service information. Copays, deductibles and coverage
+1imits depend on plan terms. Not
+a premium payment receipt.
+Fictional training specimen - No real person or transaction • Not valid for submission

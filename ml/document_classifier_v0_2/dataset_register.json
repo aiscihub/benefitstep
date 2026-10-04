@@ -1,0 +1,81 @@
+{
+  "dataset": "benefitstep-realistic-synthetic-v1",
+  "experiment": "realistic-text-v0.2",
+  "candidateModelId": "benefitstep-realistic-text-candidate-v0.2",
+  "modelSha256": "b5624c216809fd13324233324aefd5f2af34f23d814a60a9fe8b00038e20b82f",
+  "documents": 144,
+  "authoredFamilies": 36,
+  "pairedCaptureRows": 288,
+  "counts": {
+    "train": {
+      "rows": 652,
+      "by_source": {
+        "payslips": 285,
+        "fieldbench": 155,
+        "cord": 20,
+        "benefitstep_realistic_synthetic": 192
+      },
+      "by_class": {
+        "pay_statement": 349,
+        "invoice_or_receipt": 184,
+        "other_document": 119
+      },
+      "unique_documents": 556
+    },
+    "validation": {
+      "rows": 192,
+      "by_source": {
+        "payslips": 123,
+        "fieldbench": 17,
+        "cord": 4,
+        "benefitstep_realistic_synthetic": 48
+      },
+      "by_class": {
+        "pay_statement": 139,
+        "invoice_or_receipt": 25,
+        "other_document": 28
+      },
+      "unique_documents": 168
+    },
+    "test": {
+      "rows": 48,
+      "by_source": {
+        "benefitstep_realistic_synthetic": 48
+      },
+      "by_class": {
+        "pay_statement": 16,
+        "invoice_or_receipt": 16,
+        "other_document": 16
+      },
+      "unique_documents": 24
+    },
+    "regression": {
+      "rows": 163,
+      "by_source": {
+        "payslips": 117,
+        "fieldbench": 33,
+        "cord": 13
+      },
+      "by_class": {
+        "pay_statement": 117,
+        "other_document": 33,
+        "invoice_or_receipt": 13
+      },
+      "unique_documents": 163
+    }
+  },
+  "newDataIsSynthetic": true,
+  "userDocumentsUsed": false,
+  "newPublicDocumentsDownloaded": 0,
+  "modelOutputs": [
+    "pay_statement",
+    "invoice_or_receipt",
+    "other_document"
+  ],
+  "fineGrainedTypesTrained": false,
+  "validationGatePassed": false,
+  "productionRoutingApproved": false,
+  "deployedToExtension": false,
+  "dataManifest": "data/manifest.json",
+  "report": "README.md"
+}

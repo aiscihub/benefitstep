@@ -1,0 +1,39 @@
+Harborstone
+Records office: contact@example.invalid
+Support services billing statement
+In-home support visits completed during the service month. The account summary separates new charges from earlier amounts.
+Morgan Ellis
+1840 Example Lane, Unit 3
+Sacramento, CA 95814
+Reference
+R-12091
+SERVICE DETAIL
+Item
+Home support visits
+Administration / service charge
+Issue date
+Period
+2026-08-28
+2026-08-01-2026-08-28
+Quantity
+Unit amount
+Charge
+$406.00
+$12.00
+$406.00
+$12.00
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Payment date 2026-08-28 • Method: not yet received
+Amount
+$174.00
+$418.00
+$0.00
+$592.00
+Detach and retain account reference R-12091
+Remittance amount
+Fictional tralning specimen - No real person or transaction - Not valld for submission

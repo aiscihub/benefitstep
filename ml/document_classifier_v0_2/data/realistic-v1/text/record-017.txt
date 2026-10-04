@@ -1,0 +1,49 @@
+Willowbridge
+
+Records office · contact@example.invalid
+
+Wages and reported tips
+
+Cash tips reported during this period are included in taxable earnings. Noncash employer benefits are not deposited.
+
+Alex Rowan
+
+1840 Example Lane, Unit 1
+
+Sacramento, CA 95814
+
+Reference   Issue date   Period
+
+R-12017   2026-06-28   2026-06-01 – 2026-06-28
+
+EARNINGS
+
+Description   Hours   Rate   Current   YTD
+
+Regular compensation   40   $32.50   $1,300.00   $11,700.00
+
+Reported tips   —   —   $75.00   $675.00
+
+Total gross earnings   $1,375.00   $12,375.00
+
+TAXES AND DEDUCTIONS
+
+Description   Current   Year to date
+
+Federal withholding   $137.50   $1,237.50
+
+Social Security   $85.25   $767.25
+
+Medicare   $19.93   $179.37
+
+State / benefit deduction   $18.57   $167.13
+
+Total deductions   $261.25   $2,351.25
+
+Gross   Deductions   Net wages   Reimbursement   Deposit amount
+
+$1,375.00   $261.25   $1,113.75   $0.00   $1,113.75
+
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+
+Fictional training specimen · No real person or transaction · Not valid for submission

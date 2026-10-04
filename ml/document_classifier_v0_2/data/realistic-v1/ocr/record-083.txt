@@ -1,0 +1,41 @@
+Harborstone
+Records office • contact@example.invalld
+Dental practice • Account balance
+Treatment charges less insurer adjustment and previous payment. Please remit the amount due.
+Morgan Ellis
+1840 Example Lane, Unit 3
+Sacramento, CA 95814
+Reference
+R-12083
+Issue date
+2026-08-28
+Period
+2026-08-01 - 2026-08-28
+SERVICE DETAIL
+Item
+Preventive dental treatment
+Administration / service charge
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Payment date 2026-08-28 - Method: not yet received
+Quantity
+Unit amount
+Charge
+1
+1
+$1,047.00
+$12.00
+$1,047.00
+$12.00
+Amount
+$174.00
+$1,059.00
+$0.00
+$1,233.00
+Detach and retain account reference R-12083
+Remittance amount
+Fictional training specimen - No real person or transaction - Not valid for submission

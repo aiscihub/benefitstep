@@ -1,0 +1,59 @@
+Alderpoint
+Records ofrice : contactlexample.inval1d
+Earnings advice
+Hourly wages posted to payroll. Overtime is shown separately from regular hours.
+Taylor Brooks
+1840 Example lane, Unit 4
+Sacramento, CA 95814
+EARNINGS
+Description
+Kegulaz compensaczon
+Premium / incentive
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Federal withholding
+Social Security
+Medicare
+State / benefit deduction
+Total deductions
+Reference
+Issue date
+Hours
+52
+Net wages
+Period
+2026-09-28
+2026-09-01 - 2026-09-28
+Current
+$40.50
+$2,106.00
+$75.00
+$2,181.00
+Current
+Year to date
+$218.10
+$135.22
+$31.62
+$29.45
+$414.39
+$18,954.00
+$675.00
+$19,629.00
+$1,962.90
+$1,216.98
+$284.58
+$265.05
+$3,729.51
+Gross
+Deductions
+Reimbursement
+Deposit amount
+$2,181.00
+$414.39
+$1,766.61
+$0.00
+$1,766.61
+Amounts åre Illustrative. Withholding tigures are not cax advice. YID values are cumulative and. should not be treated as
+current period income.
+Fictional training specimen - No real person or transaction • Not valid for submission

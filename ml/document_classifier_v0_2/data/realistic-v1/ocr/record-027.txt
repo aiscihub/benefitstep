@@ -1,0 +1,62 @@
+Harborstone
+Records office• contact@example.invalid
+Payroll register - employee copy
+Evening differential and paid leave are included in this pay cycle. Cumulative balances are year to date.
+Morgan Ellis
+1840 Example Lane, Unit 3
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+R-12027
+2026-08-28
+EARNINGS
+Description
+Hours
+Rate
+Current
+Regular compensation
+48
+$19.25
+$924.00
+Shift differential
+-
+$75.00
+Total gross earnings
+$999.00
+TAXES AND DEDUCTIONS
+Description
+Current
+Year to date
+Federal withholding
+$99.90
+Social Security
+$61.93
+Medicare
+$14.48
+State / benefit deduction
+$13.50
+Total deductions
+$189.81
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$999.00
+$189.81
+$809.19
+$0.00
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.
+2026-08-01 - 2026-08-28
+YTD
+$8,316.00
+$675.00
+$8,991.00
+$899.10
+$557-37
+$130.32
+$121.50
+$1,708.29
+$809.19
+Fictional tralning specimen. - No real person or transaction - Not valld for submission

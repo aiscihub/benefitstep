@@ -1,0 +1,39 @@
+Harborstone
+Records office • contact@example.invalid
+Water and sanitation services
+Meter readings determine usage. Wastewater and refuse collection charges are billed on the same account.
+Issue date
+Period
+Robin Lane
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+Reference
+R-12069
+2026-06-28
+2026-06-01 -2026-06-28
+SERVICE DETAIL
+Item
+Water usage and refuse collection
+Administration / service charge
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Payment date 2026-06-28 - Method: not yet received
+Quantity
+Unit amount
+Charge
+$800.00
+$12.00
+$800.00
+$12.00
+Amount
+$0.00
+$812.00
+$0.00
+$812.00
+Detach and retain account reference R-12069
+Remittance amount
+Fictional training specimen - No real person or transaction : Not valid for submission

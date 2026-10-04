@@ -1,0 +1,16 @@
+{
+  "benchmarkId": "public-text-v0.1-benchmark-1",
+  "modelSha256": "23ac10b26d73520ed85da16afddf3a0b6dae08e61358187f1b527491642b2cee",
+  "splitManifestSha256": "2fbea97cea3f3032b96de67562bc8b715a7d70817f1f8c3ba451068e4afad6a5",
+  "threshold": 0.5,
+  "accuracyProtocol": "Reuse frozen held-out predictions; verify browser parity. Do not retrain or retune.",
+  "freshPageModelLoadRuns": 5,
+  "textTimingWarmupDocuments": 20,
+  "textTimingPasses": 7,
+  "pdfTimingPasses": 3,
+  "pdfFixtureManifest": "demo/realistic-benefits-pdfs/manifest.json",
+  "pdfSelection": "All manifest records, excluding explicitly marked duplicates; verify SHA-256 before use.",
+  "pdfScope": "Existing fictional development examples, not an independent accuracy benchmark. Measure PDF parse/render, classification, local-label extraction and Doctor; exclude file picker and UI rendering.",
+  "confidenceProtocol": "Report observed accuracy, coverage and score-bin reliability. Scores are uncalibrated; no numerical user-document correctness probability is claimed.",
+  "privacy": "Use only previously downloaded public test text and existing synthetic PDFs. No user documents, no remote inference, no text in benchmark output."
+}

@@ -1,0 +1,63 @@
+Harborstone
+Records office • contact@example.invalld
+Weekly remuneration record
+Earnings for services already performed. Statutory deductions were withheld from this payment.
+Robin Lane
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+EARNINGS
+Description
+Regular compensation
+Premium / incentive
+Total gross earnings
+TAXES AND DEDUCTIONS
+Description
+Federal withholding
+Social Security
+Medicare
+State / benefit deduction
+Total deductions
+Reference
+Issue date
+Period
+R-12037
+2026-06-28
+2026-06-01 -2026-06-28
+Hours
+Rate
+Current
+YTD
+40
+$37.00
+$1,480.00
+$13,320.00
+-
+-
+$75.00
+$675.00
+$1,555.00
+$13,995.00
+Current
+Year to date
+$155.50
+$1,399.50
+$96.41
+$867.69
+$22.54
+$202.86
+$21.00
+$189.00
+$295.45
+$2,659.05
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$1,555.00
+$295.45
+$1,259.55
+$0.00
+$1,259.55
+Amounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period
+Fictional training specimen - No real person or transaction : Not valld for submission

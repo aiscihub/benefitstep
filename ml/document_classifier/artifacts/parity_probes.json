@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Gross earnings salary payroll net pay federal tax pay period deductions",
+    "scores": [
+      0.27747994193950415,
+      0.1473609380715237,
+      0.5751591199889722
+    ]
+  },
+  {
+    "text": "Invoice billed to payment terms subtotal tax total due line item service",
+    "scores": [
+      0.679485966999631,
+      0.10280759169946622,
+      0.21770644130090272
+    ]
+  },
+  {
+    "text": "Lease rent agreement landlord tenant monthly rent",
+    "scores": [
+      0.4457011939126651,
+      0.17011263621285497,
+      0.3841861698744799
+    ]
+  },
+  {
+    "text": "County request verification income proof response deadline",
+    "scores": [
+      0.4571581303298832,
+      0.1666382961750978,
+      0.37620357349501904
+    ]
+  },
+  {
+    "text": "Community picnic newsletter volunteers garden Saturday",
+    "scores": [
+      0.46671188097693855,
+      0.15741778703673068,
+      0.37587033198633074
+    ]
+  },
+  {
+    "text": "",
+    "scores": [
+      0.47891004973626755,
+      0.16189476245219653,
+      0.35919518781153603
+    ]
+  }
+]

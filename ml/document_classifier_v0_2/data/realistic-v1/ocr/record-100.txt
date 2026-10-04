@@ -1,0 +1,63 @@
+Alderpoint
+Records office • contactlexample.inval1d
+Paycheck details after modeling
+WHAT-IF CALCULATION ONLY. These hypothetical carnings, taxes and deductions have not been paid. Change
+assumptions to model a future paycheck.
+Taylor Brooks
+1840 Example Lane, Unit 4
+Sacramento, CA 95814
+Reference
+Issue date
+Period
+K-1210U
+2026-09-28
+2026-09-01 - 2026-09-28
+EARNINGS
+Description
+Hours
+Rate
+Current
+YTD
+Regular compensation
+52
+$29.50
+$1,534.00
+$13,806.00
+Premium / incentive
+$75.00
+$675.00
+Total gross earnings
+$1,609.00
+$14,481.00
+TAXES AND DEDUCTIONS
+Description
+Current
+Year to date
+Federal withholding
+$160.90
+$1,448.10
+Social Security
+$99.75
+$897.75
+Medicare
+$23.33
+$209.97
+State / benefit deduction
+$21.73
+$195.57
+Total deductions
+$305.71
+$2,751.39
+Gross
+Deductions
+Net wages
+Reimbursement
+Deposit amount
+$1,609.00
+$305.71
+$1,303.29
+$0.00
+$1,303.29
+Amounts are illustrative. Wichholding Iigures are not tax advice. YID values are cumulative and should not be created as
+current period income.
+Fictional training specimen - No real person or transaction • Not valid for submission

@@ -1,0 +1,3137 @@
+{
+  "experiment": "realistic-text-v0.2",
+  "modelSha256": "b5624c216809fd13324233324aefd5f2af34f23d814a60a9fe8b00038e20b82f",
+  "splitManifestSha256": "184fa86f601116ff7ce234e4999e18c1b12804138992371d966ad9d36c0f2abd",
+  "python": "3.9.6",
+  "sklearn": "1.6.1",
+  "counts": {
+    "train": {
+      "rows": 652,
+      "by_source": {
+        "payslips": 285,
+        "fieldbench": 155,
+        "cord": 20,
+        "benefitstep_realistic_synthetic": 192
+      },
+      "by_class": {
+        "pay_statement": 349,
+        "invoice_or_receipt": 184,
+        "other_document": 119
+      },
+      "unique_documents": 556
+    },
+    "validation": {
+      "rows": 192,
+      "by_source": {
+        "payslips": 123,
+        "fieldbench": 17,
+        "cord": 4,
+        "benefitstep_realistic_synthetic": 48
+      },
+      "by_class": {
+        "pay_statement": 139,
+        "invoice_or_receipt": 25,
+        "other_document": 28
+      },
+      "unique_documents": 168
+    },
+    "test": {
+      "rows": 48,
+      "by_source": {
+        "benefitstep_realistic_synthetic": 48
+      },
+      "by_class": {
+        "pay_statement": 16,
+        "invoice_or_receipt": 16,
+        "other_document": 16
+      },
+      "unique_documents": 24
+    },
+    "regression": {
+      "rows": 163,
+      "by_source": {
+        "payslips": 117,
+        "fieldbench": 33,
+        "cord": 13
+      },
+      "by_class": {
+        "pay_statement": 117,
+        "other_document": 33,
+        "invoice_or_receipt": 13
+      },
+      "unique_documents": 163
+    }
+  },
+  "selection": [
+    {
+      "C": 0.5,
+      "mean_validation_domain_macro_f1": 0.9111111111111112,
+      "synthetic_macro_f1": 0.8222222222222223,
+      "public_macro_f1": 1.0
+    },
+    {
+      "C": 2.0,
+      "mean_validation_domain_macro_f1": 0.9111111111111112,
+      "synthetic_macro_f1": 0.8222222222222223,
+      "public_macro_f1": 1.0
+    },
+    {
+      "C": 8.0,
+      "mean_validation_domain_macro_f1": 0.9111111111111112,
+      "synthetic_macro_f1": 0.8222222222222223,
+      "public_macro_f1": 1.0
+    }
+  ],
+  "validation": {
+    "n": 192,
+    "closed_set_macro_f1": 0.9351204351204352,
+    "closed_set_accuracy": 0.9583333333333334,
+    "closed_set_per_class": {
+      "invoice_or_receipt": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 25.0
+      },
+      "other_document": {
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "f1-score": 0.8333333333333334,
+        "support": 28.0
+      },
+      "pay_statement": {
+        "precision": 0.9455782312925171,
+        "recall": 1.0,
+        "f1-score": 0.972027972027972,
+        "support": 139.0
+      },
+      "accuracy": 0.9583333333333334,
+      "macro avg": {
+        "precision": 0.981859410430839,
+        "recall": 0.9047619047619048,
+        "f1-score": 0.9351204351204352,
+        "support": 192.0
+      },
+      "weighted avg": {
+        "precision": 0.9606009070294785,
+        "recall": 0.9583333333333334,
+        "f1-score": 0.9554438616938618,
+        "support": 192.0
+      }
+    },
+    "confusion_labels": [
+      "invoice_or_receipt",
+      "other_document",
+      "pay_statement"
+    ],
+    "closed_set_confusion": [
+      [
+        25,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        8
+      ],
+      [
+        0,
+        0,
+        139
+      ]
+    ],
+    "threshold": 0.7,
+    "accepted": 114,
+    "abstained": 78,
+    "coverage": 0.59375,
+    "accepted_accuracy": 1.0,
+    "confident_errors": 0,
+    "per_class_after_abstention": {
+      "invoice_or_receipt": {
+        "n": 25,
+        "correct": 16,
+        "abstained": 9,
+        "wrong_route": 0
+      },
+      "other_document": {
+        "n": 28,
+        "correct": 2,
+        "abstained": 26,
+        "wrong_route": 0
+      },
+      "pay_statement": {
+        "n": 139,
+        "correct": 96,
+        "abstained": 43,
+        "wrong_route": 0
+      }
+    },
+    "synthetic": {
+      "n": 48,
+      "closed_set_macro_f1": 0.8222222222222223,
+      "closed_set_accuracy": 0.8333333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 16.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1-score": 0.6666666666666666,
+          "support": 16.0
+        },
+        "pay_statement": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 16.0
+        },
+        "accuracy": 0.8333333333333334,
+        "macro avg": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8222222222222223,
+          "support": 48.0
+        },
+        "weighted avg": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8222222222222223,
+          "support": 48.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          8
+        ],
+        [
+          0,
+          0,
+          16
+        ]
+      ],
+      "threshold": 0.7,
+      "accepted": 16,
+      "abstained": 32,
+      "coverage": 0.3333333333333333,
+      "accepted_accuracy": 1.0,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 16,
+          "correct": 16,
+          "abstained": 0,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 16,
+          "correct": 0,
+          "abstained": 16,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 16,
+          "correct": 0,
+          "abstained": 16,
+          "wrong_route": 0
+        }
+      }
+    },
+    "public": {
+      "n": 144,
+      "closed_set_macro_f1": 1.0,
+      "closed_set_accuracy": 1.0,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "pay_statement": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 123.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 144.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 144.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          123
+        ]
+      ],
+      "threshold": 0.7,
+      "accepted": 98,
+      "abstained": 46,
+      "coverage": 0.6805555555555556,
+      "accepted_accuracy": 1.0,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 9,
+          "correct": 0,
+          "abstained": 9,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 12,
+          "correct": 2,
+          "abstained": 10,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 123,
+          "correct": 96,
+          "abstained": 27,
+          "wrong_route": 0
+        }
+      }
+    },
+    "gate": false
+  },
+  "thresholdCandidates": [
+    {
+      "n": 192,
+      "closed_set_macro_f1": 0.9351204351204352,
+      "closed_set_accuracy": 0.9583333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 28.0
+        },
+        "pay_statement": {
+          "precision": 0.9455782312925171,
+          "recall": 1.0,
+          "f1-score": 0.972027972027972,
+          "support": 139.0
+        },
+        "accuracy": 0.9583333333333334,
+        "macro avg": {
+          "precision": 0.981859410430839,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9351204351204352,
+          "support": 192.0
+        },
+        "weighted avg": {
+          "precision": 0.9606009070294785,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9554438616938618,
+          "support": 192.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          0,
+          0,
+          139
+        ]
+      ],
+      "threshold": 0.5,
+      "accepted": 184,
+      "abstained": 8,
+      "coverage": 0.9583333333333334,
+      "accepted_accuracy": 0.9565217391304348,
+      "confident_errors": 8,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 25,
+          "correct": 22,
+          "abstained": 3,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 28,
+          "correct": 20,
+          "abstained": 0,
+          "wrong_route": 8
+        },
+        "pay_statement": {
+          "n": 139,
+          "correct": 134,
+          "abstained": 5,
+          "wrong_route": 0
+        }
+      },
+      "synthetic": {
+        "n": 48,
+        "closed_set_macro_f1": 0.8222222222222223,
+        "closed_set_accuracy": 0.8333333333333334,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 16.0
+          },
+          "pay_statement": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 16.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          },
+          "weighted avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            16
+          ]
+        ],
+        "threshold": 0.5,
+        "accepted": 48,
+        "abstained": 0,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.8333333333333334,
+        "confident_errors": 8,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 16,
+            "correct": 16,
+            "abstained": 0,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 16,
+            "correct": 8,
+            "abstained": 0,
+            "wrong_route": 8
+          },
+          "pay_statement": {
+            "n": 16,
+            "correct": 16,
+            "abstained": 0,
+            "wrong_route": 0
+          }
+        }
+      },
+      "public": {
+        "n": 144,
+        "closed_set_macro_f1": 1.0,
+        "closed_set_accuracy": 1.0,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "pay_statement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 123.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            123
+          ]
+        ],
+        "threshold": 0.5,
+        "accepted": 136,
+        "abstained": 8,
+        "coverage": 0.9444444444444444,
+        "accepted_accuracy": 1.0,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 9,
+            "correct": 6,
+            "abstained": 3,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 12,
+            "correct": 12,
+            "abstained": 0,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 123,
+            "correct": 118,
+            "abstained": 5,
+            "wrong_route": 0
+          }
+        }
+      },
+      "gate": false
+    },
+    {
+      "n": 192,
+      "closed_set_macro_f1": 0.9351204351204352,
+      "closed_set_accuracy": 0.9583333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 28.0
+        },
+        "pay_statement": {
+          "precision": 0.9455782312925171,
+          "recall": 1.0,
+          "f1-score": 0.972027972027972,
+          "support": 139.0
+        },
+        "accuracy": 0.9583333333333334,
+        "macro avg": {
+          "precision": 0.981859410430839,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9351204351204352,
+          "support": 192.0
+        },
+        "weighted avg": {
+          "precision": 0.9606009070294785,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9554438616938618,
+          "support": 192.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          0,
+          0,
+          139
+        ]
+      ],
+      "threshold": 0.6,
+      "accepted": 141,
+      "abstained": 51,
+      "coverage": 0.734375,
+      "accepted_accuracy": 0.950354609929078,
+      "confident_errors": 7,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 25,
+          "correct": 18,
+          "abstained": 7,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 28,
+          "correct": 7,
+          "abstained": 14,
+          "wrong_route": 7
+        },
+        "pay_statement": {
+          "n": 139,
+          "correct": 109,
+          "abstained": 30,
+          "wrong_route": 0
+        }
+      },
+      "synthetic": {
+        "n": 48,
+        "closed_set_macro_f1": 0.8222222222222223,
+        "closed_set_accuracy": 0.8333333333333334,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 16.0
+          },
+          "pay_statement": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 16.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          },
+          "weighted avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            16
+          ]
+        ],
+        "threshold": 0.6,
+        "accepted": 26,
+        "abstained": 22,
+        "coverage": 0.5416666666666666,
+        "accepted_accuracy": 0.7307692307692307,
+        "confident_errors": 7,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 16,
+            "correct": 16,
+            "abstained": 0,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 9,
+            "wrong_route": 7
+          },
+          "pay_statement": {
+            "n": 16,
+            "correct": 3,
+            "abstained": 13,
+            "wrong_route": 0
+          }
+        }
+      },
+      "public": {
+        "n": 144,
+        "closed_set_macro_f1": 1.0,
+        "closed_set_accuracy": 1.0,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "pay_statement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 123.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            123
+          ]
+        ],
+        "threshold": 0.6,
+        "accepted": 115,
+        "abstained": 29,
+        "coverage": 0.7986111111111112,
+        "accepted_accuracy": 1.0,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 9,
+            "correct": 2,
+            "abstained": 7,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 12,
+            "correct": 7,
+            "abstained": 5,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 123,
+            "correct": 106,
+            "abstained": 17,
+            "wrong_route": 0
+          }
+        }
+      },
+      "gate": false
+    },
+    {
+      "n": 192,
+      "closed_set_macro_f1": 0.9351204351204352,
+      "closed_set_accuracy": 0.9583333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 28.0
+        },
+        "pay_statement": {
+          "precision": 0.9455782312925171,
+          "recall": 1.0,
+          "f1-score": 0.972027972027972,
+          "support": 139.0
+        },
+        "accuracy": 0.9583333333333334,
+        "macro avg": {
+          "precision": 0.981859410430839,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9351204351204352,
+          "support": 192.0
+        },
+        "weighted avg": {
+          "precision": 0.9606009070294785,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9554438616938618,
+          "support": 192.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          0,
+          0,
+          139
+        ]
+      ],
+      "threshold": 0.7,
+      "accepted": 114,
+      "abstained": 78,
+      "coverage": 0.59375,
+      "accepted_accuracy": 1.0,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 25,
+          "correct": 16,
+          "abstained": 9,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 28,
+          "correct": 2,
+          "abstained": 26,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 139,
+          "correct": 96,
+          "abstained": 43,
+          "wrong_route": 0
+        }
+      },
+      "synthetic": {
+        "n": 48,
+        "closed_set_macro_f1": 0.8222222222222223,
+        "closed_set_accuracy": 0.8333333333333334,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 16.0
+          },
+          "pay_statement": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 16.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          },
+          "weighted avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            16
+          ]
+        ],
+        "threshold": 0.7,
+        "accepted": 16,
+        "abstained": 32,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy": 1.0,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 16,
+            "correct": 16,
+            "abstained": 0,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          }
+        }
+      },
+      "public": {
+        "n": 144,
+        "closed_set_macro_f1": 1.0,
+        "closed_set_accuracy": 1.0,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "pay_statement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 123.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            123
+          ]
+        ],
+        "threshold": 0.7,
+        "accepted": 98,
+        "abstained": 46,
+        "coverage": 0.6805555555555556,
+        "accepted_accuracy": 1.0,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 9,
+            "correct": 0,
+            "abstained": 9,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 12,
+            "correct": 2,
+            "abstained": 10,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 123,
+            "correct": 96,
+            "abstained": 27,
+            "wrong_route": 0
+          }
+        }
+      },
+      "gate": false
+    },
+    {
+      "n": 192,
+      "closed_set_macro_f1": 0.9351204351204352,
+      "closed_set_accuracy": 0.9583333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 28.0
+        },
+        "pay_statement": {
+          "precision": 0.9455782312925171,
+          "recall": 1.0,
+          "f1-score": 0.972027972027972,
+          "support": 139.0
+        },
+        "accuracy": 0.9583333333333334,
+        "macro avg": {
+          "precision": 0.981859410430839,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9351204351204352,
+          "support": 192.0
+        },
+        "weighted avg": {
+          "precision": 0.9606009070294785,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9554438616938618,
+          "support": 192.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          0,
+          0,
+          139
+        ]
+      ],
+      "threshold": 0.8,
+      "accepted": 42,
+      "abstained": 150,
+      "coverage": 0.21875,
+      "accepted_accuracy": 1.0,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 25,
+          "correct": 0,
+          "abstained": 25,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 28,
+          "correct": 0,
+          "abstained": 28,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 139,
+          "correct": 42,
+          "abstained": 97,
+          "wrong_route": 0
+        }
+      },
+      "synthetic": {
+        "n": 48,
+        "closed_set_macro_f1": 0.8222222222222223,
+        "closed_set_accuracy": 0.8333333333333334,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 16.0
+          },
+          "pay_statement": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 16.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          },
+          "weighted avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            16
+          ]
+        ],
+        "threshold": 0.8,
+        "accepted": 0,
+        "abstained": 48,
+        "coverage": 0.0,
+        "accepted_accuracy": null,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          }
+        }
+      },
+      "public": {
+        "n": 144,
+        "closed_set_macro_f1": 1.0,
+        "closed_set_accuracy": 1.0,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "pay_statement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 123.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            123
+          ]
+        ],
+        "threshold": 0.8,
+        "accepted": 42,
+        "abstained": 102,
+        "coverage": 0.2916666666666667,
+        "accepted_accuracy": 1.0,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 9,
+            "correct": 0,
+            "abstained": 9,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 12,
+            "correct": 0,
+            "abstained": 12,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 123,
+            "correct": 42,
+            "abstained": 81,
+            "wrong_route": 0
+          }
+        }
+      },
+      "gate": false
+    },
+    {
+      "n": 192,
+      "closed_set_macro_f1": 0.9351204351204352,
+      "closed_set_accuracy": 0.9583333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 28.0
+        },
+        "pay_statement": {
+          "precision": 0.9455782312925171,
+          "recall": 1.0,
+          "f1-score": 0.972027972027972,
+          "support": 139.0
+        },
+        "accuracy": 0.9583333333333334,
+        "macro avg": {
+          "precision": 0.981859410430839,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9351204351204352,
+          "support": 192.0
+        },
+        "weighted avg": {
+          "precision": 0.9606009070294785,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9554438616938618,
+          "support": 192.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          0,
+          0,
+          139
+        ]
+      ],
+      "threshold": 0.85,
+      "accepted": 5,
+      "abstained": 187,
+      "coverage": 0.026041666666666668,
+      "accepted_accuracy": 1.0,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 25,
+          "correct": 0,
+          "abstained": 25,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 28,
+          "correct": 0,
+          "abstained": 28,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 139,
+          "correct": 5,
+          "abstained": 134,
+          "wrong_route": 0
+        }
+      },
+      "synthetic": {
+        "n": 48,
+        "closed_set_macro_f1": 0.8222222222222223,
+        "closed_set_accuracy": 0.8333333333333334,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 16.0
+          },
+          "pay_statement": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 16.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          },
+          "weighted avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            16
+          ]
+        ],
+        "threshold": 0.85,
+        "accepted": 0,
+        "abstained": 48,
+        "coverage": 0.0,
+        "accepted_accuracy": null,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          }
+        }
+      },
+      "public": {
+        "n": 144,
+        "closed_set_macro_f1": 1.0,
+        "closed_set_accuracy": 1.0,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "pay_statement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 123.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            123
+          ]
+        ],
+        "threshold": 0.85,
+        "accepted": 5,
+        "abstained": 139,
+        "coverage": 0.034722222222222224,
+        "accepted_accuracy": 1.0,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 9,
+            "correct": 0,
+            "abstained": 9,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 12,
+            "correct": 0,
+            "abstained": 12,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 123,
+            "correct": 5,
+            "abstained": 118,
+            "wrong_route": 0
+          }
+        }
+      },
+      "gate": false
+    },
+    {
+      "n": 192,
+      "closed_set_macro_f1": 0.9351204351204352,
+      "closed_set_accuracy": 0.9583333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 28.0
+        },
+        "pay_statement": {
+          "precision": 0.9455782312925171,
+          "recall": 1.0,
+          "f1-score": 0.972027972027972,
+          "support": 139.0
+        },
+        "accuracy": 0.9583333333333334,
+        "macro avg": {
+          "precision": 0.981859410430839,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9351204351204352,
+          "support": 192.0
+        },
+        "weighted avg": {
+          "precision": 0.9606009070294785,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9554438616938618,
+          "support": 192.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          0,
+          0,
+          139
+        ]
+      ],
+      "threshold": 0.9,
+      "accepted": 0,
+      "abstained": 192,
+      "coverage": 0.0,
+      "accepted_accuracy": null,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 25,
+          "correct": 0,
+          "abstained": 25,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 28,
+          "correct": 0,
+          "abstained": 28,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 139,
+          "correct": 0,
+          "abstained": 139,
+          "wrong_route": 0
+        }
+      },
+      "synthetic": {
+        "n": 48,
+        "closed_set_macro_f1": 0.8222222222222223,
+        "closed_set_accuracy": 0.8333333333333334,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 16.0
+          },
+          "pay_statement": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 16.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          },
+          "weighted avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            16
+          ]
+        ],
+        "threshold": 0.9,
+        "accepted": 0,
+        "abstained": 48,
+        "coverage": 0.0,
+        "accepted_accuracy": null,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          }
+        }
+      },
+      "public": {
+        "n": 144,
+        "closed_set_macro_f1": 1.0,
+        "closed_set_accuracy": 1.0,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "pay_statement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 123.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            123
+          ]
+        ],
+        "threshold": 0.9,
+        "accepted": 0,
+        "abstained": 144,
+        "coverage": 0.0,
+        "accepted_accuracy": null,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 9,
+            "correct": 0,
+            "abstained": 9,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 12,
+            "correct": 0,
+            "abstained": 12,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 123,
+            "correct": 0,
+            "abstained": 123,
+            "wrong_route": 0
+          }
+        }
+      },
+      "gate": false
+    },
+    {
+      "n": 192,
+      "closed_set_macro_f1": 0.9351204351204352,
+      "closed_set_accuracy": 0.9583333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 28.0
+        },
+        "pay_statement": {
+          "precision": 0.9455782312925171,
+          "recall": 1.0,
+          "f1-score": 0.972027972027972,
+          "support": 139.0
+        },
+        "accuracy": 0.9583333333333334,
+        "macro avg": {
+          "precision": 0.981859410430839,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9351204351204352,
+          "support": 192.0
+        },
+        "weighted avg": {
+          "precision": 0.9606009070294785,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9554438616938618,
+          "support": 192.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          0,
+          0,
+          139
+        ]
+      ],
+      "threshold": 0.95,
+      "accepted": 0,
+      "abstained": 192,
+      "coverage": 0.0,
+      "accepted_accuracy": null,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 25,
+          "correct": 0,
+          "abstained": 25,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 28,
+          "correct": 0,
+          "abstained": 28,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 139,
+          "correct": 0,
+          "abstained": 139,
+          "wrong_route": 0
+        }
+      },
+      "synthetic": {
+        "n": 48,
+        "closed_set_macro_f1": 0.8222222222222223,
+        "closed_set_accuracy": 0.8333333333333334,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 16.0
+          },
+          "pay_statement": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 16.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          },
+          "weighted avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            16
+          ]
+        ],
+        "threshold": 0.95,
+        "accepted": 0,
+        "abstained": 48,
+        "coverage": 0.0,
+        "accepted_accuracy": null,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          }
+        }
+      },
+      "public": {
+        "n": 144,
+        "closed_set_macro_f1": 1.0,
+        "closed_set_accuracy": 1.0,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "pay_statement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 123.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            123
+          ]
+        ],
+        "threshold": 0.95,
+        "accepted": 0,
+        "abstained": 144,
+        "coverage": 0.0,
+        "accepted_accuracy": null,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 9,
+            "correct": 0,
+            "abstained": 9,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 12,
+            "correct": 0,
+            "abstained": 12,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 123,
+            "correct": 0,
+            "abstained": 123,
+            "wrong_route": 0
+          }
+        }
+      },
+      "gate": false
+    },
+    {
+      "n": 192,
+      "closed_set_macro_f1": 0.9351204351204352,
+      "closed_set_accuracy": 0.9583333333333334,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 28.0
+        },
+        "pay_statement": {
+          "precision": 0.9455782312925171,
+          "recall": 1.0,
+          "f1-score": 0.972027972027972,
+          "support": 139.0
+        },
+        "accuracy": 0.9583333333333334,
+        "macro avg": {
+          "precision": 0.981859410430839,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9351204351204352,
+          "support": 192.0
+        },
+        "weighted avg": {
+          "precision": 0.9606009070294785,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9554438616938618,
+          "support": 192.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          25,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          0,
+          0,
+          139
+        ]
+      ],
+      "threshold": 0.98,
+      "accepted": 0,
+      "abstained": 192,
+      "coverage": 0.0,
+      "accepted_accuracy": null,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 25,
+          "correct": 0,
+          "abstained": 25,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 28,
+          "correct": 0,
+          "abstained": 28,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 139,
+          "correct": 0,
+          "abstained": 139,
+          "wrong_route": 0
+        }
+      },
+      "synthetic": {
+        "n": 48,
+        "closed_set_macro_f1": 0.8222222222222223,
+        "closed_set_accuracy": 0.8333333333333334,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 16.0
+          },
+          "pay_statement": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 16.0
+          },
+          "accuracy": 0.8333333333333334,
+          "macro avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          },
+          "weighted avg": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8222222222222223,
+            "support": 48.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            16
+          ]
+        ],
+        "threshold": 0.98,
+        "accepted": 0,
+        "abstained": 48,
+        "coverage": 0.0,
+        "accepted_accuracy": null,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 16,
+            "correct": 0,
+            "abstained": 16,
+            "wrong_route": 0
+          }
+        }
+      },
+      "public": {
+        "n": 144,
+        "closed_set_macro_f1": 1.0,
+        "closed_set_accuracy": 1.0,
+        "closed_set_per_class": {
+          "invoice_or_receipt": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 9.0
+          },
+          "other_document": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "pay_statement": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 123.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 144.0
+          }
+        },
+        "confusion_labels": [
+          "invoice_or_receipt",
+          "other_document",
+          "pay_statement"
+        ],
+        "closed_set_confusion": [
+          [
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            123
+          ]
+        ],
+        "threshold": 0.98,
+        "accepted": 0,
+        "abstained": 144,
+        "coverage": 0.0,
+        "accepted_accuracy": null,
+        "confident_errors": 0,
+        "per_class_after_abstention": {
+          "invoice_or_receipt": {
+            "n": 9,
+            "correct": 0,
+            "abstained": 9,
+            "wrong_route": 0
+          },
+          "other_document": {
+            "n": 12,
+            "correct": 0,
+            "abstained": 12,
+            "wrong_route": 0
+          },
+          "pay_statement": {
+            "n": 123,
+            "correct": 0,
+            "abstained": 123,
+            "wrong_route": 0
+          }
+        }
+      },
+      "gate": false
+    }
+  ],
+  "releaseApproved": false,
+  "deployedToExtension": false,
+  "testScope": "New authored scenario families and layout-theme pool. Shared generator/table components mean this is not an independent real-world or unseen-issuer test. Paired captures are not independent documents.",
+  "publicRegressionScope": "The previously inspected v0.1 public test is regression only, not fresh holdout.",
+  "test": {
+    "candidate": {
+      "n": 48,
+      "closed_set_macro_f1": 0.5333333333333333,
+      "closed_set_accuracy": 0.6666666666666666,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 16.0
+        },
+        "other_document": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 16.0
+        },
+        "pay_statement": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 16.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.5333333333333333,
+          "support": 48.0
+        },
+        "weighted avg": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.5333333333333333,
+          "support": 48.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          16,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          16
+        ]
+      ],
+      "threshold": 0.7,
+      "accepted": 14,
+      "abstained": 34,
+      "coverage": 0.2916666666666667,
+      "accepted_accuracy": 1.0,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 16,
+          "correct": 14,
+          "abstained": 2,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 16,
+          "correct": 0,
+          "abstained": 16,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 16,
+          "correct": 0,
+          "abstained": 16,
+          "wrong_route": 0
+        }
+      }
+    },
+    "baseline_v0_1": {
+      "n": 48,
+      "closed_set_macro_f1": 0.545609548167093,
+      "closed_set_accuracy": 0.6666666666666666,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1-score": 0.9411764705882353,
+          "support": 16.0
+        },
+        "other_document": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 16.0
+        },
+        "pay_statement": {
+          "precision": 0.5333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.6956521739130435,
+          "support": 16.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.47407407407407404,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.545609548167093,
+          "support": 48.0
+        },
+        "weighted avg": {
+          "precision": 0.47407407407407404,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.545609548167093,
+          "support": 48.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          16,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          14
+        ],
+        [
+          0,
+          0,
+          16
+        ]
+      ],
+      "threshold": 0.5,
+      "accepted": 0,
+      "abstained": 48,
+      "coverage": 0.0,
+      "accepted_accuracy": null,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 16,
+          "correct": 0,
+          "abstained": 16,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 16,
+          "correct": 0,
+          "abstained": 16,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 16,
+          "correct": 0,
+          "abstained": 16,
+          "wrong_route": 0
+        }
+      }
+    },
+    "pythonBatchPredictionMsExcludingFeatures": 0.3464579999998829,
+    "byCapture": {
+      "pdf_text": {
+        "candidate": {
+          "n": 24,
+          "closed_set_macro_f1": 0.5333333333333333,
+          "closed_set_accuracy": 0.6666666666666666,
+          "closed_set_per_class": {
+            "invoice_or_receipt": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1-score": 0.8,
+              "support": 8.0
+            },
+            "other_document": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "pay_statement": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1-score": 0.8,
+              "support": 8.0
+            },
+            "accuracy": 0.6666666666666666,
+            "macro avg": {
+              "precision": 0.4444444444444444,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.5333333333333333,
+              "support": 24.0
+            },
+            "weighted avg": {
+              "precision": 0.4444444444444444,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.5333333333333333,
+              "support": 24.0
+            }
+          },
+          "confusion_labels": [
+            "invoice_or_receipt",
+            "other_document",
+            "pay_statement"
+          ],
+          "closed_set_confusion": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              8
+            ]
+          ],
+          "threshold": 0.7,
+          "accepted": 8,
+          "abstained": 16,
+          "coverage": 0.3333333333333333,
+          "accepted_accuracy": 1.0,
+          "confident_errors": 0,
+          "per_class_after_abstention": {
+            "invoice_or_receipt": {
+              "n": 8,
+              "correct": 8,
+              "abstained": 0,
+              "wrong_route": 0
+            },
+            "other_document": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            },
+            "pay_statement": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            }
+          }
+        },
+        "baseline": {
+          "n": 24,
+          "closed_set_macro_f1": 0.545609548167093,
+          "closed_set_accuracy": 0.6666666666666666,
+          "closed_set_per_class": {
+            "invoice_or_receipt": {
+              "precision": 0.8888888888888888,
+              "recall": 1.0,
+              "f1-score": 0.9411764705882353,
+              "support": 8.0
+            },
+            "other_document": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "pay_statement": {
+              "precision": 0.5333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.6956521739130435,
+              "support": 8.0
+            },
+            "accuracy": 0.6666666666666666,
+            "macro avg": {
+              "precision": 0.47407407407407404,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.545609548167093,
+              "support": 24.0
+            },
+            "weighted avg": {
+              "precision": 0.47407407407407404,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.545609548167093,
+              "support": 24.0
+            }
+          },
+          "confusion_labels": [
+            "invoice_or_receipt",
+            "other_document",
+            "pay_statement"
+          ],
+          "closed_set_confusion": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              7
+            ],
+            [
+              0,
+              0,
+              8
+            ]
+          ],
+          "threshold": 0.5,
+          "accepted": 0,
+          "abstained": 24,
+          "coverage": 0.0,
+          "accepted_accuracy": null,
+          "confident_errors": 0,
+          "per_class_after_abstention": {
+            "invoice_or_receipt": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            },
+            "other_document": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            },
+            "pay_statement": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            }
+          }
+        }
+      },
+      "scan_ocr": {
+        "candidate": {
+          "n": 24,
+          "closed_set_macro_f1": 0.5333333333333333,
+          "closed_set_accuracy": 0.6666666666666666,
+          "closed_set_per_class": {
+            "invoice_or_receipt": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1-score": 0.8,
+              "support": 8.0
+            },
+            "other_document": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "pay_statement": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1-score": 0.8,
+              "support": 8.0
+            },
+            "accuracy": 0.6666666666666666,
+            "macro avg": {
+              "precision": 0.4444444444444444,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.5333333333333333,
+              "support": 24.0
+            },
+            "weighted avg": {
+              "precision": 0.4444444444444444,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.5333333333333333,
+              "support": 24.0
+            }
+          },
+          "confusion_labels": [
+            "invoice_or_receipt",
+            "other_document",
+            "pay_statement"
+          ],
+          "closed_set_confusion": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              8
+            ]
+          ],
+          "threshold": 0.7,
+          "accepted": 6,
+          "abstained": 18,
+          "coverage": 0.25,
+          "accepted_accuracy": 1.0,
+          "confident_errors": 0,
+          "per_class_after_abstention": {
+            "invoice_or_receipt": {
+              "n": 8,
+              "correct": 6,
+              "abstained": 2,
+              "wrong_route": 0
+            },
+            "other_document": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            },
+            "pay_statement": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            }
+          }
+        },
+        "baseline": {
+          "n": 24,
+          "closed_set_macro_f1": 0.545609548167093,
+          "closed_set_accuracy": 0.6666666666666666,
+          "closed_set_per_class": {
+            "invoice_or_receipt": {
+              "precision": 0.8888888888888888,
+              "recall": 1.0,
+              "f1-score": 0.9411764705882353,
+              "support": 8.0
+            },
+            "other_document": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "pay_statement": {
+              "precision": 0.5333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.6956521739130435,
+              "support": 8.0
+            },
+            "accuracy": 0.6666666666666666,
+            "macro avg": {
+              "precision": 0.47407407407407404,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.545609548167093,
+              "support": 24.0
+            },
+            "weighted avg": {
+              "precision": 0.47407407407407404,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.545609548167093,
+              "support": 24.0
+            }
+          },
+          "confusion_labels": [
+            "invoice_or_receipt",
+            "other_document",
+            "pay_statement"
+          ],
+          "closed_set_confusion": [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              7
+            ],
+            [
+              0,
+              0,
+              8
+            ]
+          ],
+          "threshold": 0.5,
+          "accepted": 0,
+          "abstained": 24,
+          "coverage": 0.0,
+          "accepted_accuracy": null,
+          "confident_errors": 0,
+          "per_class_after_abstention": {
+            "invoice_or_receipt": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            },
+            "other_document": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            },
+            "pay_statement": {
+              "n": 8,
+              "correct": 0,
+              "abstained": 8,
+              "wrong_route": 0
+            }
+          }
+        }
+      }
+    },
+    "pairedDocuments": {
+      "n": 24,
+      "bothCapturesCorrect": 6,
+      "atLeastOneWrongSuggestion": 0,
+      "atLeastOneUnknown": 18
+    }
+  },
+  "regression": {
+    "candidate": {
+      "n": 163,
+      "closed_set_macro_f1": 0.9862237058231336,
+      "closed_set_accuracy": 0.9938650306748467,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 0.9285714285714286,
+          "recall": 1.0,
+          "f1-score": 0.9629629629629629,
+          "support": 13.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 33.0
+        },
+        "pay_statement": {
+          "precision": 1.0,
+          "recall": 0.9914529914529915,
+          "f1-score": 0.9957081545064378,
+          "support": 117.0
+        },
+        "accuracy": 0.9938650306748467,
+        "macro avg": {
+          "precision": 0.9761904761904763,
+          "recall": 0.9971509971509972,
+          "f1-score": 0.9862237058231336,
+          "support": 163.0
+        },
+        "weighted avg": {
+          "precision": 0.9943032427695003,
+          "recall": 0.9938650306748467,
+          "f1-score": 0.9939654760476794,
+          "support": 163.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          13,
+          0,
+          0
+        ],
+        [
+          0,
+          33,
+          0
+        ],
+        [
+          1,
+          0,
+          116
+        ]
+      ],
+      "threshold": 0.7,
+      "accepted": 77,
+      "abstained": 86,
+      "coverage": 0.4723926380368098,
+      "accepted_accuracy": 1.0,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 13,
+          "correct": 0,
+          "abstained": 13,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 33,
+          "correct": 3,
+          "abstained": 30,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 117,
+          "correct": 74,
+          "abstained": 43,
+          "wrong_route": 0
+        }
+      }
+    },
+    "baseline_v0_1": {
+      "n": 163,
+      "closed_set_macro_f1": 0.9733169129720854,
+      "closed_set_accuracy": 0.9877300613496932,
+      "closed_set_per_class": {
+        "invoice_or_receipt": {
+          "precision": 0.8666666666666667,
+          "recall": 1.0,
+          "f1-score": 0.9285714285714286,
+          "support": 13.0
+        },
+        "other_document": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 33.0
+        },
+        "pay_statement": {
+          "precision": 1.0,
+          "recall": 0.9829059829059829,
+          "f1-score": 0.9913793103448276,
+          "support": 117.0
+        },
+        "accuracy": 0.9877300613496932,
+        "macro avg": {
+          "precision": 0.9555555555555556,
+          "recall": 0.9943019943019943,
+          "f1-score": 0.9733169129720854,
+          "support": 163.0
+        },
+        "weighted avg": {
+          "precision": 0.989366053169734,
+          "recall": 0.9877300613496932,
+          "f1-score": 0.9881153857777508,
+          "support": 163.0
+        }
+      },
+      "confusion_labels": [
+        "invoice_or_receipt",
+        "other_document",
+        "pay_statement"
+      ],
+      "closed_set_confusion": [
+        [
+          13,
+          0,
+          0
+        ],
+        [
+          0,
+          33,
+          0
+        ],
+        [
+          2,
+          0,
+          115
+        ]
+      ],
+      "threshold": 0.5,
+      "accepted": 126,
+      "abstained": 37,
+      "coverage": 0.7730061349693251,
+      "accepted_accuracy": 1.0,
+      "confident_errors": 0,
+      "per_class_after_abstention": {
+        "invoice_or_receipt": {
+          "n": 13,
+          "correct": 9,
+          "abstained": 4,
+          "wrong_route": 0
+        },
+        "other_document": {
+          "n": 33,
+          "correct": 18,
+          "abstained": 15,
+          "wrong_route": 0
+        },
+        "pay_statement": {
+          "n": 117,
+          "correct": 99,
+          "abstained": 18,
+          "wrong_route": 0
+        }
+      }
+    },
+    "pythonBatchPredictionMsExcludingFeatures": 0.20891700000014168
+  },
+  "limitations": [
+    "All new visual documents are synthetic; no new real user documents or screenshots were used.",
+    "Public source/class confounding persists in the inherited corpus.",
+    "The held-out synthetic scenarios share common rendering components with training; this can inflate performance.",
+    "Only three broad labels are trained, not 36 reliable fine-grained types.",
+    "Scan OCR is local macOS training infrastructure; the extension still lacks general scan OCR.",
+    "Scores are uncalibrated and cannot be called probability of correctness.",
+    "Previously viewed challenge/demo packs were not added to training or treated as fresh tests."
+  ]
+}

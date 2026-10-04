@@ -1,0 +1,39 @@
+Harborstone
+Records office • contact@example.invalid
+Customer sales receipt
+Items purchased and tender received are listed below. Keep this receipt for retumns.
+Robin Lane
+1840 Example Lane, Unit 1
+Sacramento, CA 95814
+Reference
+R-12077
+Issue date
+Period
+2026-06-28
+2026-06-01 - 2026-06-28
+SERVICE DETAIL
+Item
+Household supplles
+Administration / service charge
+Quantity
+Unit amount
+Charge
+$647.00
+$12.00
+$647.00
+$12.00
+ACCOUNT SUMMARY
+Activity
+Balance brought forward
+New charges this period
+Payment received
+Closing amount due
+Amount
+$0.00
+$659.00
+$-659.00
+$0.00
+Payment date 2026-06-28 - Method: received electronically
+Detach and retain account reference R-12077
+Remittance amount
+Fictional training specimen - No real person or transaction - Not valid for submission

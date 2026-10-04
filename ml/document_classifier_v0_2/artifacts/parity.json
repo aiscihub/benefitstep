@@ -1,0 +1,110 @@
+[
+  {
+    "id": "record-041-pdf_text",
+    "text": "Willowbridge  \nRecords office \u00b7 contact@example.invalid\n\nEmployer confirmation of wages paid\n\nOur accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of\nfuture work.\n\nAlex Rowan\n\n1840 Example Lane, Unit 1\n\nSacramento, CA 95814\n\nReference   Issue date   Period\n\nR-12041   2026-06-28   2026-06-01 \u2013 2026-06-28\n\nTo whom it may concern: Alex Rowan is employed by Willowbridge. The completed payroll transaction is summarized below. Please\ncontact the payroll office at records@example.invalid for questions about this fictional letter.\n\nEARNINGS\n\nDescription   Hours   Rate   Current   YTD\n\nRegular compensation   40   $18.50   $740.00   $6,660.00\n\nPremium / incentive   \u2014   \u2014   $75.00   $675.00\n\nTotal gross earnings   $815.00   $7,335.00\n\nTAXES AND DEDUCTIONS\n\nDescription   Current   Year to date\n\nFederal withholding   $81.50   $733.50\n\nSocial Security   $50.53   $454.77\n\nMedicare   $11.81   $106.29\n\nState / benefit deduction   $11.01   $99.09\n\nTotal deductions   $154.85   $1,393.65\n\nGross   Deductions   Net wages   Reimbursement   Deposit amount\n\n$815.00   $154.85   $660.15   $0.00   $660.15\n\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\n\nFictional training specimen \u00b7 No real person or transaction \u00b7 Not valid for submission",
+    "scores": [
+      0.14451779366151873,
+      0.3379487297717889,
+      0.5175334765666925
+    ]
+  },
+  {
+    "id": "record-041-scan_ocr",
+    "text": "Willowbridge\nRecords office \u2022 contact@example.invalid\nEmployer confirmation of wages paid\nOur accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of\nfuture work.\nAlex Rowan\n1840 Example Lane, Unit 1\nSacramento, CA 95814\nReference\nIssue date\nPeriod\nR-12041\n2026-06-28\n2026-06-01 - 2026-06-28\nTo whom it may concern: Alex Rowan is employed by Willowbridge. The completed payroll transaction is summarized below. Please\ncontact the payroll office at records@example.invalid for questions about this fictional letter.\nEARNINGS\nDescription\nHours\nRate\nCurrent\nYTD\nRegular compensation\n40\n$18.50\n$740.00\n$6,660.00\nPremium / incentive\n-\n$75.00\n$675.00\n$815.00\n$7,335.00\nTotal gross earnings\nTAXES AND DEDUCTIONS\nDescription\nCurrent\nYear to date\nFederal withholding\n$81.50\n$733-50\nSocial Security\n$50.53\n$454-77\nMedicare\n$11.81\n$106.29\nState / benefit deduction\n$11.01\n$99.09\nTotal deductions\n$154.85\n$1,393.65\nGross\nDeductions\nNet wages\nReimbursement\nDeposit amount\n$815.00\n$154.85\n$660.15\n$0.00\n$660.15\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\nFictional training specimen - No real person or transaction - Not valid for submission",
+    "scores": [
+      0.14451779366151873,
+      0.3379487297717889,
+      0.5175334765666925
+    ]
+  },
+  {
+    "id": "record-042-pdf_text",
+    "text": "Copper Hill  \nRecords office \u00b7 contact@example.invalid\n\nEmployer confirmation of wages paid\n\nOur accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of\nfuture work.\n\nCasey Quinn\n\n1840 Example Lane, Unit 2\n\nSacramento, CA 95814\n\nReference   Issue date   Period\n\nR-12042   2026-07-28   2026-07-01 \u2013 2026-07-28\n\nTo whom it may concern: Casey Quinn is employed by Copper Hill. The completed payroll transaction is summarized below. Please\ncontact the payroll office at records@example.invalid for questions about this fictional letter.\n\nEARNINGS\n\nDescription   Hours   Rate   Current   YTD\n\nRegular compensation   44   $49.00   $2,156.00   $19,404.00\n\nPremium / incentive   \u2014   \u2014   $75.00   $675.00\n\nTotal gross earnings   $2,231.00   $20,079.00\n\nTAXES AND DEDUCTIONS\n\nDescription   Current   Year to date\n\nFederal withholding   $223.10   $2,007.90\n\nSocial Security   $138.32   $1,244.88\n\nMedicare   $32.34   $291.06\n\nState / benefit deduction   $30.13   $271.17\n\nTotal deductions   $423.89   $3,815.01\n\nGross   Deductions   Net wages   Reimbursement   Deposit amount\n\n$2,231.00   $423.89   $1,807.11   $0.00   $1,807.11\n\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\n\nFictional training specimen \u00b7 No real person or transaction \u00b7 Not valid for submission",
+    "scores": [
+      0.14413218407600184,
+      0.3476964395206091,
+      0.5081713764033892
+    ]
+  },
+  {
+    "id": "record-042-scan_ocr",
+    "text": "Copper Hill\nRecords office \u2022 contact@example.invalid\nEmployer confirmation of wages paid\nOur accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of\nfuture work.\nCasey Quinn\n1840 Example Lane, Unit 2\nSacramento, CA 95814\nReference\nIssue date\nPeriod\nR-12042\n2026-07-28\n2026-07-01-2026-07-28\nTo whom it may concern: Casey Quinn is employed by Copper Hill. The completed payroll transaction is summarized below. Please\ncontact the payroll office at records@example.invalid for questions about this fictional letter.\nEARNINGS\nDescription\nHours\nRate\nCurrent\nYTD\nRegular compensation\n44\n$49.00\n$2,156.00\n$19,404.00\nPremium / incentive\n$75.00\n$675.00\nTotal gross earnings\n$2,231.00\n$20,079.00\nTAXES AND DEDUCTIONS\nDescription\nCurrent\nYear to date\nFederal withholding\n$223.10\n$2,007.90\nSocial Security\n$138.32\n$1,244.88\nMedicare\n$32.34\n$291.06\nState / benefit deduction\n$30.13\n$271.17\nTotal deductions\n$423.89\n$3,815.01\nGross\nDeductions\nNet wages\nReimbursement\nDeposit amount\n$2,231.00\n$423.89\n$1,807.11\n$0.00\n$1,807.11\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\nFictional tralning specimen - No real person or transaction - Not valld for submission",
+    "scores": [
+      0.15067628397077268,
+      0.337144966303222,
+      0.5121787497260053
+    ]
+  },
+  {
+    "id": "record-043-pdf_text",
+    "text": "Harborstone  \nRecords office \u00b7 contact@example.invalid\n\nEmployer confirmation of wages paid\n\nOur accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of\nfuture work.\n\nMorgan Ellis\n\n1840 Example Lane, Unit 3\n\nSacramento, CA 95814\n\nReference   Issue date   Period\n\nR-12043   2026-08-28   2026-08-01 \u2013 2026-08-28\n\nTo whom it may concern: Morgan Ellis is employed by Harborstone. The completed payroll transaction is summarized below. Please\ncontact the payroll office at records@example.invalid for questions about this fictional letter.\n\nEARNINGS\n\nDescription   Hours   Rate   Current   YTD\n\nRegular compensation   48   $24.50   $1,176.00   $10,584.00\n\nPremium / incentive   \u2014   \u2014   $75.00   $675.00\n\nTotal gross earnings   $1,251.00   $11,259.00\n\nTAXES AND DEDUCTIONS\n\nDescription   Current   Year to date\n\nFederal withholding   $125.10   $1,125.90\n\nSocial Security   $77.56   $698.04\n\nMedicare   $18.13   $163.17\n\nState / benefit deduction   $16.90   $152.10\n\nTotal deductions   $237.69   $2,139.21\n\nGross   Deductions   Net wages   Reimbursement   Deposit amount\n\n$1,251.00   $237.69   $1,013.31   $0.00   $1,013.31\n\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\n\nFictional training specimen \u00b7 No real person or transaction \u00b7 Not valid for submission",
+    "scores": [
+      0.1421917819145274,
+      0.3471571290592786,
+      0.5106510890261939
+    ]
+  },
+  {
+    "id": "record-043-scan_ocr",
+    "text": "Harborstone\nRecords office \u2022 contact@example.invalid\nEmployer confirmation of wages paid\nOur accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of\nfuture work.\nMorgan Ellis\n1840 Example Lane, Unit 3\nSacramento, CA 95814\nReference\nIssue date\nPeriod\nR-12043\n2026-08-28\n2026-08-01-2026-08-28\nTo whom it may concern: Morgan Ellis is employed by Harborstone. The completed payroll transaction is summarized below. Please\ncontact the payroll office at records@example.invalid for questions about this fictional letter.\nEARNINGS\nDescription\nHours\nRate\nCurrent\nYTD\nRegular compensation\n48\n$24.50\n$1,176.00\n$10,584.00\nPremium / incentive\n-\n$75.00\n$675.00\nTotal gross earnings\n$1,251.00\n$11,259.00\nTAXES AND DEDUCTIONS\nDescription\nCurrent\nYear to date\nFederal withholding\n$125.10\n$1,125.90\nSocial Security\n$77.56\n$698.04\nMedicare\n$18.13\n$163.17\nState / benefit deduction\n$16.90\n$152.10\nTotal deductions\n$237.69\n$2,139.21\nGross\nDeductions\nNet wages\nReimbursement\nDeposit amount\n$1,251.00\n$237.69\n$1,013-31\n$0.00\n$1,013.31\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\nFictional training specimen - No real person or transaction - Not valid for submission",
+    "scores": [
+      0.1421917819145274,
+      0.3471571290592786,
+      0.5106510890261939
+    ]
+  },
+  {
+    "id": "record-044-pdf_text",
+    "text": "Alderpoint  \nRecords office \u00b7 contact@example.invalid\n\nEmployer confirmation of wages paid\n\nOur accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of\nfuture work.\n\nTaylor Brooks\n\n1840 Example Lane, Unit 4\n\nSacramento, CA 95814\n\nReference   Issue date   Period\n\nR-12044   2026-09-28   2026-09-01 \u2013 2026-09-28\n\nTo whom it may concern: Taylor Brooks is employed by Alderpoint. The completed payroll transaction is summarized below. Please\ncontact the payroll office at records@example.invalid for questions about this fictional letter.\n\nEARNINGS\n\nDescription   Hours   Rate   Current   YTD\n\nRegular compensation   52   $46.50   $2,418.00   $21,762.00\n\nPremium / incentive   \u2014   \u2014   $75.00   $675.00\n\nTotal gross earnings   $2,493.00   $22,437.00\n\nTAXES AND DEDUCTIONS\n\nDescription   Current   Year to date\n\nFederal withholding   $249.30   $2,243.70\n\nSocial Security   $154.56   $1,391.04\n\nMedicare   $36.14   $325.26\n\nState / benefit deduction   $33.67   $303.03\n\nTotal deductions   $473.67   $4,263.03\n\nGross   Deductions   Net wages   Reimbursement   Deposit amount\n\n$2,493.00   $473.67   $2,019.33   $0.00   $2,019.33\n\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\n\nFictional training specimen \u00b7 No real person or transaction \u00b7 Not valid for submission",
+    "scores": [
+      0.14284681103459992,
+      0.3477066401809929,
+      0.5094465487844072
+    ]
+  },
+  {
+    "id": "record-044-scan_ocr",
+    "text": "Alderpoint\nRecords office \u2022 contact@example.invalid\nEmployer confirmation of wages paid\nOur accounting ledger confirms the following wages were paid to this employee. This is a record of payment, not an offer of\nfuture work.\nTaylor Brooks\n1840 Example Lane, Unit 4\nSacramento, CA 95814\nReference\nIssue date\nPeriod\nR-12044\n2026-09-28\n2026-09-01-2026-09-28\nTo whom it may concern: Taylor Brooks is employed by Alderpoint. The completed payroll transaction is summarized below. Please\ncontact the payroll office at records@example.invalid for questions about this fictional letter.\nEARNINGS\nDescription\nHours\nRate\nCurrent\nYTD\nRegular compensation\n52\n$46.50\n$2,418.00\n$21,762.00\nPremium / incentive\n-\n-\n$75.00\n$675.00\nTotal gross earnings\n$2,493.00\n$22,437.00\nTAXES AND DEDUCTIONS\nDescription\nCurrent\nYear to date\nFederal withholding\n$249.30\n$2,243-70\nSocial Security\n$154-56\n$1,391.04\nMedicare\n$36.14\n$325.26\nState / benefit deduction\n$33.67\n$303.03\nTotal deductions\n$473.67\n$4,263.03\nGross\nDeductions\nNet wages\nReimbursement\nDeposit amount\n$2,493.00\n$473.67\n$2,019.33\n$0.00\n$2,019.33\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\nFictional training specimen - No real person or transaction \u2022 Not valid for submission",
+    "scores": [
+      0.14284681103459992,
+      0.3477066401809929,
+      0.5094465487844072
+    ]
+  },
+  {
+    "id": "record-137-pdf_text",
+    "text": "Willowbridge  \nRecords office \u00b7 contact@example.invalid\n\nCompensation planning worksheet\n\nProposed pay cycle simulation. Salary, deductions and net deposit are estimates for planning; no payment was issued or\nreceived.\n\nAlex Rowan\n\n1840 Example Lane, Unit 1\n\nSacramento, CA 95814\n\nReference   Issue date   Period\n\nR-12137   2026-06-28   2026-06-01 \u2013 2026-06-28\n\nEARNINGS\n\nDescription   Hours   Rate   Current   YTD\n\nRegular compensation   40   $51.00   $2,040.00   $18,360.00\n\nPremium / incentive   \u2014   \u2014   $75.00   $675.00\n\nTotal gross earnings   $2,115.00   $19,035.00\n\nTAXES AND DEDUCTIONS\n\nDescription   Current   Year to date\n\nFederal withholding   $211.50   $1,903.50\n\nSocial Security   $131.13   $1,180.17\n\nMedicare   $30.66   $275.94\n\nState / benefit deduction   $28.56   $257.04\n\nTotal deductions   $401.85   $3,616.65\n\nGross   Deductions   Net wages   Reimbursement   Deposit amount\n\n$2,115.00   $401.85   $1,713.15   $0.00   $1,713.15\n\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\n\nFictional training specimen \u00b7 No real person or transaction \u00b7 Not valid for submission",
+    "scores": [
+      0.134787152681712,
+      0.2609813589002339,
+      0.6042314884180542
+    ]
+  },
+  {
+    "id": "record-137-scan_ocr",
+    "text": "Willowbridge\nRecords office \u2022 contact@example.invalid\nCompensation planning worksheet\nProposed pay cycle simulation. Salary, deductions and net deposit are estimates for planning; no payment was issued or\nreceived.\nAlex Rowan\n1840 Example Lane, Unit 1\nSacramento, CA 95814\nReference\nIssue date\nPeriod\nR-12137\n2026-06-28\n2026-06-01 -2026-06-28\nEARNINGS\nDescription\nHours\nRate\nCurrent\nYTD\nRegular compensation\n40\n$51.00\n$2,040.00\n$18,360.00\nPremium / incentive\n$75.00\n$675.00\n$2,115.00\n$19,035.00\nTotal gross earnings\nTAXES AND DEDUCTIONS\nDescription\nCurrent\nYear to date\nFederal withholding\n$211.50\n$1,903-50\nSocial Security\n$131.13\n$1,180.17\n$30.66\n$275.94\nMedicare\nState / benefit deduction\n$28.56\n$257.04\nTotal deductions\n$401.85\n$3,616.65\nGross\nDeductions\nNet wages\nReimbursement\nDeposit amount\n$2,115.00\n$401.85\n$1,713.15\n$0.00\n$1,713.15\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\nFictional training specimen - No real person or transaction - Not valid for submission",
+    "scores": [
+      0.134787152681712,
+      0.2609813589002339,
+      0.6042314884180542
+    ]
+  },
+  {
+    "id": "record-138-pdf_text",
+    "text": "Copper Hill  \nRecords office \u00b7 contact@example.invalid\n\nCompensation planning worksheet\n\nProposed pay cycle simulation. Salary, deductions and net deposit are estimates for planning; no payment was issued or\nreceived.\n\nCasey Quinn\n\n1840 Example Lane, Unit 2\n\nSacramento, CA 95814\n\nReference   Issue date   Period\n\nR-12138   2026-07-28   2026-07-01 \u2013 2026-07-28\n\nEARNINGS\n\nDescription   Hours   Rate   Current   YTD\n\nRegular compensation   44   $24.75   $1,089.00   $9,801.00\n\nPremium / incentive   \u2014   \u2014   $75.00   $675.00\n\nTotal gross earnings   $1,164.00   $10,476.00\n\nTAXES AND DEDUCTIONS\n\nDescription   Current   Year to date\n\nFederal withholding   $116.40   $1,047.60\n\nSocial Security   $72.16   $649.44\n\nMedicare   $16.87   $151.83\n\nState / benefit deduction   $15.73   $141.57\n\nTotal deductions   $221.16   $1,990.44\n\nGross   Deductions   Net wages   Reimbursement   Deposit amount\n\n$1,164.00   $221.16   $942.84   $0.00   $942.84\n\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\n\nFictional training specimen \u00b7 No real person or transaction \u00b7 Not valid for submission",
+    "scores": [
+      0.1356199086369833,
+      0.26397481490953795,
+      0.6004052764534786
+    ]
+  },
+  {
+    "id": "record-138-scan_ocr",
+    "text": "Copper Hill\nRecords office \u2022 contact@example.invalid\nCompensation planning worksheet\nProposed pay cycle simulation. Salary, deductions and net deposit are estimates for planning; no payment was issued or\nreceived.\nCasey Quinn\n1840 Example Lane, Unit 2\nSacramento, CA 95814\nReference\nIssue date\nPeriod\nR-12138\n2026-07-28\n2026-07-01-2026-07-28\nEARNINGS\nDescription\nHours\nRate\nCurrent\nYTD\nRegular compensation\n44\n$24.75\n$1,089.00\n$9,801.00\nPremium / incentive\n-\n$75.00\n$675.00\nTotal gross earnings\n$1,164.00\n$10,476.00\nTAXES AND DEDUCTIONS\nDescription\nCurrent\nYear to date\nFederal withholding\n$116.40\n$1,047.60\nSocial Security\n$72.16\n$649.44\nMedicare\n$16.87\n$151.83\nState / benefit deduction\n$15-73\n$141.57\nTotal deductions\n$221.16\n$1,990.44\nGross\nDeductions\nNet wages\nReimbursement\nDeposit amount\n$1,164.00\n$221.16\n$942.84\n$0.00\n$942.84\nAmounts are illustrative. Withholding figures are not tax advice. YTD values are cumulative and should not be treated as current period income.\nFictional training specimen \u2022 No real person or transaction - Not valid for submission",
+    "scores": [
+      0.1356199086369833,
+      0.26397481490953795,
+      0.6004052764534786
+    ]
+  }
+]
