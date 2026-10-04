@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "BenefitStep — Local Preview",
+  "version": "0.1.4",
+  "minimum_chrome_version": "138",
+  "permissions": [
+    "sidePanel"
+  ],
+  "action": {
+    "default_title": "Open BenefitStep"
+  },
+  "side_panel": {
+    "default_path": "assets/index.html"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self' blob:; worker-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'"
+  }
+}

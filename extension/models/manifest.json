@@ -1,0 +1,9 @@
+{
+  "modelId": "benefitstep-public-text-classifier-v0.1",
+  "file": "public-type-model.json",
+  "sha256": "23ac10b26d73520ed85da16afddf3a0b6dae08e61358187f1b527491642b2cee",
+  "automaticRoutingEnabled": false,
+  "use": "Automatic experimental type suggestions in batch import, plus standalone classifier lab",
+  "runtime": "Packaged JavaScript; no model server",
+  "automaticSuggestionsEnabled": true
+}
