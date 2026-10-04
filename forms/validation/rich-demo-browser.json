@@ -1,7 +1,0 @@
-{
-  "checks": [
-    "cf285 rich demo flows from Review into filled PDF/package without retyping",
-    "ccfrm604 rich demo flows from Review into filled PDF/package without retyping"
-  ],
-  "passed": 2
-}

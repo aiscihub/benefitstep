@@ -1,22 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "BenefitStep — Local Preview",
-  "version": "0.3.0",
+  "name": "BenefitStep \u2014 Benefits Application Helper",
+  "version": "0.3.1",
   "minimum_chrome_version": "138",
   "permissions": [
     "sidePanel"
   ],
   "icons": {
-    "16": "assets/benefitstep_small_dark.png",
-    "32": "assets/benefitstep_small_dark.png",
-    "48": "assets/benefitstep_small_dark.png",
-    "128": "assets/benefitstep_small_dark.png"
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
   },
   "action": {
     "default_title": "Open BenefitStep",
     "default_icon": {
-      "16": "assets/benefitstep_small_dark.png",
-      "32": "assets/benefitstep_small_dark.png"
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png"
     }
   },
   "side_panel": {
@@ -27,5 +27,6 @@
   },
   "content_security_policy": {
     "extension_pages": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self' blob:; worker-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'"
-  }
+  },
+  "description": "Prepare CalFresh and Medi-Cal application drafts with local document review, evidence checks, and PDF downloads."
 }

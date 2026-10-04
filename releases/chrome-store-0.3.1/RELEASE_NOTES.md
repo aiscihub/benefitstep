@@ -23,7 +23,7 @@ No Node.js, Python, developer server or user account is needed to run the extens
 - **benefitstep-0.3.1-store-assets.zip** — screenshots, promotional images, listing text, privacy-policy page and reviewer instructions. This is not the installable extension.
 - **SHA256SUMS.txt** — SHA-256 checksums for both ZIP files.
 
-GitHub's automatic Source code archives are for development; use the named extension ZIP to install.
+GitHub's automatic repository archives include the extension and listing materials. Use the named extension ZIP, or load the repository's extension/ folder, to install.
 
 ### Validation and limitations
 

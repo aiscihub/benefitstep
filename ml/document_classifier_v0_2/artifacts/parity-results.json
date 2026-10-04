@@ -1,7 +1,0 @@
-{
-  "checks": [
-    "Python/JavaScript probability parity",
-    "All 48 held-out capture predictions match browser-portable JavaScript"
-  ],
-  "maxScoreDifference": 1.6653345369377348e-16
-}

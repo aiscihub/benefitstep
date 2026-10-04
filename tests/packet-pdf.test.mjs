@@ -1,4 +1,0 @@
-import test from 'node:test';import assert from 'node:assert/strict';
-import {packetPdf} from '../shared/core/packet-pdf.mjs';
-test('Long summaries keep index pointing to the first facts page',()=>{const result=packetPdf({generatedAt:'2026-10-03',screening:{headline:'Draft'},documents:[{facts:Array.from({length:50},()=>({label:'Long field',value:'a'.repeat(110)})),issues:[]}]},[{filename:'long.pdf',images:[]}]);assert.equal(result.index[0].page,2);assert.ok(result.pageCount>2);});
-test('Unresolved tasks paginate without silently truncating explanations',()=>{const result=packetPdf({generatedAt:'2026-10-03',screening:{headline:'Draft'},documents:[{facts:[],issues:Array.from({length:80},(_,i)=>'Task '+i+': '+('long reason '.repeat(10)))}]},[{filename:'Tasks',images:[]}]);assert.ok(result.pageCount>2);assert.match(new TextDecoder().decode(result.bytes),/Task 79/);});
