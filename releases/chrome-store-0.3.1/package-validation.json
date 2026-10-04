@@ -1,0 +1,11 @@
+{
+  "version": "0.3.1",
+  "archive": "benefitstep-0.3.1-chrome-store.zip",
+  "bytes": 9245295,
+  "sha256": "aa20142ae1c32b63fff00e9d0a16f4eea4c4c81074c2e0cf525cb7a7ca2b1a80",
+  "manifestAtRoot": true,
+  "permissions": [
+    "sidePanel"
+  ],
+  "productionApprovalClaimed": false
+}

@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Recreated by the store packaging script; upload ZIP is retained.
+/releases/*/unpacked/

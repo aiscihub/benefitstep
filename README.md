@@ -1,100 +1,169 @@
-# Latest integration: 0.3.0
+# BenefitStep
 
-The local policy engine is integrated. CF285 and Medi-Cal forms now support local unsigned-draft generation, preview, and PDF/ZIP downloads. Reviewed evidence is reused; the expanded fictional AI demo fills household and application details. Independent field audit and approval remain pending. See [PDF implementation and remaining acceptance work](forms/README.md).
+**Prepare your benefits application package.**
 
-# BenefitStep — policy-aligned local preview 0.2.0
+BenefitStep is a Chrome side-panel extension for preparing **CalFresh and Medi-Cal** applications. It helps users organize documents, review extracted information, check selected evidence issues, and download unsigned application drafts.
 
-Implements the core preparation and manual application workflow from **BS-DEV-001**, now with the **BS-UI-POL-002 v0.2** utility design and independent program starting screens. See [integration and validation](UI_V0_2_INTEGRATION.md) and [policy tracking](policy/README.md). The supplied design package and original policy inventory remain unchanged.
+Documents and answers are processed locally. BenefitStep does not read the BenefitsCal website or submit an application for you.
 
-## Load the extension
+> **Release status:** Chrome Web Store submission candidate **0.3.1** is packaged and tested locally. It has **not been submitted to or approved by the Chrome Web Store**. Independent PDF field-mapping review remains incomplete. BenefitStep is not affiliated with BenefitsCal, CDSS, DHCS, or any government agency. Initial checks are not eligibility decisions.
 
-In `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select:
+## What you can do
 
-`extension/` inside this project (release copy: `/Users/zhenli/git/benefitstep/extension`).
+| Step | What BenefitStep does |
+| --- | --- |
+| **1. Quick check** | Collects initial CalFresh answers and separate Medi-Cal applicant details. Shows bounded, dated reference findings and what still needs review. |
+| **2. Document** | Accepts files or a folder, suggests document types, extracts supported details, and identifies selected issues with Package Doctor. |
+| **3. Review** | Lets you compare details with their sources, correct mistakes, and confirm the available information. Unknown or conflicting answers remain unresolved. |
+| **4. Application** | Reuses compatible reviewed details, prepares CF285 or Medi-Cal application answers, previews unsigned PDFs, and downloads PDFs or application packages. |
 
-Pin **BenefitStep — Local Preview** and click its toolbar icon to open the sidebar. This is a separate extension from CookieGuard and the previous Companion. The supplied `BenefitStep_Implementation_v0_1` handoff folder is not the loadable extension.
+The extension accepts PDF, JPEG, PNG and text files. Current import limits are **24 files**, **8 MB per file**, **6 pages per imported PDF**, and **48 MB total**. Generated official applications preserve all original pages: **18 for CF285** and **44 for CCFRM604**.
 
-## Working flow
+## Install and try the release
 
-Quick check → Add documents → resolve important issues → **Yes, correct** → Apply and follow up.
+There is no Chrome Web Store installation link yet. For local testing:
 
-- CalFresh asks residence, estimated food household and an income band tied to a dated reference. Medi-Cal separately collects age and residence per person seeking coverage; no Medi-Cal household or income conclusion is calculated. Saves, partial saves, skips and revisions are independent. Starting estimates never become confirmed document facts.
-- Select PDFs/images/text together or choose a folder. One batch action reads and organizes files. Native on-device extraction is used when available; a clearly labeled local English-label reader is used for searchable documents when unavailable. Images need supported local AI or manual entry. No cloud fallback.
-- Strict allowlisted candidate fields, exact text quotes, page references, integer cents, original values, editable revisions and immutable confirmation history. Unknowns remain unknown. Native output cannot select benefit rules or set submission status.
-- Package Doctor runs on actual records: unreadable/conflicting values, exact duplicates, gross/net/YTD confusion, prior-balance misuse, comparable pay-record conflicts, and evidence linked to a confirmed request's person/program/date basis/period. It offers one prominent finding, sources and a correction path. Other findings stay collapsed.
-- Only affected answers pause. A revision-bound explanation can retain a correction after a source comparison; it does not confirm facts. The single summary confirmation excludes unresolved, deferred and paused values.
-- CalFresh manual section companion, explicit copy, source viewing, original selection and ZIP export. Export includes an indexed **preparation-review.pdf** with rendered source copies, a text PDF summary, accessible HTML, JSON, and unchanged selected originals. No original is preselected.
-- Explicitly recorded submission, receipt, request, upload, interview and decision events. CalFresh and Medi-Cal follow-up views stay separate. Recognized notice fields prefill for owner review; imported notices do not create official events. Prepared, sent, accepted and approved stay distinct.
-- Session memory only. No host permissions, content scripts, analytics or persistent private storage. Clear removes hidden dialog content and cancels jobs; source deletion offers active-only or all retained copies. Model setup cancels on dialog close; late sessions are destroyed.
+1. Download [the Chrome Web Store release ZIP](releases/chrome-store-0.3.1/benefitstep-0.3.1-chrome-store.zip) and unzip it into a folder.
+2. Open `chrome://extensions` in desktop Chrome **138 or later**.
+3. Enable **Developer mode**, select **Load unpacked**, and choose the unzipped folder containing `manifest.json`.
+4. Pin BenefitStep and click its toolbar icon to open the side panel.
 
-## Trained document classifier
+If you have cloned this repository, you can instead load `releases/chrome-store-0.3.1/unpacked/` to test the store candidate, or `extension/` to test the development build.
 
-A small custom text classifier has been trained on selected public PAYSLIPS, CORD and synthetic FieldBench data. It now runs automatically during batch import and shows a broad suggestion beside each file: pay statement, invoice/receipt, other document, or unknown. **View source** shows model provenance and scores separately from the information reader. The standalone lab remains under **Processing options → Try trained classifier (experimental)**. It does not extract facts or change preparation labels.
+End users do not need Python, Node.js, a developer server, or an account. Optional Chrome on-device AI availability depends on the browser and device; the bundled classifier and supported local text reader do not require that model.
 
-On 163 eligible held-out documents, it returned 126 correct suggestions and 37 unknowns. This is a narrow pilot with source/class confounding, not measured benefits-wide accuracy. See [training instructions](ml/document_classifier/README.md), [model card](ml/document_classifier/MODEL_CARD.md) and [data provenance](ml/document_classifier/DATA_CARD.md). Field extraction and Package Doctor remain independent components in the same workflow.
+## Try the fictional demo
 
-For a one-click walkthrough, open **Add documents → Try AI demo with fictional documents** in an empty session. It loads a pay PDF, utility bill, and short note, runs the actual classifier and local text reader, then shows Doctor checks. See [demo steps and wording](demo/ai-components/DEMO.md).
+In an empty workspace, open **Document → Try AI demo with fictional documents**.
 
-## Realistic household packet for the video
+The demo imports three bundled documents and runs the actual document classifier and local reader. A separate, clearly labeled fictional questionnaire supplies a three-person household, address, birth dates, employment and childcare details. Questionnaire values are not presented as AI-extracted facts.
 
-Use [the Rivera household filming packet](demo/video-household/README.md): eight PDFs with consistent September payroll, rent, utility, childcare, banking and request details, plus an optional image-only phone scan. Each issuer has a distinct visual layout. Open [the local gallery](demo/video-household/index.html) to preview documents; import only `demo/video-household/main-packet/` into an empty session.
+Continue through **Review → Application**, then select either:
 
-[The 90-second script](demo/video-household/VIDEO_SCRIPT.md) follows the actual results. The reader extracted 55 candidate facts; all 16 selected amount/program/person checks matched. The installed-extension rehearsal flagged a deliberately entered utility amount of 940 and cleared it when restored to 140. The model recognized the two pay statements; other suggestions remained unknown. These are curated video fixtures, not a new benchmark, and the harder challenge findings remain unchanged. ZIP: `demo/BenefitStep_Video_Household.zip`.
+- **Generate CalFresh package (CF285)**
+- **Generate Medi-Cal package (CCFRM604)**
 
-## Harder document challenge
+Review the populated answers, confirm them, and generate the filled draft. You can download the PDF or a ZIP containing the PDF, application answers, generation report and items-to-finish checklist. The expanded demo fills **33 CF285 fields** and **46 Medi-Cal fields**. Fictional output is marked **DO NOT SUBMIT**.
 
-Use [challenge-v1](demo/challenge-v1/README.md) for unfamiliar layouts and failure cases: 18 PDFs covering tables, two-page letters, receipts, misleading payroll vocabulary, annual/future income, scans, simulated OCR errors, missing amounts, mixed packets and a duplicate. Import only its `pdfs/` folder. The [recorded results](demo/challenge-v1/RESULTS.md) show 0 correct suggestions, 11 unknowns and 1 wrong suggestion across 12 new readable scenarios; the separate local reader found only 1 of 11 selected present fields. This synthetic challenge exposes current generalization limits; it is not a real-user accuracy estimate. Weights and thresholds were unchanged. ZIP: `demo/BenefitStep_Challenge_v1.zip`.
+![BenefitStep document review using fictional demo records](releases/chrome-store-0.3.1/store-assets/02-document-review-1280x800.png)
 
-## Public training-data demo pack
+![Unsigned fictional application preview and download controls](releases/chrome-store-0.3.1/store-assets/05-filled-application-1280x800.png)
 
-The [training-data demo pack](demo/training-data-demo/README.md) contains eight public training examples reconstructed as searchable PDFs, plus two fictional workflow PDFs. Import only its `pdfs/` folder in an empty session. The [saved extraction results](demo/training-data-demo/extracted/RESULTS.md) show actual classifier suggestions, extracted text and candidate facts. Publisher annotations are separate reference answers, not model output. A portable copy is in `demo/BenefitStep_Training_Data_Demo.zip`.
+## Privacy and permissions
 
-These examples demonstrate familiar training data and do not add evidence to held-out accuracy. The model, training splits and benchmark are unchanged. No demo sources are added to the extension bundle.
+- Documents and answers stay in the extension's temporary working memory; they are not uploaded to a developer server or cloud AI service.
+- There is no analytics, advertising, account synchronization, or persistent private history.
+- **Clear my work** removes the working state. Reloading or ending the extension page's lifetime also clears it.
+- Downloaded files remain on your device until you delete them. They are ordinary, unencrypted files and may contain sensitive information.
+- The extension requests only **`sidePanel`**, to display the preparation workflow. It has no host permissions or content scripts and does not read BenefitsCal or browsing history.
+- Executable libraries, the classifier, fonts and PDF templates are bundled locally. Chrome may separately download its optional browser-managed on-device model.
+- Official website links open only when selected; those sites have their own privacy policies.
 
-## Model benchmark
+Read the [privacy-policy page prepared for publication](store/privacy-policy.html). A public hosted URL still needs to be supplied in the Chrome Web Store dashboard. This README does not replace that policy or the dashboard's data-handling declarations.
 
-Open **Processing options → View model benchmark**, or use the benchmark link above the document processing overview. The report shows dataset/split counts, supported types, held-out recognition, abstention, score reliability and measured browser speed. It explicitly distinguishes public test results from unmeasured accuracy on real applicant documents.
+## AI, policy engine and Package Doctor
 
-The current register of datasets actually used is [ml/dataset_register.json](ml/dataset_register.json); the original handoff register remains a historical candidate list. [BENCHMARK.md](ml/document_classifier/BENCHMARK.md) is the presentation-ready report; raw timing measurements and the generated JSON summary are in `ml/document_classifier/artifacts/`. Reproduction commands are included in the report. No training text is shipped with the benchmark page.
+These are separate components with different responsibilities:
 
-## Package Doctor demo
+| Component | Role and limits |
+| --- | --- |
+| **Document classifier** | A bundled trained text model suggests pay statement, invoice/receipt, other document, or unknown. It does not establish document authenticity or benefit eligibility. |
+| **Information reader** | Extracts allowlisted candidate fields. Uses Chrome's on-device model when available, with a limited local text-reading fallback. Users review the proposed values. |
+| **Policy engine** | Applies configured research-preview reference checks to reported facts. It does not implement full eligibility or an agency decision. CalFresh estimates are not silently reused as Medi-Cal household or income facts. |
+| **Package Doctor** | Checks selected evidence problems, including duplicates, readability, amount meanings and comparable records. It does not prove completeness or agency acceptance. |
+| **PDF writer** | Writes supported, confirmed answers onto original official templates. Missing items, unsupported fields, signatures and consent choices remain for manual completion. |
 
-Five visibly fictional PDFs are in `demo/package-doctor/`. See `demo/package-doctor/DEMO.md` for the walkthrough. Existing realistic pay/rent examples remain available in `demo/starter/`.
+The classifier benchmark contains **460 training, 144 validation and 163 held-out test documents**. Results are a narrow pilot, not a benefits-wide accuracy claim; harder unfamiliar-layout fixtures expose significant limitations. See the [model card](ml/document_classifier/MODEL_CARD.md), [benchmark](ml/document_classifier/BENCHMARK.md), [data card](ml/document_classifier/DATA_CARD.md), and [dataset register](ml/dataset_register.json).
 
-The normal extractor keeps current charges and total due separate. To demonstrate an issue, deliberately change the first bill's prepared **Current utility charges** from **140** to **940**. Package Doctor uses the original source fields to flag the error. The alternative bill actually has **940** current charges and must not trigger that warning. This is an evidence-based comparison, not a filename-triggered scenario.
+Policy configuration is in [engine/config](engine/config); source tracking is in [policy](policy). Package Doctor's research sources and rule mapping are documented in [research/package-doctor](research/package-doctor/README.md).
 
-## Build and checks
+## Known limitations
 
-Node 22.16+; runtime dependencies are already bundled. No `npm install` or network is needed.
+- Initial screening is preliminary; Medi-Cal starting details do not constitute a complete financial or pathway assessment.
+- Recognition and extraction depend on document quality and layout. Scans may need supported on-device AI or manual entry; broad OCR and automatic document splitting are not implemented.
+- Prefill preserves meaning: individual payments are not automatically monthly household income, ambiguous people are not assigned silently, and missing name parts or addresses are not invented.
+- Official PDF field coverage is partial. Independent field/branch auditing, desktop/print validation and two reviewer sign-offs remain open. Generated files are **unsigned drafts**, not validated complete applications.
+- BenefitStep does not sign consent statements, submit applications, upload evidence to an agency, or mark a case approved.
+- A full accessibility/security audit and wider real-user validation remain outstanding. Tests do not certify production readiness.
+
+See [PDF implementation and remaining work](forms/README.md), [acceptance status](forms/validation/task-status.json), and [validation history](VALIDATION.md).
+
+## Develop and test
+
+Build prerequisites: **Node.js 22.16+**. Runtime dependencies are already bundled; `npm install` and network access are not required for a normal build.
+
+From the repository root:
 
 ```sh
-cd /Users/zhenli/Projects/cookieguard_safestep/BenefitStep_v0_1
 npm run build
 npm test
+node --test engine/tests/*.test.mjs
 ```
 
-Installed-extension check from the repository root, using a temporary Chrome profile:
+Browser checks require Python 3 and an installed desktop Chrome. Each uses a temporary isolated profile:
 
 ```sh
-python3 scripts/benefitstep_smoke.py
+python3 tests/policy-ui-browser.py
+python3 tests/forms-browser.py
+python3 tests/demo-application-browser.py
 ```
 
-`VALIDATION.md` distinguishes executed checks from release work. PDF.js 6.3.289, its license and hashes are recorded in `SBOM.json`; builds verify every inventoried vendor file. This inventory is not a vulnerability assessment.
+The copied 0.3.0 development baseline passed **365 Node tests**. The installed-extension form suite passed **16 checks**, including offline standard fonts, previews, PDF/package downloads and source selection. The exact **0.3.1 store candidate** was separately loaded in Chrome: both original forms rendered offline with no observed remote document requests or runtime exceptions in that check.
 
-## Scope and implementation choices
+Evidence: [Node results](forms/validation/release-tests.txt), [form browser results](forms/validation/browser-results.json), and [store-candidate browser check](releases/chrome-store-0.3.1/release-browser-check.json).
 
-This is a **working G1/G2 local preview**, not certification that the specification's complete production gates pass. It reuses the tested JavaScript module UI instead of rewriting it into React/TypeScript. The extension-owned sidebar is the sole session owner; there is no second synchronized workspace or internal cross-window message protocol. Different windows do not share private application state.
+## Chrome Web Store publication
 
-The handoff's strict extraction vocabulary is adapted to existing field/type names and extended with business income, award, county request, application receipt, upload receipt and coverage notice candidates. Mixed files abstain. Limits remain the previously tested conservative bounds: 24 files, 8 MB/file, six pages/PDF, 48 MB total, one active model job. Password-protected PDFs need an owner-unlocked copy or manual entry. Broad layout OCR and document splitting are not implemented.
+| Deliverable | Location |
+| --- | --- |
+| **Upload ZIP** | [benefitstep-0.3.1-chrome-store.zip](releases/chrome-store-0.3.1/benefitstep-0.3.1-chrome-store.zip) |
+| **Listing assets ZIP** | [benefitstep-0.3.1-store-assets.zip](releases/chrome-store-0.3.1/benefitstep-0.3.1-store-assets.zip) |
+| **Listing text and privacy declarations** | [store/LISTING.md](store/LISTING.md) |
+| **Privacy-policy page** | [store/privacy-policy.html](store/privacy-policy.html) |
+| **Reviewer walkthrough** | [store/REVIEWER-INSTRUCTIONS.md](store/REVIEWER-INSTRUCTIONS.md) |
+| **Submission checklist** | [store/SUBMISSION-CHECKLIST.md](store/SUBMISSION-CHECKLIST.md) |
+| **Package checksum** | [SHA256SUMS.txt](releases/chrome-store-0.3.1/SHA256SUMS.txt) |
 
-Generic document checks run locally; the handoff's unapproved consequential county policy designs remain disabled. The starting comparison remains display-only; Medi-Cal starting facts do not constitute an eligibility screener. No cash-flow eligibility inference, deductions, forensic authenticity model, automatic routing by the trained classifier, or medical coverage decision is enabled. Medi-Cal supports separate preparation and follow-up; its guided official completion is not implemented.
+Upload only the **extension upload ZIP**, whose root contains `manifest.json`. Listing images and text are entered separately in the dashboard. Do not upload the repository, training datasets or listing-assets ZIP as extension code.
 
-Saved-work encryption, cross-window projections, production policy approvals, coverage navigation, a full accessibility/security audit, hardware-native AI validation and measured user pilots remain separate release work. Closing or reloading loses preparation. Exports are ordinary unencrypted reference copies, not restorable encrypted backups. Clipboard and downloaded files can be shared by other software.
+Prepared visual assets include a **128×128 icon**, **440×280 promotional image**, five **1280×800 screenshots**, and an optional **1400×560 marquee image**.
 
-## More realistic classifier training corpus
+Before submission, the publisher must:
 
-A separate [v0.2 training experiment](ml/document_classifier_v0_2/README.md) adds 144 fictional documents and paired scan/OCR examples across 36 authored scenarios. [Open the gallery](ml/document_classifier_v0_2/data/realistic-v1/index.html). The trained candidate failed its validation release gate and is not deployed; the shipped v0.1 model and benchmark remain unchanged. The new results distinguish paired captures from unique documents and report unknowns explicitly.
+1. Complete developer-account registration and two-step verification.
+2. Publish the privacy-policy page at a public URL and supply publisher/support details.
+3. Review the listing, permission justification and data-handling declarations for accuracy.
+4. Choose distribution and regions, then submit for Chrome Web Store review. Private trusted-tester distribution is recommended initially and still requires review.
 
-## Package Doctor research provenance
+The README and ZIP are preparation materials, not evidence of store approval. See Google's [publication guide](https://developer.chrome.com/docs/webstore/publish), [asset requirements](https://developer.chrome.com/docs/webstore/images), and [local-data privacy guidance](https://developer.chrome.com/docs/webstore/program-policies/user-data-faq).
 
-[Research register and rule mapping](research/package-doctor/README.md) distinguish public reports, published service research, official guidance, issuer examples and development feedback. The review documents 13 external pages, nine implemented Doctor rule IDs and the remaining design patterns. [Presentation slides and wording](presentation/BenefitStep_Package_Doctor_Research.md) are included. This documentation does not change runtime rules or establish policy approval.
+To rebuild the candidate and capture fresh images:
+
+```sh
+npm run release:chrome
+npm run release:assets
+```
+
+Release packaging currently uses Python 3 and macOS `sips` for icon sizes. Asset capture requires Chrome. The packaging script assigns candidate version **0.3.1** while the development package remains **0.3.0**; update the release version before uploading a later candidate. If the source changes, rerun the checks and refresh the listing assets as well.
+
+## Repository guide
+
+| Directory | Contents |
+| --- | --- |
+| `src/`, `assets/`, `shared/` | Application UI and local processing code |
+| `engine/`, `policy/`, `reference/` | Policy engine, configuration and source records |
+| `forms/` | Official templates, field mappings, fixtures and validation evidence |
+| `models/`, `ml/` | Shipped classifier, training code and research data |
+| `vendor/` | Bundled runtime libraries, fonts and license notices |
+| `demo/`, `research/`, `presentation/` | Fictional examples, research provenance and presentation material |
+| `tests/`, `scripts/` | Automated checks, build and packaging tools |
+| `extension/` | Generated development extension |
+| `store/`, `releases/` | Publication materials and store candidate |
+
+Additional examples: [video household](demo/video-household/README.md), [harder document challenge](demo/challenge-v1/README.md), [training-data demo](demo/training-data-demo/README.md), and [separate classifier experiment](ml/document_classifier_v0_2/README.md). Training examples are not additional held-out test evidence.
+
+## Feedback and license
+
+Use [GitHub Issues](https://github.com/aiscihub/benefitstep/issues) for reproducible bugs and suggestions. Use fictional examples; do not post personal benefits documents or private application details in public issues.
+
+BenefitStep's project code is provided under the [MIT License](LICENSE). Bundled dependencies, fonts, agency forms and datasets retain their respective terms; the project license does not relicense those materials. See [SBOM.json](SBOM.json), [dependency notices](vendor), and [data provenance](ml/document_classifier/DATA_CARD.md).
