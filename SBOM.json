@@ -11,7 +11,7 @@
       "source": "https://www.npmjs.com/package/pdfjs-dist/v/6.3.289",
       "files": {
         "vendor/PDFJS-LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
-        "vendor/README.md": "0ec19906da0ddb8c97322b5f033884e98fd49221ea173cb9c53d87929cfff775",
+        "vendor/README.md": "fab103ad90155bffea621710d0593979f204d9f7c24229d663e2cc7174686151",
         "vendor/cmaps/78-EUC-H.bcmap": "d92a261336dc18b8c03a46eb4d462382d33f4338fa195d303256b2031434c874",
         "vendor/cmaps/78-EUC-V.bcmap": "61670bebc4e4827b67230c054fd0d820d6e30c3584d02e386804e62bbedc032a",
         "vendor/cmaps/78-H.bcmap": "ece6415b853d61e1b2560165151407d35cf16e6556932b85a13ea75276b77402",
@@ -196,8 +196,28 @@
         "vendor/wasm/openjpeg_nowasm_fallback.js": "0f998419819da4491d8302222aa9e2ff2494685641aa2a6c21c3760c29f3e319",
         "vendor/wasm/qcms_bg.wasm": "663d86126d5f5fcb1c61490f94353e2a8375660b8c5498ab3ebab5a34b08800e",
         "vendor/wasm/quickjs-eval.js": "fe7930418e869791ce892567dbd0bc4698152b7e550b5cefa553992c56ddc325",
-        "vendor/wasm/quickjs-eval.wasm": "7bcacc9f22cacf7e9b23866d2a6d1639693d40c7f144e41b7c69ed37ba9cbe8f"
-      }
+        "vendor/wasm/quickjs-eval.wasm": "7bcacc9f22cacf7e9b23866d2a6d1639693d40c7f144e41b7c69ed37ba9cbe8f",
+        "vendor/standard_fonts/FoxitDingbats.pfb": "845c752392b6c914fb989c75a08b7792b88f542d2499042ef2889f8c814a16ed",
+        "vendor/standard_fonts/LiberationSans-Bold.ttf": "361c61b82d575c5c35fd9157fda8b0194bcfcd0d88ea8521a4fb5dd53d33dddc",
+        "vendor/standard_fonts/FoxitSymbol.pfb": "47967d055530e7357088a08403115425643ec2cdfd6201ba8af0fbd7116c1539",
+        "vendor/standard_fonts/LiberationSans-BoldItalic.ttf": "a224075ac17495ad0a3af3bc0a419ac0704a8b3fd1095456201fb9b095fc281d",
+        "vendor/standard_fonts/LICENSE_LIBERATION": "d2c4d5b3e115a519cb58eb691aa64538397e2611f9ebe801392cf9667997e7dc",
+        "vendor/standard_fonts/FoxitFixedBoldItalic.pfb": "8a000945843bd31add06aee63bf9fd41b7578b4f3242a4b7cd46349ad9d24d4d",
+        "vendor/standard_fonts/FoxitFixedItalic.pfb": "5007faf8320fa1fcc08b8894b356ad976f60b992ba29ee5272578bbdebaf3876",
+        "vendor/standard_fonts/FoxitSerifItalic.pfb": "610ae0687198045c4db5d1a6650fd5e92536631706382eb8b72e38df578d0ae9",
+        "vendor/standard_fonts/FoxitSerifBoldItalic.pfb": "a406cac82583bf98175cb62c87ed5e95c45fbb34eece63a10b0a13e793cb2e10",
+        "vendor/standard_fonts/FoxitSerifBold.pfb": "0bdf4b04e964139818d51eda03d566ba999fc3ba2421b1c6c51f9dc969022e80",
+        "vendor/standard_fonts/FoxitFixed.pfb": "b6c8fe53f134b8b6d4578cd2d544df4cee9624c4efa8d51a560fb40ea296101b",
+        "vendor/standard_fonts/LiberationSans-Italic.ttf": "832b4406dbef23628800d3aaad21048534ac84d7e3ad955be83b8172ed8ef512",
+        "vendor/standard_fonts/FoxitSerif.pfb": "4f57d2b9d884af8f907bf22df6019b52d86cbf6214fdbd02b1ae05472a543f35",
+        "vendor/standard_fonts/LICENSE_FOXIT": "b578cdd2345840ada550bd12519533812320d5f1d21cf4c1c7e1b1b0a31c98b7",
+        "vendor/standard_fonts/LiberationSans-Regular.ttf": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f",
+        "vendor/standard_fonts/FoxitFixedBold.pfb": "f1b7159702973f54fc86254ea38bcf3712b2a736eb3a0995751e9f4bb45ad603"
+      },
+      "standardFontLicenseFiles": [
+        "vendor/standard_fonts/LICENSE_FOXIT",
+        "vendor/standard_fonts/LICENSE_LIBERATION"
+      ]
     }
   ],
   "nativeModel": "Chrome managed, device-dependent; not bundled or trained by BenefitStep",

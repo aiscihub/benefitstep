@@ -5,7 +5,7 @@
  const wait=async fn=>{for(let i=0;i<200;i++){if(fn())return;await new Promise(r=>setTimeout(r,50));}throw Error('Timeout '+fn.toString());};
  async function add(names){const data=new DataTransfer();for(const f of DOCTOR_FIXTURES.filter(f=>names.includes(f.name)))data.items.add(new File([Uint8Array.from(atob(f.data),c=>c.charCodeAt(0))],f.name,{type:'application/pdf'}));$('#files').files=data.files;$('#files').dispatchEvent(new Event('change'));await wait(()=>$('#batch-status')?.textContent.startsWith('Processing complete'));}
  const editCurrent=()=>[...document.querySelectorAll('.cf-facts > div')].find(row=>row.textContent.includes('Current utility charges')).querySelector('[data-action="edit"]').click();
- click('privacy');click('clear');click('skip');
+ click('privacy');click('clear'); $('[data-route=documents]').click();
  await add(['01-bill-with-previous-balance.pdf','02-large-current-bill.pdf']);
  check(!$('[data-doctor-rule="PD08"]'),'correctly labeled large bill is not flagged');
  click('to-confirm');click('confirm');$('[data-route="confirm"]').click();editCurrent();type('fact-value','940');click('save-fact');await wait(()=>!$('#dialog').open);
@@ -13,7 +13,7 @@
  click('confirm');click('guide');$('#guide-section').value='Expenses';$('#guide-section').dispatchEvent(new Event('change',{bubbles:true}));
  const currentRows=[...document.querySelectorAll('.cf-facts > div')].filter(row=>row.textContent.includes('Current utility charges'));check(currentRows.length===1,'only affected current-charge answer excluded');check(currentRows[0].textContent.includes('$940.00'),'valid large bill remains available');
  $('[data-route="confirm"]').click();editCurrent();type('fact-value','140');click('save-fact');await wait(()=>!$('#dialog').open);check(!$('[data-doctor-rule="PD08"]'),'issue clears after correction');click('confirm');
- click('privacy');click('clear');check(!$('#dialog-content').textContent,'clear removes hidden dialog text');click('skip');
+ click('privacy');click('clear');check(!$('#dialog-content').textContent,'clear removes hidden dialog text'); $('[data-route=documents]').click();
  await add(['03-september-pay.pdf','04-request-october.pdf','04-request-september.pdf']);
  click('to-confirm');click('confirm');click('followup');check(document.body.textContent.includes('Submission not recorded'),'importing notices does not set submission');
  async function request(month){click('event');$('#event-kind').value='evidence_request';$('#event-program').value='CalFresh';$('#event-source').value=[...$('#event-source').options].find(o=>o.textContent==='04-request-'+month+'.pdf').value;$('#event-source').dispatchEvent(new Event('change',{bubbles:true}));check($('#event-person').value==='Alex Demo'&&$('#event-program').value==='CalFresh','recognized notice prefilled for owner review');type('event-person','Alex Demo');type('event-details','Income earned in '+month+' 2026');type('request-start',month==='october'?'2026-10-01':'2026-09-01');type('request-end',month==='october'?'2026-10-31':'2026-09-30');$('#request-basis').value='earned';click('save-event');await wait(()=>!$('#dialog').open);const buttons=[...document.querySelectorAll('[data-action="match-request"]')];buttons[buttons.length-1].click();$('#match-document').value=[...$('#match-document').options].find(o=>o.textContent==='03-september-pay.pdf').value;$('#match-basis').value='earned';click('save-match');await wait(()=>!$('#dialog').open);}

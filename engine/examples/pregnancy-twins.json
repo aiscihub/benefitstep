@@ -1,0 +1,204 @@
+{
+  "asOf": "2026-10-04",
+  "stage": "details",
+  "selectedPrograms": [
+    "medi_cal"
+  ],
+  "people": [
+    {
+      "id": "applicant-a",
+      "appliesFor": [
+        "medi_cal"
+      ],
+      "sensitiveConsent": [
+        "immigration",
+        "health"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "f1",
+      "key": "shared.ca_residence",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": true,
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f2",
+      "key": "shared.age_years",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": 40,
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f3",
+      "key": "shared.immigration_status",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": "us_citizen",
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f4",
+      "key": "shared.pregnancy_state",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": "pregnant",
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f5",
+      "key": "mc.medicare",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": false,
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f6",
+      "key": "mc.tax_role",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": "independent_filer",
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f7",
+      "key": "mc.tax_dependents",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": 0,
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f8",
+      "key": "mc.lives_with_spouse",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": false,
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f9",
+      "key": "mc.income_basis",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": "magi_prepared",
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f10",
+      "key": "mc.monthly_magi_range",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": {
+        "min": 450000,
+        "max": 450000
+      },
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f11",
+      "key": "mc.enrollment_context",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": "new",
+      "confirmedRevision": 1
+    },
+    {
+      "id": "f12",
+      "key": "shared.expected_children",
+      "subject": "applicant-a",
+      "programs": [
+        "medi_cal"
+      ],
+      "status": "known",
+      "revision": 1,
+      "origin": "user",
+      "validFrom": "2026-10-01",
+      "validThrough": "2026-12-31",
+      "value": 2,
+      "confirmedRevision": 1
+    }
+  ]
+}

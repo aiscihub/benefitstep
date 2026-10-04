@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "deck": "BenefitStep_Slides_v0_1.md",
+  "speakerNotes": "BenefitStep_Speaker_Notes_v0_1.md",
+  "slideCount": 17,
+  "researchSlides": [
+    10,
+    11
+  ],
+  "sourceReview": {
+    "date": "2026-10-03",
+    "reviewedExternalSources": 13,
+    "countsByKind": {
+      "official_benefits": 4,
+      "public_report": 5,
+      "published_service_research": 3,
+      "issuer_documentation": 1
+    },
+    "earlierReferencesRechecked": 7,
+    "newlyCollected": 6,
+    "developmentFeedbackThemes": 4,
+    "primaryInterviewsConducted": 0,
+    "primarySurveysConducted": 0,
+    "sourceRegister": "../research/package-doctor/sources.json"
+  },
+  "doctor": {
+    "implementedCheckCount": 9,
+    "checks": [
+      {
+        "id": "PD01",
+        "title": "Unreadable or unresolved information",
+        "behavior": "Analysis failed, a required candidate field is missing, or source values conflict.",
+        "sourceIds": [
+          "R01",
+          "R02",
+          "F03"
+        ]
+      },
+      {
+        "id": "PD03",
+        "title": "Exact duplicate files",
+        "behavior": "An identical file was imported again; exclude the duplicate from active evidence.",
+        "sourceIds": []
+      },
+      {
+        "id": "PD04",
+        "title": "Wrong income amount basis",
+        "behavior": "A prepared gross-pay answer uses source net pay or year-to-date earnings.",
+        "sourceIds": [
+          "U05",
+          "F02",
+          "P03"
+        ]
+      },
+      {
+        "id": "PD05",
+        "title": "Evidence period does not match the request",
+        "behavior": "The confirmed evidence dates do not cover the requested period.",
+        "sourceIds": [
+          "U03",
+          "U04",
+          "P03",
+          "F04"
+        ]
+      },
+      {
+        "id": "PD06",
+        "title": "Person, program or application does not match",
+        "behavior": "The evidence and request have incompatible scope; missing context also prevents a positive match.",
+        "sourceIds": [
+          "U03",
+          "P01",
+          "F04"
+        ]
+      },
+      {
+        "id": "PD07",
+        "title": "Comparable pay records disagree",
+        "behavior": "The same person, employer, period and payment date have conflicting gross amounts.",
+        "sourceIds": [
+          "P02"
+        ]
+      },
+      {
+        "id": "PD08",
+        "title": "Previous balance used as current charges",
+        "behavior": "A prepared current-charge answer uses total due including an older balance.",
+        "sourceIds": [
+          "B01"
+        ]
+      },
+      {
+        "id": "PD12",
+        "title": "County request still needs a response",
+        "behavior": "A confirmed evidence request has no matching response event recorded.",
+        "sourceIds": [
+          "U03",
+          "R01",
+          "R02",
+          "P01",
+          "F04"
+        ]
+      },
+      {
+        "id": "PD24",
+        "title": "Document type unresolved",
+        "behavior": "The information reader has not established a supported document kind.",
+        "sourceIds": [
+          "R01",
+          "F03"
+        ]
+      }
+    ],
+    "relatedWorkflowSafeguards": [
+      {
+        "id": "PD22",
+        "behavior": "Changed information invalidates an earlier confirmed transfer."
+      },
+      {
+        "id": "PD23",
+        "behavior": "Upload receipts and application submission receipts remain distinct."
+      }
+    ],
+    "designOrFuturePatternCount": 13,
+    "totalCatalogPatterns": 24,
+    "ruleEvidenceMap": "../research/package-doctor/rule-evidence-map.json"
+  },
+  "validation": {
+    "executedDoctorAndStateTests": {
+      "command": "node --test --test-reporter=tap tests/doctor.test.mjs tests/state.test.mjs",
+      "workingDirectory": "BenefitStep_v0_1",
+      "tests": 46,
+      "passed": 46,
+      "failed": 0,
+      "names": [
+        "bill: previous balance used",
+        "bill: large current charge",
+        "bill: correct basis",
+        "bill: unreconciled credit",
+        "bill: unknown previous balance",
+        "correction resolves issue without changing source or old snapshot",
+        "explanation is revision-bound and does not confirm facts",
+        "gross basis 1000.00",
+        "gross basis 15000.00",
+        "gross basis 1250.00",
+        "gross basis 1400.00",
+        "pay comparison conflict",
+        "pay comparison equal",
+        "pay comparison other person",
+        "pay comparison other period",
+        "pay comparison other payment",
+        "request historical match",
+        "request different month",
+        "request partial month",
+        "request missing confirmation",
+        "request ambiguous date meaning",
+        "request other person",
+        "request other program",
+        "history is not automatically expired by import date",
+        "new event invalidates prepared transfer; receipt cannot become submission",
+        "delete all copies removes history and dependent events",
+        "stale confirmation is rejected",
+        "local recognition: Application submission receipt",
+        "local recognition: Document upload receipt",
+        "local recognition: County evidence request",
+        "local recognition: Business income statement",
+        "local recognition: Income award",
+        "mixed documents abstain, unsupported model fields and invented quotes rejected",
+        "integer cents are stored and updated exactly",
+        "known upload receipt cannot be recorded as an application receipt",
+        "exact duplicates are excluded; equal amounts in different files survive",
+        "partial confirmation keeps unknowns unknown and freezes earlier snapshots",
+        "changing one fact preserves other confirmations and invalidates transfers",
+        "manual zero is explicit; blank does not become zero",
+        "moving history or deleting source removes active answers without mutating snapshots",
+        "events require provenance and isolate program and upload status",
+        "invalid dates rejected; reports and source receipts remain distinct",
+        "extension is separate, no host/content-script/storage permissions",
+        "support received is income; paid is expense; unknown direction remains other",
+        "person corrections invalidate dependent attribution without rewriting history",
+        "four questions and income ranges replace exact amount input"
+      ],
+      "resultFile": "../research/package-doctor/latest-check-tests.txt",
+      "scope": "Doctor and related state tests, including reader validation; not 46 independent issues or applicant cases."
+    },
+    "previousFullSuite": {
+      "tests": 202,
+      "passed": 202,
+      "resultFile": "../tests/latest-node.txt",
+      "scope": "Previously recorded full suite. The 46-test run is a subset, not additional tests."
+    },
+    "plannedScenarioCatalog": {
+      "entries": 120,
+      "statusCounts": {
+        "not_run": 120
+      },
+      "variants": {
+        "positive": 24,
+        "negative": 24,
+        "unknown_context": 24,
+        "wrong_scope": 24,
+        "changed_period": 24
+      },
+      "file": "../../BenefitStep_Implementation_v0_1/tests/package_doctor_scenarios.json",
+      "scope": "Design scenarios; not claimed as executed or passing."
+    },
+    "aiAuthoredScenarioAssessment": {
+      "date": "2026-10-04T03:54:33.563Z",
+      "counts": {
+        "total": 158,
+        "executed": 132,
+        "passed": 129,
+        "failed": 3,
+        "notImplemented": 26
+      },
+      "scope": "Synthetic post-extraction Doctor/state logic assessment. 132 executable scenarios across nine checks and two workflow guards; 26 narrative future scenarios across 13 design patterns. Not document-classifier accuracy or a representative applicant sample.",
+      "origin": "AI-authored expectations frozen before first run; implementation-informed and not independently validated.",
+      "command": "node scripts/evaluate-doctor-scenarios.mjs",
+      "corpus": "../tests/scenarios/package-doctor-v1.json",
+      "corpusSha256": "2c3607fd9e1999836985c211c587d5bf3e4778a141dce24dcfdf19701cf51956",
+      "report": "../research/package-doctor/SCENARIO_ASSESSMENT.md",
+      "results": "../research/package-doctor/scenario-results.json",
+      "failedCaseIds": [
+        "PD03-09",
+        "PD07-12",
+        "PD12-12"
+      ],
+      "normalStateActionCases": 130,
+      "fixtureMutationRobustnessCases": 2,
+      "relationshipToPreviousTests": "Separate scenario assessment with overlapping behaviors; do not add counts to claim unique real-world cases. The original planned 120 entries remain not_run.",
+      "productionCodeChanged": false
+    }
+  },
+  "boundaries": [
+    "No complaint prevalence or applicant outcome measured.",
+    "Checks are explicit rules, not a model trained on public posts.",
+    "Sources collected later are not backdated as original design causes.",
+    "Rule checks do not establish eligibility, document authenticity or county acceptance."
+  ],
+  "documentFamilyCoverage": {
+    "file": "../research/package-doctor/document-family-coverage.json",
+    "summary": "../research/package-doctor/DOCUMENT_COVERAGE.md",
+    "plannedFamilies": 26,
+    "trainedBroadLabels": 3,
+    "extractorKnownKinds": 13,
+    "scenarioMentionsByKind": {
+      "rent": 12,
+      "unknown": 11,
+      "medical": 1,
+      "paystub": 87,
+      "county_request": 37,
+      "utility": 13,
+      "upload_receipt": 10,
+      "application_receipt": 6
+    },
+    "newTrainingOrExtractionValidation": false,
+    "newSourceReviewSeparateFromOriginalResearchCount": true,
+    "slide": 7
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "BenefitStep"
+    },
+    {
+      "number": 2,
+      "title": "Having the document is only the beginning"
+    },
+    {
+      "number": 3,
+      "title": "Four parts, one experience"
+    },
+    {
+      "number": 4,
+      "title": "Start with an early answer, then prepare"
+    },
+    {
+      "number": 5,
+      "title": "Residence first; proof depends on the program"
+    },
+    {
+      "number": 6,
+      "title": "Read the document\u2014and preserve what its numbers mean"
+    },
+    {
+      "number": 7,
+      "title": "Cover the documents people actually bring"
+    },
+    {
+      "number": 8,
+      "title": "More realistic data exposed the model\u2019s limits"
+    },
+    {
+      "number": 9,
+      "title": "Package Doctor checks the relationship"
+    },
+    {
+      "number": 10,
+      "title": "Where Package Doctor\u2019s checks come from"
+    },
+    {
+      "number": 11,
+      "title": "What Package Doctor checks today"
+    },
+    {
+      "number": 12,
+      "title": "The same record can fit one request and miss another"
+    },
+    {
+      "number": 13,
+      "title": "Privacy is part of the workflow"
+    },
+    {
+      "number": 14,
+      "title": "Demo: from a bill to a usable answer"
+    },
+    {
+      "number": 15,
+      "title": "What we have tested"
+    },
+    {
+      "number": 16,
+      "title": "What we need to prove next"
+    },
+    {
+      "number": 17,
+      "title": "Make the next step easier"
+    }
+  ],
+  "updatedOn": "2026-10-03",
+  "updateScope": "Presentation and evidence integration only; no runtime/model changes or new benchmark execution.",
+  "residencyGuidance": {
+    "slide": 5,
+    "checkedOn": "2026-10-03",
+    "implemented": [
+      "Quick check asks residence context after no/unsure",
+      "Routes recent move, no fixed address, temporary absence and other-state answers",
+      "Starting check does not require documents; official application remains available"
+    ],
+    "planned": [
+      "Program-specific evidence guidance",
+      "Reuse sources for residency evidence",
+      "Address extraction and discrepancy checks"
+    ],
+    "sources": [
+      {
+        "id": "RES01",
+        "title": "CalFresh/SNAP verification, 7 CFR 273.2(f)(1)(vi)",
+        "url": "https://www.ecfr.gov/current/title-7/section-273.2",
+        "supports": "Generally verify residency; flexible documentary/contact evidence; exceptions when verification cannot reasonably be accomplished."
+      },
+      {
+        "id": "RES02",
+        "title": "DHCS Medi-Cal Help: Physical/Mailing Address",
+        "url": "https://www.dhcs.ca.gov/medi-cal/help/",
+        "supports": "Certify California residence and provide living/mailing address; routine documentary proof not required."
+      }
+    ],
+    "implementation": "../src/quick-screen.mjs",
+    "extractorSchema": "../shared/core/schema.mjs",
+    "notAddedToOriginal13SourceReview": true
+  },
+  "classifierCandidate": {
+    "slide": 8,
+    "modelVersion": "v0.2",
+    "releaseApproved": false,
+    "deployedToExtension": false,
+    "corpus": {
+      "fictionalDocuments": 144,
+      "authoredFamilies": 36,
+      "pairedCaptures": 288
+    },
+    "partitions": {
+      "train": {
+        "rows": 652,
+        "uniqueDocuments": 556
+      },
+      "validation": {
+        "rows": 192,
+        "uniqueDocuments": 168
+      },
+      "test": {
+        "rows": 48,
+        "uniqueDocuments": 24
+      },
+      "regression": {
+        "rows": 163,
+        "uniqueDocuments": 163
+      }
+    },
+    "test": {
+      "candidate": {
+        "captures": 48,
+        "correctSuggestions": 14,
+        "unknown": 34,
+        "wrongSuggestions": 0
+      },
+      "baseline_v0_1": {
+        "captures": 48,
+        "correctSuggestions": 0,
+        "unknown": 48,
+        "wrongSuggestions": 0
+      }
+    },
+    "metrics": "../ml/document_classifier_v0_2/artifacts/metrics.json",
+    "datasetAndLimitations": "../ml/document_classifier_v0_2/README.md",
+    "shippedManifest": "../models/manifest.json",
+    "timingScope": "Stored warm-batch text classification timing, excludes loading/PDF/OCR/extraction/UI; not rerun for this update."
+  }
+}

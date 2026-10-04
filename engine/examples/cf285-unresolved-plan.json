@@ -1,0 +1,307 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "cf285",
+  "edition": "8/21",
+  "templateSha256": null,
+  "pageCount": 18,
+  "applicationRevision": 1,
+  "exportAuthorized": false,
+  "canRender": false,
+  "status": "template_mapping_review_required",
+  "operations": [],
+  "missing": [
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "name",
+      "reason": "official_pdf_binding_not_validated"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "other_names",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "ssn",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_address",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_city",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_state",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_zip",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "mailing_address",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "mailing_city",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "mailing_state",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "mailing_zip",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_phone",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "cell_phone",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "work_or_alternate_phone",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "email",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "text_contact",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "homeless",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "written_language",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "spoken_language",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "deaf_hard_of_hearing",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "has_disability",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "needs_accommodation",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "domestic_violence_history",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "interested_in_medical",
+      "reason": "unanswered"
+    },
+    {
+      "groupId": "q1.expedited",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q2.representative",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q3.demographics",
+      "reason": "optional_group_not_addressed"
+    },
+    {
+      "groupId": "q4.interview",
+      "reason": "optional_group_not_addressed"
+    },
+    {
+      "groupId": "q5.previous_benefits",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q6a.people",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q6a.other_people",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q6b.immigration",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q6b.exceptions",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q6c.sponsor",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q6d.student",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q6e.foster",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q7.unearned",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q8.earned",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q8.job_change",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q8a.business",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q9.care",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q9.care_help",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q10.child_support",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q11.housing",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q11.help",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q12.medical",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q13.food",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q14.facility",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q15.separate_food",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q16.resources",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q17.legal",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q18.legal",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q19.legal",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q20.legal",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q21.legal",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "q22.legal",
+      "reason": "applicability_not_confirmed"
+    },
+    {
+      "groupId": "notes",
+      "reason": "applicability_not_confirmed"
+    }
+  ],
+  "manualActions": [
+    {
+      "groupId": "q1.signature",
+      "page": 9,
+      "text": "Applicant signature and date"
+    },
+    {
+      "groupId": "county_only",
+      "page": 18,
+      "text": "County-use expedited processing and identification section"
+    }
+  ],
+  "sourceId": "FORM_CF285",
+  "officialUrl": "https://cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/A-D/CF285.pdf?ver=2023-03-08-155331-893",
+  "fullFormCompletionCertified": false,
+  "submitted": false,
+  "warning": "A prepared PDF is not a signed or submitted application. Missing bindings and manual actions must stay visible. Do not label an incomplete inventory as a complete application."
+}

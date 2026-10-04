@@ -1,0 +1,350 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "cf285",
+  "revision": 1,
+  "groups": [
+    {
+      "groupId": "q1.contact",
+      "status": "applicable",
+      "rowCount": 1,
+      "revision": 1,
+      "confirmedRevision": 1
+    },
+    {
+      "groupId": "q6a.people",
+      "status": "applicable",
+      "rowCount": 1,
+      "revision": 1,
+      "confirmedRevision": 1
+    },
+    {
+      "groupId": "q8.earned",
+      "status": "applicable",
+      "rowCount": 2,
+      "revision": 1,
+      "confirmedRevision": 1
+    },
+    {
+      "groupId": "notes",
+      "status": "applicable",
+      "rowCount": 1,
+      "revision": 1,
+      "confirmedRevision": 1
+    }
+  ],
+  "answers": [
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "name",
+      "status": "answered",
+      "value": "Jordan García",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_address",
+      "status": "answered",
+      "value": "123 Example Way",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_city",
+      "status": "answered",
+      "value": "Sacramento",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_state",
+      "status": "answered",
+      "value": "CA",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "home_zip",
+      "status": "answered",
+      "value": "95814",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "homeless",
+      "status": "answered",
+      "value": false,
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q1.contact",
+      "row": 0,
+      "field": "email",
+      "status": "answered",
+      "value": "jordan@example.invalid",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q6a.people",
+      "row": 0,
+      "field": "name",
+      "status": "answered",
+      "value": "Jordan García",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q6a.people",
+      "row": 0,
+      "field": "date_of_birth",
+      "status": "answered",
+      "value": "01/15/1990",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 0,
+      "field": "has_income",
+      "status": "answered",
+      "value": true,
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 0,
+      "field": "person",
+      "status": "answered",
+      "value": "Jordan García",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 0,
+      "field": "employer_name_address",
+      "status": "answered",
+      "value": "Example Co.",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 0,
+      "field": "employer_phone",
+      "status": "answered",
+      "value": "916-555-0100",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 0,
+      "field": "hourly_rate",
+      "status": "answered",
+      "value": "18.00",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 0,
+      "field": "hours_week",
+      "status": "answered",
+      "value": "30",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 0,
+      "field": "frequency",
+      "status": "answered",
+      "value": "Twice monthly",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 0,
+      "field": "gross_received_this_month",
+      "status": "answered",
+      "value": "2160.00",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 1,
+      "field": "has_income",
+      "status": "answered",
+      "value": true,
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:1"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 1,
+      "field": "person",
+      "status": "answered",
+      "value": "Jordan García",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:1"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 1,
+      "field": "employer_name_address",
+      "status": "answered",
+      "value": "Example Co.",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:1"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 1,
+      "field": "employer_phone",
+      "status": "answered",
+      "value": "916-555-0100",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:1"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 1,
+      "field": "hourly_rate",
+      "status": "answered",
+      "value": "18.00",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:1"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 1,
+      "field": "hours_week",
+      "status": "answered",
+      "value": "30",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:1"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 1,
+      "field": "frequency",
+      "status": "answered",
+      "value": "Twice monthly",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:1"
+      ]
+    },
+    {
+      "groupId": "q8.earned",
+      "row": 1,
+      "field": "gross_received_this_month",
+      "status": "answered",
+      "value": "2160.00",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:1"
+      ]
+    },
+    {
+      "groupId": "notes",
+      "row": 0,
+      "field": "notes",
+      "status": "answered",
+      "value": "FICTIONAL TEST ONLY. No real person. Unsigned. Do not submit.",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:multiple-income:0"
+      ]
+    }
+  ],
+  "exportAuthorized": true
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "ccfrm604",
+  "templateSha256": null,
+  "expectedPageCount": 44,
+  "review": {
+    "status": "draft",
+    "reviewers": [],
+    "visualValidation": false
+  },
+  "bindings": [],
+  "protectedRegions": [],
+  "note": "Import the exact official PDF. Use inspector output to bind real widget names or measured rectangles. A zero-binding template cannot export a completed application. No official field geometry or hash is fabricated."
+}

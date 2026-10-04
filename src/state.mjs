@@ -1,10 +1,11 @@
+import {fresh as startingState} from './starting-state.mjs';
 import {reconcileDoctor} from './doctor.mjs';
 import {EXPECTED,FIELD_DEFS,normalizeValue,moneyCents,validDate} from '../shared/core/schema.mjs';
 const stamp=()=>new Date().toISOString();
 const id=()=>crypto.randomUUID();
 export const SECTIONS=['Your Information','People','Household Details','Income','Expenses','Assets (if shown)','Other Situations','Document Upload','Review and Submit'];
 export const groupFor=(kind,fields=[])=>['paystub','self_employment','income_award'].includes(kind)?'Income':['county_request','application_receipt','upload_receipt','coverage_notice'].includes(kind)?'Application documents':kind==='support'?(fields.find(f=>f.key==='support_direction')?.value==='received'?'Income':fields.find(f=>f.key==='support_direction')?.value==='paid'?'Expenses':'Other Situations'):kind==='childcare'?'Household Details':['rent','mortgage','utility','medical'].includes(kind)?'Expenses':'Other Situations';
-export function initial(){return {programs:new Set(['CalFresh','Medi-Cal']),quick:{resident:'',residencyContext:'',income:'',medicalIncome:'',food:'',tax:'',applicant_status:'',special_group:''},quickProgram:'calfresh',quickChecked:new Set(),route:'quick',doctorResolutions:{},requestMatches:[],docs:[],facts:[],snapshots:[],events:[],applicationId:id(),guideSection:'Your Information',doneSections:new Set(),revision:0,mode:'auto',busy:false,progress:'',errors:[]};}
+export function initial(){return {policyResults:{},formAnswers:{},starting:startingState(),startingHistory:[],activeStarting:'calfresh',programs:new Set(['CalFresh','Medi-Cal']),quick:{resident:'',residencyContext:'',income:'',medicalIncome:'',food:'',tax:'',applicant_status:'',special_group:''},quickProgram:'calfresh',quickChecked:new Set(),route:'quick',doctorResolutions:{},requestMatches:[],docs:[],facts:[],snapshots:[],events:[],applicationId:id(),guideSection:'Your Information',doneSections:new Set(),revision:0,mode:'auto',busy:false,progress:'',errors:[]};}
 export function setFact(s,f,value){
  if(value!==null&&f.fieldKey){value=normalizeValue(f.fieldKey,value);if(value===null)throw Error('Enter a valid value. Leave blank only to keep it unanswered.');}
  if(f.value===value)return;

@@ -1,0 +1,49 @@
+{
+  "calfresh": {
+    "effective": {
+      "from": "2026-10-01",
+      "through": "2027-09-30"
+    },
+    "sourceIds": [
+      "CF_2027_TABLE"
+    ],
+    "usage": "Reference inventory only; no allotment or net-income calculator is activated by these values.",
+    "maximumAllotmentsDollars": [
+      306,
+      562,
+      808,
+      1023,
+      1217,
+      1463,
+      1616,
+      1841
+    ],
+    "additionalMemberDollars": 225,
+    "allotment18OrMoreDollars": 3887,
+    "minimumOneTwoPersonDollars": 25,
+    "standardDeductionDollars": {
+      "1-3": 217,
+      "4": 229,
+      "5": 268,
+      "6+": 308
+    },
+    "maxShelterDeductionDollars": 769,
+    "homelessShelterDollars": 205.66,
+    "SUA_dollars": 686,
+    "LUA_dollars": 176,
+    "TUA_dollars": 21,
+    "nonCategoricalResourceLimitDollars": 3000,
+    "elderlyDisabledResourceLimitDollars": 4750
+  },
+  "medi_cal": {
+    "sourceIds": [
+      "MC_CHANGES",
+      "MC_INDEX"
+    ],
+    "usage": "Category-specific review only. Do not apply an asset test to MAGI.",
+    "nonMagiAssetReference2026Dollars": 130000,
+    "additionalPersonDollars": 65000,
+    "maximumPeople": 10,
+    "future2027RulesActive": false
+  }
+}

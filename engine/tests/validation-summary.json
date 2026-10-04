@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-04",
+  "node": {
+    "passed": 124,
+    "failed": 0,
+    "scope": "Core/config/form-planner/worker tests"
+  },
+  "pythonPdf": {
+    "passed": 18,
+    "failed": 0,
+    "scope": "Synthetic two-page template only; no official-form validation"
+  },
+  "chromium": {
+    "passed": 41,
+    "failed": 0,
+    "scope": "In-memory Chromium page; not installed extension, native AI, official form, agency connection or policy approval."
+  },
+  "counts": {
+    "policyQuestions": 35,
+    "ruleRecords": 34,
+    "executableRuleRecords": 19,
+    "reviewOnlyRuleRecords": 15,
+    "moneyTables": 8,
+    "policySources": 22,
+    "formSources": 3,
+    "formQuestionGroups": 136,
+    "semanticFieldDefinitions": 728,
+    "nativeOfficialFieldBindings": 0
+  },
+  "releaseGatesNotRun": 26,
+  "notTested": [
+    "official native PDF forms and per-field mappings",
+    "installed extension",
+    "native document AI/OCR",
+    "general eligibility adjudication",
+    "production cryptography/privacy",
+    "browser PDF renderer",
+    "continuation pages",
+    "Unicode font embedding",
+    "user study"
+  ],
+  "documentationLayout": {
+    "passed": 4,
+    "failed": 0,
+    "scope": "HTML documents at 1280px and 420px; overflow checks only"
+  }
+}

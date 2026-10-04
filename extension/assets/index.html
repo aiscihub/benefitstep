@@ -7,7 +7,7 @@
 
 <title>BenefitStep | BenefitStep</title>
 
-<link rel="stylesheet" href="styles.css"></head>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="utility.css"><link rel="stylesheet" href="utility-integration.css"></head>
 <body>
 <a class="skip-link" href="#main">Skip to preparation</a>
 <svg class="icon-definitions" aria-hidden="true"><defs>
@@ -31,9 +31,9 @@
 <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></symbol>
 <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
 </defs></svg>
-<header class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-icon"><svg aria-hidden="true"><use href="#i-stack"></use></svg></span><span>BenefitStep</span></div><div class="header-actions"><button class="text-link" data-action="history"><svg aria-hidden="true"><use href="#i-clock"></use></svg><span>History</span></button><button class="text-link" data-action="privacy"><svg aria-hidden="true"><use href="#i-shield"></use></svg><span>Privacy</span></button></div></div></header>
-<div class="preview-strip"><div class="preview-inner"><span>Processed on your device. You choose what to share.</span><button data-action="settings">Processing options</button></div></div>
-<div class="shell"><nav aria-label="Preparation steps"><ol id="steps" class="steps"></ol></nav><main id="main" tabindex="-1"></main><footer class="footer"><span><svg aria-hidden="true"><use href="#i-lock"></use></svg>Session only. Closing or reloading loses this preparation.</span><button class="text-link" data-action="handoff">Open BenefitsCal <svg aria-hidden="true"><use href="#i-external"></use></svg></button></footer></div>
+<header class="topbar"><div class="topbar-inner"><div class="brand brand-logo"><img src="benefitstep_logo.png" alt="BenefitStep" width="1536" height="1024"></div><div class="header-actions"><button class="text-link" data-action="privacy"><svg aria-hidden="true"><use href="#i-shield"></use></svg><span>Privacy</span></button></div></div></header>
+<div class="shell intro-shell"><p class="preparation-tagline">Prepare your benefits application package.</p></div>
+<div class="shell"><nav aria-label="Preparation steps"><ol id="steps" class="steps"></ol></nav><main id="main" tabindex="-1"></main><footer class="footer"><span><svg aria-hidden="true"><use href="#i-lock"></use></svg>Your work is temporary. Download your package before closing or reloading.</span><button class="text-link" id="download-package" data-action="package" hidden>Download my package</button><button class="text-link" data-action="handoff">Open BenefitsCal <svg aria-hidden="true"><use href="#i-external"></use></svg></button></footer></div>
 <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
 <div id="toast" class="toast" role="status" hidden></div><div id="live" class="sr-only" aria-live="polite"></div>
 <noscript><p class="noscript">This interactive preview requires JavaScript. It has no external dependencies.</p></noscript>

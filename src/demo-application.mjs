@@ -1,0 +1,18 @@
+import {emptyAnswers,reviseGroup,reviseAnswer} from './form-adapter.mjs';
+// Supplied fictional questionnaire, separate from live AI document recognition.
+export const DEMO_HOUSEHOLD={name:'Alex Demo',address:'123 Example Lane',city:'Sacramento',state:'CA',zip:'95814',email:'alex.demo@example.test',employer:'Cedar Demo Workshop',monthlyIncome:'2550.00',people:[['Alex','Demo','1990-04-12','Self'],['Morgan','Demo','1992-08-21','Spouse'],['Riley','Demo','2018-03-09','Child']]};
+export function demoApplicationAnswers(){
+ const p=DEMO_HOUSEHOLD,forms={cf285:emptyAnswers('cf285'),ccfrm604:emptyAnswers('ccfrm604')};
+ const row=(id,groupId,n,values)=>{const d=forms[id],g=d.groups.find(g=>g.groupId===groupId);if(!g||g.rowCount<n+1)reviseGroup(d,groupId,'applicable',n+1);for(const [field,value] of Object.entries(values))reviseAnswer(d,{groupId,row:n,field,status:'answered',value,sourceIds:['fictional-demo-questionnaire']});};
+ row('cf285','q1.contact',0,{name:p.name,home_address:p.address,home_city:p.city,home_state:p.state,home_zip:p.zip,mailing_address:p.address,mailing_city:p.city,mailing_state:p.state,mailing_zip:p.zip,homeless:false,spoken_language:'English',written_language:'English'});
+ p.people.forEach(([first,last,dob,relationship],i)=>row('cf285','q6a.people',i,{name:first+' '+last,date_of_birth:dob,relationship}));
+ row('cf285','q8.earned',0,{has_income:true,person:p.name,employer_name_address:'Cedar Demo Workshop',employer_phone:'916-555-0142',gross_received_this_month:p.monthlyIncome,frequency:'Monthly',hourly_rate:'17.00',hours_week:'35'});
+ row('cf285','q9.care',0,{care_recipient:'Riley Demo',amount_paid:'240.00',frequency:'Monthly',provider_name_address:'Example After-School Care, 88 Sample Rd, Sacramento CA 95814'});
+ row('cf285','notes',0,{notes:'FICTIONAL DEMO ONLY. Example reporting month: September 2026. One wage earner; no other income reported in this fictional questionnaire. Care payment: $240 for September. Do not submit.'});
+ row('ccfrm604','p1.contact',0,{first_name:'Alex',last_name:'Demo',email:p.email});
+ p.people.forEach(([first,last,dob],i)=>{row('ccfrm604','p2.identity',i,{first_name:first,last_name:last});row('ccfrm604','p2.address',i,{home_address:p.address,city:p.city,state:p.state,zip:p.zip,mail_address:p.address,mail_city:p.city,mail_state:p.state,mail_zip:p.zip,date_of_birth:dob,homeless:false});});
+ row('ccfrm604','p7.income',0,{household_has_income:true,person_first:'Alex',person_last:'Demo',income_name:p.employer,amount:p.monthlyIncome,frequency:'Monthly',source_type:'Employment'});
+ for(const d of Object.values(forms)){d.demoFixture=true;d.demoSource='Fictional questionnaire supplied for the demo; not AI-extracted or agency-verified.';}
+ return forms;
+}
+export function demoHouseholdReview(esc){const p=DEMO_HOUSEHOLD;return `<section class="card pad"><h2>Fictional household details</h2><p>Supplied demo questionnaire — these details are not AI extraction results.</p><dl class="cf-facts"><div><dt>Applicant</dt><dd>${esc(p.name)}</dd></div><div><dt>Home and mailing address</dt><dd>${esc(p.address+', '+p.city+', '+p.state+' '+p.zip)}</dd></div><div><dt>Household</dt><dd>${p.people.map(([f,l,d,r])=>esc(`${f} ${l} · ${r} · born ${d}`)).join('<br>')}</dd></div><div><dt>Employment</dt><dd>${esc(p.employer)} · $2,550 monthly gross</dd></div><div><dt>Childcare</dt><dd>Riley Demo · $240 monthly · Example After-School Care</dd></div></dl><p>Example reporting month: September 2026. You can edit these details in Application before confirming and generating the demo PDFs. All people, addresses and transactions are fictional.</p></section>`;}

@@ -1,0 +1,312 @@
+{
+  "browser": "Chrome/154.0.8037.95",
+  "checks": [
+    {
+      "name": "CalFresh has four inputs",
+      "passed": true
+    },
+    {
+      "name": "program tabs without redundant checkboxes",
+      "passed": true
+    },
+    {
+      "name": "control residence",
+      "passed": true
+    },
+    {
+      "name": "control people",
+      "passed": true
+    },
+    {
+      "name": "control income",
+      "passed": true
+    },
+    {
+      "name": "control immigration",
+      "passed": true
+    },
+    {
+      "name": "button see-results",
+      "passed": true
+    },
+    {
+      "name": "result stays on quick screen",
+      "passed": true
+    },
+    {
+      "name": "control income",
+      "passed": true
+    },
+    {
+      "name": "edited result marked stale",
+      "passed": true
+    },
+    {
+      "name": "button see-results",
+      "passed": true
+    },
+    {
+      "name": "updated result recalculated",
+      "passed": true
+    },
+    {
+      "name": "immigration answer retained",
+      "passed": true
+    },
+    {
+      "name": "control income",
+      "passed": true
+    },
+    {
+      "name": "correct reference option",
+      "passed": true
+    },
+    {
+      "name": "control people",
+      "passed": true
+    },
+    {
+      "name": "changing size clears anchored income",
+      "passed": true
+    },
+    {
+      "name": "control income",
+      "passed": true
+    },
+    {
+      "name": "control people",
+      "passed": true
+    },
+    {
+      "name": "explicit zero retained",
+      "passed": true
+    },
+    {
+      "name": "control income",
+      "passed": true
+    },
+    {
+      "name": "control people",
+      "passed": true
+    },
+    {
+      "name": "button continue",
+      "passed": true
+    },
+    {
+      "name": "Continue opens independent Medi-Cal",
+      "passed": true
+    },
+    {
+      "name": "Medi-Cal residence not inherited",
+      "passed": true
+    },
+    {
+      "name": "No MC income threshold",
+      "passed": true
+    },
+    {
+      "name": "control age-mc-person-1",
+      "passed": true
+    },
+    {
+      "name": "control residence-mc-person-1",
+      "passed": true
+    },
+    {
+      "name": "button add-person",
+      "passed": true
+    },
+    {
+      "name": "control age-mc-person-2",
+      "passed": true
+    },
+    {
+      "name": "control residence-mc-person-2",
+      "passed": true
+    },
+    {
+      "name": "silent size change cannot preserve old band",
+      "passed": true
+    },
+    {
+      "name": "control income",
+      "passed": true
+    },
+    {
+      "name": "button continue",
+      "passed": true
+    },
+    {
+      "name": "pending other program revisited",
+      "passed": true
+    },
+    {
+      "name": "button continue",
+      "passed": true
+    },
+    {
+      "name": "documents includes starting summary",
+      "passed": true
+    },
+    {
+      "name": "above is not denial",
+      "passed": true
+    },
+    {
+      "name": "MC does not get income comparison",
+      "passed": true
+    },
+    {
+      "name": "control age-mc-person-1",
+      "passed": true
+    },
+    {
+      "name": "edited MC needs update",
+      "passed": true
+    },
+    {
+      "name": "CF save unaffected",
+      "passed": true
+    },
+    {
+      "name": "draft restored",
+      "passed": true
+    },
+    {
+      "name": "keyboard tab switches and focuses",
+      "passed": true
+    },
+    {
+      "name": "button reference-help",
+      "passed": true
+    },
+    {
+      "name": "income guide uses selected size and amount",
+      "passed": true
+    },
+    {
+      "name": "button close",
+      "passed": true
+    },
+    {
+      "name": "dialog content cleared",
+      "passed": true
+    },
+    {
+      "name": "button ai-demo",
+      "passed": true
+    },
+    {
+      "name": "real demo imported",
+      "passed": true
+    },
+    {
+      "name": "button to-confirm",
+      "passed": true
+    },
+    {
+      "name": "candidate facts shown",
+      "passed": true
+    },
+    {
+      "name": "button confirm",
+      "passed": true
+    },
+    {
+      "name": "apply independent start summaries",
+      "passed": true
+    },
+    {
+      "name": "Medi-Cal submission still separate",
+      "passed": true
+    },
+    {
+      "name": "button package",
+      "passed": true
+    },
+    {
+      "name": "real export controls available",
+      "passed": true
+    },
+    {
+      "name": "button close",
+      "passed": true
+    },
+    {
+      "name": "localStorage empty",
+      "passed": true
+    },
+    {
+      "name": "indexedDB empty",
+      "passed": true
+    },
+    {
+      "name": "cache empty",
+      "passed": true
+    },
+    {
+      "name": "no storage permission",
+      "passed": true
+    },
+    {
+      "name": "button privacy",
+      "passed": true
+    },
+    {
+      "name": "button clear",
+      "passed": true
+    },
+    {
+      "name": "clear resets starting facts",
+      "passed": true
+    },
+    {
+      "name": "button see-results",
+      "passed": true
+    },
+    {
+      "name": "button continue",
+      "passed": true
+    },
+    {
+      "name": "button see-results",
+      "passed": true
+    },
+    {
+      "name": "button continue",
+      "passed": true
+    },
+    {
+      "name": "blank answers saved as partial",
+      "passed": true
+    }
+  ],
+  "doctorRegression": {
+    "billPositiveAndNegative": true,
+    "onlyAffectedAnswerPaused": true,
+    "correctionResolves": true,
+    "noticePrefill": true,
+    "requestMismatch": true,
+    "historicalRequestMatch": true,
+    "programIsolation": true,
+    "privateStorageEmpty": true,
+    "hiddenDialogCleared": true,
+    "untrustedDocumentInert": true
+  },
+  "responsiveWidths": [
+    320,
+    360,
+    420,
+    1180
+  ],
+  "screenshots": [
+    "policy-ui-calfresh-420.png",
+    "policy-ui-medical-420.png",
+    "policy-ui-calfresh-1180.png",
+    "policy-ui-medical-1180.png"
+  ],
+  "pageErrors": [],
+  "remotePageRequests": [],
+  "scope": "Real unpacked extension, synthetic document flows, no live BenefitsCal, native AI or full accessibility audit."
+}

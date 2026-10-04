@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "ccfrm604",
+  "revision": 1,
+  "groups": [
+    {
+      "groupId": "p1.contact",
+      "status": "applicable",
+      "rowCount": 1,
+      "revision": 1,
+      "confirmedRevision": 1
+    },
+    {
+      "groupId": "p2.identity",
+      "status": "applicable",
+      "rowCount": 1,
+      "revision": 1,
+      "confirmedRevision": 1
+    },
+    {
+      "groupId": "p2.address",
+      "status": "applicable",
+      "rowCount": 1,
+      "revision": 1,
+      "confirmedRevision": 1
+    },
+    {
+      "groupId": "p7.income",
+      "status": "applicable",
+      "rowCount": 1,
+      "revision": 1,
+      "confirmedRevision": 1
+    }
+  ],
+  "answers": [
+    {
+      "groupId": "p1.contact",
+      "row": 0,
+      "field": "first_name",
+      "status": "answered",
+      "value": "Jordan",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p1.contact",
+      "row": 0,
+      "field": "last_name",
+      "status": "answered",
+      "value": "García",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p1.contact",
+      "row": 0,
+      "field": "email",
+      "status": "answered",
+      "value": "jordan@example.invalid",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p2.identity",
+      "row": 0,
+      "field": "first_name",
+      "status": "answered",
+      "value": "Jordan",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p2.identity",
+      "row": 0,
+      "field": "last_name",
+      "status": "answered",
+      "value": "García",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p2.address",
+      "row": 0,
+      "field": "date_of_birth",
+      "status": "answered",
+      "value": "01/15/1990",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p2.address",
+      "row": 0,
+      "field": "home_address",
+      "status": "answered",
+      "value": "123 Example Way",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p2.address",
+      "row": 0,
+      "field": "city",
+      "status": "answered",
+      "value": "Sacramento",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p2.address",
+      "row": 0,
+      "field": "state",
+      "status": "answered",
+      "value": "CA",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p2.address",
+      "row": 0,
+      "field": "zip",
+      "status": "answered",
+      "value": "95814",
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p2.address",
+      "row": 0,
+      "field": "homeless",
+      "status": "answered",
+      "value": false,
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    },
+    {
+      "groupId": "p7.income",
+      "row": 0,
+      "field": "household_has_income",
+      "status": "answered",
+      "value": false,
+      "revision": 1,
+      "confirmedRevision": 1,
+      "sourceIds": [
+        "fictional:no-income:0"
+      ]
+    }
+  ],
+  "exportAuthorized": true
+}

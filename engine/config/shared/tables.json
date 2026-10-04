@@ -1,0 +1,206 @@
+[
+  {
+    "id": "cf_mce_2026_10",
+    "title": "CalFresh 200% MCE starting gross-income reference",
+    "sourceIds": [
+      "CF_2027_TABLE"
+    ],
+    "unit": "USD_cents",
+    "through": "2027-09-30",
+    "rows": {
+      "1": 266000,
+      "2": 360800,
+      "3": 455400,
+      "4": 550000,
+      "5": 644800,
+      "6": 739400,
+      "7": 834000,
+      "8": 928800
+    },
+    "from": "2026-10-01",
+    "incrementAfter": {
+      "row": 8,
+      "amount": 94800,
+      "maximumRow": 20
+    }
+  },
+  {
+    "id": "cf_net_2026_10",
+    "title": "CalFresh 100% net-income reference - not a calculated net budget",
+    "sourceIds": [
+      "CF_2027_TABLE"
+    ],
+    "unit": "USD_cents",
+    "through": "2027-09-30",
+    "rows": {
+      "1": 133000,
+      "2": 180400,
+      "3": 227700,
+      "4": 275000,
+      "5": 322400,
+      "6": 369700,
+      "7": 417000,
+      "8": 464400
+    },
+    "from": "2026-10-01",
+    "incrementAfter": {
+      "row": 8,
+      "amount": 47400,
+      "maximumRow": 20
+    }
+  },
+  {
+    "id": "cf_sar_2026_10",
+    "title": "CalFresh 130% SAR gross-income table - not individual notice IRT",
+    "sourceIds": [
+      "CF_2027_TABLE"
+    ],
+    "unit": "USD_cents",
+    "through": "2027-09-30",
+    "rows": {
+      "1": 172900,
+      "2": 234500,
+      "3": 296000,
+      "4": 357500,
+      "5": 419100,
+      "6": 480600,
+      "7": 542100,
+      "8": 603700
+    },
+    "from": "2026-10-01",
+    "incrementAfter": {
+      "row": 8,
+      "amount": 61600,
+      "maximumRow": 20
+    }
+  },
+  {
+    "id": "cf_separate_ed_2026_10",
+    "title": "165% other-household income reference for elderly/disabled separate-household provision",
+    "sourceIds": [
+      "CF_2027_TABLE"
+    ],
+    "unit": "USD_cents",
+    "through": "2027-09-30",
+    "rows": {
+      "1": 219500,
+      "2": 297600,
+      "3": 375700,
+      "4": 453800,
+      "5": 531900,
+      "6": 610000,
+      "7": 688100,
+      "8": 766200
+    },
+    "from": "2026-10-01",
+    "incrementAfter": {
+      "row": 8,
+      "amount": 78100,
+      "maximumRow": 20
+    }
+  },
+  {
+    "id": "mc_fpl_138_2026",
+    "title": "2026 Medi-Cal 138% monthly FPL reference",
+    "sourceIds": [
+      "MC_FPL_LETTER",
+      "MC_FPL_MONTHLY",
+      "MC_CATEGORIES"
+    ],
+    "unit": "USD_cents",
+    "through": "2026-12-31",
+    "rows": {
+      "1": 183600,
+      "2": 249000,
+      "3": 314300,
+      "4": 379500,
+      "5": 445000,
+      "6": 510200,
+      "7": 575500,
+      "8": 640900,
+      "9": 706200,
+      "10": 771500,
+      "11": 836900,
+      "12": 902200
+    },
+    "from": "2026-01-01"
+  },
+  {
+    "id": "mc_fpl_213_2026",
+    "title": "2026 Medi-Cal 213% monthly FPL reference",
+    "sourceIds": [
+      "MC_FPL_LETTER",
+      "MC_FPL_MONTHLY",
+      "MC_CATEGORIES"
+    ],
+    "unit": "USD_cents",
+    "through": "2026-12-31",
+    "rows": {
+      "1": 283300,
+      "2": 384300,
+      "3": 485100,
+      "4": 585800,
+      "5": 686800,
+      "6": 787500,
+      "7": 888300,
+      "8": 989200,
+      "9": 1090000,
+      "10": 1190700,
+      "11": 1291700,
+      "12": 1392400
+    },
+    "from": "2026-01-01"
+  },
+  {
+    "id": "mc_fpl_266_2026",
+    "title": "2026 Medi-Cal 266% monthly FPL reference",
+    "sourceIds": [
+      "MC_FPL_LETTER",
+      "MC_FPL_MONTHLY",
+      "MC_CATEGORIES"
+    ],
+    "unit": "USD_cents",
+    "through": "2026-12-31",
+    "rows": {
+      "1": 353800,
+      "2": 479900,
+      "3": 605700,
+      "4": 731500,
+      "5": 857600,
+      "6": 983500,
+      "7": 1109300,
+      "8": 1235400,
+      "9": 1361200,
+      "10": 1487000,
+      "11": 1613100,
+      "12": 1738900
+    },
+    "from": "2026-01-01"
+  },
+  {
+    "id": "mc_fpl_322_2026",
+    "title": "2026 Medi-Cal 322% monthly FPL reference",
+    "sourceIds": [
+      "MC_FPL_LETTER",
+      "MC_FPL_MONTHLY",
+      "MC_CATEGORIES"
+    ],
+    "unit": "USD_cents",
+    "through": "2026-12-31",
+    "rows": {
+      "1": 428300,
+      "2": 580900,
+      "3": 733200,
+      "4": 885500,
+      "5": 1038200,
+      "6": 1190500,
+      "7": 1342800,
+      "8": 1495400,
+      "9": 1647700,
+      "10": 1800000,
+      "11": 1952700,
+      "12": 2105000
+    },
+    "from": "2026-01-01"
+  }
+]

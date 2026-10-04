@@ -1,0 +1,229 @@
+[
+  {
+    "id": "CF_RESIDENCE",
+    "title": "7 CFR 273.3 - Residency",
+    "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-B/section-273.3",
+    "authority": "Federal SNAP regulation",
+    "locator": "273.3(a)",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Residence self-report is not verification; no permanent dwelling or minimum residency duration."
+  },
+  {
+    "id": "CF_HOUSEHOLD",
+    "title": "7 CFR 273.1 - Household concept",
+    "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-A/section-273.1",
+    "authority": "Federal SNAP regulation",
+    "locator": "273.1(a), (b)(1)-(2)",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Mandatory groupings and special cases; numerical estimate is not a resolved eligible-member budget."
+  },
+  {
+    "id": "CF_PROCESS",
+    "title": "7 CFR 273.2 - Application processing",
+    "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-A/section-273.2",
+    "authority": "Federal SNAP regulation",
+    "locator": "273.2(c), (f), (i)",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Filing and verification are separate; two expedited numerical examples are not a complete expedited determination."
+  },
+  {
+    "id": "CF_2027_TABLE",
+    "title": "CDSS ACIN I-40-26",
+    "url": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACINs/2026/I-40_26.pdf?ver=H4zUIA8n2Aca6xBYlObOUg%3D%3D",
+    "authority": "California official guidance",
+    "locator": "Attachment I, PDF page 7; visually checked",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Effective 2026-10-01 through 2027-09-30. MCE reference is not a universal eligibility or reporting limit."
+  },
+  {
+    "id": "CF_MCE",
+    "title": "Santa Clara County Modified Categorical Eligibility",
+    "url": "https://stgenssa.sccgov.org/debs/program_handbooks/calfresh/assets/CalFresh/CEHouseholds/MCE.htm",
+    "authority": "Official county handbook",
+    "locator": "MCE limits and elderly/disabled further evaluation",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "County explanation, not a complete statewide CE/MCE implementation."
+  },
+  {
+    "id": "CF_NONCITIZEN",
+    "title": "CDSS ACL 25-92",
+    "url": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2025/25-92.pdf?ver=DCTxoAnXCUHKJ572rddl_A%3D%3D",
+    "authority": "California official guidance",
+    "locator": "PDF pp. 3-8; implementation, categories, CFAP limits",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Specific current-category routing for new applications; five-year bar/history exceptions are referred, not fully calculated."
+  },
+  {
+    "id": "CF_NONCITIZEN_ERRATA",
+    "title": "CDSS ACIN I-29-26E",
+    "url": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACINs/2026/I-29_26E.pdf?ver=lIQCMdaY9EW2VgkZN6HhDg%3D%3D",
+    "authority": "California official guidance",
+    "locator": "Revised Q8 and Q14, PDF pp. 4-5",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "No immigration verification request for nonapplicants. AHP/UHP losing eligibility under the cited changes do not automatically qualify for CFAP.",
+    "supersedes": [
+      "Affected passages of ACIN I-29-26"
+    ]
+  },
+  {
+    "id": "CF_CFAP",
+    "title": "CDSS Current CFAP Eligibility",
+    "url": "https://www.cdss.ca.gov/inforesources/cdss-programs/calfresh/cfap/who-is-eligible",
+    "authority": "California official guidance",
+    "locator": "Current CFAP Eligibility Requirements",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Read with September 2026 errata, not a fallback for every CalFresh noncitizen exclusion."
+  },
+  {
+    "id": "CF_SELFEMP",
+    "title": "Santa Clara County Self-Employment",
+    "url": "https://stgenssa.sccgov.org/debs/program_handbooks/calfresh/assets/CalFresh/Budgeting_Concepts/SlfEmplymnt.htm",
+    "authority": "Official county handbook",
+    "locator": "Allowable costs; standard 40 percent choice",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Limited new-applicant standard-method illustration; actual-cost allowance, method changes and mixed-income budget are not resolved."
+  },
+  {
+    "id": "CF_STUDENT",
+    "title": "7 CFR 273.5 - Students",
+    "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-C/section-273.5",
+    "authority": "Federal SNAP regulation",
+    "locator": "273.5(a)-(b)",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Student status routes to exemption review; the exemption catalog is not fully implemented."
+  },
+  {
+    "id": "CF_WORK",
+    "title": "CDSS CalFresh Work and Community Engagement",
+    "url": "https://www.cdss.ca.gov/benefits-services/food-nutrition-services/calfresh/frequently-asked-questions",
+    "authority": "California official guidance",
+    "locator": "Work requirements and exceptions",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "No adverse work-requirement decision, month counting or county-waiver calculation in this version."
+  },
+  {
+    "id": "CF_RECONCILE",
+    "title": "Santa Clara County Questionable Information",
+    "url": "https://stgenssa.sccgov.org/debs/program_handbooks/calfresh/assets/CalFresh/Verification/QuestnblInfo.htm",
+    "authority": "Official county handbook",
+    "locator": "Expenses exceeding income",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Clarification only; expense-income difference by itself is not grounds for denial."
+  },
+  {
+    "id": "MC_RESIDENCE",
+    "title": "DHCS ACWDL 26-15",
+    "url": "https://www.dhcs.ca.gov/file/acwdl-26-15-pdf/",
+    "authority": "California official guidance",
+    "locator": "Residency policy; electronic and administrative verification",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "No connection to CalHEERS/SAVE. No universal rent/utility upload requirement.",
+    "supersedes": [
+      "ACWDL 26-04",
+      "ACWDL 26-04E"
+    ]
+  },
+  {
+    "id": "MC_MAGI",
+    "title": "42 CFR 435.603 - MAGI",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603",
+    "authority": "Federal Medicaid regulation",
+    "locator": "(b), (d), (f), (g), (h), (j)",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Only isolated adult household derivation is automated. Dependents, complex tax groups, other-member pregnancy counts and income exclusions require a prepared scoped budget."
+  },
+  {
+    "id": "MC_FPL_LETTER",
+    "title": "DHCS ACWDL 26-01",
+    "url": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Documents/26-01.pdf",
+    "authority": "California official guidance",
+    "locator": "PDF page 2, MAGI effective date",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "2026 MAGI values apply from January 1, 2026; other program dates differ."
+  },
+  {
+    "id": "MC_FPL_MONTHLY",
+    "title": "DHCS 2026 Monthly FPL Values, Enclosure 1",
+    "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
+    "authority": "California official guidance",
+    "locator": "Rows 1-12; 138, 213, 266, 322 percent columns",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Use the published monthly rows, not annual FPL rounded by another formula. No extra 5 percent on a ceiling already including it."
+  },
+  {
+    "id": "MC_CATEGORIES",
+    "title": "DHCS Program Descriptions by FPL, Enclosure 3",
+    "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/program-descriptions-by-fpl-enclosure-3/",
+    "authority": "California official guidance",
+    "locator": "Adult 138%; pregnant 213%; OTLIC 266%; MCAP 213-322%",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Reference comparisons only. OTLIC is not a universal adult or child category/adjudication determination."
+  },
+  {
+    "id": "MC_NONCITIZEN",
+    "title": "DHCS ACWDL 26-13",
+    "url": "https://www.dhcs.ca.gov/file/acwdl-26-13-pdf/",
+    "authority": "California official guidance",
+    "locator": "PDF pp. 2-5, effective 2026-10-01",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Federal funding categories differ from state-funded full-scope coverage; do not convert a federal change into automatic loss of Medi-Cal."
+  },
+  {
+    "id": "MC_CHANGES",
+    "title": "DHCS Medi-Cal Changes",
+    "url": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/",
+    "authority": "California official guidance",
+    "locator": "Enrollment freeze; child/pregnancy/former-foster exceptions; dated changes",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Future 2027 provisions are NOT activated in this Q4 2026 pack. Public future descriptions require primary implementation reconciliation."
+  },
+  {
+    "id": "MC_IMMIGRATION_TABLE",
+    "title": "DHCS Immigration Status and Changes to Medi-Cal Eligibility",
+    "url": "https://www.dhcs.ca.gov/immigration-status-and-changes-to-medi-cal-eligibility/",
+    "authority": "California official guidance",
+    "locator": "2026 population/status rows",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Category alone does not establish all eligibility conditions. Future July 2027 details differ in presentation from the general updates page; excluded from execution."
+  },
+  {
+    "id": "MC_BENEFITS",
+    "title": "DHCS Medi-Cal Benefits",
+    "url": "https://www.dhcs.ca.gov/medi-cal/benefits/",
+    "authority": "California official guidance",
+    "locator": "Covered benefit categories",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "No treatment coverage, medical necessity, network availability or authorization decision is made."
+  },
+  {
+    "id": "MC_INDEX",
+    "title": "DHCS 2026 All County Welfare Directors Letters",
+    "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-all-county-welfare-directors-letters/",
+    "authority": "California official guidance",
+    "locator": "Index through ACWDL 26-18",
+    "retrievedOn": "2026-10-04",
+    "status": "research_checked",
+    "limitation": "Change discovery only; indexing a letter is not implementing it."
+  }
+]

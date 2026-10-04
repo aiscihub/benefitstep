@@ -18,7 +18,8 @@ export function qualificationHighlights(state,section=state.guideSection){
  if(!state.programs.has('CalFresh'))return [];
  const flag=(id,input,why,action,source,extra={})=>({id,input,why,action,source,conditional:true,...extra});
  if(section==='Household Details')return HOUSEHOLD.map(item=>({...item,conditional:true}));
- const quick=state.quick||{};
+ const cf=state.starting?.calfresh;
+ const quick=cf&&(cf.revision||cf.saved)?{resident:cf.residence==='unknown'?'unsure':cf.residence,food:cf.people,income:cf.income==='above'?'over':cf.income==='unknown'?'unsure':cf.income}:state.quick||{};
  if(section==='Your Information')return quick.resident==='yes'||['moved','no_address'].includes(quick.residencyContext)?[]:[flag('residence','California residence','California residence is part of CalFresh eligibility.','Answer the residence question in BenefitsCal; use county help if your situation is unclear.','eligibility',{basis:quick.resident==='no'?'Your quick check says you do not live in California.':'Your starting residence answer is missing or uncertain.'})];
  if(section==='People')return [flag('household','Who buys and prepares food together','Which people belong in the CalFresh household changes the income comparison. A shared address alone does not answer this.',quick.food?`Your quick-check count is ${quick.food}. Check the actual household questions in BenefitsCal.`:'Answer who buys and prepares food together and the household relationships BenefitsCal asks about.','eligibility')];
  if(section==='Income'){

@@ -1,0 +1,450 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BenefitStep | Policy inventory and screen 1 audit</title><style>body{font:17px/1.65 system-ui,sans-serif;color:#183c35;background:#f5f7f4;margin:0}main{max-width:1060px;margin:auto;background:white;padding:45px 55px 70px}h1{font-size:34px;line-height:1.2;margin-bottom:16px}h2{font-size:25px;margin-top:46px;line-height:1.3}h3{font-size:20px;margin-top:26px}p{max-width:92ch}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto;margin:18px 0}th,td{padding:11px 13px;border:1px solid #d9e3dc;text-align:left;vertical-align:top}th{background:#edf5ef}a{color:#0c6d5b;overflow-wrap:anywhere}code{background:#f0f3f2;padding:2px 4px;overflow-wrap:anywhere}pre{white-space:pre-wrap}li{margin:7px 0}@media(max-width:640px){main{padding:24px 18px}h1{font-size:28px}body{font-size:16px}}@media print{body{background:white}main{padding:0}h2,h3{break-after:avoid}tr{break-inside:avoid}}</style></head><body><main><h1>BenefitStep policy inventory and first-screen audit</h1>
+<p><strong>BS-POL-AUDIT-001 | Version 0.1 | October 4, 2026</strong></p>
+<h2>1. Decision and scope</h2>
+<p>The first screen can be a short program-routing and initial income-reference check. It cannot certify all CalFresh or Medi-Cal eligibility requirements. Keep the accepted four-step layout; revise the policy meaning of inputs and outputs rather than building another full application.</p>
+<p>This is an initial inventory of policy families with a focused audit of the visible CalFresh panel. It is not an exhaustive, independently approved legal rules engine. The Medi-Cal panel, dropdown options, implementation code and result screens were not supplied for this review. Their behavior is unknown. All implementation instructions below are proposals; no existing package was modified.</p>
+<p><strong>Important correction:</strong> the earlier blanket idea that Medi-Cal never requires residency proof is not safe to encode. DHCS ACWDL 26-15, dated September 9, 2026, supersedes 26-04 and 26-04E and describes electronic and administrative verification. Do not infer a mandatory upfront bill upload from that correction. [MC-S02]</p>
+<p><strong>The displayed income number is correct:</strong> $5,500/month for four people matches the current 200% MCE/BBCE reference, effective October 1, 2026 through September 30, 2027. It is not a universal CalFresh eligibility cutoff. [CF-S04, CF-S05]</p>
+<h2>2. Distinguish four different requirements</h2>
+<table>
+<thead>
+<tr>
+  <th>Kind</th>
+  <th>Example</th>
+  <th>Application behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Eligibility condition</td>
+  <td>California residence</td>
+  <td>Must be addressed for the applicable program/person; not proved by clicking Yes.</td>
+</tr>
+<tr>
+  <td>Input needed for one calculation</td>
+  <td>Household estimate and income range</td>
+  <td>Needed only to offer that particular preliminary comparison. Skipping does not block preparation or filing.</td>
+</tr>
+<tr>
+  <td>Verification/evidence</td>
+  <td>A record or acceptable alternative supporting residence</td>
+  <td>Use the applicable verification process; an app file check is not county acceptance.</td>
+</tr>
+<tr>
+  <td>Filing/process action</td>
+  <td>Official signature or a response to a notice</td>
+  <td>Happens in the official process; local confirmation/export is not submission.</td>
+</tr>
+</tbody>
+</table>
+<p>CalFresh filing and certification are distinct under 7 CFR 273.2. The supplied BenefitsCal upload capture also permits submission before suggested documents are uploaded. Do not label every useful record &quot;must upload to qualify.&quot; [CF-S02; supplied BenefitsCal capture, page 4]</p>
+<h2>3. Answer to the residency example</h2>
+<h3>CalFresh</h3>
+<p>California residence is a baseline condition. There is no minimum time the household must already have lived there and no requirement for a permanent dwelling or fixed mailing address. Presence solely for vacation is different. [CF-S01]</p>
+<p>Residency generally needs verification, with unusual-case exceptions when it cannot reasonably be accomplished. Existing rent, mortgage, utility or identity evidence should be reused where possible. Reasonable documentary evidence or collateral contact can establish residence; a particular document type cannot be made the sole permitted method. [CF-S02, 273.2(f)(1)(vi), (f)(4)]</p>
+<h3>Medi-Cal</h3>
+<p>Federal residence rules have category-specific branches, including adult intention/work-entry circumstances and temporary absences. Living in the state and a mailing address are not interchangeable. The current California verification instructions are in ACWDL 26-15. [MC-S01, MC-S02]</p>
+<p>The county attempts electronic verification. Under stated conditions verification can be derived from the primary applicant for co-resident members without conflicting information. When electronic routes do not resolve residence, administrative verification is requested; accelerated enrollment can apply while verification is completed. BenefitStep has no access to those government verification systems. [MC-S02]</p>
+<p>For the letter's stated category of an individual age 21 or older who can indicate intent and is not institutionalized, <strong>one recent California rent/mortgage receipt or utility bill in that person's name is a listed method</strong>. Other documents and specific declaration alternatives exist. Do not generalize this list to every child, institutionalized person or household member. [MC-S02, PDF page 4]</p>
+<h3>Implementation result</h3>
+<p><strong>Yes + matching record should not set <code>eligible=true</code>.</strong> Store a self-reported fact and a separate evidence relationship. A potential record supports only its relevant person, period and factor. County verification remains unknown unless independently supported by a scoped, user-confirmed official record.</p>
+<table>
+<thead>
+<tr>
+  <th>Event</th>
+  <th>Safe internal state</th>
+  <th>Example user wording</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>User selects Yes</td>
+  <td>residenceReported=yes; evidence=not_requested; countyVerification=unknown</td>
+  <td>&quot;California residence: reported by you.&quot;</td>
+</tr>
+<tr>
+  <td>Relevant record added</td>
+  <td>evidence=candidate; source/person/date linked</td>
+  <td>&quot;Possible residency evidence added.&quot;</td>
+</tr>
+<tr>
+  <td>User confirms extracted information</td>
+  <td>evidenceFacts=confirmed_by_user</td>
+  <td>&quot;This record supports the residence information you confirmed.&quot;</td>
+</tr>
+<tr>
+  <td>No record available</td>
+  <td>evidence=none; alternatives or assistance available</td>
+  <td>&quot;No bill in your name? Other evidence may be possible.&quot;</td>
+</tr>
+<tr>
+  <td>An official request is supplied</td>
+  <td>request=outstanding; exact scope/deadline retained</td>
+  <td>&quot;Your county requested residency information.&quot;</td>
+</tr>
+</tbody>
+</table>
+<p>Never turn an arbitrary file date into a legal 30-day rule. Keep &quot;recent&quot; source-dependent and a county request's actual period explicit. An old California address, another person's name, temporary absence or different service/mailing addresses may require clarification; they are not automatic fraud findings. User confirmation concerns the extracted facts, not authenticity.</p>
+<h2>4. First-screen input audit</h2>
+<p>The screenshot has both benefits selected but only the CalFresh questions displayed. A selected program is not a completed check.</p>
+<table>
+<thead>
+<tr>
+  <th>Visible control</th>
+  <th>Decision</th>
+  <th>Policy reason / minimum-input consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Which benefits would you like help with?</td>
+  <td>Keep</td>
+  <td>Selection does not mean either program has been checked. (CF-01, MC-01)</td>
+</tr>
+<tr>
+  <td>Quick questions for (CalFresh)</td>
+  <td>May simplify to program tabs with independent status</td>
+  <td>Do not duplicate shared facts or inherit eligibility across programs. (Product navigation)</td>
+</tr>
+<tr>
+  <td>Do you live in California?</td>
+  <td>Keep with Not sure / help option</td>
+  <td>Yes is a self-report. A uploaded bill is evidence, not automatic qualification. (CF-01, CF-02, MC-01, MC-02)</td>
+</tr>
+<tr>
+  <td>How many people buy and prepare food together?</td>
+  <td>Keep; clarify include yourself and mandatory groupings</td>
+  <td>Include spouses and under-22 children living with parents even if food is separate. Do not infer from lease membership. (CF-03, CF-04)</td>
+</tr>
+<tr>
+  <td>Estimated monthly household income before tax</td>
+  <td>Keep with named reference and income-uncertainty path</td>
+  <td>$5,500 is the four-person 200% MCE/BBCE reference, not a universal cutoff. Include explicit zero and unknown states; never default blanks to zero. (CF-04, CF-05, CF-06)</td>
+</tr>
+<tr>
+  <td>Could one applicant meet immigration rules?</td>
+  <td>Replace legal self-assessment; defer applicant-specific branch for a limited first check</td>
+  <td>User cannot be expected to know current legal rules; actual applicants and program-specific status matter. (CF-07, MC-07)</td>
+</tr>
+</tbody>
+</table>
+<h3>Residency wording</h3>
+<p>Keep: <strong>Do you live in California?</strong></p>
+<p>Offer Yes / No / Not sure. Helper: <strong>You do not need a permanent address.</strong> Provide a targeted help path for temporary absence, a recent move, a visit, or applying for someone else, rather than asking everyone for move dates or a lease. This answer is a shared starting fact only; program-specific and individual circumstances still need to be resolved when relevant. [CF-01, MC-01]</p>
+<h3>Household wording</h3>
+<p>Proposed: <strong>Including you, how many people live together and usually buy and prepare food together?</strong></p>
+<p>Expanded help should clarify that spouses living together and children under 22 living with a parent normally must be grouped even when food is separate. Other mandatory combinations and exceptions belong in the detailed roster logic, not an overloaded first-screen sentence. The original helper omits the parent relationship for the under-22 condition. [CF-S03]</p>
+<p>Keep an explicit <strong>Not sure</strong> answer. A count is only an estimate until the roster, applying/nonapplying members and special household rules are resolved. Do not deduce meal sharing from a document address.</p>
+<h3>Income wording and result</h3>
+<p>Keep the estimate/range; label the specific reference. Suggested helper:</p>
+<p><strong>For 4 people, the starting income reference is $5,500/month. Some households need a different calculation.</strong></p>
+<p>Source details should identify 200% MCE/BBCE, the period, and the unassessed conditions. The exact $5,500 boundary belongs to the at-or-below band. A range crossing a threshold produces an unresolved comparison, not a forced pass/fail. Gross wages, net pay, year-to-date values and self-employment receipts are not interchangeable. [CF-S04; detailed treatment queued under CF-05]</p>
+<p>For the selected &quot;More than $5,500&quot; answer, the most this screen supports is:</p>
+<p><strong>Above this starting income reference. We need more details before deciding which checks apply.</strong></p>
+<p>The app must not display &quot;Not qualified.&quot; For example, county guidance explicitly describes further evaluation for some elderly/disabled households above the MCE limit. [CF-S05]</p>
+<h3>Immigration wording</h3>
+<p>Remove <strong>Could one applicant meet immigration rules?</strong> as a required legal self-assessment on this limited initial screen. It asks the user for a legal conclusion instead of an observable fact. Keep citizenship/immigration <strong>unassessed</strong>, not implicitly satisfied.</p>
+<p>When the later application branch needs it, identify who is applying and ask only the necessary program-specific factual questions, with Not sure / enter directly with county routes. The September 30, 2026 CDSS errata reiterates that immigration verification must not be requested for a nonapplicant; financial treatment of nonapplicants is a separate matter. [CF-S07, CF-S08]</p>
+<p>Medi-Cal must not inherit the CalFresh answer. ACWDL 26-13 differentiates federal funding changes from state-funded full-scope coverage for affected groups; the new/existing-enrollment rules require a separate current branch. [MC-S06, MC-S07]</p>
+<h3>Program selection and status</h3>
+<p>Keep the selected benefits, but remove any implication that completing CalFresh questions checked Medi-Cal. A tab can show <strong>CalFresh: starting check completed / Medi-Cal: not checked</strong>. Residency may be reused as a proposed shared fact; household and financial conclusions cannot. A benefit-selection switch is product navigation, not another policy requirement.</p>
+<h2>5. Minimum-input contract</h2>
+<p>For the limited first CalFresh check, use <strong>three questions after program selection</strong>: residence, estimated food-household size, and income range. All have an uncertainty/skip route. Replace &quot;Start with four quick questions&quot; with <strong>&quot;A few quick questions to choose your next step.&quot;</strong></p>
+<p>This is minimal only because the result is explicitly limited. A full eligibility opinion would need additional facts. Do not market these three answers as satisfying all baseline rules.</p>
+<p>Show additional questions only when the next supported decision actually depends on them. Examples: age/disability pathway before dismissing above-reference income; income type when business receipts are involved; a detailed household roster when the size is uncertain; county when a waiver or local handoff requires it. These branches remain subject to detailed rule approval.</p>
+<p>Before any Medi-Cal income result, identify the applicant's supported category and household methodology. Child, adult, pregnancy-related and non-MAGI pathways are not one income test. Age bands can be a minimal routing input; exact date of birth and diagnosis should not be collected solely for initial routing. [MC-S03, MC-S04, MC-S05]</p>
+<p>Do not add full address, SSN, immigration identifier, photo ID, employer details, rent amount or medical history to the first screen merely because later processing may need them. Ask at the point of use, or let the user enter sensitive identifiers directly on the official site.</p>
+<h2>6. Policy-family inventory</h2>
+<p><strong>Review meanings:</strong> <code>focused_review</code> means selected passages were checked to support this screen audit, not production certification. <code>queued_detailed_review</code> means the family is identified but its complete predicates, exceptions and implementation tests have not been reviewed. Every rule is disabled for production in the accompanying JSON.</p>
+<h3>CalFresh</h3>
+<table>
+<thead>
+<tr>
+  <th>ID / family</th>
+  <th>Stage</th>
+  <th>Source IDs</th>
+  <th>Audit status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>CF-01 - Residence</td>
+  <td>quick check</td>
+  <td>CF-S01</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>CF-02 - Residency verification</td>
+  <td>document preparation or county request</td>
+  <td>CF-S02</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>CF-03 - Household composition</td>
+  <td>estimate now roster later</td>
+  <td>CF-S03</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>CF-04 - Income-reference comparison</td>
+  <td>quick check then detailed income</td>
+  <td>CF-S04, CF-S05, CF-S06</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>CF-05 - Income type, exclusions, self-employment and changes</td>
+  <td>conditional income preparation</td>
+  <td>CF-S06</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>CF-06 - Categorical eligibility, alternate tests and resources</td>
+  <td>conditional after reference</td>
+  <td>CF-S05, CF-S04</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>CF-07 - Citizenship/noncitizen eligibility and nonapplicants</td>
+  <td>applicant specific later</td>
+  <td>CF-S07, CF-S08</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>CF-08 - Identity and SSN</td>
+  <td>official application or scoped request</td>
+  <td>CF-S02, CF-S10</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>CF-09 - Expenses and deductions</td>
+  <td>conditional preparation</td>
+  <td>CF-S06, CF-S02, CF-S04</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>CF-10 - Student status and exemptions</td>
+  <td>conditional preparation</td>
+  <td>CF-S09, CF-S12</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>CF-11 - General work rules and ABAWD time limit</td>
+  <td>conditional preparation and followup</td>
+  <td>CF-S11, CF-S12</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>CF-12 - Expedited service</td>
+  <td>optional urgent need branch</td>
+  <td>CF-S02</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>CF-13 - Filing, signature, interview and verification deadlines</td>
+  <td>official application and followup</td>
+  <td>CF-S02</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>CF-14 - Other eligibility restrictions and duplicate participation</td>
+  <td>conditional review</td>
+  <td>CF-S01, CF-S12</td>
+  <td>queued detailed review</td>
+</tr>
+</tbody>
+</table>
+<h3>Medi-Cal</h3>
+<table>
+<thead>
+<tr>
+  <th>ID / family</th>
+  <th>Stage</th>
+  <th>Source IDs</th>
+  <th>Audit status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MC-01 - California residence</td>
+  <td>quick routing then person specific</td>
+  <td>MC-S01, MC-S02</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>MC-02 - Electronic and administrative residency verification</td>
+  <td>document preparation or county request</td>
+  <td>MC-S02</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>MC-03 - Coverage category and applicant selection</td>
+  <td>before any category specific income result</td>
+  <td>MC-S05, MC-S07</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>MC-04 - MAGI household and income method</td>
+  <td>conditional MediCal preparation</td>
+  <td>MC-S03</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>MC-05 - Income standards and effective dates</td>
+  <td>after category and method identified</td>
+  <td>MC-S04, MC-S05</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>MC-06 - Non-MAGI resources and special financial rules</td>
+  <td>conditional special pathway</td>
+  <td>MC-S07, MC-S08</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>MC-07 - Immigration, coverage scope and enrollment timing</td>
+  <td>applicant specific later</td>
+  <td>MC-S06, MC-S07, MC-S08</td>
+  <td>focused review</td>
+</tr>
+<tr>
+  <td>MC-08 - Identity/income verification and compatibility</td>
+  <td>official application or requested evidence</td>
+  <td>MC-S09, MC-S08</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>MC-09 - Application, renewal, continuous coverage and notices</td>
+  <td>official application and followup</td>
+  <td>MC-S02, MC-S07, MC-S08</td>
+  <td>queued detailed review</td>
+</tr>
+<tr>
+  <td>MC-10 - Service coverage and authorization</td>
+  <td>optional separate coverage navigation</td>
+  <td>MC-S10</td>
+  <td>queued detailed review</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Source governance and dates</h2>
+<p>Store each rule's authority, source section, jurisdiction, program, person/category scope, issued date, effective interval, supersession, required facts, verification alternatives, unknown behavior and reviewer approvals. Store requested proof separately from the eligibility predicate.</p>
+<p>A current primary state instruction may supersede an older instruction. A recently crawled public webpage may still contain old thresholds. Do not select policy by domain or retrieval date alone. Governing law, amendments, implemented state options, active waivers and applicable judicial orders must be reconciled before release. Conflicts become an explicit blocked-rule review task; they are not resolved by a language model.</p>
+<p>Important current anchors: CalFresh I-40-26 (October 2026 reference period); CalFresh ACL 25-92 plus I-29-26E (applicant-specific noncitizen review); Medi-Cal 26-15 (residency verification); Medi-Cal 26-01 and enclosures (category-specific FPL); Medi-Cal 26-13 and current changes guidance (funding/scope/enrollment). Future-dated provisions must not run early.</p>
+<p>This pass does not certify every waiver, legal challenge, student exception, financial exclusion or special-category rule. Those remain explicit inventory work rather than silently assumed coverage.</p>
+<h2>8. Implementation invariants</h2>
+<ol>
+<li>A screening answer is unverified self-report. A file is candidate evidence. User confirmation is not government verification.</li>
+<li>Each result names the exact check performed and the conditions not assessed.</li>
+<li>Unknown never becomes false, zero or ineligible by default.</li>
+<li>Keep applicant, household, program, period and policy-version scope separate.</li>
+<li>No generic must-upload requirement; an actual county request creates a scoped outstanding task.</li>
+<li>Preserve official filing access while withholding unsupported prepared answers or conclusions.</li>
+<li>Keep prior submitted snapshots immutable. Newly added evidence is not automatically more current.</li>
+<li>A document can support more than one fact without proving every fact or every member's eligibility.</li>
+<li>Do not activate a new policy from scraped prose. Require domain review, implementation review and tests.</li>
+<li>This audit does not validate the screenshot's privacy statements or native processing. Those require separate installed-extension testing.</li>
+</ol>
+<h2>9. Test plan and audit validation</h2>
+<p><code>screen_1_test_plan.json</code> contains 26 acceptance scenarios. They are <strong>not run</strong>; no app source or installed behavior was tested. The build script validates unique identifiers, source links, disabled policy flags, date-bounded reference metadata and not-run test states only.</p>
+<p>Before release, assign domain and engineering reviewers, resolve the queued rule families, test the actual dropdown and result logic, and obtain the Medi-Cal panel for a separate visible-screen audit. Do not interpret this report as a complete legal or security certification.</p>
+<h2>10. Source register</h2>
+<p>Official source URLs are provided for traceability, not as a claim that all linked content has been fully translated into rules.</p>
+<h3>CF-S01 - 7 CFR 273.3 - Residency</h3>
+<p><a href="https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-B/section-273.3">https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-B/section-273.3</a></p>
+<p>Authority: Federal SNAP. Review: focused_passage_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Residence, no durational requirement, no fixed dwelling or mailing address; vacation presence</p>
+<h3>CF-S02 - 7 CFR 273.2 - Application processing and verification</h3>
+<p><a href="https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-A/section-273.2">https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-A/section-273.2</a></p>
+<p>Authority: Federal SNAP. Review: focused_passage_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: (c) filing; (f)(1)(vi) residency, (vii) identity, (f)(4) evidence methods. Other subsections indexed, not exhaustively audited.</p>
+<h3>CF-S03 - 7 CFR 273.1 - Household concept</h3>
+<p><a href="https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-A/section-273.1">https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-A/section-273.1</a></p>
+<p>Authority: Federal SNAP. Review: focused_passage_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: (a), (b)(1) household grouping; exceptions identified for later implementation</p>
+<h3>CF-S04 - CDSS ACIN I-40-26 - FFY 2027 cost-of-living adjustments</h3>
+<p><a href="https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACINs/2026/I-40_26.pdf?ver=H4zUIA8n2Aca6xBYlObOUg%3D%3D">https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACINs/2026/I-40_26.pdf?ver=H4zUIA8n2Aca6xBYlObOUg%3D%3D</a></p>
+<p>Authority: California statewide. Review: focused_passage_review. Accessed: 2026-10-04. Issued: 2026-09-10. Effective context: {&quot;from&quot;: &quot;2026-10-01&quot;, &quot;through&quot;: &quot;2027-09-30&quot;}.</p>
+<p>Scope reviewed: Attachment I, PDF page 7: separate net, 165%, and 200% MCE/BBCE tables. Four-person 200% value visually checked. Other benefit formulas not approved.</p>
+<h3>CF-S05 - Santa Clara County - Modified Categorical Eligibility</h3>
+<p><a href="https://stgenssa.sccgov.org/debs/program_handbooks/calfresh/assets/CalFresh/CEHouseholds/MCE.htm">https://stgenssa.sccgov.org/debs/program_handbooks/calfresh/assets/CalFresh/CEHouseholds/MCE.htm</a></p>
+<p>Authority: County operational explanation. Review: focused_passage_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: MCE and further eligibility review for elderly/disabled households over 200%; not a statewide standalone rule engine</p>
+<h3>CF-S06 - 7 CFR 273.9 - Income and deductions</h3>
+<p><a href="https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-D/section-273.9">https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-D/section-273.9</a></p>
+<p>Authority: Federal SNAP. Review: indexed_for_next_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Income, exclusions and deductions; California options and later amendments require separate mapping</p>
+<h3>CF-S07 - CDSS ACL 25-92 - Noncitizen eligibility changes</h3>
+<p><a href="https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2025/25-92.pdf?ver=DCTxoAnXCUHKJ572rddl_A%3D%3D">https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACLs/2025/25-92.pdf?ver=DCTxoAnXCUHKJ572rddl_A%3D%3D</a></p>
+<p>Authority: California statewide. Review: focused_passage_review. Accessed: 2026-10-04. Issued: 2025-12-31. Effective context: {&quot;new_applications&quot;: &quot;2026-04-01&quot;}.</p>
+<p>Scope reviewed: New-application implementation and current category framework; all category predicates not encoded</p>
+<h3>CF-S08 - CDSS ACIN I-29-26E - Noncitizen Q&amp;A errata</h3>
+<p><a href="https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACINs/2026/I-29_26E.pdf?ver=lIQCMdaY9EW2VgkZN6HhDg%3D%3D">https://www.cdss.ca.gov/Portals/9/Additional-Resources/Letters-and-Notices/ACINs/2026/I-29_26E.pdf?ver=lIQCMdaY9EW2VgkZN6HhDg%3D%3D</a></p>
+<p>Authority: California statewide. Review: focused_passage_review. Accessed: 2026-10-04. Issued: 2026-09-30. Supersession: Affected passages in ACIN I-29-26.</p>
+<p>Scope reviewed: Revised Q8: nonapplicant immigration verification; Q3/Q14 changes identified but not implemented. PDF page 5 visually reviewed.</p>
+<h3>CF-S09 - 7 CFR 273.5 - Students</h3>
+<p><a href="https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-C/section-273.5">https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-C/section-273.5</a></p>
+<p>Authority: Federal SNAP. Review: indexed_for_next_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Student restrictions/exemptions; California exemptions need additional source mapping</p>
+<h3>CF-S10 - 7 CFR 273.6 - Social security numbers</h3>
+<p><a href="https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-C/section-273.6">https://www.ecfr.gov/current/title-7/subtitle-B/chapter-II/subchapter-C/part-273/subpart-C/section-273.6</a></p>
+<p>Authority: Federal SNAP. Review: indexed_for_next_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Applicant SSN/application and exceptions; no collection in quick screen</p>
+<h3>CF-S11 - CDSS - CalFresh work and community engagement requirements</h3>
+<p><a href="https://www.cdss.ca.gov/inforesources/calfresh/abawd/abawd">https://www.cdss.ca.gov/inforesources/calfresh/abawd/abawd</a></p>
+<p>Authority: California statewide. Review: indexed_for_next_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Current implementation overview, exemptions and county-waiver routing; detailed letters must be linked before release</p>
+<h3>CF-S12 - CDSS 2026 All County Letters index</h3>
+<p><a href="https://www.cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/all-county-letters/2026-all-county-letters">https://www.cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/all-county-letters/2026-all-county-letters</a></p>
+<p>Authority: California statewide index. Review: index_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Locate amendments and current waiver instructions; the index is not an executable eligibility rule</p>
+<h3>CF-S13 - CDSS 2026 All County Information Notices index</h3>
+<p><a href="https://www.cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/all-county-information-notices/2026-all-county-information-notices">https://www.cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/all-county-information-notices/2026-all-county-information-notices</a></p>
+<p>Authority: California statewide index. Review: index_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Version and errata discovery</p>
+<h3>MC-S01 - 42 CFR 435.403 - State residence</h3>
+<p><a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-E/section-435.403">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-E/section-435.403</a></p>
+<p>Authority: Federal Medicaid. Review: focused_passage_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Adult residence, work-entry, no fixed address/durational bar, temporary absence; age/institution exceptions require scoped branches</p>
+<h3>MC-S02 - DHCS ACWDL 26-15 - Residency and electronic verification status update</h3>
+<p><a href="https://www.dhcs.ca.gov/file/acwdl-26-15-pdf/">https://www.dhcs.ca.gov/file/acwdl-26-15-pdf/</a></p>
+<p>Authority: California statewide. Review: focused_passage_review. Accessed: 2026-10-04. Issued: 2026-09-09. Effective context: {&quot;system_enhancements&quot;: &quot;2026-02-23&quot;}. Supersession: ACWDL 26-04, ACWDL 26-04E.</p>
+<p>Scope reviewed: Policy and electronic/administrative verification, PDF pp. 1-5; exception examples identified. Pages 2-4 visually checked.</p>
+<h3>MC-S03 - 42 CFR 435.603 - MAGI methodology</h3>
+<p><a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603</a></p>
+<p>Authority: Federal Medicaid. Review: focused_passage_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Individual household composition and financial methodology; full exception implementation pending</p>
+<h3>MC-S04 - DHCS ACWDL 26-01 - 2026 federal poverty levels</h3>
+<p><a href="https://www.dhcs.ca.gov/file/26-01-pdf/">https://www.dhcs.ca.gov/file/26-01-pdf/</a></p>
+<p>Authority: California statewide. Review: focused_passage_review. Accessed: 2026-10-04. Issued: 2026-01-21. Effective context: {&quot;MAGI&quot;: &quot;2026-01-01&quot;, &quot;other_categories&quot;: &quot;See letter; do not reuse the MAGI date for every category&quot;}.</p>
+<p>Scope reviewed: Implementation periods; enclosure tables require category-specific mapping</p>
+<h3>MC-S05 - DHCS program descriptions by FPL - Enclosure 3</h3>
+<p><a href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/program-descriptions-by-fpl-enclosure-3/">https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/program-descriptions-by-fpl-enclosure-3/</a></p>
+<p>Authority: California statewide. Review: focused_passage_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Multiple program categories and FPL levels; no universal Medi-Cal threshold</p>
+<h3>MC-S06 - DHCS ACWDL 26-13 - Qualified noncitizen changes</h3>
+<p><a href="https://www.dhcs.ca.gov/file/acwdl-26-13-pdf/">https://www.dhcs.ca.gov/file/acwdl-26-13-pdf/</a></p>
+<p>Authority: California statewide. Review: focused_passage_review. Accessed: 2026-10-04. Issued: 2026-08-21. Effective context: {&quot;federal_change&quot;: &quot;2026-10-01&quot;}.</p>
+<p>Scope reviewed: PDF pp. 1-3: federal funding changes and continued state-funded full scope for affected QNC groups; full category engine pending</p>
+<h3>MC-S07 - DHCS - Medi-Cal changes</h3>
+<p><a href="https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/">https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/</a></p>
+<p>Authority: California statewide public overview. Review: indexed_for_next_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: New/existing enrollment, 2026 changes and future-dated changes; underlying letters required per rule</p>
+<h3>MC-S08 - DHCS 2026 All County Welfare Directors Letters index</h3>
+<p><a href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-all-county-welfare-directors-letters/">https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-all-county-welfare-directors-letters/</a></p>
+<p>Authority: California statewide index. Review: index_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: 26-15 supersession; 26-16 assets, 26-17 address, 26-18 income entries require further rule review</p>
+<h3>MC-S09 - 42 CFR 435.952 - Use of information and requests for additional information</h3>
+<p><a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-J/subject-group-ECFRc649656b2ed45a8/section-435.952">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-J/subject-group-ECFRc649656b2ed45a8/section-435.952</a></p>
+<p>Authority: Federal Medicaid. Review: indexed_for_next_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Verification and reasonable compatibility; not a universal no-documents promise</p>
+<h3>MC-S10 - DHCS - Medi-Cal benefits</h3>
+<p><a href="https://www.dhcs.ca.gov/medi-cal/benefits/">https://www.dhcs.ca.gov/medi-cal/benefits/</a></p>
+<p>Authority: California statewide public overview. Review: indexed_for_next_review. Accessed: 2026-10-04.</p>
+<p>Scope reviewed: Service coverage inventory; separate from eligibility and treatment authorization</p>
+<h3>Supplied design evidence</h3>
+<ul>
+<li><code>Screenshot 2026-10-04 at 07.15.16.png</code>: visible current first-screen CalFresh panel. Selected values are UI examples, not assertions about the user's household.</li>
+<li><code>Untitled document (1).pdf</code>, page 4: BenefitsCal upload-page wording distinguishes suggestions and later upload from ability to submit.</li>
+</ul>
+<p>Neither supplied image is redistributed in this audit package. No applicant documents or identifying data were used as training evidence.</p>
+</main></body></html>

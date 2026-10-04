@@ -1,12 +1,16 @@
-# BenefitStep — working local preview 0.1.4
+# Latest integration: 0.3.0
 
-Implements the core preparation and manual application workflow from **BS-DEV-001**, using the reviewed CalFresh Application Companion **0.1.4** UI and quick check. The original handoff and older extensions are unchanged.
+The local policy engine is integrated. CF285 and Medi-Cal forms now support local unsigned-draft generation, preview, and PDF/ZIP downloads. Reviewed evidence is reused; the expanded fictional AI demo fills household and application details. Independent field audit and approval remain pending. See [PDF implementation and remaining acceptance work](forms/README.md).
+
+# BenefitStep — policy-aligned local preview 0.2.0
+
+Implements the core preparation and manual application workflow from **BS-DEV-001**, now with the **BS-UI-POL-002 v0.2** utility design and independent program starting screens. See [integration and validation](UI_V0_2_INTEGRATION.md) and [policy tracking](policy/README.md). The supplied design package and original policy inventory remain unchanged.
 
 ## Load the extension
 
 In `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select:
 
-`/Users/zhenli/git/benefitstep/extension`
+`extension/` inside this project (release copy: `/Users/zhenli/git/benefitstep/extension`).
 
 Pin **BenefitStep — Local Preview** and click its toolbar icon to open the sidebar. This is a separate extension from CookieGuard and the previous Companion. The supplied `BenefitStep_Implementation_v0_1` handoff folder is not the loadable extension.
 
@@ -14,7 +18,7 @@ Pin **BenefitStep — Local Preview** and click its toolbar icon to open the sid
 
 Quick check → Add documents → resolve important issues → **Yes, correct** → Apply and follow up.
 
-- Preserves four screening questions per program, income ranges, skip, separate food/tax households, early results, and the latest Update/recalculation fix. Screening estimates never become confirmed evidence facts.
+- CalFresh asks residence, estimated food household and an income band tied to a dated reference. Medi-Cal separately collects age and residence per person seeking coverage; no Medi-Cal household or income conclusion is calculated. Saves, partial saves, skips and revisions are independent. Starting estimates never become confirmed document facts.
 - Select PDFs/images/text together or choose a folder. One batch action reads and organizes files. Native on-device extraction is used when available; a clearly labeled local English-label reader is used for searchable documents when unavailable. Images need supported local AI or manual entry. No cloud fallback.
 - Strict allowlisted candidate fields, exact text quotes, page references, integer cents, original values, editable revisions and immutable confirmation history. Unknowns remain unknown. Native output cannot select benefit rules or set submission status.
 - Package Doctor runs on actual records: unreadable/conflicting values, exact duplicates, gross/net/YTD confusion, prior-balance misuse, comparable pay-record conflicts, and evidence linked to a confirmed request's person/program/date basis/period. It offers one prominent finding, sources and a correction path. Other findings stay collapsed.
@@ -61,16 +65,6 @@ The normal extractor keeps current charges and total due separate. To demonstrat
 
 ## Build and checks
 
-From this standalone repository:
-
-```sh
-cd /Users/zhenli/git/benefitstep
-npm run build
-npm test
-```
-
-The repository includes source, bundled runtime dependencies, demos, research, and presentation files. Local Python virtual environments and cache files are excluded. Historical handoff references may point outside this standalone copy.
-
 Node 22.16+; runtime dependencies are already bundled. No `npm install` or network is needed.
 
 ```sh
@@ -93,7 +87,7 @@ This is a **working G1/G2 local preview**, not certification that the specificat
 
 The handoff's strict extraction vocabulary is adapted to existing field/type names and extended with business income, award, county request, application receipt, upload receipt and coverage notice candidates. Mixed files abstain. Limits remain the previously tested conservative bounds: 24 files, 8 MB/file, six pages/PDF, 48 MB total, one active model job. Password-protected PDFs need an owner-unlocked copy or manual entry. Broad layout OCR and document splitting are not implemented.
 
-Generic document checks run locally; the handoff's unapproved consequential county policy designs remain disabled. Existing reviewed preliminary screening remains explicitly preliminary. No cash-flow eligibility inference, deductions, forensic authenticity model, automatic routing by the trained classifier, or medical coverage decision is enabled. Medi-Cal supports separate preparation and follow-up; its guided official completion is not implemented.
+Generic document checks run locally; the handoff's unapproved consequential county policy designs remain disabled. The starting comparison remains display-only; Medi-Cal starting facts do not constitute an eligibility screener. No cash-flow eligibility inference, deductions, forensic authenticity model, automatic routing by the trained classifier, or medical coverage decision is enabled. Medi-Cal supports separate preparation and follow-up; its guided official completion is not implemented.
 
 Saved-work encryption, cross-window projections, production policy approvals, coverage navigation, a full accessibility/security audit, hardware-native AI validation and measured user pilots remain separate release work. Closing or reloading loses preparation. Exports are ordinary unencrypted reference copies, not restorable encrypted backups. Clipboard and downloaded files can be shared by other software.
 

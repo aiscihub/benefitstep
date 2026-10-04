@@ -1,0 +1,171 @@
+{
+  "checks": 41,
+  "passed": 41,
+  "tests": [
+    {
+      "name": "engine object loaded in browser",
+      "passed": true
+    },
+    {
+      "name": "14 fictional scenarios available",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation calfresh-quick",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result calfresh-quick",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation medical-quick",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result medical-quick",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation both-programs",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result both-programs",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation self-employment",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result self-employment",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation different-immigration-paths",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result different-immigration-paths",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation cfap-not-automatic",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result cfap-not-automatic",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation pregnancy-twins",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result pregnancy-twins",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation older-adult",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result older-adult",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation package-doctor",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result package-doctor",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation range-crosses-reference",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result range-crosses-reference",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation outside-policy-window",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result outside-policy-window",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation sensitive-review-skipped",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result sensitive-review-skipped",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation nonapplicant-boundary",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result nonapplicant-boundary",
+      "passed": true
+    },
+    {
+      "name": "browser evaluation raw-wages-not-magi",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative result raw-wages-not-magi",
+      "passed": true
+    },
+    {
+      "name": "two independent result sections",
+      "passed": true
+    },
+    {
+      "name": "run is deterministic",
+      "passed": true
+    },
+    {
+      "name": "malformed JSON data produces visible error",
+      "passed": true
+    },
+    {
+      "name": "invalid input disables saving",
+      "passed": true
+    },
+    {
+      "name": "Package Doctor runs",
+      "passed": true
+    },
+    {
+      "name": "official template limitation visible",
+      "passed": true
+    },
+    {
+      "name": "form inventories are exposed",
+      "passed": true
+    },
+    {
+      "name": "no auto network",
+      "passed": true
+    },
+    {
+      "name": "no script errors",
+      "passed": true
+    },
+    {
+      "name": "no persistent local storage calls",
+      "passed": true
+    },
+    {
+      "name": "narrow no horizontal overflow",
+      "passed": true
+    }
+  ],
+  "scope": "In-memory Chromium page; not installed extension, native AI, official form, agency connection or policy approval."
+}

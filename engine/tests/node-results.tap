@@ -1,0 +1,754 @@
+TAP version 13
+# Subtest: bundle validates and contains independent actual program configurations
+ok 1 - bundle validates and contains independent actual program configurations
+  ---
+  duration_ms: 4.725266
+  type: 'test'
+  ...
+# Subtest: fixture invariants: calfresh-quick
+ok 2 - fixture invariants: calfresh-quick
+  ---
+  duration_ms: 2.763443
+  type: 'test'
+  ...
+# Subtest: fixture invariants: medical-quick
+ok 3 - fixture invariants: medical-quick
+  ---
+  duration_ms: 0.404471
+  type: 'test'
+  ...
+# Subtest: fixture invariants: both-programs
+ok 4 - fixture invariants: both-programs
+  ---
+  duration_ms: 2.552795
+  type: 'test'
+  ...
+# Subtest: fixture invariants: cfap-not-automatic
+ok 5 - fixture invariants: cfap-not-automatic
+  ---
+  duration_ms: 0.516931
+  type: 'test'
+  ...
+# Subtest: fixture invariants: different-immigration-paths
+ok 6 - fixture invariants: different-immigration-paths
+  ---
+  duration_ms: 0.782031
+  type: 'test'
+  ...
+# Subtest: fixture invariants: nonapplicant-boundary
+ok 7 - fixture invariants: nonapplicant-boundary
+  ---
+  duration_ms: 0.517962
+  type: 'test'
+  ...
+# Subtest: fixture invariants: older-adult
+ok 8 - fixture invariants: older-adult
+  ---
+  duration_ms: 0.608078
+  type: 'test'
+  ...
+# Subtest: fixture invariants: outside-policy-window
+ok 9 - fixture invariants: outside-policy-window
+  ---
+  duration_ms: 0.573366
+  type: 'test'
+  ...
+# Subtest: fixture invariants: package-doctor
+ok 10 - fixture invariants: package-doctor
+  ---
+  duration_ms: 1.43704
+  type: 'test'
+  ...
+# Subtest: fixture invariants: pregnancy-twins
+ok 11 - fixture invariants: pregnancy-twins
+  ---
+  duration_ms: 0.714909
+  type: 'test'
+  ...
+# Subtest: fixture invariants: range-crosses-reference
+ok 12 - fixture invariants: range-crosses-reference
+  ---
+  duration_ms: 0.241565
+  type: 'test'
+  ...
+# Subtest: fixture invariants: raw-wages-not-magi
+ok 13 - fixture invariants: raw-wages-not-magi
+  ---
+  duration_ms: 0.438733
+  type: 'test'
+  ...
+# Subtest: fixture invariants: self-employment
+ok 14 - fixture invariants: self-employment
+  ---
+  duration_ms: 0.446524
+  type: 'test'
+  ...
+# Subtest: fixture invariants: sensitive-review-skipped
+ok 15 - fixture invariants: sensitive-review-skipped
+  ---
+  duration_ms: 0.532805
+  type: 'test'
+  ...
+# Subtest: CF MCE household 1: at boundary
+ok 16 - CF MCE household 1: at boundary
+  ---
+  duration_ms: 0.442267
+  type: 'test'
+  ...
+# Subtest: CF MCE household 1: one cent above
+ok 17 - CF MCE household 1: one cent above
+  ---
+  duration_ms: 0.264569
+  type: 'test'
+  ...
+# Subtest: CF MCE household 2: at boundary
+ok 18 - CF MCE household 2: at boundary
+  ---
+  duration_ms: 0.204679
+  type: 'test'
+  ...
+# Subtest: CF MCE household 2: one cent above
+ok 19 - CF MCE household 2: one cent above
+  ---
+  duration_ms: 0.267934
+  type: 'test'
+  ...
+# Subtest: CF MCE household 3: at boundary
+ok 20 - CF MCE household 3: at boundary
+  ---
+  duration_ms: 0.282817
+  type: 'test'
+  ...
+# Subtest: CF MCE household 3: one cent above
+ok 21 - CF MCE household 3: one cent above
+  ---
+  duration_ms: 0.219451
+  type: 'test'
+  ...
+# Subtest: CF MCE household 4: at boundary
+ok 22 - CF MCE household 4: at boundary
+  ---
+  duration_ms: 0.229767
+  type: 'test'
+  ...
+# Subtest: CF MCE household 4: one cent above
+ok 23 - CF MCE household 4: one cent above
+  ---
+  duration_ms: 0.249026
+  type: 'test'
+  ...
+# Subtest: CF MCE household 5: at boundary
+ok 24 - CF MCE household 5: at boundary
+  ---
+  duration_ms: 0.240002
+  type: 'test'
+  ...
+# Subtest: CF MCE household 5: one cent above
+ok 25 - CF MCE household 5: one cent above
+  ---
+  duration_ms: 0.217087
+  type: 'test'
+  ...
+# Subtest: CF MCE household 6: at boundary
+ok 26 - CF MCE household 6: at boundary
+  ---
+  duration_ms: 0.220513
+  type: 'test'
+  ...
+# Subtest: CF MCE household 6: one cent above
+ok 27 - CF MCE household 6: one cent above
+  ---
+  duration_ms: 0.230648
+  type: 'test'
+  ...
+# Subtest: CF MCE household 7: at boundary
+ok 28 - CF MCE household 7: at boundary
+  ---
+  duration_ms: 0.193071
+  type: 'test'
+  ...
+# Subtest: CF MCE household 7: one cent above
+ok 29 - CF MCE household 7: one cent above
+  ---
+  duration_ms: 0.190608
+  type: 'test'
+  ...
+# Subtest: CF MCE household 8: at boundary
+ok 30 - CF MCE household 8: at boundary
+  ---
+  duration_ms: 0.232561
+  type: 'test'
+  ...
+# Subtest: CF MCE household 8: one cent above
+ok 31 - CF MCE household 8: one cent above
+  ---
+  duration_ms: 0.274294
+  type: 'test'
+  ...
+# Subtest: CF MCE household 9: at boundary
+ok 32 - CF MCE household 9: at boundary
+  ---
+  duration_ms: 0.203628
+  type: 'test'
+  ...
+# Subtest: CF MCE household 9: one cent above
+ok 33 - CF MCE household 9: one cent above
+  ---
+  duration_ms: 0.19862
+  type: 'test'
+  ...
+# Subtest: range straddling reference remains unresolved, not a false pass
+ok 34 - range straddling reference remains unresolved, not a false pass
+  ---
+  duration_ms: 0.228024
+  type: 'test'
+  ...
+# Subtest: explicit zero is known
+ok 35 - explicit zero is known
+  ---
+  duration_ms: 0.247404
+  type: 'test'
+  ...
+# Subtest: unknown income is not zero
+ok 36 - unknown income is not zero
+  ---
+  duration_ms: 0.362217
+  type: 'test'
+  ...
+# Subtest: declined income is not repeatedly asked
+ok 37 - declined income is not repeatedly asked
+  ---
+  duration_ms: 0.595099
+  type: 'test'
+  ...
+# Subtest: false residence means review/routing not a filing barrier
+ok 38 - false residence means review/routing not a filing barrier
+  ---
+  duration_ms: 0.335467
+  type: 'test'
+  ...
+# Subtest: unconfirmed extracted document does not drive income reference
+ok 39 - unconfirmed extracted document does not drive income reference
+  ---
+  duration_ms: 0.440185
+  type: 'test'
+  ...
+# Subtest: conflicting active facts remain unresolved
+ok 40 - conflicting active facts remain unresolved
+  ---
+  duration_ms: 0.518883
+  type: 'test'
+  ...
+# Subtest: old fact added later does not override active-period fact
+ok 41 - old fact added later does not override active-period fact
+  ---
+  duration_ms: 0.313363
+  type: 'test'
+  ...
+# Subtest: changing household invalidates contextual income band
+ok 42 - changing household invalidates contextual income band
+  ---
+  duration_ms: 0.408777
+  type: 'test'
+  ...
+# Subtest: future as-of outside configured review window is unsupported
+ok 43 - future as-of outside configured review window is unsupported
+  ---
+  duration_ms: 0.339893
+  type: 'test'
+  ...
+# Subtest: release mode rejects unapproved policy
+ok 44 - release mode rejects unapproved policy
+  ---
+  duration_ms: 0.53661
+  type: 'test'
+  ...
+# Subtest: engine copy is immutable to original config mutation
+ok 45 - engine copy is immutable to original config mutation
+  ---
+  duration_ms: 3.160222
+  type: 'test'
+  ...
+# Subtest: returned result mutation does not affect subsequent calls
+ok 46 - returned result mutation does not affect subsequent calls
+  ---
+  duration_ms: 0.419423
+  type: 'test'
+  ...
+# Subtest: CalFresh result does not change Medi-Cal result
+ok 47 - CalFresh result does not change Medi-Cal result
+  ---
+  duration_ms: 2.365262
+  type: 'test'
+  ...
+# Subtest: federal CalFresh exclusion is not automatic CFAP eligibility
+ok 48 - federal CalFresh exclusion is not automatic CFAP eligibility
+  ---
+  duration_ms: 0.527347
+  type: 'test'
+  ...
+# Subtest: same immigration fact yields distinct program routes
+ok 49 - same immigration fact yields distinct program routes
+  ---
+  duration_ms: 1.058038
+  type: 'test'
+  ...
+# Subtest: nonapplicant does not receive immigration rule or prompt
+ok 50 - nonapplicant does not receive immigration rule or prompt
+  ---
+  duration_ms: 0.527096
+  type: 'test'
+  ...
+# Subtest: no sensitive consent means no status collection question
+ok 51 - no sensitive consent means no status collection question
+  ---
+  duration_ms: 0.846268
+  type: 'test'
+  ...
+# Subtest: business calculation requires choice and preserves receipts
+ok 52 - business calculation requires choice and preserves receipts
+  ---
+  duration_ms: 0.641649
+  type: 'test'
+  ...
+# Subtest: actual-expense choice never silently replaced by standard
+ok 53 - actual-expense choice never silently replaced by standard
+  ---
+  duration_ms: 0.618033
+  type: 'test'
+  ...
+# Subtest: incomplete income sources does not produce final comparison
+ok 54 - incomplete income sources does not produce final comparison
+  ---
+  duration_ms: 0.756583
+  type: 'test'
+  ...
+# Subtest: raw pay is not health MAGI
+ok 55 - raw pay is not health MAGI
+  ---
+  duration_ms: 0.494918
+  type: 'test'
+  ...
+# Subtest: pregnant applicant with twins has separately derived family size
+ok 56 - pregnant applicant with twins has separately derived family size
+  ---
+  duration_ms: 0.987521
+  type: 'test'
+  ...
+# Subtest: 65+ does not receive standard adult income comparison
+ok 57 - 65+ does not receive standard adult income comparison
+  ---
+  duration_ms: 0.691655
+  type: 'test'
+  ...
+# Subtest: minimal health screen does not collect full tax or medical history
+ok 58 - minimal health screen does not collect full tax or medical history
+  ---
+  duration_ms: 0.362116
+  type: 'test'
+  ...
+# Subtest: maximum requested questions is enforced
+ok 59 - maximum requested questions is enforced
+  ---
+  duration_ms: 7.388798
+  type: 'test'
+  ...
+# Subtest: unreadable and prior balance issues are separate
+ok 60 - unreadable and prior balance issues are separate
+  ---
+  duration_ms: 0.651254
+  type: 'test'
+  ...
+# Subtest: large genuine current charge does not trigger prior-balance warning
+ok 61 - large genuine current charge does not trigger prior-balance warning
+  ---
+  duration_ms: 0.540686
+  type: 'test'
+  ...
+# Subtest: expense-income arithmetic requires comparable scope
+ok 62 - expense-income arithmetic requires comparable scope
+  ---
+  duration_ms: 0.604173
+  type: 'test'
+  ...
+# Subtest: recorded expense gap explains rather than denies
+ok 63 - recorded expense gap explains rather than denies
+  ---
+  duration_ms: 0.465683
+  type: 'test'
+  ...
+# Subtest: request date semantics: earned
+ok 64 - request date semantics: earned
+  ---
+  duration_ms: 0.558693
+  type: 'test'
+  ...
+# Subtest: request date semantics: unspecified
+ok 65 - request date semantics: unspecified
+  ---
+  duration_ms: 0.598363
+  type: 'test'
+  ...
+# Subtest: request date semantics: received
+ok 66 - request date semantics: received
+  ---
+  duration_ms: 0.615269
+  type: 'test'
+  ...
+# Subtest: two adjacent pay records can cover one requested period
+ok 67 - two adjacent pay records can cover one requested period
+  ---
+  duration_ms: 0.67559
+  type: 'test'
+  ...
+# Subtest: gap between adjacent records stays unresolved
+ok 68 - gap between adjacent records stays unresolved
+  ---
+  duration_ms: 0.583872
+  type: 'test'
+  ...
+# Subtest: sent record does not establish acceptance
+ok 69 - sent record does not establish acceptance
+  ---
+  duration_ms: 0.656341
+  type: 'test'
+  ...
+# Subtest: same hash flags exact duplicate, no authenticity claim
+ok 70 - same hash flags exact duplicate, no authenticity claim
+  ---
+  duration_ms: 0.698705
+  type: 'test'
+  ...
+# Subtest: equal amounts without matching hash do not prove duplicates
+ok 71 - equal amounts without matching hash do not prove duplicates
+  ---
+  duration_ms: 0.92088
+  type: 'test'
+  ...
+# Subtest: confirmation does not change original and applies only selected revisions
+ok 72 - confirmation does not change original and applies only selected revisions
+  ---
+  duration_ms: 0.219201
+  type: 'test'
+  ...
+# Subtest: stale confirmation rejected
+ok 73 - stale confirmation rejected
+  ---
+  duration_ms: 0.215625
+  type: 'test'
+  ...
+# Subtest: edit invalidates only changed confirmation
+ok 74 - edit invalidates only changed confirmation
+  ---
+  duration_ms: 0.263077
+  type: 'test'
+  ...
+# Subtest: snapshot remains frozen and change comparison shows modification
+ok 75 - snapshot remains frozen and change comparison shows modification
+  ---
+  duration_ms: 0.56237
+  type: 'test'
+  ...
+# Subtest: transfer becomes stale after editing
+ok 76 - transfer becomes stale after editing
+  ---
+  duration_ms: 0.363479
+  type: 'test'
+  ...
+# Subtest: transfer excludes unconfirmed facts
+ok 77 - transfer excludes unconfirmed facts
+  ---
+  duration_ms: 0.27187
+  type: 'test'
+  ...
+# Subtest: exact currency 0
+ok 78 - exact currency 0
+  ---
+  duration_ms: 0.196337
+  type: 'test'
+  ...
+# Subtest: exact currency 0.01
+ok 79 - exact currency 0.01
+  ---
+  duration_ms: 0.1192
+  type: 'test'
+  ...
+# Subtest: exact currency 5500.00
+ok 80 - exact currency 5500.00
+  ---
+  duration_ms: 0.070957
+  type: 'test'
+  ...
+# Subtest: exact currency 12.3
+ok 81 - exact currency 12.3
+  ---
+  duration_ms: 0.062354
+  type: 'test'
+  ...
+# Subtest: reject ambiguous currency 1.234
+ok 82 - reject ambiguous currency 1.234
+  ---
+  duration_ms: 0.116997
+  type: 'test'
+  ...
+# Subtest: reject ambiguous currency -1
+ok 83 - reject ambiguous currency -1
+  ---
+  duration_ms: 0.045378
+  type: 'test'
+  ...
+# Subtest: reject ambiguous currency $10
+ok 84 - reject ambiguous currency $10
+  ---
+  duration_ms: 0.069405
+  type: 'test'
+  ...
+# Subtest: reject ambiguous currency 1,000
+ok 85 - reject ambiguous currency 1,000
+  ---
+  duration_ms: 0.078819
+  type: 'test'
+  ...
+# Subtest: reject ambiguous currency 1e3
+ok 86 - reject ambiguous currency 1e3
+  ---
+  duration_ms: 0.067152
+  type: 'test'
+  ...
+# Subtest: reject ambiguous currency NaN
+ok 87 - reject ambiguous currency NaN
+  ---
+  duration_ms: 0.088534
+  type: 'test'
+  ...
+# Subtest: reject malformed input: invalid date
+ok 88 - reject malformed input: invalid date
+  ---
+  duration_ms: 0.150077
+  type: 'test'
+  ...
+# Subtest: reject malformed input: unknown stage
+ok 89 - reject malformed input: unknown stage
+  ---
+  duration_ms: 0.114523
+  type: 'test'
+  ...
+# Subtest: reject malformed input: unknown program
+ok 90 - reject malformed input: unknown program
+  ---
+  duration_ms: 0.110657
+  type: 'test'
+  ...
+# Subtest: reject malformed input: negative household
+ok 91 - reject malformed input: negative household
+  ---
+  duration_ms: 0.144428
+  type: 'test'
+  ...
+# Subtest: reject malformed input: wrong boolean
+ok 92 - reject malformed input: wrong boolean
+  ---
+  duration_ms: 0.130427
+  type: 'test'
+  ...
+# Subtest: reject malformed input: unresolved with value
+ok 93 - reject malformed input: unresolved with value
+  ---
+  duration_ms: 0.16555
+  type: 'test'
+  ...
+# Subtest: reject malformed input: cross-program household
+ok 94 - reject malformed input: cross-program household
+  ---
+  duration_ms: 0.126501
+  type: 'test'
+  ...
+# Subtest: reject malformed input: document with no source
+ok 95 - reject malformed input: document with no source
+  ---
+  duration_ms: 0.150628
+  type: 'test'
+  ...
+# Subtest: reject malformed input: duplicate fact
+ok 96 - reject malformed input: duplicate fact
+  ---
+  duration_ms: 0.142545
+  type: 'test'
+  ...
+# Subtest: reject malformed input: fake confirmation revision
+ok 97 - reject malformed input: fake confirmation revision
+  ---
+  duration_ms: 0.129165
+  type: 'test'
+  ...
+# Subtest: reject malformed input: unrecognized key
+ok 98 - reject malformed input: unrecognized key
+  ---
+  duration_ms: 0.117017
+  type: 'test'
+  ...
+# Subtest: reject malformed input: reversed period
+ok 99 - reject malformed input: reversed period
+  ---
+  duration_ms: 0.147934
+  type: 'test'
+  ...
+# Subtest: reject unsafe config: unknown opcode
+ok 100 - reject unsafe config: unknown opcode
+  ---
+  duration_ms: 1.315506
+  type: 'test'
+  ...
+# Subtest: reject unsafe config: missing source
+ok 101 - reject unsafe config: missing source
+  ---
+  duration_ms: 0.948332
+  type: 'test'
+  ...
+# Subtest: reject unsafe config: unapproved destination
+ok 102 - reject unsafe config: unapproved destination
+  ---
+  duration_ms: 0.917145
+  type: 'test'
+  ...
+# Subtest: reject unsafe config: wrong arity
+ok 103 - reject unsafe config: wrong arity
+  ---
+  duration_ms: 1.045068
+  type: 'test'
+  ...
+# Subtest: reject unsafe config: implicit eligibility
+ok 104 - reject unsafe config: implicit eligibility
+  ---
+  duration_ms: 0.944206
+  type: 'test'
+  ...
+# Subtest: reject prototype injection in JSON
+ok 105 - reject prototype injection in JSON
+  ---
+  duration_ms: 0.134282
+  type: 'test'
+  ...
+# Subtest: reject nonfinite and custom objects
+ok 106 - reject nonfinite and custom objects
+  ---
+  duration_ms: 0.176717
+  type: 'test'
+  ...
+# Subtest: form plan exports confirmed answer and leaves signature manual
+ok 107 - form plan exports confirmed answer and leaves signature manual
+  ---
+  duration_ms: 0.539515
+  type: 'test'
+  ...
+# Subtest: unapproved official template cannot render
+ok 108 - unapproved official template cannot render
+  ---
+  duration_ms: 0.165299
+  type: 'test'
+  ...
+# Subtest: no explicit export authorization means no rendering
+ok 109 - no explicit export authorization means no rendering
+  ---
+  duration_ms: 0.149976
+  type: 'test'
+  ...
+# Subtest: missing bindings produce explicit partial report not filled claim
+ok 110 - missing bindings produce explicit partial report not filled claim
+  ---
+  duration_ms: 0.392533
+  type: 'test'
+  ...
+# Subtest: unconfirmed field is omitted
+ok 111 - unconfirmed field is omitted
+  ---
+  duration_ms: 0.173993
+  type: 'test'
+  ...
+# Subtest: extra rows are never silently truncated
+ok 112 - extra rows are never silently truncated
+  ---
+  duration_ms: 0.148144
+  type: 'test'
+  ...
+# Subtest: overlong form entry yields missing item not shortened value
+ok 113 - overlong form entry yields missing item not shortened value
+  ---
+  duration_ms: 0.120452
+  type: 'test'
+  ...
+# Subtest: binding cannot overlap signature region
+ok 114 - binding cannot overlap signature region
+  ---
+  duration_ms: 0.21192
+  type: 'test'
+  ...
+# Subtest: unknown form field rejected
+ok 115 - unknown form field rejected
+  ---
+  duration_ms: 0.134373
+  type: 'test'
+  ...
+# Subtest: wrong form cannot use mapping
+ok 116 - wrong form cannot use mapping
+  ---
+  duration_ms: 0.117447
+  type: 'test'
+  ...
+# Subtest: blank never exported as false or zero
+ok 117 - blank never exported as false or zero
+  ---
+  duration_ms: 0.123226
+  type: 'test'
+  ...
+# Subtest: official inventory cf285 uses unvalidated geometry, not invented fields
+ok 118 - official inventory cf285 uses unvalidated geometry, not invented fields
+  ---
+  duration_ms: 0.39057
+  type: 'test'
+  ...
+# Subtest: official inventory saws2plus uses unvalidated geometry, not invented fields
+ok 119 - official inventory saws2plus uses unvalidated geometry, not invented fields
+  ---
+  duration_ms: 0.481056
+  type: 'test'
+  ...
+# Subtest: official inventory ccfrm604 uses unvalidated geometry, not invented fields
+ok 120 - official inventory ccfrm604 uses unvalidated geometry, not invented fields
+  ---
+  duration_ms: 0.197999
+  type: 'test'
+  ...
+# Subtest: contradictory active age inputs stop conflicting paths
+ok 121 - contradictory active age inputs stop conflicting paths
+  ---
+  duration_ms: 0.366623
+  type: 'test'
+  ...
+# Subtest: shared form output is a choice, never implicit cash application
+ok 122 - shared form output is a choice, never implicit cash application
+  ---
+  duration_ms: 0.256408
+  type: 'test'
+  ...
+# Subtest: worker requires initialization and resets state
+ok 123 - worker requires initialization and resets state
+  ---
+  duration_ms: 3.796043
+  type: 'test'
+  ...
+# Subtest: v0.2 UI adapter preserves separate states and stale reference handling
+ok 124 - v0.2 UI adapter preserves separate states and stale reference handling
+  ---
+  duration_ms: 1.081704
+  type: 'test'
+  ...
+1..124
+# tests 124
+# suites 0
+# pass 124
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 166.596171

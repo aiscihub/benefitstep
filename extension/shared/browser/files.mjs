@@ -15,7 +15,7 @@ export async function loadDocument(file,{allowText=false}={}){
  const isJpg=bytes[0]===255&&bytes[1]===216&&bytes[2]===255;
  let pages=[],mime='';
  if(isPdf){
-  mime='application/pdf';const lib=await getPdfEngine();const job=lib.getDocument({data:bytes.slice(),isEvalSupported:false,enableXfa:false,disableAutoFetch:true,disableStream:true,useSystemFonts:true,stopAtErrors:true,cMapUrl:new URL('../../vendor/cmaps/',import.meta.url).href,cMapPacked:true,wasmUrl:new URL('../../vendor/wasm/',import.meta.url).href});
+  mime='application/pdf';const lib=await getPdfEngine();const job=lib.getDocument({data:bytes.slice(),isEvalSupported:false,enableXfa:false,disableAutoFetch:true,disableStream:true,useSystemFonts:true,stopAtErrors:true,standardFontDataUrl:new URL('../../vendor/standard_fonts/',import.meta.url).href,cMapUrl:new URL('../../vendor/cmaps/',import.meta.url).href,cMapPacked:true,wasmUrl:new URL('../../vendor/wasm/',import.meta.url).href});
   job.onPassword=()=>job.destroy();let pdf;
   try{pdf=await job.promise;if(pdf.numPages>LIMITS.pagesPerDocument)throw new Error('Maximum six pages per file in this prototype. Split a copy and keep the original.');
    for(let n=1;n<=pdf.numPages;n++){const page=await pdf.getPage(n);const tc=await page.getTextContent();const text=joinedText(tc.items);const v=page.getViewport({scale:1});const scale=Math.min(2,1600/Math.max(v.width,v.height));const viewport=page.getViewport({scale});const canvas=document.createElement('canvas');canvas.width=Math.ceil(viewport.width);canvas.height=Math.ceil(viewport.height);await page.render({canvas,canvasContext:canvas.getContext('2d'),viewport,annotationMode:0}).promise;

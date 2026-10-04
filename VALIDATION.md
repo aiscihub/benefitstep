@@ -1,3 +1,7 @@
+# Latest UI integration: 0.2.0
+
+October 4, 2026: see [policy-aligned UI integration results](UI_V0_2_INTEGRATION.md) for the current build. The historical results below describe the earlier version and remain preserved; their old quick-check layout has been superseded.
+
 # BenefitStep 0.1.4 validation
 
 Executed October 3, 2026 on macOS, Node 26.10.0 and Chrome 154.0.8037.95. This is implementation evidence for a local preview, not a production release approval.

@@ -1,13 +1,23 @@
 {
   "manifest_version": 3,
   "name": "BenefitStep — Local Preview",
-  "version": "0.1.4",
+  "version": "0.3.0",
   "minimum_chrome_version": "138",
   "permissions": [
     "sidePanel"
   ],
+  "icons": {
+    "16": "assets/benefitstep_small_dark.png",
+    "32": "assets/benefitstep_small_dark.png",
+    "48": "assets/benefitstep_small_dark.png",
+    "128": "assets/benefitstep_small_dark.png"
+  },
   "action": {
-    "default_title": "Open BenefitStep"
+    "default_title": "Open BenefitStep",
+    "default_icon": {
+      "16": "assets/benefitstep_small_dark.png",
+      "32": "assets/benefitstep_small_dark.png"
+    }
   },
   "side_panel": {
     "default_path": "assets/index.html"

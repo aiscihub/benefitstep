@@ -1,0 +1,1286 @@
+{
+  "id": "medi_cal",
+  "name": "Medi-Cal",
+  "agency": "DHCS",
+  "geography": "California",
+  "policyVersion": "2026-Q4-research.1",
+  "supportedWindow": {
+    "from": "2026-10-01",
+    "through": "2026-12-31"
+  },
+  "fullEligibilityImplemented": false,
+  "dimensions": [
+    {
+      "id": "residency",
+      "importance": "GATE",
+      "description": "Applicant-specific residence",
+      "coverage": "executable_limited"
+    },
+    {
+      "id": "age",
+      "importance": "PATH",
+      "description": "Child/adult/older routing",
+      "coverage": "executable_limited"
+    },
+    {
+      "id": "household",
+      "importance": "CALCULATION",
+      "description": "Applicant-specific MAGI family size",
+      "coverage": "executable_limited"
+    },
+    {
+      "id": "income",
+      "importance": "CALCULATION",
+      "description": "Prepared monthly MAGI reference comparisons",
+      "coverage": "executable_limited"
+    },
+    {
+      "id": "pregnancy",
+      "importance": "PATH",
+      "description": "Pregnancy and postpartum distinct",
+      "coverage": "review_only"
+    },
+    {
+      "id": "medicare_disability_ltc",
+      "importance": "PATH",
+      "description": "Non-MAGI and other category review",
+      "coverage": "review_only"
+    },
+    {
+      "id": "former_foster",
+      "importance": "PATH",
+      "description": "Former-foster-youth pathway",
+      "coverage": "executable_limited"
+    },
+    {
+      "id": "immigration_status",
+      "importance": "PATH",
+      "description": "Federal/state funding and enrollment context",
+      "coverage": "executable_limited"
+    },
+    {
+      "id": "assets",
+      "importance": "CALCULATION",
+      "description": "MAGI exclusion and non-MAGI review",
+      "coverage": "executable_limited"
+    },
+    {
+      "id": "identity_verification",
+      "importance": "SUPPORTING",
+      "description": "Electronic/administrative verification",
+      "coverage": "review_only"
+    },
+    {
+      "id": "filing_followup",
+      "importance": "SUPPORTING",
+      "description": "Official process and notices",
+      "coverage": "review_only"
+    },
+    {
+      "id": "future_policy",
+      "importance": "PATH",
+      "description": "Future policy intentionally inactive",
+      "coverage": "review_only"
+    },
+    {
+      "id": "service_coverage",
+      "importance": "PATH",
+      "description": "Treatment navigation separate from eligibility",
+      "coverage": "review_only"
+    }
+  ],
+  "rules": [
+    {
+      "id": "mc.residency",
+      "dimension": "residency",
+      "importance": "GATE",
+      "scope": "applicant",
+      "stages": [
+        "quick",
+        "details"
+      ],
+      "sourceIds": [
+        "MC_RESIDENCE"
+      ],
+      "implementation": "executable",
+      "branches": [
+        {
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "shared.ca_residence"
+              },
+              {
+                "literal": true
+              }
+            ]
+          },
+          "then": {
+            "status": "reported_condition_met",
+            "code": "mc_ca_reported",
+            "text": "California residence is reported for this person. Electronic/administrative county verification remains separate."
+          }
+        }
+      ],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_residence_review",
+        "text": "Clarify temporary absence, intent, work-entry, age/institutional circumstances or out-of-state residence. Do not decide from an address alone.",
+        "action": "review_residency"
+      },
+      "priority": 1
+    },
+    {
+      "id": "mc.age_route",
+      "dimension": "age",
+      "importance": "PATH",
+      "scope": "applicant",
+      "stages": [
+        "quick",
+        "details"
+      ],
+      "sourceIds": [
+        "MC_CATEGORIES"
+      ],
+      "implementation": "executable",
+      "branches": [
+        {
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "shared.age_band"
+              },
+              {
+                "literal": "under19"
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_child_route",
+            "text": "Prepare a child-specific coverage review; do not apply the adult income threshold.",
+            "action": "prepare_child_details"
+          }
+        },
+        {
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "shared.age_band"
+              },
+              {
+                "literal": "65plus"
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_older_route",
+            "text": "An older-adult/non-MAGI or other pathway needs review. Do not use the new-adult 138% comparison as a verdict.",
+            "action": "prepare_non_magi_review"
+          }
+        }
+      ],
+      "otherwise": {
+        "status": "pathway_to_review",
+        "code": "mc_adult_route",
+        "text": "Prepare adult-specific coverage details, including category and applicant-specific household.",
+        "action": "prepare_adult_details"
+      },
+      "priority": 2
+    },
+    {
+      "id": "mc.household",
+      "dimension": "household",
+      "importance": "CALCULATION",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_MAGI"
+      ],
+      "implementation": "executable",
+      "branches": [
+        {
+          "when": {
+            "op": "gte",
+            "args": [
+              {
+                "fact": "mc.prepared_family_size"
+              },
+              {
+                "literal": 1
+              }
+            ]
+          },
+          "then": {
+            "status": "reference_only",
+            "code": "mc_scoped_family_size",
+            "text": "A prepared applicant-specific family size is available. The automatic derivation covers only the documented isolated-adult cases; other sizes require a separately prepared budget.",
+            "computed": {
+              "familySize": {
+                "fact": "mc.prepared_family_size"
+              }
+            }
+          }
+        }
+      ],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_household_review",
+        "text": "Resolve this applicant's tax/dependent/nonfiler household.",
+        "action": "prepare_magi_household"
+      },
+      "priority": 12
+    },
+    {
+      "id": "mc.adult_income",
+      "dimension": "income",
+      "importance": "CALCULATION",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_FPL_LETTER",
+        "MC_FPL_MONTHLY",
+        "MC_CATEGORIES",
+        "MC_MAGI"
+      ],
+      "implementation": "executable",
+      "branches": [
+        {
+          "when": {
+            "op": "ne",
+            "args": [
+              {
+                "fact": "mc.income_basis",
+                "minTrust": "confirmed"
+              },
+              {
+                "literal": "magi_prepared"
+              }
+            ]
+          },
+          "then": {
+            "status": "needs_review",
+            "code": "magi_basis_unresolved",
+            "text": "This amount is not yet a prepared MAGI-based household budget. Raw wages or CalFresh income cannot be used as a substitute.",
+            "action": "prepare_magi_income"
+          }
+        },
+        {
+          "when": {
+            "op": "interval_lte",
+            "args": [
+              {
+                "fact": "mc.monthly_magi_range",
+                "minTrust": "confirmed"
+              },
+              {
+                "op": "table",
+                "table": "mc_fpl_138_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "within_reference",
+            "code": "within_mc_fpl_138_2026",
+            "text": "Prepared income is at or below the new-adult 138% reference only. Other eligibility conditions and coverage scope remain unresolved.",
+            "computed": {
+              "monthlyReferenceCents": {
+                "op": "table",
+                "table": "mc_fpl_138_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "when": {
+            "op": "interval_gt",
+            "args": [
+              {
+                "fact": "mc.monthly_magi_range",
+                "minTrust": "confirmed"
+              },
+              {
+                "op": "table",
+                "table": "mc_fpl_138_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "above_reference",
+            "code": "above_mc_fpl_138_2026",
+            "text": "Prepared income is above the new-adult 138% reference. This is not a denial of every Medi-Cal pathway.",
+            "action": "review_other_coverage_paths",
+            "computed": {
+              "monthlyReferenceCents": {
+                "op": "table",
+                "table": "mc_fpl_138_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_income_unresolved",
+        "text": "A scoped income comparison cannot be completed."
+      },
+      "priority": 18,
+      "when": {
+        "op": "and",
+        "args": [
+          {
+            "op": "and",
+            "args": [
+              {
+                "op": "gte",
+                "args": [
+                  {
+                    "fact": "shared.age_years"
+                  },
+                  {
+                    "literal": 19
+                  }
+                ]
+              },
+              {
+                "op": "lt",
+                "args": [
+                  {
+                    "fact": "shared.age_years"
+                  },
+                  {
+                    "literal": 65
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "shared.pregnancy_state"
+              },
+              {
+                "literal": "neither"
+              }
+            ]
+          },
+          {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "mc.medicare"
+              },
+              {
+                "literal": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "mc.child_income",
+      "dimension": "income",
+      "importance": "CALCULATION",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_FPL_LETTER",
+        "MC_FPL_MONTHLY",
+        "MC_CATEGORIES",
+        "MC_MAGI"
+      ],
+      "implementation": "executable",
+      "branches": [
+        {
+          "when": {
+            "op": "ne",
+            "args": [
+              {
+                "fact": "mc.income_basis",
+                "minTrust": "confirmed"
+              },
+              {
+                "literal": "magi_prepared"
+              }
+            ]
+          },
+          "then": {
+            "status": "needs_review",
+            "code": "magi_basis_unresolved",
+            "text": "This amount is not yet a prepared MAGI-based household budget. Raw wages or CalFresh income cannot be used as a substitute.",
+            "action": "prepare_magi_income"
+          }
+        },
+        {
+          "when": {
+            "op": "interval_lte",
+            "args": [
+              {
+                "fact": "mc.monthly_magi_range",
+                "minTrust": "confirmed"
+              },
+              {
+                "op": "table",
+                "table": "mc_fpl_266_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "within_reference",
+            "code": "within_mc_fpl_266_2026",
+            "text": "Prepared income is at or below the child OTLIC 266% reference only. Other eligibility conditions and coverage scope remain unresolved.",
+            "computed": {
+              "monthlyReferenceCents": {
+                "op": "table",
+                "table": "mc_fpl_266_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "when": {
+            "op": "interval_gt",
+            "args": [
+              {
+                "fact": "mc.monthly_magi_range",
+                "minTrust": "confirmed"
+              },
+              {
+                "op": "table",
+                "table": "mc_fpl_266_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "above_reference",
+            "code": "above_mc_fpl_266_2026",
+            "text": "Prepared income is above the child OTLIC 266% reference. This is not a denial of every Medi-Cal pathway.",
+            "action": "review_child_coverage_paths",
+            "computed": {
+              "monthlyReferenceCents": {
+                "op": "table",
+                "table": "mc_fpl_266_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_income_unresolved",
+        "text": "A scoped income comparison cannot be completed."
+      },
+      "priority": 18,
+      "when": {
+        "op": "lt",
+        "args": [
+          {
+            "fact": "shared.age_years"
+          },
+          {
+            "literal": 19
+          }
+        ]
+      }
+    },
+    {
+      "id": "mc.pregnancy_income",
+      "dimension": "income",
+      "importance": "CALCULATION",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_FPL_LETTER",
+        "MC_FPL_MONTHLY",
+        "MC_CATEGORIES",
+        "MC_MAGI"
+      ],
+      "implementation": "executable",
+      "branches": [
+        {
+          "when": {
+            "op": "ne",
+            "args": [
+              {
+                "fact": "mc.income_basis",
+                "minTrust": "confirmed"
+              },
+              {
+                "literal": "magi_prepared"
+              }
+            ]
+          },
+          "then": {
+            "status": "needs_review",
+            "code": "magi_basis_unresolved",
+            "text": "This amount is not yet a prepared MAGI-based household budget. Raw wages or CalFresh income cannot be used as a substitute.",
+            "action": "prepare_magi_income"
+          }
+        },
+        {
+          "when": {
+            "op": "interval_lte",
+            "args": [
+              {
+                "fact": "mc.monthly_magi_range",
+                "minTrust": "confirmed"
+              },
+              {
+                "op": "table",
+                "table": "mc_fpl_213_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "within_reference",
+            "code": "within_mc_fpl_213_2026",
+            "text": "Prepared income is at or below the pregnancy 213% reference only. Other eligibility conditions and coverage scope remain unresolved.",
+            "computed": {
+              "monthlyReferenceCents": {
+                "op": "table",
+                "table": "mc_fpl_213_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "when": {
+            "op": "interval_gt",
+            "args": [
+              {
+                "fact": "mc.monthly_magi_range",
+                "minTrust": "confirmed"
+              },
+              {
+                "op": "table",
+                "table": "mc_fpl_213_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "above_reference",
+            "code": "above_mc_fpl_213_2026",
+            "text": "Prepared income is above the pregnancy 213% reference. This is not a denial of every Medi-Cal pathway.",
+            "action": "ask_about_mcap_or_other_paths",
+            "computed": {
+              "monthlyReferenceCents": {
+                "op": "table",
+                "table": "mc_fpl_213_2026",
+                "args": [
+                  {
+                    "fact": "mc.prepared_family_size",
+                    "minTrust": "confirmed"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_income_unresolved",
+        "text": "A scoped income comparison cannot be completed."
+      },
+      "priority": 18,
+      "when": {
+        "op": "eq",
+        "args": [
+          {
+            "fact": "shared.pregnancy_state"
+          },
+          {
+            "literal": "pregnant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mc.postpartum",
+      "dimension": "pregnancy",
+      "importance": "PATH",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_CHANGES",
+        "MC_NONCITIZEN"
+      ],
+      "implementation": "review_only",
+      "branches": [],
+      "otherwise": {
+        "status": "pathway_to_review",
+        "code": "postpartum_individual_review",
+        "text": "Review the pregnancy-end date, prior coverage and applicable postpartum protection. Do not stop coverage because of a new generic income comparison.",
+        "action": "review_postpartum_coverage"
+      },
+      "priority": 19,
+      "when": {
+        "op": "eq",
+        "args": [
+          {
+            "fact": "shared.pregnancy_state"
+          },
+          {
+            "literal": "postpartum"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mc.medicare_route",
+      "dimension": "medicare_disability_ltc",
+      "importance": "PATH",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_MAGI",
+        "MC_CATEGORIES"
+      ],
+      "implementation": "review_only",
+      "branches": [],
+      "otherwise": {
+        "status": "pathway_to_review",
+        "code": "medicare_path_review",
+        "text": "Medicare enrollment calls for the applicable Medi-Cal/Medicare Savings or other review; the new-adult comparator is not used.",
+        "action": "review_medicare_pathways"
+      },
+      "priority": 20,
+      "when": {
+        "op": "and",
+        "args": [
+          {
+            "op": "and",
+            "args": [
+              {
+                "op": "gte",
+                "args": [
+                  {
+                    "fact": "shared.age_years"
+                  },
+                  {
+                    "literal": 19
+                  }
+                ]
+              },
+              {
+                "op": "lt",
+                "args": [
+                  {
+                    "fact": "shared.age_years"
+                  },
+                  {
+                    "literal": 65
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "mc.medicare"
+              },
+              {
+                "literal": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "mc.foster_route",
+      "dimension": "former_foster",
+      "importance": "PATH",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_CHANGES"
+      ],
+      "implementation": "executable",
+      "branches": [
+        {
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "mc.former_foster"
+              },
+              {
+                "literal": true
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "former_foster_review",
+            "text": "Review former-foster-youth coverage and the applicable history conditions. No ordinary adult income result should close this pathway.",
+            "action": "review_former_foster"
+          }
+        }
+      ],
+      "otherwise": {
+        "status": "not_applicable",
+        "code": "foster_branch_not_reported",
+        "text": "The reported answer does not trigger this former-foster branch."
+      },
+      "priority": 21,
+      "when": {
+        "op": "and",
+        "args": [
+          {
+            "op": "gte",
+            "args": [
+              {
+                "fact": "shared.age_years"
+              },
+              {
+                "literal": 18
+              }
+            ]
+          },
+          {
+            "op": "lt",
+            "args": [
+              {
+                "fact": "shared.age_years"
+              },
+              {
+                "literal": 26
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "mc.immigration",
+      "dimension": "immigration_status",
+      "importance": "PATH",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_NONCITIZEN",
+        "MC_CHANGES",
+        "MC_IMMIGRATION_TABLE"
+      ],
+      "implementation": "executable",
+      "branches": [
+        {
+          "when": {
+            "op": "in",
+            "args": [
+              {
+                "fact": "shared.immigration_status"
+              },
+              {
+                "literal": [
+                  "us_citizen",
+                  "us_national"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "reported_condition_met",
+            "code": "mc_citizenship_category",
+            "text": "Reported citizenship/national category is recorded; all other eligibility factors remain separate."
+          }
+        },
+        {
+          "when": {
+            "op": "in",
+            "args": [
+              {
+                "fact": "shared.immigration_status"
+              },
+              {
+                "literal": [
+                  "cuban_haitian_entrant",
+                  "cofa"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_federal_category",
+            "text": "This is a reported category in the current federal full-scope category list. Confirm exact status and all other requirements.",
+            "action": "review_full_scope_path"
+          }
+        },
+        {
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "shared.immigration_status"
+              },
+              {
+                "literal": "lpr"
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_lpr_state_federal",
+            "text": "LPR history affects federal funding and the waiting period. California state-funded full-scope coverage may remain available when the federal waiting period is unmet.",
+            "action": "review_lpr_medi_cal_path"
+          }
+        },
+        {
+          "when": {
+            "op": "in",
+            "args": [
+              {
+                "fact": "shared.immigration_status"
+              },
+              {
+                "literal": [
+                  "refugee",
+                  "asylee",
+                  "withholding",
+                  "conditional_entrant",
+                  "parole_one_year",
+                  "certified_trafficking",
+                  "battered_qualified"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_qnc_state_route",
+            "text": "For the reported category, review current qualified-noncitizen and state-funded full-scope rules. Loss of a federal funding category is not automatic loss of Medi-Cal.",
+            "action": "review_state_full_scope"
+          }
+        },
+        {
+          "when": {
+            "op": "lt",
+            "args": [
+              {
+                "fact": "shared.age_years"
+              },
+              {
+                "literal": 19
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_child_status_exception",
+            "text": "Review the child coverage pathway regardless of immigration status, with other requirements still applicable.",
+            "action": "review_child_full_scope"
+          }
+        },
+        {
+          "when": {
+            "op": "in",
+            "args": [
+              {
+                "fact": "shared.pregnancy_state"
+              },
+              {
+                "literal": [
+                  "pregnant",
+                  "postpartum"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_pregnancy_status_exception",
+            "text": "Review pregnancy/postpartum coverage regardless of immigration status; applicable period and other conditions still need confirmation.",
+            "action": "review_pregnancy_full_scope"
+          }
+        },
+        {
+          "when": {
+            "op": "and",
+            "args": [
+              {
+                "op": "lt",
+                "args": [
+                  {
+                    "fact": "shared.age_years"
+                  },
+                  {
+                    "literal": 26
+                  }
+                ]
+              },
+              {
+                "op": "eq",
+                "args": [
+                  {
+                    "fact": "mc.former_foster"
+                  },
+                  {
+                    "literal": true
+                  }
+                ]
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_foster_status_exception",
+            "text": "Check former-foster-youth coverage, history and age conditions before considering enrollment restrictions.",
+            "action": "review_former_foster"
+          }
+        },
+        {
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "mc.enrollment_context"
+              },
+              {
+                "literal": "current_full_scope"
+              }
+            ]
+          },
+          "then": {
+            "status": "pathway_to_review",
+            "code": "mc_existing_coverage",
+            "text": "Review continuation and renewal of existing full-scope coverage. Do not apply the new-enrollment freeze as an automatic termination.",
+            "action": "review_renewal"
+          }
+        },
+        {
+          "when": {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "mc.enrollment_context"
+              },
+              {
+                "literal": "coverage_ended"
+              }
+            ]
+          },
+          "then": {
+            "status": "needs_review",
+            "code": "mc_reinstatement_review",
+            "text": "Review the termination date and any reinstatement/re-enrollment period. The engine does not invent a deadline.",
+            "action": "review_coverage_dates"
+          }
+        }
+      ],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_new_enrollment_scope_review",
+        "text": "Some adult new enrollments are restricted by current immigration rules. Review the exact category and restricted/full-scope alternatives with the county; this is not a blanket Medi-Cal denial.",
+        "action": "county_scope_review"
+      },
+      "priority": 30
+    },
+    {
+      "id": "mc.magi_resources",
+      "dimension": "assets",
+      "importance": "SUPPORTING",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_MAGI"
+      ],
+      "implementation": "executable",
+      "branches": [],
+      "otherwise": {
+        "status": "reference_only",
+        "code": "no_magi_asset_test",
+        "text": "No asset/resource test is applied in this bounded MAGI income comparison. This does not remove asset rules from non-MAGI pathways."
+      },
+      "priority": 40,
+      "when": {
+        "op": "and",
+        "args": [
+          {
+            "op": "lt",
+            "args": [
+              {
+                "fact": "shared.age_years"
+              },
+              {
+                "literal": 65
+              }
+            ]
+          },
+          {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "mc.income_basis"
+              },
+              {
+                "literal": "magi_prepared"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "mc.nonmagi",
+      "dimension": "medicare_disability_ltc",
+      "importance": "SUPPORTING",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_MAGI",
+        "MC_CATEGORIES"
+      ],
+      "implementation": "review_only",
+      "branches": [],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_nonmagi",
+        "text": "Disability, long-term-care, medically needy, working-disabled and Medicare Savings methods need separate review; no MAGI result closes them.",
+        "action": "official_review_when_applicable"
+      },
+      "priority": 90
+    },
+    {
+      "id": "mc.nonmagi_assets",
+      "dimension": "assets",
+      "importance": "SUPPORTING",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_CHANGES",
+        "MC_INDEX"
+      ],
+      "implementation": "review_only",
+      "branches": [],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_nonmagi_assets",
+        "text": "Non-MAGI assets and exclusions must be evaluated within the applicable category. Do not impose an asset limit merely because someone reports a disability.",
+        "action": "official_review_when_applicable"
+      },
+      "priority": 90
+    },
+    {
+      "id": "mc.identity_verification",
+      "dimension": "identity_verification",
+      "importance": "SUPPORTING",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_RESIDENCE",
+        "MC_NONCITIZEN"
+      ],
+      "implementation": "review_only",
+      "branches": [],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_identity_verification",
+        "text": "County verification is separate from local user-confirmed evidence. No bill or identity scan is universally demanded up front.",
+        "action": "official_review_when_applicable"
+      },
+      "priority": 90
+    },
+    {
+      "id": "mc.application",
+      "dimension": "filing_followup",
+      "importance": "SUPPORTING",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_RESIDENCE"
+      ],
+      "implementation": "review_only",
+      "branches": [],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_application",
+        "text": "Application signatures, uploads, verification and decisions occur in the official process. Local progress is not agency status.",
+        "action": "official_review_when_applicable"
+      },
+      "priority": 90
+    },
+    {
+      "id": "mc.future_work",
+      "dimension": "future_policy",
+      "importance": "SUPPORTING",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_CHANGES"
+      ],
+      "implementation": "review_only",
+      "branches": [],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "mc_future_work",
+        "text": "Future 2027 work, renewal and other changes are not active in this Q4 2026 configuration.",
+        "action": "official_review_when_applicable"
+      },
+      "priority": 90
+    },
+    {
+      "id": "mc.coverage",
+      "dimension": "service_coverage",
+      "importance": "PATH",
+      "scope": "applicant",
+      "stages": [
+        "details"
+      ],
+      "sourceIds": [
+        "MC_BENEFITS"
+      ],
+      "implementation": "review_only",
+      "branches": [],
+      "otherwise": {
+        "status": "needs_review",
+        "code": "treatment_coverage_unresolved",
+        "text": "Eligibility and coverage of a particular treatment are different. Prepare a question for the provider or plan; do not diagnose or discourage applying based on an unconfirmed coverage concern.",
+        "action": "prepare_coverage_question"
+      },
+      "priority": 80,
+      "when": {
+        "op": "and",
+        "args": [
+          {
+            "op": "exists",
+            "args": [
+              {
+                "fact": "mc.needs_specific_care"
+              }
+            ]
+          },
+          {
+            "op": "eq",
+            "args": [
+              {
+                "fact": "mc.needs_specific_care"
+              },
+              {
+                "literal": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceIds": [
+    "MC_BENEFITS",
+    "MC_CATEGORIES",
+    "MC_CHANGES",
+    "MC_FPL_LETTER",
+    "MC_FPL_MONTHLY",
+    "MC_IMMIGRATION_TABLE",
+    "MC_INDEX",
+    "MC_MAGI",
+    "MC_NONCITIZEN",
+    "MC_RESIDENCE"
+  ],
+  "officialApplication": "https://benefitscal.com/",
+  "rosterPrompt": "Choose the people applying for Medi-Cal. No real names or identity numbers are needed in the engine."
+}

@@ -1,0 +1,455 @@
+[
+  {
+    "id": "derive.mc.isolated_adult",
+    "program": "medi_cal",
+    "key": "mc.prepared_family_size",
+    "when": {
+      "op": "and",
+      "args": [
+        {
+          "op": "or",
+          "args": [
+            {
+              "op": "and",
+              "args": [
+                {
+                  "op": "and",
+                  "args": [
+                    {
+                      "op": "gte",
+                      "args": [
+                        {
+                          "fact": "shared.age_years"
+                        },
+                        {
+                          "literal": 19
+                        }
+                      ]
+                    },
+                    {
+                      "op": "lt",
+                      "args": [
+                        {
+                          "fact": "shared.age_years"
+                        },
+                        {
+                          "literal": 65
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.tax_role"
+                    },
+                    {
+                      "literal": "independent_filer"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.lives_with_spouse"
+                    },
+                    {
+                      "literal": false
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.tax_dependents"
+                    },
+                    {
+                      "literal": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "and",
+              "args": [
+                {
+                  "op": "and",
+                  "args": [
+                    {
+                      "op": "gte",
+                      "args": [
+                        {
+                          "fact": "shared.age_years"
+                        },
+                        {
+                          "literal": 19
+                        }
+                      ]
+                    },
+                    {
+                      "op": "lt",
+                      "args": [
+                        {
+                          "fact": "shared.age_years"
+                        },
+                        {
+                          "literal": 65
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.tax_role"
+                    },
+                    {
+                      "literal": "nonfiler"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.lives_with_spouse"
+                    },
+                    {
+                      "literal": false
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.resident_children_under19"
+                    },
+                    {
+                      "literal": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "args": [
+            {
+              "fact": "shared.pregnancy_state"
+            },
+            {
+              "literal": "neither"
+            }
+          ]
+        }
+      ]
+    },
+    "value": {
+      "literal": 1
+    },
+    "sourceIds": [
+      "MC_MAGI"
+    ]
+  },
+  {
+    "id": "derive.mc.isolated_pregnant",
+    "program": "medi_cal",
+    "key": "mc.prepared_family_size",
+    "when": {
+      "op": "and",
+      "args": [
+        {
+          "op": "or",
+          "args": [
+            {
+              "op": "and",
+              "args": [
+                {
+                  "op": "and",
+                  "args": [
+                    {
+                      "op": "gte",
+                      "args": [
+                        {
+                          "fact": "shared.age_years"
+                        },
+                        {
+                          "literal": 19
+                        }
+                      ]
+                    },
+                    {
+                      "op": "lt",
+                      "args": [
+                        {
+                          "fact": "shared.age_years"
+                        },
+                        {
+                          "literal": 65
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.tax_role"
+                    },
+                    {
+                      "literal": "independent_filer"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.lives_with_spouse"
+                    },
+                    {
+                      "literal": false
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.tax_dependents"
+                    },
+                    {
+                      "literal": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "and",
+              "args": [
+                {
+                  "op": "and",
+                  "args": [
+                    {
+                      "op": "gte",
+                      "args": [
+                        {
+                          "fact": "shared.age_years"
+                        },
+                        {
+                          "literal": 19
+                        }
+                      ]
+                    },
+                    {
+                      "op": "lt",
+                      "args": [
+                        {
+                          "fact": "shared.age_years"
+                        },
+                        {
+                          "literal": 65
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.tax_role"
+                    },
+                    {
+                      "literal": "nonfiler"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.lives_with_spouse"
+                    },
+                    {
+                      "literal": false
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "args": [
+                    {
+                      "fact": "mc.resident_children_under19"
+                    },
+                    {
+                      "literal": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "args": [
+            {
+              "fact": "shared.pregnancy_state"
+            },
+            {
+              "literal": "pregnant"
+            }
+          ]
+        }
+      ]
+    },
+    "value": {
+      "op": "add",
+      "args": [
+        {
+          "literal": 1
+        },
+        {
+          "fact": "shared.expected_children"
+        }
+      ]
+    },
+    "sourceIds": [
+      "MC_MAGI"
+    ]
+  },
+  {
+    "id": "derive.mc.age_band.under19",
+    "program": "medi_cal",
+    "key": "shared.age_band",
+    "when": {
+      "op": "and",
+      "args": [
+        {
+          "op": "exists",
+          "args": [
+            {
+              "fact": "shared.age_years"
+            }
+          ]
+        },
+        {
+          "op": "lt",
+          "args": [
+            {
+              "fact": "shared.age_years"
+            },
+            {
+              "literal": 19
+            }
+          ]
+        }
+      ]
+    },
+    "value": {
+      "literal": "under19"
+    },
+    "sourceIds": [
+      "MC_CATEGORIES"
+    ]
+  },
+  {
+    "id": "derive.mc.age_band.19to64",
+    "program": "medi_cal",
+    "key": "shared.age_band",
+    "when": {
+      "op": "and",
+      "args": [
+        {
+          "op": "exists",
+          "args": [
+            {
+              "fact": "shared.age_years"
+            }
+          ]
+        },
+        {
+          "op": "and",
+          "args": [
+            {
+              "op": "gte",
+              "args": [
+                {
+                  "fact": "shared.age_years"
+                },
+                {
+                  "literal": 19
+                }
+              ]
+            },
+            {
+              "op": "lt",
+              "args": [
+                {
+                  "fact": "shared.age_years"
+                },
+                {
+                  "literal": 65
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "value": {
+      "literal": "19to64"
+    },
+    "sourceIds": [
+      "MC_CATEGORIES"
+    ]
+  },
+  {
+    "id": "derive.mc.age_band.65plus",
+    "program": "medi_cal",
+    "key": "shared.age_band",
+    "when": {
+      "op": "and",
+      "args": [
+        {
+          "op": "exists",
+          "args": [
+            {
+              "fact": "shared.age_years"
+            }
+          ]
+        },
+        {
+          "op": "gte",
+          "args": [
+            {
+              "fact": "shared.age_years"
+            },
+            {
+              "literal": 65
+            }
+          ]
+        }
+      ]
+    },
+    "value": {
+      "literal": "65plus"
+    },
+    "sourceIds": [
+      "MC_CATEGORIES"
+    ]
+  }
+]

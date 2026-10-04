@@ -1,0 +1,1277 @@
+TAP version 13
+# Subtest: Unavailable API stays unavailable
+ok 1 - Unavailable API stays unavailable
+  ---
+  duration_ms: 1.224625
+  type: 'test'
+  ...
+# Subtest: No approval means no model invocation
+ok 2 - No approval means no model invocation
+  ---
+  duration_ms: 0.423916
+  type: 'test'
+  ...
+# Subtest: Downloadable model does not start hidden setup during extraction
+ok 3 - Downloadable model does not start hidden setup during extraction
+  ---
+  duration_ms: 0.123125
+  type: 'test'
+  ...
+# Subtest: Valid structured response and session cleanup
+ok 4 - Valid structured response and session cleanup
+  ---
+  duration_ms: 1.463458
+  type: 'test'
+  ...
+# Subtest: Model supplied eligibility output rejected, session cleaned
+ok 5 - Model supplied eligibility output rejected, session cleaned
+  ---
+  duration_ms: 0.457417
+  type: 'test'
+  ...
+# Subtest: Fabricated quote withheld
+ok 6 - Fabricated quote withheld
+  ---
+  duration_ms: 0.411125
+  type: 'test'
+  ...
+# Subtest: Invalid JSON not replaced with a confident fallback
+ok 7 - Invalid JSON not replaced with a confident fallback
+  ---
+  duration_ms: 0.312417
+  type: 'test'
+  ...
+# Subtest: Setup invokes only public model creation, no document prompts
+ok 8 - Setup invokes only public model creation, no document prompts
+  ---
+  duration_ms: 0.363125
+  type: 'test'
+  ...
+# Subtest: Text mode does not request image capability
+ok 9 - Text mode does not request image capability
+  ---
+  duration_ms: 0.147167
+  type: 'test'
+  ...
+# Subtest: Too many pages rejected
+ok 10 - Too many pages rejected
+  ---
+  duration_ms: 0.238042
+  type: 'test'
+  ...
+# Subtest: Oversized document text rejected and session cleaned
+ok 11 - Oversized document text rejected and session cleaned
+  ---
+  duration_ms: 1.36075
+  type: 'test'
+  ...
+# Subtest: Abort does not publish response
+ok 12 - Abort does not publish response
+  ---
+  duration_ms: 0.287958
+  type: 'test'
+  ...
+# Subtest: Normal model preparation progress does not cancel a ready model
+ok 13 - Normal model preparation progress does not cancel a ready model
+  ---
+  duration_ms: 0.516458
+  type: 'test'
+  ...
+# Subtest: A hanging model is bounded even when it ignores AbortSignal
+ok 14 - A hanging model is bounded even when it ignores AbortSignal
+  ---
+  duration_ms: 9.585958
+  type: 'test'
+  ...
+# Subtest: Session that arrives after a creation timeout is destroyed
+ok 15 - Session that arrives after a creation timeout is destroyed
+  ---
+  duration_ms: 12.703666
+  type: 'test'
+  ...
+# Subtest: User cancellation has a distinct error and does not create a session
+ok 16 - User cancellation has a distinct error and does not create a session
+  ---
+  duration_ms: 0.176042
+  type: 'test'
+  ...
+# Subtest: setup cancellation rejects promptly and destroys a late-created session
+ok 17 - setup cancellation rejects promptly and destroys a late-created session
+  ---
+  duration_ms: 1.72175
+  type: 'test'
+  ...
+# Subtest: Automatic text processing identifies type and key facts without labels from user
+ok 18 - Automatic text processing identifies type and key facts without labels from user
+  ---
+  duration_ms: 1.940917
+  type: 'test'
+  ...
+# Subtest: Unrelated text stays unidentified instead of forcing a trained type guess
+ok 19 - Unrelated text stays unidentified instead of forcing a trained type guess
+  ---
+  duration_ms: 0.22325
+  type: 'test'
+  ...
+# Subtest: Incomplete rent is identified without inventing its missing amount
+ok 20 - Incomplete rent is identified without inventing its missing amount
+  ---
+  duration_ms: 0.2885
+  type: 'test'
+  ...
+# Subtest: Scans wait for local image AI without silently parsing only other pages
+ok 21 - Scans wait for local image AI without silently parsing only other pages
+  ---
+  duration_ms: 0.077417
+  type: 'test'
+  ...
+# Subtest: Downloadable model never triggers automatic download during folder processing
+ok 22 - Downloadable model never triggers automatic download during folder processing
+  ---
+  duration_ms: 0.137125
+  type: 'test'
+  ...
+# Subtest: Ready local AI is automatically invoked and cleaned up
+ok 23 - Ready local AI is automatically invoked and cleaned up
+  ---
+  duration_ms: 0.399584
+  type: 'test'
+  ...
+# Subtest: An invalid AI response is reported, not silently replaced by another reader
+ok 24 - An invalid AI response is reported, not silently replaced by another reader
+  ---
+  duration_ms: 0.243458
+  type: 'test'
+  ...
+# Subtest: Cancelled selection never invokes AI
+ok 25 - Cancelled selection never invokes AI
+  ---
+  duration_ms: 0.165792
+  type: 'test'
+  ...
+# Subtest: Automatic mode uses labeled local text fallback and stops retrying a broken model in the batch
+ok 26 - Automatic mode uses labeled local text fallback and stops retrying a broken model in the batch
+  ---
+  duration_ms: 0.949708
+  type: 'test'
+  ...
+# Subtest: AI-only mode reports failure without replacing results with text
+ok 27 - AI-only mode reports failure without replacing results with text
+  ---
+  duration_ms: 0.2635
+  type: 'test'
+  ...
+# Subtest: Automatic timeout falls back locally; scans never receive invented text results
+ok 28 - Automatic timeout falls back locally; scans never receive invented text results
+  ---
+  duration_ms: 12.294834
+  type: 'test'
+  ...
+# Subtest: User cancellation never falls back or trips the batch model circuit breaker
+ok 29 - User cancellation never falls back or trips the batch model circuit breaker
+  ---
+  duration_ms: 0.284209
+  type: 'test'
+  ...
+# Subtest: original quick-check baseline retained; v0.2 view is separately integrated
+ok 30 - original quick-check baseline retained; v0.2 view is separately integrated
+  ---
+  duration_ms: 0.8635
+  type: 'test'
+  ...
+# Subtest: bill: previous balance used
+ok 31 - bill: previous balance used
+  ---
+  duration_ms: 6.869584
+  type: 'test'
+  ...
+# Subtest: bill: large current charge
+ok 32 - bill: large current charge
+  ---
+  duration_ms: 0.206416
+  type: 'test'
+  ...
+# Subtest: bill: correct basis
+ok 33 - bill: correct basis
+  ---
+  duration_ms: 0.123375
+  type: 'test'
+  ...
+# Subtest: bill: unreconciled credit
+ok 34 - bill: unreconciled credit
+  ---
+  duration_ms: 0.118958
+  type: 'test'
+  ...
+# Subtest: bill: unknown previous balance
+ok 35 - bill: unknown previous balance
+  ---
+  duration_ms: 0.09375
+  type: 'test'
+  ...
+# Subtest: correction resolves issue without changing source or old snapshot
+ok 36 - correction resolves issue without changing source or old snapshot
+  ---
+  duration_ms: 0.203709
+  type: 'test'
+  ...
+# Subtest: explanation is revision-bound and does not confirm facts
+ok 37 - explanation is revision-bound and does not confirm facts
+  ---
+  duration_ms: 0.26375
+  type: 'test'
+  ...
+# Subtest: gross basis 1000.00
+ok 38 - gross basis 1000.00
+  ---
+  duration_ms: 0.13475
+  type: 'test'
+  ...
+# Subtest: gross basis 15000.00
+ok 39 - gross basis 15000.00
+  ---
+  duration_ms: 0.08975
+  type: 'test'
+  ...
+# Subtest: gross basis 1250.00
+ok 40 - gross basis 1250.00
+  ---
+  duration_ms: 0.14125
+  type: 'test'
+  ...
+# Subtest: gross basis 1400.00
+ok 41 - gross basis 1400.00
+  ---
+  duration_ms: 0.081125
+  type: 'test'
+  ...
+# Subtest: pay comparison conflict
+ok 42 - pay comparison conflict
+  ---
+  duration_ms: 0.156292
+  type: 'test'
+  ...
+# Subtest: pay comparison equal
+ok 43 - pay comparison equal
+  ---
+  duration_ms: 0.069792
+  type: 'test'
+  ...
+# Subtest: pay comparison other person
+ok 44 - pay comparison other person
+  ---
+  duration_ms: 0.067666
+  type: 'test'
+  ...
+# Subtest: pay comparison other period
+ok 45 - pay comparison other period
+  ---
+  duration_ms: 0.079458
+  type: 'test'
+  ...
+# Subtest: pay comparison other payment
+ok 46 - pay comparison other payment
+  ---
+  duration_ms: 0.064083
+  type: 'test'
+  ...
+# Subtest: request historical match
+ok 47 - request historical match
+  ---
+  duration_ms: 0.549375
+  type: 'test'
+  ...
+# Subtest: request different month
+ok 48 - request different month
+  ---
+  duration_ms: 0.150792
+  type: 'test'
+  ...
+# Subtest: request partial month
+ok 49 - request partial month
+  ---
+  duration_ms: 0.124
+  type: 'test'
+  ...
+# Subtest: request missing confirmation
+ok 50 - request missing confirmation
+  ---
+  duration_ms: 0.071583
+  type: 'test'
+  ...
+# Subtest: request ambiguous date meaning
+ok 51 - request ambiguous date meaning
+  ---
+  duration_ms: 0.107959
+  type: 'test'
+  ...
+# Subtest: request other person
+ok 52 - request other person
+  ---
+  duration_ms: 0.122083
+  type: 'test'
+  ...
+# Subtest: request other program
+ok 53 - request other program
+  ---
+  duration_ms: 0.087417
+  type: 'test'
+  ...
+# Subtest: history is not automatically expired by import date
+ok 54 - history is not automatically expired by import date
+  ---
+  duration_ms: 0.221125
+  type: 'test'
+  ...
+# Subtest: new event invalidates prepared transfer; receipt cannot become submission
+ok 55 - new event invalidates prepared transfer; receipt cannot become submission
+  ---
+  duration_ms: 0.539625
+  type: 'test'
+  ...
+# Subtest: delete all copies removes history and dependent events
+ok 56 - delete all copies removes history and dependent events
+  ---
+  duration_ms: 0.234041
+  type: 'test'
+  ...
+# Subtest: stale confirmation is rejected
+ok 57 - stale confirmation is rejected
+  ---
+  duration_ms: 0.07175
+  type: 'test'
+  ...
+# Subtest: local recognition: Application submission receipt
+ok 58 - local recognition: Application submission receipt
+  ---
+  duration_ms: 0.804875
+  type: 'test'
+  ...
+# Subtest: local recognition: Document upload receipt
+ok 59 - local recognition: Document upload receipt
+  ---
+  duration_ms: 0.173125
+  type: 'test'
+  ...
+# Subtest: local recognition: County evidence request
+ok 60 - local recognition: County evidence request
+  ---
+  duration_ms: 0.210458
+  type: 'test'
+  ...
+# Subtest: local recognition: Business income statement
+ok 61 - local recognition: Business income statement
+  ---
+  duration_ms: 0.183
+  type: 'test'
+  ...
+# Subtest: local recognition: Income award
+ok 62 - local recognition: Income award
+  ---
+  duration_ms: 0.11025
+  type: 'test'
+  ...
+# Subtest: mixed documents abstain, unsupported model fields and invented quotes rejected
+ok 63 - mixed documents abstain, unsupported model fields and invented quotes rejected
+  ---
+  duration_ms: 0.073958
+  type: 'test'
+  ...
+# Subtest: integer cents are stored and updated exactly
+ok 64 - integer cents are stored and updated exactly
+  ---
+  duration_ms: 0.053625
+  type: 'test'
+  ...
+# Subtest: known upload receipt cannot be recorded as an application receipt
+ok 65 - known upload receipt cannot be recorded as an application receipt
+  ---
+  duration_ms: 0.128625
+  type: 'test'
+  ...
+# Subtest: real trained suggestion accompanies extraction without changing document type or confirming facts
+ok 66 - real trained suggestion accompanies extraction without changing document type or confirming facts
+  ---
+  duration_ms: 5.855167
+  type: 'test'
+  ...
+# Subtest: classifier failure preserves independently extracted facts
+ok 67 - classifier failure preserves independently extracted facts
+  ---
+  duration_ms: 0.163458
+  type: 'test'
+  ...
+# Subtest: extraction failure preserves the model suggestion without inventing facts
+ok 68 - extraction failure preserves the model suggestion without inventing facts
+  ---
+  duration_ms: 0.496166
+  type: 'test'
+  ...
+# Subtest: blank scanned pages and short text abstain; partial readable pages do not hide unreadable pages
+ok 69 - blank scanned pages and short text abstain; partial readable pages do not hide unreadable pages
+  ---
+  duration_ms: 0.112458
+  type: 'test'
+  ...
+# Subtest: cancellation during model load prevents extraction and late candidate publication
+ok 70 - cancellation during model load prevents extraction and late candidate publication
+  ---
+  duration_ms: 0.295583
+  type: 'test'
+  ...
+# Subtest: cancellation during extraction prevents publishing even completed classifier output
+ok 71 - cancellation during extraction prevents publishing even completed classifier output
+  ---
+  duration_ms: 0.133542
+  type: 'test'
+  ...
+# Subtest: rereading a canonical source with an existing duplicate retains one active classified source
+ok 72 - rereading a canonical source with an existing duplicate retains one active classified source
+  ---
+  duration_ms: 0.236958
+  type: 'test'
+  ...
+# Subtest: money 0
+ok 73 - money 0
+  ---
+  duration_ms: 1.400292
+  type: 'test'
+  ...
+# Subtest: money 12
+ok 74 - money 12
+  ---
+  duration_ms: 0.092
+  type: 'test'
+  ...
+# Subtest: money 12.5
+ok 75 - money 12.5
+  ---
+  duration_ms: 0.046667
+  type: 'test'
+  ...
+# Subtest: money 12.50
+ok 76 - money 12.50
+  ---
+  duration_ms: 0.040125
+  type: 'test'
+  ...
+# Subtest: money -12.50
+ok 77 - money -12.50
+  ---
+  duration_ms: 0.0445
+  type: 'test'
+  ...
+# Subtest: money -0
+ok 78 - money -0
+  ---
+  duration_ms: 0.038875
+  type: 'test'
+  ...
+# Subtest: money 9999999999.99
+ok 79 - money 9999999999.99
+  ---
+  duration_ms: 0.0365
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money 
+ok 80 - reject ambiguous money 
+  ---
+  duration_ms: 0.120875
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money null
+ok 81 - reject ambiguous money null
+  ---
+  duration_ms: 0.373417
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money 1,200
+ok 82 - reject ambiguous money 1,200
+  ---
+  duration_ms: 0.210958
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money $1200
+ok 83 - reject ambiguous money $1200
+  ---
+  duration_ms: 0.103375
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money 1e3
+ok 84 - reject ambiguous money 1e3
+  ---
+  duration_ms: 0.067541
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money NaN
+ok 85 - reject ambiguous money NaN
+  ---
+  duration_ms: 0.054583
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money 01.00
+ok 86 - reject ambiguous money 01.00
+  ---
+  duration_ms: 0.0525
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money 2.001
+ok 87 - reject ambiguous money 2.001
+  ---
+  duration_ms: 0.050542
+  type: 'test'
+  ...
+# Subtest: reject ambiguous money 10000000000
+ok 88 - reject ambiguous money 10000000000
+  ---
+  duration_ms: 0.058417
+  type: 'test'
+  ...
+# Subtest: valid calendar leap day
+ok 89 - valid calendar leap day
+  ---
+  duration_ms: 1.4775
+  type: 'test'
+  ...
+# Subtest: invalid leap day
+ok 90 - invalid leap day
+  ---
+  duration_ms: 0.1155
+  type: 'test'
+  ...
+# Subtest: reversed dates
+ok 91 - reversed dates
+  ---
+  duration_ms: 0.082542
+  type: 'test'
+  ...
+# Subtest: missing date unknown
+ok 92 - missing date unknown
+  ---
+  duration_ms: 0.141541
+  type: 'test'
+  ...
+# Subtest: full period coverage
+ok 93 - full period coverage
+  ---
+  duration_ms: 0.083042
+  type: 'test'
+  ...
+# Subtest: separate periods
+ok 94 - separate periods
+  ---
+  duration_ms: 0.066417
+  type: 'test'
+  ...
+# Subtest: partial coverage
+ok 95 - partial coverage
+  ---
+  duration_ms: 0.11475
+  type: 'test'
+  ...
+# Subtest: prior balance catches wrong answer
+ok 96 - prior balance catches wrong answer
+  ---
+  duration_ms: 0.12075
+  type: 'test'
+  ...
+# Subtest: correct answer no warning
+ok 97 - correct answer no warning
+  ---
+  duration_ms: 0.034167
+  type: 'test'
+  ...
+# Subtest: genuinely high charge not suspicious
+ok 98 - genuinely high charge not suspicious
+  ---
+  duration_ms: 0.02525
+  type: 'test'
+  ...
+# Subtest: other credits require context
+ok 99 - other credits require context
+  ---
+  duration_ms: 0.028791
+  type: 'test'
+  ...
+# Subtest: bill unknown {"confirmed":false}
+ok 100 - bill unknown {"confirmed":false}
+  ---
+  duration_ms: 0.026292
+  type: 'test'
+  ...
+# Subtest: bill unknown {"sameDocument":false}
+ok 101 - bill unknown {"sameDocument":false}
+  ---
+  duration_ms: 0.016459
+  type: 'test'
+  ...
+# Subtest: bill unknown {"currency":"EUR"}
+ok 102 - bill unknown {"currency":"EUR"}
+  ---
+  duration_ms: 0.01825
+  type: 'test'
+  ...
+# Subtest: bill unknown {"current":null}
+ok 103 - bill unknown {"current":null}
+  ---
+  duration_ms: 0.020041
+  type: 'test'
+  ...
+# Subtest: cashflow gap is explanation not denial
+ok 104 - cashflow gap is explanation not denial
+  ---
+  duration_ms: 0.3625
+  type: 'test'
+  ...
+# Subtest: equal totals clear
+ok 105 - equal totals clear
+  ---
+  duration_ms: 0.032542
+  type: 'test'
+  ...
+# Subtest: income above expenses clear
+ok 106 - income above expenses clear
+  ---
+  duration_ms: 0.027333
+  type: 'test'
+  ...
+# Subtest: cashflow unknown {"confirmed":false}
+ok 107 - cashflow unknown {"confirmed":false}
+  ---
+  duration_ms: 0.030125
+  type: 'test'
+  ...
+# Subtest: cashflow unknown {"comparable":false}
+ok 108 - cashflow unknown {"comparable":false}
+  ---
+  duration_ms: 0.016125
+  type: 'test'
+  ...
+# Subtest: cashflow unknown {"householdId":null}
+ok 109 - cashflow unknown {"householdId":null}
+  ---
+  duration_ms: 0.017625
+  type: 'test'
+  ...
+# Subtest: cashflow unknown {"period":{"start":"2026-09-01","end":"2026-09-30"},"expenses":null}
+ok 110 - cashflow unknown {"period":{"start":"2026-09-01","end":"2026-09-30"},"expenses":null}
+  ---
+  duration_ms: 0.016833
+  type: 'test'
+  ...
+# Subtest: cashflow unknown {"income":-1}
+ok 111 - cashflow unknown {"income":-1}
+  ---
+  duration_ms: 0.026625
+  type: 'test'
+  ...
+# Subtest: wrong period warning
+ok 112 - wrong period warning
+  ---
+  duration_ms: 0.066833
+  type: 'test'
+  ...
+# Subtest: old document relevant to old request
+ok 113 - old document relevant to old request
+  ---
+  duration_ms: 0.028375
+  type: 'test'
+  ...
+# Subtest: partial request coverage
+ok 114 - partial request coverage
+  ---
+  duration_ms: 0.028792
+  type: 'test'
+  ...
+# Subtest: wrong scope applicationId
+ok 115 - wrong scope applicationId
+  ---
+  duration_ms: 0.026667
+  type: 'test'
+  ...
+# Subtest: wrong scope program
+ok 116 - wrong scope program
+  ---
+  duration_ms: 0.020042
+  type: 'test'
+  ...
+# Subtest: wrong scope personId
+ok 117 - wrong scope personId
+  ---
+  duration_ms: 0.01375
+  type: 'test'
+  ...
+# Subtest: request unknown {"ownerConfirmed":false}
+ok 118 - request unknown {"ownerConfirmed":false}
+  ---
+  duration_ms: 0.021416
+  type: 'test'
+  ...
+# Subtest: request unknown {"personId":null}
+ok 119 - request unknown {"personId":null}
+  ---
+  duration_ms: 0.015083
+  type: 'test'
+  ...
+# Subtest: request unknown {"periodBasis":"earned"}
+ok 120 - request unknown {"periodBasis":"earned"}
+  ---
+  duration_ms: 0.015958
+  type: 'test'
+  ...
+# Subtest: request unknown {"period":null}
+ok 121 - request unknown {"period":null}
+  ---
+  duration_ms: 0.0175
+  type: 'test'
+  ...
+# Subtest: fully scoped reviewed policy passes reference gate
+ok 122 - fully scoped reviewed policy passes reference gate
+  ---
+  duration_ms: 0.0675
+  type: 'test'
+  ...
+# Subtest: policy withheld {"status":"research"}
+ok 123 - policy withheld {"status":"research"}
+  ---
+  duration_ms: 0.022208
+  type: 'test'
+  ...
+# Subtest: policy withheld {"enabled":false}
+ok 124 - policy withheld {"enabled":false}
+  ---
+  duration_ms: 0.030208
+  type: 'test'
+  ...
+# Subtest: policy withheld {"sourceIds":[]}
+ok 125 - policy withheld {"sourceIds":[]}
+  ---
+  duration_ms: 0.017041
+  type: 'test'
+  ...
+# Subtest: policy withheld {"reviewerIds":["same","same"]}
+ok 126 - policy withheld {"reviewerIds":["same","same"]}
+  ---
+  duration_ms: 0.016125
+  type: 'test'
+  ...
+# Subtest: policy withheld {"effectiveFrom":null}
+ok 127 - policy withheld {"effectiveFrom":null}
+  ---
+  duration_ms: 0.016333
+  type: 'test'
+  ...
+# Subtest: policy withheld {"effectiveTo":"2026-10-01"}
+ok 128 - policy withheld {"effectiveTo":"2026-10-01"}
+  ---
+  duration_ms: 0.020209
+  type: 'test'
+  ...
+# Subtest: policy withheld {"reviewExpiresAt":"2026-10-02"}
+ok 129 - policy withheld {"reviewExpiresAt":"2026-10-02"}
+  ---
+  duration_ms: 0.017709
+  type: 'test'
+  ...
+# Subtest: policy scope withheld {"program":"medi_cal"}
+ok 130 - policy scope withheld {"program":"medi_cal"}
+  ---
+  duration_ms: 0.026625
+  type: 'test'
+  ...
+# Subtest: policy scope withheld {"jurisdiction":"CA:LA"}
+ok 131 - policy scope withheld {"jurisdiction":"CA:LA"}
+  ---
+  duration_ms: 0.035208
+  type: 'test'
+  ...
+# Subtest: policy scope withheld {"stage":"application"}
+ok 132 - policy scope withheld {"stage":"application"}
+  ---
+  duration_ms: 0.015292
+  type: 'test'
+  ...
+# Subtest: policy scope withheld {"onDate":"bad"}
+ok 133 - policy scope withheld {"onDate":"bad"}
+  ---
+  duration_ms: 0.011542
+  type: 'test'
+  ...
+# Subtest: confirmed copy succeeds
+ok 134 - confirmed copy succeeds
+  ---
+  duration_ms: 0.079709
+  type: 'test'
+  ...
+# Subtest: copied fact is detached
+ok 135 - copied fact is detached
+  ---
+  duration_ms: 0.028708
+  type: 'test'
+  ...
+# Subtest: copy rejects {"revision":3}
+ok 136 - copy rejects {"revision":3}
+  ---
+  duration_ms: 0.047583
+  type: 'test'
+  ...
+# Subtest: copy rejects {"confirmedRevision":null}
+ok 137 - copy rejects {"confirmedRevision":null}
+  ---
+  duration_ms: 0.018
+  type: 'test'
+  ...
+# Subtest: copy rejects {"state":"unknown"}
+ok 138 - copy rejects {"state":"unknown"}
+  ---
+  duration_ms: 0.018583
+  type: 'test'
+  ...
+# Subtest: copy rejects {"active":false}
+ok 139 - copy rejects {"active":false}
+  ---
+  duration_ms: 0.016791
+  type: 'test'
+  ...
+# Subtest: copy rejects {"applicationId":"a2"}
+ok 140 - copy rejects {"applicationId":"a2"}
+  ---
+  duration_ms: 0.015958
+  type: 'test'
+  ...
+# Subtest: duplicate requested fact rejected
+ok 141 - duplicate requested fact rejected
+  ---
+  duration_ms: 0.03175
+  type: 'test'
+  ...
+# Subtest: missing fact rejected
+ok 142 - missing fact rejected
+  ---
+  duration_ms: 0.024
+  type: 'test'
+  ...
+# Subtest: receipt records submission
+ok 143 - receipt records submission
+  ---
+  duration_ms: 0.035958
+  type: 'test'
+  ...
+# Subtest: no inferred submission {"type":"upload_receipt"}
+ok 144 - no inferred submission {"type":"upload_receipt"}
+  ---
+  duration_ms: 0.019792
+  type: 'test'
+  ...
+# Subtest: no inferred submission {"type":"open_official_site"}
+ok 145 - no inferred submission {"type":"open_official_site"}
+  ---
+  duration_ms: 0.01675
+  type: 'test'
+  ...
+# Subtest: no inferred submission {"ownerConfirmed":false}
+ok 146 - no inferred submission {"ownerConfirmed":false}
+  ---
+  duration_ms: 0.011959
+  type: 'test'
+  ...
+# Subtest: no inferred submission {"applicationId":"a2"}
+ok 147 - no inferred submission {"applicationId":"a2"}
+  ---
+  duration_ms: 0.013667
+  type: 'test'
+  ...
+# Subtest: no inferred submission {"programs":["medi_cal"]}
+ok 148 - no inferred submission {"programs":["medi_cal"]}
+  ---
+  duration_ms: 0.013792
+  type: 'test'
+  ...
+# Subtest: no inferred submission {"sourceId":null}
+ok 149 - no inferred submission {"sourceId":null}
+  ---
+  duration_ms: 0.013375
+  type: 'test'
+  ...
+# Subtest: explicit report separate provenance
+ok 150 - explicit report separate provenance
+  ---
+  duration_ms: 0.025042
+  type: 'test'
+  ...
+# Subtest: report does not downgrade receipt
+ok 151 - report does not downgrade receipt
+  ---
+  duration_ms: 0.758125
+  type: 'test'
+  ...
+# Subtest: current result accepted
+ok 152 - current result accepted
+  ---
+  duration_ms: 0.05675
+  type: 'test'
+  ...
+# Subtest: stale job rejected {"epoch":2}
+ok 153 - stale job rejected {"epoch":2}
+  ---
+  duration_ms: 0.018375
+  type: 'test'
+  ...
+# Subtest: stale job rejected {"documentRevision":2}
+ok 154 - stale job rejected {"documentRevision":2}
+  ---
+  duration_ms: 0.013375
+  type: 'test'
+  ...
+# Subtest: stale job rejected {"workspaceId":"w2"}
+ok 155 - stale job rejected {"workspaceId":"w2"}
+  ---
+  duration_ms: 0.012833
+  type: 'test'
+  ...
+# Subtest: stale job rejected {"documentId":"d2"}
+ok 156 - stale job rejected {"documentId":"d2"}
+  ---
+  duration_ms: 0.012458
+  type: 'test'
+  ...
+# Subtest: stale job rejected {"cancelled":true}
+ok 157 - stale job rejected {"cancelled":true}
+  ---
+  duration_ms: 0.011708
+  type: 'test'
+  ...
+# Subtest: locked workspace rejects result
+ok 158 - locked workspace rejects result
+  ---
+  duration_ms: 0.018333
+  type: 'test'
+  ...
+# Subtest: malformed policy blocked {"sourceIds":[""]}
+ok 159 - malformed policy blocked {"sourceIds":[""]}
+  ---
+  duration_ms: 0.023125
+  type: 'test'
+  ...
+# Subtest: malformed policy blocked {"reviewerIds":["","engineer"]}
+ok 160 - malformed policy blocked {"reviewerIds":["","engineer"]}
+  ---
+  duration_ms: 0.012417
+  type: 'test'
+  ...
+# Subtest: malformed policy blocked {"jurisdiction":null}
+ok 161 - malformed policy blocked {"jurisdiction":null}
+  ---
+  duration_ms: 0.011792
+  type: 'test'
+  ...
+# Subtest: missing jurisdiction on both sides never activates
+ok 162 - missing jurisdiction on both sides never activates
+  ---
+  duration_ms: 0.019666
+  type: 'test'
+  ...
+# Subtest: missing confirmation map rejected
+ok 163 - missing confirmation map rejected
+  ---
+  duration_ms: 0.025042
+  type: 'test'
+  ...
+# Subtest: null fact records do not bypass selection
+ok 164 - null fact records do not bypass selection
+  ---
+  duration_ms: 0.022709
+  type: 'test'
+  ...
+# Subtest: malformed job token rejected {"epoch":-1}
+ok 165 - malformed job token rejected {"epoch":-1}
+  ---
+  duration_ms: 0.020667
+  type: 'test'
+  ...
+# Subtest: malformed job token rejected {"epoch":"1"}
+ok 166 - malformed job token rejected {"epoch":"1"}
+  ---
+  duration_ms: 0.011417
+  type: 'test'
+  ...
+# Subtest: malformed job token rejected {"documentRevision":0}
+ok 167 - malformed job token rejected {"documentRevision":0}
+  ---
+  duration_ms: 0.011
+  type: 'test'
+  ...
+# Subtest: malformed job token rejected {"workspaceId":""}
+ok 168 - malformed job token rejected {"workspaceId":""}
+  ---
+  duration_ms: 0.010334
+  type: 'test'
+  ...
+# Subtest: Long summaries keep index pointing to the first facts page
+ok 169 - Long summaries keep index pointing to the first facts page
+  ---
+  duration_ms: 2.124583
+  type: 'test'
+  ...
+# Subtest: Unresolved tasks paginate without silently truncating explanations
+ok 170 - Unresolved tasks paginate without silently truncating explanations
+  ---
+  duration_ms: 0.427333
+  type: 'test'
+  ...
+# Subtest: starting edit does not invalidate document confirmation or transfer
+ok 171 - starting edit does not invalidate document confirmation or transfer
+  ---
+  duration_ms: 8.276417
+  type: 'test'
+  ...
+# Subtest: explicit continue reads silent control changes without reusing a previous boundary
+ok 172 - explicit continue reads silent control changes without reusing a previous boundary
+  ---
+  duration_ms: 0.585959
+  type: 'test'
+  ...
+# Subtest: old generic answers are not migrated to coverage applicants
+ok 173 - old generic answers are not migrated to coverage applicants
+  ---
+  duration_ms: 1.03825
+  type: 'test'
+  ...
+# Subtest: deselected program is hidden and draft remains in session
+ok 174 - deselected program is hidden and draft remains in session
+  ---
+  duration_ms: 1.072042
+  type: 'test'
+  ...
+# Subtest: edited saved program is pending independently
+ok 175 - edited saved program is pending independently
+  ---
+  duration_ms: 0.275083
+  type: 'test'
+  ...
+# Subtest: explicit zero survives silent household change but unknown stays unknown
+ok 176 - explicit zero survives silent household change but unknown stays unknown
+  ---
+  duration_ms: 0.331833
+  type: 'test'
+  ...
+# Subtest: all inherited policy flags remain disabled
+ok 177 - all inherited policy flags remain disabled
+  ---
+  duration_ms: 0.644417
+  type: 'test'
+  ...
+# Subtest: expiry suppresses reference without treating 9plus as exactly nine
+ok 178 - expiry suppresses reference without treating 9plus as exactly nine
+  ---
+  duration_ms: 0.172625
+  type: 'test'
+  ...
+# Subtest: household flags have sources and conditional applicability, not inferred findings
+ok 179 - household flags have sources and conditional applicability, not inferred findings
+  ---
+  duration_ms: 5.634
+  type: 'test'
+  ...
+# Subtest: Medi-Cal selections and health answers do not establish CalFresh applicability
+ok 180 - Medi-Cal selections and health answers do not establish CalFresh applicability
+  ---
+  duration_ms: 0.229584
+  type: 'test'
+  ...
+# Subtest: expense amounts and missing proof alone do not create qualification warnings
+ok 181 - expense amounts and missing proof alone do not create qualification warnings
+  ---
+  duration_ms: 0.170792
+  type: 'test'
+  ...
+# Subtest: income flags target unresolved live income, not stale or unrelated facts
+ok 182 - income flags target unresolved live income, not stale or unrelated facts
+  ---
+  duration_ms: 0.214583
+  type: 'test'
+  ...
+# Subtest: starting range above guide never becomes a denial and within range never implies approval
+ok 183 - starting range above guide never becomes a denial and within range never implies approval
+  ---
+  duration_ms: 0.243666
+  type: 'test'
+  ...
+# Subtest: known residency answer is reused instead of a repeat prompt
+ok 184 - known residency answer is reused instead of a repeat prompt
+  ---
+  duration_ms: 0.137666
+  type: 'test'
+  ...
+# Subtest: visible choices override older state on explicit Update
+ok 185 - visible choices override older state on explicit Update
+  ---
+  duration_ms: 3.085917
+  type: 'test'
+  ...
+# Subtest: native input/change pair does not clear an answer twice
+ok 186 - native input/change pair does not clear an answer twice
+  ---
+  duration_ms: 0.126
+  type: 'test'
+  ...
+# Subtest: uncommitted household change never reuses old range or opposite program values
+ok 187 - uncommitted household change never reuses old range or opposite program values
+  ---
+  duration_ms: 0.078875
+  type: 'test'
+  ...
+# Subtest: changed residence invalidates old clarification once
+ok 188 - changed residence invalidates old clarification once
+  ---
+  duration_ms: 0.066583
+  type: 'test'
+  ...
+# Subtest: complete basic answers show early next step, never approval
+ok 189 - complete basic answers show early next step, never approval
+  ---
+  duration_ms: 0.843083
+  type: 'test'
+  ...
+# Subtest: no/uncertain residency triggers clarification before asking for income
+ok 190 - no/uncertain residency triggers clarification before asking for income
+  ---
+  duration_ms: 0.386708
+  type: 'test'
+  ...
+# Subtest: confirmed other-state residence gives relevant alternative independently of income
+ok 191 - confirmed other-state residence gives relevant alternative independently of income
+  ---
+  duration_ms: 0.101625
+  type: 'test'
+  ...
+# Subtest: temporary absence goes to review, never residence rejection
+ok 192 - temporary absence goes to review, never residence rejection
+  ---
+  duration_ms: 0.060208
+  type: 'test'
+  ...
+# Subtest: newly moved or no address may proceed without changing unknown facts to zero
+ok 193 - newly moved or no address may proceed without changing unknown facts to zero
+  ---
+  duration_ms: 0.099
+  type: 'test'
+  ...
+# Subtest: invalid and incomplete answers never pass
+ok 194 - invalid and incomplete answers never pass
+  ---
+  duration_ms: 0.082167
+  type: 'test'
+  ...
+# Subtest: over-income, changing income and applicant uncertainty each require review
+ok 195 - over-income, changing income and applicant uncertainty each require review
+  ---
+  duration_ms: 0.109042
+  type: 'test'
+  ...
+# Subtest: Medi-Cal has updated 2026 reference, special pathways and enrollment caveat
+ok 196 - Medi-Cal has updated 2026 reference, special pathways and enrollment caveat
+  ---
+  duration_ms: 0.079375
+  type: 'test'
+  ...
+# Subtest: stale income rules withhold positive result
+ok 197 - stale income rules withhold positive result
+  ---
+  duration_ms: 1.018334
+  type: 'test'
+  ...
+# Subtest: CalFresh and Medi-Cal retain separate household sizes and ranges
+ok 198 - CalFresh and Medi-Cal retain separate household sizes and ranges
+  ---
+  duration_ms: 3.971416
+  type: 'test'
+  ...
+# Subtest: changing residency invalidates meaning of stale context in pure evaluator
+ok 199 - changing residency invalidates meaning of stale context in pure evaluator
+  ---
+  duration_ms: 0.071917
+  type: 'test'
+  ...
+# 52 integrated screen-model assertions passed
+# Subtest: tests/starting-model.test.mjs
+ok 12 - tests/starting-model.test.mjs
+  ---
+  duration_ms: 66.53575
+  type: 'test'
+  ...
+# Subtest: exact duplicates are excluded; equal amounts in different files survive
+ok 201 - exact duplicates are excluded; equal amounts in different files survive
+  ---
+  duration_ms: 3.7045
+  type: 'test'
+  ...
+# Subtest: partial confirmation keeps unknowns unknown and freezes earlier snapshots
+ok 202 - partial confirmation keeps unknowns unknown and freezes earlier snapshots
+  ---
+  duration_ms: 0.674375
+  type: 'test'
+  ...
+# Subtest: changing one fact preserves other confirmations and invalidates transfers
+ok 203 - changing one fact preserves other confirmations and invalidates transfers
+  ---
+  duration_ms: 0.230834
+  type: 'test'
+  ...
+# Subtest: manual zero is explicit; blank does not become zero
+ok 204 - manual zero is explicit; blank does not become zero
+  ---
+  duration_ms: 0.151542
+  type: 'test'
+  ...
+# Subtest: moving history or deleting source removes active answers without mutating snapshots
+ok 205 - moving history or deleting source removes active answers without mutating snapshots
+  ---
+  duration_ms: 0.134083
+  type: 'test'
+  ...
+# Subtest: events require provenance and isolate program and upload status
+ok 206 - events require provenance and isolate program and upload status
+  ---
+  duration_ms: 0.178583
+  type: 'test'
+  ...
+# Subtest: invalid dates rejected; reports and source receipts remain distinct
+ok 207 - invalid dates rejected; reports and source receipts remain distinct
+  ---
+  duration_ms: 0.077208
+  type: 'test'
+  ...
+# Subtest: extension is separate, no host/content-script/storage permissions
+ok 208 - extension is separate, no host/content-script/storage permissions
+  ---
+  duration_ms: 0.418833
+  type: 'test'
+  ...
+# Subtest: support received is income; paid is expense; unknown direction remains other
+ok 209 - support received is income; paid is expense; unknown direction remains other
+  ---
+  duration_ms: 0.130625
+  type: 'test'
+  ...
+# Subtest: person corrections invalidate dependent attribution without rewriting history
+ok 210 - person corrections invalidate dependent attribution without rewriting history
+  ---
+  duration_ms: 0.196041
+  type: 'test'
+  ...
+# Subtest: policy-aligned start has three CalFresh inputs and independent person-based Medi-Cal inputs
+ok 211 - policy-aligned start has three CalFresh inputs and independent person-based Medi-Cal inputs
+  ---
+  duration_ms: 10.243583
+  type: 'test'
+  ...
+1..211
+# tests 211
+# suites 0
+# pass 211
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 213.581792

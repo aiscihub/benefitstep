@@ -1,0 +1,22 @@
+{
+  "calfresh": {
+    "residence": "yes",
+    "people": "4",
+    "income": "above",
+    "boundCents": 550000,
+    "referenceId": "CF-MCE-2026-10-01",
+    "revision": 1,
+    "skipped": false
+  },
+  "medical": {
+    "people": [
+      {
+        "id": "mc-person-1",
+        "age": "19to64",
+        "residence": "yes"
+      }
+    ],
+    "revision": 1,
+    "skipped": false
+  }
+}

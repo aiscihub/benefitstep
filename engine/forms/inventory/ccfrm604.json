@@ -1,0 +1,1590 @@
+{
+  "id": "ccfrm604",
+  "title": "Application for Health Insurance",
+  "edition": "09/2025",
+  "pageCount": 44,
+  "officialUrl": "https://www.dhcs.ca.gov/file/eng-casinglestreamapp-pdf/",
+  "retrievedOn": "2026-10-04",
+  "sourceId": "FORM_CCFRM604",
+  "applicationPages": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "templateBytesIncluded": false,
+  "templateSha256": null,
+  "fieldGeometryStatus": "not_imported_or_validated",
+  "questionInventoryStatus": "research_transcription_requires_independent_review",
+  "groups": [
+    {
+      "id": "p1.contact",
+      "pdfPage": 4,
+      "label": "1. Primary contact",
+      "fields": [
+        {
+          "key": "first_name",
+          "type": "text",
+          "label": "first name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "middle_name",
+          "type": "text",
+          "label": "middle name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "last_name",
+          "type": "text",
+          "label": "last name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "suffix",
+          "type": "text",
+          "label": "suffix",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "contact_method",
+          "type": "text",
+          "label": "contact method",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "phone",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "email",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Primary contact must be represented consistently as Person 1; read contact-use notice before export.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p2.identity",
+      "pdfPage": 5,
+      "label": "2. Persons 1-4: identity, relationships and phone",
+      "fields": [
+        {
+          "key": "first_name",
+          "type": "text",
+          "label": "first name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "middle_name",
+          "type": "text",
+          "label": "middle name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "last_name",
+          "type": "text",
+          "label": "last name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "suffix",
+          "type": "text",
+          "label": "suffix",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "relationship_to_person1",
+          "type": "text",
+          "label": "relationship to person1",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "relationship_to_person2",
+          "type": "text",
+          "label": "relationship to person2",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "relationship_to_person3",
+          "type": "text",
+          "label": "relationship to person3",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "relationship_to_person4",
+          "type": "text",
+          "label": "relationship to person4",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "phone_type",
+          "type": "text",
+          "label": "phone type",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "phone",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "same_phone_as_primary",
+          "type": "bool",
+          "label": "same phone as primary",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "alternate_phone",
+          "type": "text",
+          "label": "alternate phone",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p2.address",
+      "pdfPage": 6,
+      "label": "2. Birth dates, residence and mail",
+      "fields": [
+        {
+          "key": "date_of_birth",
+          "type": "text",
+          "label": "date of birth",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "home_address",
+          "type": "text",
+          "label": "home address",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "city",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "state",
+          "type": "text",
+          "label": "state",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "zip",
+          "type": "text",
+          "label": "zip",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "same_home_as_primary",
+          "type": "bool",
+          "label": "same home as primary",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "mail_address",
+          "type": "text",
+          "label": "mail address",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "mail_city",
+          "type": "text",
+          "label": "mail city",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "mail_state",
+          "type": "text",
+          "label": "mail state",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "mail_zip",
+          "type": "text",
+          "label": "mail zip",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "homeless",
+          "type": "bool",
+          "label": "homeless",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "gender",
+          "type": "text",
+          "label": "gender",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p2.personal",
+      "pdfPage": 7,
+      "label": "2. Marital status, pregnancy and communication",
+      "fields": [
+        {
+          "key": "marital_status",
+          "type": "text",
+          "label": "marital status",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "pregnant",
+          "type": "bool",
+          "label": "pregnant",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "due_date",
+          "type": "text",
+          "label": "due date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "expected_babies",
+          "type": "text",
+          "label": "expected babies",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "written_language",
+          "type": "text",
+          "label": "written language",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "spoken_language",
+          "type": "text",
+          "label": "spoken language",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "alternative_format",
+          "type": "text",
+          "label": "alternative format",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Language and alternative-format answers are optional. No pregnancy/gender inference.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p2.context",
+      "pdfPage": 8,
+      "label": "2. Military, other insurance and caretaker",
+      "fields": [
+        {
+          "key": "race_ethnicity",
+          "type": "text",
+          "label": "race ethnicity",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "served_military",
+          "type": "bool",
+          "label": "served military",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "military_family",
+          "type": "bool",
+          "label": "military family",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "other_or_offered_insurance",
+          "type": "bool",
+          "label": "other or offered insurance",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "primary_caretaker",
+          "type": "text",
+          "label": "primary caretaker",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "fulltime_student_18to20",
+          "type": "bool",
+          "label": "fulltime student 18to20",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "american_indian_alaska_native",
+          "type": "bool",
+          "label": "american indian alaska native",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Optional race and ethnicity must not drive eligibility. Other insurance points to attachment B; tribal context to attachment D.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p3.demographics",
+      "pdfPage": 9,
+      "label": "3. Optional ethnicity and race",
+      "fields": [
+        {
+          "key": "hispanic",
+          "type": "bool",
+          "label": "hispanic",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "ethnic_origin",
+          "type": "text",
+          "label": "ethnic origin",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "races",
+          "type": "text",
+          "label": "races",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": true,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p4.coverage",
+      "pdfPage": 10,
+      "label": "4. Coverage applicants, Medicare, SSN",
+      "fields": [
+        {
+          "key": "applying",
+          "type": "bool",
+          "label": "applying",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "medicare_a_or_b",
+          "type": "bool",
+          "label": "medicare a or b",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "free_part_a_eligible",
+          "type": "bool",
+          "label": "free part a eligible",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "ssn",
+          "type": "text",
+          "label": "ssn",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "no_ssn_reason",
+          "type": "text",
+          "label": "no ssn reason",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "itin",
+          "type": "text",
+          "label": "itin",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "atin",
+          "type": "text",
+          "label": "atin",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Nonapplicant SSN is not universal; printed primary-tax-filer exception is for Covered California financial help, not a CalFresh rule. Identifiers may be entered directly on paper.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p4.needs",
+      "pdfPage": 11,
+      "label": "4. Coverage circumstances for applicants",
+      "fields": [
+        {
+          "key": "disability",
+          "type": "bool",
+          "label": "disability",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "longterm_or_homecommunitycare",
+          "type": "bool",
+          "label": "longterm or homecommunitycare",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "temporarily_out_of_state",
+          "type": "bool",
+          "label": "temporarily out of state",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "injury_lawsuit",
+          "type": "bool",
+          "label": "injury lawsuit",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "foster_at18_orlater",
+          "type": "bool",
+          "label": "foster at18 orlater",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "foster_state",
+          "type": "text",
+          "label": "foster state",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "prior_three_month_medical_bills",
+          "type": "bool",
+          "label": "prior three month medical bills",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p5.citizenship",
+      "pdfPage": 12,
+      "label": "5. Citizenship for applicants",
+      "fields": [
+        {
+          "key": "citizen_or_national",
+          "type": "bool",
+          "label": "citizen or national",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "naturalized_or_derived",
+          "type": "bool",
+          "label": "naturalized or derived",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "certificate_number",
+          "type": "text",
+          "label": "certificate number",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "alien_number",
+          "type": "text",
+          "label": "alien number",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Only for people applying for health coverage; explicit sensitive information consent required in app.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p5.immigration",
+      "pdfPage": 13,
+      "label": "5. Noncitizen applicant details",
+      "fields": [
+        {
+          "key": "status",
+          "type": "text",
+          "label": "status",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "alien_number",
+          "type": "text",
+          "label": "alien number",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "document_type",
+          "type": "text",
+          "label": "document type",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "document_numbers",
+          "type": "text",
+          "label": "document numbers",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "name_on_document",
+          "type": "text",
+          "label": "name on document",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "country_of_issuance",
+          "type": "text",
+          "label": "country of issuance",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "expiration_date",
+          "type": "text",
+          "label": "expiration date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "military_or_family",
+          "type": "bool",
+          "label": "military or family",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "in_us_since_1996",
+          "type": "bool",
+          "label": "in us since 1996",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Noncitizen applicants following printed skip instructions; unknown status stays unresolved.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p6.tax",
+      "pdfPage": 14,
+      "label": "6. Tax information for each household member",
+      "fields": [
+        {
+          "key": "will_file",
+          "type": "bool",
+          "label": "will file",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "filing_status",
+          "type": "text",
+          "label": "filing status",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "joint_spouse",
+          "type": "text",
+          "label": "joint spouse",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "required_to_file",
+          "type": "bool",
+          "label": "required to file",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "claimed_dependent",
+          "type": "bool",
+          "label": "claimed dependent",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "claimant_first",
+          "type": "text",
+          "label": "claimant first",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "claimant_middle",
+          "type": "text",
+          "label": "claimant middle",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "claimant_last",
+          "type": "text",
+          "label": "claimant last",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "claimant_suffix",
+          "type": "text",
+          "label": "claimant suffix",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "claimant_on_application",
+          "type": "bool",
+          "label": "claimant on application",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p6.primary_filer",
+      "pdfPage": 14,
+      "label": "6. Primary tax filer",
+      "fields": [
+        {
+          "key": "first_name",
+          "type": "text",
+          "label": "first name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "middle_name",
+          "type": "text",
+          "label": "middle name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "last_name",
+          "type": "text",
+          "label": "last name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "suffix",
+          "type": "text",
+          "label": "suffix",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Use explicit none when user states no tax filing; not an inferred blank.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p7.income",
+      "pdfPage": 15,
+      "label": "7. Current and year-to-date sources; continuation page 16",
+      "fields": [
+        {
+          "key": "household_has_income",
+          "type": "bool",
+          "label": "household has income",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_first",
+          "type": "text",
+          "label": "person first",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_middle",
+          "type": "text",
+          "label": "person middle",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_last",
+          "type": "text",
+          "label": "person last",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_suffix",
+          "type": "text",
+          "label": "person suffix",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "income_name",
+          "type": "text",
+          "label": "income name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "source_type",
+          "type": "text",
+          "label": "source type",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "amount",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "frequency",
+          "type": "text",
+          "label": "frequency",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "hours_week",
+          "type": "text",
+          "label": "hours week",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "days_week",
+          "type": "text",
+          "label": "days week",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "before_january1",
+          "type": "bool",
+          "label": "before january1",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "start_date",
+          "type": "text",
+          "label": "start date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "still_receiving",
+          "type": "bool",
+          "label": "still receiving",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "last_received_date",
+          "type": "text",
+          "label": "last received date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "ends_next_four_months",
+          "type": "bool",
+          "label": "ends next four months",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "expected_end_date",
+          "type": "text",
+          "label": "expected end date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "alimony_agreement_date",
+          "type": "text",
+          "label": "alimony agreement date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 2,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Read form-specific gross versus net instructions. CalFresh standard 40% net must not fill health self-employment net. Repeat copies of pages15-16 when more than two sources.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p7.variable",
+      "pdfPage": 16,
+      "label": "7. Income changing month to month",
+      "fields": [
+        {
+          "key": "has_variable_income",
+          "type": "bool",
+          "label": "has variable income",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_first",
+          "type": "text",
+          "label": "person first",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_middle",
+          "type": "text",
+          "label": "person middle",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_last",
+          "type": "text",
+          "label": "person last",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "expected_total_this_year",
+          "type": "text",
+          "label": "expected total this year",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 2,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p8.deductions",
+      "pdfPage": 17,
+      "label": "8. Federal tax deductions",
+      "fields": [
+        {
+          "key": "has_deductions",
+          "type": "bool",
+          "label": "has deductions",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_first",
+          "type": "text",
+          "label": "person first",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_middle",
+          "type": "text",
+          "label": "person middle",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_last",
+          "type": "text",
+          "label": "person last",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person_suffix",
+          "type": "text",
+          "label": "person suffix",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "type",
+          "type": "text",
+          "label": "type",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "amount",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "frequency",
+          "type": "text",
+          "label": "frequency",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "days_week",
+          "type": "text",
+          "label": "days week",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "alimony_agreement_date",
+          "type": "text",
+          "label": "alimony agreement date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 3,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Copy original page17 for more deductions; do not infer allowed tax deduction from payment alone.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p9.representative",
+      "pdfPage": 18,
+      "label": "9. Authorized representative",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "phone_type",
+          "type": "text",
+          "label": "phone type",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "phone",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "email",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "address",
+          "type": "text",
+          "label": "address",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "city",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "state",
+          "type": "text",
+          "label": "state",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "zip",
+          "type": "text",
+          "label": "zip",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "duties_limits",
+          "type": "text",
+          "label": "duties limits",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "coveredca_mail_permission",
+          "type": "bool",
+          "label": "coveredca mail permission",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "medical_mail_permission",
+          "type": "bool",
+          "label": "medical mail permission",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "contact_method",
+          "type": "text",
+          "label": "contact method",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "notice_limits",
+          "type": "text",
+          "label": "notice limits",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": true,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p9.signature",
+      "pdfPage": 18,
+      "label": "9. Representative appointment signature and date",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p10.consent_notice",
+      "pdfPage": 19,
+      "label": "10. Contact consent information",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Read printed notice; not a new automatically checkable consent box.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "rights",
+      "pdfPage": 20,
+      "label": "Rights and responsibilities, pages20-24",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Retain all original pages; applicant reads before signing.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p11.signature",
+      "pdfPage": 25,
+      "label": "11. Applicant certification, permissions, signatures and date",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "No automated signature, default renewal consent or arbitration acceptance. Applicant completes consciously.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "p12.assister",
+      "pdfPage": 26,
+      "label": "12. Certified individual or agent certification",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Only a certified individual who actually assisted; never impersonate or fill.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "attachment_a",
+      "pdfPage": 28,
+      "label": "Attachment A: Special enrollment; continues page29",
+      "fields": [
+        {
+          "key": "event",
+          "type": "text",
+          "label": "event",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person",
+          "type": "text",
+          "label": "person",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "event_date",
+          "type": "text",
+          "label": "event date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "details",
+          "type": "text",
+          "label": "details",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Supplementary branch inventory; exact subquestions/geometry need additional local review. Not necessary to deny Medi-Cal intake; Covered California rules not implemented.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "attachment_b",
+      "pdfPage": 30,
+      "label": "Attachment B: Other coverage; continues page31",
+      "fields": [
+        {
+          "key": "person",
+          "type": "text",
+          "label": "person",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "coverage_or_offer",
+          "type": "bool",
+          "label": "coverage or offer",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "coverage_type",
+          "type": "text",
+          "label": "coverage type",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "employer_offer",
+          "type": "bool",
+          "label": "employer offer",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "employer_name",
+          "type": "text",
+          "label": "employer name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "enrollment_status",
+          "type": "text",
+          "label": "enrollment status",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "start_date",
+          "type": "text",
+          "label": "start date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "employee_only_monthly_premium",
+          "type": "text",
+          "label": "employee only monthly premium",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "affordable",
+          "type": "bool",
+          "label": "affordable",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "minimum_value",
+          "type": "bool",
+          "label": "minimum value",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "No model judgment about affordable or minimum-value status; obtain supported plan information.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "attachment_c",
+      "pdfPage": 32,
+      "label": "Attachment C: Health and dental plan selection; continues page33",
+      "fields": [
+        {
+          "key": "health_plan",
+          "type": "text",
+          "label": "health plan",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "metal_tier",
+          "type": "text",
+          "label": "metal tier",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "plan_type",
+          "type": "text",
+          "label": "plan type",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "enrollee_names",
+          "type": "text",
+          "label": "enrollee names",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "dental_plan",
+          "type": "text",
+          "label": "dental plan",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "dental_enrollee_names",
+          "type": "text",
+          "label": "dental enrollee names",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Plan selection is a separate owner decision. Supplement geometry remains unvalidated; never autochoose plans.",
+      "sourceId": "FORM_CCFRM604"
+    },
+    {
+      "id": "attachment_d",
+      "pdfPage": 34,
+      "label": "Attachment D: American Indian / Alaska Native",
+      "fields": [
+        {
+          "key": "person",
+          "type": "text",
+          "label": "person",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "tribe",
+          "type": "text",
+          "label": "tribe",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "health_services",
+          "type": "text",
+          "label": "health services",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "qualifying_income",
+          "type": "text",
+          "label": "qualifying income",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "medi_cal",
+        "covered_california"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Supplement detailed subcell review pending; no inferred race or tribe.",
+      "sourceId": "FORM_CCFRM604"
+    }
+  ],
+  "repeatInstructions": [
+    "More than four people: copy original blank pages5-14 before filling and keep each person in a consistent column.",
+    "More than two income sources: copy original blank pages15-16.",
+    "More than three deductions: copy original blank page17.",
+    "Attachments B and C have their own repeat-page instructions."
+  ],
+  "policyWarning": "This is a form-question inventory, not a current eligibility rulebook. Original text is preserved; separately versioned rules govern automated conclusions.",
+  "automaticSignature": false,
+  "countyFieldsWritable": false,
+  "perFieldBindingCount": 0
+}

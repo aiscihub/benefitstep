@@ -1,0 +1,6493 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "cf285",
+  "edition": "8/21",
+  "templateSha256": "4a7a03c2d7bc63ff7866874f56000787ef05aa6ea8c9cc5da6a42679de9f97a3",
+  "expectedPageCount": 18,
+  "geometry": [
+    {
+      "page": 1,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 2,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 3,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 4,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 5,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 6,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 7,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 8,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 9,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 10,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 11,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 12,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 13,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 14,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 15,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 16,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 17,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 18,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewers": [],
+    "visualValidation": false
+  },
+  "bindings": [
+    {
+      "groupId": "q1.contact",
+      "field": "name",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.08000183105469,
+        120.3800048828125,
+        246,
+        139.32000732421875
+      ],
+      "widget": "CF 285  4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Name (First, middle, last)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "other_names",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        246.05999755859375,
+        119.20001220703125,
+        418.32000732421875,
+        140.3599853515625
+      ],
+      "widget": "CF 285  5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Other Names (maiden, nicknames, etc.)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "home_address",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        41.040000915527344,
+        148.114990234375,
+        313.9200134277344,
+        160.61798095703125
+      ],
+      "widget": "CF 285  7",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Home Address or Directions to your Home",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "home_city",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        314.5199890136719,
+        148.719970703125,
+        459.4800109863281,
+        161.41802978515625
+      ],
+      "widget": "CF 285  8",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "City",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "home_state",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        460.0400085449219,
+        148.719970703125,
+        502.5199890136719,
+        160.87799072265625
+      ],
+      "widget": "CF 285  9",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "State",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "home_zip",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        504,
+        148.114990234375,
+        575.280029296875,
+        160.61798095703125
+      ],
+      "widget": "CF 285  10",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Zip Code",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "mailing_address",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.31999969482422,
+        170.885009765625,
+        313.20001220703125,
+        183.4429931640625
+      ],
+      "widget": "CF 285  11",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Mailing Address (if different from above)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "mailing_city",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        313.55999755859375,
+        170.16497802734375,
+        459.9599914550781,
+        182.66302490234375
+      ],
+      "widget": "CF 285  12",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "City",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "mailing_state",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        460.20001220703125,
+        170.03997802734375,
+        502.67999267578125,
+        182.6829833984375
+      ],
+      "widget": "CF 285  13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "State",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "mailing_zip",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        503.2799987792969,
+        170.52001953125,
+        574.9199829101562,
+        183.343017578125
+      ],
+      "widget": "CF 285  14",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Zip Code, exit forms mode",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "written_language",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        248.39999389648438,
+        308.72100830078125,
+        422.6400146484375,
+        319.52099609375
+      ],
+      "widget": "CF 285  22",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "What language do you prefer to read (if not English)?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "spoken_language",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        253.44000244140625,
+        319.8009948730469,
+        424.79998779296875,
+        330.60101318359375
+      ],
+      "widget": "CF 285  23",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "What language do you prefer to speak (if not English)?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "homeless",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        118.80000305175781,
+        281.08099365234375,
+        129.60000610351562,
+        291.8810119628906
+      ],
+      "widget": "CF 285  20",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Are you homeless? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "homeless",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        155.52000427246094,
+        281.08099365234375,
+        166.32000732421875,
+        291.8810119628906
+      ],
+      "widget": "CF 285  21",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "no, exit forms mode",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        99.36000061035156,
+        208,
+        247.5,
+        227.08001708984375
+      ],
+      "widget": "CF 285  103",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Last name, first name, middle initial Line 1 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        306,
+        208.08001708984375,
+        364.5,
+        226.79998779296875
+      ],
+      "widget": "CF 285  105",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of birth, Line 1 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 1,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        100.08000183105469,
+        227.52001953125,
+        248.22000122070312,
+        246.5999755859375
+      ],
+      "widget": "CF 285  1013",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Last name, first name, middle initial Line 2 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 1,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        306.7200012207031,
+        228.239990234375,
+        365.2200012207031,
+        246.96002197265625
+      ],
+      "widget": "CF 285  1014",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of birth, Line 2 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "relationship",
+      "row": 1,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        248.39999389648438,
+        226.79998779296875,
+        306.7200012207031,
+        247.5
+      ],
+      "widget": "CF 285  111",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How is the person related to you? Line 2 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 2,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        100.80000305175781,
+        247.67999267578125,
+        248.94000244140625,
+        266.760009765625
+      ],
+      "widget": "CF 285  1021",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Last name, first name, middle initial Line 3 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 2,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        307.44000244140625,
+        248.4000244140625,
+        365.94000244140625,
+        267.1199951171875
+      ],
+      "widget": "CF 285  1022",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of birth, Line 3 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "relationship",
+      "row": 2,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        249.1199951171875,
+        246.96002197265625,
+        307.44000244140625,
+        267.65997314453125
+      ],
+      "widget": "CF 285  112",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How is the person related to you? Line 3 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 3,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        100.41999816894531,
+        268.1199951171875,
+        248.55999755859375,
+        287.20001220703125
+      ],
+      "widget": "CF 285  1029",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Last name, first name, middle initial Line 4 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 3,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        307.05999755859375,
+        268.84002685546875,
+        365.55999755859375,
+        287.55999755859375
+      ],
+      "widget": "CF 285  1030",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of birth, Line 4 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "relationship",
+      "row": 3,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        248.74000549316406,
+        267.4000244140625,
+        307.05999755859375,
+        288.1000061035156
+      ],
+      "widget": "CF 285  113",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How is the person related to you? Line 4 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 4,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        100.5199966430664,
+        288,
+        248.66000366210938,
+        307.0799865722656
+      ],
+      "widget": "CF 285  1037",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Last name, first name, middle initial Line 5 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 4,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        307.1600036621094,
+        288.7200012207031,
+        365.6600036621094,
+        307.44000244140625
+      ],
+      "widget": "CF 285  1038",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of birth, Line 5 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "relationship",
+      "row": 4,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        248.83999633789062,
+        287.2799987792969,
+        307.1600036621094,
+        307.9800109863281
+      ],
+      "widget": "CF 285  114",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How is the person related to you? Line 5 of 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "person",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        215.1199951171875,
+        149.0399932861328,
+        245.3599853515625
+      ],
+      "widget": "CF 285  271",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Person working, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_name_address",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        149.75999450683594,
+        214.760009765625,
+        243,
+        245
+      ],
+      "widget": "CF 285  272",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Employer’s name and address, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_phone",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        244.0800018310547,
+        215.280029296875,
+        313.9200134277344,
+        243.3599853515625
+      ],
+      "widget": "CF 285  273",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Employer’s area code and phone number, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hourly_rate",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        319.67999267578125,
+        224.760009765625,
+        355.67999267578125,
+        235.55999755859375
+      ],
+      "widget": "CF 285  274",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Hourly Rate, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hours_week",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        357.1199951171875,
+        225,
+        400.32000732421875,
+        235.79998779296875
+      ],
+      "widget": "CF 285  275",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Average hours per week, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "frequency",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        399.6000061035156,
+        225,
+        468,
+        235.79998779296875
+      ],
+      "widget": "CF 285  276",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (once, weekly, monthly or other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "gross_received_this_month",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        473.760009765625,
+        224.03997802734375,
+        522.719970703125,
+        234.84002685546875
+      ],
+      "widget": "CF 285  277",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Total gross earned income received this month, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "person",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        241.85198974609375,
+        149.0399932861328,
+        272.09197998046875
+      ],
+      "widget": "CF 285  280",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Person working, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_name_address",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        149.75999450683594,
+        242.49200439453125,
+        243,
+        272.73199462890625
+      ],
+      "widget": "CF 285  281",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Employer’s name and address, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_phone",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        244.0800018310547,
+        244.01202392578125,
+        313.9200134277344,
+        272.09197998046875
+      ],
+      "widget": "CF 285  282",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Employer’s area code and phone number, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hourly_rate",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        319.67999267578125,
+        252.4000244140625,
+        355.67999267578125,
+        263.20001220703125
+      ],
+      "widget": "CF 285  283",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Hourly Rate, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hours_week",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        357.1199951171875,
+        253.73199462890625,
+        400.32000732421875,
+        264.531982421875
+      ],
+      "widget": "CF 285  284",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Average hours per week, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "frequency",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        399.6000061035156,
+        253.73199462890625,
+        468,
+        264.531982421875
+      ],
+      "widget": "CF 285  285",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (once, weekly, monthly, or other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "gross_received_this_month",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        473.760009765625,
+        251.67999267578125,
+        522.719970703125,
+        262.47998046875
+      ],
+      "widget": "CF 285  286",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Total gross earned income received this month, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "person",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        268.84002685546875,
+        149.0399932861328,
+        299.0799865722656
+      ],
+      "widget": "CF 285  289",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Person working, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_name_address",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        149.75999450683594,
+        268.47998046875,
+        243,
+        298.7200012207031
+      ],
+      "widget": "CF 285  290",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Employer’s name and address, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_phone",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        244.0800018310547,
+        270,
+        313.9200134277344,
+        298.0799865722656
+      ],
+      "widget": "CF 285  291",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Employer’s area code and phone number, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hourly_rate",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        319.67999267578125,
+        279.47998046875,
+        355.67999267578125,
+        290.2799987792969
+      ],
+      "widget": "CF 285  292",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Hourly Rate, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hours_week",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        357.1199951171875,
+        279.719970703125,
+        400.32000732421875,
+        290.5199890136719
+      ],
+      "widget": "CF 285  293",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Average hours per week, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "frequency",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        399.6000061035156,
+        279.719970703125,
+        468,
+        290.5199890136719
+      ],
+      "widget": "CF 285  294",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (once, weekly, monthly, or other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "gross_received_this_month",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        473.760009765625,
+        278.760009765625,
+        522.719970703125,
+        289.55999755859375
+      ],
+      "widget": "CF 285  295",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Total gross earned income received this month, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "person",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        36.619998931884766,
+        295.8399963378906,
+        148.94000244140625,
+        326.0799865722656
+      ],
+      "widget": "CF 285  298",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Person working, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_name_address",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        149.66000366210938,
+        296.4800109863281,
+        242.89999389648438,
+        326.7200012207031
+      ],
+      "widget": "CF 285  299",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Employer’s name and address, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_phone",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        243.97999572753906,
+        297,
+        313.82000732421875,
+        325.0799865722656
+      ],
+      "widget": "CF 285  300",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Employer’s area code and phone number, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hourly_rate",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        319.5799865722656,
+        306.4800109863281,
+        355.5799865722656,
+        317.2799987792969
+      ],
+      "widget": "CF 285  301",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Hourly Rate, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hours_week",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        357.0199890136719,
+        306.7200012207031,
+        400.2200012207031,
+        317.5199890136719
+      ],
+      "widget": "CF 285  302",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Average hours per week, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "frequency",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        399.5,
+        306.7200012207031,
+        467.8999938964844,
+        317.5199890136719
+      ],
+      "widget": "CF 285  303",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (once, weekly, monthly, or other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "gross_received_this_month",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        473.6600036621094,
+        305.760009765625,
+        522.6199951171875,
+        316.55999755859375
+      ],
+      "widget": "CF 285  304",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Total gross earned income received this month, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "has_income",
+      "row": 0,
+      "page": 13,
+      "kind": "checkbox",
+      "rect": [
+        493.9200134277344,
+        61.91998291015625,
+        504.7200012207031,
+        72.719970703125
+      ],
+      "widget": "CF 285  269",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8. Earned Income Do you or anyone you buy and prepare food with get income from a job (earned income)? (Please check one.) Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "has_income",
+      "row": 0,
+      "page": 13,
+      "kind": "checkbox",
+      "rect": [
+        531,
+        62.6400146484375,
+        541.7999877929688,
+        73.44000244140625
+      ],
+      "widget": "CF 285  270",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No, exit forms mode",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q9.care",
+      "field": "care_recipient",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        37.08000183105469,
+        137.8800048828125,
+        189,
+        158.4000244140625
+      ],
+      "widget": "CF 285  357",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who gets care?, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "provider_name_address",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        189,
+        138.239990234375,
+        434.1600036621094,
+        158.4000244140625
+      ],
+      "widget": "CF 285  358",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who gives care? (Name and address of provider) Line 1 of 4 ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "amount_paid",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        438.4800109863281,
+        142.20001220703125,
+        496.44000244140625,
+        153
+      ],
+      "widget": "CF 285  359",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount paid, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "frequency",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.79998779296875,
+        142.5999755859375,
+        576,
+        153.4000244140625
+      ],
+      "widget": "CF 285  360",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (weekly, monthly, other) Line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "care_recipient",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        37.08000183105469,
+        159.47998046875,
+        189,
+        180
+      ],
+      "widget": "CF 285  361",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who gets care?, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "provider_name_address",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        189,
+        159.84002685546875,
+        434.1600036621094,
+        180
+      ],
+      "widget": "CF 285  362",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who gives care? (name and address of provider) Line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "amount_paid",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        438.4800109863281,
+        163.79998779296875,
+        496.44000244140625,
+        174.5999755859375
+      ],
+      "widget": "CF 285  363",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount paid, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "frequency",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.79998779296875,
+        164.20001220703125,
+        576,
+        175
+      ],
+      "widget": "CF 285  364",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (weekly, monthly, other) Line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "care_recipient",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        181.3599853515625,
+        188.63999938964844,
+        201.8800048828125
+      ],
+      "widget": "CF 285  365",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who gets care?, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "provider_name_address",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        188.63999938964844,
+        181.719970703125,
+        433.79998779296875,
+        201.8800048828125
+      ],
+      "widget": "CF 285  366",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who gives care? (Name and address of provider) Line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "amount_paid",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        438.1199951171875,
+        185.67999267578125,
+        496.0799865722656,
+        196.47998046875
+      ],
+      "widget": "CF 285  367",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount paid, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "frequency",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.44000244140625,
+        186.08001708984375,
+        575.6400146484375,
+        196.8800048828125
+      ],
+      "widget": "CF 285  368",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (weekly, monthly other) Line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "care_recipient",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        37.08000183105469,
+        201.96002197265625,
+        189,
+        222.47998046875
+      ],
+      "widget": "CF 285  369",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who gets care?, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "provider_name_address",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        189,
+        202.32000732421875,
+        434.1600036621094,
+        222.47998046875
+      ],
+      "widget": "CF 285  370",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who gives care? (Name and address of provider) Line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "amount_paid",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        438.4800109863281,
+        206.280029296875,
+        496.44000244140625,
+        217.08001708984375
+      ],
+      "widget": "CF 285  371",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount paid, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "frequency",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.79998779296875,
+        206.67999267578125,
+        576,
+        217.47998046875
+      ],
+      "widget": "CF 285  372",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (weekly, monthly, other) Line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "notes",
+      "field": "notes",
+      "row": 0,
+      "page": 17,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        73.44000244140625,
+        577.4400024414062,
+        755.280029296875
+      ],
+      "widget": "CF 285  541",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Additional writing space page 1 of 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    }
+  ],
+  "protectedRegions": [
+    {
+      "page": 1,
+      "rect": [
+        511.20001220703125,
+        95.760009765625,
+        521.6649780273438,
+        105.0150146484375
+      ],
+      "reason": "manual-only: CF 285  2"
+    },
+    {
+      "page": 8,
+      "rect": [
+        36,
+        65.52001953125,
+        576.719970703125,
+        746.6400146484375
+      ],
+      "reason": "manual-only: CF 285  3"
+    },
+    {
+      "page": 9,
+      "rect": [
+        40.31999969482422,
+        243.280029296875,
+        266.3999938964844,
+        255.719970703125
+      ],
+      "reason": "manual-only: CF 285  15"
+    },
+    {
+      "page": 9,
+      "rect": [
+        266.2799987792969,
+        242.67999267578125,
+        470.3999938964844,
+        255
+      ],
+      "reason": "manual-only: CF 285  16"
+    },
+    {
+      "page": 9,
+      "rect": [
+        516.5,
+        242.760009765625,
+        528.739990234375,
+        255
+      ],
+      "reason": "manual-only: CF 285  17"
+    },
+    {
+      "page": 9,
+      "rect": [
+        41.220001220703125,
+        264.08001708984375,
+        265.5,
+        276.72198486328125
+      ],
+      "reason": "manual-only: CF 285  18"
+    },
+    {
+      "page": 9,
+      "rect": [
+        265.67999267578125,
+        263.3599853515625,
+        576,
+        277.4019775390625
+      ],
+      "reason": "manual-only: CF 285  19"
+    },
+    {
+      "page": 9,
+      "rect": [
+        418.32000732421875,
+        121.84002685546875,
+        575.280029296875,
+        140.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  6"
+    },
+    {
+      "page": 9,
+      "rect": [
+        470.8800048828125,
+        335.8009948730469,
+        481.67999267578125,
+        346.60101318359375
+      ],
+      "reason": "not-yet-supported: CF 285  24"
+    },
+    {
+      "page": 9,
+      "rect": [
+        36,
+        719.0999755859375,
+        50.7599983215332,
+        733.5
+      ],
+      "reason": "manual-only: CF 285  35"
+    },
+    {
+      "page": 9,
+      "rect": [
+        450.7200012207031,
+        720,
+        573.1199951171875,
+        734.4000244140625
+      ],
+      "reason": "manual-only: CF 285  36"
+    },
+    {
+      "page": 9,
+      "rect": [
+        512.6400146484375,
+        363.8810119628906,
+        523.4400024414062,
+        374.6809997558594
+      ],
+      "reason": "not-yet-supported: CF 285  25"
+    },
+    {
+      "page": 9,
+      "rect": [
+        550.260009765625,
+        363.8810119628906,
+        561.0599975585938,
+        376.1210021972656
+      ],
+      "reason": "not-yet-supported: CF 285  26"
+    },
+    {
+      "page": 9,
+      "rect": [
+        512.6400146484375,
+        385.84100341796875,
+        523.4400024414062,
+        396.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  28"
+    },
+    {
+      "page": 9,
+      "rect": [
+        549.3599853515625,
+        386.20098876953125,
+        560.1599731445312,
+        397.0010070800781
+      ],
+      "reason": "not-yet-supported: CF 285  27"
+    },
+    {
+      "page": 9,
+      "rect": [
+        511.20001220703125,
+        411.4010009765625,
+        522,
+        422.20098876953125
+      ],
+      "reason": "not-yet-supported: CF 285  30"
+    },
+    {
+      "page": 9,
+      "rect": [
+        546.47998046875,
+        412.1210021972656,
+        557.280029296875,
+        422.9209899902344
+      ],
+      "reason": "not-yet-supported: CF 285  29"
+    },
+    {
+      "page": 9,
+      "rect": [
+        513,
+        439.0409851074219,
+        523.7999877929688,
+        449.84100341796875
+      ],
+      "reason": "not-yet-supported: CF 285  552"
+    },
+    {
+      "page": 9,
+      "rect": [
+        549.3599853515625,
+        439.84100341796875,
+        560.1599731445312,
+        450.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  1011"
+    },
+    {
+      "page": 9,
+      "rect": [
+        511.9200134277344,
+        467.84100341796875,
+        522.719970703125,
+        478.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  554"
+    },
+    {
+      "page": 9,
+      "rect": [
+        548.6400146484375,
+        467.84100341796875,
+        559.4400024414062,
+        478.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  553"
+    },
+    {
+      "page": 9,
+      "rect": [
+        511.9200134277344,
+        495.10101318359375,
+        522.719970703125,
+        505.9010009765625
+      ],
+      "reason": "not-yet-supported: CF 285  556"
+    },
+    {
+      "page": 9,
+      "rect": [
+        548.6400146484375,
+        495.20098876953125,
+        559.4400024414062,
+        506.0010070800781
+      ],
+      "reason": "not-yet-supported: CF 285  555"
+    },
+    {
+      "page": 9,
+      "rect": [
+        511.9200134277344,
+        521.56103515625,
+        522.719970703125,
+        532.3609619140625
+      ],
+      "reason": "not-yet-supported: CF 285  558"
+    },
+    {
+      "page": 9,
+      "rect": [
+        548.6400146484375,
+        521.8410034179688,
+        559.4400024414062,
+        532.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  557"
+    },
+    {
+      "page": 10,
+      "rect": [
+        38.369998931884766,
+        152.47998046875,
+        394.55999755859375,
+        163.280029296875
+      ],
+      "reason": "not-yet-supported: CF 285  39"
+    },
+    {
+      "page": 10,
+      "rect": [
+        397.6199951171875,
+        152,
+        575.280029296875,
+        162.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  40"
+    },
+    {
+      "page": 10,
+      "rect": [
+        482.3999938964844,
+        166.60101318359375,
+        493.20001220703125,
+        177.4010009765625
+      ],
+      "reason": "not-yet-supported: CF 285  44"
+    },
+    {
+      "page": 10,
+      "rect": [
+        401.0400085449219,
+        115.91998291015625,
+        411.8399963378906,
+        126.719970703125
+      ],
+      "reason": "not-yet-supported: CF 285  42"
+    },
+    {
+      "page": 10,
+      "rect": [
+        444.9599914550781,
+        115.91998291015625,
+        455.760009765625,
+        126.719970703125
+      ],
+      "reason": "not-yet-supported: CF 285  43"
+    },
+    {
+      "page": 10,
+      "rect": [
+        527.0399780273438,
+        165.8809814453125,
+        537.8400268554688,
+        176.6810302734375
+      ],
+      "reason": "not-yet-supported: CF 285  45"
+    },
+    {
+      "page": 10,
+      "rect": [
+        41.220001220703125,
+        206.96002197265625,
+        395.2799987792969,
+        217.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  51"
+    },
+    {
+      "page": 10,
+      "rect": [
+        400.5,
+        206.5,
+        576.719970703125,
+        217.29998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  50"
+    },
+    {
+      "page": 10,
+      "rect": [
+        41.58000183105469,
+        227.50201416015625,
+        313.9200134277344,
+        238.302001953125
+      ],
+      "reason": "not-yet-supported: CF 285  49"
+    },
+    {
+      "page": 10,
+      "rect": [
+        315.3599853515625,
+        227.781982421875,
+        396.7200012207031,
+        238.58197021484375
+      ],
+      "reason": "not-yet-supported: CF 285  46"
+    },
+    {
+      "page": 10,
+      "rect": [
+        398.8800048828125,
+        228.22198486328125,
+        481.67999267578125,
+        239.02197265625
+      ],
+      "reason": "not-yet-supported: CF 285  47"
+    },
+    {
+      "page": 10,
+      "rect": [
+        485.2799987792969,
+        228.50201416015625,
+        576,
+        239.302001953125
+      ],
+      "reason": "not-yet-supported: CF 285  48"
+    },
+    {
+      "page": 10,
+      "rect": [
+        35.279998779296875,
+        555.8399658203125,
+        46.08000183105469,
+        566.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  80"
+    },
+    {
+      "page": 10,
+      "rect": [
+        34.84000015258789,
+        572.760009765625,
+        45.63999938964844,
+        583.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  81"
+    },
+    {
+      "page": 10,
+      "rect": [
+        65.80000305175781,
+        609.1199951171875,
+        76.5999984741211,
+        619.9199829101562
+      ],
+      "reason": "not-yet-supported: CF 285  82"
+    },
+    {
+      "page": 10,
+      "rect": [
+        113.76000213623047,
+        609.1199951171875,
+        124.55999755859375,
+        619.9199829101562
+      ],
+      "reason": "not-yet-supported: CF 285  83"
+    },
+    {
+      "page": 10,
+      "rect": [
+        213.83999633789062,
+        608.760009765625,
+        224.63999938964844,
+        619.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  84"
+    },
+    {
+      "page": 10,
+      "rect": [
+        272.1600036621094,
+        608.760009765625,
+        282.9599914550781,
+        619.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  85"
+    },
+    {
+      "page": 10,
+      "rect": [
+        330.4800109863281,
+        608.4000244140625,
+        341.2799987792969,
+        619.2000122070312
+      ],
+      "reason": "not-yet-supported: CF 285  86"
+    },
+    {
+      "page": 10,
+      "rect": [
+        390.239990234375,
+        608.760009765625,
+        401.0400085449219,
+        619.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  87"
+    },
+    {
+      "page": 10,
+      "rect": [
+        463.67999267578125,
+        608.760009765625,
+        474.4800109863281,
+        619.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  88"
+    },
+    {
+      "page": 10,
+      "rect": [
+        527.3200073242188,
+        608.760009765625,
+        538.1199951171875,
+        619.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  89"
+    },
+    {
+      "page": 10,
+      "rect": [
+        64.80000305175781,
+        625.5,
+        75.5999984741211,
+        636.2999877929688
+      ],
+      "reason": "not-yet-supported: CF 285  90"
+    },
+    {
+      "page": 10,
+      "rect": [
+        147.60000610351562,
+        624.9600219726562,
+        158.39999389648438,
+        635.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  91"
+    },
+    {
+      "page": 10,
+      "rect": [
+        223.1999969482422,
+        624.9600219726562,
+        234,
+        635.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  92"
+    },
+    {
+      "page": 10,
+      "rect": [
+        287.2799987792969,
+        624.9600219726562,
+        298.0799865722656,
+        635.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  93"
+    },
+    {
+      "page": 10,
+      "rect": [
+        372.239990234375,
+        625.5,
+        383.0400085449219,
+        636.2999877929688
+      ],
+      "reason": "not-yet-supported: CF 285  94"
+    },
+    {
+      "page": 10,
+      "rect": [
+        39.15999984741211,
+        707.3455200195312,
+        306.2799987792969,
+        721.7454833984375
+      ],
+      "reason": "not-yet-supported: CF 285  100"
+    },
+    {
+      "page": 10,
+      "rect": [
+        309.1600036621094,
+        707.3455200195312,
+        576.280029296875,
+        721.7454833984375
+      ],
+      "reason": "not-yet-supported: CF 285  99"
+    },
+    {
+      "page": 10,
+      "rect": [
+        39.15999984741211,
+        731.2655029296875,
+        306.2799987792969,
+        745.66552734375
+      ],
+      "reason": "not-yet-supported: CF 285  98"
+    },
+    {
+      "page": 10,
+      "rect": [
+        309.1600036621094,
+        731.2655029296875,
+        576.280029296875,
+        745.66552734375
+      ],
+      "reason": "not-yet-supported: CF 285  97"
+    },
+    {
+      "page": 10,
+      "rect": [
+        496.3599853515625,
+        678.5009765625,
+        507.1600036621094,
+        689.301025390625
+      ],
+      "reason": "not-yet-supported: CF 285  95"
+    },
+    {
+      "page": 10,
+      "rect": [
+        542.5599975585938,
+        677.8410034179688,
+        553.3599853515625,
+        688.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  96"
+    },
+    {
+      "page": 10,
+      "rect": [
+        35.560001373291016,
+        300.2799987792969,
+        46.36000061035156,
+        311.0799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  52"
+    },
+    {
+      "page": 10,
+      "rect": [
+        33.7599983215332,
+        395.7200012207031,
+        44.560001373291016,
+        406.5199890136719
+      ],
+      "reason": "not-yet-supported: CF 285  60"
+    },
+    {
+      "page": 10,
+      "rect": [
+        85.68000030517578,
+        395.44000244140625,
+        96.4800033569336,
+        406.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  61"
+    },
+    {
+      "page": 10,
+      "rect": [
+        245.9600067138672,
+        394.7200012207031,
+        256.760009765625,
+        405.5199890136719
+      ],
+      "reason": "not-yet-supported: CF 285  62"
+    },
+    {
+      "page": 10,
+      "rect": [
+        372.3999938964844,
+        394.7200012207031,
+        383.20001220703125,
+        405.5199890136719
+      ],
+      "reason": "not-yet-supported: CF 285  63"
+    },
+    {
+      "page": 10,
+      "rect": [
+        448.55999755859375,
+        396.1600036621094,
+        573.27001953125,
+        406.9599914550781
+      ],
+      "reason": "not-yet-supported: CF 285  64"
+    },
+    {
+      "page": 10,
+      "rect": [
+        33.84000015258789,
+        410.55999755859375,
+        44.63999938964844,
+        421.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  65"
+    },
+    {
+      "page": 10,
+      "rect": [
+        51.84000015258789,
+        428.1199951171875,
+        62.63999938964844,
+        438.9200134277344
+      ],
+      "reason": "not-yet-supported: CF 285  66"
+    },
+    {
+      "page": 10,
+      "rect": [
+        103.68000030517578,
+        427.8399963378906,
+        114.4800033569336,
+        438.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  67"
+    },
+    {
+      "page": 10,
+      "rect": [
+        159.27999877929688,
+        427.8399963378906,
+        170.0800018310547,
+        438.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  68"
+    },
+    {
+      "page": 10,
+      "rect": [
+        221.1999969482422,
+        427.8399963378906,
+        232,
+        438.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  69"
+    },
+    {
+      "page": 10,
+      "rect": [
+        290.6000061035156,
+        428.1199951171875,
+        301.3999938964844,
+        438.9200134277344
+      ],
+      "reason": "not-yet-supported: CF 285  70"
+    },
+    {
+      "page": 10,
+      "rect": [
+        342.1600036621094,
+        427.8399963378906,
+        352.9599914550781,
+        438.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  71"
+    },
+    {
+      "page": 10,
+      "rect": [
+        412.7200012207031,
+        428.1199951171875,
+        423.5199890136719,
+        438.9200134277344
+      ],
+      "reason": "not-yet-supported: CF 285  72"
+    },
+    {
+      "page": 10,
+      "rect": [
+        485.260009765625,
+        428.1199951171875,
+        496.05999755859375,
+        438.9200134277344
+      ],
+      "reason": "not-yet-supported: CF 285  73"
+    },
+    {
+      "page": 10,
+      "rect": [
+        52.560001373291016,
+        443.67999267578125,
+        63.36000061035156,
+        454.4800109863281
+      ],
+      "reason": "not-yet-supported: CF 285  74"
+    },
+    {
+      "page": 10,
+      "rect": [
+        151.1999969482422,
+        446.5,
+        405,
+        457.29998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  75"
+    },
+    {
+      "page": 10,
+      "rect": [
+        33.84000015258789,
+        460.239990234375,
+        44.63999938964844,
+        471.0400085449219
+      ],
+      "reason": "not-yet-supported: CF 285  76"
+    },
+    {
+      "page": 10,
+      "rect": [
+        51.84000015258789,
+        476.79998779296875,
+        62.63999938964844,
+        487.6000061035156
+      ],
+      "reason": "not-yet-supported: CF 285  77"
+    },
+    {
+      "page": 10,
+      "rect": [
+        140.39999389648438,
+        476.79998779296875,
+        151.1999969482422,
+        487.6000061035156
+      ],
+      "reason": "not-yet-supported: CF 285  78"
+    },
+    {
+      "page": 10,
+      "rect": [
+        263.5199890136719,
+        476.260009765625,
+        274.32000732421875,
+        487.05999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  79"
+    },
+    {
+      "page": 10,
+      "rect": [
+        319.9599914550781,
+        344.20001220703125,
+        330.760009765625,
+        355
+      ],
+      "reason": "not-yet-supported: CF 285  55"
+    },
+    {
+      "page": 10,
+      "rect": [
+        383.0400085449219,
+        343.20001220703125,
+        393.8399963378906,
+        354
+      ],
+      "reason": "not-yet-supported: CF 285  56"
+    },
+    {
+      "page": 10,
+      "rect": [
+        469.260009765625,
+        343.20001220703125,
+        480.05999755859375,
+        354
+      ],
+      "reason": "not-yet-supported: CF 285  57"
+    },
+    {
+      "page": 10,
+      "rect": [
+        320.3999938964844,
+        356.8800048828125,
+        331.20001220703125,
+        367.67999267578125
+      ],
+      "reason": "not-yet-supported: CF 285  58"
+    },
+    {
+      "page": 10,
+      "rect": [
+        358.3999938964844,
+        358.760009765625,
+        574.4000244140625,
+        369.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  59"
+    },
+    {
+      "page": 10,
+      "rect": [
+        109,
+        344.20001220703125,
+        119.80000305175781,
+        355
+      ],
+      "reason": "not-yet-supported: CF 285  53"
+    },
+    {
+      "page": 10,
+      "rect": [
+        152.9199981689453,
+        344.20001220703125,
+        163.72000122070312,
+        355
+      ],
+      "reason": "not-yet-supported: CF 285  54"
+    },
+    {
+      "page": 11,
+      "rect": [
+        38.880001068115234,
+        210.801025390625,
+        49.68000030517578,
+        221.60101318359375
+      ],
+      "reason": "not-yet-supported: CF 285  101"
+    },
+    {
+      "page": 11,
+      "rect": [
+        70.83999633789062,
+        209.801025390625,
+        81.63999938964844,
+        220.60101318359375
+      ],
+      "reason": "not-yet-supported: CF 285  102"
+    },
+    {
+      "page": 11,
+      "rect": [
+        249.1199951171875,
+        208.79998779296875,
+        259.20001220703125,
+        221.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  104"
+    },
+    {
+      "page": 11,
+      "rect": [
+        364.5,
+        207.3599853515625,
+        406.79998779296875,
+        226.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  106"
+    },
+    {
+      "page": 11,
+      "rect": [
+        409.5,
+        210.34100341796875,
+        420.29998779296875,
+        221.1409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  107"
+    },
+    {
+      "page": 11,
+      "rect": [
+        441.3599853515625,
+        210.52099609375,
+        452.1600036621094,
+        221.32098388671875
+      ],
+      "reason": "not-yet-supported: CF 285  108"
+    },
+    {
+      "page": 11,
+      "rect": [
+        470.1600036621094,
+        208.79998779296875,
+        576,
+        228.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  109"
+    },
+    {
+      "page": 11,
+      "rect": [
+        39.15999984741211,
+        229.96099853515625,
+        49.959999084472656,
+        240.760986328125
+      ],
+      "reason": "not-yet-supported: CF 285  1010"
+    },
+    {
+      "page": 11,
+      "rect": [
+        71.27999877929688,
+        230.6810302734375,
+        82.08000183105469,
+        241.48101806640625
+      ],
+      "reason": "not-yet-supported: CF 285  1012"
+    },
+    {
+      "page": 11,
+      "rect": [
+        365.760009765625,
+        228.239990234375,
+        408.05999755859375,
+        247.67999267578125
+      ],
+      "reason": "not-yet-supported: CF 285  1015"
+    },
+    {
+      "page": 11,
+      "rect": [
+        409.67999267578125,
+        230.6810302734375,
+        420.4800109863281,
+        241.48101806640625
+      ],
+      "reason": "not-yet-supported: CF 285  1016"
+    },
+    {
+      "page": 11,
+      "rect": [
+        442.0799865722656,
+        230.6810302734375,
+        452.8800048828125,
+        241.48101806640625
+      ],
+      "reason": "not-yet-supported: CF 285  1017"
+    },
+    {
+      "page": 11,
+      "rect": [
+        469.44000244140625,
+        228.96002197265625,
+        575.280029296875,
+        248.4000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  1018"
+    },
+    {
+      "page": 11,
+      "rect": [
+        39.880001068115234,
+        250.1209716796875,
+        50.68000030517578,
+        260.9210205078125
+      ],
+      "reason": "not-yet-supported: CF 285  1019"
+    },
+    {
+      "page": 11,
+      "rect": [
+        71,
+        250.84100341796875,
+        81.80000305175781,
+        261.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  1020"
+    },
+    {
+      "page": 11,
+      "rect": [
+        366.4800109863281,
+        248.4000244140625,
+        408.7799987792969,
+        267.84002685546875
+      ],
+      "reason": "not-yet-supported: CF 285  1023"
+    },
+    {
+      "page": 11,
+      "rect": [
+        410.3999938964844,
+        250.84100341796875,
+        421.20001220703125,
+        261.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  1024"
+    },
+    {
+      "page": 11,
+      "rect": [
+        441.79998779296875,
+        250.84100341796875,
+        452.6000061035156,
+        261.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  1025"
+    },
+    {
+      "page": 11,
+      "rect": [
+        470.1600036621094,
+        249.1199951171875,
+        576,
+        268.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  1026"
+    },
+    {
+      "page": 11,
+      "rect": [
+        39.5,
+        270.56097412109375,
+        50.29999923706055,
+        281.3609924316406
+      ],
+      "reason": "not-yet-supported: CF 285  1027"
+    },
+    {
+      "page": 11,
+      "rect": [
+        71.62000274658203,
+        271.281005859375,
+        82.41999816894531,
+        282.08099365234375
+      ],
+      "reason": "not-yet-supported: CF 285  1028"
+    },
+    {
+      "page": 11,
+      "rect": [
+        366.1000061035156,
+        268.84002685546875,
+        408.3999938964844,
+        288.2799987792969
+      ],
+      "reason": "not-yet-supported: CF 285  1031"
+    },
+    {
+      "page": 11,
+      "rect": [
+        410.0199890136719,
+        271.281005859375,
+        420.82000732421875,
+        282.08099365234375
+      ],
+      "reason": "not-yet-supported: CF 285  1032"
+    },
+    {
+      "page": 11,
+      "rect": [
+        442.4200134277344,
+        271.281005859375,
+        453.2200012207031,
+        282.08099365234375
+      ],
+      "reason": "not-yet-supported: CF 285  1033"
+    },
+    {
+      "page": 11,
+      "rect": [
+        469.7799987792969,
+        269.55999755859375,
+        575.6199951171875,
+        289
+      ],
+      "reason": "not-yet-supported: CF 285  1034"
+    },
+    {
+      "page": 11,
+      "rect": [
+        39.599998474121094,
+        290.4410095214844,
+        50.400001525878906,
+        301.2409973144531
+      ],
+      "reason": "not-yet-supported: CF 285  1035"
+    },
+    {
+      "page": 11,
+      "rect": [
+        71.72000122070312,
+        291.1610107421875,
+        82.5199966430664,
+        301.96099853515625
+      ],
+      "reason": "not-yet-supported: CF 285  1036"
+    },
+    {
+      "page": 11,
+      "rect": [
+        366.20001220703125,
+        288.7200012207031,
+        408.5,
+        308.1600036621094
+      ],
+      "reason": "not-yet-supported: CF 285  1039"
+    },
+    {
+      "page": 11,
+      "rect": [
+        410.1199951171875,
+        291.1610107421875,
+        420.9200134277344,
+        301.96099853515625
+      ],
+      "reason": "not-yet-supported: CF 285  1040"
+    },
+    {
+      "page": 11,
+      "rect": [
+        442.5199890136719,
+        291.1610107421875,
+        453.32000732421875,
+        301.96099853515625
+      ],
+      "reason": "not-yet-supported: CF 285  1041"
+    },
+    {
+      "page": 11,
+      "rect": [
+        469.8800048828125,
+        289.44000244140625,
+        575.719970703125,
+        308.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  1042"
+    },
+    {
+      "page": 11,
+      "rect": [
+        37.119998931884766,
+        342.29998779296875,
+        304.239990234375,
+        353.1000061035156
+      ],
+      "reason": "not-yet-supported: CF 285  154"
+    },
+    {
+      "page": 11,
+      "rect": [
+        307.44000244140625,
+        342.260009765625,
+        574.5599975585938,
+        353.05999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  155"
+    },
+    {
+      "page": 11,
+      "rect": [
+        37.939998626708984,
+        364.2799987792969,
+        305.05999755859375,
+        375.0799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  156"
+    },
+    {
+      "page": 11,
+      "rect": [
+        308.8800048828125,
+        364.7799987792969,
+        576,
+        375.5799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  157"
+    },
+    {
+      "page": 11,
+      "rect": [
+        36.720001220703125,
+        454.5,
+        213.83999633789062,
+        477.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  158"
+    },
+    {
+      "page": 11,
+      "rect": [
+        213.83999633789062,
+        454.32000732421875,
+        277.20001220703125,
+        477
+      ],
+      "reason": "not-yet-supported: CF 285  159"
+    },
+    {
+      "page": 11,
+      "rect": [
+        334.79998779296875,
+        453.5,
+        502.55999755859375,
+        464.1199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  160"
+    },
+    {
+      "page": 11,
+      "rect": [
+        343.44000244140625,
+        464.67999267578125,
+        503.2799987792969,
+        475.4800109863281
+      ],
+      "reason": "not-yet-supported: CF 285  161"
+    },
+    {
+      "page": 11,
+      "rect": [
+        512.6400146484375,
+        456.0409851074219,
+        523.4400024414062,
+        466.84100341796875
+      ],
+      "reason": "not-yet-supported: CF 285  162"
+    },
+    {
+      "page": 11,
+      "rect": [
+        544.1599731445312,
+        456.4809875488281,
+        554.9600219726562,
+        467.281005859375
+      ],
+      "reason": "not-yet-supported: CF 285  163"
+    },
+    {
+      "page": 11,
+      "rect": [
+        37.439998626708984,
+        477.5400085449219,
+        214.55999755859375,
+        500.3999938964844
+      ],
+      "reason": "not-yet-supported: CF 285  164"
+    },
+    {
+      "page": 11,
+      "rect": [
+        214.55999755859375,
+        477.3599853515625,
+        277.9200134277344,
+        500.0400085449219
+      ],
+      "reason": "not-yet-supported: CF 285  165"
+    },
+    {
+      "page": 11,
+      "rect": [
+        335.5199890136719,
+        477.5400085449219,
+        503.2799987792969,
+        488.1600036621094
+      ],
+      "reason": "not-yet-supported: CF 285  166"
+    },
+    {
+      "page": 11,
+      "rect": [
+        344.1600036621094,
+        487.7200012207031,
+        504,
+        498.5199890136719
+      ],
+      "reason": "not-yet-supported: CF 285  167"
+    },
+    {
+      "page": 11,
+      "rect": [
+        512.3599853515625,
+        480.08099365234375,
+        523.1599731445312,
+        490.8810119628906
+      ],
+      "reason": "not-yet-supported: CF 285  168"
+    },
+    {
+      "page": 11,
+      "rect": [
+        543.8800048828125,
+        480.52099609375,
+        554.6799926757812,
+        491.3210144042969
+      ],
+      "reason": "not-yet-supported: CF 285  169"
+    },
+    {
+      "page": 11,
+      "rect": [
+        36.720001220703125,
+        502.0199890136719,
+        213.83999633789062,
+        524.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  170"
+    },
+    {
+      "page": 11,
+      "rect": [
+        213.83999633789062,
+        501.8399963378906,
+        277.20001220703125,
+        524.52001953125
+      ],
+      "reason": "not-yet-supported: CF 285  171"
+    },
+    {
+      "page": 11,
+      "rect": [
+        334.79998779296875,
+        501.0199890136719,
+        502.55999755859375,
+        511.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  172"
+    },
+    {
+      "page": 11,
+      "rect": [
+        343.44000244140625,
+        511.20001220703125,
+        503.2799987792969,
+        522
+      ],
+      "reason": "not-yet-supported: CF 285  173"
+    },
+    {
+      "page": 11,
+      "rect": [
+        512.6400146484375,
+        503.5610046386719,
+        523.4400024414062,
+        514.3609619140625
+      ],
+      "reason": "not-yet-supported: CF 285  174"
+    },
+    {
+      "page": 11,
+      "rect": [
+        544.5,
+        503.5610046386719,
+        555.2999877929688,
+        514.3609619140625
+      ],
+      "reason": "not-yet-supported: CF 285  175"
+    },
+    {
+      "page": 11,
+      "rect": [
+        519.760009765625,
+        541.719970703125,
+        530.5599975585938,
+        552.52001953125
+      ],
+      "reason": "not-yet-supported: CF 285  176"
+    },
+    {
+      "page": 11,
+      "rect": [
+        550.7999877929688,
+        540.719970703125,
+        561.5999755859375,
+        551.52001953125
+      ],
+      "reason": "not-yet-supported: CF 285  177"
+    },
+    {
+      "page": 11,
+      "rect": [
+        85.5,
+        543.0599975585938,
+        468,
+        553.5
+      ],
+      "reason": "not-yet-supported: CF 285  178"
+    },
+    {
+      "page": 11,
+      "rect": [
+        519.8400268554688,
+        581.760009765625,
+        530.6400146484375,
+        592.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  179"
+    },
+    {
+      "page": 11,
+      "rect": [
+        550.7999877929688,
+        582.47998046875,
+        561.5999755859375,
+        593.280029296875
+      ],
+      "reason": "not-yet-supported: CF 285  180"
+    },
+    {
+      "page": 11,
+      "rect": [
+        85.68000030517578,
+        585.3599853515625,
+        468.7200012207031,
+        596.1600341796875
+      ],
+      "reason": "not-yet-supported: CF 285  181"
+    },
+    {
+      "page": 11,
+      "rect": [
+        182.16000366210938,
+        629.280029296875,
+        192.9600067138672,
+        640.0800170898438
+      ],
+      "reason": "not-yet-supported: CF 285  182"
+    },
+    {
+      "page": 11,
+      "rect": [
+        221.75999450683594,
+        629.280029296875,
+        232.55999755859375,
+        640.0800170898438
+      ],
+      "reason": "not-yet-supported: CF 285  183"
+    },
+    {
+      "page": 11,
+      "rect": [
+        222.75999450683594,
+        660.0809936523438,
+        233.55999755859375,
+        670.8809814453125
+      ],
+      "reason": "not-yet-supported: CF 285  184"
+    },
+    {
+      "page": 11,
+      "rect": [
+        261.3599853515625,
+        659.3609619140625,
+        272.1600036621094,
+        670.1610107421875
+      ],
+      "reason": "not-yet-supported: CF 285  185"
+    },
+    {
+      "page": 11,
+      "rect": [
+        378.8999938964844,
+        658.9010009765625,
+        441.3599853515625,
+        672.760986328125
+      ],
+      "reason": "not-yet-supported: CF 285  186"
+    },
+    {
+      "page": 11,
+      "rect": [
+        34.84000015258789,
+        691.9609985351562,
+        45.63999938964844,
+        702.76123046875
+      ],
+      "reason": "not-yet-supported: CF 285  187"
+    },
+    {
+      "page": 11,
+      "rect": [
+        78.76000213623047,
+        691.9609985351562,
+        89.55999755859375,
+        702.76123046875
+      ],
+      "reason": "not-yet-supported: CF 285  188"
+    },
+    {
+      "page": 11,
+      "rect": [
+        135.63999938964844,
+        692.2412109375,
+        146.44000244140625,
+        703.0411987304688
+      ],
+      "reason": "not-yet-supported: CF 285  189"
+    },
+    {
+      "page": 11,
+      "rect": [
+        182.6999969482422,
+        691.9609985351562,
+        193.5,
+        702.76123046875
+      ],
+      "reason": "not-yet-supported: CF 285  190"
+    },
+    {
+      "page": 11,
+      "rect": [
+        219.60000610351562,
+        691.6010131835938,
+        495.3599853515625,
+        704.201171875
+      ],
+      "reason": "not-yet-supported: CF 285  191"
+    },
+    {
+      "page": 11,
+      "rect": [
+        38.15999984741211,
+        721.8399658203125,
+        287.2799987792969,
+        732.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  192"
+    },
+    {
+      "page": 11,
+      "rect": [
+        289.6199951171875,
+        722.1600341796875,
+        472.5,
+        732.9600219726562
+      ],
+      "reason": "not-yet-supported: CF 285  193"
+    },
+    {
+      "page": 11,
+      "rect": [
+        473.0400085449219,
+        722.8800048828125,
+        576.719970703125,
+        733.6799926757812
+      ],
+      "reason": "not-yet-supported: CF 285  194"
+    },
+    {
+      "page": 11,
+      "rect": [
+        36.720001220703125,
+        742.760009765625,
+        285.8399963378906,
+        753.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  195"
+    },
+    {
+      "page": 11,
+      "rect": [
+        288.17999267578125,
+        743.0800170898438,
+        471.05999755859375,
+        753.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  196"
+    },
+    {
+      "page": 11,
+      "rect": [
+        471.6000061035156,
+        743.7999877929688,
+        575.280029296875,
+        754.5999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  197"
+    },
+    {
+      "page": 12,
+      "rect": [
+        504.7200012207031,
+        64.32000732421875,
+        515.52001953125,
+        75.1199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  198"
+    },
+    {
+      "page": 12,
+      "rect": [
+        536.4000244140625,
+        63.84002685546875,
+        547.2000122070312,
+        74.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  199"
+    },
+    {
+      "page": 12,
+      "rect": [
+        39.599998474121094,
+        116.6400146484375,
+        186.63299560546875,
+        155.52001953125
+      ],
+      "reason": "not-yet-supported: CF 285  2013"
+    },
+    {
+      "page": 12,
+      "rect": [
+        185.0399932861328,
+        116.6400146484375,
+        360.5669860839844,
+        154.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  2012"
+    },
+    {
+      "page": 12,
+      "rect": [
+        361.7200012207031,
+        117.08099365234375,
+        372.5199890136719,
+        127.8809814453125
+      ],
+      "reason": "not-yet-supported: CF 285  202"
+    },
+    {
+      "page": 12,
+      "rect": [
+        362.1600036621094,
+        130.52099609375,
+        372.9599914550781,
+        141.32098388671875
+      ],
+      "reason": "not-yet-supported: CF 285  203"
+    },
+    {
+      "page": 12,
+      "rect": [
+        444.9599914550781,
+        143.301025390625,
+        474.4800109863281,
+        153.3809814453125
+      ],
+      "reason": "not-yet-supported: CF 285  204"
+    },
+    {
+      "page": 12,
+      "rect": [
+        500.3999938964844,
+        136.08001708984375,
+        540.719970703125,
+        146.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  205"
+    },
+    {
+      "page": 12,
+      "rect": [
+        38.880001068115234,
+        155.52001953125,
+        185.0399932861328,
+        194.4000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  206"
+    },
+    {
+      "page": 12,
+      "rect": [
+        184.32000732421875,
+        155.52001953125,
+        360.7200012207031,
+        193.67999267578125
+      ],
+      "reason": "not-yet-supported: CF 285  207"
+    },
+    {
+      "page": 12,
+      "rect": [
+        362.44000244140625,
+        156.70098876953125,
+        373.239990234375,
+        167.5009765625
+      ],
+      "reason": "not-yet-supported: CF 285  208"
+    },
+    {
+      "page": 12,
+      "rect": [
+        361.8800048828125,
+        169.1409912109375,
+        372.67999267578125,
+        179.94097900390625
+      ],
+      "reason": "not-yet-supported: CF 285  209"
+    },
+    {
+      "page": 12,
+      "rect": [
+        442.79998779296875,
+        182.20098876953125,
+        472.32000732421875,
+        192.281005859375
+      ],
+      "reason": "not-yet-supported: CF 285  2010"
+    },
+    {
+      "page": 12,
+      "rect": [
+        501.1199951171875,
+        175.67999267578125,
+        541.4400024414062,
+        186.47998046875
+      ],
+      "reason": "not-yet-supported: CF 285  2011"
+    },
+    {
+      "page": 12,
+      "rect": [
+        246.9600067138672,
+        199.59600830078125,
+        257.760009765625,
+        210.39599609375
+      ],
+      "reason": "not-yet-supported: CF 285  212"
+    },
+    {
+      "page": 12,
+      "rect": [
+        279,
+        200.4959716796875,
+        289.79998779296875,
+        211.2960205078125
+      ],
+      "reason": "not-yet-supported: CF 285  213"
+    },
+    {
+      "page": 12,
+      "rect": [
+        360,
+        199.7760009765625,
+        565.2000122070312,
+        213.45599365234375
+      ],
+      "reason": "not-yet-supported: CF 285  214"
+    },
+    {
+      "page": 12,
+      "rect": [
+        519.8400268554688,
+        229.656005859375,
+        530.6400146484375,
+        240.45599365234375
+      ],
+      "reason": "not-yet-supported: CF 285  215"
+    },
+    {
+      "page": 12,
+      "rect": [
+        551.52001953125,
+        228.57598876953125,
+        562.3200073242188,
+        239.3759765625
+      ],
+      "reason": "not-yet-supported: CF 285  216"
+    },
+    {
+      "page": 12,
+      "rect": [
+        520.2000122070312,
+        250.89599609375,
+        531,
+        261.69598388671875
+      ],
+      "reason": "not-yet-supported: CF 285  217"
+    },
+    {
+      "page": 12,
+      "rect": [
+        551.52001953125,
+        251.176025390625,
+        562.3200073242188,
+        261.97601318359375
+      ],
+      "reason": "not-yet-supported: CF 285  218"
+    },
+    {
+      "page": 12,
+      "rect": [
+        129.60000610351562,
+        330.3999938964844,
+        140.39999389648438,
+        341.20001220703125
+      ],
+      "reason": "not-yet-supported: CF 285  219"
+    },
+    {
+      "page": 12,
+      "rect": [
+        161.27999877929688,
+        329.760009765625,
+        172.0800018310547,
+        340.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  220"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.7599983215332,
+        372.6400146484375,
+        63.560001373291016,
+        383.44000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  221"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.7599983215332,
+        387.0400085449219,
+        63.560001373291016,
+        397.8399963378906
+      ],
+      "reason": "not-yet-supported: CF 285  222"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.7599983215332,
+        402.1600036621094,
+        63.560001373291016,
+        412.9599914550781
+      ],
+      "reason": "not-yet-supported: CF 285  223"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.7599983215332,
+        415.8399963378906,
+        63.560001373291016,
+        426.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  224"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.7599983215332,
+        430.239990234375,
+        63.560001373291016,
+        441.0400085449219
+      ],
+      "reason": "not-yet-supported: CF 285  225"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.7599983215332,
+        444.6400146484375,
+        63.560001373291016,
+        455.44000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  226"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.7599983215332,
+        459.760009765625,
+        63.560001373291016,
+        470.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  227"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.7599983215332,
+        473.260009765625,
+        63.560001373291016,
+        484.05999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  228"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52000427246094,
+        373.3599853515625,
+        239.32000732421875,
+        384.1600036621094
+      ],
+      "reason": "not-yet-supported: CF 285  229"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52000427246094,
+        390.20001220703125,
+        239.32000732421875,
+        401
+      ],
+      "reason": "not-yet-supported: CF 285  230"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52000427246094,
+        418.2799987792969,
+        239.32000732421875,
+        429.0799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  231"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52000427246094,
+        435.2799987792969,
+        239.32000732421875,
+        446.0799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  232"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52000427246094,
+        463.6400146484375,
+        239.32000732421875,
+        474.44000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  234"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.8399963378906,
+        372.6400146484375,
+        423.6400146484375,
+        383.44000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  235"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.8399963378906,
+        387.760009765625,
+        423.6400146484375,
+        398.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  236"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.8399963378906,
+        402.1600036621094,
+        423.6400146484375,
+        412.9599914550781
+      ],
+      "reason": "not-yet-supported: CF 285  237"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.8399963378906,
+        416.55999755859375,
+        423.6400146484375,
+        427.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  238"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.8399963378906,
+        430.239990234375,
+        423.6400146484375,
+        441.0400085449219
+      ],
+      "reason": "not-yet-supported: CF 285  239"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.8399963378906,
+        445,
+        423.6400146484375,
+        455.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  240"
+    },
+    {
+      "page": 12,
+      "rect": [
+        457.20001220703125,
+        446.6400146484375,
+        564.47998046875,
+        457.44000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  241"
+    },
+    {
+      "page": 12,
+      "rect": [
+        431.2799987792969,
+        457.1600036621094,
+        565.5599975585938,
+        467.9599914550781
+      ],
+      "reason": "not-yet-supported: CF 285  242"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.720001220703125,
+        544.3200073242188,
+        165.60000610351562,
+        576
+      ],
+      "reason": "not-yet-supported: CF 285  243"
+    },
+    {
+      "page": 12,
+      "rect": [
+        166.5,
+        544.3200073242188,
+        310.32000732421875,
+        576.719970703125
+      ],
+      "reason": "not-yet-supported: CF 285  244"
+    },
+    {
+      "page": 12,
+      "rect": [
+        313.9200134277344,
+        554.52001953125,
+        383.0400085449219,
+        565.3200073242188
+      ],
+      "reason": "not-yet-supported: CF 285  245"
+    },
+    {
+      "page": 12,
+      "rect": [
+        383.760009765625,
+        554.9600219726562,
+        483.8399963378906,
+        566.2839965820312
+      ],
+      "reason": "not-yet-supported: CF 285  246"
+    },
+    {
+      "page": 12,
+      "rect": [
+        490.6000061035156,
+        555.0150146484375,
+        501.3999938964844,
+        565.8150024414062
+      ],
+      "reason": "not-yet-supported: CF 285  247"
+    },
+    {
+      "page": 12,
+      "rect": [
+        522,
+        555.0150146484375,
+        532.7999877929688,
+        565.8150024414062
+      ],
+      "reason": "not-yet-supported: CF 285  248"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.720001220703125,
+        576.719970703125,
+        165.60000610351562,
+        608.4000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  249"
+    },
+    {
+      "page": 12,
+      "rect": [
+        166.5,
+        576.719970703125,
+        310.32000732421875,
+        609.1199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  250"
+    },
+    {
+      "page": 12,
+      "rect": [
+        313.9200134277344,
+        586.9199829101562,
+        383.0400085449219,
+        597.719970703125
+      ],
+      "reason": "not-yet-supported: CF 285  251"
+    },
+    {
+      "page": 12,
+      "rect": [
+        383.760009765625,
+        587.3599853515625,
+        483.8399963378906,
+        598.1600341796875
+      ],
+      "reason": "not-yet-supported: CF 285  252"
+    },
+    {
+      "page": 12,
+      "rect": [
+        490.6000061035156,
+        587.2210083007812,
+        501.3999938964844,
+        598.02099609375
+      ],
+      "reason": "not-yet-supported: CF 285  253"
+    },
+    {
+      "page": 12,
+      "rect": [
+        522,
+        587.2210083007812,
+        532.7999877929688,
+        598.02099609375
+      ],
+      "reason": "not-yet-supported: CF 285  254"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.720001220703125,
+        609.8399658203125,
+        165.60000610351562,
+        641.52001953125
+      ],
+      "reason": "not-yet-supported: CF 285  255"
+    },
+    {
+      "page": 12,
+      "rect": [
+        166.5,
+        609.8399658203125,
+        310.32000732421875,
+        642.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  256"
+    },
+    {
+      "page": 12,
+      "rect": [
+        313.9200134277344,
+        620.0399780273438,
+        383.0400085449219,
+        630.8399658203125
+      ],
+      "reason": "not-yet-supported: CF 285  257"
+    },
+    {
+      "page": 12,
+      "rect": [
+        383.760009765625,
+        620.47998046875,
+        483.8399963378906,
+        631.280029296875
+      ],
+      "reason": "not-yet-supported: CF 285  258"
+    },
+    {
+      "page": 12,
+      "rect": [
+        490.6000061035156,
+        620.3410034179688,
+        501.3999938964844,
+        631.1409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  259"
+    },
+    {
+      "page": 12,
+      "rect": [
+        522,
+        620.3410034179688,
+        532.7999877929688,
+        631.1409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  260"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.720001220703125,
+        642.239990234375,
+        165.60000610351562,
+        673.9199829101562
+      ],
+      "reason": "not-yet-supported: CF 285  261"
+    },
+    {
+      "page": 12,
+      "rect": [
+        166.5,
+        642.239990234375,
+        310.32000732421875,
+        674.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  262"
+    },
+    {
+      "page": 12,
+      "rect": [
+        313.9200134277344,
+        652.4400024414062,
+        383.0400085449219,
+        663.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  263"
+    },
+    {
+      "page": 12,
+      "rect": [
+        383.760009765625,
+        652.8800048828125,
+        483.8399963378906,
+        663.6799926757812
+      ],
+      "reason": "not-yet-supported: CF 285  264"
+    },
+    {
+      "page": 12,
+      "rect": [
+        490.6000061035156,
+        652.740966796875,
+        501.3999938964844,
+        663.541015625
+      ],
+      "reason": "not-yet-supported: CF 285  265"
+    },
+    {
+      "page": 12,
+      "rect": [
+        522,
+        652.740966796875,
+        532.7999877929688,
+        663.541015625
+      ],
+      "reason": "not-yet-supported: CF 285  266"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.720001220703125,
+        689.760009765625,
+        576.719970703125,
+        753.1199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  267"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.7999877929688,
+        218.1209716796875,
+        543.5999755859375,
+        228.9210205078125
+      ],
+      "reason": "not-yet-supported: CF 285  278"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.52001953125,
+        230.82098388671875,
+        543.3200073242188,
+        241.6209716796875
+      ],
+      "reason": "not-yet-supported: CF 285  279"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.7999877929688,
+        245.760986328125,
+        543.5999755859375,
+        256.56097412109375
+      ],
+      "reason": "not-yet-supported: CF 285  287"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.52001953125,
+        258.46099853515625,
+        543.3200073242188,
+        269.260986328125
+      ],
+      "reason": "not-yet-supported: CF 285  288"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.7999877929688,
+        272.84100341796875,
+        543.5999755859375,
+        283.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  296"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.52001953125,
+        285.5409851074219,
+        543.3200073242188,
+        296.34100341796875
+      ],
+      "reason": "not-yet-supported: CF 285  297"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.7000122070312,
+        299.84100341796875,
+        543.5,
+        310.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  305"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.4199829101562,
+        312.5409851074219,
+        543.219970703125,
+        323.34100341796875
+      ],
+      "reason": "not-yet-supported: CF 285  306"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.720001220703125,
+        339.8399963378906,
+        576.719970703125,
+        388.0799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  307"
+    },
+    {
+      "page": 13,
+      "rect": [
+        496.0799865722656,
+        392.7359924316406,
+        506.8800048828125,
+        403.5360107421875
+      ],
+      "reason": "not-yet-supported: CF 285  308"
+    },
+    {
+      "page": 13,
+      "rect": [
+        529.2000122070312,
+        392.7359924316406,
+        540,
+        403.5360107421875
+      ],
+      "reason": "not-yet-supported: CF 285  309"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        419.760009765625,
+        217.44000244140625,
+        435.5199890136719
+      ],
+      "reason": "not-yet-supported: CF 285  3010"
+    },
+    {
+      "page": 13,
+      "rect": [
+        217.44000244140625,
+        420.0400085449219,
+        396.7200012207031,
+        435.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  311"
+    },
+    {
+      "page": 13,
+      "rect": [
+        396.7200012207031,
+        420.0400085449219,
+        576,
+        435.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  312"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.540000915527344,
+        444.9599914550781,
+        575.280029296875,
+        460.0799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  313"
+    },
+    {
+      "page": 13,
+      "rect": [
+        195.83999633789062,
+        464.0159912109375,
+        206.63999938964844,
+        474.8160095214844
+      ],
+      "reason": "not-yet-supported: CF 285  314"
+    },
+    {
+      "page": 13,
+      "rect": [
+        228.9600067138672,
+        464.0159912109375,
+        239.75999450683594,
+        474.8160095214844
+      ],
+      "reason": "not-yet-supported: CF 285  315"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.720001220703125,
+        490.760009765625,
+        216.72000122070312,
+        505.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  316"
+    },
+    {
+      "page": 13,
+      "rect": [
+        216.72000122070312,
+        490.760009765625,
+        396.7200012207031,
+        505.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  317"
+    },
+    {
+      "page": 13,
+      "rect": [
+        397.44000244140625,
+        490.760009765625,
+        576.719970703125,
+        505.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  318"
+    },
+    {
+      "page": 13,
+      "rect": [
+        37.439998626708984,
+        514.510009765625,
+        576,
+        529.6300048828125
+      ],
+      "reason": "not-yet-supported: CF 285  319"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.720001220703125,
+        604.2640380859375,
+        160.55999755859375,
+        634.5040283203125
+      ],
+      "reason": "not-yet-supported: CF 285  320"
+    },
+    {
+      "page": 13,
+      "rect": [
+        161.27999877929688,
+        603.3599853515625,
+        229.67999267578125,
+        634.3200073242188
+      ],
+      "reason": "not-yet-supported: CF 285  321"
+    },
+    {
+      "page": 13,
+      "rect": [
+        229.67999267578125,
+        603.3599853515625,
+        357.1199951171875,
+        634.3200073242188
+      ],
+      "reason": "not-yet-supported: CF 285  322"
+    },
+    {
+      "page": 13,
+      "rect": [
+        362.1600036621094,
+        613.4400024414062,
+        424.79998779296875,
+        624.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  323"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.9599914550781,
+        605.0809936523438,
+        437.760009765625,
+        615.8809814453125
+      ],
+      "reason": "not-yet-supported: CF 285  324"
+    },
+    {
+      "page": 13,
+      "rect": [
+        427.2799987792969,
+        618.041015625,
+        438.0799865722656,
+        628.8410034179688
+      ],
+      "reason": "not-yet-supported: CF 285  325"
+    },
+    {
+      "page": 13,
+      "rect": [
+        515.52001953125,
+        618.041015625,
+        573.8400268554688,
+        628.8410034179688
+      ],
+      "reason": "not-yet-supported: CF 285  326"
+    },
+    {
+      "page": 13,
+      "rect": [
+        37,
+        633.5999755859375,
+        160.83999633789062,
+        663.8399658203125
+      ],
+      "reason": "not-yet-supported: CF 285  327"
+    },
+    {
+      "page": 13,
+      "rect": [
+        160.55999755859375,
+        632.8800048828125,
+        228.9600067138672,
+        663.8399658203125
+      ],
+      "reason": "not-yet-supported: CF 285  328"
+    },
+    {
+      "page": 13,
+      "rect": [
+        228.9600067138672,
+        632.8800048828125,
+        356.3999938964844,
+        663.8399658203125
+      ],
+      "reason": "not-yet-supported: CF 285  329"
+    },
+    {
+      "page": 13,
+      "rect": [
+        361.44000244140625,
+        642.9600219726562,
+        424.0799865722656,
+        653.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  330"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.239990234375,
+        634.6010131835938,
+        437.0400085449219,
+        645.4010009765625
+      ],
+      "reason": "not-yet-supported: CF 285  331"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.55999755859375,
+        647.56103515625,
+        437.3599853515625,
+        658.3609619140625
+      ],
+      "reason": "not-yet-supported: CF 285  332"
+    },
+    {
+      "page": 13,
+      "rect": [
+        514.7999877929688,
+        647.56103515625,
+        573.1199951171875,
+        658.3609619140625
+      ],
+      "reason": "not-yet-supported: CF 285  333"
+    },
+    {
+      "page": 13,
+      "rect": [
+        37.15999984741211,
+        663.8399658203125,
+        161,
+        694.0800170898438
+      ],
+      "reason": "not-yet-supported: CF 285  334"
+    },
+    {
+      "page": 13,
+      "rect": [
+        160.72000122070312,
+        663.1199951171875,
+        229.1199951171875,
+        694.0800170898438
+      ],
+      "reason": "not-yet-supported: CF 285  335"
+    },
+    {
+      "page": 13,
+      "rect": [
+        229.1199951171875,
+        663.1199951171875,
+        356.55999755859375,
+        694.0800170898438
+      ],
+      "reason": "not-yet-supported: CF 285  336"
+    },
+    {
+      "page": 13,
+      "rect": [
+        361.6000061035156,
+        673.2000122070312,
+        424.239990234375,
+        684
+      ],
+      "reason": "not-yet-supported: CF 285  337"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.3999938964844,
+        664.8410034179688,
+        437.20001220703125,
+        675.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  338"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.7200012207031,
+        677.801025390625,
+        437.5199890136719,
+        688.6010131835938
+      ],
+      "reason": "not-yet-supported: CF 285  339"
+    },
+    {
+      "page": 13,
+      "rect": [
+        514.9600219726562,
+        677.801025390625,
+        573.280029296875,
+        688.6010131835938
+      ],
+      "reason": "not-yet-supported: CF 285  340"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.720001220703125,
+        693.719970703125,
+        160.55999755859375,
+        723.9600219726562
+      ],
+      "reason": "not-yet-supported: CF 285  341"
+    },
+    {
+      "page": 13,
+      "rect": [
+        161.27999877929688,
+        693,
+        229.67999267578125,
+        723.9600219726562
+      ],
+      "reason": "not-yet-supported: CF 285  342"
+    },
+    {
+      "page": 13,
+      "rect": [
+        229.67999267578125,
+        693,
+        357.1199951171875,
+        723.9600219726562
+      ],
+      "reason": "not-yet-supported: CF 285  343"
+    },
+    {
+      "page": 13,
+      "rect": [
+        362.1600036621094,
+        703.0800170898438,
+        424.79998779296875,
+        713.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  344"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.9599914550781,
+        694.72119140625,
+        437.760009765625,
+        705.5211791992188
+      ],
+      "reason": "not-yet-supported: CF 285  345"
+    },
+    {
+      "page": 13,
+      "rect": [
+        427.2799987792969,
+        707.6812133789062,
+        438.0799865722656,
+        718.481201171875
+      ],
+      "reason": "not-yet-supported: CF 285  346"
+    },
+    {
+      "page": 13,
+      "rect": [
+        515.52001953125,
+        707.6812133789062,
+        573.8400268554688,
+        718.481201171875
+      ],
+      "reason": "not-yet-supported: CF 285  347"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.720001220703125,
+        724.3200073242188,
+        160.55999755859375,
+        754.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  348"
+    },
+    {
+      "page": 13,
+      "rect": [
+        161.27999877929688,
+        723.5999755859375,
+        229.67999267578125,
+        754.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  349"
+    },
+    {
+      "page": 13,
+      "rect": [
+        229.67999267578125,
+        723.5999755859375,
+        357.1199951171875,
+        754.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  350"
+    },
+    {
+      "page": 13,
+      "rect": [
+        362.1600036621094,
+        733.6799926757812,
+        424.79998779296875,
+        744.47998046875
+      ],
+      "reason": "not-yet-supported: CF 285  351"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.9599914550781,
+        725.3211669921875,
+        437.760009765625,
+        736.1212158203125
+      ],
+      "reason": "not-yet-supported: CF 285  352"
+    },
+    {
+      "page": 13,
+      "rect": [
+        427.2799987792969,
+        738.2811889648438,
+        438.0799865722656,
+        749.0811767578125
+      ],
+      "reason": "not-yet-supported: CF 285  353"
+    },
+    {
+      "page": 13,
+      "rect": [
+        515.52001953125,
+        739.4400024414062,
+        573.8400268554688,
+        750.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  354"
+    },
+    {
+      "page": 14,
+      "rect": [
+        517.5,
+        75.20001220703125,
+        528.2999877929688,
+        86
+      ],
+      "reason": "not-yet-supported: CF 285  355"
+    },
+    {
+      "page": 14,
+      "rect": [
+        550.0800170898438,
+        75.91998291015625,
+        560.8800048828125,
+        86.719970703125
+      ],
+      "reason": "not-yet-supported: CF 285  356"
+    },
+    {
+      "page": 14,
+      "rect": [
+        414,
+        229.55999755859375,
+        424.79998779296875,
+        240.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  373"
+    },
+    {
+      "page": 14,
+      "rect": [
+        448.20001220703125,
+        228.84002685546875,
+        459,
+        239.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  374"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36.720001220703125,
+        279,
+        189,
+        301.67999267578125
+      ],
+      "reason": "not-yet-supported: CF 285  375"
+    },
+    {
+      "page": 14,
+      "rect": [
+        189,
+        279.3599853515625,
+        434.5199890136719,
+        300.9599914550781
+      ],
+      "reason": "not-yet-supported: CF 285  376"
+    },
+    {
+      "page": 14,
+      "rect": [
+        439.20001220703125,
+        284.9599914550781,
+        497.1600036621094,
+        295.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  377"
+    },
+    {
+      "page": 14,
+      "rect": [
+        497.5199890136719,
+        284.0799865722656,
+        575.280029296875,
+        294.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  378"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36.720001220703125,
+        300.9599914550781,
+        189,
+        323.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  379"
+    },
+    {
+      "page": 14,
+      "rect": [
+        189,
+        301.32000732421875,
+        434.5199890136719,
+        322.9200134277344
+      ],
+      "reason": "not-yet-supported: CF 285  380"
+    },
+    {
+      "page": 14,
+      "rect": [
+        439.20001220703125,
+        306.9200134277344,
+        497.1600036621094,
+        317.7200012207031
+      ],
+      "reason": "not-yet-supported: CF 285  381"
+    },
+    {
+      "page": 14,
+      "rect": [
+        497.5199890136719,
+        306.0400085449219,
+        575.280029296875,
+        316.8399963378906
+      ],
+      "reason": "not-yet-supported: CF 285  382"
+    },
+    {
+      "page": 14,
+      "rect": [
+        54,
+        349.9200134277344,
+        64.80000305175781,
+        360.7200012207031
+      ],
+      "reason": "not-yet-supported: CF 285  383"
+    },
+    {
+      "page": 14,
+      "rect": [
+        84.95999908447266,
+        350.6400146484375,
+        95.76000213623047,
+        361.44000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  384"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36,
+        398.6000061035156,
+        189,
+        419.4800109863281
+      ],
+      "reason": "not-yet-supported: CF 285  385"
+    },
+    {
+      "page": 14,
+      "rect": [
+        189,
+        398.8800048828125,
+        434.1600036621094,
+        419.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  386"
+    },
+    {
+      "page": 14,
+      "rect": [
+        440.6400146484375,
+        403.6000061035156,
+        496.0799865722656,
+        414.3999938964844
+      ],
+      "reason": "not-yet-supported: CF 285  387"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.0799865722656,
+        402.9960021972656,
+        575.280029296875,
+        413.7959899902344
+      ],
+      "reason": "not-yet-supported: CF 285  388"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36.720001220703125,
+        420.4800109863281,
+        189.72000122070312,
+        441.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  389"
+    },
+    {
+      "page": 14,
+      "rect": [
+        189.72000122070312,
+        420.760009765625,
+        434.8800048828125,
+        441.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  390"
+    },
+    {
+      "page": 14,
+      "rect": [
+        441.3599853515625,
+        425.4800109863281,
+        496.79998779296875,
+        436.2799987792969
+      ],
+      "reason": "not-yet-supported: CF 285  391"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.79998779296875,
+        425.3999938964844,
+        576,
+        436.20001220703125
+      ],
+      "reason": "not-yet-supported: CF 285  392"
+    },
+    {
+      "page": 14,
+      "rect": [
+        429.1199951171875,
+        458.239990234375,
+        439.9200134277344,
+        469.0400085449219
+      ],
+      "reason": "not-yet-supported: CF 285  393"
+    },
+    {
+      "page": 14,
+      "rect": [
+        459,
+        457.5270080566406,
+        469.79998779296875,
+        468.3269958496094
+      ],
+      "reason": "not-yet-supported: CF 285  393b"
+    },
+    {
+      "page": 14,
+      "rect": [
+        37.439998626708984,
+        479.8399963378906,
+        51.119998931884766,
+        495.67999267578125
+      ],
+      "reason": "not-yet-supported: CF 285  393a 2"
+    },
+    {
+      "page": 14,
+      "rect": [
+        158.39999389648438,
+        544.3200073242188,
+        167.75999450683594,
+        556.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  393b 2"
+    },
+    {
+      "page": 14,
+      "rect": [
+        239.75999450683594,
+        547.3410034179688,
+        250.55999755859375,
+        558.1409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  395"
+    },
+    {
+      "page": 14,
+      "rect": [
+        271,
+        546.6209716796875,
+        281.79998779296875,
+        557.4210205078125
+      ],
+      "reason": "not-yet-supported: CF 285  396"
+    },
+    {
+      "page": 14,
+      "rect": [
+        298.79998779296875,
+        542.2520141601562,
+        432.7200012207031,
+        562.4119873046875
+      ],
+      "reason": "not-yet-supported: CF 285  397"
+    },
+    {
+      "page": 14,
+      "rect": [
+        437.3999938964844,
+        545.760009765625,
+        495,
+        556.5599975585938
+      ],
+      "reason": "not-yet-supported: CF 285  398"
+    },
+    {
+      "page": 14,
+      "rect": [
+        495.3599853515625,
+        546.3200073242188,
+        574.5599975585938,
+        557.1199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  399"
+    },
+    {
+      "page": 14,
+      "rect": [
+        201.60000610351562,
+        573.8399658203125,
+        214.55999755859375,
+        584.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  400"
+    },
+    {
+      "page": 14,
+      "rect": [
+        239.75999450683594,
+        568.9409790039062,
+        250.55999755859375,
+        579.740966796875
+      ],
+      "reason": "not-yet-supported: CF 285  401"
+    },
+    {
+      "page": 14,
+      "rect": [
+        271.44000244140625,
+        568.9409790039062,
+        282.239990234375,
+        579.740966796875
+      ],
+      "reason": "not-yet-supported: CF 285  402"
+    },
+    {
+      "page": 14,
+      "rect": [
+        298.79998779296875,
+        562.3200073242188,
+        434.1600036621094,
+        586.7999877929688
+      ],
+      "reason": "not-yet-supported: CF 285  403"
+    },
+    {
+      "page": 14,
+      "rect": [
+        437.760009765625,
+        568,
+        495.3599853515625,
+        578.7999877929688
+      ],
+      "reason": "not-yet-supported: CF 285  404"
+    },
+    {
+      "page": 14,
+      "rect": [
+        495.7200012207031,
+        568.0800170898438,
+        576.719970703125,
+        578.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  405"
+    },
+    {
+      "page": 14,
+      "rect": [
+        216,
+        610.3599853515625,
+        229.67999267578125,
+        619.719970703125
+      ],
+      "reason": "not-yet-supported: CF 285  406"
+    },
+    {
+      "page": 14,
+      "rect": [
+        239.75999450683594,
+        598.655029296875,
+        250.55999755859375,
+        609.4550170898438
+      ],
+      "reason": "not-yet-supported: CF 285  408"
+    },
+    {
+      "page": 14,
+      "rect": [
+        272.1600036621094,
+        598.375,
+        282.9599914550781,
+        609.1749877929688
+      ],
+      "reason": "not-yet-supported: CF 285  409"
+    },
+    {
+      "page": 14,
+      "rect": [
+        298.44000244140625,
+        586.0800170898438,
+        434.1600036621094,
+        622.0800170898438
+      ],
+      "reason": "not-yet-supported: CF 285  4010"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.79998779296875,
+        596.1600341796875,
+        576,
+        606.9600219726562
+      ],
+      "reason": "not-yet-supported: CF 285  411"
+    },
+    {
+      "page": 14,
+      "rect": [
+        176.39999389648438,
+        624.239990234375,
+        190.0800018310547,
+        640.0800170898438
+      ],
+      "reason": "not-yet-supported: CF 285  412"
+    },
+    {
+      "page": 14,
+      "rect": [
+        240.0399932861328,
+        625.8209838867188,
+        250.83999633789062,
+        636.6209716796875
+      ],
+      "reason": "not-yet-supported: CF 285  413"
+    },
+    {
+      "page": 14,
+      "rect": [
+        270.7200012207031,
+        625.541015625,
+        281.5199890136719,
+        636.3410034179688
+      ],
+      "reason": "not-yet-supported: CF 285  414"
+    },
+    {
+      "page": 14,
+      "rect": [
+        298.44000244140625,
+        622.0800170898438,
+        434.1600036621094,
+        641.52001953125
+      ],
+      "reason": "not-yet-supported: CF 285  415"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.79998779296875,
+        625.239990234375,
+        576,
+        636.0399780273438
+      ],
+      "reason": "not-yet-supported: CF 285  416"
+    },
+    {
+      "page": 14,
+      "rect": [
+        194.39999389648438,
+        642.9600219726562,
+        208.0800018310547,
+        658.7999877929688
+      ],
+      "reason": "not-yet-supported: CF 285  417"
+    },
+    {
+      "page": 14,
+      "rect": [
+        239.75999450683594,
+        645.9810180664062,
+        250.55999755859375,
+        656.781005859375
+      ],
+      "reason": "not-yet-supported: CF 285  418"
+    },
+    {
+      "page": 14,
+      "rect": [
+        271.44000244140625,
+        645.9810180664062,
+        282.239990234375,
+        656.781005859375
+      ],
+      "reason": "not-yet-supported: CF 285  419"
+    },
+    {
+      "page": 14,
+      "rect": [
+        298.5199890136719,
+        641.52001953125,
+        433.1600036621094,
+        661.6799926757812
+      ],
+      "reason": "not-yet-supported: CF 285  420"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.79998779296875,
+        645.9600219726562,
+        576,
+        656.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  421"
+    },
+    {
+      "page": 14,
+      "rect": [
+        203.75999450683594,
+        663.1199951171875,
+        217.44000244140625,
+        675
+      ],
+      "reason": "not-yet-supported: CF 285  422"
+    },
+    {
+      "page": 14,
+      "rect": [
+        239.75999450683594,
+        666.1409912109375,
+        250.55999755859375,
+        676.9409790039062
+      ],
+      "reason": "not-yet-supported: CF 285  423"
+    },
+    {
+      "page": 14,
+      "rect": [
+        270.7200012207031,
+        666.8610229492188,
+        281.5199890136719,
+        677.6610107421875
+      ],
+      "reason": "not-yet-supported: CF 285  424"
+    },
+    {
+      "page": 14,
+      "rect": [
+        298.44000244140625,
+        660.9600219726562,
+        432.7200012207031,
+        681.8399658203125
+      ],
+      "reason": "not-yet-supported: CF 285  425"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.44000244140625,
+        665.5599975585938,
+        575.280029296875,
+        676.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  426"
+    },
+    {
+      "page": 14,
+      "rect": [
+        38.15999984741211,
+        705.97998046875,
+        48.959999084472656,
+        716.780029296875
+      ],
+      "reason": "not-yet-supported: CF 285  427"
+    },
+    {
+      "page": 14,
+      "rect": [
+        68.4000015258789,
+        705.97998046875,
+        79.19999694824219,
+        716.780029296875
+      ],
+      "reason": "not-yet-supported: CF 285  429"
+    },
+    {
+      "page": 14,
+      "rect": [
+        299.5199890136719,
+        691.9199829101562,
+        434.1600036621094,
+        719.280029296875
+      ],
+      "reason": "not-yet-supported: CF 285  430"
+    },
+    {
+      "page": 14,
+      "rect": [
+        438.4800109863281,
+        703.280029296875,
+        496.0799865722656,
+        714.0800170898438
+      ],
+      "reason": "not-yet-supported: CF 285  407"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.44000244140625,
+        703.5599975585938,
+        575.280029296875,
+        714.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  431"
+    },
+    {
+      "page": 14,
+      "rect": [
+        111.87999725341797,
+        735.4400024414062,
+        122.68000030517578,
+        746.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  428"
+    },
+    {
+      "page": 14,
+      "rect": [
+        144.44000244140625,
+        736.3200073242188,
+        155.24000549316406,
+        747.1199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  433"
+    },
+    {
+      "page": 15,
+      "rect": [
+        104.4000015258789,
+        77.03997802734375,
+        115.19999694824219,
+        87.84002685546875
+      ],
+      "reason": "not-yet-supported: CF 285  434"
+    },
+    {
+      "page": 15,
+      "rect": [
+        135,
+        77.760009765625,
+        145.8000030517578,
+        88.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  435"
+    },
+    {
+      "page": 15,
+      "rect": [
+        36.279998779296875,
+        133.55999755859375,
+        47.08000183105469,
+        144.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  436"
+    },
+    {
+      "page": 15,
+      "rect": [
+        36.279998779296875,
+        147.5999755859375,
+        47.08000183105469,
+        158.92401123046875
+      ],
+      "reason": "not-yet-supported: CF 285  437"
+    },
+    {
+      "page": 15,
+      "rect": [
+        36.279998779296875,
+        171.3599853515625,
+        47.08000183105469,
+        182.15997314453125
+      ],
+      "reason": "not-yet-supported: CF 285  438"
+    },
+    {
+      "page": 15,
+      "rect": [
+        36.279998779296875,
+        185.760009765625,
+        47.08000183105469,
+        196.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  439"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.27999877929688,
+        133.47998046875,
+        208.0800018310547,
+        144.280029296875
+      ],
+      "reason": "not-yet-supported: CF 285  440"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.27999877929688,
+        154.79998779296875,
+        208.0800018310547,
+        165.5999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  441"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.27999877929688,
+        167.760009765625,
+        208.0800018310547,
+        178.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  442"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.27999877929688,
+        189.3599853515625,
+        208.0800018310547,
+        200.15997314453125
+      ],
+      "reason": "not-yet-supported: CF 285  443"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.27999877929688,
+        211.67999267578125,
+        208.0800018310547,
+        222.47998046875
+      ],
+      "reason": "not-yet-supported: CF 285  444"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.1600036621094,
+        132.47998046875,
+        408.9599914550781,
+        143.280029296875
+      ],
+      "reason": "not-yet-supported: CF 285  445"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.1600036621094,
+        164.15997314453125,
+        408.9599914550781,
+        174.96002197265625
+      ],
+      "reason": "not-yet-supported: CF 285  446"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.1600036621094,
+        185.760009765625,
+        408.9599914550781,
+        196.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  447"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.1600036621094,
+        208.79998779296875,
+        408.9599914550781,
+        219.5999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  448"
+    },
+    {
+      "page": 15,
+      "rect": [
+        37.279998779296875,
+        274.32000732421875,
+        185.60000610351562,
+        306.7200012207031
+      ],
+      "reason": "not-yet-supported: CF 285  449"
+    },
+    {
+      "page": 15,
+      "rect": [
+        190.25999450683594,
+        283.5,
+        238.5,
+        299.3399963378906
+      ],
+      "reason": "not-yet-supported: CF 285  450"
+    },
+    {
+      "page": 15,
+      "rect": [
+        239.0399932861328,
+        284.7720031738281,
+        311.0400085449219,
+        300.61199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  451"
+    },
+    {
+      "page": 15,
+      "rect": [
+        311.760009765625,
+        274.5,
+        416.8800048828125,
+        306.7200012207031
+      ],
+      "reason": "not-yet-supported: CF 285  452"
+    },
+    {
+      "page": 15,
+      "rect": [
+        468.2799987792969,
+        274.5,
+        577.719970703125,
+        290.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  453"
+    },
+    {
+      "page": 15,
+      "rect": [
+        468.2799987792969,
+        290.1600036621094,
+        577.719970703125,
+        307.44000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  454"
+    },
+    {
+      "page": 15,
+      "rect": [
+        37.279998779296875,
+        307.1600036621094,
+        185.60000610351562,
+        339.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  455"
+    },
+    {
+      "page": 15,
+      "rect": [
+        190.5399932861328,
+        316.3399963378906,
+        238.77999877929688,
+        332.17999267578125
+      ],
+      "reason": "not-yet-supported: CF 285  456"
+    },
+    {
+      "page": 15,
+      "rect": [
+        239.32000732421875,
+        317.61199951171875,
+        311.32000732421875,
+        333.4519958496094
+      ],
+      "reason": "not-yet-supported: CF 285  457"
+    },
+    {
+      "page": 15,
+      "rect": [
+        312.0400085449219,
+        307.3399963378906,
+        417.1600036621094,
+        339.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  458"
+    },
+    {
+      "page": 15,
+      "rect": [
+        468.2799987792969,
+        307.3399963378906,
+        577.719970703125,
+        323.7200012207031
+      ],
+      "reason": "not-yet-supported: CF 285  459"
+    },
+    {
+      "page": 15,
+      "rect": [
+        468.2799987792969,
+        323,
+        577.719970703125,
+        340.2799987792969
+      ],
+      "reason": "not-yet-supported: CF 285  460"
+    },
+    {
+      "page": 15,
+      "rect": [
+        37.279998779296875,
+        340.3800048828125,
+        185.60000610351562,
+        372.7799987792969
+      ],
+      "reason": "not-yet-supported: CF 285  461"
+    },
+    {
+      "page": 15,
+      "rect": [
+        190.25999450683594,
+        349.55999755859375,
+        238.5,
+        365.3999938964844
+      ],
+      "reason": "not-yet-supported: CF 285  462"
+    },
+    {
+      "page": 15,
+      "rect": [
+        239.0399932861328,
+        350.8320007324219,
+        311.0400085449219,
+        366.6719970703125
+      ],
+      "reason": "not-yet-supported: CF 285  463"
+    },
+    {
+      "page": 15,
+      "rect": [
+        311.760009765625,
+        340.55999755859375,
+        416.8800048828125,
+        372.7799987792969
+      ],
+      "reason": "not-yet-supported: CF 285  464"
+    },
+    {
+      "page": 15,
+      "rect": [
+        468.2799987792969,
+        340.55999755859375,
+        577.719970703125,
+        356.94000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  465"
+    },
+    {
+      "page": 15,
+      "rect": [
+        468.2799987792969,
+        356.2200012207031,
+        577.719970703125,
+        373.5
+      ],
+      "reason": "not-yet-supported: CF 285  466"
+    },
+    {
+      "page": 15,
+      "rect": [
+        37.279998779296875,
+        373.67999267578125,
+        185.60000610351562,
+        406.0799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  467"
+    },
+    {
+      "page": 15,
+      "rect": [
+        189.5399932861328,
+        382.8599853515625,
+        237.77999877929688,
+        398.70001220703125
+      ],
+      "reason": "not-yet-supported: CF 285  468"
+    },
+    {
+      "page": 15,
+      "rect": [
+        238.32000732421875,
+        384.1319885253906,
+        310.32000732421875,
+        399.97198486328125
+      ],
+      "reason": "not-yet-supported: CF 285  469"
+    },
+    {
+      "page": 15,
+      "rect": [
+        311.0400085449219,
+        373.8599853515625,
+        416.1600036621094,
+        406.0799865722656
+      ],
+      "reason": "not-yet-supported: CF 285  470"
+    },
+    {
+      "page": 15,
+      "rect": [
+        468.2799987792969,
+        373.8599853515625,
+        577.719970703125,
+        390.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  471"
+    },
+    {
+      "page": 15,
+      "rect": [
+        468.2799987792969,
+        389.5199890136719,
+        577.719970703125,
+        406.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  472"
+    },
+    {
+      "page": 15,
+      "rect": [
+        515.52001953125,
+        417.3399963378906,
+        526.3200073242188,
+        428.1400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  473"
+    },
+    {
+      "page": 15,
+      "rect": [
+        547,
+        415.8599853515625,
+        557.7999877929688,
+        426.6600036621094
+      ],
+      "reason": "not-yet-supported: CF 285  474"
+    },
+    {
+      "page": 15,
+      "rect": [
+        41.040000915527344,
+        476.6400146484375,
+        295.20001220703125,
+        490.5
+      ],
+      "reason": "not-yet-supported: CF 285  475"
+    },
+    {
+      "page": 15,
+      "rect": [
+        299.3399963378906,
+        476.6400146484375,
+        576,
+        490.32000732421875
+      ],
+      "reason": "not-yet-supported: CF 285  476"
+    },
+    {
+      "page": 15,
+      "rect": [
+        40.599998474121094,
+        499.5,
+        294.760009765625,
+        511.9200134277344
+      ],
+      "reason": "not-yet-supported: CF 285  477"
+    },
+    {
+      "page": 15,
+      "rect": [
+        298.79998779296875,
+        498.9599914550781,
+        575.4600219726562,
+        511.9200134277344
+      ],
+      "reason": "not-yet-supported: CF 285  478"
+    },
+    {
+      "page": 15,
+      "rect": [
+        496.3599853515625,
+        515.98095703125,
+        507.1600036621094,
+        526.781005859375
+      ],
+      "reason": "not-yet-supported: CF 285  479"
+    },
+    {
+      "page": 15,
+      "rect": [
+        528.9199829101562,
+        515.98095703125,
+        539.719970703125,
+        526.781005859375
+      ],
+      "reason": "not-yet-supported: CF 285  480"
+    },
+    {
+      "page": 15,
+      "rect": [
+        37.439998626708984,
+        630.719970703125,
+        216.72000122070312,
+        660.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  481"
+    },
+    {
+      "page": 15,
+      "rect": [
+        216.72000122070312,
+        631.4400024414062,
+        457.20001220703125,
+        659.52001953125
+      ],
+      "reason": "not-yet-supported: CF 285  482"
+    },
+    {
+      "page": 15,
+      "rect": [
+        457.20001220703125,
+        630.719970703125,
+        576,
+        660.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  483"
+    },
+    {
+      "page": 15,
+      "rect": [
+        37.439998626708984,
+        660.9600219726562,
+        216.72000122070312,
+        689.4000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  484"
+    },
+    {
+      "page": 15,
+      "rect": [
+        216.72000122070312,
+        660.9600219726562,
+        456.4800109863281,
+        690.1199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  485"
+    },
+    {
+      "page": 15,
+      "rect": [
+        457.20001220703125,
+        660.9600219726562,
+        577.4400024414062,
+        690.1199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  486"
+    },
+    {
+      "page": 15,
+      "rect": [
+        187.1999969482422,
+        705.9000244140625,
+        198,
+        716.7000122070312
+      ],
+      "reason": "not-yet-supported: CF 285  487"
+    },
+    {
+      "page": 15,
+      "rect": [
+        219.60000610351562,
+        706.0800170898438,
+        230.39999389648438,
+        716.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  488"
+    },
+    {
+      "page": 15,
+      "rect": [
+        38.15999984741211,
+        735.8400268554688,
+        573.8400268554688,
+        753.47998046875
+      ],
+      "reason": "not-yet-supported: CF 285  489"
+    },
+    {
+      "page": 16,
+      "rect": [
+        115.4800033569336,
+        75.4000244140625,
+        126.27999877929688,
+        86.20001220703125
+      ],
+      "reason": "not-yet-supported: CF 285  490"
+    },
+    {
+      "page": 16,
+      "rect": [
+        146.60000610351562,
+        75.1199951171875,
+        157.39999389648438,
+        85.91998291015625
+      ],
+      "reason": "not-yet-supported: CF 285  491"
+    },
+    {
+      "page": 16,
+      "rect": [
+        331.9200134277344,
+        329.6600036621094,
+        388.44000244140625,
+        346.3999938964844
+      ],
+      "reason": "not-yet-supported: CF 285  5022"
+    },
+    {
+      "page": 16,
+      "rect": [
+        389.5199890136719,
+        322.4599914550781,
+        575.280029296875,
+        352.70001220703125
+      ],
+      "reason": "not-yet-supported: CF 285  5023"
+    },
+    {
+      "page": 16,
+      "rect": [
+        389.5199890136719,
+        291.5,
+        575.280029296875,
+        321.739990234375
+      ],
+      "reason": "not-yet-supported: CF 285  5019"
+    },
+    {
+      "page": 16,
+      "rect": [
+        389.5199890136719,
+        260.82000732421875,
+        575.280029296875,
+        291.05999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  5015"
+    },
+    {
+      "page": 16,
+      "rect": [
+        389.5199890136719,
+        229.67999267578125,
+        575.280029296875,
+        259.91998291015625
+      ],
+      "reason": "not-yet-supported: CF 285  5011"
+    },
+    {
+      "page": 16,
+      "rect": [
+        331.9200134277344,
+        236.8800048828125,
+        388.44000244140625,
+        253.6199951171875
+      ],
+      "reason": "not-yet-supported: CF 285  5010"
+    },
+    {
+      "page": 16,
+      "rect": [
+        331.9200134277344,
+        268.02001953125,
+        388.44000244140625,
+        284.760009765625
+      ],
+      "reason": "not-yet-supported: CF 285  5014"
+    },
+    {
+      "page": 16,
+      "rect": [
+        331.9200134277344,
+        298.70001220703125,
+        388.44000244140625,
+        315.44000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  5018"
+    },
+    {
+      "page": 16,
+      "rect": [
+        189,
+        322.2799987792969,
+        327.9599914550781,
+        352.5199890136719
+      ],
+      "reason": "not-yet-supported: CF 285  5021"
+    },
+    {
+      "page": 16,
+      "rect": [
+        189.44000244140625,
+        291.32000732421875,
+        328.3999938964844,
+        321.55999755859375
+      ],
+      "reason": "not-yet-supported: CF 285  5017"
+    },
+    {
+      "page": 16,
+      "rect": [
+        189,
+        260.6400146484375,
+        327.9599914550781,
+        290.8800048828125
+      ],
+      "reason": "not-yet-supported: CF 285  5013"
+    },
+    {
+      "page": 16,
+      "rect": [
+        189,
+        229.5,
+        327.9599914550781,
+        259.739990234375
+      ],
+      "reason": "not-yet-supported: CF 285  509"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.720001220703125,
+        230.4000244140625,
+        189.72000122070312,
+        260.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  505"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.720001220703125,
+        261.53997802734375,
+        189.72000122070312,
+        291.7799987792969
+      ],
+      "reason": "not-yet-supported: CF 285  5012"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.720001220703125,
+        292.2200012207031,
+        189.72000122070312,
+        322.4599914550781
+      ],
+      "reason": "not-yet-supported: CF 285  5016"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.720001220703125,
+        323.17999267578125,
+        189.72000122070312,
+        353.4200134277344
+      ],
+      "reason": "not-yet-supported: CF 285  5020"
+    },
+    {
+      "page": 16,
+      "rect": [
+        112.31999969482422,
+        374.3999938964844,
+        123.12000274658203,
+        385.20001220703125
+      ],
+      "reason": "not-yet-supported: CF 285  521"
+    },
+    {
+      "page": 16,
+      "rect": [
+        144.72000122070312,
+        374.3999938964844,
+        155.52000427246094,
+        385.20001220703125
+      ],
+      "reason": "not-yet-supported: CF 285  522"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.279998779296875,
+        105.84002685546875,
+        47.08000183105469,
+        116.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  492"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.279998779296875,
+        117,
+        47.08000183105469,
+        127.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  493"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.279998779296875,
+        128.15997314453125,
+        47.08000183105469,
+        138.96002197265625
+      ],
+      "reason": "not-yet-supported: CF 285  494"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.279998779296875,
+        139.5,
+        47.08000183105469,
+        150.29998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  495"
+    },
+    {
+      "page": 16,
+      "rect": [
+        233.27999877929688,
+        105.84002685546875,
+        244.0800018310547,
+        116.6400146484375
+      ],
+      "reason": "not-yet-supported: CF 285  496"
+    },
+    {
+      "page": 16,
+      "rect": [
+        233.27999877929688,
+        117,
+        244.0800018310547,
+        127.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  497"
+    },
+    {
+      "page": 16,
+      "rect": [
+        233.27999877929688,
+        128.15997314453125,
+        244.0800018310547,
+        138.96002197265625
+      ],
+      "reason": "not-yet-supported: CF 285  498"
+    },
+    {
+      "page": 16,
+      "rect": [
+        233.27999877929688,
+        139.67999267578125,
+        244.0800018310547,
+        150.47998046875
+      ],
+      "reason": "not-yet-supported: CF 285  499"
+    },
+    {
+      "page": 16,
+      "rect": [
+        423,
+        106.20001220703125,
+        433.79998779296875,
+        117
+      ],
+      "reason": "not-yet-supported: CF 285  500"
+    },
+    {
+      "page": 16,
+      "rect": [
+        423,
+        117,
+        433.79998779296875,
+        127.79998779296875
+      ],
+      "reason": "not-yet-supported: CF 285  506"
+    },
+    {
+      "page": 16,
+      "rect": [
+        423,
+        128.70001220703125,
+        433.79998779296875,
+        139.5
+      ],
+      "reason": "not-yet-supported: CF 285  507"
+    },
+    {
+      "page": 16,
+      "rect": [
+        468.7200012207031,
+        130.32000732421875,
+        576.719970703125,
+        140.19000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  508"
+    },
+    {
+      "page": 16,
+      "rect": [
+        105.4800033569336,
+        446.8399963378906,
+        394.55999755859375,
+        458.3599853515625
+      ],
+      "reason": "not-yet-supported: CF 285  525"
+    },
+    {
+      "page": 16,
+      "rect": [
+        102.95999908447266,
+        503.2799987792969,
+        392.3999938964844,
+        516.239990234375
+      ],
+      "reason": "not-yet-supported: CF 285  528"
+    },
+    {
+      "page": 16,
+      "rect": [
+        105.12000274658203,
+        562.5,
+        396.7200012207031,
+        575.25
+      ],
+      "reason": "not-yet-supported: CF 285  531"
+    },
+    {
+      "page": 16,
+      "rect": [
+        105.12000274658203,
+        682.1199951171875,
+        392.3999938964844,
+        693.9000244140625
+      ],
+      "reason": "not-yet-supported: CF 285  537"
+    },
+    {
+      "page": 16,
+      "rect": [
+        104.4000015258789,
+        740.1599731445312,
+        393.8399963378906,
+        751.6799926757812
+      ],
+      "reason": "not-yet-supported: CF 285  540"
+    },
+    {
+      "page": 16,
+      "rect": [
+        104.33000183105469,
+        621.3599853515625,
+        393.1199951171875,
+        634.0399780273438
+      ],
+      "reason": "not-yet-supported: CF 285  534"
+    },
+    {
+      "page": 16,
+      "rect": [
+        519.8400268554688,
+        430.84100341796875,
+        530.6400146484375,
+        441.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  523"
+    },
+    {
+      "page": 16,
+      "rect": [
+        551.7000122070312,
+        430.84100341796875,
+        562.5,
+        441.6409912109375
+      ],
+      "reason": "not-yet-supported: CF 285  524"
+    },
+    {
+      "page": 16,
+      "rect": [
+        519.1199951171875,
+        489.1610107421875,
+        529.9199829101562,
+        499.96099853515625
+      ],
+      "reason": "not-yet-supported: CF 285  526"
+    },
+    {
+      "page": 16,
+      "rect": [
+        550.7999877929688,
+        488.4410095214844,
+        561.5999755859375,
+        499.2409973144531
+      ],
+      "reason": "not-yet-supported: CF 285  527"
+    },
+    {
+      "page": 16,
+      "rect": [
+        520.2000122070312,
+        548.2009887695312,
+        531,
+        559.0009765625
+      ],
+      "reason": "not-yet-supported: CF 285  529"
+    },
+    {
+      "page": 16,
+      "rect": [
+        552.239990234375,
+        548.9210205078125,
+        563.0399780273438,
+        559.7210083007812
+      ],
+      "reason": "not-yet-supported: CF 285  530"
+    },
+    {
+      "page": 16,
+      "rect": [
+        519.1199951171875,
+        607.9609985351562,
+        529.9199829101562,
+        618.760986328125
+      ],
+      "reason": "not-yet-supported: CF 285  532"
+    },
+    {
+      "page": 16,
+      "rect": [
+        550.7999877929688,
+        607.9609985351562,
+        561.5999755859375,
+        618.760986328125
+      ],
+      "reason": "not-yet-supported: CF 285  533"
+    },
+    {
+      "page": 16,
+      "rect": [
+        519.4000244140625,
+        666.1010131835938,
+        530.2000122070312,
+        676.9010009765625
+      ],
+      "reason": "not-yet-supported: CF 285  535"
+    },
+    {
+      "page": 16,
+      "rect": [
+        551.7000122070312,
+        665.5609741210938,
+        562.5,
+        676.3610229492188
+      ],
+      "reason": "not-yet-supported: CF 285  536"
+    },
+    {
+      "page": 16,
+      "rect": [
+        521.280029296875,
+        724.6011962890625,
+        532.0800170898438,
+        735.4011840820312
+      ],
+      "reason": "not-yet-supported: CF 285  538"
+    },
+    {
+      "page": 16,
+      "rect": [
+        551.7000122070312,
+        724.6011962890625,
+        562.5,
+        735.4011840820312
+      ],
+      "reason": "not-yet-supported: CF 285  539"
+    },
+    {
+      "page": 18,
+      "rect": [
+        32.40570068359375,
+        70.53802490234375,
+        573.125,
+        614.8580322265625
+      ],
+      "reason": "manual-only: CF 285  542"
+    },
+    {
+      "page": 18,
+      "rect": [
+        511.20001220703125,
+        706.5,
+        522,
+        717.2999877929688
+      ],
+      "reason": "manual-only: CF 285  545"
+    },
+    {
+      "page": 18,
+      "rect": [
+        544.5,
+        707.0399780273438,
+        555.2999877929688,
+        717.8399658203125
+      ],
+      "reason": "manual-only: CF 285  546"
+    },
+    {
+      "page": 18,
+      "rect": [
+        511.9200134277344,
+        738.719970703125,
+        526.719970703125,
+        749.52001953125
+      ],
+      "reason": "manual-only: CF 285  548"
+    },
+    {
+      "page": 18,
+      "rect": [
+        545.760009765625,
+        738,
+        556.5599975585938,
+        748.7999877929688
+      ],
+      "reason": "manual-only: CF 285  549"
+    },
+    {
+      "page": 18,
+      "rect": [
+        511.59100341796875,
+        677.5830078125,
+        523.3070068359375,
+        687.72900390625
+      ],
+      "reason": "manual-only: Check Box1 - 1st yes"
+    },
+    {
+      "page": 18,
+      "rect": [
+        546.6740112304688,
+        677.5830078125,
+        555.7730102539062,
+        688.2520141601562
+      ],
+      "reason": "manual-only: Check Box2 - 1st no"
+    }
+  ],
+  "coordinateContract": "one-based pages, unrotated top-left PDF points; browser converts from bottom-left MediaBox",
+  "coverageComplete": false,
+  "continuation": "Unsupported overflow is reported for manual completion; no extra pages are silently copied.",
+  "developerFixtures": {
+    "cf285-one-person": "edf818842e83204e32aa8bd75f7761ad63363511c52ee9ff7b4e6531c7227b23",
+    "cf285-multiple-people": "93edb6c5a4b969bc356143ce5dfb360c0c9eeb2198076e91412b5fb553b1e29c",
+    "cf285-no-income": "ab6abbe0a145e1dd45a8b3713099aca661fac4c92e8210d6d2f9416ef63a425c",
+    "cf285-multiple-income": "f4d72391333c22567b4b2d3ac606b8e152bfcdae43fc4a25c3c4dd18eeb86dc6",
+    "cf285-conditional": "ac356846237b5b71e2e90d91a2a90bd30503b14963f5a09441daa39d91e892ad",
+    "cf285-declined": "543def9c7755860ee33ef06707e0651ac3d4d33726afea7e7e2b22fcd2e1cbef",
+    "cf285-long-unicode": "4d74810256cb0dad73abcb864b98aad0629820853314cfaa1221b468800e8174",
+    "cf285-overflow": "050f54e1583e156bf4707564c94d54cdef299fd2261ae005cbc180e97dcd204b"
+  }
+}
