@@ -1,2 +1,2 @@
-77f0c89f6a3fa41dab76e8964054e78b8a23821337a6fad250222173d4565e30  benefitstep-0.3.2-chrome-store.zip
-8e33d0a9d8e6c0ae8602f8253a4c2d17563a0f9804b79609bf6d3c3ed96acd61  benefitstep-0.3.2-store-assets.zip
+710bdd7419c33649bcb8ace6b3ae950bdf6d250cb1bd24ed9ca90fb31b6e05e2  benefitstep-0.3.2-chrome-store.zip
+c254220ef8acf908fdec383be6c2bdd80b2358ef600e2edee18982d01d112183  benefitstep-0.3.2-store-assets.zip
