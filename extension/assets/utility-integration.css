@@ -50,3 +50,5 @@ body{background:var(--page)}.topbar{background:white;border-bottom:1px solid var
 .language-control select { width: auto; min-width: 90px; min-height: 36px; padding: 5px 22px 5px 8px; font-size: 13px; }
 .translation-notice { font-size: 13px; line-height: 1.5; padding: 10px 12px; margin: 12px 0 0; background: var(--surface); border-left: 3px solid var(--primary); }
 @media (max-width: 500px) { .language-control { flex-direction: column; align-items: flex-start; gap: 0; } .topbar-inner { min-height: 72px; } .header-actions { gap: 8px; } }
+
+.household-access{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--divider);padding:14px 0}.household-access p{margin:4px 0 0;overflow-wrap:anywhere}.household-access>div{min-width:0;flex:1 1 160px}.household-access .btn{white-space:normal}

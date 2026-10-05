@@ -15,7 +15,7 @@ Prepare your benefits application package with a quick check, document review an
 
 **Download before closing or reloading.** Your work is temporary. Downloaded drafts may still have unresolved items; complete missing answers and signatures before submitting through the official application process. BenefitStep does not submit for you. Never submit fictional example documents.
 
-The `extension/` directory contains the current **multilingual and household-review development preview**. The archived **v0.3.2 Chrome Web Store submission candidate** and its publication materials remain in `releases/`. Development tools and training data are maintained separately.
+This repository contains the **v0.3.4 Chrome Web Store submission candidate**, installable extension and release records. Earlier release packages and listing materials remain in `releases/`. Development tools and training data are maintained separately.
 
 ## Install locally
 
@@ -24,13 +24,13 @@ The `extension/` directory contains the current **multilingual and household-rev
 3. Enable **Developer mode**, select **Load unpacked**, and choose the [`extension/`](extension/) directory.
 4. Pin BenefitStep and open its side panel.
 
-No build command, Node.js, Python, server or account is required. For the archived v0.3.2 candidate, unzip the [extension release ZIP](releases/chrome-store-0.3.2/benefitstep-0.3.2-chrome-store.zip) and load its extracted folder.
+No build command, Node.js, Python, server or account is required. Alternatively, unzip the [extension release ZIP](releases/chrome-store-0.3.4/benefitstep-0.3.4-chrome-store.zip) and load its extracted folder.
 
 ## Multilingual and household-review preview
 
 Use **Language / 语言** to switch between English, Spanish and Simplified Chinese. Draft translations cover the main workflow; some detailed explanations and official PDFs remain English.
 
-In Documents or Review, choose **Enter household details** to enter your name, California address and household members. Source checks compare recipient names, recipient/service addresses and dates before using financial details. Records outside the adjustable recent-document window (initially 90 days) are unusable for current preparation. This window is a local preparation setting, not an agency acceptance rule. Source corrections preserve original documents. Saving your own household removes explicitly marked fictional demo sources and questionnaire answers.
+Choose **Enter household details**, then use the persistent **Edit household details** control on any workflow screen to enter your name, California address and household members. Source checks compare recipient names, recipient/service addresses and dates before using financial details. Records outside the adjustable recent-document window (initially 90 days) are unusable for current preparation. This window is a local preparation setting, not an agency acceptance rule. Source corrections preserve original documents. Saving your own household removes explicitly marked fictional demo sources and questionnaire answers.
 
 Try the fictional [Alex Demo test pack](demo/test_example2/README.md), importing only its `pdfs/` folder. Image values still need visual confirmation; GIFs use the first frame only. See [coverage and limitations](MULTILINGUAL_INTEGRATION.md).
 
@@ -38,19 +38,22 @@ Validation: the development suite passed 277 tests. Offline installed-extension 
 
 ## Chrome Web Store submission
 
-Upload only **[benefitstep-0.3.2-chrome-store.zip](releases/chrome-store-0.3.2/benefitstep-0.3.2-chrome-store.zip)** as the extension package.
+Upload only **[benefitstep-0.3.4-chrome-store.zip](releases/chrome-store-0.3.4/benefitstep-0.3.4-chrome-store.zip)** as the extension package.
 
-The [store materials](releases/chrome-store-0.3.2/store-assets/) include screenshots, icons, promotional images, listing text, the privacy policy and reviewer instructions. Follow the [submission checklist](releases/chrome-store-0.3.2/store-assets/SUBMISSION-CHECKLIST.md). The [store-assets ZIP](releases/chrome-store-0.3.2/benefitstep-0.3.2-store-assets.zip) is for listing preparation, not installation.
+The existing 0.3.2 [store materials](releases/chrome-store-0.3.2/store-assets/) include screenshots, icons, promotional images, listing text, the privacy policy and reviewer instructions. Follow the [submission checklist](releases/chrome-store-0.3.2/store-assets/SUBMISSION-CHECKLIST.md). The [store-assets ZIP](releases/chrome-store-0.3.2/benefitstep-0.3.2-store-assets.zip) is for listing preparation, not installation.
+
+The existing screenshots predate the persistent household editor and need refreshing for 0.3.4.
 
 Publication still needs a publicly hosted privacy-policy URL, publisher/support details, dashboard declarations and store review. This candidate has not been approved by the Chrome Web Store.
 
 ## What is included
 
 - `extension/`: complete browser runtime, local document model, policy engine, PDF libraries, official templates, fonts and required assets/licenses.
-- `releases/chrome-store-0.3.2/`: upload ZIP, listing materials, checksums, validation records and release notes.
+- `releases/chrome-store-0.3.4/`: current upload ZIP, checksums, validation records and release notes.
+- `releases/chrome-store-0.3.2/`: earlier release and existing listing materials.
 - `LICENSE`: project license; bundled dependencies retain their own license notices.
 
-The current `extension/` preview includes changes beyond the archived v0.3.2 upload ZIP. Use Load unpacked to try the new functionality. Runtime JavaScript is included because Chrome needs it to run the extension.
+The `extension/` files match the current 0.3.4 upload ZIP. Use Load unpacked to try the new functionality. Runtime JavaScript is included because Chrome needs it to run the extension.
 
 ## Privacy and preview limits
 
@@ -58,4 +61,4 @@ Document processing and working answers stay in the extension; working data is t
 
 CalFresh and Medi-Cal outputs are **unsigned drafts**. Check the filled values and unresolved items before using them. Independent PDF mapping review remains incomplete. Fictional demo outputs must not be submitted. Preliminary screening is not an eligibility decision. BenefitStep is independent of BenefitsCal and government agencies.
 
-See [release notes](releases/chrome-store-0.3.2/RELEASE_NOTES.md) for validation and limitations.
+See [release notes](releases/chrome-store-0.3.4/RELEASE_NOTES.md) for validation and limitations.
