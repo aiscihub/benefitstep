@@ -1,3 +1,4 @@
+import {tr} from './i18n/ui.mjs';
 const names={pay_statement:'Pay statement',invoice_or_receipt:'Invoice or receipt',other_document:'Other document',unknown:'Unknown'};
 const reasons={unreadable_pages:'Needs readable text; this model cannot read scanned pages.',insufficient_text:'Not enough text to classify.',text_too_long:'Text exceeds this model’s limit.',below_threshold:'The model was uncertain and left the type unknown.',model_unavailable:'The classifier could not load. Available facts can still be reviewed.'};
 export function classificationBadge(result,esc){
@@ -10,5 +11,5 @@ export function classificationDetails(result,esc){
 }
 export function processingSummary(docs,facts){
  if(!docs.length)return '';
- return `<section class="card pad bs-processing" aria-label="Document review summary"><h2>Your document summary</h2><p><button class="help-button" data-action="to-confirm">${facts} candidate ${facts===1?'detail':'details'} to review</button></p><p>These are names, dates and amounts found in your documents. Open the details to check their values against the originals before confirming.</p></section>`;
+ return `<section class="card pad bs-processing" aria-label="Document review summary"><h2 data-i18n=ui99>Your document summary</h2><p><button class="help-button" data-action="to-confirm">${tr('{count} candidate details to review',{count:facts})}</button></p><p data-i18n=ui100>These are names, dates and amounts found in your documents. Open the details to check their values against the originals before confirming.</p></section>`;
 }

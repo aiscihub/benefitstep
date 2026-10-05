@@ -3,6 +3,7 @@ export const KINDS = ['paystub','rent','mortgage','utility','childcare','support
 export const SECTIONS = {paystub:'Income',rent:'Housing',mortgage:'Housing',utility:'Utilities',childcare:'Childcare',support:'Support',medical:'Medical',unknown:'Unsorted'};
 export const FIELD_DEFS = {
   business_receipts:['Business gross receipts','money'], award_amount:['Income award amount','money'], program_stated:['Program stated','text'], request_item:['Requested item','text'], stated_deadline:['Deadline wording','text'], notice_reason:['Administrative notice wording','text'],
+  home_address:['Home / service street address','text'], home_city:['Home / service city','text'], home_state:['Home / service state','text'], home_zip:['Home / service ZIP code','text'],
   person: ['Person named','text'], issuer:['Employer / issuer','text'],
   document_date:['Document date','date'], period_start:['Period start','date'], period_end:['Period end','date'],
   pay_date:['Payment date','date'], gross_pay:['Current gross pay','money'], net_pay:['Current take-home pay','money'],
@@ -32,6 +33,8 @@ export const ALLOWED_FIELDS = {
   coverage_notice:['person','issuer','document_date','program_stated','stated_deadline','notice_reason'],
   unknown:[]
 };
+// Household address fields must describe the recipient/service location, never the issuer.
+for(const kind of KINDS.filter(k=>k!=='unknown'))ALLOWED_FIELDS[kind].push('home_address','home_city','home_state','home_zip');
 export const EXPECTED = {paystub:['person','issuer','pay_date','gross_pay'],rent:['rent_amount'],mortgage:['mortgage_payment'],utility:['current_charges'],childcare:['amount_billed'],support:['amount_paid','support_direction'],medical:['patient_responsibility'],self_employment:['business_receipts'],income_award:['award_amount'],county_request:[],application_receipt:[],upload_receipt:[],coverage_notice:[],unknown:[]};
 export const LIMITS = {fileBytes:8_000_000,totalBytes:48_000_000,documents:24,pagesPerDocument:6,pixels:24_000_000,modelChars:24000,fields:32,modelResponse:14000};
 export function assertSafeString(s,max=400){if(typeof s!=='string'||s.length>max||/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u202a-\u202e\u2066-\u2069]/.test(s))throw new Error('Invalid or overlong text.');return s;}
@@ -67,10 +70,11 @@ export function validateExtraction(raw,pages,method='native-ai'){
   const fields=[];const rejected=[];const seen=new Set();
   for(const f of raw.fields){
     if(!keysExactly(f,['key','value','page','quote'])||typeof f.value!=='string')throw new Error('Unexpected field property.');
-    if(!ALLOWED_FIELDS[raw.kind].includes(f.key)||!Number.isInteger(f.page)||f.page<1||f.page>pages.length){rejected.push('Unsupported field or page.');continue;}
-    if(seen.has(f.key)){rejected.push('Conflicting repeated field: '+f.key);for(const v of fields)if(v.key===f.key)v.conflict=true;continue;}
+    if(!ALLOWED_FIELDS[raw.kind].includes(f.key)){rejected.push(`Field ${String(f.key).slice(0,80)} is not supported for ${raw.kind}; it was not used. Review the source and enter a supported detail manually.`);continue;}
+    if(!Number.isInteger(f.page)||f.page<1||f.page>pages.length){rejected.push(`${FIELD_DEFS[f.key][0]} references page ${String(f.page).slice(0,20)}, but this file has ${pages.length} page(s); it was not used.`);continue;}
+    if(seen.has(f.key)){const prior=fields.find(v=>v.key===f.key);if(prior&&normalizeValue(f.key,f.value)===prior.value)continue;rejected.push('Conflicting repeated field: '+f.key+' — check the different values on the source before using this detail.');for(const v of fields)if(v.key===f.key)v.conflict=true;continue;}
     seen.add(f.key);assertSafeString(f.quote,400);const value=normalizeValue(f.key,f.value);
-    if(value===null){rejected.push('Unusable value for '+f.key);continue;}
+    if(value===null){rejected.push(`Unusable value for ${f.key} (${FIELD_DEFS[f.key][0]}) on page ${f.page}: received “${f.value.slice(0,80)}”; ${FIELD_DEFS[f.key][1]==='date'?'a complete, unambiguous YYYY-MM-DD date is required': ['money','signed_money'].includes(FIELD_DEFS[f.key][1])?'a valid USD amount is required; unreadable values are not zero':'the value is missing or invalid'}. View the source and correct this detail.`);continue;}
     const page=pages[f.page-1];const exact=!!page.text&&page.text.includes(f.quote);
     if(page.text&&!exact){rejected.push('Source quote not found: '+f.key);continue;}
     // Text equality proves location, not semantic correctness. Image quotes are always unverified.
@@ -81,7 +85,7 @@ export function validateExtraction(raw,pages,method='native-ai'){
     if(exact&&FIELD_DEFS[f.key][1]==='date'&&!f.quote.includes(value)){rejected.push('Date normalization requires manual review: '+f.key);continue;}
     fields.push({...f,value,sourceValue:value,sourceVerified:exact,provenance:exact?'text-quote':'image-proposed',confirmed:false,conflict:false,method});
   }
-  const warnings=raw.warnings.map(x=>assertSafeString(x,240)).concat(rejected);
+  const warnings=raw.warnings.map(x=>assertSafeString(x,240)).concat([...new Set(rejected)]);
   if(raw.kind==='unknown')warnings.push('Document type not established. No eligibility facts inferred.');
   if(fields.some(f=>!f.sourceVerified))warnings.push('Image-derived values require visual confirmation; quote accuracy is not machine-verified.');
   return {kind:raw.kind,fields,warnings};

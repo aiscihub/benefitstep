@@ -2,6 +2,7 @@
 import {validateExtraction,ALLOWED_FIELDS} from './schema.mjs';
 export const LABELS={
  business_receipts:['Business gross receipts','Gross business receipts'],award_amount:['Award amount','Monthly benefit'],program_stated:['Program','Program stated'],request_item:['Requested item','Requested evidence'],stated_deadline:['Response deadline','Deadline'],notice_reason:['Administrative reason','Notice reason'],
+ home_address:['Home address','Service address','Residential address'],home_city:['Home city','Service city'],home_state:['Home state','Service state'],home_zip:['Home ZIP','Service ZIP'],
  person:['Employee','Tenant','Borrower','Customer','Child','Patient','Person','Recipient','Employee name','Account holder'],
  issuer:['Employer','Issuer','Landlord','Lender','Utility provider','Care provider','Medical provider','Provider'],
  document_date:['Document date','Statement date','Receipt date'],period_start:['Period start','Pay period start','Service start','Lease start'],period_end:['Period end','Pay period end','Service end','Lease end'],

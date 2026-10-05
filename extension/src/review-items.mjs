@@ -9,7 +9,7 @@ export function reviewItems(facts,findings){
  const separate=new Map();
  for(const finding of findings){
   const ids=[...new Set([finding.factId,...(finding.blockedFactIds||[])].filter(id=>byFact.has(id)))];
-  if(ids.length){for(const id of ids)byFact.get(id).findings.push(finding);continue;}
+  if(ids.length&&!finding.primary){for(const id of ids)byFact.get(id).findings.push(finding);continue;}
   const key=finding.requestId?'request:'+finding.requestId:finding.sourceIds?.length?'sources:'+finding.sourceIds.slice().sort().join('|'):'finding:'+finding.id;
   if(!separate.has(key))separate.set(key,{id:key,findings:[]});
   separate.get(key).findings.push(finding);

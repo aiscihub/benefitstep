@@ -1,0 +1,92 @@
+{
+  "fictional": true,
+  "referenceDate": "2026-10-05",
+  "household": {
+    "name": "Alex Demo",
+    "home_address": "123 Example Lane",
+    "home_city": "Sacramento",
+    "home_state": "CA",
+    "home_zip": "95814",
+    "members": "Morgan Demo\nRiley Demo",
+    "maxAgeDays": 90
+  },
+  "expected": [
+    {
+      "file": "01-alex-pay-statement.pdf",
+      "kind": "paystub",
+      "fields": {
+        "person": "Alex Demo",
+        "issuer": "Cedar Demo Workshop",
+        "home_address": "123 Example Lane",
+        "home_city": "Sacramento",
+        "home_state": "CA",
+        "home_zip": "95814",
+        "document_date": "2026-10-01",
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30",
+        "pay_date": "2026-10-01",
+        "pay_frequency": "monthly",
+        "gross_pay": "2550.00",
+        "net_pay": "2040.00",
+        "ytd_gross": "22950.00"
+      }
+    },
+    {
+      "file": "02-alex-rent-receipt.pdf",
+      "kind": "rent",
+      "fields": {
+        "person": "Alex Demo",
+        "issuer": "Example Lane Demo Rentals",
+        "home_address": "123 Example Lane",
+        "home_city": "Sacramento",
+        "home_state": "CA",
+        "home_zip": "95814",
+        "document_date": "2026-09-01",
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30",
+        "rent_amount": "1200.00",
+        "amount_paid": "1200.00",
+        "expense_frequency": "monthly"
+      }
+    },
+    {
+      "file": "03-alex-utility-statement.pdf",
+      "kind": "utility",
+      "fields": {
+        "person": "Alex Demo",
+        "issuer": "Sacramento Demo Energy",
+        "home_address": "123 Example Lane",
+        "home_city": "Sacramento",
+        "home_state": "CA",
+        "home_zip": "95814",
+        "document_date": "2026-10-02",
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30",
+        "current_charges": "140.00",
+        "prior_balance": "0.00",
+        "amount_due": "140.00",
+        "amount_paid": "140.00"
+      }
+    },
+    {
+      "file": "04-alex-childcare-receipt.pdf",
+      "kind": "childcare",
+      "fields": {
+        "person": "Alex Demo",
+        "issuer": "Example After-School Care",
+        "home_address": "123 Example Lane",
+        "home_city": "Sacramento",
+        "home_state": "CA",
+        "home_zip": "95814",
+        "document_date": "2026-10-02",
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30",
+        "amount_billed": "240.00",
+        "amount_paid": "240.00",
+        "expense_frequency": "monthly",
+        "service_description": "September after-school care for Riley Demo; paid by Alex Demo"
+      }
+    }
+  ],
+  "expectedDoctorFindings": 0
+}

@@ -28,7 +28,8 @@ export function adoptFact(data,state,target,id){const f=compatibleFacts(state,ta
 export function prefillApplication(data,state,map){
  const facts=state.facts.filter(f=>usable(f)&&f.value!==undefined&&String(f.value).trim()&&(!f.documentId||state.docs.some(d=>d.id===f.documentId&&!d.historical&&!d.duplicateOf)));
  const ref=f=>({id:f.id,revision:f.revision,documentId:f.documentId,person:f.person,period:f.period,page:f.page,meaning:f.fieldKey});
- const personNames=[...new Set(facts.map(f=>f.fieldKey==='person'?String(f.value):f.person).filter(v=>v&&v!=='Person not identified'))];
+ const contactFacts=facts.some(f=>f.householdProfile)?facts.filter(f=>f.householdProfile):facts;
+ const personNames=[...new Set(contactFacts.map(f=>f.fieldKey==='person'?String(f.value):f.person).filter(v=>v&&v!=='Person not identified'))];
  let count=0;
  const put=(groupId,row,field,candidates)=>{
   if(!map.bindings.some(b=>b.groupId===groupId&&b.row===row&&b.field===field))return;
@@ -46,9 +47,9 @@ export function prefillApplication(data,state,map){
  };
  const byKey=(fs,key)=>fs.filter(f=>f.fieldKey===key).map(f=>({value:f.value,facts:[f]}));
  if(data.formId==='cf285'){
-  put('q1.contact',0,'name',personNames.map(name=>({value:name,facts:facts.filter(f=>(f.fieldKey==='person'?String(f.value):f.person)===name)})));
+  put('q1.contact',0,'name',personNames.map(name=>({value:name,facts:contactFacts.filter(f=>(f.fieldKey==='person'?String(f.value):f.person)===name)})));
   for(const key of ['home_address','home_city','home_state','home_zip','mailing_address','mailing_city','mailing_state','mailing_zip','other_names','spoken_language','written_language']){
-   if(personNames.length===1)put('q1.contact',0,key,byKey(facts,key));
+   if(personNames.length===1)put('q1.contact',0,key,byKey(contactFacts,key));
   }
  }
  // Group earnings by confirmed person and employer, rather than by PDF. Two

@@ -15,7 +15,7 @@ Prepare your benefits application package with a quick check, document review an
 
 **Download before closing or reloading.** Your work is temporary. Downloaded drafts may still have unresolved items; complete missing answers and signatures before submitting through the official application process. BenefitStep does not submit for you. Never submit fictional example documents.
 
-This repository contains the **v0.3.2 Chrome Web Store submission candidate**, installable extension and publication materials. Development tools and training data are maintained separately.
+The `extension/` directory contains the current **multilingual and household-review development preview**. The archived **v0.3.2 Chrome Web Store submission candidate** and its publication materials remain in `releases/`. Development tools and training data are maintained separately.
 
 ## Install locally
 
@@ -24,7 +24,17 @@ This repository contains the **v0.3.2 Chrome Web Store submission candidate**, i
 3. Enable **Developer mode**, select **Load unpacked**, and choose the [`extension/`](extension/) directory.
 4. Pin BenefitStep and open its side panel.
 
-No build command, Node.js, Python, server or account is required. Alternatively, unzip the [extension release ZIP](releases/chrome-store-0.3.2/benefitstep-0.3.2-chrome-store.zip) and load its extracted folder.
+No build command, Node.js, Python, server or account is required. For the archived v0.3.2 candidate, unzip the [extension release ZIP](releases/chrome-store-0.3.2/benefitstep-0.3.2-chrome-store.zip) and load its extracted folder.
+
+## Multilingual and household-review preview
+
+Use **Language / 语言** to switch between English, Spanish and Simplified Chinese. Draft translations cover the main workflow; some detailed explanations and official PDFs remain English.
+
+In Documents or Review, choose **Enter household details** to enter your name, California address and household members. Source checks compare recipient names, recipient/service addresses and dates before using financial details. Records outside the adjustable recent-document window (initially 90 days) are unusable for current preparation. This window is a local preparation setting, not an agency acceptance rule. Source corrections preserve original documents. Saving your own household removes explicitly marked fictional demo sources and questionnaire answers.
+
+Try the fictional [Alex Demo test pack](demo/test_example2/README.md), importing only its `pdfs/` folder. Image values still need visual confirmation; GIFs use the first frame only. See [coverage and limitations](MULTILINGUAL_INTEGRATION.md).
+
+Validation: the development suite passed 277 tests. Offline installed-extension checks passed for household entry, stale-amount exclusion, source correction, Spanish/Chinese switching and all four Alex PDFs (57 confirmed facts, zero evidence-check findings). The five earlier sample images decoded successfully; native image-model extraction quality was not measured. The 71 targeted Node checks in `tests/` also passed against this repository layout; browser checks need desktop Chrome and Python 3.
 
 ## Chrome Web Store submission
 
@@ -40,7 +50,7 @@ Publication still needs a publicly hosted privacy-policy URL, publisher/support 
 - `releases/chrome-store-0.3.2/`: upload ZIP, listing materials, checksums, validation records and release notes.
 - `LICENSE`: project license; bundled dependencies retain their own license notices.
 
-The extension files match the upload ZIP. Runtime JavaScript is included because Chrome needs it to run the extension.
+The current `extension/` preview includes changes beyond the archived v0.3.2 upload ZIP. Use Load unpacked to try the new functionality. Runtime JavaScript is included because Chrome needs it to run the extension.
 
 ## Privacy and preview limits
 

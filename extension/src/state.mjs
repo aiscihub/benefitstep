@@ -5,7 +5,7 @@ const stamp=()=>new Date().toISOString();
 const id=()=>crypto.randomUUID();
 export const SECTIONS=['Your Information','People','Household Details','Income','Expenses','Assets (if shown)','Other Situations','Document Upload','Review and Submit'];
 export const groupFor=(kind,fields=[])=>['paystub','self_employment','income_award'].includes(kind)?'Income':['county_request','application_receipt','upload_receipt','coverage_notice'].includes(kind)?'Application documents':kind==='support'?(fields.find(f=>f.key==='support_direction')?.value==='received'?'Income':fields.find(f=>f.key==='support_direction')?.value==='paid'?'Expenses':'Other Situations'):kind==='childcare'?'Household Details':['rent','mortgage','utility','medical'].includes(kind)?'Expenses':'Other Situations';
-export function initial(){return {policyResults:{},formAnswers:{},starting:startingState(),startingHistory:[],activeStarting:'calfresh',programs:new Set(['CalFresh','Medi-Cal']),quick:{resident:'',residencyContext:'',income:'',medicalIncome:'',food:'',tax:'',applicant_status:'',special_group:''},quickProgram:'calfresh',quickChecked:new Set(),route:'quick',doctorResolutions:{},requestMatches:[],docs:[],facts:[],snapshots:[],events:[],applicationId:id(),guideSection:'Your Information',doneSections:new Set(),revision:0,reviewConfirmedRevision:null,mode:'auto',busy:false,progress:'',errors:[]};}
+export function initial(){return {household:{configured:false,maxAgeDays:90,members:[]},policyResults:{},formAnswers:{},starting:startingState(),startingHistory:[],activeStarting:'calfresh',programs:new Set(['CalFresh','Medi-Cal']),quick:{resident:'',residencyContext:'',income:'',medicalIncome:'',food:'',tax:'',applicant_status:'',special_group:''},quickProgram:'calfresh',quickChecked:new Set(),route:'quick',doctorResolutions:{},requestMatches:[],docs:[],facts:[],snapshots:[],events:[],applicationId:id(),guideSection:'Your Information',doneSections:new Set(),revision:0,reviewConfirmedRevision:null,mode:'auto',busy:false,progress:'',errors:[]};}
 export function setFact(s,f,value){
  if(value!==null&&f.fieldKey){value=normalizeValue(f.fieldKey,value);if(value===null)throw Error('Enter a valid value. Leave blank only to keep it unanswered.');}
  if(f.value===value)return;
@@ -23,7 +23,7 @@ export function usable(f){return f.value!==null&&!f.doctorBlocked&&!f.conflict&&
 export function addDocument(s,doc,result){
  const prior=s.docs.find(d=>d.hash===doc.hash&&!d.duplicateOf);doc.importedAt=stamp();doc.historical=false;
  if(prior){doc.duplicateOf=prior.id;s.docs.push(doc);s.revision++;return;}
- Object.assign(doc,result);for(const copy of s.docs.filter(d=>d.hash===doc.hash&&d.duplicateOf))copy.duplicateOf=doc.id;s.docs.push(doc);const group=groupFor(doc.kind,doc.fields);doc.group=group;
+ const importWarnings=doc.warnings||[];Object.assign(doc,result);doc.warnings=[...new Set([...importWarnings,...result.warnings||[]])];for(const copy of s.docs.filter(d=>d.hash===doc.hash&&d.duplicateOf))copy.duplicateOf=doc.id;s.docs.push(doc);const group=groupFor(doc.kind,doc.fields);doc.group=group;
  const value=key=>doc.fields.find(f=>f.key===key)?.value;
  const period=[value('period_start'),value('period_end')].filter(Boolean).join(' — ')||value('pay_date')||value('document_date')||'Period not identified';
  doc.period=period;
@@ -72,7 +72,7 @@ export function recordEvent(s,input){
  if(input.periodBasis&&!['earned','received','service'].includes(input.periodBasis))throw Error('Choose a known period basis.');
  const event={...input,id:id(),applicationId:s.applicationId,recordedAt:stamp(),ownerConfirmed:true,issuerAuthenticated:false,snapshot:structuredClone(s.facts.filter(usable))};s.events.push(event);s.revision++;return event;
 }
-export function transferSnapshot(s,documentIds=[]){reconcileDoctor(s);return {revision:s.revision,generatedAt:stamp(),type:'LOCAL_PREPARATION_NOT_SUBMITTED',applicationId:s.applicationId,programs:[...s.programs].filter(p=>programStarted(s,p)),facts:structuredClone(s.facts.filter(usable)),unresolved:gaps(s),documentIds:[...documentIds]};}
+export function transferSnapshot(s,documentIds=[]){reconcileDoctor(s);return {revision:s.revision,generatedAt:stamp(),type:'LOCAL_PREPARATION_NOT_SUBMITTED',household:structuredClone(s.household),applicationId:s.applicationId,programs:[...s.programs].filter(p=>programStarted(s,p)),facts:structuredClone(s.facts.filter(usable)),unresolved:gaps(s),documentIds:[...documentIds]};}
 export function transferCurrent(s,snapshot){return !!snapshot&&snapshot.applicationId===s.applicationId&&snapshot.revision===s.revision;}
 
 export function deleteAllSourceCopies(s,docId){
