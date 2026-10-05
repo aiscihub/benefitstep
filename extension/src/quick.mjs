@@ -28,12 +28,16 @@ function views(real,escape,icon=()=> ''){
   function quick() {
     const prog=selected();let panel='';
     if(state.active==='calfresh'&&prog.includes('calfresh')) {
-      const q=state.quick.calfresh,t=Q.threshold(q.people);
+      const q=state.quick.calfresh;
       panel=`<h2 class="sr-only" id="program-title">CalFresh starting questions</h2><div class="fields">
+      <div class="quick-question-row">
       <div class="field"><label for="residence">Do you live in California?</label><select class="select-short" id="residence" data-cf="residence" aria-describedby="residence-help">${residenceOptions(q.residence)}</select><div class="helper help-inline" id="residence-help"><span>No permanent address is needed.</span><button class="help-button" data-action="residence-help">Residency help</button></div></div>
-      <div class="field"><label for="people">Household size</label><select class="select-short" id="people" data-cf="people" aria-describedby="people-help">${[['','Choose a number'],...Array.from({length:8},(_,i)=>[String(i+1),String(i+1)]),['9plus','9 or more'],['unknown','Not sure']].map(([v,l])=>option(v,l,q.people)).join('')}</select><div class="helper help-inline" id="people-help"><span>Include yourself and people you buy and prepare food with.</span><button class="help-button" data-action="household-help">Who to include</button></div></div>
-      <div class="field"><label for="income">Estimated monthly household income before tax</label><select class="select-medium" id="income" data-cf="income" aria-describedby="income-help">${incomeOptions(q)}</select><div class="helper help-inline" id="income-help"><span>${t!==null?'An estimate is fine.':q.people==='9plus'?'A household of 9 or more needs a separate reference.':q.people==='unknown'?'We can leave the income comparison for later.':!Q.referenceCurrent(Q.today())?'This saved reference needs an update.':'Choose a household size to see the income ranges.'}</span><button class="help-button" data-action="reference-help">Income reference</button></div></div>
       <div class="field"><label for="immigration">Immigration / citizenship status</label><select id="immigration" data-cf="immigration">${[['','Choose an answer'],['citizen','U.S. citizen or national'],['noncitizen','Not a U.S. citizen or national'],['mixed','Different statuses in my household'],['unknown','Not sure'],['prefer_not','Prefer not to answer']].map(([v,l])=>option(v,l,q.immigration)).join('')}</select></div>
+      </div>
+      <div class="quick-question-row">
+      <div class="field"><label for="people">Household size</label><select class="select-short" id="people" data-cf="people" aria-describedby="people-help">${[['','Choose a number'],...Array.from({length:8},(_,i)=>[String(i+1),String(i+1)]),['9plus','9 or more'],['unknown','Not sure']].map(([v,l])=>option(v,l,q.people)).join('')}</select><div class="helper help-inline" id="people-help"><span>Include yourself and people you buy and prepare food with.</span><button class="help-button" data-action="household-help">Who to include</button></div></div>
+      <div class="field"><label for="income">Estimated monthly household income before tax</label><select class="select-medium" id="income" data-cf="income" aria-describedby="income-help">${incomeOptions(q)}</select><div class="helper help-inline" id="income-help"><button class="help-button" data-action="reference-help">Income reference</button></div></div>
+      </div>
       </div>`;
     } else if(state.active==='medical'&&prog.includes('medical')) {
       panel=`<section class="medical-start" aria-labelledby="medical-heading"><h2 id="medical-heading">People who need health coverage</h2><p class="helper">Start with age and residence. No names or birth dates needed.</p>
@@ -43,13 +47,13 @@ function views(real,escape,icon=()=> ''){
       <p class="small muted">The ten-person entry limit is a local interface limit, not a benefit limit. You can continue on BenefitsCal.</p><p class="small muted prototype-scope">Saves starting details only. It does not run a Medi-Cal eligibility check.</p></section>`;
     }
     const other=prog.find(p=>p!==state.active&&pending(real,p));
-    const label=other?`Continue to ${names[other]}`:'Continue to documents';
+    const optionalCheck=other?`<button class="button" data-program-tab="${other}">Check ${names[other]} (optional)</button>`:'';
     return heading('Quick check','Answer a few key questions to see your initial result.')+`
       ${programNavigation()}<section id="program-panel"${prog.length>1?` role="tabpanel" aria-labelledby="tab-${state.active}"`:''}>${panel}</section>
       <p class="error" id="program-error" role="alert" hidden>Choose at least one benefit to prepare for.</p>
       ${actions('',next('see-results',state.quick[state.active].saved?'Update my results':'See my results'))}
       <p class="disclosure">This is an initial screen, not an eligibility decision.</p>
-      <section id="quick-result" aria-live="polite">${state.quick[state.active].saved?`<h2>Your initial result</h2>${startingSummary(state.active,true)}${actions('',`<button class="button primary" data-action="continue">${label}</button>`)}`:''}</section>`;
+      <section id="quick-result" aria-live="polite">${state.quick[state.active].saved?`<h2>Your initial result</h2>${startingSummary(state.active,true)}${actions(optionalCheck,`<button class="button primary" data-action="documents">Continue to documents</button>`)}`:''}</section>`;
   }
   function startingSummary(p,compact=false){
     const q=state.quick[p],o=Q.overview(state.quick,p);

@@ -5,7 +5,7 @@ const stamp=()=>new Date().toISOString();
 const id=()=>crypto.randomUUID();
 export const SECTIONS=['Your Information','People','Household Details','Income','Expenses','Assets (if shown)','Other Situations','Document Upload','Review and Submit'];
 export const groupFor=(kind,fields=[])=>['paystub','self_employment','income_award'].includes(kind)?'Income':['county_request','application_receipt','upload_receipt','coverage_notice'].includes(kind)?'Application documents':kind==='support'?(fields.find(f=>f.key==='support_direction')?.value==='received'?'Income':fields.find(f=>f.key==='support_direction')?.value==='paid'?'Expenses':'Other Situations'):kind==='childcare'?'Household Details':['rent','mortgage','utility','medical'].includes(kind)?'Expenses':'Other Situations';
-export function initial(){return {policyResults:{},formAnswers:{},starting:startingState(),startingHistory:[],activeStarting:'calfresh',programs:new Set(['CalFresh','Medi-Cal']),quick:{resident:'',residencyContext:'',income:'',medicalIncome:'',food:'',tax:'',applicant_status:'',special_group:''},quickProgram:'calfresh',quickChecked:new Set(),route:'quick',doctorResolutions:{},requestMatches:[],docs:[],facts:[],snapshots:[],events:[],applicationId:id(),guideSection:'Your Information',doneSections:new Set(),revision:0,mode:'auto',busy:false,progress:'',errors:[]};}
+export function initial(){return {policyResults:{},formAnswers:{},starting:startingState(),startingHistory:[],activeStarting:'calfresh',programs:new Set(['CalFresh','Medi-Cal']),quick:{resident:'',residencyContext:'',income:'',medicalIncome:'',food:'',tax:'',applicant_status:'',special_group:''},quickProgram:'calfresh',quickChecked:new Set(),route:'quick',doctorResolutions:{},requestMatches:[],docs:[],facts:[],snapshots:[],events:[],applicationId:id(),guideSection:'Your Information',doneSections:new Set(),revision:0,reviewConfirmedRevision:null,mode:'auto',busy:false,progress:'',errors:[]};}
 export function setFact(s,f,value){
  if(value!==null&&f.fieldKey){value=normalizeValue(f.fieldKey,value);if(value===null)throw Error('Enter a valid value. Leave blank only to keep it unanswered.');}
  if(f.value===value)return;
@@ -40,13 +40,20 @@ export function gaps(s){return [
  ...s.facts.filter(f=>!f.superseded&&(f.value===null||f.conflict)).map(f=>({id:f.id,type:'answer',label:f.deferred?'Answer in BenefitsCal':'Needs your attention',text:`${f.label} · ${f.person} · ${f.period}`,deferred:f.deferred})),
  ...s.facts.filter(f=>!f.superseded&&!f.documentId&&f.value!==null).map(f=>({id:f.id,type:'evidence',label:'Can add later',text:`Supporting evidence for ${f.label}. Your answer stays available; no deduction or verification result is assumed.`})),
  ...s.docs.filter(d=>!d.duplicateOf&&!d.historical&&(d.analysisState!=='complete'||!d.fields.length)).map(d=>({id:d.id,type:'document',label:'Review this source',text:`${d.filename}: ${d.error||'No supported facts extracted. Enter the relevant answer or leave it for BenefitsCal.'}`}))];}
+export function programStarted(s,program){
+ if(!s.programs.has(program))return false;
+ const q=s.starting[program==='CalFresh'?'calfresh':program==='Medi-Cal'?'medical':''];
+ if(!q||q.skipped)return false;
+ return program==='CalFresh'?!!(q.residence||q.people||q.income||q.immigration):q.people.some(p=>p.age||p.residence);
+}
+export function reviewConfirmed(s){return Number.isInteger(s.reviewConfirmedRevision)&&s.reviewConfirmedRevision===s.revision;}
 export function confirmFacts(s,expectedRevision=s.revision){
  if(expectedRevision!==s.revision)throw Error('Details changed. Review the updated summary before confirming.');
  reconcileDoctor(s);
  const resolved=s.facts.filter(f=>f.value!==null&&!f.doctorBlocked&&!f.conflict&&!f.deferred&&!f.superseded);
  for(const f of resolved)f.confirmedRevision=f.revision;
  const snap={id:id(),at:stamp(),programs:[...s.programs],facts:structuredClone(resolved),unresolved:gaps(s).filter(g=>g.type==='answer').map(g=>g.id),engineVersion:'1.0.0',sourceHashes:s.docs.filter(d=>resolved.some(f=>f.documentId===d.id)).map(d=>d.hash)};
- s.snapshots.push(snap);s.revision++;return snap;
+ s.snapshots.push(snap);s.revision++;s.reviewConfirmedRevision=s.revision;return snap;
 }
 export function removeDocument(s,docId){s.docs=s.docs.filter(d=>d.id!==docId);s.facts=s.facts.filter(f=>f.documentId!==docId);s.revision++;}
 export function historical(s,docId){const d=s.docs.find(d=>d.id===docId);d.historical=!d.historical;for(const f of s.facts.filter(f=>f.documentId===docId)){f.superseded=d.historical;f.confirmedRevision=null;}s.revision++;}
@@ -65,7 +72,7 @@ export function recordEvent(s,input){
  if(input.periodBasis&&!['earned','received','service'].includes(input.periodBasis))throw Error('Choose a known period basis.');
  const event={...input,id:id(),applicationId:s.applicationId,recordedAt:stamp(),ownerConfirmed:true,issuerAuthenticated:false,snapshot:structuredClone(s.facts.filter(usable))};s.events.push(event);s.revision++;return event;
 }
-export function transferSnapshot(s,documentIds=[]){reconcileDoctor(s);return {revision:s.revision,generatedAt:stamp(),type:'LOCAL_PREPARATION_NOT_SUBMITTED',applicationId:s.applicationId,programs:[...s.programs],facts:structuredClone(s.facts.filter(usable)),unresolved:gaps(s),documentIds:[...documentIds]};}
+export function transferSnapshot(s,documentIds=[]){reconcileDoctor(s);return {revision:s.revision,generatedAt:stamp(),type:'LOCAL_PREPARATION_NOT_SUBMITTED',applicationId:s.applicationId,programs:[...s.programs].filter(p=>programStarted(s,p)),facts:structuredClone(s.facts.filter(usable)),unresolved:gaps(s),documentIds:[...documentIds]};}
 export function transferCurrent(s,snapshot){return !!snapshot&&snapshot.applicationId===s.applicationId&&snapshot.revision===s.revision;}
 
 export function deleteAllSourceCopies(s,docId){

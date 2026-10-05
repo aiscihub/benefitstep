@@ -26,3 +26,22 @@ body{background:var(--page)}.topbar{background:white;border-bottom:1px solid var
 .form-group label { display: block; margin-block: 8px; }
 .form-group input,.form-group select { width: 100%; }
 .official-form-page { display: block; max-width: 100%; height: auto; margin: 16px auto; border: 1px solid var(--divider); }
+
+/* Paired CalFresh questions, with matching control baselines on wide panels. */
+.quick-question-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+.quick-question-row select { width: 100%; max-width: none; min-width: 0; }
+@media (min-width: 700px) {
+  .quick-question-row { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto auto auto; column-gap: 24px; row-gap: 0; }
+  .quick-question-row > .field { display: grid; grid-template-rows: subgrid; grid-row: span 3; align-content: start; }
+  .quick-question-row .helper { align-self: start; }
+}
+
+.review-item { padding: 18px 0; border-top: 1px solid var(--divider); }
+.review-item h3 { margin: 8px 0; }
+.review-item p { margin: 6px 0; }
+.review-item .cf-tools { margin-top: 12px; }
+.review-issue { margin: 12px 0; padding-left: 12px; border-left: 3px solid #b78639; }
+
+.application-review-details { margin-top: 18px; }
+.application-review-details > summary { color: var(--primary); cursor: pointer; }
+.application-review-details[open] > summary { margin-bottom: 16px; }

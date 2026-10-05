@@ -1,3 +1,4 @@
+import {reviewConfirmed,programStarted} from './state.mjs';
 import {zipStore} from '../shared/core/zip.mjs';
 import {FORMS,emptyAnswers,reviseAnswer,reviseGroup,confirmApplication,currentApplication,compatibleFacts,adoptFact,prefillApplication} from './form-adapter.mjs';
 import {formPlan,releasedMap} from './form-renderer.mjs';
@@ -5,7 +6,7 @@ import {loadFormAssets,renderInWorker,previewPdf} from './form-browser.mjs';
 let active=null,job=null,output=null,serial=0;
 const formAssets=new Map();
 export function clearFormPreview(){serial++;job?.abort();job=null;output=null;active=null;}
-export const applicationFormButtons=(program)=>`<button class="btn btn-secondary" data-action="official-form" data-form="${program==='CalFresh'?'cf285':'ccfrm604'}">Generate ${program} package (${program==='CalFresh'?'CF285':'CCFRM604'})</button>`;
+export const applicationFormButtons=(program,enabled=false)=>`<button class="btn btn-primary" ${enabled?'':'disabled title="Confirm reviewed details in Review first"'} data-action="official-form" data-form="${program==='CalFresh'?'cf285':'ccfrm604'}">Generate ${program} package (${program==='CalFresh'?'CF285':'CCFRM604'})</button>`;
 export function applicationAnswerSummary(state,id,esc){
  const d=state.formAnswers[id],assets=formAssets.get(id),answered=d?.answers.filter(a=>a.status==='answered')||[];
  if(!answered.length)return '<section class="application-answer-summary"><h3>Your application answers</h3><p>No application answers entered yet. Prepare your answers below. Quick-check estimates are not copied into exact PDF fields.</p></section>';
@@ -33,6 +34,8 @@ export function connectForms({getState,modal,esc,btn,download,close,refresh=()=>
   modal(`${FORMS[active.id]} application answers`,`${applicationAnswerSummary(state(),active.id,esc)}<p>${plan.operations.length?`${plan.operations.length} PDF field placements planned.`:'No PDF field placements planned yet. Enter application answers to prepare them.'} ${plan.missing.length} entries or sections still need attention. Nothing is signed or submitted.</p>${!releasedMap(map)?'<p role="status">The field mapping has not completed independent review. Your download will be marked as an unsigned draft. Review every filled value and finish any missing items on the official form.</p>':''}<details><summary>Items to finish on the form</summary><ul>${plan.missing.map(m=>`<li>${esc(inventory.groups.find(g=>g.id===m.groupId)?.label||m.groupId)}${m.field?' · '+esc(m.field.replaceAll('_',' ')):''}: ${esc(m.reason.replaceAll('_',' '))}</li>`).join('')}${plan.manualActions.map(m=>`<li>Page ${m.page}: ${esc(m.text)}</li>`).join('')}</ul></details><a href="${inventory.officialUrl}" target="_blank" rel="noopener noreferrer">Open official application</a>`,btn('form-preview','Generate filled application draft',true)+btn('form-blank','Preview blank official form')+btn('form-edit','Edit application answers')+btn('close','Done'));
  }
  async function action(a,b){
+  if((a==='official-form'||a.startsWith('form-'))&&!reviewConfirmed(state()))throw Error('Confirm reviewed details in Review before generating a package.');
+  if((a==='official-form'||a.startsWith('form-'))&&!programStarted(state(),FORMS[a==='official-form'?b.dataset.form:active?.id]))throw Error('Start this program in Quick check before generating its package.');
   if(a==='official-form'){clearFormPreview();const id=b.dataset.form;const token=serial;const assets=await loadFormAssets(id);if(token!==serial)return true;active={id,...assets};formAssets.set(id,assets);state().formAnswers[id]??=emptyAnswers(id);prefillApplication(data(),state(),assets.map);refresh();if(currentApplication(data(),state()))planView();else editor();return true;}
   if(!a.startsWith('form-'))return false;if(!active)throw Error('Reopen application details.');
   if(a==='form-edit'){job?.abort();output=null;editor();return true;}
