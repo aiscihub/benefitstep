@@ -39,6 +39,48 @@ export const EXPECTED = {paystub:['person','issuer','pay_date','gross_pay'],rent
 export const LIMITS = {fileBytes:8_000_000,totalBytes:48_000_000,documents:24,pagesPerDocument:6,pixels:24_000_000,modelChars:24000,fields:32,modelResponse:14000};
 export function assertSafeString(s,max=400){if(typeof s!=='string'||s.length>max||/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u202a-\u202e\u2066-\u2069]/.test(s))throw new Error('Invalid or overlong text.');return s;}
 export function validDate(s){if(!/^\d{4}-\d{2}-\d{2}$/.test(s||''))return false;const d=new Date(s+'T00:00:00Z');return !isNaN(d)&&d.toISOString().slice(0,10)===s;}
+const MONTHS=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+const MONTH='\\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)';
+const NUMERIC_DATE='\\b\\d{1,2}[/-]\\d{1,2}[/-]\\d{4}\\b',WRITTEN_DATE=MONTH+'\\.?\\s+\\d{1,2}(?:st|nd|rd|th)?,?\\s+\\d{4}\\b',WRITTEN_MONTH=MONTH+'\\.?,?\\s+\\d{4}\\b';
+const isoDate=(y,m,d)=>{const s=`${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;return validDate(s)?s:null;};
+const monthNumber=name=>MONTHS.indexOf(name.slice(0,3).toLowerCase())+1;
+/** Dates as US documents write them. Numeric dates are read month first; anything that is not a real calendar date stays unreadable. */
+export function parseDate(raw){
+  const s=String(raw??'').trim();let m;
+  if(validDate(s))return s;
+  if((m=s.match(/^(\d{1,2})[/-](\d{1,2})[/-](\d{4})$/)))return isoDate(m[3],+m[1],+m[2]);
+  if((m=s.match(new RegExp('^('+MONTH+')\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?,?\\s+(\\d{4})$','i'))))return isoDate(m[3],monthNumber(m[1]),+m[2]);
+  return null;
+}
+/** A whole calendar month ("October 2026", "2026-10", "10/2026") as its first and last day. */
+export function monthSpan(raw){
+  const s=String(raw??'').trim();let m,y,mo;
+  if((m=s.match(new RegExp('^('+MONTH+')\\.?,?\\s+(\\d{4})$','i')))){mo=monthNumber(m[1]);y=+m[2];}
+  else if((m=s.match(/^(\d{4})-(\d{2})$/))){y=+m[1];mo=+m[2];}
+  else if((m=s.match(/^(\d{1,2})\/(\d{4})$/))){mo=+m[1];y=+m[2];}
+  else return null;
+  const first=isoDate(y,mo,1);return first?[first,isoDate(y,mo,new Date(Date.UTC(y,mo,0)).getUTCDate())]:null;
+}
+export const dateTokens=text=>String(text??'').match(new RegExp('\\b\\d{4}-\\d{2}-\\d{2}\\b|'+NUMERIC_DATE+'|'+WRITTEN_DATE,'gi'))||[];
+/** The passage must show this date. A month alone can only support the first day of a period start or the last day of a period end. */
+function showsDate(passage,value,key){
+  if(dateTokens(passage).some(t=>parseDate(t)===value))return true;
+  const end=key==='period_start'?0:key==='period_end'?1:null;
+  return end!==null&&(passage.match(new RegExp(WRITTEN_MONTH+'|\\b\\d{4}-\\d{2}\\b(?!-)','gi'))||[]).some(t=>monthSpan(t)?.[end]===value);
+}
+const moneyTokens=passage=>passage.match(/\(?-?\$?\d[\d,]*(?:\.\d{1,2})?\)?/g)||[];
+// Searching a whole page for an amount needs a token that is written as money; "01" inside a date is not $1.00.
+const writtenAmounts=passage=>(passage.match(/\(?-?\$\s?\d[\d,]*(?:\.\d{1,2})?\)?|\(?-?\d[\d,]*\.\d{2}\)?/g)||[]).map(t=>t.replace(/\s/g,''));
+const squash=s=>s.replace(/\s+/g,' ').trim();
+const showsWords=(passage,value)=>new RegExp('(?:^|[^a-z0-9])'+squash(value).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?:[^a-z0-9]|$)','i').test(squash(passage));
+/** A quote has to point at one real line of the page. Spacing differences are ignored, and a value that appears on exactly one line can stand in for a quote the page does not contain. */
+function locateLine(text,quote,shows){
+  const lines=text.split('\n').map(l=>l.trim()).filter(l=>l&&l.length<=400),q=squash(quote);
+  const quoted=q.length>2?lines.filter(l=>squash(l).includes(q)):[];
+  if(quoted.length===1)return quoted[0];
+  const showing=(quoted.length?quoted:lines).filter(shows);
+  return showing.length===1?showing[0]:null;
+}
 export function moneyCents(value, signed=false){
   if(typeof value!=='string')return null;
   let s=value.trim();
@@ -53,7 +95,7 @@ export function moneyCents(value, signed=false){
 export function normalizeValue(key,raw){
   const def=FIELD_DEFS[key]; if(!def)return null;let s=String(raw??'').trim(); if(s.length>240)return null;
   if(def[1]==='money'||def[1]==='signed_money'){const c=moneyCents(s,def[1]==='signed_money');return c===null?null:(c/100).toFixed(2);}
-  if(def[1]==='date')return validDate(s)?s:null;
+  if(def[1]==='date')return parseDate(s)??(key==='period_start'?monthSpan(s)?.[0]:key==='period_end'?monthSpan(s)?.[1]:null)??null;
   if(def[1]==='frequency'){const m=s.toLowerCase().replace(/[ _]/g,'-');return ['weekly','biweekly','semimonthly','monthly','one-time','unknown'].includes(m)?m:null;}
   if(def[1]==='direction')return ['paid','received','unknown'].includes(s.toLowerCase())?s.toLowerCase():null;
   try{return assertSafeString(s,240)||null;}catch{return null;}
@@ -74,16 +116,16 @@ export function validateExtraction(raw,pages,method='native-ai'){
     if(!Number.isInteger(f.page)||f.page<1||f.page>pages.length){rejected.push(`${FIELD_DEFS[f.key][0]} references page ${String(f.page).slice(0,20)}, but this file has ${pages.length} page(s); it was not used.`);continue;}
     if(seen.has(f.key)){const prior=fields.find(v=>v.key===f.key);if(prior&&normalizeValue(f.key,f.value)===prior.value)continue;rejected.push('Conflicting repeated field: '+f.key+' — check the different values on the source before using this detail.');for(const v of fields)if(v.key===f.key)v.conflict=true;continue;}
     seen.add(f.key);assertSafeString(f.quote,400);const value=normalizeValue(f.key,f.value);
-    if(value===null){rejected.push(`Unusable value for ${f.key} (${FIELD_DEFS[f.key][0]}) on page ${f.page}: received “${f.value.slice(0,80)}”; ${FIELD_DEFS[f.key][1]==='date'?'a complete, unambiguous YYYY-MM-DD date is required': ['money','signed_money'].includes(FIELD_DEFS[f.key][1])?'a valid USD amount is required; unreadable values are not zero':'the value is missing or invalid'}. View the source and correct this detail.`);continue;}
-    const page=pages[f.page-1];const exact=!!page.text&&page.text.includes(f.quote);
+    if(value===null){rejected.push(`Unusable value for ${f.key} (${FIELD_DEFS[f.key][0]}) on page ${f.page}: received “${f.value.slice(0,80)}”; ${FIELD_DEFS[f.key][1]==='date'?'a complete date is required, written as YYYY-MM-DD or MM/DD/YYYY': ['money','signed_money'].includes(FIELD_DEFS[f.key][1])?'a valid USD amount is required; unreadable values are not zero':'the value is missing or invalid'}. View the source and correct this detail.`);continue;}
+    const page=pages[f.page-1],type=FIELD_DEFS[f.key][1],money=['money','signed_money'].includes(type);
+    const shows=(passage,tokens=moneyTokens)=>money?tokens(passage).some(t=>moneyCents(t,true)===moneyCents(value,true)):type==='date'?showsDate(passage,value,f.key):showsWords(passage,value);
+    // A quote that is on the page stays, unless it is too short to show the amount or date it is cited for.
+    const cited=!!page.text&&page.text.includes(f.quote),quote=!page.text||cited&&(!money&&type!=='date'||shows(f.quote))?f.quote:locateLine(page.text,f.quote,passage=>shows(passage,writtenAmounts))??(cited?f.quote:null);const exact=!!page.text&&quote!==null;
     if(page.text&&!exact){rejected.push('Source quote not found: '+f.key);continue;}
     // Text equality proves location, not semantic correctness. Image quotes are always unverified.
-    if(exact&&['money','signed_money'].includes(FIELD_DEFS[f.key][1])){
-      const tokens=f.quote.match(/\(?-?\$?\d[\d,]*(?:\.\d{1,2})?\)?/g)||[];
-      if(!tokens.some(t=>moneyCents(t,true)===moneyCents(value,true))){rejected.push('Amount is absent from the quoted passage: '+f.key);continue;}
-    }
-    if(exact&&FIELD_DEFS[f.key][1]==='date'&&!f.quote.includes(value)){rejected.push('Date normalization requires manual review: '+f.key);continue;}
-    fields.push({...f,value,sourceValue:value,sourceVerified:exact,provenance:exact?'text-quote':'image-proposed',confirmed:false,conflict:false,method});
+    if(exact&&money&&!shows(quote)){rejected.push('Amount is absent from the quoted passage: '+f.key);continue;}
+    if(exact&&type==='date'&&!shows(quote)){rejected.push('Date normalization requires manual review: '+f.key);continue;}
+    fields.push({...f,quote,value,sourceValue:value,sourceVerified:exact,provenance:exact?'text-quote':'image-proposed',confirmed:false,conflict:false,method});
   }
   const warnings=raw.warnings.map(x=>assertSafeString(x,240)).concat([...new Set(rejected)]);
   if(raw.kind==='unknown')warnings.push('Document type not established. No eligibility facts inferred.');

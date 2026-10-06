@@ -50,7 +50,8 @@ with tempfile.TemporaryDirectory(prefix='benefitstep-i18n-') as tmp:
   language(LOCALE)
   assert js("document.getElementById('page-title').textContent")==('您的申请准备材料包已就绪。' if ZH else 'Su paquete de preparación está listo.')
   assert js("!document.querySelector('[data-form=cf285]').disabled")
-  assert js("!document.querySelector('[data-form=ccfrm604]')")
+  # The quick check is optional: Medi-Cal was not answered here, and its package is still offered because the program stays selected.
+  assert js("!document.querySelector('[data-form=ccfrm604]').disabled")
   assert ("官方 PDF 语言为英语" if ZH else "Idioma del PDF oficial: inglés") in js("document.getElementById('main').textContent")
   # User values matching a UI phrase must never be translated.
   js("document.querySelector('[data-route=confirm]').click();document.querySelector('[data-review-status=confirm] [data-action=edit], [data-review-status=confirmed] [data-action=edit]').click()")

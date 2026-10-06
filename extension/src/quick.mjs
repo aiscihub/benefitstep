@@ -52,7 +52,7 @@ function views(real,escape,icon=()=> ''){
     return heading('Quick check','Answer a few key questions to see your initial result.')+`
       ${programNavigation()}<section id="program-panel"${prog.length>1?` role="tabpanel" aria-labelledby="tab-${state.active}"`:''}>${panel}</section>
       <p class="error" id="program-error" role="alert" hidden>Choose at least one benefit to prepare for.</p>
-      ${actions('',next('see-results',state.quick[state.active].saved?'Update my results':'See my results'))}
+      ${actions(`<button class="button" data-action="skip">${escape(tr('Skip and add documents'))}</button>`,next('see-results',state.quick[state.active].saved?'Update my results':'See my results'))}
       <p class="disclosure" data-i18n=ui35>This is an initial screen, not an eligibility decision.</p>
       <section id="quick-result" aria-live="polite">${state.quick[state.active].saved?`<h2 data-i18n=ui31>Your initial result</h2>${startingSummary(state.active,true)}${actions(optionalCheck,`<button class="button primary" data-action="documents" data-i18n=ui32>Continue to documents</button>`)}`:''}</section>`;
   }

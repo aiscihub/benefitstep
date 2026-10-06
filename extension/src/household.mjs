@@ -18,6 +18,21 @@ export function saveHousehold(s,input){
  for(const [key,value] of Object.entries({person:p.name,home_address:p.home_address,home_city:p.home_city,home_state:p.home_state,home_zip:p.home_zip}))if(value)s.facts.push({id:crypto.randomUUID(),fieldKey:key,label:FIELD_DEFS[key][0],value,person:p.name,period:'Current household details',group:'Your Information',origin:'owner_entry',householdProfile:true,revision:1,confirmedRevision:null});
  return p;
 }
+/** Names and addresses that current sources show for their recipient. They are only offered for the owner to choose; nothing is applied automatically. */
+export function householdSuggestions(s){
+ const names=new Map(),addresses=new Map();
+ const note=(map,key,entry,file)=>{if(!map.has(key))map.set(key,{...entry,files:[]});const found=map.get(key);if(!found.files.includes(file))found.files.push(file);return found;};
+ for(const doc of s.docs.filter(d=>!d.duplicateOf&&!d.historical&&!d.demoSource)){
+  const get=key=>{const f=s.facts.find(f=>f.documentId===doc.id&&f.fieldKey===key&&!f.superseded);return f&&!f.conflict&&!f.deferred&&f.value?String(f.value):null;};
+  const person=get('person'),street=get('home_address');
+  if(person)note(names,normalized(person),{name:person,recipient:true},doc.filename).recipient=true;
+  for(const d of doc.dependants||[])note(names,normalized(d.name),{name:d.name,recipient:false},doc.filename);
+  if(street){const a={home_address:street,home_city:get('home_city'),home_state:get('home_state'),home_zip:get('home_zip')};note(addresses,normalized(Object.values(a).filter(Boolean).join(' ')),a,doc.filename);}
+ }
+ // People a document is addressed to come before a child or patient it only names; then the most frequent first.
+ const order=map=>[...map.values()].sort((a,b)=>(b.recipient===true)-(a.recipient===true)||b.files.length-a.files.length);
+ return {names:order(names),addresses:order(addresses)};
+}
 export function setSourceContext(s,docId,input){
  const doc=s.docs.find(d=>d.id===docId&&!d.duplicateOf&&!d.historical);if(!doc)throw Error('Choose a current source.');
  const keys=['person','home_address','home_city','home_state','home_zip','document_date','pay_date','period_start','period_end'];
@@ -44,7 +59,8 @@ export function assessSource(s,doc,today=localToday()){
  else if(normalized(address)!==normalized(p.home_address)||['home_city','home_zip'].some(k=>get(k)&&p[k]&&normalized(get(k))!==normalized(p[k])))add('address','needs_context','Source address differs from your current address',`Source: ${[address,get('home_city'),region,get('home_zip')].filter(Boolean).join(', ')}. Current: ${[p.home_address,p.home_city,p.home_state,p.home_zip].filter(Boolean).join(', ')}. Check spelling, apartment details or a previous address before using this as current evidence.`);
  else add('address','clear','Source address matches your California address','The entered recipient street address and available city/ZIP match. This comparison is not proof of residency.');
  const dateKeys=['document_date','pay_date','period_start','period_end'];
- const future=dateKeys.find(k=>validDate(get(k))&&get(k)>today);
+ // A period that has started may end later this month, as on a rent receipt for the current month.
+ const started=validDate(get('period_start'))&&get('period_start')<=today,future=dateKeys.find(k=>validDate(get(k))&&get(k)>today&&!(k==='period_end'&&started));
  const dateKey=doc.kind==='paystub'&&get('pay_date')?'pay_date':get('period_end')?'period_end':get('document_date')?'document_date':null,date=dateKey&&get(dateKey);
  if(future)add('date','finding','Source has a future date',`${FIELD_DEFS[future][0]} is ${get(future)}, after today (${today}). Check the reading and source dates before using current amounts.`);
  else if(get('period_start')&&get('period_end')&&get('period_start')>get('period_end'))add('date','finding','Source period dates are reversed',`Period starts ${get('period_start')} and ends ${get('period_end')}. Correct the dates from the original.`);

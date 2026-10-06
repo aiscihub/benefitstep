@@ -46,6 +46,8 @@ export function programStarted(s,program){
  if(!q||q.skipped)return false;
  return program==='CalFresh'?!!(q.residence||q.people||q.income||q.immigration):q.people.some(p=>p.age||p.residence);
 }
+// The quick check is optional. A program the owner kept selected can be prepared whether or not its starting questions were answered.
+export function programSelected(s,program){return s.programs.has(program);}
 export function reviewConfirmed(s){return Number.isInteger(s.reviewConfirmedRevision)&&s.reviewConfirmedRevision===s.revision;}
 export function confirmFacts(s,expectedRevision=s.revision){
  if(expectedRevision!==s.revision)throw Error('Details changed. Review the updated summary before confirming.');

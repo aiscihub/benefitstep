@@ -1,0 +1,70 @@
+{
+  "alexExamples": {
+    "documents": 4,
+    "findings": 0,
+    "confirmedFacts": 57,
+    "unusableFacts": 0
+  },
+  "household": {
+    "householdEntry": true,
+    "staleAmountsExcluded": true,
+    "sourceCorrection": true,
+    "originalPreserved": true,
+    "languagesPreserveProfile": true,
+    "sampleImagesImported": [],
+    "remoteRequests": 0,
+    "exceptions": 0
+  },
+  "i18n": {
+    "languages": [
+      "en-US",
+      "es-US",
+      "zh-CN"
+    ],
+    "answersPreserved": true,
+    "confirmationPreserved": true,
+    "originalValuesPreserved": true,
+    "reviewItems": 17,
+    "officialFormsRemainEnglish": true,
+    "offline": true,
+    "remoteRequests": 0,
+    "exceptions": 0,
+    "mediCalPackageOfferedWithoutQuickCheck": true
+  },
+  "onDeviceAiControl": {
+    "turnOnButtonShownWhenModelNotReady": true,
+    "statusAfterTurnOn": "available",
+    "readerShownPerDocument": true,
+    "readerCountsInSummary": true,
+    "pageErrors": 0
+  },
+  "householdFromDocuments": {
+    "namesOffered": 3,
+    "addressesOffered": 1,
+    "chosenValuesFillTheFields": true,
+    "savedWithoutError": true,
+    "documentsReadyAfterChoice": 5,
+    "pageErrors": 0
+  },
+  "applicationDraft": {
+    "quickCheckSkipped": true,
+    "documents": 6,
+    "peopleChosen": 4,
+    "calFresh": {
+      "fieldsFilled": 14,
+      "previewPages": 18,
+      "error": null
+    },
+    "mediCal": {
+      "fieldsFilled": 37,
+      "previewPages": 44,
+      "error": null
+    },
+    "pageErrors": 0
+  },
+  "browser": "Chrome 154, desktop macOS",
+  "notRun": [
+    "image decoding with sample images",
+    "store listing screenshots"
+  ]
+}

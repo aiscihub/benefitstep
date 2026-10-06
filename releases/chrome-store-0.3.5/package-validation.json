@@ -1,0 +1,31 @@
+{
+  "version": "0.3.5",
+  "sourceCommit": "5976afb0858447c4f328f72bc407189f710d3707",
+  "archive": "benefitstep-0.3.5-chrome-store.zip",
+  "bytes": 9286995,
+  "sha256": "a2bcf1898d256ec349c51c0eba0443f8ff895b0001cd539dc836014fb0f3670c",
+  "manifestAtRoot": true,
+  "manifestCount": 1,
+  "permissions": [
+    "sidePanel"
+  ],
+  "zipIntegrity": true,
+  "sourceWorkingTreeModified": true,
+  "developmentFixturesExcluded": true,
+  "productionApprovalClaimed": false,
+  "nodeTests": {
+    "passed": 111,
+    "failed": 0
+  },
+  "offlineBrowserChecks": {
+    "alexExamples": true,
+    "household": true,
+    "i18n": true,
+    "onDeviceAiControl": true,
+    "applicationDraftFromHouseholdDetails": true,
+    "householdChosenFromDocuments": true,
+    "peopleChosenForBothApplications": true,
+    "quickCheckOptional": true,
+    "chineseInterface": true
+  }
+}
