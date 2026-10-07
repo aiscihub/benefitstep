@@ -1825,6 +1825,1702 @@
       "conditional": "Use only when applicable under this form instruction; ask rather than infer."
     },
     {
+      "groupId": "q7.unearned",
+      "field": "has_income",
+      "row": 0,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        129.60000610351562,
+        330.3999938964844,
+        140.39999389648438,
+        341.20001220703125
+      ],
+      "widget": "CF 285  219",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "7.  Unearned Income Do you or anyone you buy and prepare food with get income that does not come from a job (unearned)?  (Please check one) Yes, If yes, please answer this question.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "has_income",
+      "row": 0,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        161.27999877929688,
+        329.760009765625,
+        172.0800018310547,
+        340.55999755859375
+      ],
+      "widget": "CF 285  220",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No,  If no, skip to question #8.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "person",
+      "row": 0,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        544.3200073242188,
+        165.60000610351562,
+        576
+      ],
+      "widget": "CF 285  243",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Person getting the money, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "source",
+      "row": 0,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        166.5,
+        544.3200073242188,
+        310.32000732421875,
+        576.719970703125
+      ],
+      "widget": "CF 285  244",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "From where? line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "amount",
+      "row": 0,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        313.9200134277344,
+        554.52001953125,
+        383.0400085449219,
+        565.3200073242188
+      ],
+      "widget": "CF 285  245",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How much money? line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "frequency",
+      "row": 0,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        383.760009765625,
+        554.9600219726562,
+        483.8399963378906,
+        566.2839965820312
+      ],
+      "widget": "CF 285  246",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often received? (once, weekly, monthly, or other) Line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 0,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        490.6000061035156,
+        555.0150146484375,
+        501.3999938964844,
+        565.8150024414062
+      ],
+      "widget": "CF 285  247",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Expect to continue?  (Please check one) Yes Line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 0,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        522,
+        555.0150146484375,
+        532.7999877929688,
+        565.8150024414062
+      ],
+      "widget": "CF 285  248",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No, Line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "person",
+      "row": 1,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        576.719970703125,
+        165.60000610351562,
+        608.4000244140625
+      ],
+      "widget": "CF 285  249",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Person getting the money, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "source",
+      "row": 1,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        166.5,
+        576.719970703125,
+        310.32000732421875,
+        609.1199951171875
+      ],
+      "widget": "CF 285  250",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "From where? line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "amount",
+      "row": 1,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        313.9200134277344,
+        586.9199829101562,
+        383.0400085449219,
+        597.719970703125
+      ],
+      "widget": "CF 285  251",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How much money? line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "frequency",
+      "row": 1,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        383.760009765625,
+        587.3599853515625,
+        483.8399963378906,
+        598.1600341796875
+      ],
+      "widget": "CF 285  252",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often received? (once, weekly, monthly, or other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 1,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        490.6000061035156,
+        587.2210083007812,
+        501.3999938964844,
+        598.02099609375
+      ],
+      "widget": "CF 285  253",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Expect to continue?   (Please check one) Yes Line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 1,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        522,
+        587.2210083007812,
+        532.7999877929688,
+        598.02099609375
+      ],
+      "widget": "CF 285  254",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No, Line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "person",
+      "row": 2,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        609.8399658203125,
+        165.60000610351562,
+        641.52001953125
+      ],
+      "widget": "CF 285  255",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Person getting the money, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "source",
+      "row": 2,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        166.5,
+        609.8399658203125,
+        310.32000732421875,
+        642.239990234375
+      ],
+      "widget": "CF 285  256",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "From where? line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "amount",
+      "row": 2,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        313.9200134277344,
+        620.0399780273438,
+        383.0400085449219,
+        630.8399658203125
+      ],
+      "widget": "CF 285  257",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How much money? line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "frequency",
+      "row": 2,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        383.760009765625,
+        620.47998046875,
+        483.8399963378906,
+        631.280029296875
+      ],
+      "widget": "CF 285  258",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often received? (once, weekly, monthly, or other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 2,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        490.6000061035156,
+        620.3410034179688,
+        501.3999938964844,
+        631.1409912109375
+      ],
+      "widget": "CF 285  259",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Expect to continue?  (Please check one) Yes line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 2,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        522,
+        620.3410034179688,
+        532.7999877929688,
+        631.1409912109375
+      ],
+      "widget": "CF 285  260",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No, Line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "person",
+      "row": 3,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        36.720001220703125,
+        642.239990234375,
+        165.60000610351562,
+        673.9199829101562
+      ],
+      "widget": "CF 285  261",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Person getting the money, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "source",
+      "row": 3,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        166.5,
+        642.239990234375,
+        310.32000732421875,
+        674.6400146484375
+      ],
+      "widget": "CF 285  262",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "From where? line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "amount",
+      "row": 3,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        313.9200134277344,
+        652.4400024414062,
+        383.0400085449219,
+        663.239990234375
+      ],
+      "widget": "CF 285  263",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How much money? line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "frequency",
+      "row": 3,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        383.760009765625,
+        652.8800048828125,
+        483.8399963378906,
+        663.6799926757812
+      ],
+      "widget": "CF 285  264",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often received? (once, weekly, monthly, or other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 3,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        490.6000061035156,
+        652.740966796875,
+        501.3999938964844,
+        663.541015625
+      ],
+      "widget": "CF 285  265",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Expect to continue?  (Please check one) Yes Line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 3,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        522,
+        652.740966796875,
+        532.7999877929688,
+        663.541015625
+      ],
+      "widget": "CF 285  266",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No, Line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "has_expenses",
+      "row": 0,
+      "page": 15,
+      "kind": "checkbox",
+      "rect": [
+        104.4000015258789,
+        77.03997802734375,
+        115.19999694824219,
+        87.84002685546875
+      ],
+      "widget": "CF 285  434",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "12. Medical Expenses - Are you or anyone you buy and prepare food with an elderly (60 or older) or disabled person that has any out-of-pocket medical expenses? (Please check one.) Yes, If yes, please answer this question.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "has_expenses",
+      "row": 0,
+      "page": 15,
+      "kind": "checkbox",
+      "rect": [
+        135,
+        77.760009765625,
+        145.8000030517578,
+        88.55999755859375
+      ],
+      "widget": "CF 285  435",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No,   If no, skip to question #13",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "person",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        37.279998779296875,
+        274.32000732421875,
+        185.60000610351562,
+        306.7200012207031
+      ],
+      "widget": "CF 285  449",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Name of elderly/disabled person, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "amount",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        190.25999450683594,
+        283.5,
+        238.5,
+        299.3399963378906
+      ],
+      "widget": "CF 285  450",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount of expense, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "frequency",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        239.0399932861328,
+        284.7720031738281,
+        311.0400085449219,
+        300.61199951171875
+      ],
+      "widget": "CF 285  451",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (weekly, monthly, other) Line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "expense_type",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        311.760009765625,
+        274.5,
+        416.8800048828125,
+        306.7200012207031
+      ],
+      "widget": "CF 285  452",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "What type of expense? (Prescriptions, dentures, number of meals for attendant, etc.) line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_source",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.2799987792969,
+        274.5,
+        577.719970703125,
+        290.8800048828125
+      ],
+      "widget": "CF 285  453",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Will the household be reimbursed for any medical expenses? (By Medi-Cal, insurance, family member, etc.)  If yes, by who? Line 1 of 4 ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_amount",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.2799987792969,
+        290.1600036621094,
+        577.719970703125,
+        307.44000244140625
+      ],
+      "widget": "CF 285  454",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Enter how much money will be reimbursed, line 1 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "person",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        37.279998779296875,
+        307.1600036621094,
+        185.60000610351562,
+        339.55999755859375
+      ],
+      "widget": "CF 285  455",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Name of elderly/disabled person, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "amount",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        190.5399932861328,
+        316.3399963378906,
+        238.77999877929688,
+        332.17999267578125
+      ],
+      "widget": "CF 285  456",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount of expense, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "frequency",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        239.32000732421875,
+        317.61199951171875,
+        311.32000732421875,
+        333.4519958496094
+      ],
+      "widget": "CF 285  457",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (weekly, monthly, other) Line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "expense_type",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        312.0400085449219,
+        307.3399963378906,
+        417.1600036621094,
+        339.55999755859375
+      ],
+      "widget": "CF 285  458",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "What type of expense? (Prescriptions, dentures, number of meals for attendant, etc.) line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_source",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.2799987792969,
+        307.3399963378906,
+        577.719970703125,
+        323.7200012207031
+      ],
+      "widget": "CF 285  459",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Will the household be reimbursed for any medical expenses? (By Medi-Cal, insurance, family member, etc.)  If yes, by who? Line 2 of 4 ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_amount",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.2799987792969,
+        323,
+        577.719970703125,
+        340.2799987792969
+      ],
+      "widget": "CF 285  460",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Enter how much money will be reimbursed, line 2 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "person",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        37.279998779296875,
+        340.3800048828125,
+        185.60000610351562,
+        372.7799987792969
+      ],
+      "widget": "CF 285  461",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Name of elderly/disabled person, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "amount",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        190.25999450683594,
+        349.55999755859375,
+        238.5,
+        365.3999938964844
+      ],
+      "widget": "CF 285  462",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount of expense, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "frequency",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        239.0399932861328,
+        350.8320007324219,
+        311.0400085449219,
+        366.6719970703125
+      ],
+      "widget": "CF 285  463",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (weekly, monthly, other) Line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "expense_type",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        311.760009765625,
+        340.55999755859375,
+        416.8800048828125,
+        372.7799987792969
+      ],
+      "widget": "CF 285  464",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "What type of expense? (Prescriptions, dentures, number of meals for attendant, etc.) line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_source",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.2799987792969,
+        340.55999755859375,
+        577.719970703125,
+        356.94000244140625
+      ],
+      "widget": "CF 285  465",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Will the household be reimbursed for any medical expenses? (By Medi-Cal, insurance, family member, etc.)  If yes, by who? Line 3 of 4 ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_amount",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.2799987792969,
+        356.2200012207031,
+        577.719970703125,
+        373.5
+      ],
+      "widget": "CF 285  466",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Enter how much money will be reimbursed, line 3 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "person",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        37.279998779296875,
+        373.67999267578125,
+        185.60000610351562,
+        406.0799865722656
+      ],
+      "widget": "CF 285  467",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Name of elderly/disabled person, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "amount",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        189.5399932861328,
+        382.8599853515625,
+        237.77999877929688,
+        398.70001220703125
+      ],
+      "widget": "CF 285  468",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount of expense, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "frequency",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        238.32000732421875,
+        384.1319885253906,
+        310.32000732421875,
+        399.97198486328125
+      ],
+      "widget": "CF 285  469",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid? (weekly, monthly, other) Line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "expense_type",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        311.0400085449219,
+        373.8599853515625,
+        416.1600036621094,
+        406.0799865722656
+      ],
+      "widget": "CF 285  470",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "What type of expense? (Prescriptions, dentures, number of meals for attendant, etc.) line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_source",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.2799987792969,
+        373.8599853515625,
+        577.719970703125,
+        390.239990234375
+      ],
+      "widget": "CF 285  471",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Will the household be reimbursed for any medical expenses? (By Medi-Cal, insurance, family member, etc.)  If yes, by who? Line 4 of 4 ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_amount",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.2799987792969,
+        389.5199890136719,
+        577.719970703125,
+        406.79998779296875
+      ],
+      "widget": "CF 285  472",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Enter how much money will be reimbursed, line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "has_care_cost",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        517.5,
+        75.20001220703125,
+        528.2999877929688,
+        86
+      ],
+      "widget": "CF 285  355",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9. Household’s Child/Adult Care Expenses  Do you or anyone you buy and prepare food with pay for the care of a child, disabled adult, or other dependent so you or the other person can go to work, school, training, or look for a job? (Please check one.) Yes, If yes, please answer this question.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q9.care",
+      "field": "has_care_cost",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        550.0800170898438,
+        75.91998291015625,
+        560.8800048828125,
+        86.719970703125
+      ],
+      "widget": "CF 285  356",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No,  If no, skip to question#10.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "responsible_for_expenses",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        429.1199951171875,
+        458.239990234375,
+        439.9200134277344,
+        469.0400085449219
+      ],
+      "widget": "CF 285  393",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "11. Household Expenses, Are you or anyone you buy and prepare food with responsible for any household expenses? (Please check one.) Yes If yes, please answer this question.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "responsible_for_expenses",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        459,
+        457.5270080566406,
+        469.79998779296875,
+        468.3269958496094
+      ],
+      "widget": "CF 285  393b",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No if no, skip to question #12.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.75999450683594,
+        547.3410034179688,
+        250.55999755859375,
+        558.1409912109375
+      ],
+      "widget": "CF 285  395",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Have Expense? (Please check one.) Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        271,
+        546.6209716796875,
+        281.79998779296875,
+        557.4210205078125
+      ],
+      "widget": "CF 285  396",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.79998779296875,
+        542.2520141601562,
+        432.7200012207031,
+        562.4119873046875
+      ],
+      "widget": "CF 285  397",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who pays?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "amount_owed",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        437.3999938964844,
+        545.760009765625,
+        495,
+        556.5599975585938
+      ],
+      "widget": "CF 285  398",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount owed?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        495.3599853515625,
+        546.3200073242188,
+        574.5599975585938,
+        557.1199951171875
+      ],
+      "widget": "CF 285  399",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often billed? (weekly, monthly, other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 1,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.75999450683594,
+        568.9409790039062,
+        250.55999755859375,
+        579.740966796875
+      ],
+      "widget": "CF 285  401",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Have Expense? (Please check one.) Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 1,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        271.44000244140625,
+        568.9409790039062,
+        282.239990234375,
+        579.740966796875
+      ],
+      "widget": "CF 285  402",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.79998779296875,
+        562.3200073242188,
+        434.1600036621094,
+        586.7999877929688
+      ],
+      "widget": "CF 285  403",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who pays?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "amount_owed",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        437.760009765625,
+        568,
+        495.3599853515625,
+        578.7999877929688
+      ],
+      "widget": "CF 285  404",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount owed?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        495.7200012207031,
+        568.0800170898438,
+        576.719970703125,
+        578.8800048828125
+      ],
+      "widget": "CF 285  405",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often billed? (weekly, monthly, other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 2,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.75999450683594,
+        598.655029296875,
+        250.55999755859375,
+        609.4550170898438
+      ],
+      "widget": "CF 285  408",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Have Expense? (Please check one.) Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 2,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        272.1600036621094,
+        598.375,
+        282.9599914550781,
+        609.1749877929688
+      ],
+      "widget": "CF 285  409",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.44000244140625,
+        586.0800170898438,
+        434.1600036621094,
+        622.0800170898438
+      ],
+      "widget": "CF 285  4010",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who pays?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.79998779296875,
+        596.1600341796875,
+        576,
+        606.9600219726562
+      ],
+      "widget": "CF 285  411",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often billed? (weekly, monthly, other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 3,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        240.0399932861328,
+        625.8209838867188,
+        250.83999633789062,
+        636.6209716796875
+      ],
+      "widget": "CF 285  413",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Have Expense? (Please check one.) Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 3,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        270.7200012207031,
+        625.541015625,
+        281.5199890136719,
+        636.3410034179688
+      ],
+      "widget": "CF 285  414",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.44000244140625,
+        622.0800170898438,
+        434.1600036621094,
+        641.52001953125
+      ],
+      "widget": "CF 285  415",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who pays?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.79998779296875,
+        625.239990234375,
+        576,
+        636.0399780273438
+      ],
+      "widget": "CF 285  416",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often billed? (weekly, monthly, other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 4,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.75999450683594,
+        645.9810180664062,
+        250.55999755859375,
+        656.781005859375
+      ],
+      "widget": "CF 285  418",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Have Expense? (Please check one.) Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 4,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        271.44000244140625,
+        645.9810180664062,
+        282.239990234375,
+        656.781005859375
+      ],
+      "widget": "CF 285  419",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 4,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.5199890136719,
+        641.52001953125,
+        433.1600036621094,
+        661.6799926757812
+      ],
+      "widget": "CF 285  420",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who pays?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 4,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.79998779296875,
+        645.9600219726562,
+        576,
+        656.760009765625
+      ],
+      "widget": "CF 285  421",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often billed? (weekly, monthly, other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 5,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.75999450683594,
+        666.1409912109375,
+        250.55999755859375,
+        676.9409790039062
+      ],
+      "widget": "CF 285  423",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Have Expense? (Please check one.) Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 5,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        270.7200012207031,
+        666.8610229492188,
+        281.5199890136719,
+        677.6610107421875
+      ],
+      "widget": "CF 285  424",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 5,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.44000244140625,
+        660.9600219726562,
+        432.7200012207031,
+        681.8399658203125
+      ],
+      "widget": "CF 285  425",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Who pays?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 5,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.44000244140625,
+        665.5599975585938,
+        575.280029296875,
+        676.3599853515625
+      ],
+      "widget": "CF 285  426",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often billed? (weekly, monthly, other)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
       "groupId": "notes",
       "field": "notes",
       "row": 0,
@@ -3669,26 +5365,6 @@
     {
       "page": 12,
       "rect": [
-        129.60000610351562,
-        330.3999938964844,
-        140.39999389648438,
-        341.20001220703125
-      ],
-      "reason": "not-yet-supported: CF 285  219"
-    },
-    {
-      "page": 12,
-      "rect": [
-        161.27999877929688,
-        329.760009765625,
-        172.0800018310547,
-        340.55999755859375
-      ],
-      "reason": "not-yet-supported: CF 285  220"
-    },
-    {
-      "page": 12,
-      "rect": [
         52.7599983215332,
         372.6400146484375,
         63.560001373291016,
@@ -3895,246 +5571,6 @@
         467.9599914550781
       ],
       "reason": "not-yet-supported: CF 285  242"
-    },
-    {
-      "page": 12,
-      "rect": [
-        36.720001220703125,
-        544.3200073242188,
-        165.60000610351562,
-        576
-      ],
-      "reason": "not-yet-supported: CF 285  243"
-    },
-    {
-      "page": 12,
-      "rect": [
-        166.5,
-        544.3200073242188,
-        310.32000732421875,
-        576.719970703125
-      ],
-      "reason": "not-yet-supported: CF 285  244"
-    },
-    {
-      "page": 12,
-      "rect": [
-        313.9200134277344,
-        554.52001953125,
-        383.0400085449219,
-        565.3200073242188
-      ],
-      "reason": "not-yet-supported: CF 285  245"
-    },
-    {
-      "page": 12,
-      "rect": [
-        383.760009765625,
-        554.9600219726562,
-        483.8399963378906,
-        566.2839965820312
-      ],
-      "reason": "not-yet-supported: CF 285  246"
-    },
-    {
-      "page": 12,
-      "rect": [
-        490.6000061035156,
-        555.0150146484375,
-        501.3999938964844,
-        565.8150024414062
-      ],
-      "reason": "not-yet-supported: CF 285  247"
-    },
-    {
-      "page": 12,
-      "rect": [
-        522,
-        555.0150146484375,
-        532.7999877929688,
-        565.8150024414062
-      ],
-      "reason": "not-yet-supported: CF 285  248"
-    },
-    {
-      "page": 12,
-      "rect": [
-        36.720001220703125,
-        576.719970703125,
-        165.60000610351562,
-        608.4000244140625
-      ],
-      "reason": "not-yet-supported: CF 285  249"
-    },
-    {
-      "page": 12,
-      "rect": [
-        166.5,
-        576.719970703125,
-        310.32000732421875,
-        609.1199951171875
-      ],
-      "reason": "not-yet-supported: CF 285  250"
-    },
-    {
-      "page": 12,
-      "rect": [
-        313.9200134277344,
-        586.9199829101562,
-        383.0400085449219,
-        597.719970703125
-      ],
-      "reason": "not-yet-supported: CF 285  251"
-    },
-    {
-      "page": 12,
-      "rect": [
-        383.760009765625,
-        587.3599853515625,
-        483.8399963378906,
-        598.1600341796875
-      ],
-      "reason": "not-yet-supported: CF 285  252"
-    },
-    {
-      "page": 12,
-      "rect": [
-        490.6000061035156,
-        587.2210083007812,
-        501.3999938964844,
-        598.02099609375
-      ],
-      "reason": "not-yet-supported: CF 285  253"
-    },
-    {
-      "page": 12,
-      "rect": [
-        522,
-        587.2210083007812,
-        532.7999877929688,
-        598.02099609375
-      ],
-      "reason": "not-yet-supported: CF 285  254"
-    },
-    {
-      "page": 12,
-      "rect": [
-        36.720001220703125,
-        609.8399658203125,
-        165.60000610351562,
-        641.52001953125
-      ],
-      "reason": "not-yet-supported: CF 285  255"
-    },
-    {
-      "page": 12,
-      "rect": [
-        166.5,
-        609.8399658203125,
-        310.32000732421875,
-        642.239990234375
-      ],
-      "reason": "not-yet-supported: CF 285  256"
-    },
-    {
-      "page": 12,
-      "rect": [
-        313.9200134277344,
-        620.0399780273438,
-        383.0400085449219,
-        630.8399658203125
-      ],
-      "reason": "not-yet-supported: CF 285  257"
-    },
-    {
-      "page": 12,
-      "rect": [
-        383.760009765625,
-        620.47998046875,
-        483.8399963378906,
-        631.280029296875
-      ],
-      "reason": "not-yet-supported: CF 285  258"
-    },
-    {
-      "page": 12,
-      "rect": [
-        490.6000061035156,
-        620.3410034179688,
-        501.3999938964844,
-        631.1409912109375
-      ],
-      "reason": "not-yet-supported: CF 285  259"
-    },
-    {
-      "page": 12,
-      "rect": [
-        522,
-        620.3410034179688,
-        532.7999877929688,
-        631.1409912109375
-      ],
-      "reason": "not-yet-supported: CF 285  260"
-    },
-    {
-      "page": 12,
-      "rect": [
-        36.720001220703125,
-        642.239990234375,
-        165.60000610351562,
-        673.9199829101562
-      ],
-      "reason": "not-yet-supported: CF 285  261"
-    },
-    {
-      "page": 12,
-      "rect": [
-        166.5,
-        642.239990234375,
-        310.32000732421875,
-        674.6400146484375
-      ],
-      "reason": "not-yet-supported: CF 285  262"
-    },
-    {
-      "page": 12,
-      "rect": [
-        313.9200134277344,
-        652.4400024414062,
-        383.0400085449219,
-        663.239990234375
-      ],
-      "reason": "not-yet-supported: CF 285  263"
-    },
-    {
-      "page": 12,
-      "rect": [
-        383.760009765625,
-        652.8800048828125,
-        483.8399963378906,
-        663.6799926757812
-      ],
-      "reason": "not-yet-supported: CF 285  264"
-    },
-    {
-      "page": 12,
-      "rect": [
-        490.6000061035156,
-        652.740966796875,
-        501.3999938964844,
-        663.541015625
-      ],
-      "reason": "not-yet-supported: CF 285  265"
-    },
-    {
-      "page": 12,
-      "rect": [
-        522,
-        652.740966796875,
-        532.7999877929688,
-        663.541015625
-      ],
-      "reason": "not-yet-supported: CF 285  266"
     },
     {
       "page": 12,
@@ -4709,26 +6145,6 @@
     {
       "page": 14,
       "rect": [
-        517.5,
-        75.20001220703125,
-        528.2999877929688,
-        86
-      ],
-      "reason": "not-yet-supported: CF 285  355"
-    },
-    {
-      "page": 14,
-      "rect": [
-        550.0800170898438,
-        75.91998291015625,
-        560.8800048828125,
-        86.719970703125
-      ],
-      "reason": "not-yet-supported: CF 285  356"
-    },
-    {
-      "page": 14,
-      "rect": [
         414,
         229.55999755859375,
         424.79998779296875,
@@ -4929,26 +6345,6 @@
     {
       "page": 14,
       "rect": [
-        429.1199951171875,
-        458.239990234375,
-        439.9200134277344,
-        469.0400085449219
-      ],
-      "reason": "not-yet-supported: CF 285  393"
-    },
-    {
-      "page": 14,
-      "rect": [
-        459,
-        457.5270080566406,
-        469.79998779296875,
-        468.3269958496094
-      ],
-      "reason": "not-yet-supported: CF 285  393b"
-    },
-    {
-      "page": 14,
-      "rect": [
         37.439998626708984,
         479.8399963378906,
         51.119998931884766,
@@ -4969,112 +6365,12 @@
     {
       "page": 14,
       "rect": [
-        239.75999450683594,
-        547.3410034179688,
-        250.55999755859375,
-        558.1409912109375
-      ],
-      "reason": "not-yet-supported: CF 285  395"
-    },
-    {
-      "page": 14,
-      "rect": [
-        271,
-        546.6209716796875,
-        281.79998779296875,
-        557.4210205078125
-      ],
-      "reason": "not-yet-supported: CF 285  396"
-    },
-    {
-      "page": 14,
-      "rect": [
-        298.79998779296875,
-        542.2520141601562,
-        432.7200012207031,
-        562.4119873046875
-      ],
-      "reason": "not-yet-supported: CF 285  397"
-    },
-    {
-      "page": 14,
-      "rect": [
-        437.3999938964844,
-        545.760009765625,
-        495,
-        556.5599975585938
-      ],
-      "reason": "not-yet-supported: CF 285  398"
-    },
-    {
-      "page": 14,
-      "rect": [
-        495.3599853515625,
-        546.3200073242188,
-        574.5599975585938,
-        557.1199951171875
-      ],
-      "reason": "not-yet-supported: CF 285  399"
-    },
-    {
-      "page": 14,
-      "rect": [
         201.60000610351562,
         573.8399658203125,
         214.55999755859375,
         584.6400146484375
       ],
       "reason": "not-yet-supported: CF 285  400"
-    },
-    {
-      "page": 14,
-      "rect": [
-        239.75999450683594,
-        568.9409790039062,
-        250.55999755859375,
-        579.740966796875
-      ],
-      "reason": "not-yet-supported: CF 285  401"
-    },
-    {
-      "page": 14,
-      "rect": [
-        271.44000244140625,
-        568.9409790039062,
-        282.239990234375,
-        579.740966796875
-      ],
-      "reason": "not-yet-supported: CF 285  402"
-    },
-    {
-      "page": 14,
-      "rect": [
-        298.79998779296875,
-        562.3200073242188,
-        434.1600036621094,
-        586.7999877929688
-      ],
-      "reason": "not-yet-supported: CF 285  403"
-    },
-    {
-      "page": 14,
-      "rect": [
-        437.760009765625,
-        568,
-        495.3599853515625,
-        578.7999877929688
-      ],
-      "reason": "not-yet-supported: CF 285  404"
-    },
-    {
-      "page": 14,
-      "rect": [
-        495.7200012207031,
-        568.0800170898438,
-        576.719970703125,
-        578.8800048828125
-      ],
-      "reason": "not-yet-supported: CF 285  405"
     },
     {
       "page": 14,
@@ -5089,92 +6385,12 @@
     {
       "page": 14,
       "rect": [
-        239.75999450683594,
-        598.655029296875,
-        250.55999755859375,
-        609.4550170898438
-      ],
-      "reason": "not-yet-supported: CF 285  408"
-    },
-    {
-      "page": 14,
-      "rect": [
-        272.1600036621094,
-        598.375,
-        282.9599914550781,
-        609.1749877929688
-      ],
-      "reason": "not-yet-supported: CF 285  409"
-    },
-    {
-      "page": 14,
-      "rect": [
-        298.44000244140625,
-        586.0800170898438,
-        434.1600036621094,
-        622.0800170898438
-      ],
-      "reason": "not-yet-supported: CF 285  4010"
-    },
-    {
-      "page": 14,
-      "rect": [
-        496.79998779296875,
-        596.1600341796875,
-        576,
-        606.9600219726562
-      ],
-      "reason": "not-yet-supported: CF 285  411"
-    },
-    {
-      "page": 14,
-      "rect": [
         176.39999389648438,
         624.239990234375,
         190.0800018310547,
         640.0800170898438
       ],
       "reason": "not-yet-supported: CF 285  412"
-    },
-    {
-      "page": 14,
-      "rect": [
-        240.0399932861328,
-        625.8209838867188,
-        250.83999633789062,
-        636.6209716796875
-      ],
-      "reason": "not-yet-supported: CF 285  413"
-    },
-    {
-      "page": 14,
-      "rect": [
-        270.7200012207031,
-        625.541015625,
-        281.5199890136719,
-        636.3410034179688
-      ],
-      "reason": "not-yet-supported: CF 285  414"
-    },
-    {
-      "page": 14,
-      "rect": [
-        298.44000244140625,
-        622.0800170898438,
-        434.1600036621094,
-        641.52001953125
-      ],
-      "reason": "not-yet-supported: CF 285  415"
-    },
-    {
-      "page": 14,
-      "rect": [
-        496.79998779296875,
-        625.239990234375,
-        576,
-        636.0399780273438
-      ],
-      "reason": "not-yet-supported: CF 285  416"
     },
     {
       "page": 14,
@@ -5189,92 +6405,12 @@
     {
       "page": 14,
       "rect": [
-        239.75999450683594,
-        645.9810180664062,
-        250.55999755859375,
-        656.781005859375
-      ],
-      "reason": "not-yet-supported: CF 285  418"
-    },
-    {
-      "page": 14,
-      "rect": [
-        271.44000244140625,
-        645.9810180664062,
-        282.239990234375,
-        656.781005859375
-      ],
-      "reason": "not-yet-supported: CF 285  419"
-    },
-    {
-      "page": 14,
-      "rect": [
-        298.5199890136719,
-        641.52001953125,
-        433.1600036621094,
-        661.6799926757812
-      ],
-      "reason": "not-yet-supported: CF 285  420"
-    },
-    {
-      "page": 14,
-      "rect": [
-        496.79998779296875,
-        645.9600219726562,
-        576,
-        656.760009765625
-      ],
-      "reason": "not-yet-supported: CF 285  421"
-    },
-    {
-      "page": 14,
-      "rect": [
         203.75999450683594,
         663.1199951171875,
         217.44000244140625,
         675
       ],
       "reason": "not-yet-supported: CF 285  422"
-    },
-    {
-      "page": 14,
-      "rect": [
-        239.75999450683594,
-        666.1409912109375,
-        250.55999755859375,
-        676.9409790039062
-      ],
-      "reason": "not-yet-supported: CF 285  423"
-    },
-    {
-      "page": 14,
-      "rect": [
-        270.7200012207031,
-        666.8610229492188,
-        281.5199890136719,
-        677.6610107421875
-      ],
-      "reason": "not-yet-supported: CF 285  424"
-    },
-    {
-      "page": 14,
-      "rect": [
-        298.44000244140625,
-        660.9600219726562,
-        432.7200012207031,
-        681.8399658203125
-      ],
-      "reason": "not-yet-supported: CF 285  425"
-    },
-    {
-      "page": 14,
-      "rect": [
-        496.44000244140625,
-        665.5599975585938,
-        575.280029296875,
-        676.3599853515625
-      ],
-      "reason": "not-yet-supported: CF 285  426"
     },
     {
       "page": 14,
@@ -5345,26 +6481,6 @@
         747.1199951171875
       ],
       "reason": "not-yet-supported: CF 285  433"
-    },
-    {
-      "page": 15,
-      "rect": [
-        104.4000015258789,
-        77.03997802734375,
-        115.19999694824219,
-        87.84002685546875
-      ],
-      "reason": "not-yet-supported: CF 285  434"
-    },
-    {
-      "page": 15,
-      "rect": [
-        135,
-        77.760009765625,
-        145.8000030517578,
-        88.55999755859375
-      ],
-      "reason": "not-yet-supported: CF 285  435"
     },
     {
       "page": 15,
@@ -5495,246 +6611,6 @@
         219.5999755859375
       ],
       "reason": "not-yet-supported: CF 285  448"
-    },
-    {
-      "page": 15,
-      "rect": [
-        37.279998779296875,
-        274.32000732421875,
-        185.60000610351562,
-        306.7200012207031
-      ],
-      "reason": "not-yet-supported: CF 285  449"
-    },
-    {
-      "page": 15,
-      "rect": [
-        190.25999450683594,
-        283.5,
-        238.5,
-        299.3399963378906
-      ],
-      "reason": "not-yet-supported: CF 285  450"
-    },
-    {
-      "page": 15,
-      "rect": [
-        239.0399932861328,
-        284.7720031738281,
-        311.0400085449219,
-        300.61199951171875
-      ],
-      "reason": "not-yet-supported: CF 285  451"
-    },
-    {
-      "page": 15,
-      "rect": [
-        311.760009765625,
-        274.5,
-        416.8800048828125,
-        306.7200012207031
-      ],
-      "reason": "not-yet-supported: CF 285  452"
-    },
-    {
-      "page": 15,
-      "rect": [
-        468.2799987792969,
-        274.5,
-        577.719970703125,
-        290.8800048828125
-      ],
-      "reason": "not-yet-supported: CF 285  453"
-    },
-    {
-      "page": 15,
-      "rect": [
-        468.2799987792969,
-        290.1600036621094,
-        577.719970703125,
-        307.44000244140625
-      ],
-      "reason": "not-yet-supported: CF 285  454"
-    },
-    {
-      "page": 15,
-      "rect": [
-        37.279998779296875,
-        307.1600036621094,
-        185.60000610351562,
-        339.55999755859375
-      ],
-      "reason": "not-yet-supported: CF 285  455"
-    },
-    {
-      "page": 15,
-      "rect": [
-        190.5399932861328,
-        316.3399963378906,
-        238.77999877929688,
-        332.17999267578125
-      ],
-      "reason": "not-yet-supported: CF 285  456"
-    },
-    {
-      "page": 15,
-      "rect": [
-        239.32000732421875,
-        317.61199951171875,
-        311.32000732421875,
-        333.4519958496094
-      ],
-      "reason": "not-yet-supported: CF 285  457"
-    },
-    {
-      "page": 15,
-      "rect": [
-        312.0400085449219,
-        307.3399963378906,
-        417.1600036621094,
-        339.55999755859375
-      ],
-      "reason": "not-yet-supported: CF 285  458"
-    },
-    {
-      "page": 15,
-      "rect": [
-        468.2799987792969,
-        307.3399963378906,
-        577.719970703125,
-        323.7200012207031
-      ],
-      "reason": "not-yet-supported: CF 285  459"
-    },
-    {
-      "page": 15,
-      "rect": [
-        468.2799987792969,
-        323,
-        577.719970703125,
-        340.2799987792969
-      ],
-      "reason": "not-yet-supported: CF 285  460"
-    },
-    {
-      "page": 15,
-      "rect": [
-        37.279998779296875,
-        340.3800048828125,
-        185.60000610351562,
-        372.7799987792969
-      ],
-      "reason": "not-yet-supported: CF 285  461"
-    },
-    {
-      "page": 15,
-      "rect": [
-        190.25999450683594,
-        349.55999755859375,
-        238.5,
-        365.3999938964844
-      ],
-      "reason": "not-yet-supported: CF 285  462"
-    },
-    {
-      "page": 15,
-      "rect": [
-        239.0399932861328,
-        350.8320007324219,
-        311.0400085449219,
-        366.6719970703125
-      ],
-      "reason": "not-yet-supported: CF 285  463"
-    },
-    {
-      "page": 15,
-      "rect": [
-        311.760009765625,
-        340.55999755859375,
-        416.8800048828125,
-        372.7799987792969
-      ],
-      "reason": "not-yet-supported: CF 285  464"
-    },
-    {
-      "page": 15,
-      "rect": [
-        468.2799987792969,
-        340.55999755859375,
-        577.719970703125,
-        356.94000244140625
-      ],
-      "reason": "not-yet-supported: CF 285  465"
-    },
-    {
-      "page": 15,
-      "rect": [
-        468.2799987792969,
-        356.2200012207031,
-        577.719970703125,
-        373.5
-      ],
-      "reason": "not-yet-supported: CF 285  466"
-    },
-    {
-      "page": 15,
-      "rect": [
-        37.279998779296875,
-        373.67999267578125,
-        185.60000610351562,
-        406.0799865722656
-      ],
-      "reason": "not-yet-supported: CF 285  467"
-    },
-    {
-      "page": 15,
-      "rect": [
-        189.5399932861328,
-        382.8599853515625,
-        237.77999877929688,
-        398.70001220703125
-      ],
-      "reason": "not-yet-supported: CF 285  468"
-    },
-    {
-      "page": 15,
-      "rect": [
-        238.32000732421875,
-        384.1319885253906,
-        310.32000732421875,
-        399.97198486328125
-      ],
-      "reason": "not-yet-supported: CF 285  469"
-    },
-    {
-      "page": 15,
-      "rect": [
-        311.0400085449219,
-        373.8599853515625,
-        416.1600036621094,
-        406.0799865722656
-      ],
-      "reason": "not-yet-supported: CF 285  470"
-    },
-    {
-      "page": 15,
-      "rect": [
-        468.2799987792969,
-        373.8599853515625,
-        577.719970703125,
-        390.239990234375
-      ],
-      "reason": "not-yet-supported: CF 285  471"
-    },
-    {
-      "page": 15,
-      "rect": [
-        468.2799987792969,
-        389.5199890136719,
-        577.719970703125,
-        406.79998779296875
-      ],
-      "reason": "not-yet-supported: CF 285  472"
     },
     {
       "page": 15,

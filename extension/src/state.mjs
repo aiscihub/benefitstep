@@ -1,5 +1,6 @@
 import {fresh as startingState} from './starting-state.mjs';
 import {reconcileDoctor} from './doctor.mjs';
+import {householdLists} from './household.mjs';
 import {EXPECTED,FIELD_DEFS,normalizeValue,moneyCents,validDate} from '../shared/core/schema.mjs';
 const stamp=()=>new Date().toISOString();
 const id=()=>crypto.randomUUID();
@@ -36,10 +37,10 @@ export function manualFact(s,{person,period,value,fieldKey='gross_pay',group='In
  const normalized=normalizeValue(fieldKey,value);if(normalized===null)throw Error('Enter an amount, including 0 only if you mean zero.');
  const f={id:id(),fieldKey,label:FIELD_DEFS[fieldKey][0],value:normalized,cents:moneyCents(normalized,true),person:person.trim(),period:period.trim(),group,origin:'owner_entry',revision:1,confirmedRevision:null};s.facts.push(f);s.revision++;return f;
 }
-export function gaps(s){return [
+export function gaps(s){const lists=new Set(householdLists(s).map(p=>p.documentId));return [
  ...s.facts.filter(f=>!f.superseded&&(f.value===null||f.conflict)).map(f=>({id:f.id,type:'answer',label:f.deferred?'Answer in BenefitsCal':'Needs your attention',text:`${f.label} · ${f.person} · ${f.period}`,deferred:f.deferred})),
  ...s.facts.filter(f=>!f.superseded&&!f.documentId&&f.value!==null).map(f=>({id:f.id,type:'evidence',label:'Can add later',text:`Supporting evidence for ${f.label}. Your answer stays available; no deduction or verification result is assumed.`})),
- ...s.docs.filter(d=>!d.duplicateOf&&!d.historical&&(d.analysisState!=='complete'||!d.fields.length)).map(d=>({id:d.id,type:'document',label:'Review this source',text:`${d.filename}: ${d.error||'No supported facts extracted. Enter the relevant answer or leave it for BenefitsCal.'}`}))];}
+ ...s.docs.filter(d=>!d.duplicateOf&&!d.historical&&!lists.has(d.id)&&(d.analysisState!=='complete'||!d.fields.length)).map(d=>({id:d.id,type:'document',label:'Review this source',text:`${d.filename}: ${d.error||'No supported facts extracted. Enter the relevant answer or leave it for BenefitsCal.'}`}))];}
 export function programStarted(s,program){
  if(!s.programs.has(program))return false;
  const q=s.starting[program==='CalFresh'?'calfresh':program==='Medi-Cal'?'medical':''];

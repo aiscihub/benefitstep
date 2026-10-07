@@ -1,4 +1,4 @@
-import {PDFDocument,PDFName,PDFDict,PDFArray,PDFTextField,PDFCheckBox,PDFDropdown,PDFRadioGroup,PDFOptionList,PDFSignature,rgb} from '../vendor/pdf-writer/pdf-lib.mjs';
+import {PDFDocument,PDFName,PDFDict,PDFArray,PDFTextField,PDFCheckBox,PDFDropdown,PDFRadioGroup,PDFOptionList,PDFSignature,rgb,defaultTextFieldAppearanceProvider} from '../vendor/pdf-writer/pdf-lib.mjs';
 import fontkit from '../vendor/pdf-writer/fontkit.mjs';
 import {prepareForm} from '../engine/dist/forms.js';
 import {stableStringify} from '../engine/dist/engine.js';
@@ -53,6 +53,12 @@ export async function renderOfficialForm({template,inventory,map,answers,fontByt
   assert(m.x===0&&m.y===0&&c.x===0&&c.y===0&&m.width===c.width&&m.height===c.height,'Nonzero crop origin needs separately calibrated mapping');
  }
  doc.registerFontkit(fontkit);const font=await doc.embedFont(fontBytes,{subset:true});
+ // The library centres a line of text on the font's full line height. That is taller than the letters and does not fit
+ // the forms' short boxes, so viewers cut the foot of each character. In those boxes the line is centred on the letters
+ // themselves, from the tallest stem to the lowest tail.
+ const face=font.embedder.font,reach=(text,edge)=>Math[edge==='maxY'?'max':'min'](...face.layout(text).glyphs.map(g=>g.bbox[edge]))/face.unitsPerEm;
+ const letters=reach('bdfhkl','maxY')+reach('gjpqy','minY');
+ const seated=new Proxy(font,{get:(target,key)=>key==='heightAtSize'?(size,options)=>options?.descender===false?letters*size:target.heightAtSize(size,options):typeof target[key]==='function'?target[key].bind(target):target[key]});
  const problems=[...plan.missing],written=[],touched=new Set();
  for(const op of plan.operations){check();
   const binding=map.bindings.find(b=>b.groupId===op.groupId&&b.row===op.row&&b.field===op.field&&b.widget===op.widget&&b.page===op.page);
@@ -72,7 +78,13 @@ export async function renderOfficialForm({template,inventory,map,answers,fontByt
    const size=binding.fontSize;assert(size>=8&&size<=14,'Unreadable font size');
    const issue=fits(op.text,font,size,r,binding.multiline)||((f.getMaxLength()&&op.text.length>f.getMaxLength())?'text_overflow':null);
    if(issue){problems.push({groupId:op.groupId,row:op.row,field:op.field,reason:issue,value:op.text});continue;}
-   f.setFontSize(size);f.setText(op.text);f.updateAppearances(font);
+   f.setFontSize(size);f.setText(op.text);
+   const boxHeight=r[3]-r[1],short=!binding.multiline&&boxHeight<16;
+   const draw=()=>short?f.updateAppearances(font,(field,widget)=>defaultTextFieldAppearanceProvider(field,widget,seated)):f.updateAppearances(font);
+   // The shortest boxes also count a 1-point border in their inset although no border colour is set. Its width is set
+   // aside only while the text is laid out, then put back.
+   const border=w.getBorderStyle(),width=border?.getWidth()||0,drawn=(w.getAppearanceCharacteristics()?.getBorderColor()||[]).length>0;
+   if(short&&boxHeight<12&&width&&!drawn){border.setWidth(0);draw();border.setWidth(width);}else draw();
   }else if(f instanceof PDFCheckBox){
    assert(op.kind==='checkbox'&&binding.optionValue!==undefined,'Checkbox needs an explicit option binding');
    assert(w.getOnValue()?.decodeText()===binding.exportValue,'Checkbox export value mismatch');f.check();

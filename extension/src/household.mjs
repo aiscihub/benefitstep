@@ -18,6 +18,53 @@ export function saveHousehold(s,input){
  for(const [key,value] of Object.entries({person:p.name,home_address:p.home_address,home_city:p.home_city,home_state:p.home_state,home_zip:p.home_zip}))if(value)s.facts.push({id:crypto.randomUUID(),fieldKey:key,label:FIELD_DEFS[key][0],value,person:p.name,period:'Current household details',group:'Your Information',origin:'owner_entry',householdProfile:true,revision:1,confirmedRevision:null});
  return p;
 }
+// A household list is a heading such as "Household members" followed by one numbered or bulleted line per person.
+// A line counts only when it starts with a name and states that person's date of birth, so a numbered list of
+// anything else on the same page is passed over.
+const LIST_HEADING=/\b(?:household (?:members?|composition|roster)|(?:people|members) (?:in|of) (?:your|the|this) household)\b/i;
+const LIST_ENTRY=/^\s*(?:\d{1,2}[.)]|[•*–-])\s+(.+)$/;
+const BORN=/\b(?:DOB|date of birth|born(?: on)?)[:\s]+([A-Za-z]+ \d{1,2},? \d{4}|\d{1,2}\/\d{1,2}\/\d{4}|\d{4}-\d{2}-\d{2})/i;
+const LISTED_NAME=/^\p{L}[\p{L}.'’-]*(?: \p{L}[\p{L}.'’-]*){1,4}$/u;
+// Longer wordings first, so "granddaughter" is not read as "daughter".
+const RELATIONS=['head of household','domestic partner','other relative','mother-in-law','father-in-law','sister-in-law','brother-in-law','not related','stepdaughter','granddaughter','grandmother','grandfather','grandparent','grandchild','grandson','stepchild','stepson','applicant','roommate','daughter','husband','sibling','partner','brother','nephew','spouse','mother','father','parent','sister','cousin','uncle','niece','child','self','wife','aunt','son'];
+const SELF=new Set(['head of household','applicant','self']);
+/** People a current document lists as the household, each with the date of birth it states. They are only offered for the owner to choose. */
+export function householdLists(s){
+ const people=[];
+ for(const doc of s.docs.filter(d=>!d.duplicateOf&&!d.historical&&!d.demoSource))for(const page of doc.pages||[]){
+  let listed=false;
+  for(const line of String(page.text||'').split('\n')){
+   const entry=line.match(LIST_ENTRY);
+   if(!entry){listed||=LIST_HEADING.test(line);continue;}
+   const born=listed&&entry[1].match(BORN);if(!born)continue;
+   const head=entry[1].split(/,|\(|\s[—–-]\s|\s{2,}|\b(?:DOB|date of birth|born)\b/i)[0].trim(),date=normalizeValue('document_date',born[1]);
+   if(!LISTED_NAME.test(head)||!date)continue;
+   const rest=entry[1].slice(head.length).toLowerCase(),relation=RELATIONS.find(r=>new RegExp('\\b'+r+'\\b').test(rest))||'';
+   people.push({name:normalizeValue('person',head),date_of_birth:date,relationship:relation&&relation[0].toUpperCase()+relation.slice(1),self:SELF.has(relation),file:doc.filename,documentId:doc.id,page:page.page});
+  }
+ }
+ return people;
+}
+/** Birth date and relationship for a name, where the household lists agree. A relationship is given only from a list written from the owner's side: the person it marks as self or head of household is the owner. */
+export function listedDetails(s,name){
+ const lists=householdLists(s),key=normalized(name),owner=s.household?.configured?normalized(s.household.name):'';
+ const one=values=>{const found=[...new Set(values.filter(Boolean))];return found.length===1?found[0]:'';};
+ const ownersList=file=>lists.some(p=>p.file===file&&p.self&&normalized(p.name)===owner),mine=lists.filter(p=>normalized(p.name)===key);
+ return {date_of_birth:one(mine.map(p=>p.date_of_birth)),relationship:key===owner?'':one(mine.filter(p=>!p.self&&ownersList(p.file)).map(p=>p.relationship)),files:[...new Set(mine.map(p=>p.file))]};
+}
+/** Contact details written on the owner's own household list: a mailing address, other names used and an email address. Read only from a list that marks the owner as self or head of household. */
+export function householdSheet(s){
+ const owner=s.household?.configured?normalized(s.household.name):'',files=new Set(householdLists(s).filter(p=>p.self&&normalized(p.name)===owner).map(p=>p.file)),found={files:[]};
+ const note=(key,value,file)=>{if(value&&!(key in found)){found[key]=value;if(!found.files.includes(file))found.files.push(file);}};
+ for(const doc of s.docs.filter(d=>files.has(d.filename)&&!d.duplicateOf&&!d.historical))for(const page of doc.pages||[])for(const line of String(page.text||'').split('\n')){
+  const stated=label=>line.match(new RegExp('^\\s*'+label+'\\s*:\\s*(.+?)\\s*$','i'))?.[1];
+  const mail=stated('Mailing address')?.match(/^(.+?),\s*([^,]+),\s*([A-Za-z]{2})\s+(\d{5}(?:-\d{4})?)$/);
+  if(mail)note('mailing',{address:mail[1].trim(),city:mail[2].trim(),state:mail[3].toUpperCase(),zip:mail[4]},doc.filename);
+  note('other_names',stated('Other names(?: used)?'),doc.filename);
+  note('email',stated('E-?mail(?: address)?')?.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)?.[0],doc.filename);
+ }
+ return found;
+}
 /** Names and addresses that current sources show for their recipient. They are only offered for the owner to choose; nothing is applied automatically. */
 export function householdSuggestions(s){
  const names=new Map(),addresses=new Map();
@@ -29,6 +76,7 @@ export function householdSuggestions(s){
   for(const d of doc.dependants||[])note(names,normalized(d.name),{name:d.name,recipient:false},doc.filename);
   if(street){const a={home_address:street,home_city:get('home_city'),home_state:get('home_state'),home_zip:get('home_zip')};note(addresses,normalized(Object.values(a).filter(Boolean).join(' ')),a,doc.filename);}
  }
+ for(const p of householdLists(s))note(names,normalized(p.name),{name:p.name,recipient:false},p.file);
  // People a document is addressed to come before a child or patient it only names; then the most frequent first.
  const order=map=>[...map.values()].sort((a,b)=>(b.recipient===true)-(a.recipient===true)||b.files.length-a.files.length);
  return {names:order(names),addresses:order(addresses)};

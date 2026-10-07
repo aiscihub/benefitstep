@@ -1,0 +1,159 @@
+{
+  "alexExamples": {
+    "documents": 4,
+    "findings": 0,
+    "confirmedFacts": 57,
+    "unusableFacts": 0
+  },
+  "household": {
+    "householdEntry": true,
+    "staleAmountsExcluded": true,
+    "sourceCorrection": true,
+    "originalPreserved": true,
+    "languagesPreserveProfile": true,
+    "sampleImagesImported": [],
+    "remoteRequests": 0,
+    "exceptions": 0
+  },
+  "i18n": {
+    "languages": [
+      "en-US",
+      "es-US",
+      "zh-CN"
+    ],
+    "answersPreserved": true,
+    "confirmationPreserved": true,
+    "originalValuesPreserved": true,
+    "reviewItems": 17,
+    "officialFormsRemainEnglish": true,
+    "offline": true,
+    "remoteRequests": 0,
+    "exceptions": 0
+  },
+  "earleyDemo": {
+    "testedCopy": "the unzipped upload archive",
+    "quickCheckSkipped": true,
+    "householdChosenFromDocuments": {
+      "name": "Shirley M. Earley",
+      "otherMembers": 4,
+      "address": "4078 Sycamore Street, San Jose, CA 95129"
+    },
+    "allPdfsAiOff": {
+      "documents": 11,
+      "readByTextReader": 11,
+      "batchSeconds": 4,
+      "reviewItemsNeedingAttention": 0,
+      "calFresh": {
+        "peopleChosen": 5,
+        "fieldsFilled": 72,
+        "pdfPages": [
+          9,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "error": null
+      },
+      "mediCal": {
+        "peopleChosen": 4,
+        "fieldsFilled": 61,
+        "pdfPages": [
+          4,
+          5,
+          6,
+          15,
+          16
+        ],
+        "error": null
+      },
+      "pageErrors": 0
+    },
+    "picturesAiOn": {
+      "documents": 11,
+      "readByOnDeviceAi": 3,
+      "readByTextReader": 8,
+      "pictureTypesRead": [
+        "rent",
+        "income_award",
+        "medical"
+      ],
+      "batchSeconds": 42,
+      "reviewItemsNeedingAttention": 0,
+      "calFresh": {
+        "peopleChosen": 5,
+        "fieldsFilled": 72,
+        "pdfPages": [
+          9,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "error": null
+      },
+      "mediCal": {
+        "peopleChosen": 4,
+        "fieldsFilled": 61,
+        "pdfPages": [
+          4,
+          5,
+          6,
+          15,
+          16
+        ],
+        "error": null
+      },
+      "pageErrors": 0
+    }
+  },
+  "onDeviceAiControl": {
+    "turnOnButtonShownWhenModelNotReady": true,
+    "statusAfterTurnOn": "available",
+    "imageInputAfterTurnOn": "available",
+    "readerShownPerDocument": true,
+    "pageErrors": 0
+  },
+  "checkedOnTheDevelopmentBuildWithTheSameSourceFiles": {
+    "singlePictureReadings": {
+      "readings": 9,
+      "correctTypeAndNeededDetails": 9,
+      "secondsEach": [
+        10,
+        58
+      ]
+    },
+    "picturePackWithAiOff": {
+      "picturesUnread": 3,
+      "reviewItemsNeedingAttention": 3,
+      "calFreshFieldsFilled": 58,
+      "calFreshPdfPages": [
+        9,
+        11,
+        13,
+        14
+      ],
+      "mediCalFieldsFilled": 61
+    },
+    "aiTurnedOnAfterImport": {
+      "picturesReadAgain": 6,
+      "readCorrectly": 6,
+      "secondsEach": [
+        12,
+        17
+      ],
+      "calFreshFieldsBefore": 58,
+      "calFreshFieldsAfter": 72
+    }
+  },
+  "browser": "Chrome 154 headless, desktop macOS, throwaway profiles; the AI checks used the on-device model already downloaded on the test Mac",
+  "notRun": [
+    "a visible Chrome window or an everyday Chrome profile",
+    "phone photos or skewed scans",
+    "image decoding with the earlier sample images",
+    "pixel comparison of the newly mapped CalFresh boxes",
+    "store listing screenshots"
+  ]
+}

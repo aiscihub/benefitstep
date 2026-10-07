@@ -52,3 +52,6 @@ body{background:var(--page)}.topbar{background:white;border-bottom:1px solid var
 @media (max-width: 500px) { .language-control { flex-direction: column; align-items: flex-start; gap: 0; } .topbar-inner { min-height: 72px; } .header-actions { gap: 8px; } }
 
 .household-access{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--divider);padding:14px 0}.household-access p{margin:4px 0 0;overflow-wrap:anywhere}.household-access>div{min-width:0;flex:1 1 160px}.household-access .btn{white-space:normal}
+.filled-summary h4{margin:18px 0 4px;font-size:14px}.filled-summary h4 small{display:block;font-weight:400;color:var(--muted)}.filled-summary h4 .text-link{margin-right:12px}
+.filled-summary ul{margin:0 0 4px;padding-left:18px}.filled-summary li{margin-block:8px;font-size:14px;overflow-wrap:anywhere}.filled-summary li small{display:block;color:var(--muted)}
+.build-stamp{flex-basis:100%;color:var(--muted);font-size:12px}

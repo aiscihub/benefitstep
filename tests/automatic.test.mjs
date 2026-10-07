@@ -74,3 +74,29 @@ test('User cancellation never falls back or trips the batch model circuit breake
  const controller=new AbortController(),batchState={};let prompted=0;const factory={availability:async()=>'available',create:async()=>({prompt:async()=>{prompted++;controller.abort();return '{}';},destroy(){}})};
  await assert.rejects(()=>extractAutomatically(text('RENTAL AGREEMENT'),{factory,signal:controller.signal,batchState}),e=>e.code==='AI_CANCELLED');assert.equal(prompted,1);assert.equal(batchState.aiFailure,undefined);
 });
+import {splitAddress,addSecondLook,missingFromPicture,thin,mergeReadings} from '../extension/shared/browser/automatic.mjs';
+const picture=[{page:1,text:'',preview:'data:image/png;base64,'}],proposed=(key,value)=>({key,value,page:1,quote:value,sourceValue:value,sourceVerified:false,provenance:'image-proposed',confirmed:false,conflict:false,method:'native-ai'});
+test('an address the model gives as one line is split into street, city, state and ZIP',()=>{
+ const split=splitAddress({kind:'rent',fields:[proposed('home_address','12 Example Street, Example City, ca 95000'),proposed('rent_amount','1400.00')],warnings:[]});
+ assert.deepEqual(Object.fromEntries(split.fields.map(f=>[f.key,f.value])),{home_address:'12 Example Street',rent_amount:'1400.00',home_city:'Example City',home_state:'CA',home_zip:'95000'});
+ const kept=splitAddress({kind:'rent',fields:[proposed('home_address','12 Example Street'),proposed('home_city','Example City')],warnings:[]});
+ assert.deepEqual(kept.fields.map(f=>f.value),['12 Example Street','Example City']);
+});
+test('a second look at a picture adds only what the first reading lacks and the document type allows',()=>{
+ const first={kind:'medical',fields:[proposed('person','Demo Elder E'),proposed('home_city','Example City'),proposed('patient_responsibility','64.20')],warnings:[]};
+ assert.deepEqual(missingFromPicture(first),['home_address','home_state','home_zip','service_description']);
+ const second=addSecondLook(first,{home_address:'12 Example Street',home_city:'Other City',home_state:'CA',home_zip:'95000',service_description:'Prescriptions',gross_pay:'9999.00'},picture);
+ assert.deepEqual(Object.fromEntries(second.fields.map(f=>[f.key,f.value])),{person:'Demo Elder E',home_city:'Example City',patient_responsibility:'64.20',home_address:'12 Example Street',home_state:'CA',home_zip:'95000',service_description:'Prescriptions'});
+ assert.equal(second.fields.at(-1).provenance,'image-proposed');
+ // A rent receipt has no service description to ask about, and an unidentified picture is not asked anything.
+ assert.deepEqual(missingFromPicture({kind:'rent',fields:[],warnings:[]}),['home_address','home_city','home_state','home_zip']);assert.deepEqual(missingFromPicture({kind:'unknown',fields:[],warnings:[]}),[]);
+ assert.equal(addSecondLook(first,{},picture),first);
+});
+test('a thin picture reading is recognised, and a second reading supplies only what the first lacks',()=>{
+ const name={kind:'rent',fields:[proposed('person','Demo Adult A')],warnings:[]},full={kind:'rent',fields:[proposed('person','Other Name'),proposed('rent_amount','1400.00'),proposed('period_start','2026-10-01')],warnings:[]};
+ assert.equal(thin(name),true);assert.equal(thin(full),false);assert.equal(thin({kind:'unknown',fields:[],warnings:[]}),true);
+ assert.equal(thin({kind:'rent',fields:[proposed('rent_amount','1400.00')],warnings:[]}),true);
+ assert.deepEqual(mergeReadings(name,full).fields.map(f=>[f.key,f.value]),[['person','Demo Adult A'],['rent_amount','1400.00'],['period_start','2026-10-01']]);
+ assert.equal(mergeReadings(name,{kind:'utility',fields:[proposed('amount_due','80.00')],warnings:[]}),name);
+ assert.equal(mergeReadings({kind:'unknown',fields:[],warnings:[]},full),full);
+});

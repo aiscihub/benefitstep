@@ -1,5 +1,5 @@
 /** Generic evidence checks only. No eligibility rules, thresholds, or model decisions. */
-import {assessSource} from './household.mjs';
+import {assessSource,householdLists} from './household.mjs';
 import {parseMoney, validPeriod, matchRecordToRequest} from '../reference/kernel.mjs';
 export const DOCTOR_VERSION='1.0.0';
 const known=f=>f&&f.value!==null&&!f.deferred&&!f.superseded;
@@ -16,9 +16,12 @@ export function runDoctor(s){
   if(resolution)item.resolution=resolution;
   trace.push(item);if(['finding','needs_context'].includes(state)&&!resolution)findings.push(item);
  };
+ const lists=new Set(householdLists(s).map(p=>p.documentId));
  for(const d of s.docs.filter(d=>d.duplicateOf))emit('PD03','clear','Exact duplicate excluded','Identical file bytes remain in History.','Use the original record.',[],[d]);
  for(const d of active){
   const fs=facts.filter(f=>f.documentId===d.id),get=k=>fs.find(f=>f.fieldKey===k);
+  // A household list names people. It is addressed to nobody and covers no period, so the source checks do not apply to it.
+  if(d.kind==='unknown'&&lists.has(d.id)){emit('HL01','clear','Household list','This document lists household members with their dates of birth.','Choose the people in your household details.',[],[d]);continue;}
   if(s.household?.configured){const assessment=assessSource(s,d);for(const check of assessment.checks.filter(c=>c.status!=='clear'))emit('HH-'+check.code,check.status,check.title,check.detail,'View the original, then use Review source identity and dates to correct or complete the source. Add recent evidence when needed.',fs,[d],fs.map(f=>f.id),{primary:true,contextKey:JSON.stringify([s.household,check.detail])});if(!assessment.usable)continue;}
   const source=k=>{const f=d.fields?.find(f=>f.key===k);return f&&!f.conflict?cents({value:f.sourceValue??f.value}):null;};
   if(d.analysisState!=='complete')emit('PD01','needs_context','This source needs help',d.error||'Some source content could not be read.','View the source, add a clearer copy, or enter the answer.',fs,[d]);

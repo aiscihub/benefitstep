@@ -100,7 +100,7 @@ test('nobody is put on an application until the owner chooses; the CalFresh rost
 });
 test('the Medi-Cal form gets each chosen person with a proposed name split, the household address and their income record',()=>{
  const s=twoEarners(),{map,inventory}=formFiles('ccfrm604'),data=emptyAnswers('ccfrm604');prefillApplication(data,s,map);
- assert.deepEqual(answered(data,'p2.identity'),{});assert.deepEqual(answered(data,'p7.income'),{'0.income_name':'Northgate Works','1.income_name':'Harborside Depot','1.frequency':'Monthly','1.amount':'2200.00'});
+ assert.deepEqual(answered(data,'p2.identity'),{});assert.deepEqual(answered(data,'p7.income'),{'0.household_has_income':true,'0.income_name':'Northgate Works','1.income_name':'Harborside Depot','1.frequency':'Monthly','1.amount':'2200.00'});
  setApplicationPeople(data,s,map,['Demo Adult A','Demo Adult B']);
  assert.deepEqual(answered(data,'p1.contact'),{'0.first_name':'Demo','0.middle_name':'Adult','0.last_name':'A'});
  assert.deepEqual(answered(data,'p2.identity'),{'0.first_name':'Demo','0.middle_name':'Adult','0.last_name':'A','1.first_name':'Demo','1.middle_name':'Adult','1.last_name':'B'});
