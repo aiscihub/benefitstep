@@ -42,8 +42,8 @@ export async function renderOfficialForm({template,inventory,map,answers,fontByt
  for(const f of form.getFields())assert(!(f instanceof PDFSignature&&f.acroField.dict.get(PDFName.of('V'))),'Already signed PDF cannot be modified');
  const perms=doc.catalog.lookupMaybe(PDFName.of('Perms'),PDFDict);
  assert(!perms?.has(PDFName.of('DocMDP')),'Certified PDF cannot be modified');
- // The hash-pinned CF285 original contains Adobe Reader usage rights, not an applicant signature.
- if(perms){assert(inventory.id==='cf285'&&perms.keys().every(k=>k.toString()==='/UR3'),'Unrecognized signature permissions');doc.catalog.delete(PDFName.of('Perms'));}
+ // The hash-pinned CF285 and SAR 7B originals contain Adobe Reader usage rights, not an applicant signature.
+ if(perms){assert(['cf285','sar7b'].includes(inventory.id)&&perms.keys().every(k=>k.toString()==='/UR3'),'Unrecognized signature permissions');doc.catalog.delete(PDFName.of('Perms'));}
  for(const [,obj] of doc.context.enumerateIndirectObjects())if(obj instanceof PDFDict)assert(!obj.has(PDFName.of('ByteRange')),'Already signed PDF cannot be modified');
  const pages=doc.getPages();
  for(let i=0;i<pages.length;i++){
@@ -74,6 +74,11 @@ export async function renderOfficialForm({template,inventory,map,answers,fontByt
   // Some official rectangles are stored with reversed corners. Normalize only their ordering.
   if(wr.width<0||wr.height<0)w.setRectangle({x:r[0],y:page.getHeight()-r[3],width:r[2]-r[0],height:r[3]-r[1]});
   const pageAnnots=page.node.Annots();assert(pageAnnots?.asArray().some(ref=>doc.context.lookup(ref)===w.dict),'Widget is on another page');
+  // Some forms keep a detail box hidden until their own script sees its question answered Yes. Scripts are removed
+  // from the generated copy, so a hidden box the map names is shown once it is filled. Any other hidden box is refused.
+  const visibility=w.dict.get(PDFName.of('F'))?.asNumber?.()??0,hidden=(visibility&2)===2;
+  assert(hidden===(binding.hiddenUntilAnswered===true),'Widget visibility differs from the map');
+  const reveal=()=>{if(hidden)w.dict.set(PDFName.of('F'),doc.context.obj((visibility&~2)|4));};
   if(f instanceof PDFTextField){
    const size=binding.fontSize;assert(size>=8&&size<=14,'Unreadable font size');
    const issue=fits(op.text,font,size,r,binding.multiline)||((f.getMaxLength()&&op.text.length>f.getMaxLength())?'text_overflow':null);
@@ -85,9 +90,10 @@ export async function renderOfficialForm({template,inventory,map,answers,fontByt
    // aside only while the text is laid out, then put back.
    const border=w.getBorderStyle(),width=border?.getWidth()||0,drawn=(w.getAppearanceCharacteristics()?.getBorderColor()||[]).length>0;
    if(short&&boxHeight<12&&width&&!drawn){border.setWidth(0);draw();border.setWidth(width);}else draw();
+   reveal();
   }else if(f instanceof PDFCheckBox){
    assert(op.kind==='checkbox'&&binding.optionValue!==undefined,'Checkbox needs an explicit option binding');
-   assert(w.getOnValue()?.decodeText()===binding.exportValue,'Checkbox export value mismatch');f.check();
+   assert(w.getOnValue()?.decodeText()===binding.exportValue,'Checkbox export value mismatch');f.check();reveal();
   }else if(f instanceof PDFDropdown||f instanceof PDFOptionList||f instanceof PDFRadioGroup){
    assert(f.getOptions().includes(op.text),'Unknown choice option');f.select(op.text);f.updateAppearances(font);
   }else {problems.push({groupId:op.groupId,row:op.row,field:op.field,reason:'unsupported_widget_type'});continue;}

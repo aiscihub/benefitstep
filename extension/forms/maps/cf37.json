@@ -1,0 +1,3831 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "cf37",
+  "edition": "11/16",
+  "templateSha256": "6ea8f69d928c30b6fa213e3e4a2f00e094b9f516e731b98807e1d9834e67b64c",
+  "expectedPageCount": 11,
+  "geometry": [
+    {
+      "page": 1,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 2,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 3,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 4,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 5,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 6,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 7,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 8,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 9,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 10,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 11,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewers": [],
+    "visualValidation": false
+  },
+  "bindings": [
+    {
+      "groupId": "case",
+      "field": "case_name",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        88.0077,
+        185.97400000000005,
+        273.517,
+        199.90099999999995
+      ],
+      "widget": "case_name",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Case Name",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "case",
+      "field": "case_number",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        346.021,
+        185.97400000000005,
+        531.53,
+        199.90099999999995
+      ],
+      "widget": "case_number",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Case Number",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "mailing",
+      "field": "mailing_address",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        40.0079,
+        219.13800000000003,
+        248.644,
+        233.06500000000005
+      ],
+      "widget": "mailing_street",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Mailing Address",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "mailing",
+      "field": "mailing_city",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        256.444,
+        219.13800000000003,
+        392.644,
+        233.06500000000005
+      ],
+      "widget": "mailing_city",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "City",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "mailing",
+      "field": "mailing_state",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        399.134,
+        219.13800000000003,
+        506.534,
+        233.06500000000005
+      ],
+      "widget": "mailing_state",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "State",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "mailing",
+      "field": "mailing_zip",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        512.825,
+        219.13800000000003,
+        572.552,
+        233.06500000000005
+      ],
+      "widget": "mailing_zip",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "ZIP Code",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        507.931,
+        345.021,
+        514.362,
+        351.452
+      ],
+      "widget": "question1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "1. Has anyone moved into or out of your home (including newborns) in the last six months? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        538.992,
+        345.021,
+        545.423,
+        351.452
+      ],
+      "widget": "question1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "direction",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        38.7214,
+        397.939,
+        45.8945,
+        405.122
+      ],
+      "widget": "question1-1-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes: Move in (entry 1 of 3)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "In",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "direction",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        70.4669,
+        397.939,
+        77.64,
+        405.122
+      ],
+      "widget": "question1-1-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Move out",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Out",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "move_date",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        100.226,
+        394.337,
+        146.099,
+        408.265
+      ],
+      "widget": "question1-1-2",
+      "fontSize": 8,
+      "maxLength": 6,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of move (2-digit month, 2-digit day, 2-digit year)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "name",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        154.596,
+        393.486,
+        325.56,
+        407.414
+      ],
+      "widget": "question1-1-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name (First, Middle, Last)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "date_of_birth",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        327.086,
+        394.419,
+        386.214,
+        408.347
+      ],
+      "widget": "question1-1-4",
+      "fontSize": 8,
+      "maxLength": 6,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of Birth (2-digit month, 2-digit day, 2-digit year)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "relationship",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        399.397,
+        393.486,
+        465.819,
+        407.414
+      ],
+      "widget": "question1-1-5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Relationship to You",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "buys_food_together",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        482.949,
+        397.939,
+        490.122,
+        405.122
+      ],
+      "widget": "question1-1-6-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Regularly Purchase and Prepare Food Together? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "buys_food_together",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        522.204,
+        397.704,
+        529.378,
+        404.887
+      ],
+      "widget": "question1-1-6-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "direction",
+      "row": 1,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        38.7214,
+        411.971,
+        45.8945,
+        419.154
+      ],
+      "widget": "question1-1-7-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Move in (entry 2 of 3)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "In",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "direction",
+      "row": 1,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        70.4669,
+        411.971,
+        77.64,
+        419.154
+      ],
+      "widget": "question1-1-7-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Move out",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Out",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "move_date",
+      "row": 1,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        100.226,
+        409.369,
+        146.099,
+        423.297
+      ],
+      "widget": "question1-1-8",
+      "fontSize": 8,
+      "maxLength": 6,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of move (2-digit month, 2-digit day, 2-digit year)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "name",
+      "row": 1,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        154.596,
+        408.518,
+        325.56,
+        422.446
+      ],
+      "widget": "question1-1-9",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name (First, Middle, Last)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "date_of_birth",
+      "row": 1,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        327.086,
+        409.451,
+        386.214,
+        423.378
+      ],
+      "widget": "question1-1-10",
+      "fontSize": 8,
+      "maxLength": 6,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of Birth (2-digit month, 2-digit day, 2-digit year)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "relationship",
+      "row": 1,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        399.397,
+        408.518,
+        465.819,
+        422.446
+      ],
+      "widget": "question1-1-11",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Relationship to You",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "buys_food_together",
+      "row": 1,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        482.949,
+        412.697,
+        490.122,
+        419.88
+      ],
+      "widget": "question1-1-12-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Regularly Purchase and Prepare Food Together? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "buys_food_together",
+      "row": 1,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        521.714,
+        412.68,
+        528.887,
+        419.863
+      ],
+      "widget": "question1-1-12-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "direction",
+      "row": 2,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        38.7214,
+        426.959,
+        45.8945,
+        434.142
+      ],
+      "widget": "question1-1-13-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Move in (entry 3 of 3)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "In",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "direction",
+      "row": 2,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        71.2032,
+        426.959,
+        78.3764,
+        434.142
+      ],
+      "widget": "question1-1-13-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Move out",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Out",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "move_date",
+      "row": 2,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        100.226,
+        423.506,
+        146.099,
+        437.433
+      ],
+      "widget": "question1-1-14",
+      "fontSize": 8,
+      "maxLength": 6,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of move (2-digit month, 2-digit day, 2-digit year)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "name",
+      "row": 2,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        154.596,
+        423.506,
+        325.56,
+        437.433
+      ],
+      "widget": "question1-1-15",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name (First, Middle, Last)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "date_of_birth",
+      "row": 2,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        327.086,
+        423.506,
+        386.214,
+        437.433
+      ],
+      "widget": "question1-1-16",
+      "fontSize": 8,
+      "maxLength": 6,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date of Birth (2-digit month, 2-digit day, 2-digit year)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "relationship",
+      "row": 2,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        399.397,
+        423.506,
+        465.819,
+        437.433
+      ],
+      "widget": "question1-1-17",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Relationship to You",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "buys_food_together",
+      "row": 2,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        482.949,
+        427.685,
+        490.122,
+        434.868
+      ],
+      "widget": "question1-1-18-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Regularly Purchase and Prepare Food Together? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q1.household_changes",
+      "field": "buys_food_together",
+      "row": 2,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        521.714,
+        427.668,
+        528.887,
+        434.851
+      ],
+      "widget": "question1-1-18-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q3.address_change",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        397.744,
+        633.183,
+        404.976,
+        640.425
+      ],
+      "widget": "question3-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "3. Have there been any changes to your address in the last six months? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q3.address_change",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        427.089,
+        633.183,
+        434.321,
+        640.425
+      ],
+      "widget": "question3-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q3.address_change",
+      "field": "new_address",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        93.6435,
+        641.148,
+        419.448,
+        655.075
+      ],
+      "widget": "question3-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "New Address",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q3.address_change",
+      "field": "date_moved",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        471.48,
+        641.148,
+        572.12,
+        655.075
+      ],
+      "widget": "question3-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Date moved (2-digit month/2-digit day/4-digit year)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q3.address_change",
+      "field": "mailing_address",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        197.341,
+        654.279,
+        572.857,
+        668.207
+      ],
+      "widget": "question3-1-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Mailing Address (if different from above)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q4.housing_costs",
+      "field": "rent_or_mortgage",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        197.337,
+        685.449,
+        262.67,
+        699.376
+      ],
+      "widget": "question4_rent",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "4. If you have moved or have new/changed housing costs in the last six months, please fill out the section below: Your rent or mortgage per month now? (Amount in dollars)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q4.housing_costs",
+      "field": "taxes_and_insurance",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        346.154,
+        696.2624,
+        421.469,
+        710.1897
+      ],
+      "widget": "question4_separate",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If paid separately, your property taxes and home insurance per month now? (Amount in dollars)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q4a.utilities",
+      "field": "phone",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        36.8338,
+        732.3163,
+        44.0653,
+        739.558
+      ],
+      "widget": "question4a_1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "4a. Do you have utility costs that are not included in your housing costs? If so, check which ones: Phone",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q4a.utilities",
+      "field": "trash",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        125.641,
+        732.3163,
+        132.872,
+        739.558
+      ],
+      "widget": "question4a_2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trash",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q4a.utilities",
+      "field": "water",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        218.259,
+        732.3163,
+        225.49,
+        739.558
+      ],
+      "widget": "question4a_3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Water",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q4a.utilities",
+      "field": "electric_gas",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        301.754,
+        732.3163,
+        308.986,
+        739.558
+      ],
+      "widget": "question4a_4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Electric/Gas",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q4a.utilities",
+      "field": "other_heating_cooling",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        425.044,
+        732.3163,
+        432.275,
+        739.558
+      ],
+      "widget": "question4a_5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Other heating or cooling costs",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q5.homeless",
+      "field": "homeless",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        144.833,
+        88.77200000000005,
+        152.065,
+        96.01400000000001
+      ],
+      "widget": "question5-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "5. Are you homeless? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q5.homeless",
+      "field": "homeless",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        189.966,
+        88.77200000000005,
+        197.198,
+        96.01400000000001
+      ],
+      "widget": "question5-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q5.homeless",
+      "field": "pays_shelter_costs",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        436.607,
+        88.77200000000005,
+        443.839,
+        96.01400000000001
+      ],
+      "widget": "question5-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes, do you pay shelter costs? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q5.homeless",
+      "field": "pays_shelter_costs",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        468.85,
+        88.77200000000005,
+        476.082,
+        96.01400000000001
+      ],
+      "widget": "question5-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "has_student",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        36.8297,
+        126.29600000000005,
+        44.0612,
+        133.538
+      ],
+      "widget": "question6-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "6. Students: Is anyone who is applying for benefits including you attending a college or vocational school? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "has_student",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        69.4513,
+        126.26599999999996,
+        76.6828,
+        133.50699999999995
+      ],
+      "widget": "question6-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "name",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        39.1427,
+        174.12699999999995,
+        177.73,
+        188.05399999999997
+      ],
+      "widget": "question6-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name of Person (entry 1 of 2)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q6.students",
+      "field": "school",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        182.706,
+        174.12699999999995,
+        306.893,
+        188.05399999999997
+      ],
+      "widget": "question6-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name of School/Training",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q6.students",
+      "field": "enrolled_status",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        318.247,
+        172.135,
+        325.478,
+        179.37699999999995
+      ],
+      "widget": "question6-1-3-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Enrolled Status: Half-time or more",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Half-time or more",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "enrolled_status",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        318.247,
+        182.15800000000002,
+        325.478,
+        189.399
+      ],
+      "widget": "question6-1-3-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Less than half-time",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Less than half-time",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "enrolled_status",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        318.247,
+        192.14999999999998,
+        325.478,
+        199.39099999999996
+      ],
+      "widget": "question6-1-3-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Specific number of units",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Number of units",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "units",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        394.857,
+        186.49199999999996,
+        435.262,
+        200.41899999999998
+      ],
+      "widget": "question6-1-3-3-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Specify number",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q6.students",
+      "field": "working",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        456.015,
+        172.135,
+        463.247,
+        179.37699999999995
+      ],
+      "widget": "question6-1-4-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Is this person working? No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "working",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        456.015,
+        182.15800000000002,
+        463.247,
+        189.399
+      ],
+      "widget": "question6-1-4-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "hours_week",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        528.895,
+        186.49199999999996,
+        569.3,
+        200.41899999999998
+      ],
+      "widget": "question6-1-4-2-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Average work hours per week",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q6.students",
+      "field": "name",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        39.1427,
+        213.65499999999997,
+        177.73,
+        227.58299999999997
+      ],
+      "widget": "question6-1-5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name of Person (entry 2 of 2)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q6.students",
+      "field": "school",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        182.706,
+        213.65499999999997,
+        306.893,
+        227.58299999999997
+      ],
+      "widget": "question6-1-6",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name of School/Training",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q6.students",
+      "field": "enrolled_status",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        318.247,
+        211.663,
+        325.478,
+        218.90499999999997
+      ],
+      "widget": "question6-1-7-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Enrolled Status: Half-time or more",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Half-time or more",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "enrolled_status",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        318.247,
+        221.68600000000004,
+        325.478,
+        228.928
+      ],
+      "widget": "question6-1-7-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Less than half-time",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Less than half-time",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "enrolled_status",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        318.247,
+        231.678,
+        325.478,
+        238.91999999999996
+      ],
+      "widget": "question6-1-7-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Specific number of units",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Number of units",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "units",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        394.857,
+        226.01999999999998,
+        435.262,
+        239.947
+      ],
+      "widget": "question6-1-7-3-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Specify number",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q6.students",
+      "field": "working",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        456.015,
+        211.663,
+        463.247,
+        218.90499999999997
+      ],
+      "widget": "question6-1-8-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Is this person working? No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "working",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        455.442,
+        222.21799999999996,
+        462.674,
+        229.46000000000004
+      ],
+      "widget": "question6-1-8-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q6.students",
+      "field": "hours_week",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        526.359,
+        226.01999999999998,
+        566.764,
+        239.947
+      ],
+      "widget": "question6-1-8-2-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Average work hours per week",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "has_income",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        492.605,
+        249.28300000000002,
+        499.836,
+        256.524
+      ],
+      "widget": "question7-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "7. Do you or anyone you buy and prepare food with get income from a job (earned)? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "has_income",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        535.212,
+        249.28300000000002,
+        542.443,
+        256.524
+      ],
+      "widget": "question7-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "person",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        159.075,
+        307.474,
+        295.044,
+        321.401
+      ],
+      "widget": "question7-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes, complete the section below and attach proof. List each job for each person who works. If you need more space, attach a separate piece of paper and identify which question you are writing about. Examples include babysitting, salary, self-employment, sick pay, tips, etc. Job #1: Name of Person who gets income",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "employer",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        159.075,
+        332.674,
+        295.044,
+        346.601
+      ],
+      "widget": "question7-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Employer Name",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "self_employed",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        266.962,
+        346.495,
+        274.194,
+        353.736
+      ],
+      "widget": "question7-1-3-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Self-employed, check here",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        159.249,
+        364.075,
+        166.48,
+        371.317
+      ],
+      "widget": "question7-1-4-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid: Weekly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        207.358,
+        364.075,
+        214.589,
+        371.317
+      ],
+      "widget": "question7-1-4-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Biweekly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Biweekly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        168.433,
+        378.087,
+        175.664,
+        385.328
+      ],
+      "widget": "question7-1-4-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Monthly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        218.945,
+        378.087,
+        226.177,
+        385.328
+      ],
+      "widget": "question7-1-4-4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Twice Monthly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice monthly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        262.339,
+        364.075,
+        269.571,
+        371.317
+      ],
+      "widget": "question7-1-4-5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Other",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "monthly_gross",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        188.53,
+        402.074,
+        295.044,
+        416.001
+      ],
+      "widget": "question7-1-5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Monthly Gross Amount of Income (in dollars)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "hours_month",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        159.075,
+        424.328,
+        295.044,
+        438.256
+      ],
+      "widget": "question7-1-6",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Hours worked per month",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "will_continue",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        190.667,
+        455.742,
+        197.898,
+        462.984
+      ],
+      "widget": "question7-1-7-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Will this income continue? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "will_continue",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        239.604,
+        455.742,
+        246.836,
+        462.984
+      ],
+      "widget": "question7-1-7-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "person",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        298.743,
+        307.474,
+        434.712,
+        321.401
+      ],
+      "widget": "question7-1-8",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Job #2: Name of Person who gets income",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "employer",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        298.743,
+        332.674,
+        434.712,
+        346.601
+      ],
+      "widget": "question7-1-9",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Employer Name",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "self_employed",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        406.003,
+        346.495,
+        413.235,
+        353.736
+      ],
+      "widget": "question7-1-10-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Self-employed, check here",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        300.202,
+        364.075,
+        307.434,
+        371.317
+      ],
+      "widget": "question7-1-11-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid: Weekly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        348.025,
+        364.075,
+        355.257,
+        371.317
+      ],
+      "widget": "question7-1-11-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Biweekly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Biweekly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        308.446,
+        378.087,
+        315.677,
+        385.328
+      ],
+      "widget": "question7-1-11-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Monthly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        360.185,
+        378.087,
+        367.417,
+        385.328
+      ],
+      "widget": "question7-1-11-4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Twice Monthly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice monthly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        402.455,
+        364.075,
+        409.686,
+        371.317
+      ],
+      "widget": "question7-1-11-5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Other",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "monthly_gross",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        328.197,
+        402.074,
+        434.712,
+        416.001
+      ],
+      "widget": "question7-1-12",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Monthly Gross Amount of Income (in dollars)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "hours_month",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        298.743,
+        424.328,
+        434.712,
+        438.256
+      ],
+      "widget": "question7-1-13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Hours worked per month",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "will_continue",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        330.199,
+        455.742,
+        337.43,
+        462.984
+      ],
+      "widget": "question7-1-14-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Will this income continue? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "will_continue",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        379.136,
+        455.742,
+        386.368,
+        462.984
+      ],
+      "widget": "question7-1-14-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "person",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        437.588,
+        307.474,
+        573.557,
+        321.401
+      ],
+      "widget": "question7-1-15",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Job #3: Name of Person who gets income",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "employer",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        437.588,
+        332.674,
+        573.557,
+        346.601
+      ],
+      "widget": "question7-1-16",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Employer Name",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "self_employed",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        545.522,
+        346.495,
+        552.753,
+        353.736
+      ],
+      "widget": "question7-1-17-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Self-employed, check here",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        438.657,
+        364.075,
+        445.888,
+        371.317
+      ],
+      "widget": "question7-1-18-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often paid: Weekly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        487.195,
+        364.075,
+        494.427,
+        371.317
+      ],
+      "widget": "question7-1-18-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Biweekly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Biweekly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        448.291,
+        378.087,
+        455.523,
+        385.328
+      ],
+      "widget": "question7-1-18-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Monthly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        498.793,
+        378.087,
+        506.025,
+        385.328
+      ],
+      "widget": "question7-1-18-4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Twice Monthly",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice monthly",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "frequency",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        541.594,
+        364.075,
+        548.826,
+        371.317
+      ],
+      "widget": "question7-1-18-5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Other",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "monthly_gross",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        467.043,
+        402.074,
+        573.557,
+        416.001
+      ],
+      "widget": "question7-1-19",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Monthly Gross Amount of Income (in dollars)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "hours_month",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        437.588,
+        424.328,
+        573.557,
+        438.256
+      ],
+      "widget": "question7-1-20",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Hours worked per month",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "will_continue",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        471.763,
+        455.742,
+        478.994,
+        462.984
+      ],
+      "widget": "question7-1-21-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Will this income continue? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7.earned",
+      "field": "will_continue",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        516.691,
+        455.742,
+        523.922,
+        462.984
+      ],
+      "widget": "question7-1-21-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "hiddenUntilAnswered": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7a.changes",
+      "field": "expects_change",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        470.545,
+        478.984,
+        477.776,
+        486.226
+      ],
+      "widget": "question7a-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "7a. Will there be any changes to anyone\u2019s job or income in the next six months? Examples: Stopping, star ting, increase or decrease of income, change in hours, quitting a job, going on strike, change in how often anyone is paid. Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7a.changes",
+      "field": "expects_change",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        513.151,
+        478.984,
+        520.383,
+        486.226
+      ],
+      "widget": "question7a-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q7a.changes",
+      "field": "explanation",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        202.091,
+        517.008,
+        567.478,
+        530.935
+      ],
+      "widget": "question7a-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes, explain here and attach any proof: Line 1 of 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q7a.changes",
+      "field": "explanation_more",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        35.7551,
+        530.078,
+        569.36,
+        544.006
+      ],
+      "widget": "question7a-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Line 2 of 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "has_income",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        125.198,
+        564.381,
+        132.43,
+        571.623
+      ],
+      "widget": "question8-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8. Do you or anyone you buy or prepare food with get income that does not come from a job (unearned)? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "has_income",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        167.805,
+        564.381,
+        175.037,
+        571.623
+      ],
+      "widget": "question8-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "person",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        39.246,
+        624.333,
+        188.852,
+        638.26
+      ],
+      "widget": "question8-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes, complete the section below and attach proof. Examples include: Social Security, Unemployment Compensation, Veteran\u2019s Benefits, State Disability Insurance (SDI), Child/Spousal Support, Worker\u2019s Compensation, Loan/Gifts, Earned/Unearned Housing, Utilities, Food, etc. Name (entry 1 of 3)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "source",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        195.464,
+        624.333,
+        300.997,
+        638.26
+      ],
+      "widget": "question8-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Source of Income",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "one_time_or_ongoing",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        307.609,
+        624.333,
+        472.924,
+        638.26
+      ],
+      "widget": "question8-1-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "One-time or ongoing payment",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "amount_and_frequency",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        480.409,
+        624.333,
+        571.978,
+        638.26
+      ],
+      "widget": "question8-1-4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How much/How often",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "person",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        39.246,
+        654.096,
+        188.852,
+        668.023
+      ],
+      "widget": "question8-1-5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name (entry 2 of 3)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "source",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        195.464,
+        654.096,
+        300.997,
+        668.023
+      ],
+      "widget": "question8-1-6",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Source of Income",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "one_time_or_ongoing",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        307.609,
+        654.096,
+        472.924,
+        668.023
+      ],
+      "widget": "question8-1-7",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "One-time or ongoing payment",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "amount_and_frequency",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        480.409,
+        654.096,
+        571.978,
+        668.023
+      ],
+      "widget": "question8-1-8",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How much/How often",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "person",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        39.246,
+        683.487,
+        188.852,
+        697.4141
+      ],
+      "widget": "question8-1-9",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Name (entry 3 of 3)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "source",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        195.464,
+        683.487,
+        300.997,
+        697.4141
+      ],
+      "widget": "question8-1-10",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Source of Income",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "one_time_or_ongoing",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        307.609,
+        683.487,
+        472.924,
+        697.4141
+      ],
+      "widget": "question8-1-11",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "One-time or ongoing payment",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8.unearned",
+      "field": "amount_and_frequency",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        480.409,
+        683.487,
+        571.978,
+        697.4141
+      ],
+      "widget": "question8-1-12",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How much/How often",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q8a.changes",
+      "field": "expects_change",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        421.506,
+        715.6219,
+        428.738,
+        722.8636
+      ],
+      "widget": "question8a-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8a. Will there be any changes to this income in the next six months? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q8a.changes",
+      "field": "expects_change",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        464.123,
+        715.6219,
+        471.355,
+        722.8636
+      ],
+      "widget": "question8a-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q8a.changes",
+      "field": "explanation",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        116.602,
+        725.8053,
+        572.16,
+        739.7326
+      ],
+      "widget": "question8a-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes, explain here",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q9.medical",
+      "field": "has_change",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        195.232,
+        95.25099999999998,
+        202.464,
+        102.49199999999996
+      ],
+      "widget": "question9-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9. Medical Costs: Did anyone who gets CalFresh and is 60 years old or older, or disabled, have an increase or begin paying medical costs? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q9.medical",
+      "field": "has_change",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        237.839,
+        95.25099999999998,
+        245.071,
+        102.49199999999996
+      ],
+      "widget": "question9-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q9.medical",
+      "field": "person",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        113.492,
+        116.18299999999999,
+        283.995,
+        130.11
+      ],
+      "widget": "question9-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes, complete the section below and attach proof if this is a new expense or if change is more than $25. Who had the cost?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q9.medical",
+      "field": "cost_type",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        336.037,
+        116.18299999999999,
+        421.777,
+        130.11
+      ],
+      "widget": "question9-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Type of cost",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q9.medical",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        93.9576,
+        128.38400000000001,
+        189.27,
+        142.31100000000004
+      ],
+      "widget": "question9-1-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Amount paid? (in dollars)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q9.medical",
+      "field": "frequency",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        239.43,
+        128.38400000000001,
+        359.698,
+        142.31100000000004
+      ],
+      "widget": "question9-1-4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "How often?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q10.child_support",
+      "field": "pays_support",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        461.694,
+        160.98699999999997,
+        468.926,
+        168.22900000000004
+      ],
+      "widget": "question10-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "10. Child Support: Did anyone who gets CalFresh have to pay child support? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q10.child_support",
+      "field": "pays_support",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        504.301,
+        160.98699999999997,
+        511.533,
+        168.22900000000004
+      ],
+      "widget": "question10-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q10.child_support",
+      "field": "children",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        116.907,
+        194.15999999999997,
+        567.501,
+        208.08799999999997
+      ],
+      "widget": "question10-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes, complete the section below and attach proof, if this is a new child support obligation or a change in the legal obligation to pay child support or an increase in the amount of child support paid. Name(s) of children",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q10.child_support",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        229.178,
+        209.92399999999998,
+        304.382,
+        223.851
+      ],
+      "widget": "question10-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "What is the current amount they have to pay? (in dollars)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q10.child_support",
+      "field": "payer",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        394.778,
+        209.92399999999998,
+        570.462,
+        223.851
+      ],
+      "widget": "question10-1-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Who paid support?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q11.care",
+      "field": "pays_care",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        337.454,
+        253.37699999999995,
+        344.685,
+        260.619
+      ],
+      "widget": "question11-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "11. Dependent or Child Care: Does anyone pay for care of a child, disabled adult, or other dependent so you or the other person can go to work, school, or look for a job? Yes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q11.care",
+      "field": "pays_care",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        380.06,
+        253.37699999999995,
+        387.292,
+        260.619
+      ],
+      "widget": "question11-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q11.care",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        76.5188,
+        286.591,
+        166.724,
+        300.518
+      ],
+      "widget": "question11-1-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "If yes, please only list the amount you or anyone in your household pays out of pocket. Attach proof if provider or the out-of-pocket amount has changed. Amount (in dollars)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q11.care",
+      "field": "payer",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        211.311,
+        286.591,
+        351.589,
+        300.518
+      ],
+      "widget": "question11-1-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Who paid",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q11.care",
+      "field": "dependent",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        435.943,
+        286.591,
+        571.27,
+        300.518
+      ],
+      "widget": "question11-1-3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "List dependent/child",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "hiddenUntilAnswered": true
+    },
+    {
+      "groupId": "q12.medi_cal",
+      "field": "interested",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        335.844,
+        319.183,
+        343.076,
+        326.424
+      ],
+      "widget": "question12-1",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "12. Are you interested in applying for Medi-Cal? Yes. If you answer \u201cyes\u201d, the County will use your information to find out if you can get Medi-Cal.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "q12.medi_cal",
+      "field": "interested",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        378.451,
+        319.183,
+        385.683,
+        326.424
+      ],
+      "widget": "question12-2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "On"
+    },
+    {
+      "groupId": "notes",
+      "field": "notes",
+      "row": 0,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        36.7812,
+        84.22699999999998,
+        576.56,
+        743.321
+      ],
+      "widget": "notes",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Notes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    }
+  ],
+  "protectedRegions": [
+    {
+      "page": 8,
+      "rect": [
+        40.0079,
+        292.01,
+        265.662,
+        305.938
+      ],
+      "reason": "manual-only: contact_phone_home"
+    },
+    {
+      "page": 8,
+      "rect": [
+        273.153,
+        292.01,
+        497.062,
+        305.938
+      ],
+      "reason": "manual-only: contact_phone_cell"
+    },
+    {
+      "page": 8,
+      "rect": [
+        508.077,
+        293.628,
+        517.325,
+        302.876
+      ],
+      "reason": "manual-only: contact_phone_text"
+    },
+    {
+      "page": 8,
+      "rect": [
+        40.0079,
+        321.683,
+        265.662,
+        335.61
+      ],
+      "reason": "manual-only: contact_phone_work"
+    },
+    {
+      "page": 8,
+      "rect": [
+        273.153,
+        321.683,
+        572.553,
+        335.61
+      ],
+      "reason": "manual-only: contact_email"
+    },
+    {
+      "page": 8,
+      "rect": [
+        384.67,
+        493.592,
+        391.888,
+        500.82
+      ],
+      "reason": "manual-only: question2-1"
+    },
+    {
+      "page": 8,
+      "rect": [
+        414.434,
+        493.592,
+        421.653,
+        500.82
+      ],
+      "reason": "manual-only: question2-2"
+    },
+    {
+      "page": 8,
+      "rect": [
+        39.2638,
+        519.979,
+        355.696,
+        533.9069999999999
+      ],
+      "reason": "manual-only: question2-1-1"
+    },
+    {
+      "page": 8,
+      "rect": [
+        363.186,
+        519.979,
+        572.552,
+        533.9069999999999
+      ],
+      "reason": "manual-only: question2-1-2"
+    },
+    {
+      "page": 8,
+      "rect": [
+        509.839,
+        542.042,
+        516.268,
+        548.48
+      ],
+      "reason": "manual-only: question2b-1"
+    },
+    {
+      "page": 8,
+      "rect": [
+        540.893,
+        542.042,
+        547.322,
+        548.48
+      ],
+      "reason": "manual-only: question2b-2"
+    },
+    {
+      "page": 8,
+      "rect": [
+        39.2638,
+        580.994,
+        355.696,
+        594.921
+      ],
+      "reason": "manual-only: question2b-1-1"
+    },
+    {
+      "page": 8,
+      "rect": [
+        363.186,
+        580.994,
+        572.552,
+        594.921
+      ],
+      "reason": "manual-only: question2b-1-2"
+    },
+    {
+      "page": 8,
+      "rect": [
+        39.2638,
+        610.385,
+        250.409,
+        624.312
+      ],
+      "reason": "manual-only: question2b-1-3"
+    },
+    {
+      "page": 8,
+      "rect": [
+        253.435,
+        610.385,
+        397.695,
+        624.312
+      ],
+      "reason": "manual-only: question2b-1-4"
+    },
+    {
+      "page": 8,
+      "rect": [
+        400.018,
+        610.385,
+        510.422,
+        624.312
+      ],
+      "reason": "manual-only: question2b-1-5"
+    },
+    {
+      "page": 8,
+      "rect": [
+        513.489,
+        610.385,
+        572.552,
+        624.312
+      ],
+      "reason": "manual-only: question2b-1-6"
+    },
+    {
+      "page": 9,
+      "rect": [
+        88.0017,
+        58.610000000000014,
+        273.511,
+        72.53700000000003
+      ],
+      "reason": "not-yet-supported: case_name_header"
+    },
+    {
+      "page": 9,
+      "rect": [
+        346.015,
+        58.610000000000014,
+        531.524,
+        72.53700000000003
+      ],
+      "reason": "not-yet-supported: case_number_header"
+    },
+    {
+      "page": 10,
+      "rect": [
+        87.6749,
+        57.34500000000003,
+        273.184,
+        71.27300000000002
+      ],
+      "reason": "not-yet-supported: case_name_header"
+    },
+    {
+      "page": 10,
+      "rect": [
+        345.688,
+        57.34500000000003,
+        531.197,
+        71.27300000000002
+      ],
+      "reason": "not-yet-supported: case_number_header"
+    },
+    {
+      "page": 10,
+      "rect": [
+        489.962,
+        384.985,
+        497.194,
+        392.226
+      ],
+      "reason": "manual-only: question13-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        532.569,
+        384.985,
+        539.801,
+        392.226
+      ],
+      "reason": "manual-only: question13-2"
+    },
+    {
+      "page": 10,
+      "rect": [
+        87.3879,
+        395.136,
+        572.952,
+        409.063
+      ],
+      "reason": "manual-only: question13-1-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        293.302,
+        454.346,
+        300.534,
+        461.588
+      ],
+      "reason": "manual-only: question14-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        335.909,
+        454.346,
+        343.141,
+        461.588
+      ],
+      "reason": "manual-only: question14-2"
+    },
+    {
+      "page": 10,
+      "rect": [
+        87.3879,
+        464.477,
+        572.952,
+        478.404
+      ],
+      "reason": "manual-only: question14-1-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        213.592,
+        518.027,
+        574.383,
+        531.954
+      ],
+      "reason": "manual-only: question15-1-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        92.1831,
+        523.687,
+        99.4146,
+        530.929
+      ],
+      "reason": "manual-only: question15-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        134.79,
+        523.687,
+        142.021,
+        530.929
+      ],
+      "reason": "manual-only: question15-2"
+    },
+    {
+      "page": 10,
+      "rect": [
+        216.748,
+        577.268,
+        223.979,
+        584.51
+      ],
+      "reason": "manual-only: question16-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        259.355,
+        577.268,
+        266.586,
+        584.51
+      ],
+      "reason": "manual-only: question16-2"
+    },
+    {
+      "page": 10,
+      "rect": [
+        87.3879,
+        587.3679999999999,
+        572.952,
+        601.296
+      ],
+      "reason": "manual-only: question16-1-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        307.447,
+        646.609,
+        314.678,
+        653.85
+      ],
+      "reason": "manual-only: question17-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        350.054,
+        646.609,
+        357.285,
+        653.85
+      ],
+      "reason": "manual-only: question17-2"
+    },
+    {
+      "page": 10,
+      "rect": [
+        87.3879,
+        656.716,
+        572.952,
+        670.643
+      ],
+      "reason": "manual-only: question17-1-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        36.8638,
+        715.9497,
+        44.0953,
+        723.1914
+      ],
+      "reason": "manual-only: question18-1"
+    },
+    {
+      "page": 10,
+      "rect": [
+        79.4706,
+        715.9497,
+        86.7021,
+        723.1914
+      ],
+      "reason": "manual-only: question18-2"
+    },
+    {
+      "page": 10,
+      "rect": [
+        87.3879,
+        726.0877,
+        572.952,
+        740.015
+      ],
+      "reason": "manual-only: question18-1-1"
+    },
+    {
+      "page": 11,
+      "rect": [
+        87.9658,
+        58.557000000000016,
+        298.348,
+        72.48400000000004
+      ],
+      "reason": "not-yet-supported: case_name_header"
+    },
+    {
+      "page": 11,
+      "rect": [
+        370.852,
+        58.557000000000016,
+        576.216,
+        72.48400000000004
+      ],
+      "reason": "not-yet-supported: case_number_header"
+    },
+    {
+      "page": 11,
+      "rect": [
+        238.427,
+        366.607,
+        333.085,
+        380.534
+      ],
+      "reason": "manual-only: signed_date"
+    },
+    {
+      "page": 11,
+      "rect": [
+        340.894,
+        366.607,
+        572.147,
+        380.534
+      ],
+      "reason": "manual-only: signed_contact"
+    }
+  ],
+  "coordinateContract": "one-based pages, unrotated top-left PDF points; browser converts from bottom-left MediaBox",
+  "coverageComplete": false,
+  "continuation": "Unsupported overflow is reported for manual completion; no extra pages are silently copied."
+}

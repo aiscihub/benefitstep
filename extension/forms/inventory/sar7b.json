@@ -1,0 +1,1056 @@
+{
+  "id": "sar7b",
+  "title": "SAR 7 Eligibility Status Report",
+  "edition": "12/23",
+  "pageCount": 14,
+  "officialUrl": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/Q-T/SAR7B.pdf",
+  "retrievedOn": "2026-10-08",
+  "sourceId": "FORM_SAR7B",
+  "applicationPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "templateBytesIncluded": true,
+  "templateSha256": "d2bfc272399e15a9fbd445c0ea829f3aa6ad16bfbb8ed1265e3fea95cadee342",
+  "fieldGeometryStatus": "inspected_mapping_pending_review",
+  "questionInventoryStatus": "research_transcription_requires_independent_review",
+  "groups": [
+    {
+      "id": "sar.header",
+      "pdfPage": 1,
+      "label": "Page 1: household, case and report month",
+      "fields": [
+        {
+          "key": "household_name",
+          "type": "text",
+          "label": "Household name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "street",
+          "type": "text",
+          "label": "Street address",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City or town",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "zip",
+          "type": "text",
+          "label": "ZIP code",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "case_name",
+          "type": "text",
+          "label": "Case name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "case_number",
+          "type": "text",
+          "label": "Case number",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "submit_month",
+          "type": "text",
+          "label": "Submit month (the form is due by the 5th of this month)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "report_month",
+          "type": "text",
+          "label": "Report month",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "On the SAR 7 the county mails, this block arrives already printed. On this blank edition the household writes it.",
+      "sourceId": "FORM_SAR7B",
+      "hint": "Copy the case name, case number, report month and submit month from your county notice or from the SAR 7 the county sent."
+    },
+    {
+      "id": "sar.stop",
+      "pdfPage": 2,
+      "label": "Stop my benefits (optional)",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Asking the county to stop a benefit is the household's own choice.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.disability",
+      "pdfPage": 2,
+      "label": "Disability questions (optional)",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Optional questions about disability; the household answers them personally on the form.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.home",
+      "pdfPage": 3,
+      "label": "Contact information: home address",
+      "fields": [
+        {
+          "key": "street",
+          "type": "text",
+          "label": "Street",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "apartment",
+          "type": "text",
+          "label": "Apartment number",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "city_state_zip",
+          "type": "text",
+          "label": "City, state and ZIP code",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "homeless",
+          "type": "bool",
+          "label": "I am homeless",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.mailing",
+      "pdfPage": 3,
+      "label": "Contact information: mailing address",
+      "fields": [
+        {
+          "key": "street",
+          "type": "text",
+          "label": "Street or PO box",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "apartment",
+          "type": "text",
+          "label": "Apartment number",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "city_state_zip",
+          "type": "text",
+          "label": "City, state and ZIP code",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "keep_same",
+          "type": "bool",
+          "label": "I would like to keep my current mailing address the same",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "homeless_mail",
+          "type": "text",
+          "label": "If you are homeless: where to get mail",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "general_delivery_zip",
+          "type": "text",
+          "label": "ZIP code of the post office for General Delivery",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Asked only when the mailing address differs from the home address.",
+      "sourceId": "FORM_SAR7B",
+      "hint": "Fill in a mailing address only if it is different from your home address."
+    },
+    {
+      "id": "sar.contact",
+      "pdfPage": 3,
+      "label": "Contact information: phone and email",
+      "fields": [
+        {
+          "key": "home_phone",
+          "type": "text",
+          "label": "Home phone",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "cell_phone",
+          "type": "text",
+          "label": "Cell phone",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "other_phone",
+          "type": "text",
+          "label": "Other phone",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "Email address",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.consent",
+      "pdfPage": 3,
+      "label": "Text message and email notice choices",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Agreeing to text messages or email notices from the county is the household's own choice.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.members",
+      "pdfPage": 4,
+      "label": "Household members: who moved in or out",
+      "fields": [
+        {
+          "key": "has_change",
+          "type": "bool",
+          "label": "Has anyone moved into or out of your home, or did you move in with someone, since you last reported?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Household member name (first, middle, last)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "date_of_birth",
+          "type": "text",
+          "label": "Date of birth (month, day, year)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "relationship",
+          "type": "text",
+          "label": "Relation to head of household",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "change",
+          "type": "text",
+          "label": "What is the change?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "other_change",
+          "type": "text",
+          "label": "Other change",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "explain",
+          "type": "text",
+          "label": "Explain",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "explain_more",
+          "type": "text",
+          "label": "Explain, second line",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "buys_food_together",
+          "type": "bool",
+          "label": "For CalFresh only: regularly buy and make food together?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "date_of_change",
+          "type": "text",
+          "label": "Date of change (month, day, year)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 2,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Includes newborn children, an adopted child, and someone who started or stopped buying and making food with the household.",
+      "sourceId": "FORM_SAR7B",
+      "hint": "The form asks about changes since you last reported. List each person who moved in or out, including newborns."
+    },
+    {
+      "id": "sar.income",
+      "pdfPage": 5,
+      "label": "Income",
+      "fields": [
+        {
+          "key": "has_income",
+          "type": "bool",
+          "label": "Did anyone in your household get earned or unearned income for your report month, or does anyone expect a change in income within the next six months?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "unearned_increased",
+          "type": "bool",
+          "label": "For CalFresh only: did your total unearned income for all household members increase within your report month?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person",
+          "type": "text",
+          "label": "Household member name (first, middle, last)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "received_in_report_month",
+          "type": "bool",
+          "label": "Income received during report month",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "started",
+          "type": "bool",
+          "label": "Income started",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "stopped",
+          "type": "bool",
+          "label": "Income stopped",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "changed",
+          "type": "bool",
+          "label": "Income changed",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "explain",
+          "type": "text",
+          "label": "Explain what happened",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "explain_more",
+          "type": "text",
+          "label": "Explain, second line",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "date_of_change",
+          "type": "text",
+          "label": "Date of change (month, day, year)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "source",
+          "type": "text",
+          "label": "From a job or not from a job",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "employer",
+          "type": "text",
+          "label": "Employer name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "employer_more",
+          "type": "text",
+          "label": "Employer name, second line",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "income_type",
+          "type": "text",
+          "label": "Type of income, if not from a job",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "frequency",
+          "type": "text",
+          "label": "How often paid",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "gross_in_report_month",
+          "type": "text",
+          "label": "Total gross income received in report month",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "dates_received",
+          "type": "text",
+          "label": "Date(s) received (month, day, year)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "dates_received_more",
+          "type": "text",
+          "label": "Date(s) received, second line",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "hours_month",
+          "type": "text",
+          "label": "If employed, hours worked per month",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 4,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "One record per source of income, earned or unearned. More than four sources go on a separate sheet.",
+      "sourceId": "FORM_SAR7B",
+      "hint": "List each source of income for the report month on your notice. The amount is the total before deductions that was received in that month."
+    },
+    {
+      "id": "sar.strike",
+      "pdfPage": 7,
+      "label": "Strike",
+      "fields": [
+        {
+          "key": "on_strike",
+          "type": "bool",
+          "label": "Did you or any household members stop working because of a strike?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person",
+          "type": "text",
+          "label": "Household member name (first, middle, last)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "gross_before",
+          "type": "text",
+          "label": "Gross income before going on strike",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.resources",
+      "pdfPage": 8,
+      "label": "Resources (CalFresh only; only some households must answer)",
+      "fields": [
+        {
+          "key": "has_change",
+          "type": "bool",
+          "label": "Has anyone in your household had a change in resources or new resources since the last time you reported?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person",
+          "type": "text",
+          "label": "Household member name (first, middle, last)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "resource_type",
+          "type": "text",
+          "label": "Type of resource",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "what_happened",
+          "type": "text",
+          "label": "What happened to your resource?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "other_explain",
+          "type": "text",
+          "label": "Other: explain",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Value",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "dates",
+          "type": "text",
+          "label": "Date(s) received (month, day, year)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 3,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Asked of a household that is not Modified Categorically Eligible or Categorically Eligible, has a member with an Intentional Program Violation, or whose head of household is not following the work requirements. Vehicles are not counted.",
+      "sourceId": "FORM_SAR7B",
+      "hint": "The form says who must answer this section. If you are not sure, your county can tell you."
+    },
+    {
+      "id": "sar.expenses",
+      "pdfPage": 10,
+      "label": "Expenses: housing (CalFresh only)",
+      "fields": [
+        {
+          "key": "expenses_changed",
+          "type": "bool",
+          "label": "Have your expenses changed?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "address_changed",
+          "type": "bool",
+          "label": "Has your address changed?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "rent_or_mortgage",
+          "type": "text",
+          "label": "What is your monthly rent or mortgage payment?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "temporary_housing",
+          "type": "bool",
+          "label": "If you don't have a permanent home address, do you spend money on temporary housing?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "A household whose address changed since it last reported must complete this section. Otherwise it is optional, and completing it could increase benefits.",
+      "sourceId": "FORM_SAR7B",
+      "hint": "You must complete this section if your address changed since you last reported. Otherwise it is optional, and the form says it could help you get more benefits."
+    },
+    {
+      "id": "sar.utilities",
+      "pdfPage": 10,
+      "label": "Expenses: utilities and other housing costs",
+      "fields": [
+        {
+          "key": "phone",
+          "type": "bool",
+          "label": "Phone (including cell)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "electric_gas",
+          "type": "bool",
+          "label": "Electric or gas",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "water",
+          "type": "bool",
+          "label": "Water",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "trash",
+          "type": "bool",
+          "label": "Trash",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "mobile_home_lot_rent",
+          "type": "bool",
+          "label": "Mobile home lot rent",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "property_tax",
+          "type": "bool",
+          "label": "Property tax",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "property_tax_amount",
+          "type": "text",
+          "label": "Property tax amount",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "insurance",
+          "type": "bool",
+          "label": "Home or renter's insurance",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "insurance_amount",
+          "type": "text",
+          "label": "Home or renter's insurance amount",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "hoa",
+          "type": "bool",
+          "label": "Homeowner's Association (HOA) fees",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "hoa_amount",
+          "type": "text",
+          "label": "HOA fees amount",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "other",
+          "type": "bool",
+          "label": "Other",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        },
+        {
+          "key": "other_specify",
+          "type": "text",
+          "label": "Other: specify, with the amount",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false,
+          "mayStayBlank": true
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Each box is ticked or left empty; the form has no No box.",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.care",
+      "pdfPage": 10,
+      "label": "Expenses: dependent or child care",
+      "fields": [
+        {
+          "key": "payer",
+          "type": "text",
+          "label": "Who paid for dependent or child care?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "Amount paid for dependent or child care in the report month",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "dependents",
+          "type": "text",
+          "label": "Names of dependents or children",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.child_support",
+      "pdfPage": 10,
+      "label": "Expenses: child support paid",
+      "fields": [
+        {
+          "key": "payer",
+          "type": "text",
+          "label": "Who paid for child support?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "Amount of child support paid in the report month",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Support paid to someone who is not in the household.",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.medical",
+      "pdfPage": 11,
+      "label": "Expenses: medical costs",
+      "fields": [
+        {
+          "key": "payer",
+          "type": "text",
+          "label": "Who paid for medical costs?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "Amount paid for medical costs in the report month",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Applies to a person who is 60 or older, or disabled, with new medical costs, a change in the amount paid, or costs not reported before.",
+      "sourceId": "FORM_SAR7B",
+      "hint": "Fill this in only for a person who is 60 or older or disabled, with a new medical cost, a changed amount, or a cost not reported before."
+    },
+    {
+      "id": "sar.gambling",
+      "pdfPage": 11,
+      "label": "Gambling or lottery winnings",
+      "fields": [
+        {
+          "key": "has_winnings",
+          "type": "bool",
+          "label": "Did anyone in your household win money from gambling or playing the lottery within the last six months?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person",
+          "type": "text",
+          "label": "Household member name (first, middle, last)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date of winning (month, day, year)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "Amount won",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "A household that gets CalFresh must answer this question.",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.proof",
+      "pdfPage": 7,
+      "label": "Proof boxes in each section: attached, or help needed",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Each section asks whether proof is attached; the household ticks these once it knows what it is sending.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.abawd",
+      "pdfPage": 12,
+      "label": "CalFresh work requirement (ABAWD) boxes (optional)",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Optional statements about health, pregnancy, treatment and similar circumstances; the household answers them personally on the form.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.warrant",
+      "pdfPage": 13,
+      "label": "Outstanding warrant, probation or parole violation (cash aid)",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "The household answers this question personally on the form.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.life_events",
+      "pdfPage": 13,
+      "label": "Life events (cash aid)",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Asked for CalWORKs or other cash aid; the household answers it personally on the form.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    },
+    {
+      "id": "sar.certification",
+      "pdfPage": 14,
+      "label": "Sign and date",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Applicant must read and perform the official signature action.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_SAR7B"
+    }
+  ],
+  "repeatInstructions": [
+    "More than two household changes, four income sources or three resources: write them on a separate sheet of paper and send it with the form, as the form instructs."
+  ],
+  "policyWarning": "This is a form-question inventory, not a current eligibility rulebook. Original text is preserved; separately versioned rules govern automated conclusions.",
+  "automaticSignature": false,
+  "countyFieldsWritable": false,
+  "perFieldBindingCount": 0
+}

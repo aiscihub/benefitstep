@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "overview and six sections",
+    "all images at most 768 pixels",
+    "bottom-right original pixels preserved",
+    "image buffers released",
+    "notice image count",
+    "notice bounded images",
+    "again image count",
+    "again bounded images",
+    "extract image count",
+    "extract bounded images",
+    "all three reading paths exercised",
+    "all reading paths release image buffers",
+    "cancelled images do not reach a model"
+  ],
+  "scope": "Built unpacked extension with synthetic 1313x1700 image and mocked model. Native model accuracy not measured."
+}

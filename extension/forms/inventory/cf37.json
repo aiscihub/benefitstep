@@ -1,0 +1,828 @@
+{
+  "id": "cf37",
+  "title": "Recertification for CalFresh Benefits",
+  "edition": "11/16",
+  "pageCount": 11,
+  "officialUrl": "https://www.cdss.ca.gov/cdssweb/entres/forms/English/cf37.pdf",
+  "retrievedOn": "2026-10-08",
+  "sourceId": "FORM_CF37",
+  "applicationPages": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "templateBytesIncluded": true,
+  "templateSha256": "6ea8f69d928c30b6fa213e3e4a2f00e094b9f516e731b98807e1d9834e67b64c",
+  "fieldGeometryStatus": "inspected_mapping_pending_review",
+  "questionInventoryStatus": "research_transcription_requires_independent_review",
+  "groups": [
+    {
+      "id": "case",
+      "pdfPage": 8,
+      "label": "Case name and number",
+      "fields": [
+        {
+          "key": "case_name",
+          "type": "text",
+          "label": "Case name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "case_number",
+          "type": "text",
+          "label": "Case number",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Copy both from the county notice. The form repeats them at the top of pages 9 to 11; those copies are not filled here.",
+      "sourceId": "FORM_CF37",
+      "hint": "Copy these from your county notice."
+    },
+    {
+      "id": "mailing",
+      "pdfPage": 8,
+      "label": "Mailing address",
+      "fields": [
+        {
+          "key": "mailing_address",
+          "type": "text",
+          "label": "Mailing address",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "mailing_city",
+          "type": "text",
+          "label": "City",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "mailing_state",
+          "type": "text",
+          "label": "State",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "mailing_zip",
+          "type": "text",
+          "label": "ZIP code",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "contact",
+      "pdfPage": 8,
+      "label": "Contact authorization: phone, text and email",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Giving a phone number or email here authorizes the county to use it; the applicant writes it.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q1.household_changes",
+      "pdfPage": 8,
+      "label": "1. People who moved in or out",
+      "fields": [
+        {
+          "key": "has_change",
+          "type": "bool",
+          "label": "Has anyone moved into or out of your home in the last six months?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "direction",
+          "type": "text",
+          "label": "Moved in or out",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "move_date",
+          "type": "text",
+          "label": "Date of move (six digits: mmddyy)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name (first, middle, last)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "date_of_birth",
+          "type": "text",
+          "label": "Date of birth (six digits: mmddyy)",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "relationship",
+          "type": "text",
+          "label": "Relationship to you",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "buys_food_together",
+          "type": "bool",
+          "label": "Regularly purchase and prepare food together?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 3,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Includes newborns.",
+      "sourceId": "FORM_CF37",
+      "hint": "The form asks about the last six months. List each person who moved in or out, including newborns."
+    },
+    {
+      "id": "q2.representative",
+      "pdfPage": 8,
+      "label": "2. Authorized representatives",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Naming a person to act for the household is the applicant's own choice.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q3.address_change",
+      "pdfPage": 8,
+      "label": "3. Address change",
+      "fields": [
+        {
+          "key": "has_change",
+          "type": "bool",
+          "label": "Have there been any changes to your address in the last six months?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "new_address",
+          "type": "text",
+          "label": "New address",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "date_moved",
+          "type": "text",
+          "label": "Date moved",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "mailing_address",
+          "type": "text",
+          "label": "Mailing address, if different",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37",
+      "hint": "The form asks about the last six months."
+    },
+    {
+      "id": "q4.housing_costs",
+      "pdfPage": 8,
+      "label": "4. New or changed housing costs",
+      "fields": [
+        {
+          "key": "rent_or_mortgage",
+          "type": "text",
+          "label": "Your rent or mortgage per month now",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "taxes_and_insurance",
+          "type": "text",
+          "label": "Property taxes and home insurance per month now, if paid separately",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Asked only of a household that moved or has new or changed housing costs in the last six months.",
+      "sourceId": "FORM_CF37",
+      "hint": "Fill this in only if you moved, or your housing costs are new or changed, in the last six months."
+    },
+    {
+      "id": "q4a.utilities",
+      "pdfPage": 8,
+      "label": "4a. Utility costs not included in housing costs",
+      "fields": [
+        {
+          "key": "phone",
+          "type": "bool",
+          "label": "Phone",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "trash",
+          "type": "bool",
+          "label": "Trash",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "water",
+          "type": "bool",
+          "label": "Water",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "electric_gas",
+          "type": "bool",
+          "label": "Electric or gas",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "other_heating_cooling",
+          "type": "bool",
+          "label": "Other heating or cooling costs",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Each box is ticked or left empty; the form has no No box.",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q5.homeless",
+      "pdfPage": 9,
+      "label": "5. Homelessness and shelter costs",
+      "fields": [
+        {
+          "key": "homeless",
+          "type": "bool",
+          "label": "Are you homeless?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "pays_shelter_costs",
+          "type": "bool",
+          "label": "If yes, do you pay shelter costs?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q6.students",
+      "pdfPage": 9,
+      "label": "6. Students",
+      "fields": [
+        {
+          "key": "has_student",
+          "type": "bool",
+          "label": "Is anyone who is applying attending a college or vocational school?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name of person",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "school",
+          "type": "text",
+          "label": "Name of school or training",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "enrolled_status",
+          "type": "text",
+          "label": "Enrolled status",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "units",
+          "type": "text",
+          "label": "Number of units",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "working",
+          "type": "bool",
+          "label": "Is this person working?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "hours_week",
+          "type": "text",
+          "label": "Average work hours per week",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 2,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q7.earned",
+      "pdfPage": 9,
+      "label": "7. Income from a job",
+      "fields": [
+        {
+          "key": "has_income",
+          "type": "bool",
+          "label": "Does anyone you buy and prepare food with get income from a job?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person",
+          "type": "text",
+          "label": "Name of person who gets income",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "employer",
+          "type": "text",
+          "label": "Employer name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "self_employed",
+          "type": "bool",
+          "label": "Self-employed",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "frequency",
+          "type": "text",
+          "label": "How often paid",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "monthly_gross",
+          "type": "text",
+          "label": "Monthly gross amount of income",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "hours_month",
+          "type": "text",
+          "label": "Hours worked per month",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "will_continue",
+          "type": "bool",
+          "label": "Will this income continue?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 3,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "List each job for each person who works. More than three jobs go on a separate sheet.",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q7a.changes",
+      "pdfPage": 9,
+      "label": "7a. Expected changes to a job or income",
+      "fields": [
+        {
+          "key": "expects_change",
+          "type": "bool",
+          "label": "Will there be any changes to anyone's job or income in the next six months?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "explanation",
+          "type": "text",
+          "label": "Explanation",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "explanation_more",
+          "type": "text",
+          "label": "Explanation, second line",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q8.unearned",
+      "pdfPage": 9,
+      "label": "8. Income that does not come from a job",
+      "fields": [
+        {
+          "key": "has_income",
+          "type": "bool",
+          "label": "Does anyone you buy or prepare food with get income that does not come from a job?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person",
+          "type": "text",
+          "label": "Name",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "source",
+          "type": "text",
+          "label": "Source of income",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "one_time_or_ongoing",
+          "type": "text",
+          "label": "One-time or ongoing payment",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount_and_frequency",
+          "type": "text",
+          "label": "How much and how often",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 3,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q8a.changes",
+      "pdfPage": 9,
+      "label": "8a. Expected changes to this income",
+      "fields": [
+        {
+          "key": "expects_change",
+          "type": "bool",
+          "label": "Will there be any changes to this income in the next six months?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "explanation",
+          "type": "text",
+          "label": "Explanation",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q9.medical",
+      "pdfPage": 10,
+      "label": "9. Medical costs",
+      "fields": [
+        {
+          "key": "has_change",
+          "type": "bool",
+          "label": "Did anyone who gets CalFresh and is 60 or older, or disabled, have an increase or begin paying medical costs?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "person",
+          "type": "text",
+          "label": "Who had the cost?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "cost_type",
+          "type": "text",
+          "label": "Type of cost",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "Amount paid",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "frequency",
+          "type": "text",
+          "label": "How often?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Proof is asked for a new expense or a change of more than $25.",
+      "sourceId": "FORM_CF37",
+      "hint": "Answer Yes only for a new medical cost or an increase, for a person who is 60 or older or disabled."
+    },
+    {
+      "id": "q10.child_support",
+      "pdfPage": 10,
+      "label": "10. Child support paid",
+      "fields": [
+        {
+          "key": "pays_support",
+          "type": "bool",
+          "label": "Did anyone who gets CalFresh have to pay child support?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "children",
+          "type": "text",
+          "label": "Name(s) of children",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "Current amount they have to pay",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "payer",
+          "type": "text",
+          "label": "Who paid support?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q11.care",
+      "pdfPage": 10,
+      "label": "11. Dependent or child care",
+      "fields": [
+        {
+          "key": "pays_care",
+          "type": "bool",
+          "label": "Does anyone pay for care of a child, disabled adult or other dependent so someone can work, study or look for a job?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "amount",
+          "type": "text",
+          "label": "Amount paid out of pocket",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "payer",
+          "type": "text",
+          "label": "Who paid",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        },
+        {
+          "key": "dependent",
+          "type": "text",
+          "label": "Dependent or child",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": false,
+      "note": "Only the amount the household pays out of pocket.",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q12.medi_cal",
+      "pdfPage": 10,
+      "label": "12. Interest in Medi-Cal",
+      "fields": [
+        {
+          "key": "interested",
+          "type": "bool",
+          "label": "Are you interested in applying for Medi-Cal?",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": true,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "q13_18.legal",
+      "pdfPage": 10,
+      "label": "13 to 18. Convictions, fleeing and probation or parole",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "The applicant answers these questions personally on the form.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "notes",
+      "pdfPage": 7,
+      "label": "Notes",
+      "fields": [
+        {
+          "key": "notes",
+          "type": "text",
+          "label": "Notes",
+          "entryPolicy": "explicit_confirmed_answer",
+          "automaticInference": false
+        }
+      ],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Use only when applicable under this form instruction; ask rather than infer.",
+      "manualOnly": false,
+      "optional": true,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    },
+    {
+      "id": "certification",
+      "pdfPage": 11,
+      "label": "Certification: signature, date and contact",
+      "fields": [],
+      "printedCapacity": 1,
+      "programs": [
+        "calfresh"
+      ],
+      "applicability": "Applicant must read and perform the official signature action.",
+      "manualOnly": true,
+      "optional": false,
+      "note": "",
+      "sourceId": "FORM_CF37"
+    }
+  ],
+  "repeatInstructions": [
+    "More than three household changes, three jobs or three unearned income sources: attach a separate sheet of paper and identify the question, as the form instructs."
+  ],
+  "policyWarning": "This is a form-question inventory, not a current eligibility rulebook. Original text is preserved; separately versioned rules govern automated conclusions.",
+  "automaticSignature": false,
+  "countyFieldsWritable": false,
+  "perFieldBindingCount": 0
+}

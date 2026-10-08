@@ -15,3 +15,25 @@ export function zipStore(entries){
  }
  const cb=cat(central),end=new Uint8Array(22),v=new DataView(end.buffer);v.setUint32(0,0x06054b50,true);v.setUint16(8,entries.length,true);v.setUint16(10,entries.length,true);v.setUint32(12,cb.length,true);v.setUint32(16,offset,true);return cat([...local,cb,end]);
 }
+/** Reads one file out of a ZIP by name, wherever in the archive's folders it sits: a stored entry as it is, a deflated one through the platform's own inflater. Returns null when the archive has no such file. */
+export async function unzipEntry(bytes,wanted,limit=8_000_000){
+ const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
+ let end=-1;for(let i=bytes.length-22;i>=Math.max(0,bytes.length-66000);i--)if(v.getUint32(i,true)===0x06054b50){end=i;break;}
+ if(end<0)throw new Error('Not a ZIP file');
+ const count=v.getUint16(end+10,true);let p=v.getUint32(end+16,true);
+ for(let n=0;n<count;n++){
+  if(p+46>bytes.length||v.getUint32(p,true)!==0x02014b50)throw new Error('Damaged ZIP file');
+  const method=v.getUint16(p+10,true),size=v.getUint32(p+20,true),full=v.getUint32(p+24,true),nameLength=v.getUint16(p+28,true),local=v.getUint32(p+42,true);
+  const name=new TextDecoder().decode(bytes.subarray(p+46,p+46+nameLength));
+  if(name===wanted||name.endsWith('/'+wanted)){
+   if(full>limit||local+30>bytes.length)throw new Error('ZIP entry too large or damaged');
+   const start=local+30+v.getUint16(local+26,true)+v.getUint16(local+28,true),data=bytes.subarray(start,start+size);
+   if(method===0)return data.slice();
+   if(method!==8)throw new Error('Unsupported ZIP compression');
+   const out=new Uint8Array(await new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());
+   if(out.length>limit)throw new Error('ZIP entry too large or damaged');return out;
+  }
+  p+=46+nameLength+v.getUint16(p+30,true)+v.getUint16(p+32,true);
+ }
+ return null;
+}

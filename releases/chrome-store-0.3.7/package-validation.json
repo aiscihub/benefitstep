@@ -1,0 +1,18 @@
+{
+  "version": "0.3.7",
+  "archive": "benefitstep-0.3.7-chrome-store.zip",
+  "bytes": 11439775,
+  "sha256": "72b2c85e70226271599b2c920e778324998e2fb25c75f2b27127f8c2c04ebf6f",
+  "manifestAtRoot": true,
+  "manifestCount": 1,
+  "permissions": [
+    "sidePanel"
+  ],
+  "productionApprovalClaimed": false,
+  "baseCommit": "37eba0096a57df662d372bb6f3b3379daed9ca7a",
+  "sourceTestsPassed": 354,
+  "repositoryTestsPassed": 163,
+  "packagedBrowserChecksPassed": 13,
+  "runtimeMatchesArchive": true,
+  "nativeModelAccuracyTested": false
+}

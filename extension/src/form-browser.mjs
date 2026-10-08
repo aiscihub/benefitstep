@@ -1,7 +1,8 @@
 import {getPdfEngine} from '../shared/browser/files.mjs';
+import {FORMS} from './form-adapter.mjs';
 const assets=new Map();
 export async function loadFormAssets(id){
- if(!['cf285','ccfrm604'].includes(id))throw Error('Unknown form');
+ if(!Object.hasOwn(FORMS,id))throw Error('Unknown form');
  if(!assets.has(id))assets.set(id,(async()=>{
   const read=async(p,json=true)=>{const r=await fetch(new URL(p,import.meta.url));if(!r.ok)throw Error('Packaged form asset missing');return json?r.json():new Uint8Array(await r.arrayBuffer());};
   const [inventory,map,template,fontBytes]=await Promise.all([read(`../forms/inventory/${id}.json`),read(`../forms/maps/${id}.json`),read(`../forms/templates/${id}.pdf`,false),read('../vendor/pdf-writer/NotoSans-Regular.ttf',false)]);return {inventory,map,template,fontBytes};

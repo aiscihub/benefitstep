@@ -1,6 +1,10 @@
 import {usable} from './state.mjs';
 import {householdSuggestions,householdLists,listedDetails,householdSheet,localToday} from './household.mjs';
-export const FORMS={cf285:'CalFresh',ccfrm604:'Medi-Cal'};
+import {renewalChanges,datedSpan,monthName} from './renewal.mjs';
+// Each official form the app can fill, with the program it belongs to and the word the screens use for it.
+export const FORMS={cf285:'CalFresh',ccfrm604:'Medi-Cal',cf37:'CalFresh',sar7b:'CalFresh'};
+export const FORM_NOUN={cf285:'application',ccfrm604:'application',cf37:'recertification',sar7b:'periodic report'};
+export const FORM_CODE={cf285:'CF285',ccfrm604:'CCFRM604',cf37:'CF 37',sar7b:'SAR 7'};
 export function emptyAnswers(formId){if(!FORMS[formId])throw Error('Unknown official form');return {schemaVersion:'1.0',formId,revision:1,groups:[],answers:[],exportAuthorized:false};}
 export function reviseAnswer(data,{groupId,row,field,status,value,sourceIds=[],sourceRefs=[]}){
  const prior=data.answers.find(a=>a.groupId===groupId&&a.row===row&&a.field===field);
@@ -14,7 +18,7 @@ export function reviseAnswer(data,{groupId,row,field,status,value,sourceIds=[],s
 const FIELD_LABELS={'q1.contact|name':'Name','q1.contact|home_zip':'ZIP code','q1.contact|mailing_zip':'Mailing ZIP code','p2.address|mail_zip':'Mail ZIP code','q6a.people|relationship':'Relationship to you','q7.unearned|has_income':'Does anyone in the household get income that is not from a job?','q7.unearned|person':'Person getting the money','q7.unearned|source':'From where','q7.unearned|amount':'How much','q7.unearned|frequency':'How often received','q12.medical|has_expenses':'Does an elderly (60 or older) or disabled person have out-of-pocket medical expenses?','q12.medical|person':'Name of elderly or disabled person','q12.medical|amount':'Amount of expense','q12.medical|frequency':'How often paid','q12.medical|expense_type':'What type of expense','q8.earned|has_income':'Does anyone in the household get income from a job?','q8.earned|employer_name_address':'Employer','q1.contact|other_names':'Other names (maiden, nicknames)','q8.earned|person':'Person working','q8.earned|frequency':'How often paid','q8.earned|hours_week':'Average hours per week','q8.earned|gross_received_this_month':'Total gross earned income received this month','q9.care|has_care_cost':'Does anyone pay for care so they can work, study, train or look for work?','q9.care|care_recipient':'Who gets care','q9.care|provider_name_address':'Who gives care','q9.care|frequency':'How often paid','q11.housing|responsible_for_expenses':'Is anyone in the household responsible for household expenses?','q11.housing|owed':'Do you have this expense?','q11.housing|payer':'Who pays?','q11.housing|frequency':'How often billed (weekly, monthly, other)','p2.address|zip':'ZIP code','p7.income|household_has_income':'Does anyone in the household have income?','p7.income|person_first':'Person, first name','p7.income|person_middle':'Person, middle name','p7.income|person_last':'Person, last name','p7.income|person_suffix':'Person, suffix','p7.income|income_name':'Employer or income source','p7.income|frequency':'How often paid'};
 const sentence=text=>{const words=String(text||'').replaceAll('_',' ').trim();return words.charAt(0).toUpperCase()+words.slice(1);};
 export const fieldLabel=(groupId,field,fallback)=>FIELD_LABELS[groupId+'|'+field]||sentence(fallback||field);
-const RECORD_NAMES={'q6a.people':'Person','p2.identity':'Person','p2.address':'Person','q7.unearned':'Income record','q8.earned':'Job','p7.income':'Income record','q9.care':'Care record','q12.medical':'Expense record'};
+const RECORD_NAMES={'sar.members':'Person','sar.income':'Income record','sar.resources':'Resource','q1.household_changes':'Person','q6.students':'Student','q7.earned':'Job','q8.unearned':'Income record','q6a.people':'Person','p2.identity':'Person','p2.address':'Person','q7.unearned':'Income record','q8.earned':'Job','p7.income':'Income record','q9.care':'Care record','q12.medical':'Expense record'};
 export const recordLabel=(groupId,row)=>FIXED_ROWS[groupId]?.[row]||(RECORD_NAMES[groupId]||'Record')+' '+(row+1);
 export const FIXED_ROWS={'q11.housing':['Rent or house payment','Property taxes and insurance, if billed separately','Gas, electric or other heating and cooling fuel','Telephone or cell phone','Homeless shelter expense','Water, sewage, garbage']};
 const NOT_ASKED={'q11.housing':row=>row?['expense_type','responsible_for_expenses']:['expense_type']};
@@ -58,8 +62,9 @@ export function proposeNameParts(full){
  if(words.length===2)[parts.middle_name,parts.last_name]=words;else parts.last_name=words.join(' ');
  return parts;
 }
-// Where each form lists its people, one record per person.
+// Where each form lists its people, one record per person. The recertification form has no such list: it asks only who moved in or out.
 const PEOPLE_GROUP={cf285:'q6a.people',ccfrm604:'p2.identity'};
+export const listsPeople=formId=>!!PEOPLE_GROUP[formId];
 export const peopleCapacity=(formId,map)=>1+Math.max(-1,...map.bindings.filter(b=>b.groupId===PEOPLE_GROUP[formId]).map(b=>b.row));
 /** Put the people the owner chose on the form, one record each. Only answers written here are replaced or cleared; anything the owner typed stays. */
 export function setApplicationPeople(data,state,map,names){
@@ -117,14 +122,14 @@ export function prefillApplication(data,state,map){
  const statedOften=(fs,key)=>byKey(fs,key).filter(c=>c.value!=='unknown');
  // A contact detail from the owner's own household list. It gives way to a confirmed document detail for the same answer.
  const sheet=householdSheet(state);
- const propose=(groupId,row,field,value)=>{
+ const propose=(groupId,row,field,value,from=sheet.files,sourceId='household-list')=>{
   if(!map.bindings.some(b=>b.groupId===groupId&&b.row===row&&b.field===field))return;
   const old=data.answers.find(a=>a.groupId===groupId&&a.row===row&&a.field===field),group=data.groups.find(g=>g.groupId===groupId);
   if((old&&!(old.autoPrefilled&&(old.from||old.status!=='answered')))||(group&&group.status!=='applicable'))return;
   if(!value){if(old?.status==='answered')reviseAnswer(data,{groupId,row,field,status:'unknown'}).autoPrefilled=true;return;}
   if(old?.status==='answered'&&old.value===value)return;
   if(!group||group.rowCount<=row)reviseGroup(data,groupId,'applicable',row+1);
-  const answer=reviseAnswer(data,{groupId,row,field,status:'answered',value,sourceIds:['household-list']});answer.autoPrefilled=true;answer.from=sheet.files;count++;
+  const answer=reviseAnswer(data,{groupId,row,field,status:'answered',value,sourceIds:[sourceId]});answer.autoPrefilled=true;answer.from=from;count++;
  };
  // A value a document gives on its own labelled line, such as "Hourly rate: $28.00".
  const stated=(doc,label)=>{for(const page of doc.pages||[])for(const line of String(page.text||'').split('\n')){const found=line.match(new RegExp('^\\s*(?:'+label+')\\s*:\\s*(.+?)\\s*$','i'));if(found)return found[1];}return '';};
@@ -148,12 +153,19 @@ export function prefillApplication(data,state,map){
  // Stable slots keep later imports from shifting an existing person's answers.
  data.prefillJobs??=[];
  for(const key of jobs.keys())if(!data.prefillJobs.includes(key))data.prefillJobs.push(key);
- const groupId=data.formId==='cf285'?'q8.earned':'p7.income';
+ // The periodic report lists jobs and other income in one table, filled further down.
+ const groupId=data.formId==='cf285'?'q8.earned':data.formId==='cf37'?'q7.earned':data.formId==='sar7b'?'':'p7.income';
  const capacity=1+Math.max(-1,...map.bindings.filter(b=>b.groupId===groupId).map(b=>b.row));
  data.prefillJobs.forEach((key,row)=>{
-  if(row>=capacity)return;
+  if(!groupId||row>=capacity)return;
   const fs=jobs.get(key)||[];
-  if(data.formId==='cf285'){
+  if(data.formId==='cf37'){
+   // This form asks for the month's gross pay and offers five pay periods. A period it does not list is left for the owner.
+   const often=byKey(fs,'pay_frequency');
+   put(groupId,row,'person',byKey(fs,'person'));put(groupId,row,'employer',byKey(fs,'issuer'));
+   put(groupId,row,'frequency',often.map(c=>({...c,value:({weekly:'Weekly',biweekly:'Biweekly',semimonthly:'Twice monthly',monthly:'Monthly'})[c.value]})).filter(c=>c.value));
+   put(groupId,row,'monthly_gross',often.length&&often.every(c=>c.value==='monthly')?byKey(fs,'gross_pay'):[]);
+  }else if(data.formId==='cf285'){
    // What the statement says on a labelled line of its own: the employer's phone, the hourly rate and the weekly hours.
    // The employer's address is left out: the printed box holds one short line, and a longer value is cut off by viewers.
    const said=(label,shape=/.+/)=>(statements.get(key)||[]).map(doc=>({value:stated(doc,label).match(shape)?.[1]??'',facts:fs.filter(f=>f.documentId===doc.id&&(f.fieldKey==='person'||f.fieldKey==='issuer'))})).filter(c=>c.value);
@@ -179,8 +191,8 @@ export function prefillApplication(data,state,map){
  });
  // A listed job answers the yes/no question above the table. It is never answered No from the absence of a statement.
  const earners=[...jobs.values()].flat().filter(f=>f.fieldKey==='person');
- put(groupId,0,data.formId==='cf285'?'has_income':'household_has_income',earners.length?[{value:true,facts:earners}]:[]);
- if(data.formId!=='cf285')return count;
+ if(groupId)put(groupId,0,data.formId==='ccfrm604'?'household_has_income':'has_income',earners.length?[{value:true,facts:earners}]:[]);
+ if(data.formId==='ccfrm604')return count;
  const current=kind=>state.docs.filter(d=>d.kind===kind&&!d.historical&&!d.duplicateOf),of=doc=>facts.filter(f=>f.documentId===doc.id);
  const basis=fs=>fs.filter(f=>f.fieldKey==='person'||f.fieldKey==='issuer');
  // A charge is monthly when the document says so, or when the period it covers is one month long.
@@ -192,6 +204,128 @@ export function prefillApplication(data,state,map){
  const rows=(slot,found,groupId)=>{data[slot]??=[];for(const key of found.keys())if(!data[slot].includes(key))data[slot].push(key);const room=1+Math.max(-1,...map.bindings.filter(b=>b.groupId===groupId).map(b=>b.row));return data[slot].slice(0,room).map(key=>(found.get(key)||[]).flat());};
  // One record per person and issuer. A document that names its person but not its issuer still counts; its issuer box stays empty.
  const named=kind=>{const found=new Map();for(const doc of current(kind)){const fs=of(doc);if(byKey(fs,'person').length!==1||byKey(fs,'issuer').length>1)continue;const key=JSON.stringify([byKey(fs,'person')[0].value,byKey(fs,'issuer')[0]?.value||'']);if(!found.has(key))found.set(key,[]);found.get(key).push(fs);}return found;};
+ const sixty=name=>{const born=listedDetails(state,name).date_of_birth,today=localToday();return !!born&&Number(today.slice(0,4))-Number(born.slice(0,4))-(today.slice(5)<born.slice(5)?1:0)>=60;};
+ const home=state.household?.configured?state.household:{},notice=state.renewal?.notice||{},text=doc=>(doc.pages||[]).map(p=>p.text||'').join('\n');
+ const alike=(a,b)=>String(a||'').trim().toLowerCase()===String(b||'').trim().toLowerCase();
+ if(data.formId==='cf37'){
+  // The recertification form asks two kinds of question. What the household has now (jobs, other income, care,
+  // utilities) is filled from current documents, as on the application. What changed in the last six months is
+  // filled only where an earlier package shows a difference, and such an answer says so.
+  const sixDigits=iso=>iso?iso.slice(5,7)+iso.slice(8,10)+iso.slice(2,4):'';
+  // The birth date box of question 1 has six cells and prints its own slashes, so the date goes in as month, day and two-digit year with nothing between.
+  for(const [field,value] of [['case_name',notice.caseName],['case_number',notice.caseNumber]])propose('case',0,field,value,['the county notice details you entered'],'renewal-notice');
+  const mail=sheet.mailing?[sheet.mailing,sheet.files]:[{address:home.home_address,city:home.home_city,state:home.home_state,zip:home.home_zip},['your household details']];
+  for(const [field,key] of [['mailing_address','address'],['mailing_city','city'],['mailing_state','state'],['mailing_zip','zip']])propose('mailing',0,field,mail[0][key],mail[1],'household-details');
+  const awards=named('income_award');
+  rows('prefillAwards',awards,'q8.unearned').forEach((fs,row)=>{
+   const often=statedOften(fs,'pay_frequency'),amount=byKey(fs,'award_amount');
+   put('q8.unearned',row,'person',byKey(fs,'person'));put('q8.unearned',row,'source',byKey(fs,'issuer'));
+   put('q8.unearned',row,'one_time_or_ongoing',often.map(c=>({...c,value:c.value==='one-time'?'One-time':'Ongoing'})));
+   put('q8.unearned',row,'amount_and_frequency',amount.length===1&&often.length===1?[{value:'$'+amount[0].value+' '+often[0].value,facts:[...amount[0].facts,...often[0].facts]}]:[]);
+  });
+  put('q8.unearned',0,'has_income',awards.size?[{value:true,facts:basis([...awards.values()].flat(2))}]:[]);
+  // Care is one line on this form. Several invoices name their children together, and their amounts are not added up.
+  const care=current('childcare').map(doc=>({doc,fs:of(doc)})).filter(c=>byKey(c.fs,'issuer').length===1&&(c.doc.dependants||[]).length===1),cared=care.flatMap(c=>basis(c.fs));
+  put('q11.care',0,'pays_care',care.length?[{value:true,facts:cared}]:[]);
+  put('q11.care',0,'payer',care.flatMap(c=>byKey(c.fs,'person')));
+  put('q11.care',0,'dependent',care.length?[{value:[...new Set(care.map(c=>c.doc.dependants[0].name))].join(', '),facts:cared}]:[]);
+  put('q11.care',0,'amount',care.length===1?byKey(care[0].fs,'amount_paid'):[]);
+  for(const [field,service] of UTILITY_BOXES){const fs=current('utility').filter(doc=>service.test(text(doc))).flatMap(of);put('q4a.utilities',0,field,fs.length?[{value:true,facts:basis(fs)}]:[]);}
+  const changes=renewalChanges(state,true)||[],noted=['a comparison with your previous package'],differs=c=>c.status==='changed'||c.status==='new';
+  const moved=changes.find(c=>c.topic==='address'&&c.status==='changed');
+  propose('q3.address_change',0,'has_change',moved?true:'',noted,'previous-package');propose('q3.address_change',0,'new_address',moved?moved.now:'',noted,'previous-package');
+  // A rent or mortgage amount goes on the form only when the household moved or the amount is new or different.
+  const housing=moved||changes.some(c=>c.topic==='housing'&&differs(c))?[...current('rent'),...current('mortgage')].map(of).filter(fs=>howOften(fs).some(c=>c.value==='monthly')):[];
+  put('q4.housing_costs',0,'rent_or_mortgage',housing.flatMap(fs=>[...byKey(fs,'rent_amount'),...byKey(fs,'mortgage_payment')]));
+  const movers=changes.filter(c=>c.topic==='people'&&(c.status==='new'||c.status==='gone')).slice(0,3);
+  propose('q1.household_changes',0,'has_change',movers.length?true:'',noted,'previous-package');
+  for(let row=0;row<3;row++){
+   const mover=movers[row],listed=mover?.status==='new'?listedDetails(state,mover.label):{},earlier=mover?.status==='gone'?state.renewal.previous.people.find(p=>alike(p.name,mover.label)):null;
+   propose('q1.household_changes',row,'direction',mover?(mover.status==='new'?'In':'Out'):'',noted,'previous-package');propose('q1.household_changes',row,'name',mover?.label||'',noted,'previous-package');
+   propose('q1.household_changes',row,'date_of_birth',sixDigits(listed.date_of_birth||earlier?.date_of_birth),listed.files?.length?listed.files:['your previous package'],'previous-package');
+   propose('q1.household_changes',row,'relationship',listed.relationship||earlier?.relationship||'',listed.files?.length?listed.files:['your previous package'],'previous-package');
+  }
+  // A medical cost goes on the form when it is new or higher than before, for a person a household list shows to be 60 or older.
+  const risen=changes.filter(c=>c.topic==='medical'&&c.record&&(c.status==='new'||(c.status==='changed'&&Number(c.record.amount)>Number(c.earlier.amount)))&&sixty(c.person));
+  const bill=risen.length===1?current('medical').map(of).filter(fs=>byKey(fs,'person').some(p=>alike(p.value,risen[0].person))&&byKey(fs,'issuer').some(i=>alike(i.value,risen[0].source))).flat():[];
+  put('q9.medical',0,'has_change',bill.length?[{value:true,facts:basis(bill)}]:[]);
+  put('q9.medical',0,'person',byKey(bill,'person'));put('q9.medical',0,'cost_type',byKey(bill,'service_description'));put('q9.medical',0,'amount',byKey(bill,'patient_responsibility'));put('q9.medical',0,'frequency',howOften(bill));
+  return count;
+ }
+ if(data.formId==='sar7b'){
+  // The periodic report asks what the household had in one month, the report month on the county notice, and what
+  // changed since it last reported. An amount is filled only from a document dated in that month. A change is filled
+  // only where an earlier package shows a difference, and such an answer says so.
+  const month=monthName(notice.reportMonth)?notice.reportMonth:'',entered=['the county notice details you entered'],detailed=['your household details'];
+  const within=fs=>!!month&&['period_start','period_end'].every(key=>byKey(fs,key).length===1&&String(byKey(fs,key)[0].value).startsWith(month));
+  for(const [field,value] of [['household_name',home.name],['street',home.home_address],['city',home.home_city],['zip',home.home_zip]])propose('sar.header',0,field,value,detailed,'household-details');
+  for(const [field,value] of [['case_name',notice.caseName],['case_number',notice.caseNumber],['report_month',monthName(notice.reportMonth)],['submit_month',monthName(notice.submitMonth)]])propose('sar.header',0,field,value,entered,'renewal-notice');
+  const cityLine=(city,region,zip)=>[city,[region,zip].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+  propose('sar.home',0,'street',home.home_address,detailed,'household-details');propose('sar.home',0,'city_state_zip',cityLine(home.home_city,home.home_state,home.home_zip),detailed,'household-details');
+  // The form asks for a mailing address only when it differs from the home address, so one is filled only from the owner's own household list.
+  propose('sar.mailing',0,'street',sheet.mailing?.address);propose('sar.mailing',0,'city_state_zip',sheet.mailing?cityLine(sheet.mailing.city,sheet.mailing.state,sheet.mailing.zip):'');
+  propose('sar.contact',0,'email',sheet.email);
+  const changes=renewalChanges(state,true)||[],noted=['a comparison with your previous package'],differs=c=>c.status==='changed'||c.status==='new';
+  const stayed=name=>changes.some(c=>c.topic==='people'&&c.status==='same'&&alike(c.label,name));
+  // Who moved in or out. A person born after the earlier package's documents is a birth, and anyone older moved in. Why a person is no longer listed is not known, so that box is left for the owner.
+  const movers=changes.filter(c=>c.topic==='people'&&(c.status==='new'||c.status==='gone')),since=state.renewal?.previous?datedSpan(state.renewal.previous)?.to:'';
+  propose('sar.members',0,'has_change',movers.length?true:'',noted,'previous-package');
+  for(let row=0;row<2;row++){
+   const mover=movers[row],listed=mover?.status==='new'?listedDetails(state,mover.label):{},earlier=mover?.status==='gone'?state.renewal.previous.people.find(p=>alike(p.name,mover.label)):null;
+   const born=listed.date_of_birth||earlier?.date_of_birth||'',from=listed.files?.length?listed.files:['your previous package'];
+   propose('sar.members',row,'name',mover?.label||'',noted,'previous-package');propose('sar.members',row,'date_of_birth',born?formDate(born):'',from,'previous-package');
+   propose('sar.members',row,'relationship',listed.relationship||earlier?.relationship||'',from,'previous-package');
+   propose('sar.members',row,'change',mover?.status==='new'&&born&&since?(born>since?'Birth':'Moved In'):'',noted,'previous-package');
+  }
+  // One table holds every source of income, jobs first. Each source keeps its row once placed there.
+  const awards=named('income_award'),sources=new Map([...[...jobs].map(([key,fs])=>['job:'+key,fs]),...[...awards].map(([key,sets])=>['award:'+key,sets.flat()])]);
+  data.prefillIncome??=[];for(const key of sources.keys())if(!data.prefillIncome.includes(key))data.prefillIncome.push(key);
+  // Some answers have two short boxes, one under the other. A value too long for the first is divided at a space when both parts fit; otherwise it stays whole and the writer reports that it does not fit.
+  const room=(row,field)=>{const b=map.bindings.find(b=>b.groupId==='sar.income'&&b.row===row&&b.field===field);return b?Math.floor((b.rect[2]-b.rect[0]-4)/(b.fontSize*.6)):0;};
+  const twoLines=(value,fit)=>{const words=value.split(' ');if(value.length>fit)for(let n=words.length-1;n>0;n--){const first=words.slice(0,n).join(' '),rest=words.slice(n).join(' ');if(first.length<=fit&&rest.length<=fit)return [first,rest];}return [value,''];};
+  // A box that does not apply to a record, such as the employer of a pension, is marked so it is not counted as left open. An answer the owner typed there stays.
+  const skip=(row,field)=>{const old=data.answers.find(a=>a.groupId==='sar.income'&&a.row===row&&a.field===field);if(!old||(old.autoPrefilled&&old.status==='unknown'))reviseAnswer(data,{groupId:'sar.income',row,field,status:'not_applicable'}).autoPrefilled=true;};
+  data.prefillIncome.slice(0,1+Math.max(-1,...map.bindings.filter(b=>b.groupId==='sar.income').map(b=>b.row))).forEach((key,row)=>{
+   const fs=sources.get(key)||[],job=key.startsWith('job:'),[person,issuer]=JSON.parse(key.slice(key.indexOf(':')+1)),often=statedOften(fs,'pay_frequency'),monthly=often.length>0&&often.every(c=>c.value==='monthly');
+   put('sar.income',row,'person',byKey(fs,'person'));put('sar.income',row,'source',fs.length?[{value:job?'From a job':'Not from a job',facts:basis(fs)}]:[]);
+   put('sar.income',row,'frequency',often.map(c=>({...c,value:({weekly:'Weekly',biweekly:'Every 2 weeks',semimonthly:'Twice a month',monthly:'Monthly'})[c.value]})).filter(c=>c.value));
+   if(job){
+    // Pay counts for the report month when its statement gives a pay date in that month. The amount is filled when one monthly statement states it; other pay periods are left for the owner to total.
+    const names=byKey(fs,'issuer'),parts=new Set(names.map(c=>String(c.value))).size===1?twoLines(String(names[0].value),room(row,'employer')):null,sourced=names.flatMap(c=>c.facts);
+    const paid=month?byKey(fs,'pay_date').filter(c=>String(c.value).startsWith(month)):[],then=new Set(paid.flatMap(c=>c.facts).map(f=>f.documentId)),dates=[...new Set(paid.map(c=>String(c.value)))].sort();
+    put('sar.income',row,'employer',parts?[{value:parts[0],facts:sourced}]:[]);put('sar.income',row,'employer_more',parts?.[1]?[{value:parts[1],facts:sourced}]:[]);skip(row,'income_type');
+    put('sar.income',row,'received_in_report_month',paid.length?[{value:true,facts:paid.flatMap(c=>c.facts)}]:[]);
+    put('sar.income',row,'gross_in_report_month',monthly?byKey(fs.filter(f=>then.has(f.documentId)),'gross_pay'):[]);
+    for(const [n,field] of [[0,'dates_received'],[1,'dates_received_more']])put('sar.income',row,field,dates.length<3&&dates[n]?[{value:formDate(dates[n]),facts:paid.filter(c=>c.value===dates[n]).flatMap(c=>c.facts)}]:[]);
+   }else{
+    // An award letter states an ongoing amount. A monthly award counts for the report month when its letter is dated in or before that month.
+    const letters=state.docs.filter(d=>fs.some(f=>f.documentId===d.id)),types=letters.map(doc=>({value:stated(doc,'Benefit type|Type of benefit|Type of income|Income type'),facts:basis(fs.filter(f=>f.documentId===doc.id))})).filter(c=>c.value);
+    const dated=byKey(fs,'document_date'),held=!!month&&monthly&&dated.length>0&&dated.every(c=>String(c.value).slice(0,7)<=month);
+    put('sar.income',row,'income_type',types.length?types:byKey(fs,'issuer'));for(const field of ['employer','employer_more','hours_month'])skip(row,field);
+    put('sar.income',row,'received_in_report_month',held?[{value:true,facts:dated.flatMap(c=>c.facts)}]:[]);put('sar.income',row,'gross_in_report_month',held?byKey(fs,'award_amount'):[]);
+   }
+   // Against the earlier package: a different amount is a change, and a new source is a start when its person was already in the household. Income that has no current document is never marked as stopped.
+   const change=changes.find(c=>c.topic===(job?'jobs':'awards')&&c.record&&alike(c.person,person)&&alike(c.source,issuer));
+   propose('sar.income',row,'started',fs.length&&change?.status==='new'&&stayed(person)?true:'',noted,'previous-package');propose('sar.income',row,'changed',fs.length&&change?.status==='changed'?true:'',noted,'previous-package');
+  });
+  const earning=[...sources.values()].flat();
+  put('sar.income',0,'has_income',earning.length?[{value:true,facts:basis(earning)}]:[]);
+  // Expenses. The monthly rent, the utility boxes and who pays for care are what the household has now. Whether expenses or the address changed is answered only from the comparison, and never as No.
+  const moved=changes.find(c=>c.topic==='address'&&c.status==='changed');
+  propose('sar.expenses',0,'address_changed',moved?true:'',noted,'previous-package');propose('sar.expenses',0,'expenses_changed',moved||changes.some(c=>['housing','care','medical'].includes(c.topic)&&differs(c))?true:'',noted,'previous-package');
+  put('sar.expenses',0,'rent_or_mortgage',[...current('rent'),...current('mortgage')].map(of).filter(fs=>howOften(fs).some(c=>c.value==='monthly')).flatMap(fs=>[...byKey(fs,'rent_amount'),...byKey(fs,'mortgage_payment')]));
+  for(const [field,service] of UTILITY_BOXES){const fs=current('utility').filter(doc=>service.test(text(doc))).flatMap(of);put('sar.utilities',0,field,fs.length?[{value:true,facts:basis(fs)}]:[]);}
+  // Care is one line on this form. Several invoices name their children together, and their amounts are not added up.
+  const care=current('childcare').map(doc=>({doc,fs:of(doc)})).filter(c=>byKey(c.fs,'issuer').length===1&&(c.doc.dependants||[]).length===1),cared=care.flatMap(c=>basis(c.fs));
+  put('sar.care',0,'payer',care.flatMap(c=>byKey(c.fs,'person')));
+  put('sar.care',0,'dependents',care.length?[{value:[...new Set(care.map(c=>c.doc.dependants[0].name))].join(', '),facts:cared}]:[]);
+  put('sar.care',0,'amount',care.length===1&&within(care[0].fs)?byKey(care[0].fs,'amount_paid'):[]);
+  // A medical cost goes on the form when it is new or different from before, for a person a household list shows to be 60 or older.
+  const altered=changes.filter(c=>c.topic==='medical'&&c.record&&differs(c)&&sixty(c.person));
+  const bill=altered.length===1?current('medical').map(of).filter(fs=>byKey(fs,'person').some(p=>alike(p.value,altered[0].person))&&byKey(fs,'issuer').some(i=>alike(i.value,altered[0].source))).flat():[];
+  put('sar.medical',0,'payer',byKey(bill,'person'));put('sar.medical',0,'amount',within(bill)?byKey(bill,'patient_responsibility'):[]);
+  return count;
+ }
  // Income that is not from a job: an award letter gives who gets it, from where, how much and how often.
  const awards=named('income_award');
  rows('prefillAwards',awards,'q7.unearned').forEach((fs,row)=>{
@@ -200,7 +334,6 @@ export function prefillApplication(data,state,map){
  });
  put('q7.unearned',0,'has_income',awards.size?[{value:true,facts:basis([...awards.values()].flat(2))}]:[]);
  // Medical costs count on this form only for a person aged 60 or older, or disabled. A statement is used when a household list gives the patient's birth date and it shows 60 or older.
- const sixty=name=>{const born=listedDetails(state,name).date_of_birth,today=localToday();return !!born&&Number(today.slice(0,4))-Number(born.slice(0,4))-(today.slice(5)<born.slice(5)?1:0)>=60;};
  const bills=new Map([...named('medical')].filter(([key])=>sixty(JSON.parse(key)[0])));
  rows('prefillMedical',bills,'q12.medical').forEach((fs,row)=>{
   put('q12.medical',row,'person',byKey(fs,'person'));put('q12.medical',row,'amount',byKey(fs,'patient_responsibility'));
@@ -226,7 +359,7 @@ export function prefillApplication(data,state,map){
  });
  put('q9.care',0,'has_care_cost',care.size?[{value:true,facts:basis([...care.values()].flat(2))}]:[]);
  // Housing costs: a rent receipt or mortgage statement answers the first printed row; a utility bill answers the row its service lines name.
- const text=doc=>(doc.pages||[]).map(p=>p.text||'').join('\n'),housing=[];
+ const housing=[];
  const row=(n,docs,amount)=>{
   const sets=docs.map(of).filter(fs=>fs.length),all=sets.flat();if(sets.length)housing.push(...basis(all));
   put('q11.housing',n,'owed',sets.length?[{value:true,facts:basis(all)}]:[]);
@@ -240,16 +373,18 @@ export function prefillApplication(data,state,map){
  return count;
 }
 // The printed row of CalFresh question 11 that a utility bill belongs to, by the services its lines name.
+// The boxes of recertification question 4a, by the services a utility bill's lines name.
+const UTILITY_BOXES=[['phone',/\b(?:telephone|phone service|wireless service|cell(?:ular)? (?:phone|service)|mobile (?:phone|service))\b/i],['trash',/\b(?:garbage|trash|refuse)\b/i],['water',/\b(?:water|sewer|sewage)\b/i],['electric_gas',/\b(?:electric(?:ity)?|natural gas|gas service|kwh|therms?)\b/i],['other_heating_cooling',/\b(?:propane|heating oil|firewood)\b/i]];
 const UTILITY_ROWS=[[2,/\b(?:electric(?:ity)?|natural gas|gas service|kwh|therms?|propane|heating oil|firewood)\b/i],[3,/\b(?:telephone|phone service|wireless service|cell(?:ular)? (?:phone|service)|mobile (?:phone|service))\b/i],[5,/\b(?:water|sewer|sewage|garbage|trash)\b/i]];
 // Kinds of document each application has a section for.
-const FORM_KINDS={cf285:['paystub','childcare','rent','mortgage','utility','income_award','medical'],ccfrm604:['paystub']};
+const FORM_KINDS={cf285:['paystub','childcare','rent','mortgage','utility','income_award','medical'],cf37:['paystub','childcare','rent','mortgage','utility','income_award','medical'],sar7b:['paystub','childcare','rent','mortgage','utility','income_award','medical'],ccfrm604:['paystub']};
 /** One entry per document the owner added: the sections it filled on this application, or why it filled none. */
 export function documentUse(data,state){
  const filled=new Map(),lists=new Set(householdLists(state).map(p=>p.file));
  for(const a of data.answers)if(a.status==='answered')for(const r of a.sourceRefs||[])if(r.documentId){if(!filled.has(r.documentId))filled.set(r.documentId,new Set());filled.get(r.documentId).add(a.groupId);}
  return state.docs.filter(d=>!d.demoSource).map(doc=>{
   const read=state.facts.filter(f=>f.documentId===doc.id&&!f.superseded&&f.value!==null),groups=[...filled.get(doc.id)||[]];
-  const note=groups.length?'':doc.duplicateOf?'An identical copy is already in use.':doc.historical?'It is in History, so its details are not current.':lists.has(doc.filename)?'It lists household members. They are offered under People in this application.':doc.kind==='unknown'||!read.length?'No details were read from it.':read.some(f=>f.doctorBlocked)?'A check in Review paused its details. Open Review to see why.':!read.some(usable)?'Its details are not confirmed yet. Confirm them in Review.':!FORM_KINDS[data.formId].includes(doc.kind)?'This application has no section for this kind of document yet.':'Its details did not give one clear answer. Enter them below.';
+  const note=groups.length?'':doc.duplicateOf?'An identical copy is already in use.':doc.historical?'It is in History, so its details are not current.':lists.has(doc.filename)?(listsPeople(data.formId)?'It lists household members. They are offered under People in this application.':'It lists household members. This form asks only who moved in or out.'):doc.kind==='unknown'||!read.length?'No details were read from it.':read.some(f=>f.doctorBlocked)?'A check in Review paused its details. Open Review to see why.':!read.some(usable)?'Its details are not confirmed yet. Confirm them in Review.':!FORM_KINDS[data.formId].includes(doc.kind)?'This application has no section for this kind of document yet.':'Its details did not give one clear answer. Enter them below.';
   return {file:doc.filename,groups,note};
  });
 }
@@ -288,7 +423,9 @@ export function remainingSummary(missing,manualActions,inventory,map){
   const mine=missing.filter(m=>m.groupId===g.id);if(!mine.length)continue;
   if(mine.some(m=>m.field===undefined)){untouched.push(g.label);continue;}
   // The form prints some boxes on certain records only: a Yes box once above a table, no relationship box for the applicant, no amount box for a fixed allowance. Where a record has no such box, nothing is left to answer.
-  const boxes=field=>map.bindings.filter(b=>b.groupId===g.id&&b.field===field),asked=mine.filter(m=>!boxes(m.field).length||boxes(m.field).some(b=>b.row===m.row));
+  // A box the form lets a household leave empty, such as a tick box that does not apply or a second line, is not counted while it is unanswered.
+  const idle=m=>(m.reason==='unanswered'||m.reason==='unknown')&&g.fields.find(f=>f.key===m.field)?.mayStayBlank===true;
+  const boxes=field=>map.bindings.filter(b=>b.groupId===g.id&&b.field===field),asked=mine.filter(m=>!idle(m)&&(!boxes(m.field).length||boxes(m.field).some(b=>b.row===m.row)));
   if(asked.length)open.push({label:g.label,count:asked.length,fields:[...new Set(asked.map(m=>fieldLabel(g.id,m.field,g.fields.find(f=>f.key===m.field)?.label)))]});
  }
  return {answers:open.reduce((n,o)=>n+o.count,0),open,untouched,manual:manualActions.map(m=>({page:m.page,text:m.text}))};

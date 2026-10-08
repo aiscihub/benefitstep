@@ -34,7 +34,80 @@
       "countyFieldsWritable": false,
       "perFieldBindingCount": 0,
       "acquisitionDate": "2026-10-04",
-      "resolvedSource": "https://cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/A-D/CF285.pdf?ver=2023-03-08-155331-893"
+      "resolvedSource": "https://cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/A-D/CF285.pdf?ver=2023-03-08-155331-893",
+      "purpose": "application"
+    },
+    {
+      "id": "cf37",
+      "title": "Recertification for CalFresh Benefits",
+      "edition": "11/16",
+      "pageCount": 11,
+      "officialUrl": "https://www.cdss.ca.gov/cdssweb/entres/forms/English/cf37.pdf",
+      "retrievedOn": "2026-10-08",
+      "sourceId": "FORM_CF37",
+      "applicationPages": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "templateBytesIncluded": true,
+      "templateSha256": "6ea8f69d928c30b6fa213e3e4a2f00e094b9f516e731b98807e1d9834e67b64c",
+      "fieldGeometryStatus": "inspected_mapping_pending_review",
+      "questionInventoryStatus": "research_transcription_requires_independent_review",
+      "repeatInstructions": [
+        "More than three household changes, three jobs or three unearned income sources: attach a separate sheet of paper and identify the question, as the form instructs."
+      ],
+      "policyWarning": "This is a form-question inventory, not a current eligibility rulebook. Original text is preserved; separately versioned rules govern automated conclusions.",
+      "automaticSignature": false,
+      "countyFieldsWritable": false,
+      "perFieldBindingCount": 0,
+      "acquisitionDate": "2026-10-08",
+      "resolvedSource": "https://www.cdss.ca.gov/cdssweb/entres/forms/English/cf37.pdf",
+      "purpose": "renewal",
+      "program": "calfresh"
+    },
+    {
+      "id": "sar7b",
+      "title": "SAR 7 Eligibility Status Report",
+      "edition": "12/23",
+      "pageCount": 14,
+      "officialUrl": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/Q-T/SAR7B.pdf",
+      "retrievedOn": "2026-10-08",
+      "sourceId": "FORM_SAR7B",
+      "applicationPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "templateBytesIncluded": true,
+      "templateSha256": "d2bfc272399e15a9fbd445c0ea829f3aa6ad16bfbb8ed1265e3fea95cadee342",
+      "fieldGeometryStatus": "inspected_mapping_pending_review",
+      "questionInventoryStatus": "research_transcription_requires_independent_review",
+      "repeatInstructions": [
+        "More than two household changes, four income sources or three resources: write them on a separate sheet of paper and send it with the form, as the form instructs."
+      ],
+      "policyWarning": "This is a form-question inventory, not a current eligibility rulebook. Original text is preserved; separately versioned rules govern automated conclusions.",
+      "automaticSignature": false,
+      "countyFieldsWritable": false,
+      "perFieldBindingCount": 0,
+      "acquisitionDate": "2026-10-08",
+      "resolvedSource": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/Q-T/SAR7B.pdf",
+      "purpose": "renewal",
+      "program": "calfresh",
+      "editionNote": "SAR 7B is the blank edition of the SAR 7. The county's own SAR 7 arrives with household details already printed; this app does not read or write that copy."
     },
     {
       "id": "saws2plus",
@@ -80,7 +153,8 @@
       "policyWarning": "This is a form-question inventory, not a current eligibility rulebook. Original text is preserved; separately versioned rules govern automated conclusions.",
       "automaticSignature": false,
       "countyFieldsWritable": false,
-      "perFieldBindingCount": 0
+      "perFieldBindingCount": 0,
+      "purpose": "application"
     },
     {
       "id": "ccfrm604",
@@ -137,7 +211,8 @@
       "countyFieldsWritable": false,
       "perFieldBindingCount": 0,
       "acquisitionDate": "2026-10-04",
-      "resolvedSource": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/ENG-CASingleStreamApp.pdf"
+      "resolvedSource": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/ENG-CASingleStreamApp.pdf",
+      "purpose": "application"
     }
   ],
   "defaultSelection": {
@@ -147,7 +222,13 @@
     "medi_cal": [
       "ccfrm604"
     ],
-    "both": "Ask owner: two separate forms or one SAWS2PLUS. Never silently select cash aid."
+    "both": "Ask owner: two separate forms or one SAWS2PLUS. Never silently select cash aid.",
+    "renewal": {
+      "calfresh": [
+        "cf37",
+        "sar7b"
+      ]
+    }
   },
   "otherPrograms": "CalWORKs, Covered California, CMSP, GA/GR, Disaster CalFresh inventories are not eligibility implementations."
 }

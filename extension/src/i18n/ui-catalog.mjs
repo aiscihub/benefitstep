@@ -265,7 +265,20 @@ export const UI_TEXT = {
   "Original explanation (English)": "Explicación original (inglés)",
   "pay stubs, tax forms or benefit letters.": "talones de pago, formularios de impuestos o cartas de beneficios.",
   "rent receipts, utility bills, childcare receipts or medical bills.": "recibos de alquiler, facturas de servicios públicos, recibos de cuidado infantil o facturas médicas.",
-  "proof of address or health insurance information.": "comprobante de domicilio o información del seguro médico."
+  "proof of address or health insurance information.": "comprobante de domicilio o información del seguro médico.",
+  "Which documents to add: your most recent ones": "Qué documentos agregar: los más recientes",
+  "Pay: every pay statement from the last 30 days, since {since}, for each person in the household who works. The CalFresh application asks for earned income for the past 30 days.": "Pago: todos los talones de pago de los últimos 30 días, desde el {since}, de cada persona del hogar que trabaja. La solicitud de CalFresh pide los ingresos del trabajo de los últimos 30 días.",
+  "Other income, such as unemployment, Social Security or a pension: the latest award letter or statement.": "Otros ingresos, como desempleo, Seguro Social o una pensión: la carta de concesión o el estado de cuenta más reciente.",
+  "Rent, utilities, child care and medical costs: the latest bill or receipt. Proof of these can raise your CalFresh benefit; without proof they are not counted.": "Alquiler, servicios públicos, cuidado infantil y gastos médicos: la factura o el recibo más reciente. Comprobar estos gastos puede aumentar su beneficio de CalFresh; sin comprobante no se cuentan.",
+  "For Medi-Cal: the application asks about your current income. Add recent pay statements or other income documents for everyone in your family, and your most recent tax information if you file taxes.": "Para Medi-Cal: la solicitud pregunta por sus ingresos actuales. Agregue talones de pago recientes u otros documentos de ingresos de todos los miembros de su familia, y su información de impuestos más reciente si declara impuestos.",
+  "From the CalFresh application (CF 285) and the health insurance application.": "Según la solicitud de CalFresh (CF 285) y la solicitud de seguro médico.",
+  "From the CalFresh application (CF 285).": "Según la solicitud de CalFresh (CF 285).",
+  "From the health insurance application.": "Según la solicitud de seguro médico.",
+  "{count} of {total} pay statements you added were paid in the last 30 days, since {since}.": "{count} de {total} talones de pago que agregó se pagaron en los últimos 30 días, desde el {since}.",
+  "Older than 30 days:": "Con más de 30 días:",
+  "The county asks for pay from the last 30 days. Add a newer statement if you have one.": "El condado pide los pagos de los últimos 30 días. Agregue un talón más reciente si lo tiene.",
+  "{count} pay statements have no pay date that could be read. Check them in Review.": "{count} talones de pago no tienen una fecha de pago legible. Revíselos en Revisión.",
+  "paid {date}": "pagado el {date}"
 };
 export const UI_KEYS = {
   "ui224": "Your household details",
@@ -533,5 +546,18 @@ export const UI_KEYS = {
   "ui220": "Original explanation (English)",
   "ui221": "pay stubs, tax forms or benefit letters.",
   "ui222": "rent receipts, utility bills, childcare receipts or medical bills.",
-  "ui223": "proof of address or health insurance information."
+  "ui223": "proof of address or health insurance information.",
+  "ui265": "Which documents to add: your most recent ones",
+  "ui266": "Pay: every pay statement from the last 30 days, since {since}, for each person in the household who works. The CalFresh application asks for earned income for the past 30 days.",
+  "ui267": "Other income, such as unemployment, Social Security or a pension: the latest award letter or statement.",
+  "ui268": "Rent, utilities, child care and medical costs: the latest bill or receipt. Proof of these can raise your CalFresh benefit; without proof they are not counted.",
+  "ui269": "For Medi-Cal: the application asks about your current income. Add recent pay statements or other income documents for everyone in your family, and your most recent tax information if you file taxes.",
+  "ui270": "From the CalFresh application (CF 285) and the health insurance application.",
+  "ui271": "From the CalFresh application (CF 285).",
+  "ui272": "From the health insurance application.",
+  "ui273": "{count} of {total} pay statements you added were paid in the last 30 days, since {since}.",
+  "ui274": "Older than 30 days:",
+  "ui275": "The county asks for pay from the last 30 days. Add a newer statement if you have one.",
+  "ui276": "{count} pay statements have no pay date that could be read. Check them in Review.",
+  "ui277": "paid {date}"
 };

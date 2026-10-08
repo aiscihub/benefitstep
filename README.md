@@ -69,3 +69,7 @@ Document processing and working answers stay in the extension; working data is t
 CalFresh and Medi-Cal outputs are **unsigned drafts**. Check the filled values and unresolved items before using them. Independent PDF mapping review remains incomplete. Fictional demo outputs must not be submitted. Preliminary screening is not an eligibility decision. BenefitStep is independent of BenefitsCal and government agencies.
 
 See [release notes](releases/chrome-store-0.3.6/RELEASE_NOTES.md) for validation and limitations.
+
+## Release 0.3.7 — October 8, 2026
+
+The current extension adds CalFresh renewal and periodic-report preparation, county-notice import, document-period guidance, and overlapping image sections to avoid submitting large full-page images for automatic downscaling. See [release notes](releases/chrome-store-0.3.7/RELEASE_NOTES.md) for validation and limitations.
