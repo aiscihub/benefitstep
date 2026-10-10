@@ -1,0 +1,45 @@
+{
+  "version": "0.3.8",
+  "archive": "benefitstep-0.3.8-chrome-store.zip",
+  "bytes": 11441146,
+  "sha256": "d9d22a48cb1cf87e316561f8f496fcf482d0ab90bbef83e32851e13958d0afe0",
+  "manifestAtRoot": true,
+  "manifestCount": 1,
+  "permissions": [
+    "sidePanel"
+  ],
+  "productionApprovalClaimed": false,
+  "baseCommit": "3c31fbd13eba9c12b86319d675d61b3f52f8eac8",
+  "sourceTestsPassed": 356,
+  "repositoryTestsPassed": 165,
+  "packagedBrowserChecksPassed": 16,
+  "runtimeMatchesArchive": true,
+  "nativeModelAccuracyTested": false,
+  "nativeModelSpotChecks": {
+    "scope": "Unzipped archive in a headless test copy of Chrome with the on-device model, fictional Earley demo documents. A small sample, not an accuracy measurement.",
+    "photoReadings": {
+      "readings": 6,
+      "typedCorrectly": 6
+    },
+    "photoPackFullRuns": [
+      {
+        "calfreshFields": 71,
+        "mediCalFields": 61,
+        "note": "All three photos read; one date on the pharmacy statement was read as a single day, so one box fewer."
+      },
+      {
+        "calfreshFields": 58,
+        "mediCalFields": 61,
+        "note": "The model stalled on a text document; the batch stopped using it and the three photos were left unread."
+      },
+      {
+        "calfreshFields": 72,
+        "mediCalFields": 61,
+        "note": "All three photos read."
+      }
+    ],
+    "sar7FromImportedNotice": {
+      "fields": 51
+    }
+  }
+}

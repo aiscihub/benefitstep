@@ -11,6 +11,28 @@ const fillable=kind=>[...needed(kind),'period_end','home_address','home_city','h
 const complete=read=>read.kind!=='unknown'&&needed(read.kind).every(key=>read.fields.some(f=>f.key===key));
 // A file that names several document types stays unidentified; neither reader picks one.
 const mixed=(read,pages)=>read.kind==='unknown'&&documentCues(pages.map(p=>p.text||'').join('\n')).length>1;
+// A model that cannot find a detail sometimes answers with a filler word such as "unknown", copies a placeholder the
+// page prints, such as "[not visible]", or repeats the question back. None of those is a value.
+const FILLER=/^[\s\[(<"'“]*(?:unknown|n\/?a|none|null|nil|unavailable|unspecified|unreadable|illegible|missing|redacted|blank|empty|tbd|not\s+(?:visible|available|provided|stated|shown|listed|given|found|applicable|specified|known|legible|readable|printed|present)(?:\s+(?:on|in)\s+(?:the\s+)?(?:page|document|picture|image))?|no\s+(?:\w+\s+){0,2}(?:shown|listed|provided|given|found|visible|available|printed)|x{2,}|[-–—?.*_•·\s]+)[\s\])>"'”.]*$/i;
+const ECHO=value=>/\b(?:person|recipient|addressee)\b/i.test(value)&&/\b(?:city|state|zip|address|addressed)\b/i.test(value);
+/** True for an answer that stands in for a missing detail and names nothing. */
+export const fillerValue=value=>FILLER.test(String(value??''))||ECHO(String(value??''));
+// What each part of an address has to look like at the least: a ZIP is digits, a street address has a number or a box,
+// a city and a state are short words.
+const SHAPE={home_zip:v=>/^\d{5}(?:-\d{4})?$/.test(v),home_address:v=>/\d/.test(v)||/\b(?:p\.?\s*o\.?\s*box|general delivery)\b/i.test(v),home_city:v=>/^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ .'’-]{1,39}$/.test(v),home_state:v=>/^[A-Za-z][A-Za-z .]{1,19}$/.test(v)};
+/**
+ * Takes fillers out of a model reading, so the detail stays open for the owner and no filler is offered for
+ * confirmation. Covers the worded details: names, address parts and descriptions. An address part must also have
+ * the shape of one, and cannot repeat the person or the issuer. Each one dropped leaves a note. Amounts and dates
+ * are already refused unless they parse, and a frequency or support direction of "unknown" is one of the answers the
+ * model is asked for.
+ */
+export function dropFillers(result){
+ const worded=key=>FIELD_DEFS[key]?.[1]==='text',named=new Set(result.fields.filter(f=>f.key==='person'||f.key==='issuer').map(f=>String(f.value).trim().toLowerCase()));
+ const bad=f=>{const value=String(f.value??'').trim();return worded(f.key)&&(fillerValue(value)||(SHAPE[f.key]?!SHAPE[f.key](value)||named.has(value.toLowerCase()):false));};
+ const dropped=result.fields.filter(bad);if(!dropped.length)return result;
+ return {...result,fields:result.fields.filter(f=>!bad(f)),warnings:[...result.warnings,...dropped.map(f=>`On-device AI gave no usable ${FIELD_DEFS[f.key][0].toLowerCase()} (“${String(f.value).slice(0,40)}”). It was left open.`)].slice(0,8)};
+}
 /** Labelled details are exact and repeatable, so they stay. The model only adds what the labels did not give. */
 function fillGaps(read,ai){
  if(read.kind==='unknown')return {...ai,method:'On-device AI'};
@@ -51,7 +73,7 @@ export async function extractAutomatically(pages,{mode='auto',signal,factory=glo
  if(read&&status==='available'&&(complete(read)||mixed(read,pages)))return {...read,method:TEXT_READER,analysisState:'complete'};
  if(mode==='ai'||status==='available'){
   try{
-   const reading=limit=>extractWithAI(pages,{approved:true,signal,factory,onStatus,timeoutMs:limit});
+   const reading=async limit=>dropFillers(await extractWithAI(pages,{approved:true,signal,factory,onStatus,timeoutMs:limit}));
    let result;
    // A picture has no text reader to fall back on. A reading usually takes under 20 seconds, so one that stalls is stopped early and tried again.
    try{result=await reading(images&&timeoutMs?Math.min(timeoutMs,40000):timeoutMs);}catch(error){if(!images||signal?.aborted||!['AI_TIMEOUT','AI_RUNTIME'].includes(error.code))throw error;onStatus('On-device AI did not finish. Reading this picture once more.');result=await reading(timeoutMs);}
@@ -60,7 +82,7 @@ export async function extractAutomatically(pages,{mode='auto',signal,factory=glo
    result=splitAddress(result);
    if(images&&missingFromPicture(result).length){
     onStatus('Checking the address on the picture');
-    try{result=splitAddress(addSecondLook(result,await lookAgain(pages,missingFromPicture(result),{signal,factory}),pages));}catch(error){if(signal?.aborted)throw error;}
+    try{result=dropFillers(splitAddress(addSecondLook(result,await lookAgain(pages,missingFromPicture(result),{signal,factory}),pages)));}catch(error){if(signal?.aborted)throw error;}
    }
    return {...(read?fillGaps(read,result):{...result,method:'On-device AI'}),analysisState:'complete'};
   }catch(error){

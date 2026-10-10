@@ -4,6 +4,7 @@
 import {RENEWAL_FORMS,OTHER_PAPERS,monthName} from './renewal.mjs';
 import {getPdfEngine} from '../shared/browser/files.mjs';
 import {modelOptions,modelStatus} from '../shared/browser/ai.mjs';
+import {fillerValue} from '../shared/browser/automatic.mjs';
 import {imagePromptContent} from '../shared/browser/image-input.mjs';
 
 const codeOf=paper=>paper.split(' (')[0],titleOf=paper=>paper.match(/\((.+)\)$/)?.[1]||'';
@@ -71,7 +72,7 @@ export function readNoticeText(text,{codeHint='',confirmByTitle=false}={}){
  const noticeDate=find(['Notice\\s*Date\\s*:?\\s*'+DATE],printedDate),month=value=>printedMonth(value,noticeDate);
  const caseNumber=(/Case\s*(?:Number|No\.?|#)\s*:?\s*([A-Z0-9][A-Z0-9-]{2,19})\b/i.exec(flat)?.[1]||'');
  const details={
-  caseName:(name=>/[A-Za-z]/.test(name)?name:'')(labelled('Case\\s*Name').replace(/^[\s:]+/,'').slice(0,80)),
+  caseName:(name=>/[A-Za-z]/.test(name)&&!fillerValue(name)?name:'')(labelled('Case\\s*Name').replace(/^[\s:]+/,'').slice(0,80)),
   caseNumber:/\d/.test(caseNumber)?caseNumber:'',
   reportMonth:find(['Report\\s*Month\\s*(?:is|:)?\\s*'+MONTH,'had any changes in\\s+'+MONTH],month),
   submitMonth:find(['Submit\\s*Month\\s*(?:is|:)?\\s*'+MONTH,'submit this form\\s+by(?:\\s+the\\s+5th)?\\s*:?\\s*(?:of\\s+)?'+MONTH],month),

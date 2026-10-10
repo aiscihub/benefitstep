@@ -100,3 +100,37 @@ test('a thin picture reading is recognised, and a second reading supplies only w
  assert.equal(mergeReadings(name,{kind:'utility',fields:[proposed('amount_due','80.00')],warnings:[]}),name);
  assert.equal(mergeReadings({kind:'unknown',fields:[],warnings:[]},full),full);
 });
+import {dropFillers,fillerValue} from '../extension/shared/browser/automatic.mjs';
+test('a filler the model gives for a detail it cannot find is dropped with a note, and the real details stay',async()=>{
+ // The model quotes text that is on the page, so a quote check alone lets these through: "unknown" for an address the page does not print, and the page's own "[not visible]".
+ const page='North Alder Works\nEarnings advice\nMorgan Vale\nWorkshop operations\nGross earnings $2,384.50\nNet deposit $1,925.78\nUpper section [not visible]';
+ const said=fields=>({availability:async()=>'available',create:async()=>({prompt:async()=>JSON.stringify({kind:'paystub',fields:fields.map(([key,value,quote])=>({key,value,page:1,quote})),warnings:[]}),destroy(){}})});
+ const r=await extractAutomatically(text(page),{factory:said([['person','Morgan Vale','Morgan Vale'],['issuer','North Alder Works','North Alder Works'],['gross_pay','2384.50','Gross earnings $2,384.50'],['home_address','unknown','Morgan Vale'],['home_city','[not visible]','Upper section [not visible]'],['home_state','UNKNOWN','Morgan Vale'],['home_zip','n/a','Morgan Vale'],['pay_frequency','unknown','Earnings advice']])});
+ assert.equal(r.method,'On-device AI');
+ assert.deepEqual(r.fields.map(f=>[f.key,f.value]),[['person','Morgan Vale'],['issuer','North Alder Works'],['gross_pay','2384.50'],['pay_frequency','unknown']]);
+ assert.equal(r.warnings.filter(w=>/gave no usable/.test(w)).length,4);assert.ok(r.warnings.some(w=>/home \/ service city \(“\[not visible\]”\)/.test(w)));
+ // A department is not a street address, a company is not a city, and a ZIP is five digits.
+ const shaped=await extractAutomatically(text(page),{factory:said([['person','Morgan Vale','Morgan Vale'],['issuer','North Alder Works','North Alder Works'],['home_address','Workshop operations','Workshop operations'],['home_city','North Alder Works','North Alder Works'],['home_zip','9512','Morgan Vale']])});
+ assert.deepEqual(shaped.fields.map(f=>f.key),['person','issuer']);
+ // A person or issuer that is only a filler is dropped too; nothing is left to offer.
+ const empty=await extractAutomatically(text(page),{factory:said([['person','[not visible]','Upper section [not visible]'],['issuer','Unknown','Earnings advice']])});
+ assert.deepEqual(empty.fields,[]);
+});
+test('a real address is kept whole, and a filler in a picture reading does not stop the second look or survive it',()=>{
+ const real={kind:'rent',fields:[proposed('person','Demo Adult A'),proposed('issuer','Elm Property Management'),proposed('home_address','12 Example Street'),proposed('home_city','Example City'),proposed('home_state','CA'),proposed('home_zip','95000'),proposed('rent_amount','1400.00')],warnings:[]};
+ assert.equal(dropFillers(real),real);
+ assert.equal(dropFillers({kind:'rent',fields:[proposed('home_address','PO Box 12'),proposed('home_city','St. Example-by-Sea'),proposed('home_state','California'),proposed('home_zip','95000-1234')],warnings:[]}).fields.length,4);
+ // The first reading of a picture said "unknown" for the address. With that gone, the address is asked about again.
+ const first=dropFillers({kind:'rent',fields:[proposed('person','Demo Adult A'),proposed('rent_amount','1400.00'),proposed('period_start','2026-10-01'),proposed('home_address','unknown'),proposed('home_city','unknown'),proposed('home_state','unknown'),proposed('home_zip','unknown')],warnings:[]});
+ assert.deepEqual(first.fields.map(f=>f.key),['person','rent_amount','period_start']);assert.deepEqual(missingFromPicture(first),['home_address','home_city','home_state','home_zip']);
+ // Asked again, the model once repeated the question. That is not an address either.
+ const echoed=dropFillers(addSecondLook(first,{home_address:'the street address of the person the document is addressed to, without city, state or ZIP',home_city:'the person\'s city',home_state:'that person\'s state as two letters',home_zip:'that person\'s ZIP code'},picture));
+ assert.deepEqual(echoed.fields.map(f=>f.key),['person','rent_amount','period_start']);
+ const found=dropFillers(addSecondLook(first,{home_address:'12 Example Street',home_city:'Example City',home_state:'CA',home_zip:'95000'},picture));
+ assert.deepEqual(found.fields.slice(3).map(f=>f.value),['12 Example Street','Example City','CA','95000']);
+ // A name that only begins like a filler is a name.
+ for(const value of ['Unknown Pleasures LLC','Nona Blank','No. 5 Orchard Lane','Daly City'])assert.equal(fillerValue(value),false,value);
+ for(const value of ['unknown','Unknown.','[not visible]','N/A','not provided','Not shown on the page','no address listed','—','(not available)','XX','xxx'])assert.equal(fillerValue(value),true,value);
+ for(const value of ['Xavier Xu','TX','Xenia'])assert.equal(fillerValue(value),false,value);
+});
+

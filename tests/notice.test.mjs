@@ -76,6 +76,8 @@ test('what on-device AI reports from a photo is settled by the same reader, so a
  const report=readNoticeText(reportedText({form_code:'SAR 7 (12/23)',case_name:'Demo Adult A',notice_date:'09/01/2026',report_month:'September 2026',submit_month:'October'}),{codeHint:'SAR 7 (12/23)'});
  assert.deepEqual([report.formId,report.details.reportMonth,report.details.submitMonth],['sar7b','2026-09','2026-10']);
  assert.deepEqual(readNoticeText(reportedText({})).details,NONE);
+ // A filler the model gives for a case name it cannot read is not a case name.
+ for(const name of ['unknown','[not visible]','N/A','not provided'])assert.equal(readNoticeText(reportedText({...found,case_name:name}),{codeHint:found.form_code,confirmByTitle:true}).details.caseName,'',name);
  // A model can misreport small print. Its code chooses a form only when the title it read names the same form.
  const wrong=settle({...found,form_code:'CF 30 (2/18)'});assert.deepEqual([wrong.conflict,wrong.paper,wrong.formId,wrong.details.periodEnd],[true,null,'','2026-10-31']);
  const untitled=settle({...found,title:''});assert.deepEqual([untitled.unsure,untitled.paper,untitled.formId,untitled.codes],[true,null,'',['CF 377.2']]);

@@ -16,9 +16,13 @@ FLOW=r'''(async()=>{
  const last=images.at(-1),pixel=last.getContext('2d').getImageData(last.width-1,last.height-1,1,1).data;
  check('bottom-right original pixels preserved',pixel[0]===255&&pixel[1]===0&&pixel[2]===0);
  input.dispose();check('image buffers released',images.every(c=>c.width===0&&c.height===0));
+ const page=await imagePromptContent(preview,1,{whole:true}),one=page.content.filter(v=>v.type==='image').map(v=>v.value);
+ check('whole page is one image and no text',one.length===1&&page.content.length===1);
+ check('whole page fits 768 pixels and keeps its proportions',one[0].height===768&&one[0].width===593);
+ page.dispose();check('whole-page buffer released',one[0].width===0&&one[0].height===0);
  let mode='notice',calls=0,destroyed=0;const retained=[];
  const factory={availability:async()=> 'available',create:async()=>({prompt:async messages=>{
-  calls++;const pictures=messages[0].content.filter(c=>c.type==='image').map(c=>c.value);check(mode+' image count',pictures.length===7);check(mode+' bounded images',pictures.every(c=>c.width<=768&&c.height<=768));retained.push(...pictures);
+  calls++;const pictures=messages[0].content.filter(c=>c.type==='image').map(c=>c.value);check(mode+' image count',pictures.length===(mode==='extract'?1:7));check(mode+' bounded images',pictures.every(c=>c.width<=768&&c.height<=768));retained.push(...pictures);
   return mode==='extract'?JSON.stringify({kind:'unknown',fields:[],warnings:[]}):'{}';
  },destroy(){destroyed++;}})};
  await askAboutNotice({page:1,preview},{factory});mode='again';await lookAgain([{page:1,text:'',preview}],['home_address'],{factory});mode='extract';await extractWithAI([{page:1,text:'',preview}],{approved:true,factory});

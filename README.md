@@ -73,3 +73,8 @@ See [release notes](releases/chrome-store-0.3.6/RELEASE_NOTES.md) for validation
 ## Release 0.3.7 — October 8, 2026
 
 The current extension adds CalFresh renewal and periodic-report preparation, county-notice import, document-period guidance, and overlapping image sections to avoid submitting large full-page images for automatic downscaling. See [release notes](releases/chrome-store-0.3.7/RELEASE_NOTES.md) for validation and limitations.
+
+## Release 0.3.8 — October 10, 2026
+
+The current extension drops filler answers from on-device AI, such as "unknown" offered as an address, and reads a photo as one whole page when deciding what kind of document it is, which stops the pension letter and pharmacy statement in the demo from being typed as pay statements. The upload ZIP is [benefitstep-0.3.8-chrome-store.zip](releases/chrome-store-0.3.8/benefitstep-0.3.8-chrome-store.zip). See [release notes](releases/chrome-store-0.3.8/RELEASE_NOTES.md) for validation and limitations.
+

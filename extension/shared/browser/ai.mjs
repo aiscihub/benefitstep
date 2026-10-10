@@ -34,7 +34,8 @@ export async function extractWithAI(pages,{approved=false,signal,factory=globalT
   const content=[{type:'text',value:`Extract document fields for owner review. Allowed keys by document kind: ${JSON.stringify(ALLOWED_FIELDS)}. Omit missing, ambiguous or unsupported fields; never emit empty placeholders. Prioritize recipient name, recipient/service address and dates before amounts. Never guess.\n${text}`}];
   for(const p of pages)if(!p.text?.trim()){
    content.push({type:'text',value:`The next image is PAGE ${p.page}.`});
-   const input=await imagePromptContent(p.preview,p.page,{signal:controller.signal});imageInputs.push(input);
+   // The whole page as one picture: this reading decides what kind of document it is.
+   const input=await imagePromptContent(p.preview,p.page,{signal:controller.signal,whole:true});imageInputs.push(input);
    content.push(...input.content);
    if(content.filter(item=>item.type==='image').length>32)throw Error('Too many image sections for one reading. Split the document into smaller files.');
   }
