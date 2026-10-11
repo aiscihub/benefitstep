@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "BenefitStep — Benefits Application Helper",
+    "description": "Name shown in Chrome and as the Chrome Web Store title. 75 characters at most."
+  },
+  "extDescription": {
+    "message": "Prepare CalFresh and Medi-Cal application drafts with local document review, evidence checks, and PDF downloads.",
+    "description": "Chrome Web Store summary. 132 characters at most."
+  },
+  "actionTitle": {
+    "message": "Open BenefitStep",
+    "description": "Tooltip of the toolbar button that opens the side panel."
+  }
+}

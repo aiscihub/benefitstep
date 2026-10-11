@@ -1,6 +1,6 @@
 # Multilingual development preview
 
-The header language selector switches between English, Spanish and Simplified Chinese. This integration uses the supplied `BenefitStep_Multilingual_Module_v0_1` and adds a presentation catalog for the existing workflow.
+The header language selector switches between English, Spanish, Simplified Chinese, Traditional Chinese and Vietnamese. This integration uses the supplied `BenefitStep_Multilingual_Module_v0_1` and adds a presentation catalog for the existing workflow.
 
 ## Available
 
@@ -12,7 +12,7 @@ The header language selector switches between English, Spanish and Simplified Ch
 
 ## Boundaries and remaining work
 
-Spanish and Simplified Chinese translations are drafts and need independent linguistic review. Detailed policy explanations, some dialogs and application-field instructions still use English. Official CF285 and CCFRM604 PDFs remain English; choosing Spanish does not select a Spanish form or an agency communication language.
+The Spanish, Simplified Chinese, Traditional Chinese and Vietnamese translations are drafts and need independent linguistic review. The Traditional Chinese catalog (`extension/src/i18n/ui-zh-hant.mjs`) was converted from the Simplified one and then adjusted to Traditional wording; the Vietnamese catalog (`extension/src/i18n/ui-vi.mjs`) was drafted from the English source. Both must carry every string the Simplified Chinese catalog carries; `tests/ui-language.test.mjs` checks this. Detailed policy explanations, some dialogs and application-field instructions still use English. Official CF285 and CCFRM604 PDFs remain English; choosing Spanish does not select a Spanish form or an agency communication language.
 
 The supplied local LanguageDetector/Translator adapters are included and covered by mocked tests, but are not activated by this interface. Real browser model availability, consent/download flows and explanation translation remain future integration work. Spanish PDF generation requires validated Spanish templates and field maps.
 
@@ -22,7 +22,7 @@ Run `node --test tests/*.test.mjs`. The runtime repository is already unpacked; 
 
 Development only. Archived Chrome Web Store packages are unchanged; the current unpacked extension includes this preview.
 
-Run `python3 tests/i18n-browser.py --chinese` for the Simplified Chinese flow. Chinese UI does not enable Chinese document recognition or translate official PDFs. Traditional Chinese is not yet supported.
+Run `python3 tests/i18n-browser.py --chinese` for the Simplified Chinese flow, `--traditional` for Traditional Chinese and `--vietnamese` for Vietnamese. No interface language enables document recognition in that language or translates official PDFs.
 
 ## Household and source-context review
 

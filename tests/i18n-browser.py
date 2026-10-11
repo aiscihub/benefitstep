@@ -4,8 +4,12 @@ import sys,tempfile,time,json,base64
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from extension_smoke import Pipe,find_chrome
-LOCALE='zh-CN' if '--chinese' in sys.argv else 'es-US'
-ZH=LOCALE=='zh-CN'
+LOCALE=next((code for flag,code in [('--chinese','zh-CN'),('--traditional','zh-TW'),('--vietnamese','vi-VN')] if flag in sys.argv),'es-US')
+# What each interface language must show at the points checked below.
+T={'es-US':dict(apply='Nueva solicitud',renew='Renovación o informe periódico',renewTitle='Prepare una renovación o un informe periódico.',noticeLoad='Importar aviso del condado',badNotice='Use un PDF o una foto JPEG o PNG',cf37='Recertificación',sar7b='Informe periódico',periodEnd='31 de octubre de 2026',reportMonth='septiembre de 2026',documents='Qué documentos agregar',quick='Consulta inicial',within='Su estimación está dentro',found='16 datos propuestos',person='Persona indicada',ready='Su paquete de preparación está listo.',pdf='Idioma del PDF oficial: inglés'),
+ 'zh-CN':dict(apply='新申请',renew='续期或定期报告',renewTitle='准备续期或定期报告表格。',noticeLoad='导入县政府通知',badNotice='请使用县政府文件的 PDF',cf37='资格重新认证',sar7b='定期报告',periodEnd='2026年10月31日',reportMonth='2026年9月',documents='应添加的材料',quick='快速预查',within='您的估计收入在',found='16 项提取信息',person='材料所列姓名',ready='您的申请准备材料包已就绪。',pdf='官方 PDF 语言为英语'),
+ 'zh-TW':dict(apply='新申請',renew='續期或定期報告',renewTitle='準備續期或定期報告表格。',noticeLoad='匯入縣政府通知',badNotice='請使用縣政府文件的 PDF',cf37='資格重新認證',sar7b='定期報告',periodEnd='2026年10月31日',reportMonth='2026年9月',documents='應新增的文件',quick='快速預查',within='您的估計收入在',found='16 項擷取資料',person='文件所列姓名',ready='您的申請準備資料包已就緒。',pdf='官方 PDF 語言為英文'),
+ 'vi-VN':dict(apply='Đơn xin mới',renew='Gia hạn hoặc báo cáo định kỳ',renewTitle='Chuẩn bị mẫu đơn gia hạn hoặc báo cáo định kỳ.',noticeLoad='Nhập thông báo của quận',badNotice='Hãy dùng tệp PDF',cf37='Tái chứng nhận',sar7b='Báo cáo định kỳ',periodEnd='31 tháng 10, 2026',reportMonth='tháng 9 năm 2026',documents='Nên thêm giấy tờ nào',quick='Kiểm tra nhanh',within='Thu nhập ước tính của quý vị nằm trong',found='16 thông tin đọc được',person='Người có tên trên giấy tờ',ready='Bộ hồ sơ chuẩn bị của quý vị đã sẵn sàng.',pdf='Ngôn ngữ của PDF chính thức: tiếng Anh')}[LOCALE]
 with tempfile.TemporaryDirectory(prefix='benefitstep-i18n-') as tmp:
  p=Pipe(find_chrome(),tmp+'/profile',tmp+'/net.json')
  try:
@@ -28,14 +32,14 @@ with tempfile.TemporaryDirectory(prefix='benefitstep-i18n-') as tmp:
   # Exercise both application purposes and both supported renewal forms before the
   # existing questionnaire/document checks. Switching locale must preserve answers.
   language(LOCALE)
-  assert js("document.querySelector('[data-action=purpose-apply]').textContent")==('新申请' if ZH else 'Nueva solicitud')
-  assert js("document.querySelector('[data-action=purpose-renew]').textContent")==('续期或定期报告' if ZH else 'Renovación o informe periódico')
+  assert js("document.querySelector('[data-action=purpose-apply]').textContent")==T['apply']
+  assert js("document.querySelector('[data-action=purpose-renew]').textContent")==T['renew']
   js("document.querySelector('[data-action=purpose-renew]').click()")
-  assert js("document.getElementById('page-title').textContent")==('准备续期或定期报告表格。' if ZH else 'Prepare una renovación o un informe periódico.')
-  assert js("document.querySelector('[data-action=notice-load]').textContent")==('导入县政府通知' if ZH else 'Importar aviso del condado')
+  assert js("document.getElementById('page-title').textContent")==T['renewTitle']
+  assert js("document.querySelector('[data-action=notice-load]').textContent")==T['noticeLoad']
   js("const dt=new DataTransfer();dt.items.add(new File(['test'],'notice.txt',{type:'text/plain'}));const el=document.getElementById('notice-file');el.files=dt.files;el.dispatchEvent(new Event('change',{bubbles:true}));")
   wait("!!document.querySelector('.renewal-read .renewal-stop')")
-  assert ('请使用县政府文件的 PDF' if ZH else 'Use un PDF o una foto JPEG o PNG') in js("document.querySelector('.renewal-read').textContent")
+  assert T['badNotice'] in js("document.querySelector('.renewal-read').textContent")
   js("document.querySelector('[data-action=notice-clear]').click()")
   for form in ['cf37','sar7b']:
    js(f"document.querySelector('input[name=renewal-form][value={form}]').click()")
@@ -44,10 +48,10 @@ with tempfile.TemporaryDirectory(prefix='benefitstep-i18n-') as tmp:
    language('en-US');language(LOCALE)
    assert js("[...document.querySelectorAll('[data-renewal]')].map(el=>[el.id,el.value])")==beforeRenewal
    main=js("document.getElementById('main').textContent")
-   assert ('资格重新认证' if form=='cf37' else '定期报告') in main if ZH else ('Recertificación' if form=='cf37' else 'Informe periódico') in main
-   assert ('2026年10月31日' if ZH else '31 de octubre de 2026') in main if form=='cf37' else ('2026年9月' if ZH else 'septiembre de 2026') in main
+   assert T[form] in main
+   assert T['periodEnd' if form=='cf37' else 'reportMonth'] in main
    js("document.querySelector('[data-action=renewal-continue]').click()")
-   assert ('应添加的材料' if ZH else 'Qué documentos agregar') in js("document.querySelector('.document-period').textContent")
+   assert T['documents'] in js("document.querySelector('.document-period').textContent")
    js("document.querySelector('[data-route=quick]').click()")
   for width in [390,1280]:
    p.call('Emulation.setDeviceMetricsOverride',{'width':width,'height':1000,'deviceScaleFactor':1,'mobile':False},sid)
@@ -59,8 +63,8 @@ with tempfile.TemporaryDirectory(prefix='benefitstep-i18n-') as tmp:
   original=js("Object.fromEntries(['residence','people','income','immigration'].map(id=>[id,document.getElementById(id).value]))")
   language(LOCALE)
   assert js("document.documentElement.lang")==LOCALE
-  assert js("document.getElementById('page-title').textContent")==('快速预查' if ZH else 'Consulta inicial')
-  assert js("document.querySelector('#quick-result').textContent").find("您的估计收入在" if ZH else "Su estimación está dentro")>=0
+  assert js("document.getElementById('page-title').textContent")==T['quick']
+  assert js("document.querySelector('#quick-result').textContent").find(T['within'])>=0
   assert js("Object.fromEntries(['residence','people','income','immigration'].map(id=>[id,document.getElementById(id).value]))")==original
   for width in [390,720,1280]:
    p.call('Emulation.setDeviceMetricsOverride',{'width':width,'height':900,'deviceScaleFactor':1,'mobile':False},sid)
@@ -70,19 +74,19 @@ with tempfile.TemporaryDirectory(prefix='benefitstep-i18n-') as tmp:
   language(LOCALE)
   js("document.querySelector('#quick-result [data-action=documents]').click();document.querySelector('[data-action=ai-demo]').click()")
   wait("document.querySelector('#main').getAttribute('aria-busy')==='false'&&document.querySelectorAll('.cf-docrow').length===3")
-  assert ("16 项提取信息" if ZH else "16 datos propuestos") in js("document.querySelector('.bs-processing').textContent")
+  assert T['found'] in js("document.querySelector('.bs-processing').textContent")
   js("document.querySelector('.bs-processing [data-action=to-confirm]').click()")
   assert js("document.querySelectorAll('.review-item').length")==17
-  assert js("document.querySelector('[data-review-status=confirm] h3').textContent")==('材料所列姓名' if ZH else 'Persona indicada')
+  assert js("document.querySelector('[data-review-status=confirm] h3').textContent")==T['person']
   before=js("[...document.querySelectorAll('.review-item p>strong')].map(e=>e.textContent)")
   language('en-US');assert js("[...document.querySelectorAll('.review-item p>strong')].map(e=>e.textContent)")==before
   js("document.querySelector('[data-action=confirm]').click()")
   language(LOCALE)
-  assert js("document.getElementById('page-title').textContent")==('您的申请准备材料包已就绪。' if ZH else 'Su paquete de preparación está listo.')
+  assert js("document.getElementById('page-title').textContent")==T['ready']
   assert js("!document.querySelector('[data-form=cf285]').disabled")
   # The quick check is optional: Medi-Cal was not answered here, and its package is still offered because the program stays selected.
   assert js("!document.querySelector('[data-form=ccfrm604]').disabled")
-  assert ("官方 PDF 语言为英语" if ZH else "Idioma del PDF oficial: inglés") in js("document.getElementById('main').textContent")
+  assert T['pdf'] in js("document.getElementById('main').textContent")
   # User values matching a UI phrase must never be translated.
   js("document.querySelector('[data-route=confirm]').click();document.querySelector('[data-review-status=confirm] [data-action=edit], [data-review-status=confirmed] [data-action=edit]').click()")
   js("document.getElementById('fact-value').value='Income';document.querySelector('[data-action=save-fact]').click()")

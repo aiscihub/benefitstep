@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "BenefitStep — 福利申请助手",
+    "description": "Name shown in Chrome and as the Chrome Web Store title. 75 characters at most."
+  },
+  "extDescription": {
+    "message": "准备 CalFresh（食品补助）和 Medi-Cal（白卡）申请草稿：在本地识别文件、核对材料，并下载 PDF。",
+    "description": "Chrome Web Store summary. 132 characters at most."
+  },
+  "actionTitle": {
+    "message": "打开 BenefitStep",
+    "description": "Tooltip of the toolbar button that opens the side panel."
+  }
+}

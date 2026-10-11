@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "BenefitStep — Trợ giúp chuẩn bị đơn xin trợ cấp",
+    "description": "Name shown in Chrome and as the Chrome Web Store title. 75 characters at most."
+  },
+  "extDescription": {
+    "message": "Chuẩn bị bản nháp đơn xin CalFresh và Medi-Cal: đọc giấy tờ ngay trên máy, kiểm tra thông tin và tải về tệp PDF.",
+    "description": "Chrome Web Store summary. 132 characters at most."
+  },
+  "actionTitle": {
+    "message": "Mở BenefitStep",
+    "description": "Tooltip of the toolbar button that opens the side panel."
+  }
+}
