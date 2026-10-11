@@ -25,6 +25,36 @@ with tempfile.TemporaryDirectory(prefix='benefitstep-i18n-') as tmp:
    raise AssertionError(code)
   def language(value):js(f"document.getElementById('interface-language').value='{value}';document.getElementById('interface-language').dispatchEvent(new Event('change',{{bubbles:true}}))")
   wait("!!document.getElementById('residence')")
+  # Exercise both application purposes and both supported renewal forms before the
+  # existing questionnaire/document checks. Switching locale must preserve answers.
+  language(LOCALE)
+  assert js("document.querySelector('[data-action=purpose-apply]').textContent")==('新申请' if ZH else 'Nueva solicitud')
+  assert js("document.querySelector('[data-action=purpose-renew]').textContent")==('续期或定期报告' if ZH else 'Renovación o informe periódico')
+  js("document.querySelector('[data-action=purpose-renew]').click()")
+  assert js("document.getElementById('page-title').textContent")==('准备续期或定期报告表格。' if ZH else 'Prepare una renovación o un informe periódico.')
+  assert js("document.querySelector('[data-action=notice-load]').textContent")==('导入县政府通知' if ZH else 'Importar aviso del condado')
+  js("const dt=new DataTransfer();dt.items.add(new File(['test'],'notice.txt',{type:'text/plain'}));const el=document.getElementById('notice-file');el.files=dt.files;el.dispatchEvent(new Event('change',{bubbles:true}));")
+  wait("!!document.querySelector('.renewal-read .renewal-stop')")
+  assert ('请使用县政府文件的 PDF' if ZH else 'Use un PDF o una foto JPEG o PNG') in js("document.querySelector('.renewal-read').textContent")
+  js("document.querySelector('[data-action=notice-clear]').click()")
+  for form in ['cf37','sar7b']:
+   js(f"document.querySelector('input[name=renewal-form][value={form}]').click()")
+   js("for(const [id,value] of [['caseName','Alex 原件'],['caseNumber','CASE-0123'],['periodEnd','2026-10-31'],['reportMonth','2026-09'],['submitMonth','2026-10']]){const el=document.getElementById('renewal-'+id);if(el){el.value=value;el.dispatchEvent(new Event('change',{bubbles:true}));}}")
+   beforeRenewal=js("[...document.querySelectorAll('[data-renewal]')].map(el=>[el.id,el.value])")
+   language('en-US');language(LOCALE)
+   assert js("[...document.querySelectorAll('[data-renewal]')].map(el=>[el.id,el.value])")==beforeRenewal
+   main=js("document.getElementById('main').textContent")
+   assert ('资格重新认证' if form=='cf37' else '定期报告') in main if ZH else ('Recertificación' if form=='cf37' else 'Informe periódico') in main
+   assert ('2026年10月31日' if ZH else '31 de octubre de 2026') in main if form=='cf37' else ('2026年9月' if ZH else 'septiembre de 2026') in main
+   js("document.querySelector('[data-action=renewal-continue]').click()")
+   assert ('应添加的材料' if ZH else 'Qué documentos agregar') in js("document.querySelector('.document-period').textContent")
+   js("document.querySelector('[data-route=quick]').click()")
+  for width in [390,1280]:
+   p.call('Emulation.setDeviceMetricsOverride',{'width':width,'height':1000,'deviceScaleFactor':1,'mobile':False},sid)
+   assert js('document.documentElement.scrollWidth<=innerWidth'),width
+  Path('/private/tmp/benefitstep-renewal-'+LOCALE+'.png').write_bytes(base64.b64decode(p.call('Page.captureScreenshot',{'format':'png'},sid)['data']))
+  js("document.querySelector('[data-action=purpose-apply]').click()")
+  language('en-US')
   js("for(const [id,value] of [['residence','yes'],['people','3'],['income','at_or_below']]){const el=document.getElementById(id);el.value=value;el.dispatchEvent(new Event('change',{bubbles:true}));}document.querySelector('[data-action=see-results]').click()")
   original=js("Object.fromEntries(['residence','people','income','immigration'].map(id=>[id,document.getElementById(id).value]))")
   language(LOCALE)

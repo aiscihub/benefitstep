@@ -1,5 +1,7 @@
 # BenefitStep
 
+Latest release: **0.3.9** — Chinese and Spanish application, renewal and periodic-report interface fixes. See [release notes](releases/chrome-store-0.3.9/RELEASE_NOTES.md).
+
 Prepare your benefits application package with a quick check, document review and downloadable application drafts.
 
 ![BenefitStep workflow: Quick check, Documents, Review and Application](assets/benefit_workflow.png)

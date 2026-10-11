@@ -1,0 +1,46 @@
+{
+  "version": "0.3.9",
+  "archive": "benefitstep-0.3.9-chrome-store.zip",
+  "bytes": 11455412,
+  "sha256": "501cb60fdff0d9a2471bdde5ac8daa489d67dbf98d861ad42ba58fb6d888d9f3",
+  "manifestAtRoot": true,
+  "manifestCount": 1,
+  "permissions": [
+    "sidePanel"
+  ],
+  "productionApprovalClaimed": false,
+  "excludedNonRuntimeAssets": [
+    "Gathering Early Feedback from First Users.png",
+    "benefitstep-renewal-voiceover-v12.txt",
+    "benefitstep-spring-step-slides-v12-clean.zip",
+    "Bay Area BenefitStep Outreach Plan.png",
+    "benefitstep-critical-demo-v12-spring-clean.mp4",
+    "benefitstep-critical-demo-v12-renewal-clean.mp4",
+    "benefitstep-quick-check-feature-card.png",
+    "benefitstep-outreach-card.png",
+    "benefitstep-quick-check-feature-card-transparent.png",
+    "benefitstep-spring-voiceover-v12.txt"
+  ],
+  "sourceUnitTests": {
+    "passed": 357,
+    "failed": 0
+  },
+  "browserLocales": [
+    "en-US",
+    "zh-CN",
+    "es-US"
+  ],
+  "browserChecks": {
+    "answersPreserved": true,
+    "confirmationPreserved": true,
+    "originalValuesPreserved": true,
+    "offline": true,
+    "remoteRequests": 0,
+    "exceptions": 0
+  },
+  "repositoryUnitTests": {
+    "passed": 166,
+    "failed": 0
+  },
+  "zipMatchesRepositoryRuntime": true
+}

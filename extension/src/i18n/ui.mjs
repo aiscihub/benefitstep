@@ -1,3 +1,4 @@
+import {UI_ES_RENEWAL} from './ui-es-renewal.mjs';
 import {createLanguagePreferences,changeUiLocale} from './benefitstep-i18n.mjs';
 import {UI_ZH} from './ui-zh.mjs';
 import {UI_TEXT,UI_KEYS} from './ui-catalog.mjs';
@@ -9,7 +10,7 @@ export function setUiLocale(locale){const parsed=new Intl.Locale(locale);
  else preferences=changeUiLocale(preferences,locale);}
 // Call only for trusted UI strings. Never pass filenames, original text or answers.
 export function tr(text,params={}){
- const template=preferences.uiLocale==='es-US'?(UI_TEXT[text]??text):preferences.uiLocale==='zh-CN'?(UI_ZH[text]??text):text;
+ const template=preferences.uiLocale==='es-US'?(UI_ES_RENEWAL[text]??UI_TEXT[text]??text):preferences.uiLocale==='zh-CN'?(UI_ZH[text]??text):text;
  return String(template).replace(/\{([A-Za-z][A-Za-z0-9_]*)\}/g,(match,key)=>Object.hasOwn(params,key)?String(params[key]):match);
 }
 export function applyUiLanguage(root=document){

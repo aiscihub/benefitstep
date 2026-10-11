@@ -46,3 +46,29 @@ test('Simplified Chinese covers the catalog and preserves parameters and indepen
   assert.throws(()=>setUiLocale('zh-Hant'));
  } finally {setUiLocale('en-US');}
 });
+
+// These screens were added after the original numbered catalog. Check their data-driven
+// labels too, so a complete old catalog cannot mask a missing new workflow translation.
+test('Chinese and Spanish cover renewal forms, document guidance and dynamic parameters',async()=>{
+ const {UI_ZH_RENEWAL}=await import('../extension/src/i18n/ui-zh-renewal.mjs');
+ const {UI_ES_RENEWAL}=await import('../extension/src/i18n/ui-es-renewal.mjs');
+ const {RENEWAL_FORMS,OTHER_PAPERS}=await import('../extension/src/renewal.mjs');
+ const {documentGuidance}=await import('../extension/src/document-period.mjs');
+ const parameters=text=>[...text.matchAll(/\{([A-Za-z][A-Za-z0-9_]*)\}/g)].map(m=>m[1]).sort();
+ assert.deepEqual(Object.keys(UI_ZH_RENEWAL).sort(),Object.keys(UI_ES_RENEWAL).sort());
+ try {
+  for(const [locale,catalog] of [['zh-CN',UI_ZH_RENEWAL],['es-US',UI_ES_RENEWAL]]){
+   setUiLocale(locale);
+   for(const [source,translation] of Object.entries(catalog))assert.deepEqual(parameters(translation),parameters(source),source);
+   const required=['What are you preparing?','New application','Renewal or periodic report',
+    ...RENEWAL_FORMS.flatMap(f=>[f.name,f.label,f.when,...f.cautions,...f.papers.filter(p=>p.includes('('))]),
+    ...OTHER_PAPERS.flatMap(o=>[o.text,...o.papers])];
+   for(const form of ['', 'cf37','sar7b'])for(const reportMonth of ['','2026-09']){
+    const g=documentGuidance({programs:new Set(['CalFresh','Medi-Cal']),renewal:{on:!!form,form,notice:{reportMonth}}},'2026-10-10');
+    required.push(g.title,...g.lines,g.source);
+   }
+   for(const source of required)assert.notEqual(tr(source),source,locale+': '+source);
+   assert.ok(tr('Read from {file}.',{file:'Income 原件.pdf'}).includes('Income 原件.pdf'));
+  }
+ }finally{setUiLocale('en-US');}
+});

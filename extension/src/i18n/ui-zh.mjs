@@ -1,4 +1,5 @@
 // Draft Simplified Chinese UI translations; independent linguistic review pending.
+import {UI_ZH_RENEWAL} from "./ui-zh-renewal.mjs";
 import {UI_KEYS} from "./ui-catalog.mjs";
 const translations = {
   "ui224": "您的家庭信息",
@@ -281,4 +282,4 @@ const translations = {
   "ui276": "有 {count} 份工资单无法读取发薪日期。请在“核对”步骤中检查。",
   "ui277": "发薪日期：{date}"
 };
-export const UI_ZH = Object.fromEntries(Object.entries(translations).map(([key,value])=>[UI_KEYS[key],value]));
+export const UI_ZH = {...Object.fromEntries(Object.entries(translations).map(([key,value])=>[UI_KEYS[key],value])), ...UI_ZH_RENEWAL};
