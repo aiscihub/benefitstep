@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BenefitStep — Prepare your CalFresh and Medi-Cal application</title>
+<meta name="description" content="A free Chrome extension for California families. BenefitStep reads your pay stubs, bills and receipts on your own computer and fills in a draft of the official CalFresh and Medi-Cal forms.">
+<link rel="canonical" href="https://aiscihub.github.io/benefitstep/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BenefitStep — Prepare your CalFresh and Medi-Cal application">
+<meta property="og:description" content="A free Chrome extension for California families. BenefitStep reads your pay stubs, bills and receipts on your own computer and fills in a draft of the official CalFresh and Medi-Cal forms.">
+<meta property="og:url" content="https://aiscihub.github.io/benefitstep/">
+<meta property="og:image" content="https://aiscihub.github.io/benefitstep/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#faf8ff">
+<link rel="icon" href="assets/icon-128.png">
+<link rel="apple-touch-icon" href="assets/icon-128.png">
+<link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<header class="appbar">
+ <div class="wrap appbar-in">
+  <a class="brand" href="./"><img src="assets/icon-128.png" alt="" width="32" height="32"><span class="brand-text"><span class="brand-name">BenefitStep</span><span class="brand-page" data-i18n="tab.overview">Overview</span></span></a>
+  <nav class="topnav" aria-label="Pages"><a href="./" aria-current="page" data-i18n="tab.overview">Overview</a><a href="features.html" data-i18n="tab.features">Features</a><a href="privacy.html" data-i18n="nav.privacy">Privacy</a><a href="install.html" data-i18n="tab.install">Install</a></nav>
+  <label class="lang"><span class="sr" data-i18n="lang.label">Language</span>
+   <select id="lang">
+    <option value="en" lang="en">English</option>
+    <option value="es" lang="es">Español</option>
+    <option value="zh-CN" lang="zh-CN">简体中文</option>
+    <option value="zh-TW" lang="zh-TW">繁體中文</option>
+    <option value="vi" lang="vi">Tiếng Việt</option>
+   </select>
+  </label>
+  <a class="iconbtn" href="https://github.com/aiscihub/benefitstep" rel="noopener" aria-label="GitHub"><span class="icon i-code" aria-hidden="true"></span></a>
+  <a class="btn btn-primary btn-sm" href="https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi" rel="noopener" data-i18n="nav.install">Add to Chrome</a>
+ </div>
+</header>
+<main id="main" class="wrap page">
+
+ <section class="banner">
+  <span class="icon i-shield-check" aria-hidden="true"></span>
+  <div><p class="banner-t" data-i18n="hero.eyebrow">Free Chrome extension for California families</p><p class="banner-p" data-i18n="limits.l1">It is not a government service. BenefitStep is independent of BenefitsCal, the state and county offices.</p></div>
+ </section>
+
+ <section class="hero">
+  <div class="hero-main">
+   <h1 class="h-xl"><span data-i18n="hero.t1">Prepare your CalFresh and Medi-Cal application </span><span class="accent" data-i18n="hero.t2">from the documents you already have.</span></h1>
+   <p class="lead" data-i18n="hero.lead">BenefitStep reads your pay stubs, bills and receipts on your own computer and fills in a draft of the official forms. You check every value, then sign and submit the application yourself.</p>
+   <div class="actions">
+    <a class="btn btn-primary btn-block" href="https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi" rel="noopener"><span class="icon i-puzzle" aria-hidden="true"></span><span data-i18n="hero.cta">Add to Chrome — free</span></a>
+    <div class="actions-2">
+     <a class="btn btn-tonal" href="https://github.com/aiscihub/benefitstep" rel="noopener"><span class="icon i-code" aria-hidden="true"></span><span data-i18n="foot.source">Source code</span></a>
+     <a class="btn btn-teal" href="#demo"><span class="icon i-play" aria-hidden="true"></span><span data-i18n="hero.demo">Watch the demo</span></a>
+    </div>
+   </div>
+   <ul class="chips">
+    <li><span class="icon i-user-off" aria-hidden="true"></span><span data-i18n="hero.chip1">No account</span></li>
+    <li><span class="icon i-cloud-off" aria-hidden="true"></span><span data-i18n="hero.chip2">Nothing uploaded</span></li>
+    <li><span class="icon i-globe" aria-hidden="true"></span><span data-i18n="hero.chip3">5 languages</span></li>
+    <li><span class="icon i-code" aria-hidden="true"></span><span data-i18n="hero.chip4">Open source</span></li>
+   </ul>
+  </div>
+  <figure class="shot hero-shot"><img data-shot="start" data-i18n-alt="hero.alt" src="assets/screens/en/start.webp" width="400" height="500" alt="BenefitStep open in Chrome's side panel, at the Quick check step."></figure>
+ </section>
+
+ <section id="demo" class="card">
+  <div class="card-head"><span class="sq"><span class="icon i-play" aria-hidden="true"></span></span><div><h2 class="h-sm" data-i18n="demo.title">See it work</h2><p class="label-sm muted" data-i18n="demo.note">No sound. The video is in English. Every person and document in it is fictional.</p></div><span class="pill pill-teal">1:28</span></div>
+  <div class="video">
+   <video controls playsinline preload="none" poster="assets/demo-poster.jpg" width="1920" height="1080">
+    <source src="assets/benefitstep-demo.mp4" type="video/mp4">
+   </video>
+  </div>
+  <p class="body-sm muted" data-i18n="demo.p">A one-and-a-half-minute walkthrough with a fictional family, the Earleys: a new application, then a SAR 7 report six months later.</p>
+ </section>
+
+ <section id="how" class="section">
+  <p class="eyebrow" data-i18n="nav.how">How it works</p>
+  <h2 class="h-md" data-i18n="how.title">Four steps, at your own pace</h2>
+  <ol class="steps two">
+   <li class="step"><span class="num" aria-hidden="true">1</span><div><h3><span data-i18n="how.s1.t">Quick check</span> <span class="pill" data-i18n="how.s1.tag">Optional</span></h3><p data-i18n="how.s1.p">Answer a few questions to see how your income compares with the CalFresh income guide. It is a first look, not a decision.</p></div></li>
+   <li class="step"><span class="num" aria-hidden="true">2</span><div><h3><span data-i18n="how.s2.t">Add your documents</span></h3><p data-i18n="how.s2.p">Add the pay stubs, rent receipts, bills and letters you already have, as PDFs or photos. BenefitStep finds the names, dates and amounts.</p></div></li>
+   <li class="step"><span class="num" aria-hidden="true">3</span><div><h3><span data-i18n="how.s3.t">Review</span></h3><p data-i18n="how.s3.p">See each detail with the document it came from. Fix what is wrong and confirm what is right.</p></div></li>
+   <li class="step"><span class="num" aria-hidden="true">4</span><div><h3><span data-i18n="how.s4.t">Get your drafts</span></h3><p data-i18n="how.s4.p">BenefitStep fills in the official forms with what you confirmed and lists what is still missing. Download the package and finish it yourself.</p></div></li>
+  </ol>
+  <div class="shots" tabindex="0" role="group" aria-labelledby="shots-note">
+   <figure class="shot"><img data-shot="quick" data-i18n-alt="how.s1.t" src="assets/screens/en/quick.webp" width="400" height="500" alt="Quick check" loading="lazy"></figure>
+   <figure class="shot"><img data-shot="documents" data-i18n-alt="how.s2.t" src="assets/screens/en/documents.webp" width="400" height="500" alt="Add your documents" loading="lazy"></figure>
+   <figure class="shot"><img data-shot="review" data-i18n-alt="how.s3.t" src="assets/screens/en/review.webp" width="400" height="500" alt="Review" loading="lazy"></figure>
+   <figure class="shot"><img data-shot="application" data-i18n-alt="how.s4.t" src="assets/screens/en/application.webp" width="400" height="500" alt="Get your drafts" loading="lazy"></figure>
+  </div>
+  <p class="note" id="shots-note" data-i18n="how.note">These screens show BenefitStep's built-in example household. Its people and documents are fictional.</p>
+ </section>
+
+ <div class="pair">
+  <section class="tint">
+   <h2 class="h-sm"><span class="icon i-shield" aria-hidden="true"></span><span data-i18n="privacy.title">Your documents stay on your computer</span></h2>
+   <ul class="checks">
+    <li data-i18n="privacy.p1.t">Read on your own device</li>
+    <li data-i18n="privacy.p2.t">No account, no tracking</li>
+    <li data-i18n="privacy.p3.t">Kept only if you download it</li>
+    <li data-i18n="privacy.p4.t">On-device AI is your choice</li>
+   </ul>
+   <a class="link" href="privacy.html"><span data-i18n="privacy.link">Read the privacy policy</span><span class="icon i-arrow" aria-hidden="true"></span></a>
+  </section>
+  <section class="notice">
+   <p class="notice-t"><span class="icon i-info" aria-hidden="true"></span><span data-i18n="limits.title">What BenefitStep does not do</span></p>
+   <ul>
+   <li data-i18n="limits.l1">It is not a government service. BenefitStep is independent of BenefitsCal, the state and county offices.</li>
+   <li data-i18n="limits.l2">It does not decide whether you qualify. Only your county can do that.</li>
+   <li data-i18n="limits.l3">It does not submit anything. You sign and submit your application through BenefitsCal or your county.</li>
+   <li data-i18n="limits.l4">It can misread a document. Check every value against the original before you use a draft.</li>
+   </ul>
+  </section>
+ </div>
+
+ <section id="languages" class="card">
+  <div class="card-head"><span class="sq sq-tint"><span class="icon i-globe" aria-hidden="true"></span></span><div><h2 class="h-sm" id="langs-title" data-i18n="langs.title">In your language</h2></div></div>
+  <div class="langs" role="group" aria-labelledby="langs-title">
+   <button type="button" data-lang="en" lang="en">English</button>
+   <button type="button" data-lang="es" lang="es">Español</button>
+   <button type="button" data-lang="zh-CN" lang="zh-CN">简体中文</button>
+   <button type="button" data-lang="zh-TW" lang="zh-TW">繁體中文</button>
+   <button type="button" data-lang="vi" lang="vi">Tiếng Việt</button>
+  </div>
+  <p class="body-sm muted" data-i18n="langs.p">Choose your language in the BenefitStep panel. The translations cover the main steps and have not yet been checked by professional translators. The form questions and the official PDF forms are in English.</p>
+ </section>
+
+</main>
+
+<footer class="foot">
+ <div class="wrap">
+  <div class="foot-cols">
+   <div>
+    <h2 data-i18n="foot.resources">Resources</h2>
+    <ul>
+     <li><a href="https://github.com/aiscihub/benefitstep" rel="noopener" data-i18n="foot.source">Source code</a></li>
+     <li><a href="install.html" data-i18n="nav.installguide">Install guide</a></li>
+     <li><a href="https://github.com/aiscihub/benefitstep/blob/main/releases/chrome-store-0.3.11/RELEASE_NOTES.md" rel="noopener"><span data-i18n="foot.notes">Release notes</span> (v0.3.11)</a></li>
+    </ul>
+   </div>
+   <div>
+    <h2 data-i18n="foot.legal">Legal and trust</h2>
+    <ul>
+     <li><a href="privacy.html#policy" data-i18n="foot.privacy">Privacy policy</a></li>
+     <li><a href="https://github.com/aiscihub/benefitstep/blob/main/LICENSE" rel="noopener" data-i18n="foot.license">MIT License</a></li>
+     <li><a href="https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi" rel="noopener" data-i18n="foot.store">Chrome Web Store</a></li>
+    </ul>
+   </div>
+  </div>
+  <p class="foot-about" data-i18n="foot.about">BenefitStep is an independent, open-source project built by a high school student in the Bay Area. It is not affiliated with BenefitsCal, the California Department of Social Services, the Department of Health Care Services or any government agency.</p>
+  <p class="foot-req" data-i18n="start.req">Needs Chrome 138 or later on a computer. It does not work on phones.</p>
+ </div>
+</footer>
+
+<nav class="tabbar" aria-label="Pages">
+ <a class="btn btn-primary btn-block" href="https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi" rel="noopener"><span class="icon i-puzzle" aria-hidden="true"></span><span data-i18n="hero.cta">Add to Chrome — free</span></a>
+ <div class="tabs"><a href="./" aria-current="page"><span class="icon i-home" aria-hidden="true"></span><span data-i18n="tab.overview">Overview</span></a><a href="features.html"><span class="icon i-features" aria-hidden="true"></span><span data-i18n="tab.features">Features</span></a><a href="privacy.html"><span class="icon i-shield" aria-hidden="true"></span><span data-i18n="nav.privacy">Privacy</span></a><a href="install.html"><span class="icon i-download" aria-hidden="true"></span><span data-i18n="tab.install">Install</span></a></div>
+</nav>
+
+<script src="site.js"></script>
+</body>
+</html>
