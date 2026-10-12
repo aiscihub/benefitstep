@@ -1,0 +1,246 @@
+{
+ "note": "Reference answers for the reader evaluation. They were written when the documents were authored, before the reader was run, and are never given to the reader. A null value means the field must be left blank.",
+ "documents": [
+  {
+   "set": "household",
+   "file": "household/pdfs/01_JuniperMarket_Pay_2026-09-15.pdf",
+   "text": "household/text/01_JuniperMarket_Pay_2026-09-15.txt",
+   "about": "Pay statement",
+   "expected": {
+    "gross_pay": "1250.00",
+    "net_pay": "1054.38",
+    "ytd_gross": "22500.00"
+   }
+  },
+  {
+   "set": "household",
+   "file": "household/pdfs/02_JuniperMarket_Pay_2026-09-30.pdf",
+   "text": "household/text/02_JuniperMarket_Pay_2026-09-30.txt",
+   "about": "Pay statement",
+   "expected": {
+    "gross_pay": "1300.00",
+    "net_pay": "1096.55",
+    "ytd_gross": "23800.00"
+   }
+  },
+  {
+   "set": "household",
+   "file": "household/pdfs/03_WillowCourt_Lease.pdf",
+   "text": "household/text/03_WillowCourt_Lease.txt",
+   "about": "Lease",
+   "expected": {
+    "rent_amount": "1400.00"
+   }
+  },
+  {
+   "set": "household",
+   "file": "household/pdfs/04_WillowCourt_Rent_2026-09.pdf",
+   "text": "household/text/04_WillowCourt_Rent_2026-09.txt",
+   "about": "Rent receipt",
+   "expected": {
+    "rent_amount": "1400.00",
+    "amount_paid": "1400.00"
+   }
+  },
+  {
+   "set": "household",
+   "file": "household/pdfs/05_JuniperEnergy_2026-09.pdf",
+   "text": "household/text/05_JuniperEnergy_2026-09.txt",
+   "about": "Utility bill",
+   "expected": {
+    "current_charges": "140.00",
+    "prior_balance": "800.00",
+    "amount_due": "940.00"
+   }
+  },
+  {
+   "set": "household",
+   "file": "household/pdfs/06_LittleLantern_Care_2026-09.pdf",
+   "text": "household/text/06_LittleLantern_Care_2026-09.txt",
+   "about": "Child care invoice",
+   "expected": {
+    "amount_billed": "300.00",
+    "amount_paid": "200.00"
+   }
+  },
+  {
+   "set": "household",
+   "file": "household/pdfs/07_AlderCommunity_Checking_2026-09.pdf",
+   "text": "household/text/07_AlderCommunity_Checking_2026-09.txt",
+   "about": "Bank statement",
+   "expected": {}
+  },
+  {
+   "set": "household",
+   "file": "household/pdfs/08_ValleyCounty_Request_2026-10-02.pdf",
+   "text": "household/text/08_ValleyCounty_Request_2026-10-02.txt",
+   "about": "County request for verification",
+   "expected": {
+    "program_stated": "CalFresh",
+    "person": "Jordan Rivera"
+   }
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-01.pdf",
+   "text": "hard/text/01.txt",
+   "about": "Grid layout, gross/net/YTD in adjacent columns",
+   "group": "new layout or look-alike",
+   "expected": {
+    "gross_pay": "2384.50",
+    "net_pay": "1925.78",
+    "ytd_gross": "31608.25"
+   }
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-02.pdf",
+   "text": "hard/text/02.txt",
+   "about": "Two-page letter; October payment for September work",
+   "group": "new layout or look-alike",
+   "expected": {
+    "gross_pay": "3100.00",
+    "net_pay": "2480.00",
+    "ytd_gross": "27800.00"
+   }
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-03.pdf",
+   "text": "hard/text/03.txt",
+   "about": "Invoice contains payroll and earnings vocabulary",
+   "group": "new layout or look-alike",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-04.pdf",
+   "text": "hard/text/04.txt",
+   "about": "Spanish text and comma-decimal euro amounts",
+   "group": "new layout or look-alike",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-05.pdf",
+   "text": "hard/text/05.txt",
+   "about": "Annual wages resemble current earnings",
+   "group": "new layout or look-alike",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-06.pdf",
+   "text": "hard/text/06.txt",
+   "about": "Payroll deposits are not a pay statement",
+   "group": "new layout or look-alike",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-07.pdf",
+   "text": "hard/text/07.txt",
+   "about": "Proposed future salary, no actual payment",
+   "group": "new layout or look-alike",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-08.pdf",
+   "text": "hard/text/08.txt",
+   "about": "Zero amount due despite positive current charges",
+   "group": "new layout or look-alike",
+   "expected": {
+    "current_charges": "108.47",
+    "prior_balance": "-134.22",
+    "amount_due": "0.00"
+   }
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-09.pdf",
+   "text": "hard/text/09.txt",
+   "about": "Gross missing; visible net must not become gross",
+   "group": "new layout or look-alike",
+   "expected": {
+    "gross_pay": null,
+    "net_pay": "1470.26"
+   }
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-10.pdf",
+   "text": "hard/text/10.txt",
+   "about": "Notice asks for pay terms but reports no income",
+   "group": "new layout or look-alike",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-11.pdf",
+   "text": "hard/text/11.txt",
+   "about": "Educational examples, no actual earnings",
+   "group": "new layout or look-alike",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-12.pdf",
+   "text": "hard/text/12.txt",
+   "about": "Monthly rent versus deposit; no proof of payment",
+   "group": "new layout or look-alike",
+   "expected": {
+    "rent_amount": "1725.00",
+    "amount_paid": null
+   }
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-13.pdf",
+   "text": "hard/text/13.txt",
+   "about": "Image-only scan of the pay table",
+   "group": "image-only scan",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-14.pdf",
+   "text": "hard/text/14.txt",
+   "about": "Low contrast, skewed receipt scan",
+   "group": "image-only scan",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-15.pdf",
+   "text": "hard/text/15.txt",
+   "about": "Simulated OCR character substitutions and lost layout",
+   "group": "simulated OCR errors",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-16.pdf",
+   "text": "hard/text/16.txt",
+   "about": "Searchable pay statement and utility bill in one PDF",
+   "group": "two documents in one file",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-17.pdf",
+   "text": "hard/text/17.txt",
+   "about": "Readable pay page plus scanned bill page",
+   "group": "two documents in one file",
+   "expected": {}
+  },
+  {
+   "set": "hard",
+   "file": "hard/pdfs/document-18.pdf",
+   "text": "hard/text/18.txt",
+   "about": "Identical PDF with a different name",
+   "group": "exact copy of document-01",
+   "expected": {}
+  }
+ ]
+}

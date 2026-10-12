@@ -1,0 +1,31 @@
+F I C T I O N A L T E S T C O P Y ·   N O T VA L I D   E V I D E N C E
+
+Juniper Payroll Services
+
+Invoice JP-FICT-1127
+
+Bill to
+
+Maple Toolworks LLC
+
+Accounts payable
+
+Issued 30 September 2026
+
+Due 15 October 2026
+
+Service month September
+
+Service   Units   Amount
+
+Payroll processing and gross-pay calculations   28 staff   $420.00
+
+Net-pay deposit reconciliation   28 staff   $140.00
+
+Year-to-date earnings and tax reports   1 monthly batch   $80.00
+
+Invoice total $640.00
+
+This is a vendor invoice for payroll administration. It is not an employee wage payment or earnings statement.
+
+Generated example. All names, organizations and transactions are fictional.

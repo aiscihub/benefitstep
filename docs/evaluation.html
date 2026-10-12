@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" class="no-js" data-title-key="foot.eval">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BenefitStep — Evaluation and limitations</title>
+<meta name="description" content="A free Chrome extension for California families. BenefitStep reads your pay stubs, bills and receipts on your own computer and fills in a draft of the official CalFresh and Medi-Cal forms.">
+<link rel="canonical" href="https://aiscihub.github.io/benefitstep/evaluation.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BenefitStep — Evaluation and limitations">
+<meta property="og:description" content="A free Chrome extension for California families. BenefitStep reads your pay stubs, bills and receipts on your own computer and fills in a draft of the official CalFresh and Medi-Cal forms.">
+<meta property="og:url" content="https://aiscihub.github.io/benefitstep/evaluation.html">
+<meta property="og:image" content="https://aiscihub.github.io/benefitstep/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#faf8ff">
+<link rel="icon" href="assets/icon-128.png">
+<link rel="apple-touch-icon" href="assets/icon-128.png">
+<link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<header class="appbar">
+ <div class="wrap appbar-in">
+  <a class="brand" href="./"><img src="assets/icon-128.png" alt="" width="32" height="32"><span class="brand-text"><span class="brand-name">BenefitStep</span><span class="brand-page" data-i18n="foot.eval">Evaluation and limits</span></span></a>
+  <nav class="topnav" aria-label="Pages"><a href="./" data-i18n="tab.overview">Overview</a><a href="features.html" data-i18n="tab.features">Features</a><a href="privacy.html" data-i18n="nav.privacy">Privacy</a><a href="install.html" data-i18n="tab.install">Install</a></nav>
+  <label class="lang"><span class="sr" data-i18n="lang.label">Language</span>
+   <select id="lang">
+    <option value="en" lang="en">English</option>
+    <option value="es" lang="es">Español</option>
+    <option value="zh-CN" lang="zh-CN">简体中文</option>
+    <option value="zh-TW" lang="zh-TW">繁體中文</option>
+    <option value="vi" lang="vi">Tiếng Việt</option>
+   </select>
+  </label>
+  <a class="iconbtn" href="https://github.com/aiscihub/benefitstep" rel="noopener" aria-label="GitHub"><span class="icon i-code" aria-hidden="true"></span></a>
+  <a class="btn btn-primary btn-sm" href="https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi" rel="noopener" data-i18n="nav.install">Add to Chrome</a>
+ </div>
+</header>
+<main id="main" class="wrap page">
+
+ <section class="navy">
+  <p class="navy-eyebrow"><span class="icon i-review" aria-hidden="true"></span><span data-i18n="foot.eval">Evaluation and limits</span></p>
+  <h1 class="h-lg" lang="en">Evaluation and limitations</h1>
+  <p lang="en">How BenefitStep's document reader was tested, what the result means, and what it does not show.</p>
+  <ul class="stats" lang="en">
+   <li><span class="icon i-doc" aria-hidden="true"></span><span>26 fictional test files</span></li>
+   <li><span class="icon i-form" aria-hidden="true"></span><span>68 values filled in</span></li>
+   <li><span class="icon i-features" aria-hidden="true"></span><span>66 match the document (97%)</span></li>
+  </ul>
+ </section>
+
+ <p class="note" data-i18n="eval.note">This page is in English.</p>
+
+ <div lang="en" class="page" style="padding:0">
+
+ <section class="card">
+  <h2 class="h-sm">In short</h2>
+  <div class="prose">
+   <p>BenefitStep's text reader was run on 26 fictional test files: 25 different documents and one exact copy. It filled in 68 values, and <b>66 matched the document (97%)</b>. All 17 dollar amounts were correct. On layouts it did not recognise, it left fields blank instead of guessing.</p>
+   <p>One of the 66 was attached to the wrong document. In a file that holds two documents, the reader took the issuer from the first and the name and amount from the second. Counting that as an error too gives <b>65 of 68 (96%)</b>.</p>
+   <p><b>What the 97% means.</b> It is the share of the values the reader filled in that were right. It is not the share of an application's fields that BenefitStep completes. When the reader does not recognise a layout it fills in nothing, and those blanks do not lower the figure. How much it filled in is reported separately below, as coverage.</p>
+   <p>This is a small test on documents written for the project. It shows that the reader does what it was built to do. It is not a measure of accuracy on real people's paperwork.</p>
+  </div>
+ </section>
+
+ <section class="card">
+  <h2 class="h-sm">What was tested</h2>
+  <div class="prose">
+   <ul>
+    <li><b>The local text reader in BenefitStep 0.3.11.</b> This is the part that finds names, dates and amounts in documents that contain text, which covers most PDFs. It is the default way documents are read.</li>
+    <li><b>With on-device AI off.</b> The optional AI that reads photos and scans is not part of this figure.</li>
+    <li><b>On the text of each PDF</b>, as the extension's PDF library extracts it.</li>
+   </ul>
+   <p>Not tested here: whether a value ends up in the right box of the PDF form, and how real applicants get on with the tool.</p>
+  </div>
+ </section>
+
+ <section class="card">
+  <h2 class="h-sm">The test documents</h2>
+  <div class="prose">
+   <p>There are <b>26 files in two sets</b>. All are fictional and were written for this project, because real applicants' documents cannot be used for testing.</p>
+   <ul>
+    <li><b>Household set, 8 documents.</b> One invented household's paperwork: two pay statements, a lease, a rent receipt, a utility bill, a child care invoice, a bank statement and a county request. They use the kind of labelled layout the reader was built for.</li>
+    <li><b>Hard set, 18 files.</b> Written to trip the reader up:
+     <ul>
+      <li>12 documents with unfamiliar layouts, or that only look like proof of income: a pay table in a grid, a two-page earnings letter, a vendor invoice full of payroll words, a Spanish receipt, an annual tax summary, bank deposits, a job offer, a utility bill with a credit balance, a damaged pay statement with the gross pay missing, a county request, a payroll teaching handout, and a lease that is not a receipt;</li>
+      <li>2 image-only scans, which a text reader cannot read;</li>
+      <li>1 copy with simulated OCR errors;</li>
+      <li>2 files that each hold two different documents;</li>
+      <li>1 exact duplicate.</li>
+     </ul>
+    </li>
+   </ul>
+   <p><b>Reference answers</b> were written when the documents were authored, before the reader was run, and are never shown to it: 27 fields the reader should find, and 2 it must leave blank.</p>
+  </div>
+ </section>
+
+ <section class="card">
+  <h2 class="h-sm">What was measured</h2>
+  <div class="prose">
+   <p>Two things, reported separately.</p>
+   <ul>
+    <li><b>Accuracy of filled-in values.</b> Every value the reader produced was compared with the document. A value counts as a match only if it is what the file says for that field. The headline figure is matching values divided by all values produced. A stricter count is given beside it: there, a matching value that the reader attached to the wrong document inside a file counts as an error.</li>
+    <li><b>Coverage.</b> Of the reference fields, how many the reader found, how many it left blank, and how many it got wrong.</li>
+   </ul>
+   <p>They are kept apart because they fail differently. A blank field is safe: the person fills it in at the Review step. A wrong value is the failure that matters.</p>
+  </div>
+ </section>
+
+ <section class="card">
+  <h2 class="h-sm">Results</h2>
+  <div class="table-wrap">
+   <table>
+    <thead><tr><th></th><th class="n">Household set</th><th class="n">Hard set</th><th class="n">Both</th></tr></thead>
+    <tbody>
+     <tr><th>Files</th><td class="n">8</td><td class="n">18</td><td class="n">26</td></tr>
+     <tr><th>Files where the reader filled in anything</th><td class="n">7</td><td class="n">4</td><td class="n">11</td></tr>
+     <tr><th>Values filled in</th><td class="n">56</td><td class="n">12</td><td class="n">68</td></tr>
+     <tr class="total"><th>Values that match the document</th><td class="n">55 (98%)</td><td class="n">11 (92%)</td><td class="n">66 (97%)</td></tr>
+     <tr><th>Stricter: match, and belong to the right document</th><td class="n">55 (98%)</td><td class="n">10 (83%)</td><td class="n">65 (96%)</td></tr>
+     <tr><th>Dollar amounts correct</th><td class="n">14 of 14</td><td class="n">3 of 3</td><td class="n">17 of 17</td></tr>
+     <tr><th>Reference fields found</th><td class="n">16 of 16</td><td class="n">2 of 11</td><td class="n">18 of 27</td></tr>
+     <tr><th>Reference fields left blank</th><td class="n">0</td><td class="n">9</td><td class="n">9</td></tr>
+     <tr><th>Reference fields wrong</th><td class="n">0</td><td class="n">0</td><td class="n">0</td></tr>
+     <tr><th>Fields that must stay blank, left blank</th><td class="n">none in this set</td><td class="n">2 of 2</td><td class="n">2 of 2</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="prose">
+   <p>The hard set shows the reader's limit. It found only 2 of the 11 reference fields there and left the other 9 blank. It did not put a wrong value in any of those 11 fields, and it did not turn a visible take-home amount into the missing gross pay.</p>
+   <p>Across both sets it found 18 of the 27 reference fields. The 12 values it did produce on the hard set include one that was wrong and one that was misplaced, described next.</p>
+   <p><b>Two values did not match the document:</b></p>
+   <ul>
+    <li><b>Utility bill, household set.</b> The street-address field also took the city, state and ZIP code, because the bill separates them with a dot.</li>
+    <li><b>Bank statement, hard set.</b> The account holder's name came out with account text attached.</li>
+   </ul>
+   <p><b>One value matched but was attached to the wrong document:</b></p>
+   <ul>
+    <li><b>Two documents in one file, hard set.</b> The issuer is the one printed on the pay statement, but the reader kept it with the name and amount from the utility bill behind it. This is the difference between 97% and 96%.</li>
+   </ul>
+   <p>The reader's own guess at the type of document was also wrong on three look-alikes in the hard set (an invoice, a bank statement and a teaching handout were taken for pay statements) and on the two-document file. It filled in no pay amounts from any of them.</p>
+  </div>
+ </section>
+
+ <section class="tint">
+  <h2 class="h-sm" id="limitations"><span class="icon i-warn" aria-hidden="true"></span><span>Limitations</span></h2>
+  <div class="row"><span class="icon i-info" aria-hidden="true"></span><p><b>Only the values the reader filled in are scored for correctness.</b> The 97% says how often a filled-in value was right. It says nothing about fields the reader left blank, and it is not a rate of completed application fields. Coverage is in the results table: 18 of 27 reference fields found, and only 2 of 11 on the hard set.</p></div>
+  <div class="row"><span class="icon i-info" aria-hidden="true"></span><p><b>The documents are made up.</b> They were written by the project, not collected from real households. Real paperwork is messier.</p></div>
+  <div class="row"><span class="icon i-info" aria-hidden="true"></span><p><b>The sample is small.</b> 26 files and 68 values. One more wrong value would move the figure by about one and a half points.</p></div>
+  <div class="row"><span class="icon i-info" aria-hidden="true"></span><p><b>It is not a held-out test.</b> The household set was written with labels the reader already supported, and both sets were looked at while the reader was being improved. A fair accuracy claim needs new documents the reader has never been adjusted to.</p></div>
+  <div class="row"><span class="icon i-info" aria-hidden="true"></span><p><b>The values were graded once.</b> Nobody has repeated the grading independently. The graded list is below and in the repository, so anyone can check it.</p></div>
+  <div class="row"><span class="icon i-info" aria-hidden="true"></span><p><b>On-device AI is not included, and it is less accurate.</b> In development runs on the hard set with version 0.3.7, reading with on-device AI got 103 of 160 values right over three runs (64%) and 35 of 39 dollar amounts. Most of the errors were placeholder text such as “unknown” accepted as an address; version 0.3.8 rejects those. The current version has not been measured again, and AI results change from run to run.</p></div>
+ </section>
+
+ <section class="card">
+  <h2 class="h-sm">Other checks</h2>
+  <div class="prose">
+   <p>Separately from this evaluation, each release is checked by automated tests (358 for version 0.3.11) and by browser runs of the whole workflow in each interface language. Those show that the software behaves as written. They are not accuracy measurements.</p>
+   <p>Whatever the reader fills in, BenefitStep shows each value next to the document it came from, and the person confirms or corrects it before it reaches a form.</p>
+  </div>
+ </section>
+
+ <section class="card">
+  <h2 class="h-sm">Repeat it</h2>
+  <div class="prose">
+   <p>The test files, the reference answers and the graded values are in <a href="https://github.com/aiscihub/benefitstep/tree/main/demo/evaluation" rel="noopener"><code>demo/evaluation/</code></a> in the repository, and the script is <a href="https://github.com/aiscihub/benefitstep/blob/main/scripts/evaluate-reader.mjs" rel="noopener"><code>scripts/evaluate-reader.mjs</code></a>. From the repository root, run <code>node scripts/evaluate-reader.mjs</code>. It needs Node.js 22 or later and nothing else. It prints the figures in the table above and stops if the reader produces a value that has not been graded.</p>
+  </div>
+  <details>
+   <summary>Every value and how it was graded (68)</summary>
+   <div class="table-wrap">
+    <table>
+     <thead><tr><th>Set</th><th>File</th><th>Field</th><th>Value the reader filled in</th><th>Result</th></tr></thead>
+     <tbody>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>issuer</td><td>Juniper Market</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>person</td><td>Jordan Rivera</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>period_start</td><td>2026-09-01</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>period_end</td><td>2026-09-15</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>pay_date</td><td>2026-09-15</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>pay_frequency</td><td>semimonthly</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>gross_pay</td><td>1250.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>net_pay</td><td>1054.38</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>01_JuniperMarket_Pay_2026-09-15.pdf</td><td>ytd_gross</td><td>22500.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>issuer</td><td>Juniper Market</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>person</td><td>Jordan Rivera</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>period_start</td><td>2026-09-16</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>period_end</td><td>2026-09-30</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>pay_date</td><td>2026-09-30</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>pay_frequency</td><td>semimonthly</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>gross_pay</td><td>1300.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>net_pay</td><td>1096.55</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>02_JuniperMarket_Pay_2026-09-30.pdf</td><td>ytd_gross</td><td>23800.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>03_WillowCourt_Lease.pdf</td><td>issuer</td><td>Willow Court Homes</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>03_WillowCourt_Lease.pdf</td><td>person</td><td>Jordan Rivera</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>03_WillowCourt_Lease.pdf</td><td>period_start</td><td>2026-09-01</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>03_WillowCourt_Lease.pdf</td><td>period_end</td><td>2027-08-31</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>03_WillowCourt_Lease.pdf</td><td>rent_amount</td><td>1400.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>04_WillowCourt_Rent_2026-09.pdf</td><td>person</td><td>Jordan Rivera</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>04_WillowCourt_Rent_2026-09.pdf</td><td>issuer</td><td>Willow Court Homes</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>04_WillowCourt_Rent_2026-09.pdf</td><td>document_date</td><td>2026-09-03</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>04_WillowCourt_Rent_2026-09.pdf</td><td>period_start</td><td>2026-09-01</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>04_WillowCourt_Rent_2026-09.pdf</td><td>period_end</td><td>2026-09-30</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>04_WillowCourt_Rent_2026-09.pdf</td><td>rent_amount</td><td>1400.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>04_WillowCourt_Rent_2026-09.pdf</td><td>amount_paid</td><td>1400.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>04_WillowCourt_Rent_2026-09.pdf</td><td>expense_frequency</td><td>monthly</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>person</td><td>Jordan Rivera</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>issuer</td><td>Juniper Energy</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>home_address</td><td>2148 Willowmere Lane, Apt 3B · Sacramento, CA 95814</td><td><span class="bad">Wrong.</span> The street field also holds the city, state and ZIP code.</td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>document_date</td><td>2026-10-01</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>period_start</td><td>2026-09-01</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>period_end</td><td>2026-09-30</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>prior_balance</td><td>800.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>current_charges</td><td>140.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>05_JuniperEnergy_2026-09.pdf</td><td>amount_due</td><td>940.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>06_LittleLantern_Care_2026-09.pdf</td><td>person</td><td>Jordan Rivera</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>06_LittleLantern_Care_2026-09.pdf</td><td>issuer</td><td>Little Lantern Learning</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>06_LittleLantern_Care_2026-09.pdf</td><td>period_start</td><td>2026-09-01</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>06_LittleLantern_Care_2026-09.pdf</td><td>period_end</td><td>2026-09-30</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>06_LittleLantern_Care_2026-09.pdf</td><td>document_date</td><td>2026-09-30</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>06_LittleLantern_Care_2026-09.pdf</td><td>amount_billed</td><td>300.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>06_LittleLantern_Care_2026-09.pdf</td><td>amount_paid</td><td>200.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>06_LittleLantern_Care_2026-09.pdf</td><td>expense_frequency</td><td>monthly</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>08_ValleyCounty_Request_2026-10-02.pdf</td><td>person</td><td>Jordan Rivera</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>08_ValleyCounty_Request_2026-10-02.pdf</td><td>issuer</td><td>Valley County Services</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>08_ValleyCounty_Request_2026-10-02.pdf</td><td>program_stated</td><td>CalFresh</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>08_ValleyCounty_Request_2026-10-02.pdf</td><td>document_date</td><td>2026-10-02</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>08_ValleyCounty_Request_2026-10-02.pdf</td><td>request_item</td><td>Income received during September 2026 and current rent expense</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>08_ValleyCounty_Request_2026-10-02.pdf</td><td>period_start</td><td>2026-09-01</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>08_ValleyCounty_Request_2026-10-02.pdf</td><td>period_end</td><td>2026-09-30</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Household</td><td>08_ValleyCounty_Request_2026-10-02.pdf</td><td>stated_deadline</td><td>October 16, 2026</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-06.pdf</td><td>person</td><td>Drew Marin • Account ••DEMO</td><td><span class="bad">Wrong.</span> Account text is attached to the name; the document says Drew Marin.</td></tr>
+     <tr><td>Hard</td><td>document-06.pdf</td><td>issuer</td><td>Alder Grove Credit Union</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-08.pdf</td><td>person</td><td>Tessa Brook</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-08.pdf</td><td>amount_due</td><td>0.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-08.pdf</td><td>issuer</td><td>Pine Estuary Energy</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-09.pdf</td><td>person</td><td>Remy Lane</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-09.pdf</td><td>issuer</td><td>Birch Transit Collective</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-09.pdf</td><td>pay_date</td><td>2026-09-25</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-09.pdf</td><td>net_pay</td><td>1470.26</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-16.pdf</td><td>person</td><td>Tessa Brook</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-16.pdf</td><td>amount_due</td><td>0.00</td><td><span class="ok">Matches</span></td></tr>
+     <tr><td>Hard</td><td>document-16.pdf</td><td>issuer</td><td>North Alder Fabrication</td><td><span class="warnmark">Matches, wrong document.</span> The file holds two documents. This is the issuer of the pay statement in it; the name and amount the reader kept come from the utility bill, whose issuer is Pine Estuary Energy.</td></tr>
+     </tbody>
+    </table>
+   </div>
+  </details>
+ </section>
+
+ </div>
+
+</main>
+
+<footer class="foot">
+ <div class="wrap">
+  <div class="foot-cols">
+   <div>
+    <h2 data-i18n="foot.resources">Resources</h2>
+    <ul>
+     <li><a href="https://github.com/aiscihub/benefitstep" rel="noopener" data-i18n="foot.source">Source code</a></li>
+     <li><a href="install.html" data-i18n="nav.installguide">Install guide</a></li>
+     <li><a href="https://github.com/aiscihub/benefitstep/blob/main/releases/chrome-store-0.3.11/RELEASE_NOTES.md" rel="noopener"><span data-i18n="foot.notes">Release notes</span> (v0.3.11)</a></li>
+     <li><a href="evaluation.html" data-i18n="foot.eval">Evaluation and limits</a></li>
+    </ul>
+   </div>
+   <div>
+    <h2 data-i18n="foot.legal">Legal and trust</h2>
+    <ul>
+     <li><a href="privacy.html#policy" data-i18n="foot.privacy">Privacy policy</a></li>
+     <li><a href="https://github.com/aiscihub/benefitstep/blob/main/LICENSE" rel="noopener" data-i18n="foot.license">MIT License</a></li>
+     <li><a href="https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi" rel="noopener" data-i18n="foot.store">Chrome Web Store</a></li>
+    </ul>
+   </div>
+  </div>
+  <p class="foot-about" data-i18n="foot.about">BenefitStep is an independent, open-source project built by a high school student in the Bay Area. It is not affiliated with BenefitsCal, the California Department of Social Services, the Department of Health Care Services or any government agency.</p>
+  <p class="foot-req" data-i18n="start.req">Needs Chrome 138 or later on a computer. It does not work on phones.</p>
+ </div>
+</footer>
+
+<nav class="tabbar" aria-label="Pages">
+ <a class="btn btn-primary btn-block" href="https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi" rel="noopener"><span class="icon i-puzzle" aria-hidden="true"></span><span data-i18n="hero.cta">Add to Chrome — free</span></a>
+ <div class="tabs"><a href="./"><span class="icon i-home" aria-hidden="true"></span><span data-i18n="tab.overview">Overview</span></a><a href="features.html"><span class="icon i-features" aria-hidden="true"></span><span data-i18n="tab.features">Features</span></a><a href="privacy.html"><span class="icon i-shield" aria-hidden="true"></span><span data-i18n="nav.privacy">Privacy</span></a><a href="install.html"><span class="icon i-download" aria-hidden="true"></span><span data-i18n="tab.install">Install</span></a></div>
+</nav>
+
+<script src="site.js"></script>
+</body>
+</html>

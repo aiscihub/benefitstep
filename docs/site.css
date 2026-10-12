@@ -215,6 +215,23 @@ a.row>.icon:last-child{margin-left:auto;color:var(--on-variant)}
 .doc h2{font-size:18px;line-height:26px;font-weight:600;margin-top:10px}
 .doc p{font-size:15px;line-height:24px;color:var(--on-variant);max-width:70ch}
 
+.table-wrap{overflow-x:auto;margin:0 -4px}
+table{width:100%;border-collapse:collapse;font-size:14px;line-height:20px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #e2e8f0}
+thead th{background:var(--low);font-weight:600;white-space:nowrap}
+tbody th{font-weight:500;color:var(--on-variant)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.total td,tr.total th{font-weight:600;color:var(--on)}
+.ok{color:var(--teal);font-weight:600}
+.bad{color:#b42318;font-weight:600}
+.warnmark{color:#92400e;font-weight:600}
+.prose{display:flex;flex-direction:column;gap:10px;color:var(--on-variant);max-width:72ch}
+.prose ul{display:grid;gap:8px;padding-left:1.2em;list-style:disc}
+.prose b,.prose strong{color:var(--on);font-weight:600}
+.prose code{font-size:13px;padding:1px 5px;border-radius:4px;background:var(--low);color:var(--on)}
+details summary{cursor:pointer;font-weight:600;color:var(--primary)}
+details[open] summary{margin-bottom:12px}
+
 /* Footer */
 .foot{margin-top:8px;padding-top:24px;padding-bottom:24px;font-size:14px;line-height:20px;color:var(--on-variant)}
 .foot-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}

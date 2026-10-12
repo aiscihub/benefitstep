@@ -3,6 +3,11 @@
 (() => {
  const T = {
   es: {
+   'foot.eval': 'Evaluación y límites',
+   'eval.title': 'Cómo se probó',
+   'eval.p': 'En 26 archivos de prueba ficticios, el lector de texto llenó 68 datos y 66 coincidieron con el documento (97 %), incluidos los 17 montos en dólares. Esa cifra se refiere a los datos que llenó, no a qué parte de una solicitud completa: en los formatos que no reconoció, dejó los campos en blanco en lugar de adivinar. Es una prueba pequeña con documentos escritos para el proyecto, no una medida de exactitud con documentos reales.',
+   'eval.link': 'Leer la evaluación completa (en inglés)',
+   'eval.note': 'Esta página está en inglés.',
    'tab.overview': 'Resumen',
    'tab.features': 'Funciones',
    'tab.install': 'Instalar',
@@ -80,6 +85,11 @@
    'foot.privacy': 'Política de privacidad', 'foot.source': 'Código fuente', 'foot.store': 'Chrome Web Store'
   },
   'zh-CN': {
+   'foot.eval': '测试评估与局限',
+   'eval.title': '测试方法与结果',
+   'eval.p': '在 26 份虚构的测试文件上，文本读取器共填写了 68 项信息，其中 66 项与文件内容一致（97%），17 个金额全部正确。这个数字只针对它填写的内容，并不表示它能填完申请表的多少：遇到无法识别的版式时，它会留空而不是猜测。这是一次小规模测试，所用文件均为本项目自行编写，并不代表对真实材料的准确率。',
+   'eval.link': '阅读完整评估（英文）',
+   'eval.note': '本页面为英文。',
    'tab.overview': '概览',
    'tab.features': '功能',
    'tab.install': '安装',
@@ -157,6 +167,11 @@
    'foot.privacy': '隐私政策', 'foot.source': '源代码', 'foot.store': 'Chrome 应用商店'
   },
   'zh-TW': {
+   'foot.eval': '測試評估與限制',
+   'eval.title': '測試方法與結果',
+   'eval.p': '在 26 份虛構的測試文件上，文字讀取器共填寫了 68 項資料，其中 66 項與文件內容一致（97%），17 個金額全部正確。這個數字只針對它填寫的內容，並不表示它能填完申請表的多少：遇到無法辨識的版面時，它會留空而不是猜測。這是一次小規模測試，所用文件均為本專案自行編寫，並不代表對真實文件的準確率。',
+   'eval.link': '閱讀完整評估（英文）',
+   'eval.note': '本頁面為英文。',
    'tab.overview': '總覽',
    'tab.features': '功能',
    'tab.install': '安裝',
@@ -234,6 +249,11 @@
    'foot.privacy': '隱私權政策', 'foot.source': '原始碼', 'foot.store': 'Chrome 線上應用程式商店'
   },
   vi: {
+   'foot.eval': 'Đánh giá và giới hạn',
+   'eval.title': 'Cách kiểm tra',
+   'eval.p': 'Trên 26 giấy tờ thử nghiệm hư cấu, trình đọc văn bản đã điền 68 thông tin và 66 thông tin khớp với giấy tờ (97%), kể cả toàn bộ 17 số tiền. Con số này chỉ nói về những thông tin đã được điền, không cho biết đơn xin được điền đầy đủ đến đâu: với bố cục không nhận ra, trình đọc để trống thay vì đoán. Đây là một thử nghiệm nhỏ trên giấy tờ do dự án tự soạn, không phải thước đo độ chính xác trên giấy tờ thật.',
+   'eval.link': 'Đọc toàn bộ phần đánh giá (tiếng Anh)',
+   'eval.note': 'Trang này bằng tiếng Anh.',
    'tab.overview': 'Tổng quan',
    'tab.features': 'Tính năng',
    'tab.install': 'Cài đặt',

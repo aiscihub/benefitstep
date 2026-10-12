@@ -1,0 +1,464 @@
+{
+ "note": "Every value the local text reader produced on the 26 test files, each compared with the document. \"correct\" means the value is what the file states for that field. \"wrongDocument\" marks a correct value that the reader attached to a different document inside the same file. Graded for BenefitStep 0.3.11 on 2026-10-11. If the reader changes what it produces, scripts/evaluate-reader.mjs stops and the new values must be graded.",
+ "documents": [
+  {
+   "file": "household/pdfs/01_JuniperMarket_Pay_2026-09-15.pdf",
+   "values": [
+    {
+     "field": "issuer",
+     "value": "Juniper Market",
+     "correct": true
+    },
+    {
+     "field": "person",
+     "value": "Jordan Rivera",
+     "correct": true
+    },
+    {
+     "field": "period_start",
+     "value": "2026-09-01",
+     "correct": true
+    },
+    {
+     "field": "period_end",
+     "value": "2026-09-15",
+     "correct": true
+    },
+    {
+     "field": "pay_date",
+     "value": "2026-09-15",
+     "correct": true
+    },
+    {
+     "field": "pay_frequency",
+     "value": "semimonthly",
+     "correct": true
+    },
+    {
+     "field": "gross_pay",
+     "value": "1250.00",
+     "correct": true
+    },
+    {
+     "field": "net_pay",
+     "value": "1054.38",
+     "correct": true
+    },
+    {
+     "field": "ytd_gross",
+     "value": "22500.00",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "household/pdfs/02_JuniperMarket_Pay_2026-09-30.pdf",
+   "values": [
+    {
+     "field": "issuer",
+     "value": "Juniper Market",
+     "correct": true
+    },
+    {
+     "field": "person",
+     "value": "Jordan Rivera",
+     "correct": true
+    },
+    {
+     "field": "period_start",
+     "value": "2026-09-16",
+     "correct": true
+    },
+    {
+     "field": "period_end",
+     "value": "2026-09-30",
+     "correct": true
+    },
+    {
+     "field": "pay_date",
+     "value": "2026-09-30",
+     "correct": true
+    },
+    {
+     "field": "pay_frequency",
+     "value": "semimonthly",
+     "correct": true
+    },
+    {
+     "field": "gross_pay",
+     "value": "1300.00",
+     "correct": true
+    },
+    {
+     "field": "net_pay",
+     "value": "1096.55",
+     "correct": true
+    },
+    {
+     "field": "ytd_gross",
+     "value": "23800.00",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "household/pdfs/03_WillowCourt_Lease.pdf",
+   "values": [
+    {
+     "field": "issuer",
+     "value": "Willow Court Homes",
+     "correct": true
+    },
+    {
+     "field": "person",
+     "value": "Jordan Rivera",
+     "correct": true
+    },
+    {
+     "field": "period_start",
+     "value": "2026-09-01",
+     "correct": true
+    },
+    {
+     "field": "period_end",
+     "value": "2027-08-31",
+     "correct": true
+    },
+    {
+     "field": "rent_amount",
+     "value": "1400.00",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "household/pdfs/04_WillowCourt_Rent_2026-09.pdf",
+   "values": [
+    {
+     "field": "person",
+     "value": "Jordan Rivera",
+     "correct": true
+    },
+    {
+     "field": "issuer",
+     "value": "Willow Court Homes",
+     "correct": true
+    },
+    {
+     "field": "document_date",
+     "value": "2026-09-03",
+     "correct": true
+    },
+    {
+     "field": "period_start",
+     "value": "2026-09-01",
+     "correct": true
+    },
+    {
+     "field": "period_end",
+     "value": "2026-09-30",
+     "correct": true
+    },
+    {
+     "field": "rent_amount",
+     "value": "1400.00",
+     "correct": true
+    },
+    {
+     "field": "amount_paid",
+     "value": "1400.00",
+     "correct": true
+    },
+    {
+     "field": "expense_frequency",
+     "value": "monthly",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "household/pdfs/05_JuniperEnergy_2026-09.pdf",
+   "values": [
+    {
+     "field": "person",
+     "value": "Jordan Rivera",
+     "correct": true
+    },
+    {
+     "field": "issuer",
+     "value": "Juniper Energy",
+     "correct": true
+    },
+    {
+     "field": "home_address",
+     "value": "2148 Willowmere Lane, Apt 3B · Sacramento, CA 95814",
+     "correct": false,
+     "note": "The street field also holds the city, state and ZIP code."
+    },
+    {
+     "field": "document_date",
+     "value": "2026-10-01",
+     "correct": true
+    },
+    {
+     "field": "period_start",
+     "value": "2026-09-01",
+     "correct": true
+    },
+    {
+     "field": "period_end",
+     "value": "2026-09-30",
+     "correct": true
+    },
+    {
+     "field": "prior_balance",
+     "value": "800.00",
+     "correct": true
+    },
+    {
+     "field": "current_charges",
+     "value": "140.00",
+     "correct": true
+    },
+    {
+     "field": "amount_due",
+     "value": "940.00",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "household/pdfs/06_LittleLantern_Care_2026-09.pdf",
+   "values": [
+    {
+     "field": "person",
+     "value": "Jordan Rivera",
+     "correct": true
+    },
+    {
+     "field": "issuer",
+     "value": "Little Lantern Learning",
+     "correct": true
+    },
+    {
+     "field": "period_start",
+     "value": "2026-09-01",
+     "correct": true
+    },
+    {
+     "field": "period_end",
+     "value": "2026-09-30",
+     "correct": true
+    },
+    {
+     "field": "document_date",
+     "value": "2026-09-30",
+     "correct": true
+    },
+    {
+     "field": "amount_billed",
+     "value": "300.00",
+     "correct": true
+    },
+    {
+     "field": "amount_paid",
+     "value": "200.00",
+     "correct": true
+    },
+    {
+     "field": "expense_frequency",
+     "value": "monthly",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "household/pdfs/07_AlderCommunity_Checking_2026-09.pdf",
+   "values": []
+  },
+  {
+   "file": "household/pdfs/08_ValleyCounty_Request_2026-10-02.pdf",
+   "values": [
+    {
+     "field": "person",
+     "value": "Jordan Rivera",
+     "correct": true
+    },
+    {
+     "field": "issuer",
+     "value": "Valley County Services",
+     "correct": true
+    },
+    {
+     "field": "program_stated",
+     "value": "CalFresh",
+     "correct": true
+    },
+    {
+     "field": "document_date",
+     "value": "2026-10-02",
+     "correct": true
+    },
+    {
+     "field": "request_item",
+     "value": "Income received during September 2026 and current rent expense",
+     "correct": true
+    },
+    {
+     "field": "period_start",
+     "value": "2026-09-01",
+     "correct": true
+    },
+    {
+     "field": "period_end",
+     "value": "2026-09-30",
+     "correct": true
+    },
+    {
+     "field": "stated_deadline",
+     "value": "October 16, 2026",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "hard/pdfs/document-01.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-02.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-03.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-04.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-05.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-06.pdf",
+   "values": [
+    {
+     "field": "person",
+     "value": "Drew Marin • Account ••DEMO",
+     "correct": false,
+     "note": "Account text is attached to the name; the document says Drew Marin."
+    },
+    {
+     "field": "issuer",
+     "value": "Alder Grove Credit Union",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "hard/pdfs/document-07.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-08.pdf",
+   "values": [
+    {
+     "field": "person",
+     "value": "Tessa Brook",
+     "correct": true
+    },
+    {
+     "field": "amount_due",
+     "value": "0.00",
+     "correct": true
+    },
+    {
+     "field": "issuer",
+     "value": "Pine Estuary Energy",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "hard/pdfs/document-09.pdf",
+   "values": [
+    {
+     "field": "person",
+     "value": "Remy Lane",
+     "correct": true
+    },
+    {
+     "field": "issuer",
+     "value": "Birch Transit Collective",
+     "correct": true
+    },
+    {
+     "field": "pay_date",
+     "value": "2026-09-25",
+     "correct": true
+    },
+    {
+     "field": "net_pay",
+     "value": "1470.26",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "file": "hard/pdfs/document-10.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-11.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-12.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-13.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-14.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-15.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-16.pdf",
+   "values": [
+    {
+     "field": "person",
+     "value": "Tessa Brook",
+     "correct": true
+    },
+    {
+     "field": "amount_due",
+     "value": "0.00",
+     "correct": true
+    },
+    {
+     "field": "issuer",
+     "value": "North Alder Fabrication",
+     "correct": true,
+     "note": "The file holds two documents. This is the issuer of the pay statement in it; the name and amount the reader kept come from the utility bill, whose issuer is Pine Estuary Energy.",
+     "wrongDocument": true
+    }
+   ]
+  },
+  {
+   "file": "hard/pdfs/document-17.pdf",
+   "values": []
+  },
+  {
+   "file": "hard/pdfs/document-18.pdf",
+   "values": []
+  }
+ ]
+}
