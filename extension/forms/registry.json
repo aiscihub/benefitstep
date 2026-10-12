@@ -35,7 +35,36 @@
       "perFieldBindingCount": 0,
       "acquisitionDate": "2026-10-04",
       "resolvedSource": "https://cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/A-D/CF285.pdf?ver=2023-03-08-155331-893",
-      "purpose": "application"
+      "purpose": "application",
+      "translations": [
+        {
+          "language": "es",
+          "languageName": "Spanish",
+          "edition": "8/21",
+          "pageCount": 18,
+          "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Spanish/CF_285_Spanish.pdf",
+          "retrievedOn": "2026-10-12",
+          "templateSha256": "2e2cb5cceded4c54d5cc8218e5c5f578e8d9ac24250a778f8f5666b952ec3b6b"
+        },
+        {
+          "language": "zh-Hant",
+          "languageName": "Chinese (Traditional)",
+          "edition": "8/21",
+          "pageCount": 18,
+          "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Chinese/CF_285_Chinese.pdf",
+          "retrievedOn": "2026-10-12",
+          "templateSha256": "a083f3adac38c493fca3d18201638c10e7d91537d96f3c68344893f423180fc7"
+        },
+        {
+          "language": "vi",
+          "languageName": "Vietnamese",
+          "edition": "8/21",
+          "pageCount": 18,
+          "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Vietnamese/CF_285_Vietnamese.pdf",
+          "retrievedOn": "2026-10-12",
+          "templateSha256": "c35c59aec05325e5604305b95cc2871555862292d4a7455699c5fdf1678987c0"
+        }
+      ]
     },
     {
       "id": "cf37",
@@ -66,7 +95,8 @@
       "acquisitionDate": "2026-10-08",
       "resolvedSource": "https://www.cdss.ca.gov/cdssweb/entres/forms/English/cf37.pdf",
       "purpose": "renewal",
-      "program": "calfresh"
+      "program": "calfresh",
+      "translationsNote": "The state also publishes CF 37 (11/16) in Spanish, Chinese and Vietnamese. Those PDFs name every box differently, carry no box labels and split each date into three boxes, so they are not mapped yet; this form is filled in English."
     },
     {
       "id": "sar7b",
@@ -107,7 +137,36 @@
       "resolvedSource": "https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/Q-T/SAR7B.pdf",
       "purpose": "renewal",
       "program": "calfresh",
-      "editionNote": "SAR 7B is the blank edition of the SAR 7. The county's own SAR 7 arrives with household details already printed; this app does not read or write that copy."
+      "editionNote": "SAR 7B is the blank edition of the SAR 7. The county's own SAR 7 arrives with household details already printed; this app does not read or write that copy.",
+      "translations": [
+        {
+          "language": "es",
+          "languageName": "Spanish",
+          "edition": "12/23",
+          "pageCount": 14,
+          "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Spanish/SAR_7B_Spanish.pdf",
+          "retrievedOn": "2026-10-12",
+          "templateSha256": "e5611c5bb29643ce7a100d7a1b143a68cc460ec38a33288da2221037e6a9030e"
+        },
+        {
+          "language": "zh-Hant",
+          "languageName": "Chinese (Traditional)",
+          "edition": "12/23",
+          "pageCount": 14,
+          "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Chinese/SAR_7B_Chinese.pdf",
+          "retrievedOn": "2026-10-12",
+          "templateSha256": "2b8616db46078aded7444a2a6f16623378f4a2416d876bc4d125d1bc0a556cb0"
+        },
+        {
+          "language": "vi",
+          "languageName": "Vietnamese",
+          "edition": "12/23",
+          "pageCount": 14,
+          "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Vietnamese/SAR_7B_Vietnamese.pdf",
+          "retrievedOn": "2026-10-12",
+          "templateSha256": "c99ec5bdea3604863edee9c0728873c5597c4c1402ac8d66e0fd9e0c98d54c8f"
+        }
+      ]
     },
     {
       "id": "saws2plus",
@@ -230,5 +289,6 @@
       ]
     }
   },
-  "otherPrograms": "CalWORKs, Covered California, CMSP, GA/GR, Disaster CalFresh inventories are not eligibility implementations."
+  "otherPrograms": "CalWORKs, Covered California, CMSP, GA/GR, Disaster CalFresh inventories are not eligibility implementations.",
+  "translationsNote": "Translated editions are the state's own PDFs, listed at https://www.cdss.ca.gov/inforesources/translated-forms-and-publications. The Chinese edition is Traditional Chinese; the state publishes no Simplified Chinese edition of these forms."
 }

@@ -1,0 +1,5809 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "sar7b",
+  "edition": "12/23",
+  "templateSha256": "c99ec5bdea3604863edee9c0728873c5597c4c1402ac8d66e0fd9e0c98d54c8f",
+  "expectedPageCount": 14,
+  "geometry": [
+    {
+      "page": 1,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 2,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 3,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 4,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 5,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 6,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 7,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 8,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 9,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 10,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 11,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 12,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 13,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 14,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewers": [],
+    "visualValidation": false
+  },
+  "bindings": [
+    {
+      "groupId": "sar.header",
+      "field": "household_name",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        179.28,
+        83.24000000000001,
+        332.511,
+        99.08000000000004
+      ],
+      "widget": "SAR7  12",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tên hộ gia đình",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "street",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        179.28,
+        106.72000000000003,
+        332.511,
+        122.55999999999995
+      ],
+      "widget": "SAR7  13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tên Đường",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "city",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        179.28,
+        130.20000000000005,
+        332.511,
+        146.03999999999996
+      ],
+      "widget": "SAR7  16",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành phố/thị trấn",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "zip",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        179.28,
+        153.67999999999995,
+        332.511,
+        169.51999999999998
+      ],
+      "widget": "SAR7  30",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "mã bưu chính; thoát khỏi chế độ biểu mẫu",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "date",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        443.142,
+        83.24000000000001,
+        569.871,
+        99.08000000000004
+      ],
+      "widget": "SAR7  31",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Ngày",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "case_name",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        443.142,
+        106.72000000000003,
+        569.871,
+        122.55999999999995
+      ],
+      "widget": "SAR7  32",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tên hồ sơ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "case_number",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        443.142,
+        130.20000000000005,
+        569.871,
+        146.03999999999996
+      ],
+      "widget": "SAR7  36",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số Hồ Sơ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "submit_month",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        475.44,
+        229.70500000000004,
+        566.761,
+        245.54499999999996
+      ],
+      "widget": "SAR7  35",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Để tiếp tục nhận được các phúc lợi của quý vị đúng thời hạn, vui lòng gửi biểu mẫu này chậm nhất vào ngày 5; Vui lòng nhập tháng nộp của quý vị.; thoát khỏi chế độ biểu mẫu.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "report_month",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        122.26,
+        373.635,
+        215.86,
+        389.475
+      ],
+      "widget": "SAR7  10",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tháng báo cáo. Thoát khỏi chế độ biểu mẫu.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "street",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        36.72,
+        166.96000000000004,
+        422.64,
+        185.67999999999995
+      ],
+      "widget": "SAR7  37",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cập Nhật Địa Chỉ Nhà - Nhập Tên Đường",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "apartment",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        425.52,
+        166.03999999999996,
+        575.851,
+        184.76
+      ],
+      "widget": "SAR7  38",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "cập nhật địa chỉ nhà - Số căn hộ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "city_state_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        37.0053,
+        199.27999999999997,
+        575.851,
+        218
+      ],
+      "widget": "SAR7  40",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cập Nhật Địa Chỉ Nhà - Nhập Thành Phố, Tiểu Bang Và Mã Bưu Chính (ZIP)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "homeless",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        236.36,
+        48.24,
+        247.88
+      ],
+      "widget": "SAR7  39",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu quý vị là người vô gia cư.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "street",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        36.72,
+        277.48,
+        422.64,
+        296.2
+      ],
+      "widget": "SAR7  41",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cập nhật địa chỉ gửi thư - Địa chỉ thực tế hoặc hộp thư bưu điện (nếu khác với địa chỉ nhà) Nhập tên đường",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "apartment",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        425.669,
+        277.48,
+        576,
+        296.2
+      ],
+      "widget": "SAR7  48",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "cập nhật địa chỉ gửi thư - Số căn hộ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "city_state_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        37.0053,
+        309,
+        575.851,
+        327.72
+      ],
+      "widget": "SAR7  42",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cập Nhật Địa Chỉ Gửi Thư - Nhập Thành Phố, Tiểu Bang Và Mã Bưu Chính (ZIP)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "general_delivery_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        256.765,
+        467.02,
+        400.765,
+        479.26
+      ],
+      "widget": "SAR7  47",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập Mã Bưu chính (ZIP) của bưu điện nơi quý vị sẽ nhận thư.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "keep_same",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        352.2,
+        48.24,
+        363.72
+      ],
+      "widget": "SAR7  43",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu quý vị muốn giữ nguyên địa chỉ gửi thư hiện tại.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        395.4,
+        48.24,
+        406.92
+      ],
+      "widget": "SAR7  44",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nếu quý vị vô gia cư, hãy chọn một trong ba tùy chọn sau - Tùy chọn 1 - Tôi có địa chỉ gửi thư và đã thêm địa chỉ ở trên.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "I have a mailing address and have added it above",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        417,
+        48.24,
+        428.52
+      ],
+      "widget": "SAR7  45",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 2 - Tôi muốn sử dụng địa chỉ gửi thư của Sở Phúc Lợi Quận\r\n\r\n(Ghi chú: Quý vị cần liên hệ với văn phòng quận của quý vị để thiết lập việc này.)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Use the County Welfare Department mailing address",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36,
+        453.72,
+        47.52,
+        465.24
+      ],
+      "widget": "SAR7  46",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 3 - Tôi muốn sử dụng dịch vụ Giao Hàng Chung (General Delivery). Viết Mã Bưu chính (ZIP) của bưu điện vào ô sau. (Ghi chú: hãy đảm bảo bưu điện tại Mã Bưu chính (ZIP) của quý vị chấp nhận dịch vụ Giao Hàng Chung. Quý vị sẽ cần liên hệ với bưu điện để thiết lập việc này.)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Use General Delivery",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "home_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        63.1,
+        537.12,
+        410.34,
+        552.96
+      ],
+      "widget": "SAR7  49",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cập nhật số điện thoại - Nhập mã vùng và số điện thoại nhà.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "cell_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        80.6,
+        554.78,
+        437.44000000000005,
+        570.62
+      ],
+      "widget": "SAR7  50",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập mã vùng và số điện thoại di động.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "other_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        67.8,
+        573.871,
+        414.226,
+        589.711
+      ],
+      "widget": "SAR7  51",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập mã vùng và số điện thoại khác.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "email",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        70.2,
+        656.0989999999999,
+        416.789,
+        671.939
+      ],
+      "widget": "SAR7  55",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cập nhật địa chỉ email - Nhập địa chỉ email.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "has_change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        195.44000000000005,
+        46.52,
+        206.96000000000004
+      ],
+      "widget": "SAR7  124a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Báo cáo và/hoặc cập nhật các thành viên hộ gia đình: Có ai chuyển đến hoặc chuyển đi khỏi nhà quý vị hay quý vị chuyển đến sống với ai đó kể từ lần báo cáo cuối cùng không? (Ví dụ: trẻ sơ sinh, ai đó chuyển đến hoặc chuyển đi khỏi nhà quý vị, quý vị nhận nuôi một đứa trẻ, ai đó bắt đầu hoặc ngừng mua và nấu ăn cùng quý vị, v.v.); cho tùy chọn có; nếu có, vui lòng điền vào bảng bên dưới",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "has_change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        231.76,
+        195.91499999999996,
+        243.28,
+        207.43600000000004
+      ],
+      "widget": "SAR7  124a 2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Báo cáo và/hoặc cập nhật các thành viên hộ gia đình: Có ai chuyển đến hoặc chuyển đi khỏi nhà quý vị hay quý vị chuyển đến sống với ai đó kể từ lần báo cáo cuối cùng không? (Ví dụ: trẻ sơ sinh, ai đó chuyển đến hoặc chuyển đi khỏi nhà quý vị, quý vị nhận nuôi một đứa trẻ, ai đó bắt đầu hoặc ngừng mua và nấu ăn cùng quý vị, v.v.); cho tùy chọn không",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "name",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        36,
+        291.148,
+        144,
+        430.108
+      ],
+      "widget": "SAR7  122",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình Số 1 trong 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_birth",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        144,
+        291.428,
+        227.52,
+        430.388
+      ],
+      "widget": "SAR7  123",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập Ngày Sinh Của Thành Viên Hộ Gia Đình Số 1 (tháng, ngày, năm). ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "relationship",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        228.24,
+        291.428,
+        322.56,
+        430.388
+      ],
+      "widget": "SAR7  124",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập mối quan hệ của Thành Viên Hộ Gia Đình Số 1 với quý vị. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "other_change",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        370.32,
+        342.242,
+        450.961,
+        356.642
+      ],
+      "widget": "SAR7  130",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Liệt kê loại thay đổi trong hộ gia đình của quý vị.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        372.48,
+        361.448,
+        462.44,
+        375.848
+      ],
+      "widget": "SAR7  131",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích sự thay đổi, dòng 1 trong 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain_more",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        327,
+        377.713,
+        462.665,
+        392.113
+      ],
+      "widget": "SAR7  132",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích sự thay đổi, dòng 2 trong 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_change",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        326.64,
+        412.488,
+        412.331,
+        426.888
+      ],
+      "widget": "SAR7  135",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày thay đổi (tháng/ngày/năm) ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        291.288,
+        339.12,
+        302.808
+      ],
+      "widget": "SAR7  125",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 1 - Đánh dấu vào đây nếu quy mô hộ gia đình có thay đổi trong 6 tháng qua. Tùy chọn 1 trong 6 - Thành Viên Hộ Gia Đình Số 1 đã chuyển vào.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved In",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        413.64,
+        291.28,
+        425.16,
+        302.8
+      ],
+      "widget": "SAR7  127",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 1 - Đánh dấu vào đây cho tùy chọn 2 - thành viên hộ gia đình đã sinh con và đang sống tại nhà quý vị trong 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Birth",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        305.408,
+        339.12,
+        316.928
+      ],
+      "widget": "SAR7  126",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 1 - Đánh dấu vào đây cho tùy chọn 3 - thành viên hộ gia đình số 1 đã chuyển ra ngoài nhà quý vị trong vòng 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved Out",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        413.52,
+        305.6,
+        425.04,
+        317.12
+      ],
+      "widget": "SAR7  128",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 1 - Đánh dấu vào đây cho tùy chọn 4 - thành viên hộ gia đình đang sống trong nhà quý vị đã qua đời trong vòng 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Death",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        326.96,
+        331.248,
+        338.48,
+        342.768
+      ],
+      "widget": "SAR7  298",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 1 - Đánh dấu vào đây cho tùy chọn 5 - Thành Viên Hộ Gia Đình Số 1 Vắng mặt tạm thời khỏi nhà trong vòng 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Temporary absence",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.32,
+        344.808,
+        338.84,
+        356.328
+      ],
+      "widget": "SAR7  129",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 1 - Đánh dấu vào đây cho tùy chọn 5 - có một lý do khác khiến quy mô hộ gia đình của quý vị thay đổi (không được liệt kê) trong 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        483.68,
+        353.312,
+        495.2,
+        364.832
+      ],
+      "widget": "SAR7  133",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu có, quý vị thường xuyên mua và nấu ăn cùng nhau với thành viên hộ gia đình số 1. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        523.52,
+        353.832,
+        535.04,
+        365.352
+      ],
+      "widget": "SAR7  134",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu quý vị không thường xuyên mua và nấu ăn cùng nhau với thành viên hộ gia đình số 1.  ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "name",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        36,
+        431.4,
+        144,
+        572.038
+      ],
+      "widget": "SAR7  136",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình Số 2 trong 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_birth",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        144,
+        431.675,
+        227.52,
+        572.318
+      ],
+      "widget": "SAR7  137",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập Ngày Sinh Của Thành Viên Hộ Gia Đình Số 2 (tháng, ngày, năm). ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "relationship",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        228.24,
+        431.275,
+        322.56,
+        572.318
+      ],
+      "widget": "SAR7  138",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập mối quan hệ của Thành Viên Hộ Gia Đình Số 2 với quý vị. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "other_change",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        372,
+        483.577,
+        450.52,
+        497.977
+      ],
+      "widget": "SAR7  144",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Liệt kê loại thay đổi trong hộ gia đình của quý vị.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        373.2,
+        502.178,
+        461.36,
+        516.577
+      ],
+      "widget": "SAR7  145",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích sự thay đổi, dòng 1 trong 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain_more",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        327,
+        517.938,
+        461.36,
+        532.337
+      ],
+      "widget": "SAR7  146",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích sự thay đổi, dòng 2 trong 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_change",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        327,
+        554.01,
+        412.165,
+        568.41
+      ],
+      "widget": "SAR7  160",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày thay đổi (tháng/ngày/năm) ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        433.137,
+        339.12,
+        444.658
+      ],
+      "widget": "SAR7  139",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 2 - Đánh dấu vào đây nếu quy mô hộ gia đình có thay đổi trong 6 tháng qua. Tùy chọn 1 trong 6 - Thành Viên Hộ Gia Đình Số 2 đã chuyển vào.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved In",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        413.24,
+        434.129,
+        424.76,
+        445.649
+      ],
+      "widget": "SAR7  141",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 2 - Đánh dấu vào đây cho tùy chọn 2 - thành viên hộ gia đình đã sinh con và đang sống tại nhà quý vị trong 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Birth",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        446.458,
+        339.12,
+        457.977
+      ],
+      "widget": "SAR7  140",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 2 - Đánh dấu vào đây cho tùy chọn 3 - thành viên hộ gia đình số 2 đã chuyển ra ngoài nhà quý vị trong vòng 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved Out",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        412.24,
+        448.649,
+        423.76,
+        460.169
+      ],
+      "widget": "SAR7  142",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 2 - Đánh dấu vào đây cho tùy chọn 4 - thành viên hộ gia đình đang sống trong nhà quý vị đã qua đời trong vòng 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Death",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.96,
+        471.977,
+        339.48,
+        483.497
+      ],
+      "widget": "SAR7  516",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 2 - Đánh dấu vào đây cho tùy chọn 5 - Thành Viên Hộ Gia Đình Số 2 Vắng mặt tạm thời khỏi nhà trong vòng 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Temporary absence",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        485.738,
+        339.12,
+        497.258
+      ],
+      "widget": "SAR7  143",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thành Viên Hộ Gia Đình Số 2 - Đánh dấu vào đây cho tùy chọn 6 - có một lý do khác khiến quy mô hộ gia đình của quý vị thay đổi (không được liệt kê) trong 6 tháng qua.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        483.4,
+        495.962,
+        494.92,
+        507.482
+      ],
+      "widget": "SAR7  147",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu có, quý vị thường xuyên mua và nấu ăn cùng nhau với thành viên hộ gia đình số 2. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        521.96,
+        495.482,
+        533.48,
+        507.002
+      ],
+      "widget": "SAR7  148",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu quý vị không thường xuyên mua và nấu ăn cùng nhau với thành viên hộ gia đình số 2. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "has_income",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        248.39999999999998,
+        46.52,
+        259.91999999999996
+      ],
+      "widget": "SAR7  569a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có thành viên nào trong hộ gia đình quý vị có thu nhập đã kiếm được hoặc không kiếm được trong tháng báo cáo của quý vị không, hoặc có thành viên nào mong đợi có sự thay đổi về thu nhập đã kiếm được hoặc không kiếm được trong sáu tháng tới không? (Ví dụ: ai đó bắt đầu, dừng hoặc thay đổi công việc; có thay đổi về an sinh xã hội hoặc trợ cấp thất nghiệp; và/hoặc hộ gia đình bắt đầu hoặc ngừng nhận nhà ở hoặc tiện ích miễn phí hoặc để đổi lấy công việc).; cho tùy chọn có; nếu có, vui lòng điền vào bên dưới.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "has_income",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        232.006,
+        247.79700000000003,
+        243.526,
+        259.317
+      ],
+      "widget": "SAR7  569a 2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có thành viên nào trong hộ gia đình quý vị có thu nhập đã kiếm được hoặc không kiếm được trong tháng báo cáo của quý vị không, hoặc có thành viên nào mong đợi có sự thay đổi về thu nhập đã kiếm được hoặc không kiếm được trong sáu tháng tới không? (Ví dụ: ai đó bắt đầu, dừng hoặc thay đổi công việc; có thay đổi về an sinh xã hội hoặc trợ cấp thất nghiệp; và/hoặc hộ gia đình bắt đầu hoặc ngừng nhận nhà ở hoặc tiện ích miễn phí hoặc để đổi lấy công việc).; cho tùy chọn không",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "unearned_increased",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        318.24,
+        46.52,
+        329.76
+      ],
+      "widget": "SAR7  569a 3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Chỉ dành cho CalFresh, tổng thu nhập không kiếm được của tất cả các thành viên trong hộ gia đình của quý vị có tăng trong tháng báo cáo của quý vị không?; cho tùy chọn có.; nếu có, vui lòng điền vào bên dưới.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "unearned_increased",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        232.006,
+        318.301,
+        243.526,
+        329.821
+      ],
+      "widget": "SAR7  569a 4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Chỉ dành cho CalFresh, tổng thu nhập không kiếm được của tất cả các thành viên trong hộ gia đình của quý vị có tăng trong tháng báo cáo của quý vị không?; cho tùy chọn không",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        36,
+        463.478,
+        132.48,
+        700.8788
+      ],
+      "widget": "SAR7  2011",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình có nguồn thu nhập Số 1 trong 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        476.76,
+        149.76,
+        488.28
+      ],
+      "widget": "SAR7  570",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 1 đã nhận được trong tháng báo cáo.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        521.108,
+        149.04,
+        532.6279999999999
+      ],
+      "widget": "SAR7  569",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 1 đã bắt đầu.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        538.568,
+        149.04,
+        550.088
+      ],
+      "widget": "SAR7  568",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 1 đã dừng lại.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        556.028,
+        149.04,
+        567.548
+      ],
+      "widget": "SAR7  567",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 1 đã thay đổi.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        135.72,
+        596.968,
+        240.12,
+        614.248
+      ],
+      "widget": "SAR7  566",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích lý do tại sao thu nhập của nguồn thu nhập số 1 lại thay đổi. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        134.64,
+        619.848,
+        239.04,
+        637.1279999999999
+      ],
+      "widget": "SAR7  565",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích lý do tại sao thu nhập của nguồn thu nhập số 1 lại thay đổi. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        136.8,
+        672.008,
+        241.2,
+        685.688
+      ],
+      "widget": "SAR7  564",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập thay đổi.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        247.8,
+        547.208,
+        337.68,
+        564.488
+      ],
+      "widget": "SAR7  562",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tên người sử dụng lao động cho nguồn thu nhập số 1. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        247.8,
+        565.688,
+        337.68,
+        582.968
+      ],
+      "widget": "SAR7  561",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tên người sử dụng lao động cho nguồn thu nhập số 1. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        247.8,
+        649.188,
+        339.84,
+        664.308
+      ],
+      "widget": "SAR7  559",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập loại thu nhập không phải từ công việc cho nguồn thu nhập số 1. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        425.24,
+        550.528,
+        495.08,
+        566.3679999999999
+      ],
+      "widget": "SAR7  553",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập số tiền tổng thu nhập từ nguồn thu nhập số 1. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        418.04,
+        610.968,
+        494.36,
+        624.648
+      ],
+      "widget": "SAR7  552",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập nhận được cho nguồn thu nhập số 1. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        418.68,
+        625.088,
+        495,
+        638.768
+      ],
+      "widget": "SAR7  551",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập được nhận của Thành Viên Hộ Gia Đình Số 1. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        499.68,
+        517.559,
+        576,
+        531.239
+      ],
+      "widget": "SAR7  550",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nếu được tuyển dụng, hãy nhập số giờ làm việc mỗi tháng cho nguồn thu nhập số 1.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        498.688,
+        259.92,
+        510.208
+      ],
+      "widget": "SAR7  563",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập/tên người sử dụng lao động là từ công việc cho nguồn thu nhập số 1.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        607.188,
+        259.92,
+        618.708
+      ],
+      "widget": "SAR7  560",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 1 không phải từ công việc.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        509.248,
+        360,
+        520.768
+      ],
+      "widget": "SAR7  558",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 1 được trả hàng tuần.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        535.168,
+        361.44,
+        546.688
+      ],
+      "widget": "SAR7  557",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 1 được trả 2 tuần một lần.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        563.008,
+        361.44,
+        574.528
+      ],
+      "widget": "SAR7  556",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 1 được trả hàng tháng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        602.568,
+        360.72,
+        614.088
+      ],
+      "widget": "SAR7  555",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 1 được trả hai lần một tháng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        642.008,
+        361,
+        653.528
+      ],
+      "widget": "SAR7  554",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 1 được trả vào khung thời gian không được liệt kê ở trên.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        36,
+        171.798,
+        132.48,
+        410.279
+      ],
+      "widget": "SAR7  2012",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình có nguồn thu nhập Số 2 trong 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        179.08000000000004,
+        149.76,
+        190.60000000000002
+      ],
+      "widget": "SAR7  591",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 2 đã nhận được trong tháng báo cáo.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        223.428,
+        149.04,
+        234.94799999999998
+      ],
+      "widget": "SAR7  590",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 2 đã bắt đầu.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        240.88800000000003,
+        149.04,
+        252.40800000000002
+      ],
+      "widget": "SAR7  589",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 2 đã dừng lại.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        258.34799999999996,
+        149.04,
+        269.86800000000005
+      ],
+      "widget": "SAR7  588",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 2 đã thay đổi.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        137.4,
+        311.488,
+        240.12,
+        328.768
+      ],
+      "widget": "SAR7  587",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích lý do tại sao thu nhập của nguồn thu nhập số 2 lại thay đổi. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        137.4,
+        335.368,
+        239.04,
+        352.648
+      ],
+      "widget": "SAR7  586",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích lý do tại sao thu nhập của nguồn thu nhập số 2 lại thay đổi. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        136.8,
+        387.528,
+        241.2,
+        401.208
+      ],
+      "widget": "SAR7  585",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập số 2 thay đổi.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        247.8,
+        256.12800000000004,
+        337.68,
+        273.408
+      ],
+      "widget": "SAR7  583",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tên người sử dụng lao động cho nguồn thu nhập số 2. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        247.8,
+        274.60799999999995,
+        337.68,
+        291.888
+      ],
+      "widget": "SAR7  582",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tên người sử dụng lao động cho nguồn thu nhập số 2. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        246.96,
+        358.108,
+        339.84,
+        373.228
+      ],
+      "widget": "SAR7  580",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập loại thu nhập không phải từ công việc cho nguồn thu nhập số 2. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        426.24,
+        259.448,
+        496.08,
+        275.288
+      ],
+      "widget": "SAR7  574",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập số tiền tổng thu nhập từ nguồn thu nhập số 2. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        418.04,
+        319.888,
+        494.36,
+        333.568
+      ],
+      "widget": "SAR7  573",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập nhận được cho nguồn thu nhập số 2. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        417.68,
+        334.008,
+        494,
+        347.688
+      ],
+      "widget": "SAR7  572",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập được nhận của Thành Viên Hộ Gia Đình Số 2. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        499.68,
+        226.47900000000004,
+        576,
+        240.159
+      ],
+      "widget": "SAR7  571",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nếu được tuyển dụng, hãy nhập số giờ làm việc mỗi tháng cho nguồn thu nhập số 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        207.60799999999995,
+        259.92,
+        219.12800000000004
+      ],
+      "widget": "SAR7  584",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập/tên người sử dụng lao động là từ công việc cho nguồn thu nhập số 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        315.108,
+        259.92,
+        326.628
+      ],
+      "widget": "SAR7  581",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 2 không phải từ công việc.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        211.56799999999998,
+        360,
+        223.08799999999997
+      ],
+      "widget": "SAR7  579",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 2 được trả hàng tuần.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        237.48800000000006,
+        361.44,
+        249.00800000000004
+      ],
+      "widget": "SAR7  578",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 2 được trả 2 tuần một lần.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        278.528,
+        361.44,
+        290.048
+      ],
+      "widget": "SAR7  577",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 2 được trả hàng tháng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        318.088,
+        360.72,
+        329.608
+      ],
+      "widget": "SAR7  576",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 2 được trả hai lần một tháng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        357.528,
+        361,
+        369.048
+      ],
+      "widget": "SAR7  575",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 2 được trả vào khung thời gian không được liệt kê ở trên.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        36,
+        413.655,
+        132.48,
+        652.136
+      ],
+      "widget": "SAR7  2013",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình có nguồn thu nhập Số 3 trong 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        420.938,
+        149.76,
+        432.458
+      ],
+      "widget": "SAR7  612",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 3 đã nhận được trong tháng báo cáo.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        465.285,
+        149.04,
+        476.805
+      ],
+      "widget": "SAR7  611",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 3 đã bắt đầu.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        482.745,
+        149.04,
+        494.265
+      ],
+      "widget": "SAR7  610",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 3 đã dừng lại.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        500.205,
+        149.04,
+        511.725
+      ],
+      "widget": "SAR7  609",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 3 đã thay đổi.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        137.4,
+        553.345,
+        240.12,
+        570.625
+      ],
+      "widget": "SAR7  608",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích lý do tại sao thu nhập của nguồn thu nhập số 3 lại thay đổi. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        137.4,
+        577.225,
+        239.04,
+        594.505
+      ],
+      "widget": "SAR7  607",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích lý do tại sao thu nhập của nguồn thu nhập số 3 lại thay đổi. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        136.8,
+        629.385,
+        241.2,
+        643.065
+      ],
+      "widget": "SAR7  606",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập thay đổi.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        247.8,
+        497.985,
+        337.68,
+        515.265
+      ],
+      "widget": "SAR7  604",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tên người sử dụng lao động cho nguồn thu nhập số 3. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        247.8,
+        516.4649999999999,
+        337.68,
+        533.745
+      ],
+      "widget": "SAR7  603",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tên người sử dụng lao động cho nguồn thu nhập số 3. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        246.96,
+        599.965,
+        339.84,
+        615.085
+      ],
+      "widget": "SAR7  601",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập loại thu nhập không phải từ công việc cho nguồn thu nhập số 3. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        426.24,
+        501.305,
+        496.08,
+        517.145
+      ],
+      "widget": "SAR7  595",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập số tiền tổng thu nhập từ nguồn thu nhập số 3. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        418.04,
+        561.745,
+        494.36,
+        575.425
+      ],
+      "widget": "SAR7  594",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập nhận được cho nguồn thu nhập số 3. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        417.68,
+        575.865,
+        494,
+        589.545
+      ],
+      "widget": "SAR7  593",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập được nhận của Thành Viên Hộ Gia Đình Số 3. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        499.68,
+        468.336,
+        576,
+        482.016
+      ],
+      "widget": "SAR7  592",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nếu được tuyển dụng, hãy nhập số giờ làm việc mỗi tháng cho nguồn thu nhập số 3.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        449.465,
+        259.92,
+        460.985
+      ],
+      "widget": "SAR7  605",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập/tên người sử dụng lao động là từ công việc cho nguồn thu nhập số 3.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        556.965,
+        259.92,
+        568.485
+      ],
+      "widget": "SAR7  602",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 3 không phải từ công việc.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        453.425,
+        360,
+        464.945
+      ],
+      "widget": "SAR7  600",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 3 được trả hàng tuần.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        479.345,
+        361.44,
+        490.865
+      ],
+      "widget": "SAR7  599",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 3 được trả 2 tuần một lần.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        520.385,
+        361.44,
+        531.905
+      ],
+      "widget": "SAR7  598",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 3 được trả hàng tháng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        559.9449999999999,
+        360.72,
+        571.465
+      ],
+      "widget": "SAR7  597",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 3 được trả hai lần một tháng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        599.385,
+        361,
+        610.905
+      ],
+      "widget": "SAR7  596",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 3 được trả vào khung thời gian không được liệt kê ở trên.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        36,
+        177.438,
+        132.48,
+        414.839
+      ],
+      "widget": "SAR7  2014",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình có nguồn thu nhập Số 4 trong 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        184.12,
+        149.76,
+        195.64
+      ],
+      "widget": "SAR7  633",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 4 đã nhận được trong tháng báo cáo.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        228.46799999999996,
+        149.04,
+        239.98800000000006
+      ],
+      "widget": "SAR7  632",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 4 đã bắt đầu.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        245.928,
+        149.04,
+        257.448
+      ],
+      "widget": "SAR7  631",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 4 đã dừng lại.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        263.38800000000003,
+        149.04,
+        274.908
+      ],
+      "widget": "SAR7  630",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 4 đã thay đổi.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        135.72,
+        316.528,
+        240.12,
+        333.808
+      ],
+      "widget": "SAR7  629",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích lý do tại sao thu nhập của nguồn thu nhập số 4 lại thay đổi. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        136.2,
+        340.408,
+        239.04,
+        357.688
+      ],
+      "widget": "SAR7  628",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Giải thích lý do tại sao thu nhập của nguồn thu nhập số 4 lại thay đổi. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        136.8,
+        393.568,
+        241.2,
+        407.248
+      ],
+      "widget": "SAR7  627",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập thay đổi.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        247.8,
+        261.168,
+        337.68,
+        278.448
+      ],
+      "widget": "SAR7  625",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tên người sử dụng lao động cho nguồn thu nhập số 4. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        247.8,
+        279.648,
+        337.68,
+        296.928
+      ],
+      "widget": "SAR7  624",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập tên người sử dụng lao động cho nguồn thu nhập số 4. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        246.96,
+        363.148,
+        339.84,
+        378.268
+      ],
+      "widget": "SAR7  622",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập loại thu nhập không phải từ công việc cho nguồn thu nhập số 4. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        425.24,
+        264.48800000000006,
+        495.08,
+        280.328
+      ],
+      "widget": "SAR7  616",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập số tiền tổng thu nhập từ nguồn thu nhập số 4. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        418.04,
+        325.928,
+        494.36,
+        339.608
+      ],
+      "widget": "SAR7  615",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập nhận được cho nguồn thu nhập số 4. Dòng 1 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        417.68,
+        339.048,
+        494,
+        352.728
+      ],
+      "widget": "SAR7  614",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập ngày (tháng/ngày/năm) thu nhập được nhận của Thành Viên Hộ Gia Đình Số 4. Dòng 2 trong 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        499.68,
+        231.519,
+        576,
+        245.19899999999996
+      ],
+      "widget": "SAR7  613",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nếu được tuyển dụng, hãy nhập số giờ làm việc mỗi tháng cho nguồn thu nhập số 4.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        212.64800000000002,
+        259.92,
+        224.168
+      ],
+      "widget": "SAR7  626",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập/tên người sử dụng lao động là từ công việc cho nguồn thu nhập số 4.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        320.148,
+        259.92,
+        331.668
+      ],
+      "widget": "SAR7  623",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu nguồn thu nhập số 4 không phải từ công việc.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        216.60799999999995,
+        360,
+        228.12800000000004
+      ],
+      "widget": "SAR7  621",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 4 được trả hàng tuần.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        242.52800000000002,
+        361.44,
+        254.048
+      ],
+      "widget": "SAR7  620",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 4 được trả 2 tuần một lần.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        283.568,
+        361.44,
+        295.088
+      ],
+      "widget": "SAR7  619",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 4 được trả hàng tháng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        323.128,
+        360.72,
+        334.648
+      ],
+      "widget": "SAR7  618",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 4 được trả hai lần một tháng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        362.568,
+        361,
+        374.088
+      ],
+      "widget": "SAR7  617",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Đánh dấu vào đây nếu thu nhập số 4 được trả vào khung thời gian không được liệt kê ở trên.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "on_strike",
+      "row": 0,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        36,
+        542.34,
+        47.52,
+        553.86
+      ],
+      "widget": "SAR7  292",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Quý vị hoặc bất kỳ thành viên nào trong hộ gia đình có ngừng làm việc vì một cuộc đình công không? Nếu có, hãy đánh dấu vào đây và hoàn thành bên dưới.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "on_strike",
+      "row": 0,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        213.945,
+        542.904,
+        225.465,
+        554.424
+      ],
+      "widget": "SAR7  296",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nếu không, hãy đánh dấu vào đây và chuyển tới phần tiếp theo về nguồn lực hỗ trợ.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "person",
+      "row": 0,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        36,
+        623.52,
+        330.48,
+        651.6
+      ],
+      "widget": "SAR7  295",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành viên hộ gia đình đã ngừng làm việc vì một cuộc đình công.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "gross_before",
+      "row": 0,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        431,
+        629,
+        519.8,
+        644.12
+      ],
+      "widget": "SAR7  294",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập thu nhập trước khi đình công của Thành viên hộ gia đình này. Thoát khỏi chế độ biểu mẫu. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        410.68,
+        46.52,
+        422.2
+      ],
+      "widget": "SAR7  293",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Vui lòng đánh dấu nếu có thành viên nào trong hộ gia đình quý vị có sự thay đổi về nguồn lực hỗ trợ hoặc có thêm nguồn lực hỗ trợ mới kể từ lần báo cáo cuối cùng. nếu có, vui lòng điền vào bên dưới.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        232.006,
+        410.2,
+        243.526,
+        421.72
+      ],
+      "widget": "SAR7  297",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Vui lòng đánh dấu nếu không có thành viên nào trong hộ gia đình quý vị có sự thay đổi về nguồn lực hỗ trợ hoặc có thêm nguồn lực hỗ trợ mới kể từ lần báo cáo cuối cùng.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        40.76,
+        479.832,
+        189.36,
+        715.272
+      ],
+      "widget": "Text Field 13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình để thay đổi nguồn lực hỗ trợ số 1 trong 3.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        196.571,
+        479.832,
+        270.871,
+        715.272
+      ],
+      "widget": "Text Field 14",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "loại nguồn lực hỗ trợ số 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        277.32,
+        654.072,
+        395.4,
+        715.272
+      ],
+      "widget": "Text Field 14a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "giải thích khác",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        412.56,
+        476.952,
+        464.4,
+        715.272
+      ],
+      "widget": "Text Field 15",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập giá trị đô-la của loại nguồn lực hỗ trợ.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        470.16,
+        476.952,
+        573.12,
+        715.272
+      ],
+      "widget": "Text Field 16",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "(Các) Ngày nhận được nguồn lực hỗ trợ; tháng, ngày, năm",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        476.952,
+        289.603,
+        488.472
+      ],
+      "widget": "SAR7  299",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Điều gì đã xảy ra với nguồn lực hỗ trợ của quý vị?; tùy chọn 1 trong 8; Đã mua",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        495.672,
+        289.603,
+        507.192
+      ],
+      "widget": "SAR7  300",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 2 trong 8; Đã bán",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        514.392,
+        289.603,
+        525.912
+      ],
+      "widget": "SAR7  301",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 3 trong 8; đã cho đi",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        533.1120000000001,
+        289.603,
+        544.6320000000001
+      ],
+      "widget": "SAR7  302",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 4 trong 8; được tặng như một món quà",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        566.232,
+        289.603,
+        577.752
+      ],
+      "widget": "SAR7  303",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 5 trong 8; Đã giao dịch",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        584.952,
+        289.603,
+        596.472
+      ],
+      "widget": "SAR7  304",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 6 trong 8; Đã thắng",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        604.392,
+        289.603,
+        615.912
+      ],
+      "widget": "SAR7  305",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 7 trong 8; Mở/đóng (ví dụ: tài khoản ngân hàng)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        638.072,
+        289.603,
+        649.592
+      ],
+      "widget": "SAR7  306",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 8 trong 8; Khác",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.82,
+        150.27200000000005,
+        189.42,
+        385.712
+      ],
+      "widget": "Text Field 17",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nguồn lực hỗ trợ (2 trong 2); Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình để thay đổi nguồn lực hỗ trợ số 2 trong 3.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        196.631,
+        150.27200000000005,
+        270.931,
+        385.712
+      ],
+      "widget": "Text Field 18",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "loại nguồn lực hỗ trợ số 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        278.143,
+        323.792,
+        405.36,
+        384.992
+      ],
+      "widget": "Text Field 18a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "giải thích khác",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        419.76,
+        147.39200000000005,
+        464.46,
+        385.712
+      ],
+      "widget": "Text Field 19",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập giá trị đô-la của loại nguồn lực hỗ trợ.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        470.22,
+        147.39200000000005,
+        573.18,
+        385.712
+      ],
+      "widget": "Text Field 20",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "(Các) Ngày nhận được nguồn lực hỗ trợ; tháng, ngày, năm",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        147.39200000000005,
+        289.663,
+        158.91200000000003
+      ],
+      "widget": "SAR7  307",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Điều gì đã xảy ra với nguồn lực hỗ trợ của quý vị?; tùy chọn 1 trong 8; Đã mua",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        166.11199999999997,
+        289.663,
+        177.63199999999995
+      ],
+      "widget": "SAR7  308",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 2 trong 8; đã bán",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        184.832,
+        289.663,
+        196.35199999999998
+      ],
+      "widget": "SAR7  309",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 3 trong 8; đã cho đi",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        203.55200000000002,
+        289.663,
+        215.072
+      ],
+      "widget": "SAR7  3010",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 4 trong 8; được tặng như một món quà",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        236.67200000000003,
+        289.663,
+        248.192
+      ],
+      "widget": "SAR7  3011",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 5 trong 8; Đã giao dịch",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        255.39200000000005,
+        289.663,
+        266.91200000000003
+      ],
+      "widget": "SAR7  3012",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 6 trong 8; đã thắng",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        274.832,
+        289.663,
+        286.352
+      ],
+      "widget": "SAR7  3013",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 7 trong 8; Mở/đóng (ví dụ: tài khoản ngân hàng)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        307.512,
+        289.663,
+        319.032
+      ],
+      "widget": "SAR7  3014",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 8 trong 8; Khác",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.82,
+        392.592,
+        189.42,
+        628.032
+      ],
+      "widget": "Text Field 21",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập tên, tên lót và họ của Thành Viên Hộ Gia Đình để thay đổi nguồn lực hỗ trợ số 3 trong 3.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        196.631,
+        392.592,
+        270.931,
+        628.032
+      ],
+      "widget": "Text Field 22",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "loại nguồn lực hỗ trợ số 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        278.143,
+        566.683,
+        405,
+        627.883
+      ],
+      "widget": "Text Field 22a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "giải thích khác",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        419.76,
+        389.712,
+        464.46,
+        628.032
+      ],
+      "widget": "Text Field 23",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Nhập giá trị đô-la của loại nguồn lực hỗ trợ.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        470.22,
+        389.712,
+        573.18,
+        628.032
+      ],
+      "widget": "Text Field 24",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "(Các) Ngày nhận được nguồn lực hỗ trợ; tháng, ngày, năm",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        389.712,
+        289.663,
+        401.232
+      ],
+      "widget": "SAR7  3015",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Điều gì đã xảy ra với nguồn lực hỗ trợ của quý vị?; tùy chọn 1 trong 8; Đã mua",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        408.432,
+        289.663,
+        419.952
+      ],
+      "widget": "SAR7  3016",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 2 trong 8; đã bán",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        427.152,
+        289.663,
+        438.672
+      ],
+      "widget": "SAR7  3017",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 3 trong 8; đã cho đi",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        445.872,
+        289.663,
+        457.392
+      ],
+      "widget": "SAR7  3018",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 4 trong 8; được tặng như một món quà",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        478.992,
+        289.663,
+        490.512
+      ],
+      "widget": "SAR7  3019",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 5 trong 8; Đã giao dịch",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        497.712,
+        289.663,
+        509.232
+      ],
+      "widget": "SAR7  3020",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 6 trong 8; đã thắng",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        517.152,
+        289.663,
+        528.672
+      ],
+      "widget": "SAR7  3021",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 7 trong 8; Mở/đóng (ví dụ: tài khoản ngân hàng)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        550.832,
+        289.663,
+        562.352
+      ],
+      "widget": "SAR7  3022",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 8 trong 8; Khác",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "expenses_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        34.4,
+        217.03999999999996,
+        45.92,
+        228.55999999999995
+      ],
+      "widget": "SAR7  3025",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "chi phí của quý vị có thay đổi không?; Nếu có, hãy cho chúng tôi biết chi phí của quý vị bên dưới; Tiến hành câu hỏi tiếp theo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "expenses_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        378.873,
+        217.072,
+        390.393,
+        228.59199999999998
+      ],
+      "widget": "SAR7  3026",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Chi phí của quý vị có thay đổi không? Nếu không, hãy đánh dấu vào đây.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "address_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        34.4,
+        259.84000000000003,
+        45.92,
+        271.36
+      ],
+      "widget": "SAR7  3027",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Địa chỉ của quý vị có thay đổi phải không?; Có Quý vị phải báo cáo chi phí nhà ở và tiện ích mới của mình bên dưới.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "address_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        442.96,
+        259.84000000000003,
+        454.48,
+        271.36
+      ],
+      "widget": "SAR7  3028",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "địa chỉ của quý vị có thay đổi phải không?; Không",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "rent_or_mortgage",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        453.779,
+        278.89099999999996,
+        533.739,
+        293.436
+      ],
+      "widget": "Text Field 25",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tiền thuê nhà hoặc tiền thế chấp hàng tháng của quý vị là bao nhiêu?; nhập số tiền đô-la",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "temporary_housing",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        34.4,
+        339.36,
+        45.92,
+        350.88
+      ],
+      "widget": "SAR7  3029",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nếu quý vị không có địa chỉ nhà cố định, quý vị có chi tiền cho chỗ ở tạm thời như khách sạn/nhà nghỉ, khu cắm trại, nhà trọ hoặc nhà ở chung không?; Vui lòng chọn có hoặc không; Cho tùy chọn có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "temporary_housing",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        104.96,
+        339.36,
+        116.48,
+        350.88
+      ],
+      "widget": "SAR7  3030",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nếu quý vị không có địa chỉ nhà cố định, quý vị có chi tiền cho chỗ ở tạm thời như khách sạn/nhà nghỉ, khu cắm trại, nhà trọ hoặc nhà ở chung không?; Vui lòng chọn có hoặc không; Cho tùy chọn không",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "phone",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        34.4,
+        389.38,
+        45.92,
+        400.9
+      ],
+      "widget": "SAR7  3031",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Quý vị có phải trả bất kỳ chi phí nào sau đây không? Chọn tất cả nếu phù hợp; Tùy chọn 1 trong 9; Điện thoại (bao gồm cả điện thoại di động)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "electric_gas",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        34.4,
+        410.56,
+        45.92,
+        422.08
+      ],
+      "widget": "SAR7  3032",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 2 trong 9; Điện/Ga",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "water",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        34.4,
+        433.907,
+        45.92,
+        444.772
+      ],
+      "widget": "SAR7  3034",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 4 trong 9; nước",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "trash",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        34.4,
+        453.945,
+        45.92,
+        465.465
+      ],
+      "widget": "SAR7  3036",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 6 trong 9; rác",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "mobile_home_lot_rent",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        34.4,
+        475.637,
+        45.2654,
+        487.157
+      ],
+      "widget": "SAR7  3038",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "lựa chọn 8 trong 9; tiền thuê đất cho nhà di động",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "property_tax",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        249.96,
+        410.56,
+        261.48,
+        422.735
+      ],
+      "widget": "SAR7  3033",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tùy chọn 3 trong 9; Thuế tài sản",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "insurance",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        249.96,
+        433.252,
+        261.48,
+        444.772
+      ],
+      "widget": "SAR7  3035",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 5 trong 9; bảo hiểm nhà/người thuê nhà",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "hoa",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        249.96,
+        453.945,
+        261.48,
+        465.465
+      ],
+      "widget": "SAR7  3037",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 7 trong 9; phí hiệp hội chủ nhà (HOA)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "other",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        249.96,
+        475.637,
+        261.48,
+        487.157
+      ],
+      "widget": "SAR7  3039",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tùy chọn 9 trong 9; Khác (vui lòng nêu rõ)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "property_tax_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        348.6,
+        409.048,
+        568.2,
+        423.592
+      ],
+      "widget": "Text Field 26",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập số tiền thuế tài sản",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "insurance_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        439.2,
+        429.74,
+        569.2,
+        444.285
+      ],
+      "widget": "Text Field 27",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "nhập số tiền bảo hiểm nhà/người thuê nhà",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "hoa_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        439.2,
+        451.432,
+        568.2,
+        465.977
+      ],
+      "widget": "Text Field 28",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nhập số tiền phí HOA",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "other_specify",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        400.8,
+        473.125,
+        570.2,
+        487.669
+      ],
+      "widget": "Text Field 29",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "nêu rõ khác; nhập số tiền nếu có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "payer",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        343.2,
+        522.3009999999999,
+        571.2,
+        536.845
+      ],
+      "widget": "Text Field 30",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Chăm sóc người phụ thuộc/trẻ em; ai đã trả tiền cho việc chăm sóc người phụ thuộc/trẻ em?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        463.8,
+        541.9929999999999,
+        571.2,
+        556.538
+      ],
+      "widget": "Text Field 31",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "số tiền đã trả cho việc chăm sóc người phụ thuộc/trẻ em trong tháng báo cáo; nhập số tiền",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "dependents",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        190.8,
+        560.686,
+        570.52,
+        575.23
+      ],
+      "widget": "Text Field 32",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "tên người phụ thuộc/trẻ em",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.child_support",
+      "field": "payer",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        223.2,
+        642.543,
+        571.2,
+        657.087
+      ],
+      "widget": "Text Field 33",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cấp Dưỡng Nuôi Con; Câu hỏi này hỏi xem có thành viên nào trong hộ gia đình quý vị trả tiền cấp dưỡng nuôi con cho người khác không phải là thành viên trong hộ gia đình quý vị hay không; Ai đã trả tiền cấp dưỡng nuôi con?; Nhập Tên",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.child_support",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        72,
+        677.047,
+        187.248,
+        691.592
+      ],
+      "widget": "Text Field 34",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền cấp dưỡng nuôi con mà quý vị hoặc một thành viên trong hộ gia đình đã trả trong tháng báo cáo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.medical",
+      "field": "payer",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        160.8,
+        160.27999999999997,
+        569.52,
+        174.82500000000005
+      ],
+      "widget": "Text Field 35",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "ai đã trả chi phí y tế?; Nhập tên",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.medical",
+      "field": "amount",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        318,
+        184.03999999999996,
+        569.52,
+        198.58500000000004
+      ],
+      "widget": "Text Field 36",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền đã trả cho chi phí y tế trong tháng báo cáo; nhập số tiền",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "has_winnings",
+      "row": 0,
+      "page": 11,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        507.56,
+        46.52,
+        519.0799999999999
+      ],
+      "widget": "SAR7  3044",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có thành viên nào trong hộ gia đình quý vị thắng tiền từ cờ bạc hoặc chơi xổ số trong sáu tháng qua không?; Vui lòng đánh dấu nếu có và điền vào bên dưới.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "has_winnings",
+      "row": 0,
+      "page": 11,
+      "kind": "checkbox",
+      "rect": [
+        228.246,
+        507.332,
+        239.766,
+        518.852
+      ],
+      "widget": "SAR7  3045",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Vui lòng đánh dấu nếu không. Chuyển đến câu hỏi tiếp theo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Có"
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "person",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        38.3714,
+        568.04,
+        281.36,
+        593.165
+      ],
+      "widget": "Text Field 37",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tên thành viên hộ gia đình (tên, tên lót, họ)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "date",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        285.84,
+        568.04,
+        448.56,
+        593.165
+      ],
+      "widget": "Text Field 38",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "ngày trúng thưởng; tháng, ngày, năm",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "amount",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        465.84,
+        568.04,
+        572.749,
+        593.165
+      ],
+      "widget": "Text Field 39",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "nhập số tiền thắng",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    }
+  ],
+  "protectedRegions": [
+    {
+      "page": 1,
+      "rect": [
+        17.5179,
+        88.34000000000003,
+        27.9829,
+        97.59500000000003
+      ],
+      "reason": "not-yet-supported: SAR7  1"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.576,
+        166.46400000000006,
+        48.096,
+        177.98400000000004
+      ],
+      "reason": "manual-only: SAR7  19"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.855,
+        185.65200000000004,
+        48.375,
+        197.17200000000003
+      ],
+      "reason": "manual-only: SAR7  20"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.72,
+        204.55200000000002,
+        48.24,
+        216.072
+      ],
+      "reason": "manual-only: SAR7  21"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        349.38,
+        47.52,
+        360.9
+      ],
+      "reason": "manual-only: SAR7  22"
+    },
+    {
+      "page": 2,
+      "rect": [
+        223.08,
+        349.38,
+        234.6,
+        360.9
+      ],
+      "reason": "manual-only: SAR7  23"
+    },
+    {
+      "page": 2,
+      "rect": [
+        269.06,
+        403.26,
+        575.5,
+        430.62
+      ],
+      "reason": "manual-only: SAR7  25"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        403.48,
+        267.84,
+        430.84
+      ],
+      "reason": "manual-only: SAR7  24"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        503.4,
+        47.52,
+        514.9200000000001
+      ],
+      "reason": "manual-only: SAR7  26"
+    },
+    {
+      "page": 2,
+      "rect": [
+        223,
+        503.52,
+        234.52,
+        515.04
+      ],
+      "reason": "manual-only: SAR7  27"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        557.2,
+        267.84,
+        584.56
+      ],
+      "reason": "manual-only: SAR7  28"
+    },
+    {
+      "page": 2,
+      "rect": [
+        269.56,
+        557.2,
+        576,
+        584.56
+      ],
+      "reason": "manual-only: SAR7  29"
+    },
+    {
+      "page": 3,
+      "rect": [
+        36,
+        618.4,
+        47.52,
+        629.92
+      ],
+      "reason": "manual-only: SAR7  52"
+    },
+    {
+      "page": 3,
+      "rect": [
+        97.92,
+        618.76,
+        109.44,
+        630.28
+      ],
+      "reason": "manual-only: SAR7  53"
+    },
+    {
+      "page": 3,
+      "rect": [
+        430.172,
+        638.961,
+        441.692,
+        650.481
+      ],
+      "reason": "manual-only: SAR7  520"
+    },
+    {
+      "page": 3,
+      "rect": [
+        36.8686,
+        700.0188,
+        48.3886,
+        711.5388
+      ],
+      "reason": "manual-only: SAR7  56"
+    },
+    {
+      "page": 3,
+      "rect": [
+        98.0686,
+        700.0188,
+        109.589,
+        711.5388
+      ],
+      "reason": "manual-only: SAR7  57"
+    },
+    {
+      "page": 7,
+      "rect": [
+        36,
+        448.92,
+        47.52,
+        460.44
+      ],
+      "reason": "manual-only: SAR7  290"
+    },
+    {
+      "page": 7,
+      "rect": [
+        215.775,
+        450.66,
+        227.295,
+        462.18
+      ],
+      "reason": "manual-only: SAR7  517"
+    },
+    {
+      "page": 9,
+      "rect": [
+        35.06,
+        675.48,
+        46.58,
+        687
+      ],
+      "reason": "manual-only: SAR7  3023"
+    },
+    {
+      "page": 9,
+      "rect": [
+        216.874,
+        675.605,
+        228.395,
+        687.125
+      ],
+      "reason": "manual-only: SAR7  3024"
+    },
+    {
+      "page": 10,
+      "rect": [
+        14.0605,
+        259.32899999999995,
+        25.5805,
+        270.84900000000005
+      ],
+      "reason": "not-yet-supported: Text Field 41"
+    },
+    {
+      "page": 10,
+      "rect": [
+        232.246,
+        716.3945,
+        243.766,
+        727.9145
+      ],
+      "reason": "manual-only: SAR7  3041"
+    },
+    {
+      "page": 10,
+      "rect": [
+        34.4,
+        716.8199999999999,
+        45.92,
+        728.34
+      ],
+      "reason": "manual-only: SAR7  3040"
+    },
+    {
+      "page": 11,
+      "rect": [
+        35,
+        233.08000000000004,
+        46.52,
+        244.60000000000002
+      ],
+      "reason": "manual-only: SAR7  3042"
+    },
+    {
+      "page": 11,
+      "rect": [
+        216.934,
+        234,
+        228.454,
+        245.51999999999998
+      ],
+      "reason": "manual-only: SAR7  3043"
+    },
+    {
+      "page": 11,
+      "rect": [
+        35.3714,
+        636.76,
+        46.8914,
+        648.28
+      ],
+      "reason": "manual-only: SAR7  3046"
+    },
+    {
+      "page": 11,
+      "rect": [
+        217.359,
+        637.517,
+        228.879,
+        649.037
+      ],
+      "reason": "manual-only: SAR7  3047"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        260.44399999999996,
+        47.52,
+        271.96400000000006
+      ],
+      "reason": "manual-only: SAR7  482"
+    },
+    {
+      "page": 12,
+      "rect": [
+        288,
+        271.84400000000005,
+        572.84,
+        286.244
+      ],
+      "reason": "manual-only: SAR7  522"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        298.244,
+        47.52,
+        309.764
+      ],
+      "reason": "manual-only: SAR7  483"
+    },
+    {
+      "page": 12,
+      "rect": [
+        150.2,
+        309.699,
+        422.473,
+        324.099
+      ],
+      "reason": "manual-only: SAR7  523"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        334.724,
+        47.52,
+        346.244
+      ],
+      "reason": "manual-only: SAR7  484"
+    },
+    {
+      "page": 12,
+      "rect": [
+        150.2,
+        346.939,
+        422.162,
+        361.339
+      ],
+      "reason": "manual-only: SAR7  524"
+    },
+    {
+      "page": 12,
+      "rect": [
+        419.76,
+        370.794,
+        576,
+        385.194
+      ],
+      "reason": "manual-only: SAR7  525"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        373.404,
+        47.52,
+        384.924
+      ],
+      "reason": "manual-only: SAR7  485"
+    },
+    {
+      "page": 12,
+      "rect": [
+        439.44,
+        394.014,
+        576,
+        408.414
+      ],
+      "reason": "manual-only: SAR7  526"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        396.444,
+        47.52,
+        407.964
+      ],
+      "reason": "manual-only: SAR7  486"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        419.484,
+        47.52,
+        431.004
+      ],
+      "reason": "manual-only: SAR7  487"
+    },
+    {
+      "page": 12,
+      "rect": [
+        149.2,
+        432.369,
+        420.152,
+        446.769
+      ],
+      "reason": "manual-only: SAR7  527"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        457.964,
+        47.52,
+        469.484
+      ],
+      "reason": "manual-only: SAR7  488"
+    },
+    {
+      "page": 12,
+      "rect": [
+        182.4,
+        469.444,
+        454.43499999999995,
+        483.844
+      ],
+      "reason": "manual-only: SAR7  528"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        495.724,
+        47.52,
+        507.244
+      ],
+      "reason": "manual-only: SAR7  489"
+    },
+    {
+      "page": 12,
+      "rect": [
+        149.2,
+        521.4390000000001,
+        421.152,
+        535.8389999999999
+      ],
+      "reason": "manual-only: SAR7  529"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        547.644,
+        47.52,
+        559.164
+      ],
+      "reason": "manual-only: SAR7  490"
+    },
+    {
+      "page": 12,
+      "rect": [
+        277.581,
+        559.703,
+        549.333,
+        574.1030000000001
+      ],
+      "reason": "manual-only: SAR7  530"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        585.164,
+        47.8914,
+        596.684
+      ],
+      "reason": "manual-only: SAR7  489a 2"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        622.684,
+        47.8914,
+        634.204
+      ],
+      "reason": "manual-only: SAR7  489b 2"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        660.204,
+        47.8914,
+        671.724
+      ],
+      "reason": "manual-only: SAR7  489c 2"
+    },
+    {
+      "page": 12,
+      "rect": [
+        235.006,
+        714.0033,
+        246.526,
+        725.5233000000001
+      ],
+      "reason": "manual-only: SAR7  521"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        714.6441,
+        47.52,
+        726.1641
+      ],
+      "reason": "manual-only: SAR7  491"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        171.10000000000002,
+        47.52,
+        182.62
+      ],
+      "reason": "manual-only: SAR7  492"
+    },
+    {
+      "page": 13,
+      "rect": [
+        251.56,
+        171.92399999999998,
+        263.08,
+        183.44399999999996
+      ],
+      "reason": "manual-only: SAR7  519"
+    },
+    {
+      "page": 13,
+      "rect": [
+        347.76,
+        233.08000000000004,
+        457.2,
+        284.92
+      ],
+      "reason": "manual-only: SAR7  497"
+    },
+    {
+      "page": 13,
+      "rect": [
+        457.56,
+        233.08000000000004,
+        576,
+        284.92
+      ],
+      "reason": "manual-only: SAR7  498"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        234.51999999999998,
+        212.4,
+        286.36
+      ],
+      "reason": "manual-only: SAR7  494"
+    },
+    {
+      "page": 13,
+      "rect": [
+        216.72,
+        237.39999999999998,
+        228.24,
+        248.91999999999996
+      ],
+      "reason": "manual-only: SAR7  495"
+    },
+    {
+      "page": 13,
+      "rect": [
+        216.72,
+        254.67999999999995,
+        228.24,
+        266.20000000000005
+      ],
+      "reason": "manual-only: SAR7  496"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        371.56,
+        47.52,
+        383.08
+      ],
+      "reason": "manual-only: SAR7  499"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        407.64,
+        47.52,
+        419.16
+      ],
+      "reason": "manual-only: SAR7  500"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        468.28,
+        47.52,
+        479.8
+      ],
+      "reason": "manual-only: SAR7  501"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        504.36,
+        47.52,
+        515.88
+      ],
+      "reason": "manual-only: SAR7  502"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        539,
+        47.52,
+        550.52
+      ],
+      "reason": "manual-only: SAR7  503"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        573.64,
+        47.52,
+        585.16
+      ],
+      "reason": "manual-only: SAR7  504"
+    },
+    {
+      "page": 13,
+      "rect": [
+        246.24,
+        603.7,
+        576,
+        620.98
+      ],
+      "reason": "manual-only: SAR7  506"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        608.28,
+        47.52,
+        619.8
+      ],
+      "reason": "manual-only: SAR7  505"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        653,
+        47.52,
+        664.52
+      ],
+      "reason": "manual-only: SAR7  507"
+    },
+    {
+      "page": 13,
+      "rect": [
+        231.224,
+        653,
+        242.744,
+        664.52
+      ],
+      "reason": "manual-only: SAR7  508"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.3714,
+        714,
+        576,
+        736.32
+      ],
+      "reason": "manual-only: SAR7  509"
+    },
+    {
+      "page": 14,
+      "rect": [
+        70.68,
+        465,
+        368.76,
+        496.68
+      ],
+      "reason": "manual-only: Signature Field 1"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36,
+        476.8,
+        65.235,
+        494.08
+      ],
+      "reason": "not-yet-supported: SAR7  510"
+    },
+    {
+      "page": 14,
+      "rect": [
+        434.445,
+        489.84,
+        576,
+        509.4
+      ],
+      "reason": "manual-only: SAR7  511"
+    },
+    {
+      "page": 14,
+      "rect": [
+        71.84,
+        543.0740000000001,
+        369.9200000000001,
+        568.2
+      ],
+      "reason": "manual-only: Signature Field 2"
+    },
+    {
+      "page": 14,
+      "rect": [
+        38.16,
+        549.12,
+        67.395,
+        566.4
+      ],
+      "reason": "not-yet-supported: SAR7  512"
+    },
+    {
+      "page": 14,
+      "rect": [
+        435,
+        549.24,
+        574.56,
+        568.8
+      ],
+      "reason": "manual-only: SAR7  513"
+    },
+    {
+      "page": 14,
+      "rect": [
+        71.4,
+        605.594,
+        369.48,
+        630.72
+      ],
+      "reason": "manual-only: Signature Field 3"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36,
+        611.16,
+        65.235,
+        628.44
+      ],
+      "reason": "not-yet-supported: SAR7  514"
+    },
+    {
+      "page": 14,
+      "rect": [
+        434.4,
+        611.16,
+        574.56,
+        630.72
+      ],
+      "reason": "manual-only: SAR7  515"
+    }
+  ],
+  "coordinateContract": "one-based pages, unrotated top-left PDF points; browser converts from bottom-left MediaBox",
+  "coverageComplete": false,
+  "continuation": "Unsupported overflow is reported for manual completion; no extra pages are silently copied.",
+  "language": "vi",
+  "languageName": "Vietnamese",
+  "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Vietnamese/SAR_7B_Vietnamese.pdf",
+  "translationOf": "d2bfc272399e15a9fbd445c0ea829f3aa6ad16bfbb8ed1265e3fea95cadee342"
+}

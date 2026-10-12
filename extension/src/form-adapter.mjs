@@ -5,6 +5,10 @@ import {renewalChanges,datedSpan,monthName} from './renewal.mjs';
 export const FORMS={cf285:'CalFresh',ccfrm604:'Medi-Cal',cf37:'CalFresh',sar7b:'CalFresh'};
 export const FORM_NOUN={cf285:'application',ccfrm604:'application',cf37:'recertification',sar7b:'periodic report'};
 export const FORM_CODE={cf285:'CF285',ccfrm604:'CCFRM604',cf37:'CF 37',sar7b:'SAR 7'};
+// The official editions each form can be filled on. The translated ones are the state's own PDFs, each with its own
+// map in forms/maps; forms/registry.json records where each came from. English is always first.
+export const FORM_LANGUAGES={cf285:['en','es','zh-Hant','vi'],ccfrm604:['en'],cf37:['en'],sar7b:['en','es','zh-Hant','vi']};
+export const FORM_LANGUAGE_NAME={en:'English',es:'Español','zh-Hant':'繁體中文',vi:'Tiếng Việt'};
 export function emptyAnswers(formId){if(!FORMS[formId])throw Error('Unknown official form');return {schemaVersion:'1.0',formId,revision:1,groups:[],answers:[],exportAuthorized:false};}
 export function reviseAnswer(data,{groupId,row,field,status,value,sourceIds=[],sourceRefs=[]}){
  const prior=data.answers.find(a=>a.groupId===groupId&&a.row===row&&a.field===field);

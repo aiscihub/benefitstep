@@ -1,12 +1,14 @@
 import {getPdfEngine} from '../shared/browser/files.mjs';
-import {FORMS} from './form-adapter.mjs';
+import {FORMS,FORM_LANGUAGES} from './form-adapter.mjs';
 const assets=new Map();
-export async function loadFormAssets(id){
- if(!Object.hasOwn(FORMS,id))throw Error('Unknown form');
- if(!assets.has(id))assets.set(id,(async()=>{
+export async function loadFormAssets(id,language='en'){
+ if(!Object.hasOwn(FORMS,id)||!FORM_LANGUAGES[id].includes(language))throw Error('Unknown form');
+ // A translated edition has its own template and map; the question inventory is shared with the English form.
+ const stem=language==='en'?id:`${id}.${language}`;
+ if(!assets.has(stem))assets.set(stem,(async()=>{
   const read=async(p,json=true)=>{const r=await fetch(new URL(p,import.meta.url));if(!r.ok)throw Error('Packaged form asset missing');return json?r.json():new Uint8Array(await r.arrayBuffer());};
-  const [inventory,map,template,fontBytes]=await Promise.all([read(`../forms/inventory/${id}.json`),read(`../forms/maps/${id}.json`),read(`../forms/templates/${id}.pdf`,false),read('../vendor/pdf-writer/NotoSans-Regular.ttf',false)]);return {inventory,map,template,fontBytes};
- })().catch(e=>{assets.delete(id);throw e;}));return assets.get(id);
+  const [inventory,map,template,fontBytes]=await Promise.all([read(`../forms/inventory/${id}.json`),read(`../forms/maps/${stem}.json`),read(`../forms/templates/${stem}.pdf`,false),read('../vendor/pdf-writer/NotoSans-Regular.ttf',false)]);return {inventory,map,template,fontBytes};
+ })().catch(e=>{assets.delete(stem);throw e;}));return assets.get(stem);
 }
 export function renderInWorker(payload,signal){return new Promise((resolve,reject)=>{
  const worker=new Worker(new URL('./form-worker.mjs',import.meta.url),{type:'module'});

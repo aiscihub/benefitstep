@@ -38,3 +38,4 @@
 .bs-classification p{overflow-wrap:anywhere}
 .bs-demo-note{padding:12px;background:#fff4d9;border-radius:8px}
 @media(max-width:650px){.bs-processing ol{grid-template-columns:1fr}}
+.form-language-choice{margin-top:16px;width:100%;max-width:340px;font-weight:600}.form-language-note{display:block;margin-top:6px;color:var(--muted,#5b6b63);max-width:560px}

@@ -1,5 +1,6 @@
 import {PDFDocument,PDFName,PDFDict,PDFArray,PDFTextField,PDFCheckBox,PDFDropdown,PDFRadioGroup,PDFOptionList,PDFSignature,rgb,defaultTextFieldAppearanceProvider} from '../vendor/pdf-writer/pdf-lib.mjs';
 import fontkit from '../vendor/pdf-writer/fontkit.mjs';
+import './pdf-decrypted-strings.mjs';
 import {prepareForm} from '../engine/dist/forms.js';
 import {stableStringify} from '../engine/dist/engine.js';
 import {sha256} from '../shared/core/crypto.mjs';
@@ -114,5 +115,5 @@ export async function renderOfficialForm({template,inventory,map,answers,fontByt
  if(mode==='draft')for(const page of pages)page.drawText(answers.demoFixture?'FICTIONAL DEMO - DO NOT SUBMIT':'UNSIGNED DRAFT - REVIEW ALL ANSWERS AND COMPLETE MISSING ITEMS',{x:16,y:page.getHeight()-12,size:8,font,color:rgb(.45,.15,0)});
  doc.setTitle(mode==='developer'?'FICTIONAL TEST ONLY — '+inventory.id:inventory.title+' — unsigned draft');
  check();const bytes=await doc.save({updateFieldAppearances:false});check();
- return {bytes,report:{formId:inventory.id,templateSha256:map.templateSha256,outputSha256:await sha256(bytes),pageCount:pages.length,applicationRevision:answers.revision,mode,fictionalDemo:answers.demoFixture===true,written,missing:problems,manualActions:plan.manualActions,removedActions,signatureApplied:false,submitted:false,status:problems.length||!map.coverageComplete?'partial_unsigned_draft':'unsigned_draft_for_manual_review',independentlyValidated:releasedMap(map)}};
+ return {bytes,report:{formId:inventory.id,formLanguage:map.language??'en',templateSha256:map.templateSha256,outputSha256:await sha256(bytes),pageCount:pages.length,applicationRevision:answers.revision,mode,fictionalDemo:answers.demoFixture===true,written,missing:problems,manualActions:plan.manualActions,removedActions,signatureApplied:false,submitted:false,status:problems.length||!map.coverageComplete?'partial_unsigned_draft':'unsigned_draft_for_manual_review',independentlyValidated:releasedMap(map)}};
 }

@@ -1,0 +1,5809 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "sar7b",
+  "edition": "12/23",
+  "templateSha256": "2b8616db46078aded7444a2a6f16623378f4a2416d876bc4d125d1bc0a556cb0",
+  "expectedPageCount": 14,
+  "geometry": [
+    {
+      "page": 1,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 2,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 3,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 4,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 5,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 6,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 7,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 8,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 9,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 10,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 11,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 12,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 13,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 14,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewers": [],
+    "visualValidation": false
+  },
+  "bindings": [
+    {
+      "groupId": "sar.header",
+      "field": "household_name",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        182.16,
+        82.84500000000003,
+        332.991,
+        98.68499999999995
+      ],
+      "widget": "SAR7  11",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭名稱",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "street",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        182.16,
+        106.95500000000004,
+        332.991,
+        122.79499999999996
+      ],
+      "widget": "SAR7  12",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "街道地址",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "city",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        182.16,
+        129.87699999999995,
+        332.991,
+        145.71699999999998
+      ],
+      "widget": "SAR7  13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "城市/鎮",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "zip",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        182.16,
+        153.75,
+        332.991,
+        169.59000000000003
+      ],
+      "widget": "SAR7  16",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "郵遞區號。退出表格模式。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "date",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        445.305,
+        83.90999999999997,
+        570.216,
+        99.75
+      ],
+      "widget": "SAR7  17",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "日期",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "case_name",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        445.2,
+        107.21000000000004,
+        570.111,
+        123.04999999999995
+      ],
+      "widget": "SAR7  18",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "個案名稱",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "case_number",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        446.01,
+        129.47500000000002,
+        570.921,
+        145.31500000000005
+      ],
+      "widget": "SAR7  34",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "個案編號",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "submit_month",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        474.48,
+        229.37699999999995,
+        562.671,
+        245.21699999999998
+      ],
+      "widget": "SAR7  35",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "為了能夠繼續準時收到您的福利，請在 5 日 或之前提交此表格。請輸入您的遞交月份；退出表格模式。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "report_month",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        360.12,
+        357.375,
+        453.72,
+        373.215
+      ],
+      "widget": "SAR7  10",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入報告月份。退出表格模式。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "street",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        36.72,
+        168.81500000000005,
+        422.64,
+        187.53499999999997
+      ],
+      "widget": "SAR7  37",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "更新住家地址 - 輸入街道地址",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "apartment",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        425.52,
+        169.89499999999998,
+        575.851,
+        188.615
+      ],
+      "widget": "SAR7  38",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "更新住家地址 - 公寓號碼",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "city_state_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        37.0053,
+        201.135,
+        575.851,
+        219.85500000000002
+      ],
+      "widget": "SAR7  40",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "更新住家地址 - 輸入城市、州份和郵遞區號",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "homeless",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        237.21500000000003,
+        48.24,
+        248.735
+      ],
+      "widget": "SAR7  39",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果您現時無家可歸，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "street",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        36.72,
+        280.335,
+        422.64,
+        299.055
+      ],
+      "widget": "SAR7  41",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "更新郵寄地址 - 實際或郵政信箱 (若有別於住家地址) 。輸入街道地址",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "apartment",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        425.669,
+        280.335,
+        576,
+        299.055
+      ],
+      "widget": "SAR7  48",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "更新郵寄地址 - 公寓號碼",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "city_state_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        37.1539,
+        309.6,
+        576,
+        328.32
+      ],
+      "widget": "SAR7  42",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "更新郵寄地址 - 輸入城市、州份和郵遞區號",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "general_delivery_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        199.725,
+        467.325,
+        343.725,
+        479.565
+      ],
+      "widget": "SAR7  47",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入您會收到郵件的郵局的郵遞區號。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "keep_same",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        353.055,
+        48.24,
+        364.575
+      ],
+      "widget": "SAR7  43",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果您希望將您當前的郵寄地址保持不變，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        396.255,
+        48.24,
+        407.775
+      ],
+      "widget": "SAR7  44",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若您現時無家可歸，勾選以下 3 個選項之 1 項 - 選項 1 - 我有郵寄地址並已將地址加了在上面",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "I have a mailing address and have added it above",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        417.855,
+        48.24,
+        429.375
+      ],
+      "widget": "SAR7  45",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "選項 2 - 我希望使用縣福利部門的郵寄地址 (注意：您需要聯絡您的縣辦公室作此安排。) ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Use the County Welfare Department mailing address",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36,
+        454.575,
+        47.52,
+        466.095
+      ],
+      "widget": "SAR7  46",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "選項 3 - 我希望使用存局後領服務。在隨後字段寫上郵局的郵遞區號。 (注意：請確定在您的郵遞區號的郵局接受存局後領。您需要聯絡郵局作此安排。)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Use General Delivery",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "home_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        71.64,
+        536.575,
+        422.64,
+        552.415
+      ],
+      "widget": "SAR7  49",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "更新電話號碼 - 輸入住家區號和電話號碼",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "cell_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        71.64,
+        553.135,
+        422.64,
+        568.975
+      ],
+      "widget": "SAR7  50",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入手機區號和電話號碼",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "other_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        71.64,
+        572.575,
+        422.64,
+        588.415
+      ],
+      "widget": "SAR7  51",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入其他區號和電話號碼",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "email",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        88.1926,
+        657.488,
+        440.99299999999994,
+        673.328
+      ],
+      "widget": "SAR7  55",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "更新電子郵件地址 - 輸入電子郵件地址",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "has_change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        180.66899999999998,
+        46.52,
+        192.18899999999996
+      ],
+      "widget": "SAR7  124a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "報告及或更新。家庭成員： 自您上一次報告之後，是否有任何人遷入或遷離您的家或者您是否有搬去與別人同住？ (例如：新生兒童、有人遷入或遷出您的家、您收養了一個孩子、有人開始或停止與您一起購買或預備食物等等。); 選擇是；若果是，請填寫下表。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "has_change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        161.97,
+        181.41999999999996,
+        173.49,
+        192.94000000000005
+      ],
+      "widget": "SAR7  124a 2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "報告及或更新。家庭成員： 自您上一次報告之後，是否有任何人遷入或遷離您的家或者您是否有搬去與別人同住？ (例如：新生兒童、有人遷入或遷出您的家、您收養了一個孩子、有人開始或停止與您一起購買或預備食物等等。); 選擇否。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "name",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        36,
+        275.414,
+        144,
+        410.054
+      ],
+      "widget": "SAR7  122",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入家庭成員的名字、中間名和姓氏。2 之 #1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_birth",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        144,
+        274.69399999999996,
+        227.52,
+        409.334
+      ],
+      "widget": "SAR7  123",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入家庭成員 #1 的出生日期 (月、日、年) ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "relationship",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        228.24,
+        274.69399999999996,
+        322.56,
+        409.334
+      ],
+      "widget": "SAR7  124",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入家庭成員 #1 與您的關係",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "other_change",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        380.97,
+        317.611,
+        464.49,
+        332.011
+      ],
+      "widget": "SAR7  130",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "列出您家庭所發生的變化類型",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        363.165,
+        338.816,
+        454.365,
+        353.216
+      ],
+      "widget": "SAR7  131",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "對變化作出說明。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain_more",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        326.055,
+        356.556,
+        458.535,
+        366.636
+      ],
+      "widget": "SAR7  132",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "對變化作出說明。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_change",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        328.26,
+        391.831,
+        411.495,
+        406.231
+      ],
+      "widget": "SAR7  135",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入變更日期 (月月/日日/年年年年)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        278.226,
+        339.12,
+        289.746
+      ],
+      "widget": "SAR7  125",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #1 - 若家庭人數在過去 6 個月有改變，勾選此處。6 個可選項之 1 - 家庭成員 # 1 已遷入",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved In",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        416.6,
+        278.80100000000004,
+        428.12,
+        290.321
+      ],
+      "widget": "SAR7  127",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #1 - 勾選此處選擇可選項 2 - 在過去 6個 月家庭成員生了小孩並且目前住在您家",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Birth",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        291.546,
+        339.12,
+        303.066
+      ],
+      "widget": "SAR7  126",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #1 - 勾選此處選擇可選項 3 - 家庭成員 # 1 在過去 6 個月已遷離您家",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved Out",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        416.48,
+        292.321,
+        428,
+        303.841
+      ],
+      "widget": "SAR7  128",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #1 - 勾選此處選擇可選項 4 -住在您家的家庭成員在過去 6個 月已死亡",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Death",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        326.96,
+        306.786,
+        338.48,
+        318.306
+      ],
+      "widget": "SAR7  298",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #1 - 勾選此處選擇可選項 5 - 家庭成員 # 1 在過去 6 個月暫時不在您家",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Temporary absence",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.32,
+        319.546,
+        338.84,
+        331.066
+      ],
+      "widget": "SAR7  129",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #1 - 勾選此處選擇可選項 6 - 在過去 6個 月您的家庭人數因其他原因 (未有列出) 而改變",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        483.68,
+        336.286,
+        495.2,
+        347.806
+      ],
+      "widget": "SAR7  133",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果是，您定期和家庭成員# 1 一起購買和預備食物，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        531.24,
+        336.862,
+        542.76,
+        348.382
+      ],
+      "widget": "SAR7  134",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果您並非定期和家庭成員# 1 一起購買和預備食物，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "name",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        36,
+        410.774,
+        144,
+        545.414
+      ],
+      "widget": "SAR7  136",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入家庭成員的名字、中間名和姓氏。2 之 #2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_birth",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        144,
+        410.054,
+        227.52,
+        544.694
+      ],
+      "widget": "SAR7  137",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入家庭成員 #2 的出生日期 (月、日、年) ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "relationship",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        228.24,
+        410.054,
+        322.56,
+        544.694
+      ],
+      "widget": "SAR7  138",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入家庭成員 #2 與您的關係",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "other_change",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        380.175,
+        452.206,
+        463.695,
+        466.606
+      ],
+      "widget": "SAR7  144",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "列出您家庭所發生的變化類型",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        363.49,
+        474.631,
+        453.33,
+        489.031
+      ],
+      "widget": "SAR7  145",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "對變化作出說明。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain_more",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        326.625,
+        490.32,
+        459.105,
+        502.076
+      ],
+      "widget": "SAR7  146",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "對變化作出說明。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_change",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        328.26,
+        527.9159999999999,
+        411.72,
+        542.316
+      ],
+      "widget": "SAR7  160",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入變更日期 (月月/日日/年年年年)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        414.306,
+        339.12,
+        425.826
+      ],
+      "widget": "SAR7  139",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #2 - 若家庭人數在過去 6 個月有改變，勾選此處。6 個可選項之 1 - 家庭成員 # 2 已遷入",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved In",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        417.6,
+        414.881,
+        429.12,
+        426.401
+      ],
+      "widget": "SAR7  141",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #2 - 勾選此處選擇可選項 2 - 在過去 6 個 月家庭成員生了小孩並且目前住在您家",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Birth",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        427.626,
+        339.12,
+        439.146
+      ],
+      "widget": "SAR7  140",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #2 - 勾選此處選擇可選項 3 - 家庭成員 # 2 在過去 6 個月已遷離您家",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved Out",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        416.48,
+        427.401,
+        428,
+        438.921
+      ],
+      "widget": "SAR7  142",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #2 - 勾選此處選擇可選項 4 -住在您家的家庭成員在過去 6 個 月已死亡",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Death",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.96,
+        442.146,
+        339.48,
+        453.666
+      ],
+      "widget": "SAR7  516",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #2 - 勾選此處選擇可選項 5 - 家庭成員 # 2 在過去 6 個月暫時不在您家",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Temporary absence",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        455.106,
+        339.12,
+        466.626
+      ],
+      "widget": "SAR7  143",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員 #2 - 勾選此處選擇可選項 6 - 在過去 6個 月您的家庭人數因其他原因 (未有列出) 而改變",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        483.4,
+        473.366,
+        494.92,
+        484.886
+      ],
+      "widget": "SAR7  147",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果是，您定期和家庭成員# 2 一起購買和預備食物，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        529.96,
+        472.942,
+        541.48,
+        484.462
+      ],
+      "widget": "SAR7  148",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果您並非定期和家庭成員# 2 一起購買和預備食物，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "has_income",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        246.22900000000004,
+        46.52,
+        257.749
+      ],
+      "widget": "SAR7  569a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "在您的報告月份，您家庭中是否有任何人獲得賺取或非賺取收入？或是否有任何人預計在未來 6 個月內會有賺取或非賺取收入改變？(例如：有人開始、停止或更換了工作；社會安全保障金或失業金改變了；彩票獎金的分期款項；及/或家庭已經開始或停止獲得免費的住房或水電煤供應或以工作換取住房或水電煤供應)。選擇是；若果是，請填寫下面。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "has_income",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        162,
+        246.22900000000004,
+        173.52,
+        257.749
+      ],
+      "widget": "SAR7  569a 2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "在您的報告月份，您家庭中是否有任何人獲得賺取或非賺取收入？或是否有任何人預計在未來 6 個月內會有賺取或非賺取收入改變？(例如：有人開始、停止或更換了工作；社會安全保障金或失業金改變了；彩票獎金的分期款項；及/或家庭已經開始或停止獲得免費的住房或水電煤供應或以工作換取住房或水電煤供應)。選擇否。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "unearned_increased",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        301.669,
+        46.52,
+        313.189
+      ],
+      "widget": "SAR7  569a 3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "僅適用於加州補充營養援助計劃, 您所有家庭成員的總非賺取收入是否在您的報告月份內有增加？選擇是；若果是，請填寫下面。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "unearned_increased",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        161.59,
+        301.884,
+        173.11,
+        313.404
+      ],
+      "widget": "SAR7  569a 4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "僅適用於加州補充營養援助計劃, 您所有家庭成員的總非賺取收入是否在您的報告月份內有增加？選擇否。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        36,
+        449.078,
+        132.48,
+        686.479
+      ],
+      "widget": "SAR7  2011",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入收入來源 4 之 #1 的家庭成員名字、中間名和姓氏。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        469.952,
+        149.76,
+        481.472
+      ],
+      "widget": "SAR7  570",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #1 在報告月份內收到，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        501.1,
+        149.04,
+        512.62
+      ],
+      "widget": "SAR7  569",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #1 已經開始，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        518.56,
+        149.04,
+        530.0799999999999
+      ],
+      "widget": "SAR7  568",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #1 已經結束，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        536.02,
+        149.04,
+        547.54
+      ],
+      "widget": "SAR7  567",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #1 有改變，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        136.095,
+        575.34,
+        240.495,
+        592.62
+      ],
+      "widget": "SAR7  566",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "解釋收入來源 #1 改變的原因。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        134.925,
+        598.98,
+        239.325,
+        616.26
+      ],
+      "widget": "SAR7  565",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "解釋收入來源 #1 改變的原因。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        136.8,
+        650.09,
+        241.2,
+        663.77
+      ],
+      "widget": "SAR7  564",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入 #1 變更日期  (月月/日日/年年年年)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        247.455,
+        534.735,
+        340.335,
+        549.79
+      ],
+      "widget": "SAR7  562",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #1 的雇主名稱。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        244.8,
+        554.1800000000001,
+        337.68,
+        571.46
+      ],
+      "widget": "SAR7  561",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #1 的雇主名稱。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        246.675,
+        624.96,
+        339.555,
+        637.58
+      ],
+      "widget": "SAR7  559",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #1 非來自工作的收入種類。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        426.405,
+        529.2,
+        496.245,
+        543.03
+      ],
+      "widget": "SAR7  553",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入來自收入來源 #1 的總收入總數金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        418.23,
+        588.885,
+        494.55,
+        602.565
+      ],
+      "widget": "SAR7  552",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收到收入來源 #1 的收入的日期 (月月/日日/年年年年)。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        418.725,
+        604.29,
+        495.045,
+        617.97
+      ],
+      "widget": "SAR7  551",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收到收入來源 #1 的收入的日期 (月月/日日/年年年年)。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        499.68,
+        503.159,
+        576,
+        516.8389999999999
+      ],
+      "widget": "SAR7  550",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果受僱，輸入收入來源 #1 的每月工作時數。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        496.18,
+        259.92,
+        507.7
+      ],
+      "widget": "SAR7  563",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #1 的收入來源/雇主名稱是來自工作，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        595.6800000000001,
+        259.92,
+        607.2
+      ],
+      "widget": "SAR7  560",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #1 並非來自工作，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        495.24,
+        360,
+        506.76
+      ],
+      "widget": "SAR7  558",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #1 每星期支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        521.1600000000001,
+        361.44,
+        532.6800000000001
+      ],
+      "widget": "SAR7  557",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #1 每兩星期支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        562.2,
+        361.44,
+        573.72
+      ],
+      "widget": "SAR7  556",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #1 每月支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        588.56,
+        360.72,
+        600.08
+      ],
+      "widget": "SAR7  555",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #1 每月支付兩次，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        628,
+        361,
+        639.52
+      ],
+      "widget": "SAR7  554",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #1 的支付頻率在上面沒有列出，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        36,
+        162.99800000000005,
+        132.48,
+        401.479
+      ],
+      "widget": "SAR7  2012",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入收入來源 4 之 #2 的家庭成員名字、中間名和姓氏。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        184.47199999999998,
+        149.76,
+        195.99199999999996
+      ],
+      "widget": "SAR7  591",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #2 在報告月份內收到，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        215.62,
+        149.04,
+        227.14
+      ],
+      "widget": "SAR7  590",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #2 已經開始，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        233.08000000000004,
+        149.04,
+        244.60000000000002
+      ],
+      "widget": "SAR7  589",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #2 已經結束，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        250.53999999999996,
+        149.04,
+        262.05999999999995
+      ],
+      "widget": "SAR7  588",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #2 有改變，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        136.035,
+        290.34,
+        240.435,
+        307.62
+      ],
+      "widget": "SAR7  587",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "解釋收入來源 #2 改變的原因。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        134.7,
+        313.38,
+        239.1,
+        330.66
+      ],
+      "widget": "SAR7  586",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "解釋收入來源 #2 改變的原因。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        137.55,
+        365.12,
+        241.95,
+        378.8
+      ],
+      "widget": "SAR7  585",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入 #2 變更日期  (月月/日日/年年年年)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        246.27,
+        247.885,
+        339.15,
+        263.725
+      ],
+      "widget": "SAR7  583",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #2 的雇主名稱。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        250.08,
+        267.485,
+        342.96,
+        284.765
+      ],
+      "widget": "SAR7  582",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #2 的雇主名稱。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        246.75,
+        339.12,
+        339.63,
+        352.01
+      ],
+      "widget": "SAR7  580",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #2 非來自工作的收入種類。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        426.84,
+        244.08000000000004,
+        496.68,
+        258.15
+      ],
+      "widget": "SAR7  574",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入來自收入來源 #2 的總收入總數金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        417.93,
+        304.065,
+        494.25,
+        317.745
+      ],
+      "widget": "SAR7  573",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收到收入來源 #2 的收入的日期 (月月/日日/年年年年)。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        418.545,
+        318.345,
+        494.865,
+        332.025
+      ],
+      "widget": "SAR7  572",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收到收入來源 #2 的收入的日期 (月月/日日/年年年年)。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        499.68,
+        217.67899999999997,
+        576,
+        231.35900000000004
+      ],
+      "widget": "SAR7  571",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果受僱，輸入收入來源 #2 的每月工作時數。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        210.70000000000005,
+        259.92,
+        222.22000000000003
+      ],
+      "widget": "SAR7  584",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #2 的收入來源/雇主名稱是來自工作，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        309.2,
+        259.92,
+        320.72
+      ],
+      "widget": "SAR7  581",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #2 並非來自工作，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        209.76,
+        360,
+        221.27999999999997
+      ],
+      "widget": "SAR7  579",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #2 每星期支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        235.67999999999995,
+        361.44,
+        247.20000000000005
+      ],
+      "widget": "SAR7  578",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #2 每兩星期支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        276.72,
+        361.44,
+        288.24
+      ],
+      "widget": "SAR7  577",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #2 每月支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        303.08,
+        360.72,
+        314.6
+      ],
+      "widget": "SAR7  576",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #2 每月支付兩次，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        342.52,
+        361,
+        354.04
+      ],
+      "widget": "SAR7  575",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #2 的支付頻率在上面沒有列出，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        38.07,
+        404.885,
+        134.55,
+        643.366
+      ],
+      "widget": "SAR7  2013",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入收入來源 4 之 #3 的家庭成員名字、中間名和姓氏。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        426.33,
+        149.76,
+        437.85
+      ],
+      "widget": "SAR7  612",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #3 在報告月份內收到，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        457.477,
+        149.04,
+        468.997
+      ],
+      "widget": "SAR7  611",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #3 已經開始，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        474.937,
+        149.04,
+        486.457
+      ],
+      "widget": "SAR7  610",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #3 已經結束，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        492.397,
+        149.04,
+        503.917
+      ],
+      "widget": "SAR7  609",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #3 有改變，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        136.995,
+        532.077,
+        241.395,
+        549.357
+      ],
+      "widget": "SAR7  608",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "解釋收入來源 #3 改變的原因。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        137.265,
+        555.027,
+        241.665,
+        572.307
+      ],
+      "widget": "SAR7  607",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "解釋收入來源 #3 改變的原因。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        136.8,
+        608.177,
+        241.2,
+        621.857
+      ],
+      "widget": "SAR7  606",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入 #3 變更日期  (月月/日日/年年年年)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        248.055,
+        491.04,
+        340.935,
+        505.282
+      ],
+      "widget": "SAR7  604",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #3 的雇主名稱。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        248.46,
+        509.867,
+        341.34,
+        527.1469999999999
+      ],
+      "widget": "SAR7  603",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #3 的雇主名稱。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        247.335,
+        581.76,
+        340.215,
+        594.572
+      ],
+      "widget": "SAR7  601",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #3 非來自工作的收入種類。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        426.93,
+        486.72,
+        496.77,
+        500.397
+      ],
+      "widget": "SAR7  595",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入來自收入來源 #3 的總收入總數金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        418.08,
+        545.442,
+        494.4,
+        559.1220000000001
+      ],
+      "widget": "SAR7  594",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收到收入來源 #3 的收入的日期 (月月/日日/年年年年)。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        417.585,
+        560.232,
+        493.905,
+        573.912
+      ],
+      "widget": "SAR7  593",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收到收入來源 #3 的收入的日期 (月月/日日/年年年年)。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        499.68,
+        459.536,
+        576,
+        473.216
+      ],
+      "widget": "SAR7  592",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果受僱，輸入收入來源 #3 的每月工作時數。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        452.557,
+        259.92,
+        464.077
+      ],
+      "widget": "SAR7  605",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #3 的收入來源/雇主名稱是來自工作，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        551.057,
+        259.92,
+        562.577
+      ],
+      "widget": "SAR7  602",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #3 並非來自工作，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        451.617,
+        360,
+        463.137
+      ],
+      "widget": "SAR7  600",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #3 每星期支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        477.537,
+        361.44,
+        489.057
+      ],
+      "widget": "SAR7  599",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #3 每兩星期支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        518.577,
+        361.44,
+        530.097
+      ],
+      "widget": "SAR7  598",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #3 每月支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        544.937,
+        360.72,
+        556.457
+      ],
+      "widget": "SAR7  597",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #3 每月支付兩次，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        584.377,
+        361,
+        595.8969999999999
+      ],
+      "widget": "SAR7  596",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #3 的支付頻率在上面沒有列出，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        36,
+        168.63800000000003,
+        132.48,
+        406.039
+      ],
+      "widget": "SAR7  2014",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入收入來源 4 之 #4 的家庭成員名字、中間名和姓氏。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        189.51199999999994,
+        149.76,
+        201.03200000000004
+      ],
+      "widget": "SAR7  633",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #4 在報告月份內收到，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        220.65999999999997,
+        149.04,
+        232.17999999999995
+      ],
+      "widget": "SAR7  632",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #4 已經開始，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        238.12,
+        149.04,
+        249.64
+      ],
+      "widget": "SAR7  631",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #4 已經結束，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        255.58000000000004,
+        149.04,
+        267.1
+      ],
+      "widget": "SAR7  630",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果收入來源 #4 有改變，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        135.51,
+        294.975,
+        239.91,
+        312.255
+      ],
+      "widget": "SAR7  629",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "解釋收入來源 #4 改變的原因。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        135.9,
+        318.765,
+        240.3,
+        336.045
+      ],
+      "widget": "SAR7  628",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "解釋收入來源 #4 改變的原因。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        136.8,
+        371.36,
+        241.2,
+        385.04
+      ],
+      "widget": "SAR7  627",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入 #4 變更日期  (月月/日日/年年年年)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        246.975,
+        254.15999999999997,
+        339.855,
+        269.18499999999995
+      ],
+      "widget": "SAR7  625",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #4 的雇主名稱。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        247.485,
+        273.47,
+        340.365,
+        290.75
+      ],
+      "widget": "SAR7  624",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #4 的雇主名稱。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        246.72,
+        344.88,
+        339.6,
+        358.055
+      ],
+      "widget": "SAR7  622",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收入來源 #4 非來自工作的收入種類。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        426.51,
+        248.39999999999998,
+        496.35,
+        262.79999999999995
+      ],
+      "widget": "SAR7  616",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入來自收入來源 #4 的總收入總數金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        418.125,
+        309.555,
+        494.445,
+        323.235
+      ],
+      "widget": "SAR7  615",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收到收入來源 #4 的收入的日期 (月月/日日/年年年年)。兩行之第一行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        417.93,
+        323.895,
+        494.25,
+        337.575
+      ],
+      "widget": "SAR7  614",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入收到收入來源 #4 的收入的日期 (月月/日日/年年年年)。兩行之第二行。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        499.68,
+        222.71900000000005,
+        576,
+        236.399
+      ],
+      "widget": "SAR7  613",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果受僱，輸入收入來源 #4 的每月工作時數。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        215.74,
+        259.92,
+        227.26
+      ],
+      "widget": "SAR7  626",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #4 的收入來源/雇主名稱是來自工作，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        314.24,
+        259.92,
+        325.76
+      ],
+      "widget": "SAR7  623",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #4 並非來自工作，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        214.79999999999995,
+        360,
+        226.32000000000005
+      ],
+      "widget": "SAR7  621",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #4 每星期支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        240.72000000000003,
+        361.44,
+        252.24
+      ],
+      "widget": "SAR7  620",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #4 每兩星期支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        281.76,
+        361.44,
+        293.28
+      ],
+      "widget": "SAR7  619",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #4 每月支付，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        308.12,
+        360.72,
+        319.64
+      ],
+      "widget": "SAR7  618",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #4 每月支付兩次，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        347.56,
+        361,
+        359.08
+      ],
+      "widget": "SAR7  617",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若收入來源 #4 的支付頻率在上面沒有列出，勾選此處。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "on_strike",
+      "row": 0,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        36,
+        519.7950000000001,
+        47.52,
+        531.315
+      ],
+      "widget": "SAR7  292",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您或您家庭的任何成員是否因罷工而停止了工作？如果是，勾選此處並完成下面的字段。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "on_strike",
+      "row": 0,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        178.92,
+        519.4590000000001,
+        190.44,
+        532.002
+      ],
+      "widget": "SAR7  296",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果否，勾選此處並跳至資源部分。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "person",
+      "row": 0,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        36.3714,
+        624.3720000000001,
+        330.851,
+        652.452
+      ],
+      "widget": "SAR7  295",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入因罷工而停止工作的家庭成員的名字、中間名和姓氏。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "gross_before",
+      "row": 0,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        392.91,
+        629.239,
+        485.79,
+        644.359
+      ],
+      "widget": "SAR7  294",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入此家庭成員在罷工前的總收入。退出表格模式。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        34.47,
+        323.864,
+        45.99,
+        335.384
+      ],
+      "widget": "SAR7  293",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果自您上一次報告之後，您有任何家庭成員的資源有改變或擁有了新的資源，請勾選。若果是，請填寫下面。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        161.685,
+        323.909,
+        173.205,
+        335.429
+      ],
+      "widget": "SAR7  297",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果自您上一次報告之後，您沒有任何家庭成員的資源有改變或擁有了新的資源，請勾選否。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        40.76,
+        424.287,
+        189.36,
+        659.727
+      ],
+      "widget": "Text Field 13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入資源改變的家庭成員名字、中間名、姓氏。3 項資源之 #1。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        196.571,
+        424.287,
+        270.871,
+        659.727
+      ],
+      "widget": "Text Field 14",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "資源 #1 的資源種類。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        277.32,
+        584.982,
+        395.4,
+        646.182
+      ],
+      "widget": "Text Field 14a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "對其他作出說明",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        413.805,
+        422.337,
+        465.645,
+        660.657
+      ],
+      "widget": "Text Field 15",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入資源的價值。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        470.25,
+        423.597,
+        573.21,
+        661.917
+      ],
+      "widget": "Text Field 16",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "收到資源的日期 (月月/日日/年年年年)。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        422.262,
+        289.603,
+        433.782
+      ],
+      "widget": "SAR7  299",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您的資源發生了什麼事？以下 8 個選項勾選  1 項。選項 1 - 買入",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        440.982,
+        289.603,
+        452.502
+      ],
+      "widget": "SAR7  300",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 2 - 賣出",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        459.702,
+        289.603,
+        471.222
+      ],
+      "widget": "SAR7  3048",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 3 - 送贈",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        478.422,
+        289.603,
+        489.942
+      ],
+      "widget": "SAR7  302",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 4 - 作為禮物收到",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        497.142,
+        289.603,
+        508.662
+      ],
+      "widget": "SAR7  303",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "以下 8 個可選項之 5 - 交易",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        515.8620000000001,
+        289.603,
+        527.3820000000001
+      ],
+      "widget": "SAR7  304",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "以下 8 個可選項之 6 - 贏取",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        535.302,
+        289.603,
+        546.822
+      ],
+      "widget": "SAR7  305",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 7 - 開立/關閉 (例如：銀行戶口)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        568.982,
+        289.603,
+        580.502
+      ],
+      "widget": "SAR7  306",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 8 - 其他",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.82,
+        140.88699999999994,
+        189.42,
+        376.327
+      ],
+      "widget": "Text Field 17",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "資源 (2 之 2); 輸入資源改變的家庭成員名字、中間名、姓氏。3 項資源之 #2。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        196.631,
+        140.88699999999994,
+        270.931,
+        376.327
+      ],
+      "widget": "Text Field 18",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "資源 #2 的資源種類。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        278.143,
+        300.862,
+        405.36,
+        362.062
+      ],
+      "widget": "Text Field 18a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "對其他作出說明",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        419.76,
+        138.86199999999997,
+        464.46,
+        377.182
+      ],
+      "widget": "Text Field 19",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入資源的價值。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        470.22,
+        138.00699999999995,
+        573.18,
+        376.327
+      ],
+      "widget": "Text Field 20",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "收到資源的日期 (月月/日日/年年年年)。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        138.86199999999997,
+        289.663,
+        150.38199999999995
+      ],
+      "widget": "SAR7  307",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您的資源發生了什麼事？以下 8 個選項勾選  1 項。選項 1 - 買入",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        157.582,
+        289.663,
+        169.10199999999998
+      ],
+      "widget": "SAR7  308",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 2 - 賣出",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        176.30200000000002,
+        289.663,
+        187.822
+      ],
+      "widget": "SAR7  309",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 3 - 送贈",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        195.02200000000005,
+        289.663,
+        206.54200000000003
+      ],
+      "widget": "SAR7  3010",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 4 - 作為禮物收到",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        213.74199999999996,
+        289.663,
+        225.26199999999994
+      ],
+      "widget": "SAR7  3011",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "以下 8 個可選項之 5 - 交易",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        232.462,
+        289.663,
+        243.98199999999997
+      ],
+      "widget": "SAR7  3012",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "以下 8 個可選項之 6 - 贏取",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        251.90200000000004,
+        289.663,
+        263.422
+      ],
+      "widget": "SAR7  3013",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 7 - 開立/關閉 (例如：銀行戶口)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        284.582,
+        289.663,
+        296.102
+      ],
+      "widget": "SAR7  3014",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 8 - 其他",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.82,
+        383.207,
+        189.42,
+        618.6469999999999
+      ],
+      "widget": "Text Field 21",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入資源改變的家庭成員名字、中間名、姓氏。3 項資源之 #3。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        196.631,
+        383.207,
+        270.931,
+        618.6469999999999
+      ],
+      "widget": "Text Field 22",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "資源 #3 的資源種類。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        278.64,
+        547.92,
+        405.497,
+        609.12
+      ],
+      "widget": "Text Field 22a 2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "對其他作出說明",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        419.76,
+        381.182,
+        464.46,
+        619.502
+      ],
+      "widget": "Text Field 23",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "輸入資源的價值。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        470.22,
+        380.327,
+        573.18,
+        618.6469999999999
+      ],
+      "widget": "Text Field 24",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "收到資源的日期 (月月/日日/年年年年)。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        381.182,
+        289.663,
+        392.702
+      ],
+      "widget": "SAR7  3015",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您的資源發生了什麼事？以下 8 個選項勾選  1 項。選項 1 - 買入",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        399.902,
+        289.663,
+        411.422
+      ],
+      "widget": "SAR7  3016",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 2 - 賣出",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        418.622,
+        289.663,
+        430.142
+      ],
+      "widget": "SAR7  3017",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 3 - 送贈",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        437.342,
+        289.663,
+        448.862
+      ],
+      "widget": "SAR7  3018",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 4 - 作為禮物收到",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        456.062,
+        289.663,
+        467.582
+      ],
+      "widget": "SAR7  3019",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "以下 8 個可選項之 5 - 交易",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        474.782,
+        289.663,
+        486.302
+      ],
+      "widget": "SAR7  3020",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "以下 8 個可選項之 6 - 贏取",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        494.222,
+        289.663,
+        505.742
+      ],
+      "widget": "SAR7  3021",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 7 - 開立/關閉 (例如：銀行戶口)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        527.902,
+        289.663,
+        539.422
+      ],
+      "widget": "SAR7  3022",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8 個可選項之 8 - 其他",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "expenses_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        193.30899999999997,
+        46.52,
+        204.82899999999995
+      ],
+      "widget": "SAR7  3025",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果您的支出有改變，勾選此處並在下面告訴我們有關改變。前往下一問題。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "expenses_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        286.56,
+        193.30899999999997,
+        298.08,
+        204.82899999999995
+      ],
+      "widget": "SAR7  3026",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您的支出是否有改變？勾選否。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "address_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        240.10900000000004,
+        46.52,
+        251.62900000000002
+      ],
+      "widget": "SAR7  3027",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您的地址是否有改變？ 是。您必須在下面報告您新的住房和水電煤支出。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "address_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        358.41,
+        240.49900000000002,
+        369.93,
+        252.019
+      ],
+      "widget": "SAR7  3028",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您的地址是否有改變？否。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "rent_or_mortgage",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        237.495,
+        260.044,
+        314.535,
+        274.58900000000006
+      ],
+      "widget": "Text Field 25",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您每月的租金或房貸付款為多少？ 輸入金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "temporary_housing",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        309.229,
+        46.52,
+        320.749
+      ],
+      "widget": "SAR7  3029",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若您沒有永久的住家地址，您是否有臨時住房如酒店/旅館、營地、住宿或共享住房的花費？請選擇是或否。選擇是。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "temporary_housing",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        106.56,
+        309.229,
+        118.08,
+        320.749
+      ],
+      "widget": "SAR7  3030",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "若您沒有永久的住家地址，您是否有臨時住房如酒店/旅館、營地、住宿或共享住房的花費？請選擇是或否。選擇否。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "phone",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        365.249,
+        46.52,
+        376.769
+      ],
+      "widget": "SAR7  3031",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "您支付以下任何費用嗎？勾選所有適用項。9 個可選項之 1 - 電話 (包括手機)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "electric_gas",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        388.429,
+        46.52,
+        399.949
+      ],
+      "widget": "SAR7  3032",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9 個可選項之 2 - 電力/煤氣",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "water",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        413.121,
+        46.52,
+        424.641
+      ],
+      "widget": "SAR7  3034",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9 個可選項之 4 - 水",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "trash",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        435.814,
+        46.52,
+        447.334
+      ],
+      "widget": "SAR7  3036",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9 個可選項之 6 - 垃圾",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "mobile_home_lot_rent",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        459.506,
+        46.52,
+        471.026
+      ],
+      "widget": "SAR7  3038",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9 個可選項之 8 - 流動房屋地塊租金",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "property_tax",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        250.56,
+        388.429,
+        262.08,
+        399.949
+      ],
+      "widget": "SAR7  3033",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9 個可選項之 3 - 房產稅",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "insurance",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        250.56,
+        412.56,
+        262.08,
+        424.08
+      ],
+      "widget": "SAR7  3049",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9 個可選項之 5 - 房屋/承租人保險",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "hoa",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        250.56,
+        435.814,
+        262.08,
+        447.334
+      ],
+      "widget": "SAR7  3037",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9 個可選項之 7 - 屋主協會費用",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "other",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        250.56,
+        459.506,
+        262.08,
+        471.026
+      ],
+      "widget": "SAR7  3039",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9 個可選項之 9 - 其他",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "property_tax_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        332.16,
+        385.627,
+        551.76,
+        400.171
+      ],
+      "widget": "Text Field 26",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入房產稅金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "insurance_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        379.605,
+        409.644,
+        552.585,
+        424.189
+      ],
+      "widget": "Text Field 27",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入房屋/承租人保險金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "hoa_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        406.52,
+        432.576,
+        551.27,
+        447.121
+      ],
+      "widget": "Text Field 28",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入屋主協會費用金額",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "other_specify",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        362.78,
+        455.654,
+        550.64,
+        470.198
+      ],
+      "widget": "Text Field 29",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "請對其他作出具體說明。如果適用，輸入金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "payer",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        236.64,
+        508.545,
+        568.56,
+        523.0899999999999
+      ],
+      "widget": "Text Field 30",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "受撫養人照護/托兒服務 - 受撫養人照護/托兒服務由誰人支付？",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        331.2,
+        526.887,
+        569.925,
+        541.432
+      ],
+      "widget": "Text Field 31",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入在報告月份所支付的受撫養人照護/托兒服務金額",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "dependents",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        156.24,
+        546.465,
+        569.58,
+        561.009
+      ],
+      "widget": "Text Field 32",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "受撫養人/孩子姓名。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.child_support",
+      "field": "payer",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        172.275,
+        612.437,
+        570.995,
+        626.981
+      ],
+      "widget": "Text Field 33",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "子女撫養費; 此問題是問您家中是否有人向不住在您家中的人支付子女撫養費。誰人曾支付子女撫養費？輸入姓名。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.child_support",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        337.335,
+        632.471,
+        573.175,
+        647.015
+      ],
+      "widget": "Text Field 34",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "在報告月份您或家庭成員所支付的子女撫養費金額",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.medical",
+      "field": "payer",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        159.12,
+        144.30399999999997,
+        566.16,
+        158.84900000000005
+      ],
+      "widget": "Text Field 35",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "誰人曾支付醫療費用？輸入姓名。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.medical",
+      "field": "amount",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        254.16,
+        167.85400000000004,
+        566.925,
+        182.399
+      ],
+      "widget": "Text Field 36",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "在報告月份所支付的醫療費用金額; 輸入金額。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "has_winnings",
+      "row": 0,
+      "page": 11,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        490.76,
+        46.52,
+        502.28
+      ],
+      "widget": "SAR7  3044",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "在過去 6 個月內，您家庭中是否有任何人從賭博或彩票中贏取金錢？如果是，勾選此處並完成下面的字段。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "has_winnings",
+      "row": 0,
+      "page": 11,
+      "kind": "checkbox",
+      "rect": [
+        158.734,
+        490.805,
+        170.255,
+        502.325
+      ],
+      "widget": "SAR7  3045",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "如果否，勾選此處並跳至下一問題。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": " "
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "person",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        38.3714,
+        566.04,
+        281.36,
+        591.165
+      ],
+      "widget": "Text Field 37",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "家庭成員的名字、中間名和姓氏。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "date",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        285.84,
+        566.04,
+        448.56,
+        591.165
+      ],
+      "widget": "Text Field 38",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "贏取款項的日期 (月月/日日/年年年年)。",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "amount",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        465.84,
+        566.04,
+        572.749,
+        591.165
+      ],
+      "widget": "Text Field 39",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "輸入贏款金額",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    }
+  ],
+  "protectedRegions": [
+    {
+      "page": 1,
+      "rect": [
+        550.8,
+        55.72000000000003,
+        561.265,
+        64.97500000000002
+      ],
+      "reason": "not-yet-supported: SAR7  1"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.576,
+        156.73299999999995,
+        48.096,
+        168.25300000000004
+      ],
+      "reason": "manual-only: SAR7  19"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.855,
+        177.12099999999998,
+        48.375,
+        188.64099999999996
+      ],
+      "reason": "manual-only: SAR7  20"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.72,
+        197.221,
+        48.24,
+        208.74099999999999
+      ],
+      "reason": "manual-only: SAR7  21"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        313.249,
+        47.52,
+        324.769
+      ],
+      "reason": "manual-only: SAR7  22"
+    },
+    {
+      "page": 2,
+      "rect": [
+        172.08,
+        314.104,
+        183.6,
+        325.624
+      ],
+      "reason": "manual-only: SAR7  23"
+    },
+    {
+      "page": 2,
+      "rect": [
+        269.06,
+        372.26,
+        575.5,
+        399.62
+      ],
+      "reason": "manual-only: SAR7  25"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        372.48,
+        267.84,
+        399.84
+      ],
+      "reason": "manual-only: SAR7  24"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        458.855,
+        47.52,
+        470.375
+      ],
+      "reason": "manual-only: SAR7  26"
+    },
+    {
+      "page": 2,
+      "rect": [
+        172.08,
+        459.631,
+        183.6,
+        471.151
+      ],
+      "reason": "manual-only: SAR7  27"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        508.2,
+        267.84,
+        535.56
+      ],
+      "reason": "manual-only: SAR7  28"
+    },
+    {
+      "page": 2,
+      "rect": [
+        269.56,
+        508.2,
+        576,
+        535.56
+      ],
+      "reason": "manual-only: SAR7  29"
+    },
+    {
+      "page": 3,
+      "rect": [
+        36,
+        616.855,
+        47.52,
+        628.375
+      ],
+      "reason": "manual-only: SAR7  52"
+    },
+    {
+      "page": 3,
+      "rect": [
+        97.92,
+        618.799,
+        109.44,
+        630.319
+      ],
+      "reason": "manual-only: SAR7  53"
+    },
+    {
+      "page": 3,
+      "rect": [
+        340.59,
+        640.061,
+        352.11,
+        651.581
+      ],
+      "reason": "manual-only: SAR7  520"
+    },
+    {
+      "page": 3,
+      "rect": [
+        36.8686,
+        699.674,
+        48.3886,
+        711.194
+      ],
+      "reason": "manual-only: SAR7  56"
+    },
+    {
+      "page": 3,
+      "rect": [
+        98.0686,
+        701.2574,
+        109.589,
+        712.7773
+      ],
+      "reason": "manual-only: SAR7  57"
+    },
+    {
+      "page": 7,
+      "rect": [
+        36,
+        440.775,
+        47.52,
+        452.295
+      ],
+      "reason": "manual-only: SAR7  290"
+    },
+    {
+      "page": 7,
+      "rect": [
+        143.775,
+        441.96,
+        155.295,
+        453.48
+      ],
+      "reason": "manual-only: SAR7  517"
+    },
+    {
+      "page": 9,
+      "rect": [
+        35.06,
+        650.725,
+        46.58,
+        662.245
+      ],
+      "reason": "manual-only: SAR7  3023"
+    },
+    {
+      "page": 9,
+      "rect": [
+        135.085,
+        650.77,
+        146.605,
+        662.29
+      ],
+      "reason": "manual-only: SAR7  3024"
+    },
+    {
+      "page": 10,
+      "rect": [
+        473.76,
+        237.08500000000004,
+        485.28,
+        248.60500000000002
+      ],
+      "reason": "not-yet-supported: Text Field 41"
+    },
+    {
+      "page": 10,
+      "rect": [
+        179.985,
+        673.429,
+        191.505,
+        684.949
+      ],
+      "reason": "manual-only: SAR7  3041"
+    },
+    {
+      "page": 10,
+      "rect": [
+        35,
+        673.789,
+        46.52,
+        685.309
+      ],
+      "reason": "manual-only: SAR7  3040"
+    },
+    {
+      "page": 11,
+      "rect": [
+        35,
+        218.30899999999997,
+        46.52,
+        229.82899999999995
+      ],
+      "reason": "manual-only: SAR7  3042"
+    },
+    {
+      "page": 11,
+      "rect": [
+        135,
+        218.30899999999997,
+        146.52,
+        229.82899999999995
+      ],
+      "reason": "manual-only: SAR7  3043"
+    },
+    {
+      "page": 11,
+      "rect": [
+        35.3714,
+        638.615,
+        46.8914,
+        650.135
+      ],
+      "reason": "manual-only: SAR7  3046"
+    },
+    {
+      "page": 11,
+      "rect": [
+        135.131,
+        639.455,
+        146.651,
+        650.975
+      ],
+      "reason": "manual-only: SAR7  3047"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        236.93499999999995,
+        47.52,
+        248.45500000000004
+      ],
+      "reason": "manual-only: SAR7  481"
+    },
+    {
+      "page": 12,
+      "rect": [
+        139.875,
+        248.39999999999998,
+        414.915,
+        262.79999999999995
+      ],
+      "reason": "manual-only: SAR7  521"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        274.735,
+        47.52,
+        286.255
+      ],
+      "reason": "manual-only: SAR7  482"
+    },
+    {
+      "page": 12,
+      "rect": [
+        143.175,
+        286.065,
+        415.605,
+        300.465
+      ],
+      "reason": "manual-only: SAR7  522"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        311.215,
+        47.52,
+        322.735
+      ],
+      "reason": "manual-only: SAR7  483"
+    },
+    {
+      "page": 12,
+      "rect": [
+        139.575,
+        323.07,
+        414.615,
+        337.47
+      ],
+      "reason": "manual-only: SAR7  523"
+    },
+    {
+      "page": 12,
+      "rect": [
+        273.96,
+        346.335,
+        549,
+        360.735
+      ],
+      "reason": "manual-only: SAR7  524"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        349.895,
+        47.52,
+        361.415
+      ],
+      "reason": "manual-only: SAR7  484"
+    },
+    {
+      "page": 12,
+      "rect": [
+        311.775,
+        369.72,
+        569.7,
+        384.12
+      ],
+      "reason": "manual-only: SAR7  525"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        372.935,
+        47.52,
+        384.455
+      ],
+      "reason": "manual-only: SAR7  485"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        395.975,
+        47.52,
+        407.495
+      ],
+      "reason": "manual-only: SAR7  486"
+    },
+    {
+      "page": 12,
+      "rect": [
+        140.835,
+        408.6,
+        415.875,
+        423
+      ],
+      "reason": "manual-only: SAR7  526"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        434.455,
+        47.52,
+        445.975
+      ],
+      "reason": "manual-only: SAR7  487"
+    },
+    {
+      "page": 12,
+      "rect": [
+        139.875,
+        446.055,
+        414.915,
+        460.455
+      ],
+      "reason": "manual-only: SAR7  527"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        472.215,
+        47.52,
+        483.735
+      ],
+      "reason": "manual-only: SAR7  488"
+    },
+    {
+      "page": 12,
+      "rect": [
+        140.31,
+        483.51,
+        415.35,
+        497.91
+      ],
+      "reason": "manual-only: SAR7  528"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        509.735,
+        47.52,
+        521.255
+      ],
+      "reason": "manual-only: SAR7  489"
+    },
+    {
+      "page": 12,
+      "rect": [
+        139.545,
+        521.19,
+        414.5849999999999,
+        535.5899999999999
+      ],
+      "reason": "manual-only: SAR7  529"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        547.255,
+        47.8914,
+        558.775
+      ],
+      "reason": "manual-only: SAR7  489a"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        570.375,
+        47.8914,
+        581.895
+      ],
+      "reason": "manual-only: SAR7  489b"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        607.895,
+        47.8914,
+        619.415
+      ],
+      "reason": "manual-only: SAR7  489c"
+    },
+    {
+      "page": 12,
+      "rect": [
+        178.35,
+        665.205,
+        189.87,
+        676.725
+      ],
+      "reason": "manual-only: SAR7  518"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        665.335,
+        47.52,
+        676.855
+      ],
+      "reason": "manual-only: SAR7  490"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        156.32899999999995,
+        47.52,
+        167.84900000000005
+      ],
+      "reason": "manual-only: SAR7  492"
+    },
+    {
+      "page": 13,
+      "rect": [
+        178.56,
+        157.15300000000002,
+        190.08,
+        168.673
+      ],
+      "reason": "manual-only: SAR7  519"
+    },
+    {
+      "page": 13,
+      "rect": [
+        347.76,
+        233.93499999999995,
+        457.2,
+        285.775
+      ],
+      "reason": "manual-only: SAR7  497"
+    },
+    {
+      "page": 13,
+      "rect": [
+        457.56,
+        233.93499999999995,
+        576,
+        285.775
+      ],
+      "reason": "manual-only: SAR7  498"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        235.375,
+        212.4,
+        287.215
+      ],
+      "reason": "manual-only: SAR7  494"
+    },
+    {
+      "page": 13,
+      "rect": [
+        216.72,
+        245.24699999999996,
+        228.24,
+        256.76700000000005
+      ],
+      "reason": "manual-only: SAR7  495"
+    },
+    {
+      "page": 13,
+      "rect": [
+        216.72,
+        262.52700000000004,
+        228.24,
+        274.047
+      ],
+      "reason": "manual-only: SAR7  496"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        359.949,
+        48.24,
+        371.469
+      ],
+      "reason": "manual-only: SAR7  499"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        384.429,
+        48.24,
+        395.949
+      ],
+      "reason": "manual-only: SAR7  500"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        436.269,
+        48.24,
+        447.789
+      ],
+      "reason": "manual-only: SAR7  501"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        460.749,
+        48.24,
+        472.269
+      ],
+      "reason": "manual-only: SAR7  502"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        498.189,
+        48.24,
+        509.709
+      ],
+      "reason": "manual-only: SAR7  503"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        521.229,
+        48.24,
+        532.749
+      ],
+      "reason": "manual-only: SAR7  504"
+    },
+    {
+      "page": 13,
+      "rect": [
+        153.15,
+        538.494,
+        528.99,
+        555.774
+      ],
+      "reason": "manual-only: SAR7  506"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        544.269,
+        48.24,
+        555.789
+      ],
+      "reason": "manual-only: SAR7  505"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        591.789,
+        48.24,
+        603.309
+      ],
+      "reason": "manual-only: SAR7  507"
+    },
+    {
+      "page": 13,
+      "rect": [
+        198.45,
+        592.149,
+        209.97,
+        603.669
+      ],
+      "reason": "manual-only: SAR7  508"
+    },
+    {
+      "page": 13,
+      "rect": [
+        38.52,
+        645.021,
+        573.48,
+        675.609
+      ],
+      "reason": "manual-only: SAR7  509"
+    },
+    {
+      "page": 14,
+      "rect": [
+        65.91,
+        424.08,
+        363.99,
+        455.76
+      ],
+      "reason": "manual-only: Signature Field 1"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36,
+        424.8,
+        65.235,
+        442.08
+      ],
+      "reason": "not-yet-supported: SAR7  510"
+    },
+    {
+      "page": 14,
+      "rect": [
+        434.07,
+        435.15,
+        572.025,
+        454.71
+      ],
+      "reason": "manual-only: SAR7  511"
+    },
+    {
+      "page": 14,
+      "rect": [
+        69.705,
+        492.285,
+        367.785,
+        517.4100000000001
+      ],
+      "reason": "manual-only: Signature Field 2"
+    },
+    {
+      "page": 14,
+      "rect": [
+        434.4,
+        497.535,
+        572.355,
+        517.095
+      ],
+      "reason": "manual-only: SAR7  513"
+    },
+    {
+      "page": 14,
+      "rect": [
+        38.16,
+        501.12,
+        67.395,
+        518.4
+      ],
+      "reason": "not-yet-supported: SAR7  512"
+    },
+    {
+      "page": 14,
+      "rect": [
+        68.25,
+        554.01,
+        366.33,
+        579.135
+      ],
+      "reason": "manual-only: Signature Field 3"
+    },
+    {
+      "page": 14,
+      "rect": [
+        434.925,
+        559.53,
+        571.44,
+        579.09
+      ],
+      "reason": "manual-only: SAR7  515"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36,
+        560.16,
+        65.235,
+        577.44
+      ],
+      "reason": "not-yet-supported: SAR7  514"
+    }
+  ],
+  "coordinateContract": "one-based pages, unrotated top-left PDF points; browser converts from bottom-left MediaBox",
+  "coverageComplete": false,
+  "continuation": "Unsupported overflow is reported for manual completion; no extra pages are silently copied.",
+  "language": "zh-Hant",
+  "languageName": "Chinese (Traditional)",
+  "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Chinese/SAR_7B_Chinese.pdf",
+  "translationOf": "d2bfc272399e15a9fbd445c0ea829f3aa6ad16bfbb8ed1265e3fea95cadee342"
+}

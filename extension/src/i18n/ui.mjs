@@ -14,10 +14,10 @@ export function setUiLocale(locale){const parsed=new Intl.Locale(locale);
  else preferences=changeUiLocale(preferences,locale);}
 const CATALOG={'es-US':text=>UI_ES_RENEWAL[text]??UI_TEXT[text],'zh-CN':text=>UI_ZH[text],'zh-TW':text=>UI_ZH_HANT[text],'vi-VN':text=>UI_VI[text]};
 const REVIEW_NOTICE={
- 'es-US':'Vista previa en español: traducciones sin revisión independiente. Algunas explicaciones y los formularios oficiales siguen en inglés. Sus respuestas no se traducen ni cambian.',
- 'zh-CN':'简体中文预览：译文尚未经独立审校。部分详细说明和官方表格仍为英语。您的回答不会被翻译或更改。',
- 'zh-TW':'繁體中文預覽：譯文尚未經獨立審校。部分詳細說明和官方表格仍為英文。您的回答不會被翻譯或更改。',
- 'vi-VN':'Bản xem trước tiếng Việt: bản dịch chưa được thẩm định độc lập. Một số phần giải thích và các mẫu đơn chính thức vẫn bằng tiếng Anh. Câu trả lời của quý vị không bị dịch hay thay đổi.'};
+ 'es-US':'Vista previa en español: traducciones sin revisión independiente. Algunas explicaciones siguen en inglés. Los formularios oficiales se llenan en inglés, salvo que elija otra edición. Sus respuestas no se traducen ni cambian.',
+ 'zh-CN':'简体中文预览：译文尚未经独立审校。部分详细说明仍为英语。官方表格默认以英文版填写，您也可以选择其他语言版本。您的回答不会被翻译或更改。',
+ 'zh-TW':'繁體中文預覽：譯文尚未經獨立審校。部分詳細說明仍為英文。官方表格預設以英文版填寫，您也可以選擇其他語言版本。您的回答不會被翻譯或更改。',
+ 'vi-VN':'Bản xem trước tiếng Việt: bản dịch chưa được thẩm định độc lập. Một số phần giải thích vẫn bằng tiếng Anh. Các mẫu đơn chính thức được điền bằng tiếng Anh, trừ khi quý vị chọn bản khác. Câu trả lời của quý vị không bị dịch hay thay đổi.'};
 // Call only for trusted UI strings. Never pass filenames, original text or answers.
 export function tr(text,params={}){
  const template=CATALOG[preferences.uiLocale]?.(text)??text;

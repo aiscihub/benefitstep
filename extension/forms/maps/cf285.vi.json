@@ -1,0 +1,7443 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "cf285",
+  "edition": "8/21",
+  "templateSha256": "c35c59aec05325e5604305b95cc2871555862292d4a7455699c5fdf1678987c0",
+  "expectedPageCount": 18,
+  "geometry": [
+    {
+      "page": 1,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 2,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 3,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 4,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 5,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 6,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 7,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 8,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 9,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 10,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 11,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 12,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 13,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 14,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 15,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 16,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 17,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 18,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewers": [],
+    "visualValidation": false
+  },
+  "bindings": [
+    {
+      "groupId": "q1.contact",
+      "field": "name",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.08,
+        121.10799999999995,
+        246,
+        140.048
+      ],
+      "widget": "CF 285  4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "TÊN (TÊN, TÊN LÓT, HỌ)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "other_names",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        246.06,
+        119.928,
+        418.32,
+        141.08799999999997
+      ],
+      "widget": "CF 285  5",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "TÊN KHÁC (TÊN TRƯỚC KHI CƯỚI, BIỆT DANH, V.V.)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "home_address",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        41.04,
+        148.84299999999996,
+        313.92,
+        161.346
+      ],
+      "widget": "CF 285  7",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "ĐỊA CHỈ NHÀ HOẶC HƯỚNG DẪN CHỈ ĐƯỜNG ĐẾN NHÀ QUÝ VỊ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "home_city",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        314.52,
+        149.44799999999998,
+        459.48,
+        162.14599999999996
+      ],
+      "widget": "CF 285  8",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "THÀNH PHỐ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "home_state",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        460.04,
+        149.44799999999998,
+        502.52,
+        161.606
+      ],
+      "widget": "CF 285  9",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "TIỂU BANG",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "home_zip",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        504,
+        148.84299999999996,
+        575.28,
+        161.346
+      ],
+      "widget": "CF 285  10",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "MÃ BƯU CHÍNH",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "mailing_address",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.32,
+        171.61300000000006,
+        313.2,
+        184.17100000000005
+      ],
+      "widget": "CF 285  11",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "ĐỊA CHỈ NƠI NHẬN THƯ (NẾU KHÁC VỚI ĐỊA CHỈ TRÊN)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "mailing_city",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        313.56,
+        170.89300000000003,
+        459.96,
+        183.39099999999996
+      ],
+      "widget": "CF 285  12",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "THÀNH PHỐ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "mailing_state",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        460.2,
+        170.76800000000003,
+        502.68,
+        183.41099999999994
+      ],
+      "widget": "CF 285  13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "TIỂU BANG",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "mailing_zip",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        503.28,
+        171.24800000000005,
+        574.92,
+        184.07100000000003
+      ],
+      "widget": "CF 285  14",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "MÃ BƯU CHÍNH",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "written_language",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        278.4,
+        309.341,
+        452.64,
+        320.141
+      ],
+      "widget": "CF 285  22",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Quý vị thích đọc ngôn ngữ nào (nếu không phải tiếng Anh)?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "spoken_language",
+      "row": 0,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        275.44,
+        320.421,
+        446.8,
+        331.221
+      ],
+      "widget": "CF 285  23",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Quý vị thích nói ngôn ngữ nào (nếu không phải tiếng Anh)?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "homeless",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        179.8,
+        281.701,
+        190.6,
+        292.501
+      ],
+      "widget": "CF 285  20",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Quý vị hiện là người vô gia cư? Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q1.contact",
+      "field": "homeless",
+      "row": 0,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        211.52,
+        281.701,
+        222.32,
+        292.501
+      ],
+      "widget": "CF 285  21",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không, thoát khỏi chế độ biểu mẫu.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        99.36,
+        208,
+        247.5,
+        227.08000000000004
+      ],
+      "widget": "CF 285  103",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Họ, tên, chữ cái đầu tên lót Dòng 1 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        306,
+        208.08000000000004,
+        364.5,
+        226.79999999999995
+      ],
+      "widget": "CF 285  105",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Ngày sinh, Dòng 1 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 1,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        100.08,
+        227.51999999999998,
+        248.21999999999997,
+        246.60000000000002
+      ],
+      "widget": "CF 285  1013",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Họ, tên, chữ cái đầu tên lót Dòng 2 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 1,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        306.72,
+        228.24,
+        365.22,
+        246.96000000000004
+      ],
+      "widget": "CF 285  1014",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Ngày sinh, Dòng 2 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "relationship",
+      "row": 1,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        248.4,
+        226.79999999999995,
+        306.72,
+        247.5
+      ],
+      "widget": "CF 285  111",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Người này có quan hệ gì với quý vị? Dòng 2 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 2,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        100.8,
+        247.67999999999995,
+        248.94,
+        266.76
+      ],
+      "widget": "CF 285  1021",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Họ, tên, chữ cái đầu tên lót Dòng 3 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 2,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        307.44,
+        248.39999999999998,
+        365.94,
+        267.12
+      ],
+      "widget": "CF 285  1022",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Ngày sinh, Dòng 3 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "relationship",
+      "row": 2,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        249.12,
+        246.96000000000004,
+        307.44,
+        267.65999999999997
+      ],
+      "widget": "CF 285  112",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Người này có quan hệ gì với quý vị? Dòng 3 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 3,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        100.42,
+        268.12,
+        248.56,
+        287.2
+      ],
+      "widget": "CF 285  1029",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Họ, tên, chữ cái đầu tên lót Dòng 4 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 3,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        307.06,
+        268.84000000000003,
+        365.56,
+        287.56
+      ],
+      "widget": "CF 285  1030",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Ngày sinh, Dòng 4 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "relationship",
+      "row": 3,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        248.74,
+        267.4,
+        307.06,
+        288.1
+      ],
+      "widget": "CF 285  113",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Người này có quan hệ gì với quý vị? Dòng 4 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "name",
+      "row": 4,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        100.52,
+        288,
+        248.65999999999997,
+        307.08
+      ],
+      "widget": "CF 285  1037",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Họ, tên, chữ cái đầu tên lót Dòng 5 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "date_of_birth",
+      "row": 4,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        307.16,
+        288.72,
+        365.66,
+        307.44
+      ],
+      "widget": "CF 285  1038",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Ngày sinh, Dòng 5 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q6a.people",
+      "field": "relationship",
+      "row": 4,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        248.84,
+        287.28,
+        307.16,
+        307.98
+      ],
+      "widget": "CF 285  114",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Người này có quan hệ gì với quý vị? Dòng 5 trên 5",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "person",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        36.72,
+        214.86,
+        149.04,
+        245.10000000000002
+      ],
+      "widget": "CF 285  271",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Người làm việc, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_name_address",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        149.76,
+        214.24,
+        243,
+        244.48000000000002
+      ],
+      "widget": "CF 285  272",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tên và địa chỉ của sở làm, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_phone",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        244.08,
+        214.76,
+        313.92,
+        242.84000000000003
+      ],
+      "widget": "CF 285  273",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Số điện thoại của sở làm, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hourly_rate",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        319.68,
+        224.24,
+        355.68,
+        235.03999999999996
+      ],
+      "widget": "CF 285  274",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Lương giờ, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hours_week",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        357.12,
+        224.48000000000002,
+        400.32,
+        235.27999999999997
+      ],
+      "widget": "CF 285  275",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số giờ làm việc trung bình mỗi tuần, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "frequency",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        399.6,
+        224.48000000000002,
+        468,
+        235.27999999999997
+      ],
+      "widget": "CF 285  276",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào? \r(Một lần, hàng tuần, hàng tháng, khác), dòng 1 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "gross_received_this_month",
+      "row": 0,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        473.76,
+        223.51999999999998,
+        522.72,
+        234.32000000000005
+      ],
+      "widget": "CF 285  277",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tổng thu nhập kiếm được trong tháng này, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "person",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        36.72,
+        241.332,
+        149.04,
+        271.572
+      ],
+      "widget": "CF 285  280",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Người làm việc, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_name_address",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        149.76,
+        241.97199999999998,
+        243,
+        272.212
+      ],
+      "widget": "CF 285  281",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tên và địa chỉ của sở làm, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_phone",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        244.08,
+        243.49199999999996,
+        313.92,
+        271.572
+      ],
+      "widget": "CF 285  282",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Số điện thoại của sở làm, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hourly_rate",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        319.68,
+        251.88,
+        355.68,
+        262.67999999999995
+      ],
+      "widget": "CF 285  283",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Lương giờ, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hours_week",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        357.12,
+        253.212,
+        400.32,
+        264.01199999999994
+      ],
+      "widget": "CF 285  284",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số giờ làm việc trung bình mỗi tuần, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "frequency",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        399.6,
+        253.212,
+        468,
+        264.01199999999994
+      ],
+      "widget": "CF 285  285",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào? \r(Một lần, hàng tuần, hàng tháng, khác), dòng 2 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "gross_received_this_month",
+      "row": 1,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        473.76,
+        251.15999999999997,
+        522.72,
+        261.96000000000004
+      ],
+      "widget": "CF 285  286",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tổng thu nhập kiếm được trong tháng này, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "person",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        36.72,
+        268.32000000000005,
+        149.04,
+        298.56
+      ],
+      "widget": "CF 285  289",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Người làm việc, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_name_address",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        149.76,
+        267.96000000000004,
+        243,
+        298.2
+      ],
+      "widget": "CF 285  290",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tên và địa chỉ của sở làm, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_phone",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        244.08,
+        269.48,
+        313.92,
+        297.56
+      ],
+      "widget": "CF 285  291",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Số điện thoại của sở làm, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hourly_rate",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        319.68,
+        278.96000000000004,
+        355.68,
+        289.76
+      ],
+      "widget": "CF 285  292",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Lương giờ, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hours_week",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        357.12,
+        279.20000000000005,
+        400.32,
+        290
+      ],
+      "widget": "CF 285  293",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số giờ làm việc trung bình mỗi tuần, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "frequency",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        399.6,
+        279.20000000000005,
+        468,
+        290
+      ],
+      "widget": "CF 285  294",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào? \r(Một lần, hàng tuần, hàng tháng, khác), dòng 3 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "gross_received_this_month",
+      "row": 2,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        473.76,
+        278.24,
+        522.72,
+        289.04
+      ],
+      "widget": "CF 285  295",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tổng thu nhập kiếm được trong tháng này, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "person",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        36.62,
+        295.32,
+        148.94,
+        325.56
+      ],
+      "widget": "CF 285  298",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Người làm việc, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_name_address",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        149.66,
+        295.96,
+        242.9,
+        326.2
+      ],
+      "widget": "CF 285  299",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tên và địa chỉ của sở làm, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "employer_phone",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        243.98,
+        296.48,
+        313.82,
+        324.56
+      ],
+      "widget": "CF 285  300",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Số điện thoại của sở làm, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hourly_rate",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        319.58,
+        305.96,
+        355.58,
+        316.76
+      ],
+      "widget": "CF 285  301",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Lương giờ, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "hours_week",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        357.02,
+        306.2,
+        400.22,
+        317
+      ],
+      "widget": "CF 285  302",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số giờ làm việc trung bình mỗi tuần, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "frequency",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        399.5,
+        306.2,
+        467.9,
+        317
+      ],
+      "widget": "CF 285  303",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào? \r(Một lần, hàng tuần, hàng tháng, khác), dòng 4 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "gross_received_this_month",
+      "row": 3,
+      "page": 13,
+      "kind": "text",
+      "rect": [
+        473.66,
+        305.24,
+        522.62,
+        316.04
+      ],
+      "widget": "CF 285  304",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Tổng thu nhập kiếm được trong tháng này, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "has_income",
+      "row": 0,
+      "page": 13,
+      "kind": "checkbox",
+      "rect": [
+        170.88,
+        70.32000000000005,
+        181.68,
+        81.12
+      ],
+      "widget": "CF 285  269",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "8. Thu nhập từ lương bổng Quý vị hoặc bất cứ người nào mà mua và chuẩn bị thức ăn chung với quý vị hiện đang có thu nhập từ việc làm (thu nhập kiếm được) không? Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q8.earned",
+      "field": "has_income",
+      "row": 0,
+      "page": 13,
+      "kind": "checkbox",
+      "rect": [
+        205,
+        69.91999999999996,
+        215.8,
+        80.72000000000003
+      ],
+      "widget": "CF 285  270",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không, thoát khỏi chế độ biểu mẫu.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q9.care",
+      "field": "care_recipient",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        37.08,
+        137.88,
+        189,
+        158.39999999999998
+      ],
+      "widget": "CF 285  357",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người được chăm sóc?, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "provider_name_address",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        189,
+        138.24,
+        434.16,
+        158.39999999999998
+      ],
+      "widget": "CF 285  358",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người chăm sóc?\r(Tên và địa chỉ của người/tổ chức chăm sóc), dòng 1 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "amount_paid",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        438.48,
+        142.20000000000005,
+        496.44,
+        153
+      ],
+      "widget": "CF 285  359",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền phải trả, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "frequency",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.8,
+        142.60000000000002,
+        576,
+        153.39999999999998
+      ],
+      "widget": "CF 285  360",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào?  \r(Hàng tuần/hàng tháng,\rkhác), dòng 1 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "care_recipient",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        37.08,
+        159.48000000000002,
+        189,
+        180
+      ],
+      "widget": "CF 285  361",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người được chăm sóc?, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "provider_name_address",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        189,
+        159.84000000000003,
+        434.16,
+        180
+      ],
+      "widget": "CF 285  362",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người chăm sóc?\r(Tên và địa chỉ của người/tổ chức chăm sóc), dòng 2 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "amount_paid",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        438.48,
+        163.79999999999995,
+        496.44,
+        174.60000000000002
+      ],
+      "widget": "CF 285  363",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền phải trả, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "frequency",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.8,
+        164.20000000000005,
+        576,
+        175
+      ],
+      "widget": "CF 285  364",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào?  \r(Hàng tuần/hàng tháng,\rkhác), dòng 2 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "care_recipient",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        36.72,
+        181.36,
+        188.64,
+        201.88
+      ],
+      "widget": "CF 285  365",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người được chăm sóc?, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "provider_name_address",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        188.64,
+        181.72000000000003,
+        433.8,
+        201.88
+      ],
+      "widget": "CF 285  366",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người chăm sóc?\r(Tên và địa chỉ của người/tổ chức chăm sóc), dòng 3 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "amount_paid",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        438.12,
+        185.67999999999995,
+        496.08,
+        196.48000000000002
+      ],
+      "widget": "CF 285  367",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền phải trả, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "frequency",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.44,
+        186.08000000000004,
+        575.64,
+        196.88
+      ],
+      "widget": "CF 285  368",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào?  \r(Hàng tuần/hàng tháng,\rkhác), dòng 3 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "care_recipient",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        37.08,
+        201.96000000000004,
+        189,
+        222.48000000000002
+      ],
+      "widget": "CF 285  369",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người được chăm sóc?, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "provider_name_address",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        189,
+        202.32000000000005,
+        434.16,
+        222.48000000000002
+      ],
+      "widget": "CF 285  370",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người chăm sóc?\r(Tên và địa chỉ của người/tổ chức chăm sóc), dòng 4 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "amount_paid",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        438.48,
+        206.27999999999997,
+        496.44,
+        217.08000000000004
+      ],
+      "widget": "CF 285  371",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền phải trả, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "frequency",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.8,
+        206.67999999999995,
+        576,
+        217.48000000000002
+      ],
+      "widget": "CF 285  372",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào?  \r(Hàng tuần/hàng tháng,\rkhác), dòng 4 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "has_income",
+      "row": 0,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        111.57,
+        328.244,
+        122.37,
+        339.044
+      ],
+      "widget": "CF 285  219",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "7.  Thu nhập không từ lương bổng\r Quý vị hoặc bất cứ người nào mà mua và chuẩn bị thức ăn chung với quý vị hiện đang có thu nhập nào không đến từ việc làm (thư nhập không kiếm được) không? Có, Nếu có, vui lòng trả lời câu hỏi này.\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "has_income",
+      "row": 0,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        140.463,
+        328.244,
+        151.263,
+        339.044
+      ],
+      "widget": "CF 285  220",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không, Nếu không, sang câu 8.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "person",
+      "row": 0,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        36.72,
+        533.52,
+        165.6,
+        565.2
+      ],
+      "widget": "CF 285  243",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Người nhận (các) khoản tiền này, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "source",
+      "row": 0,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        166.5,
+        533.52,
+        310.32,
+        565.92
+      ],
+      "widget": "CF 285  244",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Từ đâu? dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "amount",
+      "row": 0,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        313.92,
+        543.72,
+        383.04,
+        554.52
+      ],
+      "widget": "CF 285  245",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Bao nhiêu tiền? dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "frequency",
+      "row": 0,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        383.76,
+        544.16,
+        483.84,
+        554.96
+      ],
+      "widget": "CF 285  246",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Chu kỳ lãnh tiền? (Một lần, hàng tuần, hàng tháng hoặc khác) dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 0,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        497.6,
+        544.33,
+        508.4,
+        555.13
+      ],
+      "widget": "CF 285  247",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thu nhập này theo dự kiến sẽ tiếp tục? (Đánh dấu Có hoặc Không)  Có, Dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 0,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        525,
+        544.33,
+        535.8,
+        555.13
+      ],
+      "widget": "CF 285  248",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không Dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "person",
+      "row": 1,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        36.72,
+        565.92,
+        165.6,
+        597.6
+      ],
+      "widget": "CF 285  249",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Người nhận (các) khoản tiền này, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "source",
+      "row": 1,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        166.5,
+        565.92,
+        310.32,
+        598.3199999999999
+      ],
+      "widget": "CF 285  250",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Từ đâu? dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "amount",
+      "row": 1,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        313.92,
+        576.12,
+        383.04,
+        586.92
+      ],
+      "widget": "CF 285  251",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Bao nhiêu tiền? dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "frequency",
+      "row": 1,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        383.76,
+        576.56,
+        483.84,
+        587.36
+      ],
+      "widget": "CF 285  252",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Chu kỳ lãnh tiền? (Một lần, hàng tuần, hàng tháng hoặc khác) dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 1,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        499.6,
+        576.73,
+        510.4,
+        587.53
+      ],
+      "widget": "CF 285  253",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thu nhập này theo dự kiến sẽ tiếp tục? (Đánh dấu Có hoặc Không)  Có, Dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 1,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        524,
+        576.73,
+        534.8,
+        587.53
+      ],
+      "widget": "CF 285  254",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không Dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "person",
+      "row": 2,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        36.72,
+        599.04,
+        165.6,
+        630.72
+      ],
+      "widget": "CF 285  255",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Người nhận (các) khoản tiền này, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "source",
+      "row": 2,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        166.5,
+        599.04,
+        310.32,
+        631.44
+      ],
+      "widget": "CF 285  256",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Từ đâu? dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "amount",
+      "row": 2,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        313.92,
+        609.24,
+        383.04,
+        620.04
+      ],
+      "widget": "CF 285  257",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Bao nhiêu tiền? dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "frequency",
+      "row": 2,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        383.76,
+        609.6800000000001,
+        483.84,
+        620.48
+      ],
+      "widget": "CF 285  258",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Chu kỳ lãnh tiền? (Một lần, hàng tuần, hàng tháng hoặc khác) dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 2,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        499.6,
+        609.85,
+        510.4,
+        620.65
+      ],
+      "widget": "CF 285  259",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thu nhập này theo dự kiến sẽ tiếp tục? (Đánh dấu Có hoặc Không)  Có, Dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 2,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        525,
+        609.85,
+        535.8,
+        620.65
+      ],
+      "widget": "CF 285  260",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không Dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "person",
+      "row": 3,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        36.72,
+        631.44,
+        165.6,
+        663.12
+      ],
+      "widget": "CF 285  261",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Người nhận (các) khoản tiền này, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "source",
+      "row": 3,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        166.5,
+        631.44,
+        310.32,
+        663.84
+      ],
+      "widget": "CF 285  262",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Từ đâu? dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "amount",
+      "row": 3,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        313.92,
+        641.64,
+        383.04,
+        652.44
+      ],
+      "widget": "CF 285  263",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Bao nhiêu tiền? dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "frequency",
+      "row": 3,
+      "page": 12,
+      "kind": "text",
+      "rect": [
+        383.76,
+        642.08,
+        483.84,
+        652.88
+      ],
+      "widget": "CF 285  264",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Chu kỳ lãnh tiền? (Một lần, hàng tuần, hàng tháng hoặc khác) dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 3,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        499.6,
+        642.25,
+        510.4,
+        653.05
+      ],
+      "widget": "CF 285  265",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Thu nhập này theo dự kiến sẽ tiếp tục? (Đánh dấu Có hoặc Không)  Có, Dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q7.unearned",
+      "field": "expected_to_continue",
+      "row": 3,
+      "page": 12,
+      "kind": "checkbox",
+      "rect": [
+        525,
+        642.25,
+        535.8,
+        653.05
+      ],
+      "widget": "CF 285  266",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No, Line 4 of 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "has_expenses",
+      "row": 0,
+      "page": 15,
+      "kind": "checkbox",
+      "rect": [
+        348.76,
+        73.03999999999996,
+        359.56,
+        83.84000000000003
+      ],
+      "widget": "CF 285  434",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "12. Chi phí y tế\r - Quý vị hoặc bất cứ người nào mà mua và chuẩn bị thức ăn chung với quý vị có phải là một vị cao niên (60 tuổi trở lên) hoặc người khuyết tật mà phải trả một khoản chi phí y tế nào đó bằng tiền túi không?  Có, Nếu có, vui lòng trả lời câu hỏi này.\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "has_expenses",
+      "row": 0,
+      "page": 15,
+      "kind": "checkbox",
+      "rect": [
+        377.78,
+        73.51999999999998,
+        388.58,
+        84.32000000000005
+      ],
+      "widget": "CF 285  435",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không,    Nếu không, sang câu 13",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "person",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        37.28,
+        274.32000000000005,
+        185.6,
+        306.72
+      ],
+      "widget": "CF 285  449",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tên vị cao niên/người khuyết tật, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "amount",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        190.26,
+        283.5,
+        238.5,
+        299.34
+      ],
+      "widget": "CF 285  450",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền chi phí, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "frequency",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        239.04,
+        284.772,
+        311.04,
+        300.612
+      ],
+      "widget": "CF 285  451",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào? \r(Hàng tuần/hàng tháng, khác), dòng 1 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "expense_type",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        311.76,
+        274.5,
+        416.88,
+        306.72
+      ],
+      "widget": "CF 285  452",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Chi phí này thuộc loại nào?\r(Thuốc theo toa, răng giả, thức ăn cho người chăm sóc, v.v.), dòng 1 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_source",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.28,
+        274.5,
+        577.72,
+        290.88
+      ],
+      "widget": "CF 285  453",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Gia đình quý vị sẽ được hoàn trả bất cứ chi phí y tế nào không?\r(Bởi Medi-Cal, bảo hiểm, thành viên gia đình, v.v.) Nếu có, bởi ai, dòng 1 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_amount",
+      "row": 0,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.28,
+        290.16,
+        577.72,
+        307.44
+      ],
+      "widget": "CF 285  454",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Gia đình sẽ được hoàn trả bao nhiêu, dòng 1 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "person",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        37.28,
+        307.16,
+        185.6,
+        339.56
+      ],
+      "widget": "CF 285  455",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tên vị cao niên/người khuyết tật, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "amount",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        190.54,
+        316.34,
+        238.78,
+        332.18
+      ],
+      "widget": "CF 285  456",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền chi phí, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "frequency",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        239.32,
+        317.612,
+        311.32,
+        333.452
+      ],
+      "widget": "CF 285  457",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào? \r(Hàng tuần/hàng tháng, khác), dòng 2 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "expense_type",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        312.04,
+        307.34,
+        417.16,
+        339.56
+      ],
+      "widget": "CF 285  458",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Chi phí này thuộc loại nào?\r(Thuốc theo toa, răng giả, thức ăn cho người chăm sóc, v.v.), dòng 2 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_source",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.28,
+        307.34,
+        577.72,
+        323.72
+      ],
+      "widget": "CF 285  459",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Gia đình quý vị sẽ được hoàn trả bất cứ chi phí y tế nào không?\r(Bởi Medi-Cal, bảo hiểm, thành viên gia đình, v.v.) Nếu có, bởi ai, dòng 2 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_amount",
+      "row": 1,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.28,
+        323,
+        577.72,
+        340.28
+      ],
+      "widget": "CF 285  460",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Gia đình sẽ được hoàn trả bao nhiêu, dòng 2 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "person",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        37.28,
+        340.38,
+        185.6,
+        372.78
+      ],
+      "widget": "CF 285  461",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tên vị cao niên/người khuyết tật, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "amount",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        190.26,
+        349.56,
+        238.5,
+        365.4
+      ],
+      "widget": "CF 285  462",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền chi phí, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "frequency",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        239.04,
+        350.832,
+        311.04,
+        366.672
+      ],
+      "widget": "CF 285  463",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào? \r(Hàng tuần/hàng tháng, khác), dòng 3 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "expense_type",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        311.76,
+        340.56,
+        416.88,
+        372.78
+      ],
+      "widget": "CF 285  464",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Chi phí này thuộc loại nào?\r(Thuốc theo toa, răng giả, thức ăn cho người chăm sóc, v.v.), dòng 3 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_source",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.28,
+        340.56,
+        577.72,
+        356.94
+      ],
+      "widget": "CF 285  465",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Gia đình quý vị sẽ được hoàn trả bất cứ chi phí y tế nào không?\r(Bởi Medi-Cal, bảo hiểm, thành viên gia đình, v.v.) Nếu có, bởi ai, dòng 3 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_amount",
+      "row": 2,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.28,
+        356.22,
+        577.72,
+        373.5
+      ],
+      "widget": "CF 285  466",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Gia đình sẽ được hoàn trả bao nhiêu, dòng 3 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "person",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        37.28,
+        373.68,
+        185.6,
+        406.08
+      ],
+      "widget": "CF 285  467",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tên vị cao niên/người khuyết tật, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "amount",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        189.54,
+        382.86,
+        237.78,
+        398.7
+      ],
+      "widget": "CF 285  468",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền chi phí, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "frequency",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        238.32,
+        384.132,
+        310.32,
+        399.972
+      ],
+      "widget": "CF 285  469",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Trả theo chu kỳ nào? \r(Hàng tuần/hàng tháng, khác), dòng 4 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "expense_type",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        311.04,
+        373.86,
+        416.16,
+        406.08
+      ],
+      "widget": "CF 285  470",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Chi phí này thuộc loại nào?\r(Thuốc theo toa, răng giả, thức ăn cho người chăm sóc, v.v.), dòng 4 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_source",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.28,
+        373.86,
+        577.72,
+        390.24
+      ],
+      "widget": "CF 285  471",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Gia đình quý vị sẽ được hoàn trả bất cứ chi phí y tế nào không?\r(Bởi Medi-Cal, bảo hiểm, thành viên gia đình, v.v.) Nếu có, bởi ai, dòng 4 trên 4\r",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q12.medical",
+      "field": "reimbursement_amount",
+      "row": 3,
+      "page": 15,
+      "kind": "text",
+      "rect": [
+        468.28,
+        389.52,
+        577.72,
+        406.8
+      ],
+      "widget": "CF 285  472",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Gia đình sẽ được hoàn trả bao nhiêu, dòng 4 trên 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q9.care",
+      "field": "has_care_cost",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        145.74,
+        84.48000000000002,
+        156.54,
+        95.27999999999997
+      ],
+      "widget": "CF 285  355",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "9. Chi phí chăm sóc trẻ em/người lớn của gia đình  Quý vị hoặc bất cứ người nào mà mua và chuẩn bị thức ăn chung với quý vị có phải trả tiền cho dịch vụ chăm sóc trẻ em, người lớn bị khuyết tật hoặc người phụ thuộc khác để quý vị hoặc người đó có thể đi làm, đi học, học nghề hoặc tìm việc làm không?  Có, Nếu có, vui lòng trả lời câu hỏi này.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q9.care",
+      "field": "has_care_cost",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        179.28,
+        83.67999999999995,
+        190.08,
+        94.48000000000002
+      ],
+      "widget": "CF 285  356",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không,  Nếu không, sang câu 10.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "responsible_for_expenses",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        53.48,
+        462.067,
+        64.28,
+        472.867
+      ],
+      "widget": "CF 285  393",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "11. Chi phí gia đình, Quý vị hoặc bất cứ người nào mà mua và chuẩn bị thức ăn chung với quý vị có phải trả bất cứ chi phí gia đình nào không?  Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "responsible_for_expenses",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        80.32,
+        462.067,
+        91.12,
+        472.867
+      ],
+      "widget": "CF 285  394",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Không, sang câu 12  ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.76,
+        547.65,
+        250.56,
+        558.45
+      ],
+      "widget": "CF 285  395",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có chi phí không?  Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 0,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        261,
+        546.9300000000001,
+        271.8,
+        557.73
+      ],
+      "widget": "CF 285  396",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.8,
+        542.252,
+        432.72,
+        562.412
+      ],
+      "widget": "CF 285  397",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người trả?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "amount_owed",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        444.96,
+        545.76,
+        495,
+        556.56
+      ],
+      "widget": "CF 285  398",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền còn nợ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 0,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        495.36,
+        546.3199999999999,
+        574.56,
+        557.12
+      ],
+      "widget": "CF 285  399",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Phải trả theo chu kỳ nào? (hàng tuần/hàng tháng, khác)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 1,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.76,
+        569.25,
+        250.56,
+        580.05
+      ],
+      "widget": "CF 285  401",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có chi phí không?  Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 1,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        261.44,
+        569.25,
+        272.24,
+        580.05
+      ],
+      "widget": "CF 285  402",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.8,
+        562.3199999999999,
+        434.16,
+        586.8
+      ],
+      "widget": "CF 285  403",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người trả?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "amount_owed",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        444.24,
+        568,
+        495.36,
+        578.8
+      ],
+      "widget": "CF 285  404",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Số tiền còn nợ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 1,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        495.72,
+        568.08,
+        576.72,
+        578.88
+      ],
+      "widget": "CF 285  405",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Phải trả theo chu kỳ nào? (hàng tuần/hàng tháng, khác)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 2,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.76,
+        598.77,
+        250.56,
+        609.5699999999999
+      ],
+      "widget": "CF 285  408",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có chi phí không?  Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 2,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        261.16,
+        598.49,
+        271.96,
+        609.29
+      ],
+      "widget": "CF 285  409",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.44,
+        586.08,
+        434.16,
+        622.08
+      ],
+      "widget": "CF 285  4010",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người trả?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 2,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.8,
+        596.16,
+        576,
+        606.96
+      ],
+      "widget": "CF 285  411",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Phải trả theo chu kỳ nào? (hàng tuần/hàng tháng, khác)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 3,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        240.04,
+        626.13,
+        250.84,
+        636.9300000000001
+      ],
+      "widget": "CF 285  413",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có chi phí không?  Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 3,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        261.72,
+        625.85,
+        272.52,
+        636.65
+      ],
+      "widget": "CF 285  414",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.44,
+        622.08,
+        434.16,
+        641.52
+      ],
+      "widget": "CF 285  415",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người trả?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 3,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.8,
+        625.24,
+        576,
+        636.04
+      ],
+      "widget": "CF 285  416",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Phải trả theo chu kỳ nào? (hàng tuần/hàng tháng, khác)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 4,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.76,
+        646.29,
+        250.56,
+        657.09
+      ],
+      "widget": "CF 285  418",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có chi phí không?  Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 4,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        260.44,
+        646.29,
+        271.24,
+        657.09
+      ],
+      "widget": "CF 285  419",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 4,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.52,
+        641.52,
+        433.16,
+        661.6800000000001
+      ],
+      "widget": "CF 285  420",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người trả?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 4,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.8,
+        645.96,
+        576,
+        656.76
+      ],
+      "widget": "CF 285  421",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Phải trả theo chu kỳ nào? (hàng tuần/hàng tháng, khác)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 5,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        239.76,
+        666.45,
+        250.56,
+        677.25
+      ],
+      "widget": "CF 285  423",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Có chi phí không?  Có",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "owed",
+      "row": 5,
+      "page": 14,
+      "kind": "checkbox",
+      "rect": [
+        260.72,
+        667.17,
+        271.52,
+        677.97
+      ],
+      "widget": "CF 285  424",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "Yes"
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "payer",
+      "row": 5,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        298.44,
+        660.96,
+        432.72,
+        681.84
+      ],
+      "widget": "CF 285  425",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Ai là người trả?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "q11.housing",
+      "field": "frequency",
+      "row": 5,
+      "page": 14,
+      "kind": "text",
+      "rect": [
+        496.44,
+        665.56,
+        575.28,
+        676.36
+      ],
+      "widget": "CF 285  426",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Phải trả theo chu kỳ nào? (hàng tuần/hàng tháng, khác)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "notes",
+      "field": "notes",
+      "row": 0,
+      "page": 17,
+      "kind": "text",
+      "rect": [
+        36.72,
+        72.88,
+        576.72,
+        749.8295
+      ],
+      "widget": "CF 285  541",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Chỗ viết bổ sung trang 1 trên 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    }
+  ],
+  "protectedRegions": [
+    {
+      "page": 1,
+      "rect": [
+        511.2,
+        95.75999999999999,
+        521.665,
+        105.01499999999999
+      ],
+      "reason": "manual-only: CF 285  2"
+    },
+    {
+      "page": 4,
+      "rect": [
+        37.16,
+        573.84,
+        50.84,
+        594
+      ],
+      "reason": "manual-only: CF 285   1a 2"
+    },
+    {
+      "page": 4,
+      "rect": [
+        568.08,
+        581.04,
+        581.76,
+        601.2
+      ],
+      "reason": "manual-only: CF 285   1a 4"
+    },
+    {
+      "page": 4,
+      "rect": [
+        568.8,
+        618.84,
+        582.48,
+        639
+      ],
+      "reason": "manual-only: CF 285   1a 6"
+    },
+    {
+      "page": 4,
+      "rect": [
+        33.56,
+        622.8,
+        47.24,
+        642.96
+      ],
+      "reason": "manual-only: CF 285   1a 3"
+    },
+    {
+      "page": 4,
+      "rect": [
+        540,
+        675.36,
+        553.68,
+        695.52
+      ],
+      "reason": "manual-only: CF 285   1a 7"
+    },
+    {
+      "page": 4,
+      "rect": [
+        37.16,
+        677.52,
+        50.84,
+        697.6800000000001
+      ],
+      "reason": "manual-only: CF 285   1a 5"
+    },
+    {
+      "page": 8,
+      "rect": [
+        36.225,
+        68.39999999999986,
+        576.225,
+        753.6659999999999
+      ],
+      "reason": "manual-only: CF 285  3"
+    },
+    {
+      "page": 9,
+      "rect": [
+        418.32,
+        122.56799999999998,
+        575.28,
+        141.288
+      ],
+      "reason": "not-yet-supported: CF 285  6"
+    },
+    {
+      "page": 9,
+      "rect": [
+        266.28,
+        243.40800000000002,
+        470.4,
+        255.72799999999995
+      ],
+      "reason": "manual-only: CF 285  16"
+    },
+    {
+      "page": 9,
+      "rect": [
+        516.5,
+        243.48800000000006,
+        528.74,
+        255.72799999999995
+      ],
+      "reason": "manual-only: CF 285  17"
+    },
+    {
+      "page": 9,
+      "rect": [
+        40.32,
+        244.00800000000004,
+        266.4,
+        256.448
+      ],
+      "reason": "manual-only: CF 285  15"
+    },
+    {
+      "page": 9,
+      "rect": [
+        265.68,
+        264.08799999999997,
+        576,
+        278.13
+      ],
+      "reason": "manual-only: CF 285  19"
+    },
+    {
+      "page": 9,
+      "rect": [
+        41.22,
+        264.808,
+        265.5,
+        277.45000000000005
+      ],
+      "reason": "manual-only: CF 285  18"
+    },
+    {
+      "page": 9,
+      "rect": [
+        511.88,
+        336.421,
+        522.68,
+        347.221
+      ],
+      "reason": "not-yet-supported: CF 285  24"
+    },
+    {
+      "page": 9,
+      "rect": [
+        506.864,
+        364.34,
+        517.664,
+        375.14
+      ],
+      "reason": "not-yet-supported: CF 285  25"
+    },
+    {
+      "page": 9,
+      "rect": [
+        536.458,
+        364.34,
+        547.258,
+        375.58
+      ],
+      "reason": "not-yet-supported: CF 285  26"
+    },
+    {
+      "page": 9,
+      "rect": [
+        506.864,
+        386.368,
+        517.664,
+        397.168
+      ],
+      "reason": "not-yet-supported: CF 285  28"
+    },
+    {
+      "page": 9,
+      "rect": [
+        536.696,
+        386.368,
+        547.496,
+        397.168
+      ],
+      "reason": "not-yet-supported: CF 285  27"
+    },
+    {
+      "page": 9,
+      "rect": [
+        506.969,
+        412.296,
+        517.769,
+        423.096
+      ],
+      "reason": "not-yet-supported: CF 285  30"
+    },
+    {
+      "page": 9,
+      "rect": [
+        537.22,
+        412.296,
+        548.02,
+        423.096
+      ],
+      "reason": "not-yet-supported: CF 285  29"
+    },
+    {
+      "page": 9,
+      "rect": [
+        506.606,
+        439.093,
+        517.406,
+        449.893
+      ],
+      "reason": "not-yet-supported: CF 285  552"
+    },
+    {
+      "page": 9,
+      "rect": [
+        539.25,
+        439.522,
+        550.05,
+        450.322
+      ],
+      "reason": "not-yet-supported: CF 285  1011"
+    },
+    {
+      "page": 9,
+      "rect": [
+        536.676,
+        467.407,
+        547.477,
+        478.207
+      ],
+      "reason": "not-yet-supported: CF 285  553"
+    },
+    {
+      "page": 9,
+      "rect": [
+        506.434,
+        467.651,
+        517.234,
+        478.451
+      ],
+      "reason": "not-yet-supported: CF 285  554"
+    },
+    {
+      "page": 9,
+      "rect": [
+        507.046,
+        494.681,
+        517.846,
+        505.481
+      ],
+      "reason": "not-yet-supported: CF 285  556"
+    },
+    {
+      "page": 9,
+      "rect": [
+        536.933,
+        494.928,
+        547.733,
+        505.728
+      ],
+      "reason": "not-yet-supported: CF 285  555"
+    },
+    {
+      "page": 9,
+      "rect": [
+        506.835,
+        521.4010000000001,
+        517.635,
+        532.201
+      ],
+      "reason": "not-yet-supported: CF 285  558"
+    },
+    {
+      "page": 9,
+      "rect": [
+        536.636,
+        521.419,
+        547.436,
+        532.219
+      ],
+      "reason": "not-yet-supported: CF 285  557"
+    },
+    {
+      "page": 9,
+      "rect": [
+        36,
+        719.828,
+        50.76,
+        734.228
+      ],
+      "reason": "manual-only: CF 285  35"
+    },
+    {
+      "page": 9,
+      "rect": [
+        450.72,
+        720.728,
+        573.12,
+        735.128
+      ],
+      "reason": "manual-only: CF 285  36"
+    },
+    {
+      "page": 10,
+      "rect": [
+        533.441,
+        113.01199999999994,
+        544.241,
+        123.81200000000001
+      ],
+      "reason": "not-yet-supported: CF 285  43"
+    },
+    {
+      "page": 10,
+      "rect": [
+        497.425,
+        113.38800000000003,
+        508.225,
+        124.18799999999999
+      ],
+      "reason": "not-yet-supported: CF 285  42"
+    },
+    {
+      "page": 10,
+      "rect": [
+        397.62,
+        152.72799999999995,
+        575.28,
+        163.52800000000002
+      ],
+      "reason": "not-yet-supported: CF 285  40"
+    },
+    {
+      "page": 10,
+      "rect": [
+        38.37,
+        153.20799999999997,
+        394.56,
+        164.00800000000004
+      ],
+      "reason": "not-yet-supported: CF 285  39"
+    },
+    {
+      "page": 10,
+      "rect": [
+        35.606,
+        178.913,
+        46.406,
+        189.712
+      ],
+      "reason": "not-yet-supported: CF 285  44"
+    },
+    {
+      "page": 10,
+      "rect": [
+        77.92,
+        178.913,
+        88.72,
+        189.712
+      ],
+      "reason": "not-yet-supported: CF 285  45"
+    },
+    {
+      "page": 10,
+      "rect": [
+        400.5,
+        207.22799999999995,
+        576.72,
+        218.02800000000002
+      ],
+      "reason": "not-yet-supported: CF 285  50"
+    },
+    {
+      "page": 10,
+      "rect": [
+        41.22,
+        207.688,
+        395.28,
+        218.48800000000006
+      ],
+      "reason": "not-yet-supported: CF 285  51"
+    },
+    {
+      "page": 10,
+      "rect": [
+        41.58,
+        228.23000000000002,
+        313.92,
+        239.02999999999997
+      ],
+      "reason": "not-yet-supported: CF 285  49"
+    },
+    {
+      "page": 10,
+      "rect": [
+        315.36,
+        228.51,
+        396.72,
+        239.30999999999995
+      ],
+      "reason": "not-yet-supported: CF 285  46"
+    },
+    {
+      "page": 10,
+      "rect": [
+        398.88,
+        228.95000000000005,
+        481.68,
+        239.75
+      ],
+      "reason": "not-yet-supported: CF 285  47"
+    },
+    {
+      "page": 10,
+      "rect": [
+        485.28,
+        229.23000000000002,
+        576,
+        240.02999999999997
+      ],
+      "reason": "not-yet-supported: CF 285  48"
+    },
+    {
+      "page": 10,
+      "rect": [
+        35.56,
+        300.28,
+        46.36,
+        311.08
+      ],
+      "reason": "not-yet-supported: CF 285  52"
+    },
+    {
+      "page": 10,
+      "rect": [
+        399.04,
+        343.2,
+        409.84,
+        354
+      ],
+      "reason": "not-yet-supported: CF 285  56"
+    },
+    {
+      "page": 10,
+      "rect": [
+        497.26,
+        343.2,
+        508.06,
+        354
+      ],
+      "reason": "not-yet-supported: CF 285  57"
+    },
+    {
+      "page": 10,
+      "rect": [
+        319.96,
+        344.2,
+        330.76,
+        355
+      ],
+      "reason": "not-yet-supported: CF 285  55"
+    },
+    {
+      "page": 10,
+      "rect": [
+        109,
+        353.8,
+        119.8,
+        364.6
+      ],
+      "reason": "not-yet-supported: CF 285  53"
+    },
+    {
+      "page": 10,
+      "rect": [
+        148.92,
+        353.8,
+        159.72,
+        364.6
+      ],
+      "reason": "not-yet-supported: CF 285  54"
+    },
+    {
+      "page": 10,
+      "rect": [
+        320.4,
+        356.88,
+        331.2,
+        367.68
+      ],
+      "reason": "not-yet-supported: CF 285  58"
+    },
+    {
+      "page": 10,
+      "rect": [
+        358.4,
+        358.76,
+        574.4,
+        369.56
+      ],
+      "reason": "not-yet-supported: CF 285  59"
+    },
+    {
+      "page": 10,
+      "rect": [
+        281.28,
+        393,
+        292.08,
+        403.8
+      ],
+      "reason": "not-yet-supported: CF 285  62"
+    },
+    {
+      "page": 10,
+      "rect": [
+        447.859,
+        393,
+        458.658,
+        403.8
+      ],
+      "reason": "not-yet-supported: CF 285  63"
+    },
+    {
+      "page": 10,
+      "rect": [
+        109.68,
+        393.24,
+        120.48,
+        404.04
+      ],
+      "reason": "not-yet-supported: CF 285  61"
+    },
+    {
+      "page": 10,
+      "rect": [
+        33.76,
+        393.52,
+        44.56,
+        404.32
+      ],
+      "reason": "not-yet-supported: CF 285  60"
+    },
+    {
+      "page": 10,
+      "rect": [
+        110.319,
+        403.04,
+        207.514,
+        413.84
+      ],
+      "reason": "not-yet-supported: CF 285  64"
+    },
+    {
+      "page": 10,
+      "rect": [
+        33.84,
+        417.16,
+        44.64,
+        427.96
+      ],
+      "reason": "not-yet-supported: CF 285  65"
+    },
+    {
+      "page": 10,
+      "rect": [
+        127.04,
+        431.216,
+        137.84,
+        442.016
+      ],
+      "reason": "not-yet-supported: CF 285  67"
+    },
+    {
+      "page": 10,
+      "rect": [
+        291.309,
+        431.816,
+        302.109,
+        442.616
+      ],
+      "reason": "not-yet-supported: CF 285  69"
+    },
+    {
+      "page": 10,
+      "rect": [
+        476.458,
+        431.816,
+        487.258,
+        442.616
+      ],
+      "reason": "not-yet-supported: CF 285  71"
+    },
+    {
+      "page": 10,
+      "rect": [
+        51.84,
+        432.52,
+        62.64,
+        443.32
+      ],
+      "reason": "not-yet-supported: CF 285  66"
+    },
+    {
+      "page": 10,
+      "rect": [
+        223.64,
+        432.816,
+        234.44,
+        443.616
+      ],
+      "reason": "not-yet-supported: CF 285  68"
+    },
+    {
+      "page": 10,
+      "rect": [
+        387.789,
+        432.816,
+        398.589,
+        443.616
+      ],
+      "reason": "not-yet-supported: CF 285  70"
+    },
+    {
+      "page": 10,
+      "rect": [
+        125.22,
+        446.04,
+        136.02,
+        456.84
+      ],
+      "reason": "not-yet-supported: CF 285  73"
+    },
+    {
+      "page": 10,
+      "rect": [
+        188.28,
+        446.56,
+        199.08,
+        457.36
+      ],
+      "reason": "not-yet-supported: CF 285  74"
+    },
+    {
+      "page": 10,
+      "rect": [
+        52.738,
+        447.216,
+        63.538,
+        458.016
+      ],
+      "reason": "not-yet-supported: CF 285  72"
+    },
+    {
+      "page": 10,
+      "rect": [
+        368.84,
+        448.46,
+        568.488,
+        459.26
+      ],
+      "reason": "not-yet-supported: CF 285  75"
+    },
+    {
+      "page": 10,
+      "rect": [
+        33.84,
+        460.24,
+        44.64,
+        471.04
+      ],
+      "reason": "not-yet-supported: CF 285  76"
+    },
+    {
+      "page": 10,
+      "rect": [
+        51.84,
+        474.6,
+        62.64,
+        485.4
+      ],
+      "reason": "not-yet-supported: CF 285  77"
+    },
+    {
+      "page": 10,
+      "rect": [
+        165.84,
+        474.6,
+        176.64,
+        485.4
+      ],
+      "reason": "not-yet-supported: CF 285  78"
+    },
+    {
+      "page": 10,
+      "rect": [
+        305.709,
+        475.46,
+        316.509,
+        486.26
+      ],
+      "reason": "not-yet-supported: CF 285  79"
+    },
+    {
+      "page": 10,
+      "rect": [
+        35.28,
+        563.58,
+        46.08,
+        574.38
+      ],
+      "reason": "not-yet-supported: CF 285  80"
+    },
+    {
+      "page": 10,
+      "rect": [
+        34.84,
+        580.86,
+        45.64,
+        591.66
+      ],
+      "reason": "not-yet-supported: CF 285  81"
+    },
+    {
+      "page": 10,
+      "rect": [
+        256.68,
+        611.3,
+        267.48,
+        622.1
+      ],
+      "reason": "not-yet-supported: CF 285  84"
+    },
+    {
+      "page": 10,
+      "rect": [
+        334.6,
+        611.38,
+        345.4,
+        622.1800000000001
+      ],
+      "reason": "not-yet-supported: CF 285  85"
+    },
+    {
+      "page": 10,
+      "rect": [
+        381.44,
+        611.5,
+        392.24,
+        622.3
+      ],
+      "reason": "not-yet-supported: CF 285  86"
+    },
+    {
+      "page": 10,
+      "rect": [
+        427.04,
+        611.78,
+        437.84,
+        622.58
+      ],
+      "reason": "not-yet-supported: CF 285  87"
+    },
+    {
+      "page": 10,
+      "rect": [
+        472.52,
+        611.78,
+        483.32,
+        622.58
+      ],
+      "reason": "not-yet-supported: CF 285  88"
+    },
+    {
+      "page": 10,
+      "rect": [
+        525.32,
+        611.8199999999999,
+        536.12,
+        622.62
+      ],
+      "reason": "not-yet-supported: CF 285  89"
+    },
+    {
+      "page": 10,
+      "rect": [
+        65.8,
+        612.1800000000001,
+        76.6,
+        622.98
+      ],
+      "reason": "not-yet-supported: CF 285  82"
+    },
+    {
+      "page": 10,
+      "rect": [
+        113.76,
+        612.1800000000001,
+        124.56,
+        622.98
+      ],
+      "reason": "not-yet-supported: CF 285  83"
+    },
+    {
+      "page": 10,
+      "rect": [
+        138,
+        628.38,
+        148.8,
+        639.1800000000001
+      ],
+      "reason": "not-yet-supported: CF 285  91"
+    },
+    {
+      "page": 10,
+      "rect": [
+        223.2,
+        628.38,
+        234,
+        639.1800000000001
+      ],
+      "reason": "not-yet-supported: CF 285  92"
+    },
+    {
+      "page": 10,
+      "rect": [
+        292.2,
+        628.42,
+        303,
+        639.22
+      ],
+      "reason": "not-yet-supported: CF 285  93"
+    },
+    {
+      "page": 10,
+      "rect": [
+        71.52,
+        628.6800000000001,
+        82.32,
+        639.48
+      ],
+      "reason": "not-yet-supported: CF 285  90"
+    },
+    {
+      "page": 10,
+      "rect": [
+        385.44,
+        629.88,
+        396.24,
+        640.6800000000001
+      ],
+      "reason": "not-yet-supported: CF 285  94"
+    },
+    {
+      "page": 10,
+      "rect": [
+        525.56,
+        677.841,
+        536.36,
+        688.641
+      ],
+      "reason": "not-yet-supported: CF 285  96"
+    },
+    {
+      "page": 10,
+      "rect": [
+        497.88,
+        678.181,
+        508.68,
+        688.981
+      ],
+      "reason": "not-yet-supported: CF 285  95"
+    },
+    {
+      "page": 10,
+      "rect": [
+        39.16,
+        708.0735999999999,
+        306.28,
+        722.4736
+      ],
+      "reason": "not-yet-supported: CF 285  100"
+    },
+    {
+      "page": 10,
+      "rect": [
+        309.16,
+        708.0735999999999,
+        576.28,
+        722.4736
+      ],
+      "reason": "not-yet-supported: CF 285  99"
+    },
+    {
+      "page": 10,
+      "rect": [
+        39.16,
+        731.9936,
+        306.28,
+        746.3936
+      ],
+      "reason": "not-yet-supported: CF 285  98"
+    },
+    {
+      "page": 10,
+      "rect": [
+        309.16,
+        731.9936,
+        576.28,
+        746.3936
+      ],
+      "reason": "not-yet-supported: CF 285  97"
+    },
+    {
+      "page": 11,
+      "rect": [
+        364.5,
+        207.36,
+        406.8,
+        226.79999999999995
+      ],
+      "reason": "not-yet-supported: CF 285  106"
+    },
+    {
+      "page": 11,
+      "rect": [
+        249.12,
+        208.79999999999995,
+        259.2,
+        221.76
+      ],
+      "reason": "not-yet-supported: CF 285  104"
+    },
+    {
+      "page": 11,
+      "rect": [
+        470.16,
+        208.79999999999995,
+        576,
+        228.24
+      ],
+      "reason": "not-yet-supported: CF 285  109"
+    },
+    {
+      "page": 11,
+      "rect": [
+        61.84,
+        210.42100000000005,
+        72.64,
+        221.221
+      ],
+      "reason": "not-yet-supported: CF 285  102"
+    },
+    {
+      "page": 11,
+      "rect": [
+        409.5,
+        210.961,
+        420.3,
+        221.76099999999997
+      ],
+      "reason": "not-yet-supported: CF 285  107"
+    },
+    {
+      "page": 11,
+      "rect": [
+        431.36,
+        211.14099999999996,
+        442.16,
+        221.94100000000003
+      ],
+      "reason": "not-yet-supported: CF 285  108"
+    },
+    {
+      "page": 11,
+      "rect": [
+        38.88,
+        211.42100000000005,
+        49.68,
+        222.221
+      ],
+      "reason": "not-yet-supported: CF 285  101"
+    },
+    {
+      "page": 11,
+      "rect": [
+        365.76,
+        228.24,
+        408.06,
+        247.67999999999995
+      ],
+      "reason": "not-yet-supported: CF 285  1015"
+    },
+    {
+      "page": 11,
+      "rect": [
+        469.44,
+        228.96000000000004,
+        575.28,
+        248.39999999999998
+      ],
+      "reason": "not-yet-supported: CF 285  1018"
+    },
+    {
+      "page": 11,
+      "rect": [
+        39.16,
+        230.58100000000002,
+        49.96,
+        241.38099999999997
+      ],
+      "reason": "not-yet-supported: CF 285  1010"
+    },
+    {
+      "page": 11,
+      "rect": [
+        61.28,
+        231.30100000000004,
+        72.08,
+        242.101
+      ],
+      "reason": "not-yet-supported: CF 285  1012"
+    },
+    {
+      "page": 11,
+      "rect": [
+        409.68,
+        231.30100000000004,
+        420.48,
+        242.101
+      ],
+      "reason": "not-yet-supported: CF 285  1016"
+    },
+    {
+      "page": 11,
+      "rect": [
+        432.08,
+        231.30100000000004,
+        442.88,
+        242.101
+      ],
+      "reason": "not-yet-supported: CF 285  1017"
+    },
+    {
+      "page": 11,
+      "rect": [
+        366.48,
+        248.39999999999998,
+        408.78,
+        267.84000000000003
+      ],
+      "reason": "not-yet-supported: CF 285  1023"
+    },
+    {
+      "page": 11,
+      "rect": [
+        470.16,
+        249.12,
+        576,
+        268.55999999999995
+      ],
+      "reason": "not-yet-supported: CF 285  1026"
+    },
+    {
+      "page": 11,
+      "rect": [
+        39.88,
+        250.74099999999999,
+        50.68,
+        261.54100000000005
+      ],
+      "reason": "not-yet-supported: CF 285  1019"
+    },
+    {
+      "page": 11,
+      "rect": [
+        61,
+        251.461,
+        71.8,
+        262.26099999999997
+      ],
+      "reason": "not-yet-supported: CF 285  1020"
+    },
+    {
+      "page": 11,
+      "rect": [
+        410.4,
+        251.461,
+        421.2,
+        262.26099999999997
+      ],
+      "reason": "not-yet-supported: CF 285  1024"
+    },
+    {
+      "page": 11,
+      "rect": [
+        431.8,
+        251.461,
+        442.6,
+        262.26099999999997
+      ],
+      "reason": "not-yet-supported: CF 285  1025"
+    },
+    {
+      "page": 11,
+      "rect": [
+        366.1,
+        268.84000000000003,
+        408.4,
+        288.28
+      ],
+      "reason": "not-yet-supported: CF 285  1031"
+    },
+    {
+      "page": 11,
+      "rect": [
+        469.78,
+        269.55999999999995,
+        575.62,
+        289
+      ],
+      "reason": "not-yet-supported: CF 285  1034"
+    },
+    {
+      "page": 11,
+      "rect": [
+        39.5,
+        271.18100000000004,
+        50.3,
+        281.981
+      ],
+      "reason": "not-yet-supported: CF 285  1027"
+    },
+    {
+      "page": 11,
+      "rect": [
+        61.62,
+        271.90099999999995,
+        72.42,
+        282.701
+      ],
+      "reason": "not-yet-supported: CF 285  1028"
+    },
+    {
+      "page": 11,
+      "rect": [
+        410.02,
+        271.90099999999995,
+        420.82,
+        282.701
+      ],
+      "reason": "not-yet-supported: CF 285  1032"
+    },
+    {
+      "page": 11,
+      "rect": [
+        432.42,
+        271.90099999999995,
+        443.22,
+        282.701
+      ],
+      "reason": "not-yet-supported: CF 285  1033"
+    },
+    {
+      "page": 11,
+      "rect": [
+        366.2,
+        288.72,
+        408.5,
+        308.16
+      ],
+      "reason": "not-yet-supported: CF 285  1039"
+    },
+    {
+      "page": 11,
+      "rect": [
+        469.88,
+        289.44,
+        575.72,
+        308.88
+      ],
+      "reason": "not-yet-supported: CF 285  1042"
+    },
+    {
+      "page": 11,
+      "rect": [
+        39.6,
+        291.061,
+        50.4,
+        301.861
+      ],
+      "reason": "not-yet-supported: CF 285  1035"
+    },
+    {
+      "page": 11,
+      "rect": [
+        61.72,
+        291.781,
+        72.52,
+        302.581
+      ],
+      "reason": "not-yet-supported: CF 285  1036"
+    },
+    {
+      "page": 11,
+      "rect": [
+        410.12,
+        291.781,
+        420.92,
+        302.581
+      ],
+      "reason": "not-yet-supported: CF 285  1040"
+    },
+    {
+      "page": 11,
+      "rect": [
+        431.52,
+        291.781,
+        442.32,
+        302.581
+      ],
+      "reason": "not-yet-supported: CF 285  1041"
+    },
+    {
+      "page": 11,
+      "rect": [
+        307.44,
+        342.26,
+        574.56,
+        353.06
+      ],
+      "reason": "not-yet-supported: CF 285  155"
+    },
+    {
+      "page": 11,
+      "rect": [
+        37.12,
+        342.3,
+        304.24,
+        353.1
+      ],
+      "reason": "not-yet-supported: CF 285  154"
+    },
+    {
+      "page": 11,
+      "rect": [
+        37.94,
+        364.28,
+        305.06,
+        375.08
+      ],
+      "reason": "not-yet-supported: CF 285  156"
+    },
+    {
+      "page": 11,
+      "rect": [
+        308.88,
+        364.78,
+        576,
+        375.58
+      ],
+      "reason": "not-yet-supported: CF 285  157"
+    },
+    {
+      "page": 11,
+      "rect": [
+        328.32,
+        451.408,
+        500.56,
+        462.028
+      ],
+      "reason": "not-yet-supported: CF 285  160"
+    },
+    {
+      "page": 11,
+      "rect": [
+        213.84,
+        451.5,
+        277.2,
+        474.18
+      ],
+      "reason": "not-yet-supported: CF 285  159"
+    },
+    {
+      "page": 11,
+      "rect": [
+        36.72,
+        451.68,
+        213.84,
+        474.54
+      ],
+      "reason": "not-yet-supported: CF 285  158"
+    },
+    {
+      "page": 11,
+      "rect": [
+        508.64,
+        453.841,
+        519.44,
+        464.641
+      ],
+      "reason": "not-yet-supported: CF 285  162"
+    },
+    {
+      "page": 11,
+      "rect": [
+        531.16,
+        454.281,
+        541.96,
+        465.081
+      ],
+      "reason": "not-yet-supported: CF 285  163"
+    },
+    {
+      "page": 11,
+      "rect": [
+        324,
+        461.588,
+        500.28,
+        472.388
+      ],
+      "reason": "not-yet-supported: CF 285  161"
+    },
+    {
+      "page": 11,
+      "rect": [
+        331.52,
+        474.448,
+        499.28,
+        485.068
+      ],
+      "reason": "not-yet-supported: CF 285  166"
+    },
+    {
+      "page": 11,
+      "rect": [
+        214.56,
+        474.54,
+        277.92,
+        497.22
+      ],
+      "reason": "not-yet-supported: CF 285  165"
+    },
+    {
+      "page": 11,
+      "rect": [
+        37.44,
+        474.72,
+        214.56,
+        497.58
+      ],
+      "reason": "not-yet-supported: CF 285  164"
+    },
+    {
+      "page": 11,
+      "rect": [
+        508.36,
+        477.881,
+        519.16,
+        488.681
+      ],
+      "reason": "not-yet-supported: CF 285  168"
+    },
+    {
+      "page": 11,
+      "rect": [
+        530.88,
+        478.321,
+        541.68,
+        489.121
+      ],
+      "reason": "not-yet-supported: CF 285  169"
+    },
+    {
+      "page": 11,
+      "rect": [
+        324,
+        484.628,
+        499,
+        495.428
+      ],
+      "reason": "not-yet-supported: CF 285  167"
+    },
+    {
+      "page": 11,
+      "rect": [
+        331.08,
+        497.928,
+        499.56,
+        508.548
+      ],
+      "reason": "not-yet-supported: CF 285  172"
+    },
+    {
+      "page": 11,
+      "rect": [
+        213.84,
+        499.02,
+        277.2,
+        521.7
+      ],
+      "reason": "not-yet-supported: CF 285  171"
+    },
+    {
+      "page": 11,
+      "rect": [
+        36.72,
+        499.2,
+        213.84,
+        522.06
+      ],
+      "reason": "not-yet-supported: CF 285  170"
+    },
+    {
+      "page": 11,
+      "rect": [
+        508.64,
+        501.361,
+        519.44,
+        512.1610000000001
+      ],
+      "reason": "not-yet-supported: CF 285  174"
+    },
+    {
+      "page": 11,
+      "rect": [
+        531.5,
+        501.361,
+        542.3,
+        512.1610000000001
+      ],
+      "reason": "not-yet-supported: CF 285  175"
+    },
+    {
+      "page": 11,
+      "rect": [
+        324.72,
+        507.108,
+        499.28,
+        517.908
+      ],
+      "reason": "not-yet-supported: CF 285  173"
+    },
+    {
+      "page": 11,
+      "rect": [
+        541.865,
+        537.2,
+        552.665,
+        548
+      ],
+      "reason": "not-yet-supported: CF 285  177"
+    },
+    {
+      "page": 11,
+      "rect": [
+        519.76,
+        537.72,
+        530.56,
+        548.52
+      ],
+      "reason": "not-yet-supported: CF 285  176"
+    },
+    {
+      "page": 11,
+      "rect": [
+        85.5,
+        546.76,
+        468,
+        557.2
+      ],
+      "reason": "not-yet-supported: CF 285  178"
+    },
+    {
+      "page": 11,
+      "rect": [
+        519.84,
+        567.36,
+        530.64,
+        578.16
+      ],
+      "reason": "not-yet-supported: CF 285  179"
+    },
+    {
+      "page": 11,
+      "rect": [
+        540.8,
+        568.08,
+        551.6,
+        578.88
+      ],
+      "reason": "not-yet-supported: CF 285  180"
+    },
+    {
+      "page": 11,
+      "rect": [
+        85.68,
+        585.66,
+        468.72,
+        596.46
+      ],
+      "reason": "not-yet-supported: CF 285  181"
+    },
+    {
+      "page": 11,
+      "rect": [
+        193.16,
+        629.28,
+        203.96,
+        640.08
+      ],
+      "reason": "not-yet-supported: CF 285  182"
+    },
+    {
+      "page": 11,
+      "rect": [
+        227.76,
+        629.28,
+        238.56,
+        640.08
+      ],
+      "reason": "not-yet-supported: CF 285  183"
+    },
+    {
+      "page": 11,
+      "rect": [
+        482.9,
+        659.521,
+        545.36,
+        673.381
+      ],
+      "reason": "not-yet-supported: CF 285  186"
+    },
+    {
+      "page": 11,
+      "rect": [
+        342.36,
+        659.981,
+        353.16,
+        670.781
+      ],
+      "reason": "not-yet-supported: CF 285  185"
+    },
+    {
+      "page": 11,
+      "rect": [
+        307.76,
+        660.701,
+        318.56,
+        671.501
+      ],
+      "reason": "not-yet-supported: CF 285  184"
+    },
+    {
+      "page": 11,
+      "rect": [
+        176.44,
+        690.76,
+        187.24,
+        701.56
+      ],
+      "reason": "not-yet-supported: CF 285  189"
+    },
+    {
+      "page": 11,
+      "rect": [
+        235.1,
+        690.76,
+        245.9,
+        701.56
+      ],
+      "reason": "not-yet-supported: CF 285  190"
+    },
+    {
+      "page": 11,
+      "rect": [
+        34.84,
+        691.381,
+        45.64,
+        702.1809
+      ],
+      "reason": "not-yet-supported: CF 285  187"
+    },
+    {
+      "page": 11,
+      "rect": [
+        116.12,
+        692.1409,
+        126.92,
+        702.9409
+      ],
+      "reason": "not-yet-supported: CF 285  188"
+    },
+    {
+      "page": 11,
+      "rect": [
+        272.242,
+        692.96,
+        548.001,
+        705.56
+      ],
+      "reason": "not-yet-supported: CF 285  191"
+    },
+    {
+      "page": 11,
+      "rect": [
+        38.16,
+        722.568,
+        287.28,
+        733.368
+      ],
+      "reason": "not-yet-supported: CF 285  192"
+    },
+    {
+      "page": 11,
+      "rect": [
+        287.72,
+        722.888,
+        449.5,
+        733.688
+      ],
+      "reason": "not-yet-supported: CF 285  193"
+    },
+    {
+      "page": 11,
+      "rect": [
+        450.72,
+        723.608,
+        576.72,
+        734.408
+      ],
+      "reason": "not-yet-supported: CF 285  194"
+    },
+    {
+      "page": 11,
+      "rect": [
+        36.72,
+        743.488,
+        285.84,
+        754.288
+      ],
+      "reason": "not-yet-supported: CF 285  195"
+    },
+    {
+      "page": 11,
+      "rect": [
+        288.28,
+        743.808,
+        450.06,
+        754.608
+      ],
+      "reason": "not-yet-supported: CF 285  196"
+    },
+    {
+      "page": 11,
+      "rect": [
+        450.72,
+        744.528,
+        576.28,
+        755.328
+      ],
+      "reason": "not-yet-supported: CF 285  197"
+    },
+    {
+      "page": 12,
+      "rect": [
+        84.2,
+        72.68600000000004,
+        95,
+        83.48599999999999
+      ],
+      "reason": "not-yet-supported: CF 285  199"
+    },
+    {
+      "page": 12,
+      "rect": [
+        53.28,
+        73.68600000000004,
+        64.08,
+        84.48599999999999
+      ],
+      "reason": "not-yet-supported: CF 285  198"
+    },
+    {
+      "page": 12,
+      "rect": [
+        39.6,
+        116.85500000000002,
+        185.76,
+        155.735
+      ],
+      "reason": "not-yet-supported: CF 285  2013"
+    },
+    {
+      "page": 12,
+      "rect": [
+        185.04,
+        116.85500000000002,
+        361.44,
+        155.015
+      ],
+      "reason": "not-yet-supported: CF 285  2012"
+    },
+    {
+      "page": 12,
+      "rect": [
+        361.72,
+        118.20500000000004,
+        372.52,
+        129.005
+      ],
+      "reason": "not-yet-supported: CF 285  202"
+    },
+    {
+      "page": 12,
+      "rect": [
+        362.16,
+        130.44500000000005,
+        372.96,
+        141.245
+      ],
+      "reason": "not-yet-supported: CF 285  203"
+    },
+    {
+      "page": 12,
+      "rect": [
+        144.72,
+        132.5,
+        144.97,
+        133
+      ],
+      "reason": "not-yet-supported: CF 285  200"
+    },
+    {
+      "page": 12,
+      "rect": [
+        290.16,
+        132.5,
+        290.41,
+        133
+      ],
+      "reason": "not-yet-supported: CF 285  201"
+    },
+    {
+      "page": 12,
+      "rect": [
+        534.93,
+        133.74,
+        575.25,
+        144.53999999999996
+      ],
+      "reason": "not-yet-supported: CF 285  205"
+    },
+    {
+      "page": 12,
+      "rect": [
+        402.96,
+        143.53999999999996,
+        432.48,
+        153.62
+      ],
+      "reason": "not-yet-supported: CF 285  204"
+    },
+    {
+      "page": 12,
+      "rect": [
+        38.88,
+        155.735,
+        185.04,
+        194.615
+      ],
+      "reason": "not-yet-supported: CF 285  206"
+    },
+    {
+      "page": 12,
+      "rect": [
+        184.32,
+        155.735,
+        360.72,
+        193.89499999999998
+      ],
+      "reason": "not-yet-supported: CF 285  207"
+    },
+    {
+      "page": 12,
+      "rect": [
+        362.44,
+        157.53599999999994,
+        373.24,
+        168.336
+      ],
+      "reason": "not-yet-supported: CF 285  208"
+    },
+    {
+      "page": 12,
+      "rect": [
+        361.88,
+        168.77599999999995,
+        372.68,
+        179.57600000000002
+      ],
+      "reason": "not-yet-supported: CF 285  209"
+    },
+    {
+      "page": 12,
+      "rect": [
+        535.68,
+        175.495,
+        576,
+        186.29499999999996
+      ],
+      "reason": "not-yet-supported: CF 285  2011"
+    },
+    {
+      "page": 12,
+      "rect": [
+        403.4,
+        179.95600000000002,
+        432.92,
+        190.03599999999994
+      ],
+      "reason": "not-yet-supported: CF 285  2010"
+    },
+    {
+      "page": 12,
+      "rect": [
+        430.56,
+        198.41099999999994,
+        575.75,
+        212.091
+      ],
+      "reason": "not-yet-supported: CF 285  214"
+    },
+    {
+      "page": 12,
+      "rect": [
+        307.375,
+        200.25099999999998,
+        318.175,
+        211.05100000000004
+      ],
+      "reason": "not-yet-supported: CF 285  212"
+    },
+    {
+      "page": 12,
+      "rect": [
+        336.764,
+        200.25099999999998,
+        348.564,
+        212.05100000000004
+      ],
+      "reason": "not-yet-supported: CF 285  213"
+    },
+    {
+      "page": 12,
+      "rect": [
+        539.52,
+        230.09199999999998,
+        550.32,
+        240.89200000000005
+      ],
+      "reason": "not-yet-supported: CF 285  216"
+    },
+    {
+      "page": 12,
+      "rect": [
+        517.84,
+        230.17200000000003,
+        528.64,
+        240.97199999999998
+      ],
+      "reason": "not-yet-supported: CF 285  215"
+    },
+    {
+      "page": 12,
+      "rect": [
+        520.2,
+        251.41200000000003,
+        531,
+        262.212
+      ],
+      "reason": "not-yet-supported: CF 285  217"
+    },
+    {
+      "page": 12,
+      "rect": [
+        540.52,
+        251.692,
+        551.32,
+        262.49199999999996
+      ],
+      "reason": "not-yet-supported: CF 285  218"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.76,
+        372.64,
+        63.56,
+        383.44
+      ],
+      "reason": "not-yet-supported: CF 285  221"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.84,
+        372.64,
+        423.64,
+        383.44
+      ],
+      "reason": "not-yet-supported: CF 285  235"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52,
+        373.36,
+        239.32,
+        384.16
+      ],
+      "reason": "not-yet-supported: CF 285  229"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.76,
+        386.24,
+        63.56,
+        397.04
+      ],
+      "reason": "not-yet-supported: CF 285  222"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.84,
+        386.96,
+        423.64,
+        397.76
+      ],
+      "reason": "not-yet-supported: CF 285  236"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52,
+        396.2,
+        239.32,
+        407
+      ],
+      "reason": "not-yet-supported: CF 285  230"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.76,
+        400.56,
+        63.56,
+        411.36
+      ],
+      "reason": "not-yet-supported: CF 285  223"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.84,
+        400.56,
+        423.64,
+        411.36
+      ],
+      "reason": "not-yet-supported: CF 285  237"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.76,
+        413.44,
+        63.56,
+        424.24
+      ],
+      "reason": "not-yet-supported: CF 285  224"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.84,
+        414.16,
+        423.64,
+        424.96
+      ],
+      "reason": "not-yet-supported: CF 285  238"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52,
+        420.28,
+        239.32,
+        431.08
+      ],
+      "reason": "not-yet-supported: CF 285  231"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.76,
+        427.04,
+        63.56,
+        437.84
+      ],
+      "reason": "not-yet-supported: CF 285  225"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52,
+        433.28,
+        239.32,
+        444.08
+      ],
+      "reason": "not-yet-supported: CF 285  232"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.84,
+        437.04,
+        423.64,
+        447.84
+      ],
+      "reason": "not-yet-supported: CF 285  239"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.76,
+        440.64,
+        63.56,
+        451.44
+      ],
+      "reason": "not-yet-supported: CF 285  226"
+    },
+    {
+      "page": 12,
+      "rect": [
+        412.84,
+        450.8,
+        423.64,
+        461.6
+      ],
+      "reason": "not-yet-supported: CF 285  240"
+    },
+    {
+      "page": 12,
+      "rect": [
+        457.2,
+        452.44,
+        564.48,
+        463.24
+      ],
+      "reason": "not-yet-supported: CF 285  241"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.76,
+        454.96,
+        63.56,
+        465.76
+      ],
+      "reason": "not-yet-supported: CF 285  227"
+    },
+    {
+      "page": 12,
+      "rect": [
+        228.52,
+        457.64,
+        239.32,
+        468.44
+      ],
+      "reason": "not-yet-supported: CF 285  234"
+    },
+    {
+      "page": 12,
+      "rect": [
+        431.28,
+        461.96,
+        565.56,
+        472.76
+      ],
+      "reason": "not-yet-supported: CF 285  242"
+    },
+    {
+      "page": 12,
+      "rect": [
+        52.76,
+        467.66,
+        63.56,
+        478.46
+      ],
+      "reason": "not-yet-supported: CF 285  228"
+    },
+    {
+      "page": 12,
+      "rect": [
+        35.72,
+        689.76,
+        575.72,
+        753.12
+      ],
+      "reason": "not-yet-supported: CF 285  267"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.8,
+        217.90999999999997,
+        543.6,
+        228.71000000000004
+      ],
+      "reason": "not-yet-supported: CF 285  278"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.52,
+        230.61,
+        543.32,
+        241.40999999999997
+      ],
+      "reason": "not-yet-supported: CF 285  279"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.8,
+        245.54999999999995,
+        543.6,
+        256.35
+      ],
+      "reason": "not-yet-supported: CF 285  287"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.52,
+        258.25,
+        543.32,
+        269.04999999999995
+      ],
+      "reason": "not-yet-supported: CF 285  288"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.8,
+        272.63,
+        543.6,
+        283.43
+      ],
+      "reason": "not-yet-supported: CF 285  296"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.52,
+        285.33,
+        543.32,
+        296.13
+      ],
+      "reason": "not-yet-supported: CF 285  297"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.7,
+        299.63,
+        543.5,
+        310.43
+      ],
+      "reason": "not-yet-supported: CF 285  305"
+    },
+    {
+      "page": 13,
+      "rect": [
+        532.42,
+        312.33,
+        543.22,
+        323.13
+      ],
+      "reason": "not-yet-supported: CF 285  306"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        339.84,
+        576.72,
+        388.08
+      ],
+      "reason": "not-yet-supported: CF 285  307"
+    },
+    {
+      "page": 13,
+      "rect": [
+        513.28,
+        393.5,
+        524.08,
+        404.3
+      ],
+      "reason": "not-yet-supported: CF 285  308"
+    },
+    {
+      "page": 13,
+      "rect": [
+        540.28,
+        393.5,
+        551.08,
+        404.3
+      ],
+      "reason": "not-yet-supported: CF 285  309"
+    },
+    {
+      "page": 13,
+      "rect": [
+        217.44,
+        419.768,
+        396.72,
+        435.528
+      ],
+      "reason": "not-yet-supported: CF 285  311"
+    },
+    {
+      "page": 13,
+      "rect": [
+        396.72,
+        419.768,
+        576,
+        435.528
+      ],
+      "reason": "not-yet-supported: CF 285  312"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        420.488,
+        217.44,
+        436.248
+      ],
+      "reason": "not-yet-supported: CF 285  3010"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.54,
+        445.688,
+        575.28,
+        460.808
+      ],
+      "reason": "not-yet-supported: CF 285  313"
+    },
+    {
+      "page": 13,
+      "rect": [
+        239.04,
+        465.04,
+        249.84,
+        475.84
+      ],
+      "reason": "not-yet-supported: CF 285  314"
+    },
+    {
+      "page": 13,
+      "rect": [
+        271.28,
+        465.04,
+        282.08,
+        475.84
+      ],
+      "reason": "not-yet-supported: CF 285  315"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        491.488,
+        216.72,
+        506.608
+      ],
+      "reason": "not-yet-supported: CF 285  316"
+    },
+    {
+      "page": 13,
+      "rect": [
+        216.72,
+        491.488,
+        396.72,
+        506.608
+      ],
+      "reason": "not-yet-supported: CF 285  317"
+    },
+    {
+      "page": 13,
+      "rect": [
+        397.44,
+        491.488,
+        576.72,
+        506.608
+      ],
+      "reason": "not-yet-supported: CF 285  318"
+    },
+    {
+      "page": 13,
+      "rect": [
+        37.44,
+        515.238,
+        576,
+        530.358
+      ],
+      "reason": "not-yet-supported: CF 285  319"
+    },
+    {
+      "page": 13,
+      "rect": [
+        161.28,
+        603.36,
+        229.68,
+        634.3199999999999
+      ],
+      "reason": "not-yet-supported: CF 285  321"
+    },
+    {
+      "page": 13,
+      "rect": [
+        229.68,
+        603.36,
+        357.12,
+        634.3199999999999
+      ],
+      "reason": "not-yet-supported: CF 285  322"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        604.264,
+        160.56,
+        634.504
+      ],
+      "reason": "not-yet-supported: CF 285  320"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.96,
+        605.701,
+        437.76,
+        616.501
+      ],
+      "reason": "not-yet-supported: CF 285  324"
+    },
+    {
+      "page": 13,
+      "rect": [
+        362.16,
+        613.44,
+        424.8,
+        624.24
+      ],
+      "reason": "not-yet-supported: CF 285  323"
+    },
+    {
+      "page": 13,
+      "rect": [
+        427.28,
+        618.6610000000001,
+        438.08,
+        629.461
+      ],
+      "reason": "not-yet-supported: CF 285  325"
+    },
+    {
+      "page": 13,
+      "rect": [
+        515.52,
+        618.6610000000001,
+        573.84,
+        629.461
+      ],
+      "reason": "not-yet-supported: CF 285  326"
+    },
+    {
+      "page": 13,
+      "rect": [
+        160.56,
+        632.88,
+        228.96,
+        663.84
+      ],
+      "reason": "not-yet-supported: CF 285  328"
+    },
+    {
+      "page": 13,
+      "rect": [
+        228.96,
+        632.88,
+        356.4,
+        663.84
+      ],
+      "reason": "not-yet-supported: CF 285  329"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        633.6,
+        159.84,
+        663.84
+      ],
+      "reason": "not-yet-supported: CF 285  327"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.24,
+        635.221,
+        437.04,
+        646.021
+      ],
+      "reason": "not-yet-supported: CF 285  331"
+    },
+    {
+      "page": 13,
+      "rect": [
+        361.44,
+        642.96,
+        424.08,
+        653.76
+      ],
+      "reason": "not-yet-supported: CF 285  330"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.56,
+        648.181,
+        437.36,
+        658.981
+      ],
+      "reason": "not-yet-supported: CF 285  332"
+    },
+    {
+      "page": 13,
+      "rect": [
+        514.8,
+        648.181,
+        573.12,
+        658.981
+      ],
+      "reason": "not-yet-supported: CF 285  333"
+    },
+    {
+      "page": 13,
+      "rect": [
+        160.72,
+        663.12,
+        229.12,
+        694.08
+      ],
+      "reason": "not-yet-supported: CF 285  335"
+    },
+    {
+      "page": 13,
+      "rect": [
+        229.12,
+        663.12,
+        356.56,
+        694.08
+      ],
+      "reason": "not-yet-supported: CF 285  336"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.16,
+        663.84,
+        160,
+        694.08
+      ],
+      "reason": "not-yet-supported: CF 285  334"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.4,
+        665.461,
+        437.2,
+        676.261
+      ],
+      "reason": "not-yet-supported: CF 285  338"
+    },
+    {
+      "page": 13,
+      "rect": [
+        361.6,
+        673.2,
+        424.24,
+        684
+      ],
+      "reason": "not-yet-supported: CF 285  337"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.72,
+        678.421,
+        437.52,
+        689.221
+      ],
+      "reason": "not-yet-supported: CF 285  339"
+    },
+    {
+      "page": 13,
+      "rect": [
+        514.96,
+        678.421,
+        573.28,
+        689.221
+      ],
+      "reason": "not-yet-supported: CF 285  340"
+    },
+    {
+      "page": 13,
+      "rect": [
+        161.28,
+        693,
+        229.68,
+        723.96
+      ],
+      "reason": "not-yet-supported: CF 285  342"
+    },
+    {
+      "page": 13,
+      "rect": [
+        229.68,
+        693,
+        357.12,
+        723.96
+      ],
+      "reason": "not-yet-supported: CF 285  343"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        693.72,
+        160.56,
+        723.96
+      ],
+      "reason": "not-yet-supported: CF 285  341"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.96,
+        695.3409,
+        437.76,
+        706.1409
+      ],
+      "reason": "not-yet-supported: CF 285  345"
+    },
+    {
+      "page": 13,
+      "rect": [
+        362.16,
+        703.08,
+        424.8,
+        713.88
+      ],
+      "reason": "not-yet-supported: CF 285  344"
+    },
+    {
+      "page": 13,
+      "rect": [
+        427.28,
+        708.3009,
+        438.08,
+        719.1009
+      ],
+      "reason": "not-yet-supported: CF 285  346"
+    },
+    {
+      "page": 13,
+      "rect": [
+        515.52,
+        708.3009,
+        573.84,
+        719.1009
+      ],
+      "reason": "not-yet-supported: CF 285  347"
+    },
+    {
+      "page": 13,
+      "rect": [
+        161.28,
+        723.6,
+        229.68,
+        754.56
+      ],
+      "reason": "not-yet-supported: CF 285  349"
+    },
+    {
+      "page": 13,
+      "rect": [
+        229.68,
+        723.6,
+        357.12,
+        754.56
+      ],
+      "reason": "not-yet-supported: CF 285  350"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36.72,
+        724.3199999999999,
+        160.56,
+        754.56
+      ],
+      "reason": "not-yet-supported: CF 285  348"
+    },
+    {
+      "page": 13,
+      "rect": [
+        426.96,
+        725.9409,
+        437.76,
+        736.7409
+      ],
+      "reason": "not-yet-supported: CF 285  352"
+    },
+    {
+      "page": 13,
+      "rect": [
+        362.16,
+        733.68,
+        424.8,
+        744.48
+      ],
+      "reason": "not-yet-supported: CF 285  351"
+    },
+    {
+      "page": 13,
+      "rect": [
+        427.28,
+        738.9009,
+        438.08,
+        749.7009
+      ],
+      "reason": "not-yet-supported: CF 285  353"
+    },
+    {
+      "page": 13,
+      "rect": [
+        515.52,
+        739.44,
+        573.84,
+        750.24
+      ],
+      "reason": "not-yet-supported: CF 285  354"
+    },
+    {
+      "page": 14,
+      "rect": [
+        383.44,
+        229.96000000000004,
+        394.24,
+        240.76
+      ],
+      "reason": "not-yet-supported: CF 285  373"
+    },
+    {
+      "page": 14,
+      "rect": [
+        410.92,
+        229.96000000000004,
+        421.72,
+        240.76
+      ],
+      "reason": "not-yet-supported: CF 285  374"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36.72,
+        279,
+        189,
+        301.68
+      ],
+      "reason": "not-yet-supported: CF 285  375"
+    },
+    {
+      "page": 14,
+      "rect": [
+        189,
+        279.36,
+        434.52,
+        300.96
+      ],
+      "reason": "not-yet-supported: CF 285  376"
+    },
+    {
+      "page": 14,
+      "rect": [
+        497.52,
+        284.08,
+        575.28,
+        294.88
+      ],
+      "reason": "not-yet-supported: CF 285  378"
+    },
+    {
+      "page": 14,
+      "rect": [
+        445.68,
+        284.96,
+        497.16,
+        295.76
+      ],
+      "reason": "not-yet-supported: CF 285  377"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36.72,
+        300.96,
+        189,
+        323.64
+      ],
+      "reason": "not-yet-supported: CF 285  379"
+    },
+    {
+      "page": 14,
+      "rect": [
+        189,
+        301.32,
+        434.52,
+        322.92
+      ],
+      "reason": "not-yet-supported: CF 285  380"
+    },
+    {
+      "page": 14,
+      "rect": [
+        497.52,
+        306.04,
+        575.28,
+        316.84
+      ],
+      "reason": "not-yet-supported: CF 285  382"
+    },
+    {
+      "page": 14,
+      "rect": [
+        446.4,
+        306.92,
+        497.16,
+        317.72
+      ],
+      "reason": "not-yet-supported: CF 285  381"
+    },
+    {
+      "page": 14,
+      "rect": [
+        54,
+        349.92,
+        64.8,
+        360.72
+      ],
+      "reason": "not-yet-supported: CF 285  383"
+    },
+    {
+      "page": 14,
+      "rect": [
+        81.96,
+        350.64,
+        92.76,
+        361.44
+      ],
+      "reason": "not-yet-supported: CF 285  384"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36,
+        398.6,
+        189,
+        419.48
+      ],
+      "reason": "not-yet-supported: CF 285  385"
+    },
+    {
+      "page": 14,
+      "rect": [
+        189,
+        398.88,
+        434.16,
+        419.76
+      ],
+      "reason": "not-yet-supported: CF 285  386"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.08,
+        403.52,
+        575.28,
+        414.32
+      ],
+      "reason": "not-yet-supported: CF 285  388"
+    },
+    {
+      "page": 14,
+      "rect": [
+        445.68,
+        403.6,
+        496.08,
+        414.4
+      ],
+      "reason": "not-yet-supported: CF 285  387"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36.72,
+        420.48,
+        189.72,
+        441.36
+      ],
+      "reason": "not-yet-supported: CF 285  389"
+    },
+    {
+      "page": 14,
+      "rect": [
+        189.72,
+        420.76,
+        434.88,
+        441.64
+      ],
+      "reason": "not-yet-supported: CF 285  390"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.8,
+        425.4,
+        576,
+        436.2
+      ],
+      "reason": "not-yet-supported: CF 285  392"
+    },
+    {
+      "page": 14,
+      "rect": [
+        445.68,
+        425.48,
+        496.8,
+        436.28
+      ],
+      "reason": "not-yet-supported: CF 285  391"
+    },
+    {
+      "page": 14,
+      "rect": [
+        37.44,
+        469.956,
+        51.12,
+        485.796
+      ],
+      "reason": "not-yet-supported: CF 285  393a 2"
+    },
+    {
+      "page": 14,
+      "rect": [
+        158.4,
+        544.3199999999999,
+        167.76,
+        556.56
+      ],
+      "reason": "not-yet-supported: CF 285  393b 2"
+    },
+    {
+      "page": 14,
+      "rect": [
+        201.6,
+        573.84,
+        214.56,
+        584.64
+      ],
+      "reason": "not-yet-supported: CF 285  400"
+    },
+    {
+      "page": 14,
+      "rect": [
+        216,
+        610.36,
+        229.68,
+        619.72
+      ],
+      "reason": "not-yet-supported: CF 285  406"
+    },
+    {
+      "page": 14,
+      "rect": [
+        176.4,
+        624.24,
+        190.08,
+        640.08
+      ],
+      "reason": "not-yet-supported: CF 285  412"
+    },
+    {
+      "page": 14,
+      "rect": [
+        194.4,
+        642.96,
+        208.08,
+        658.8
+      ],
+      "reason": "not-yet-supported: CF 285  417"
+    },
+    {
+      "page": 14,
+      "rect": [
+        203.76,
+        663.12,
+        217.44,
+        675
+      ],
+      "reason": "not-yet-supported: CF 285  422"
+    },
+    {
+      "page": 14,
+      "rect": [
+        299.52,
+        691.92,
+        434.16,
+        719.28
+      ],
+      "reason": "not-yet-supported: CF 285  430"
+    },
+    {
+      "page": 14,
+      "rect": [
+        444.96,
+        703.28,
+        496.08,
+        714.08
+      ],
+      "reason": "not-yet-supported: CF 285  407"
+    },
+    {
+      "page": 14,
+      "rect": [
+        496.44,
+        703.56,
+        575.28,
+        714.36
+      ],
+      "reason": "not-yet-supported: CF 285  431"
+    },
+    {
+      "page": 14,
+      "rect": [
+        38.16,
+        704.88,
+        48.96,
+        715.6800000000001
+      ],
+      "reason": "not-yet-supported: CF 285  427"
+    },
+    {
+      "page": 14,
+      "rect": [
+        65.4,
+        704.88,
+        76.2,
+        715.6800000000001
+      ],
+      "reason": "not-yet-supported: CF 285  429"
+    },
+    {
+      "page": 14,
+      "rect": [
+        455.64,
+        734.951,
+        466.44,
+        745.751
+      ],
+      "reason": "not-yet-supported: CF 285  433"
+    },
+    {
+      "page": 14,
+      "rect": [
+        426.88,
+        735.04,
+        437.68,
+        745.84
+      ],
+      "reason": "not-yet-supported: CF 285  428"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.8,
+        132.67999999999995,
+        409.6,
+        143.48000000000002
+      ],
+      "reason": "not-yet-supported: CF 285  444"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.28,
+        133.48000000000002,
+        208.08,
+        144.27999999999997
+      ],
+      "reason": "not-yet-supported: CF 285  440"
+    },
+    {
+      "page": 15,
+      "rect": [
+        36.28,
+        133.55999999999995,
+        47.08,
+        144.36
+      ],
+      "reason": "not-yet-supported: CF 285  436"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.16,
+        144.48000000000002,
+        408.96,
+        155.27999999999997
+      ],
+      "reason": "not-yet-supported: CF 285  445"
+    },
+    {
+      "page": 15,
+      "rect": [
+        36.28,
+        145.60000000000002,
+        47.08,
+        156.39999999999998
+      ],
+      "reason": "not-yet-supported: CF 285  437"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.28,
+        156.79999999999995,
+        208.08,
+        167.60000000000002
+      ],
+      "reason": "not-yet-supported: CF 285  441"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.28,
+        168.76,
+        208.08,
+        179.55999999999995
+      ],
+      "reason": "not-yet-supported: CF 285  442"
+    },
+    {
+      "page": 15,
+      "rect": [
+        36.28,
+        169.36,
+        47.08,
+        180.15999999999997
+      ],
+      "reason": "not-yet-supported: CF 285  438"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.16,
+        181.15999999999997,
+        408.96,
+        191.96000000000004
+      ],
+      "reason": "not-yet-supported: CF 285  446"
+    },
+    {
+      "page": 15,
+      "rect": [
+        36.28,
+        181.76,
+        47.08,
+        192.55999999999995
+      ],
+      "reason": "not-yet-supported: CF 285  439"
+    },
+    {
+      "page": 15,
+      "rect": [
+        197.28,
+        192.36,
+        208.08,
+        203.15999999999997
+      ],
+      "reason": "not-yet-supported: CF 285  443"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.16,
+        192.76,
+        408.96,
+        203.55999999999995
+      ],
+      "reason": "not-yet-supported: CF 285  447"
+    },
+    {
+      "page": 15,
+      "rect": [
+        398.16,
+        205.79999999999995,
+        408.96,
+        216.60000000000002
+      ],
+      "reason": "not-yet-supported: CF 285  448"
+    },
+    {
+      "page": 15,
+      "rect": [
+        515.96,
+        416.112,
+        526.76,
+        426.912
+      ],
+      "reason": "not-yet-supported: CF 285  473"
+    },
+    {
+      "page": 15,
+      "rect": [
+        539,
+        416.112,
+        549.8,
+        426.912
+      ],
+      "reason": "not-yet-supported: CF 285  474"
+    },
+    {
+      "page": 15,
+      "rect": [
+        41.04,
+        476.64,
+        295.2,
+        490.5
+      ],
+      "reason": "not-yet-supported: CF 285  475"
+    },
+    {
+      "page": 15,
+      "rect": [
+        299.34,
+        476.64,
+        576,
+        490.32
+      ],
+      "reason": "not-yet-supported: CF 285  476"
+    },
+    {
+      "page": 15,
+      "rect": [
+        298.8,
+        498.96,
+        575.46,
+        511.92
+      ],
+      "reason": "not-yet-supported: CF 285  478"
+    },
+    {
+      "page": 15,
+      "rect": [
+        40.6,
+        499.5,
+        294.76,
+        511.92
+      ],
+      "reason": "not-yet-supported: CF 285  477"
+    },
+    {
+      "page": 15,
+      "rect": [
+        501.36,
+        516.3720000000001,
+        512.16,
+        527.172
+      ],
+      "reason": "not-yet-supported: CF 285  479"
+    },
+    {
+      "page": 15,
+      "rect": [
+        532.92,
+        516.3720000000001,
+        543.72,
+        527.172
+      ],
+      "reason": "not-yet-supported: CF 285  480"
+    },
+    {
+      "page": 15,
+      "rect": [
+        37.44,
+        630.505,
+        216.72,
+        660.025
+      ],
+      "reason": "not-yet-supported: CF 285  481"
+    },
+    {
+      "page": 15,
+      "rect": [
+        457.2,
+        630.505,
+        576,
+        660.025
+      ],
+      "reason": "not-yet-supported: CF 285  483"
+    },
+    {
+      "page": 15,
+      "rect": [
+        216.72,
+        631.225,
+        457.2,
+        659.3050000000001
+      ],
+      "reason": "not-yet-supported: CF 285  482"
+    },
+    {
+      "page": 15,
+      "rect": [
+        37.44,
+        660.745,
+        216.72,
+        689.185
+      ],
+      "reason": "not-yet-supported: CF 285  484"
+    },
+    {
+      "page": 15,
+      "rect": [
+        216.72,
+        660.745,
+        456.48,
+        689.905
+      ],
+      "reason": "not-yet-supported: CF 285  485"
+    },
+    {
+      "page": 15,
+      "rect": [
+        457.2,
+        660.745,
+        577.44,
+        689.905
+      ],
+      "reason": "not-yet-supported: CF 285  486"
+    },
+    {
+      "page": 15,
+      "rect": [
+        254.586,
+        705.3525,
+        265.386,
+        716.1525
+      ],
+      "reason": "not-yet-supported: CF 285  487"
+    },
+    {
+      "page": 15,
+      "rect": [
+        285.02,
+        705.3525,
+        295.82,
+        716.1525
+      ],
+      "reason": "not-yet-supported: CF 285  488"
+    },
+    {
+      "page": 15,
+      "rect": [
+        40.07,
+        736.026,
+        575.75,
+        753.6659999999999
+      ],
+      "reason": "not-yet-supported: CF 285  489"
+    },
+    {
+      "page": 16,
+      "rect": [
+        238,
+        72.29600000000005,
+        248.8,
+        83.096
+      ],
+      "reason": "not-yet-supported: CF 285  490"
+    },
+    {
+      "page": 16,
+      "rect": [
+        266.08,
+        72.29600000000005,
+        276.88,
+        83.096
+      ],
+      "reason": "not-yet-supported: CF 285  491"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.28,
+        105.84000000000003,
+        47.08,
+        116.63999999999999
+      ],
+      "reason": "not-yet-supported: CF 285  492"
+    },
+    {
+      "page": 16,
+      "rect": [
+        233.53,
+        107.10000000000002,
+        244.33,
+        117.89999999999998
+      ],
+      "reason": "not-yet-supported: CF 285  495"
+    },
+    {
+      "page": 16,
+      "rect": [
+        423.029,
+        107.27999999999997,
+        433.829,
+        118.08000000000004
+      ],
+      "reason": "not-yet-supported: CF 285  499"
+    },
+    {
+      "page": 16,
+      "rect": [
+        233.28,
+        115.84000000000003,
+        244.08,
+        126.63999999999999
+      ],
+      "reason": "not-yet-supported: CF 285  496"
+    },
+    {
+      "page": 16,
+      "rect": [
+        423,
+        116.20000000000005,
+        433.8,
+        127
+      ],
+      "reason": "not-yet-supported: CF 285  500"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.28,
+        126.20000000000005,
+        47.08,
+        137
+      ],
+      "reason": "not-yet-supported: CF 285  493"
+    },
+    {
+      "page": 16,
+      "rect": [
+        233.28,
+        126.20000000000005,
+        244.08,
+        137
+      ],
+      "reason": "not-yet-supported: CF 285  497"
+    },
+    {
+      "page": 16,
+      "rect": [
+        423,
+        126.20000000000005,
+        433.8,
+        137
+      ],
+      "reason": "not-yet-supported: CF 285  506"
+    },
+    {
+      "page": 16,
+      "rect": [
+        233.28,
+        136.55999999999995,
+        244.08,
+        147.36
+      ],
+      "reason": "not-yet-supported: CF 285  498"
+    },
+    {
+      "page": 16,
+      "rect": [
+        423,
+        137.10000000000002,
+        433.8,
+        147.89999999999998
+      ],
+      "reason": "not-yet-supported: CF 285  507"
+    },
+    {
+      "page": 16,
+      "rect": [
+        468.72,
+        138.72000000000003,
+        576.72,
+        148.59000000000003
+      ],
+      "reason": "not-yet-supported: CF 285  508"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.28,
+        146.55999999999995,
+        47.08,
+        157.36
+      ],
+      "reason": "not-yet-supported: CF 285  494"
+    },
+    {
+      "page": 16,
+      "rect": [
+        189,
+        229.5,
+        327.96,
+        259.74
+      ],
+      "reason": "not-yet-supported: CF 285  509"
+    },
+    {
+      "page": 16,
+      "rect": [
+        389.52,
+        229.67999999999995,
+        575.28,
+        259.91999999999996
+      ],
+      "reason": "not-yet-supported: CF 285  5011"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.72,
+        230.39999999999998,
+        189.72,
+        260.64
+      ],
+      "reason": "not-yet-supported: CF 285  505"
+    },
+    {
+      "page": 16,
+      "rect": [
+        336.96,
+        236.88,
+        388.44,
+        253.62
+      ],
+      "reason": "not-yet-supported: CF 285  5010"
+    },
+    {
+      "page": 16,
+      "rect": [
+        189,
+        260.64,
+        327.96,
+        290.88
+      ],
+      "reason": "not-yet-supported: CF 285  5013"
+    },
+    {
+      "page": 16,
+      "rect": [
+        389.52,
+        260.82000000000005,
+        575.28,
+        291.06
+      ],
+      "reason": "not-yet-supported: CF 285  5015"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.72,
+        261.53999999999996,
+        189.72,
+        291.78
+      ],
+      "reason": "not-yet-supported: CF 285  5012"
+    },
+    {
+      "page": 16,
+      "rect": [
+        336.24,
+        268.02,
+        388.44,
+        284.76
+      ],
+      "reason": "not-yet-supported: CF 285  5014"
+    },
+    {
+      "page": 16,
+      "rect": [
+        189.44,
+        291.32,
+        328.4,
+        321.56
+      ],
+      "reason": "not-yet-supported: CF 285  5017"
+    },
+    {
+      "page": 16,
+      "rect": [
+        389.52,
+        291.5,
+        575.28,
+        321.74
+      ],
+      "reason": "not-yet-supported: CF 285  5019"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.72,
+        292.22,
+        189.72,
+        322.46
+      ],
+      "reason": "not-yet-supported: CF 285  5016"
+    },
+    {
+      "page": 16,
+      "rect": [
+        336.96,
+        298.7,
+        388.44,
+        315.44
+      ],
+      "reason": "not-yet-supported: CF 285  5018"
+    },
+    {
+      "page": 16,
+      "rect": [
+        189,
+        322.28,
+        327.96,
+        352.52
+      ],
+      "reason": "not-yet-supported: CF 285  5021"
+    },
+    {
+      "page": 16,
+      "rect": [
+        389.52,
+        322.46,
+        575.28,
+        352.7
+      ],
+      "reason": "not-yet-supported: CF 285  5023"
+    },
+    {
+      "page": 16,
+      "rect": [
+        36.72,
+        323.18,
+        189.72,
+        353.42
+      ],
+      "reason": "not-yet-supported: CF 285  5020"
+    },
+    {
+      "page": 16,
+      "rect": [
+        336.96,
+        329.66,
+        388.44,
+        346.4
+      ],
+      "reason": "not-yet-supported: CF 285  5022"
+    },
+    {
+      "page": 16,
+      "rect": [
+        252.692,
+        373.145,
+        263.492,
+        383.945
+      ],
+      "reason": "not-yet-supported: CF 285  521"
+    },
+    {
+      "page": 16,
+      "rect": [
+        283.819,
+        373.145,
+        294.619,
+        383.945
+      ],
+      "reason": "not-yet-supported: CF 285  522"
+    },
+    {
+      "page": 16,
+      "rect": [
+        539.052,
+        430.879,
+        549.852,
+        441.679
+      ],
+      "reason": "not-yet-supported: CF 285  524"
+    },
+    {
+      "page": 16,
+      "rect": [
+        509.192,
+        430.959,
+        519.992,
+        441.759
+      ],
+      "reason": "not-yet-supported: CF 285  523"
+    },
+    {
+      "page": 16,
+      "rect": [
+        104.76,
+        448.25,
+        393.84,
+        459.77
+      ],
+      "reason": "not-yet-supported: CF 285  525"
+    },
+    {
+      "page": 16,
+      "rect": [
+        509.772,
+        488.071,
+        520.572,
+        498.871
+      ],
+      "reason": "not-yet-supported: CF 285  526"
+    },
+    {
+      "page": 16,
+      "rect": [
+        538.852,
+        488.331,
+        549.652,
+        499.131
+      ],
+      "reason": "not-yet-supported: CF 285  527"
+    },
+    {
+      "page": 16,
+      "rect": [
+        102.96,
+        504.49,
+        392.4,
+        517.45
+      ],
+      "reason": "not-yet-supported: CF 285  528"
+    },
+    {
+      "page": 16,
+      "rect": [
+        539.072,
+        547.721,
+        549.872,
+        558.521
+      ],
+      "reason": "not-yet-supported: CF 285  530"
+    },
+    {
+      "page": 16,
+      "rect": [
+        509.492,
+        547.781,
+        520.292,
+        558.581
+      ],
+      "reason": "not-yet-supported: CF 285  529"
+    },
+    {
+      "page": 16,
+      "rect": [
+        104.4,
+        564.16,
+        396,
+        576.91
+      ],
+      "reason": "not-yet-supported: CF 285  531"
+    },
+    {
+      "page": 16,
+      "rect": [
+        509.552,
+        606.121,
+        520.352,
+        616.921
+      ],
+      "reason": "not-yet-supported: CF 285  532"
+    },
+    {
+      "page": 16,
+      "rect": [
+        539.372,
+        606.561,
+        550.172,
+        617.361
+      ],
+      "reason": "not-yet-supported: CF 285  533"
+    },
+    {
+      "page": 16,
+      "rect": [
+        104.33,
+        622.67,
+        393.12,
+        635.35
+      ],
+      "reason": "not-yet-supported: CF 285  534"
+    },
+    {
+      "page": 16,
+      "rect": [
+        538.931,
+        665.201,
+        549.731,
+        676.001
+      ],
+      "reason": "not-yet-supported: CF 285  536"
+    },
+    {
+      "page": 16,
+      "rect": [
+        509.651,
+        665.687,
+        520.451,
+        676.487
+      ],
+      "reason": "not-yet-supported: CF 285  535"
+    },
+    {
+      "page": 16,
+      "rect": [
+        105.43,
+        683.34,
+        392.71,
+        695.1201
+      ],
+      "reason": "not-yet-supported: CF 285  537"
+    },
+    {
+      "page": 16,
+      "rect": [
+        507.196,
+        723.614,
+        517.996,
+        734.414
+      ],
+      "reason": "not-yet-supported: CF 285  538"
+    },
+    {
+      "page": 16,
+      "rect": [
+        539.518,
+        723.614,
+        550.318,
+        734.414
+      ],
+      "reason": "not-yet-supported: CF 285  539"
+    },
+    {
+      "page": 16,
+      "rect": [
+        103.465,
+        741.6801,
+        392.905,
+        753.2001
+      ],
+      "reason": "not-yet-supported: CF 285  540"
+    },
+    {
+      "page": 18,
+      "rect": [
+        35.56,
+        72.72000000000003,
+        576.28,
+        617.04
+      ],
+      "reason": "manual-only: CF 285  542"
+    },
+    {
+      "page": 18,
+      "rect": [
+        511.24,
+        675.7,
+        522.04,
+        686.5
+      ],
+      "reason": "manual-only: CF 285  543"
+    },
+    {
+      "page": 18,
+      "rect": [
+        545.04,
+        676.08,
+        555.84,
+        686.88
+      ],
+      "reason": "manual-only: CF 285  544"
+    },
+    {
+      "page": 18,
+      "rect": [
+        511.2,
+        706.5,
+        522,
+        717.3
+      ],
+      "reason": "manual-only: CF 285  545"
+    },
+    {
+      "page": 18,
+      "rect": [
+        544.5,
+        707.04,
+        555.3,
+        717.84
+      ],
+      "reason": "manual-only: CF 285  546"
+    },
+    {
+      "page": 18,
+      "rect": [
+        545.76,
+        738,
+        556.56,
+        748.8
+      ],
+      "reason": "manual-only: CF 285  549"
+    },
+    {
+      "page": 18,
+      "rect": [
+        511.92,
+        738.72,
+        522.72,
+        749.52
+      ],
+      "reason": "manual-only: CF 285  548"
+    }
+  ],
+  "coordinateContract": "one-based pages, unrotated top-left PDF points; browser converts from bottom-left MediaBox",
+  "coverageComplete": false,
+  "continuation": "Unsupported overflow is reported for manual completion; no extra pages are silently copied.",
+  "language": "vi",
+  "languageName": "Vietnamese",
+  "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Vietnamese/CF_285_Vietnamese.pdf",
+  "translationOf": "4a7a03c2d7bc63ff7866874f56000787ef05aa6ea8c9cc5da6a42679de9f97a3"
+}

@@ -95,5 +95,5 @@ with tempfile.TemporaryDirectory(prefix='benefitstep-i18n-') as tmp:
   remote=[e for e in p.events if e.get('method')=='Network.requestWillBeSent' and e['params']['request']['url'].startswith(('http:','https:'))]
   errors=[e for e in p.events if e.get('method')=='Runtime.exceptionThrown']
   assert not remote,remote;assert not errors,errors
-  print(json.dumps({'languages':['en-US',LOCALE],'answersPreserved':True,'confirmationPreserved':True,'originalValuesPreserved':True,'reviewItems':17,'officialFormsRemainEnglish':True,'offline':True,'remoteRequests':len(remote),'exceptions':len(errors)}))
+  print(json.dumps({'languages':['en-US',LOCALE],'answersPreserved':True,'confirmationPreserved':True,'originalValuesPreserved':True,'reviewItems':17,'officialFormsDefaultEnglish':True,'offline':True,'remoteRequests':len(remote),'exceptions':len(errors)}))
  finally:p.close()

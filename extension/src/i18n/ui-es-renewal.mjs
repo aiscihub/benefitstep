@@ -145,5 +145,10 @@ export const UI_ES_RENEWAL = {
  "SAR 7 Reminder Notice":"Aviso de recordatorio del SAR 7",
  "Notice of Expiration of Certification":"Aviso de vencimiento de la certificación",
  "Information/Verification Needed":"Información o comprobantes necesarios",
- "Request for Verification":"Solicitud de comprobantes"
+ "Request for Verification":"Solicitud de comprobantes",
+ // The official form edition a draft is filled on.
+ "Official PDF language: English. The CalFresh application (CF 285) and periodic report (SAR 7) can also be filled on the state's Spanish, Chinese or Vietnamese edition. Choose the form language when you prepare a form.":"Idioma del PDF oficial: inglés. La solicitud de CalFresh (CF 285) y el informe periódico (SAR 7) también se pueden llenar en la edición del estado en español, chino o vietnamita. Elija el idioma del formulario cuando lo prepare.",
+ "Official form language":"Idioma del formulario oficial",
+ "The state publishes this form in these languages. Your answers are written as you entered them and are not translated.":"El estado publica este formulario en estos idiomas. Sus respuestas se escriben tal como las ingresó y no se traducen.",
+ "Filled on the official {language} form.":"Llenado en el formulario oficial en {language}."
 };

@@ -423,5 +423,10 @@ export const UI_VI = {
   "SAR 7 Reminder Notice": "Thông báo nhắc nộp SAR 7",
   "Notice of Expiration of Certification": "Thông báo hết hạn chứng nhận",
   "Information/Verification Needed": "Cần thông tin/giấy tờ xác minh",
-  "Request for Verification": "Yêu cầu giấy tờ xác minh"
+  "Request for Verification": "Yêu cầu giấy tờ xác minh",
+  // The official form edition a draft is filled on.
+  "Official PDF language: English. The CalFresh application (CF 285) and periodic report (SAR 7) can also be filled on the state's Spanish, Chinese or Vietnamese edition. Choose the form language when you prepare a form.": "Ngôn ngữ của PDF chính thức: tiếng Anh. Đơn xin CalFresh (CF 285) và báo cáo định kỳ (SAR 7) cũng có thể được điền trên bản tiếng Tây Ban Nha, tiếng Trung hoặc tiếng Việt của tiểu bang. Hãy chọn ngôn ngữ của mẫu đơn khi quý vị chuẩn bị mẫu đơn.",
+  "Official form language": "Ngôn ngữ của mẫu đơn chính thức",
+  "The state publishes this form in these languages. Your answers are written as you entered them and are not translated.": "Tiểu bang phát hành mẫu đơn này bằng các ngôn ngữ sau. Câu trả lời của quý vị được ghi đúng như quý vị đã nhập và không bị dịch.",
+  "Filled on the official {language} form.": "Đã điền trên mẫu đơn chính thức bằng {language}."
 };

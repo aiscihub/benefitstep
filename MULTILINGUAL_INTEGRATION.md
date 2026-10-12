@@ -12,17 +12,30 @@ The header language selector switches between English, Spanish, Simplified Chine
 
 ## Boundaries and remaining work
 
-The Spanish, Simplified Chinese, Traditional Chinese and Vietnamese translations are drafts and need independent linguistic review. The Traditional Chinese catalog (`extension/src/i18n/ui-zh-hant.mjs`) was converted from the Simplified one and then adjusted to Traditional wording; the Vietnamese catalog (`extension/src/i18n/ui-vi.mjs`) was drafted from the English source. Both must carry every string the Simplified Chinese catalog carries; `tests/ui-language.test.mjs` checks this. Detailed policy explanations, some dialogs and application-field instructions still use English. Official CF285 and CCFRM604 PDFs remain English; choosing Spanish does not select a Spanish form or an agency communication language.
+The Spanish, Simplified Chinese, Traditional Chinese and Vietnamese translations are drafts and need independent linguistic review. The Traditional Chinese catalog (`extension/src/i18n/ui-zh-hant.mjs`) was converted from the Simplified one and then adjusted to Traditional wording; the Vietnamese catalog (`extension/src/i18n/ui-vi.mjs`) was drafted from the English source. Both must carry every string the Simplified Chinese catalog carries; `tests/ui-language.test.mjs` checks this. Detailed policy explanations, some dialogs and application-field instructions still use English. Choosing an interface language does not choose an agency communication language. Which official PDF is filled is described under "Translated official forms" below.
 
-The supplied local LanguageDetector/Translator adapters are included and covered by mocked tests, but are not activated by this interface. Real browser model availability, consent/download flows and explanation translation remain future integration work. Spanish PDF generation requires validated Spanish templates and field maps.
+The supplied local LanguageDetector/Translator adapters are included and covered by mocked tests, but are not activated by this interface. Real browser model availability, consent/download flows and explanation translation remain future integration work.
 
 ## Verification
 
-Run `node --test tests/*.test.mjs`. The runtime repository is already unpacked; no build is required. Run `python3 tests/i18n-browser.py` with Chrome available for an isolated offline browser check: all three languages, quick-check answer retention, review confirmation retention, unchanged source values, a user value matching an English UI label, narrow layouts, program gating and English PDF language disclosure.
+Run `node --test tests/*.test.mjs`. The runtime repository is already unpacked; no build is required. Run `python3 tests/i18n-browser.py` with Chrome available for an isolated offline browser check: all three languages, quick-check answer retention, review confirmation retention, unchanged source values, a user value matching an English UI label, narrow layouts, program gating and the notice that says which official edition is filled.
 
 Development only. Archived Chrome Web Store packages are unchanged; the current unpacked extension includes this preview.
 
-Run `python3 tests/i18n-browser.py --chinese` for the Simplified Chinese flow, `--traditional` for Traditional Chinese and `--vietnamese` for Vietnamese. No interface language enables document recognition in that language or translates official PDFs.
+Run `python3 tests/i18n-browser.py --chinese` for the Simplified Chinese flow, `--traditional` for Traditional Chinese and `--vietnamese` for Vietnamese. No interface language enables document recognition in that language, and answers are never translated.
+
+## Translated official forms
+
+Every form is filled on the English edition by default, whatever the interface language. For the CalFresh application (CF 285, 8/21) and the periodic report (SAR 7B, 12/23), an **Official form language** choice sits under the form's button on the package screen and again in the form dialog: the state's own Spanish, Traditional Chinese or Vietnamese edition can be filled instead. The choice lasts for the session. The state publishes these forms in Traditional Chinese only, so that is the Chinese edition offered.
+
+- The translated PDFs come from the state's translated-forms pages and are the same edition as the English form. `extension/forms/registry.json` records each address, date and SHA-256 under `translations`.
+- Each edition has its own map, `extension/forms/maps/<form>.<language>.json`. A translated map is accepted only if it answers the same questions as the English map, on the same pages, with every box in the same place relative to its neighbours.
+- A translated PDF does not always name a box as the English one does. The Vietnamese SAR 7B numbers the boxes at the top of page 1 differently, and each edition renames a few others. Each was matched by the box's own label in that language.
+- Answers are written as entered. A frequency such as "monthly" or a relationship such as "Mother" stays in English on a translated form.
+- The recertification (CF 37) and the Medi-Cal application are filled in English. The state publishes CF 37 in the three languages, but those PDFs name every box differently, carry no box labels, split each date into three boxes, and the Vietnamese one lays out the pay-frequency boxes differently. They need to be matched box by box and checked on the page before they can be used.
+- The maps are drafts like the English ones: every download is stamped as an unsigned draft, and no map has had independent review.
+
+`tests/translated-forms.test.mjs` checks each edition against the registry and the English map, fills a draft on each and reads it back. Opening a protected form made the PDF library drop the backslashes its strings need; many Chinese and Vietnamese characters contain those bytes, and the in-app preview drew the saved form as scrambled letters. `extension/src/pdf-decrypted-strings.mjs` restores them and the same test covers it.
 
 ## Household and source-context review
 

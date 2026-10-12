@@ -424,5 +424,10 @@ export const UI_ZH_HANT = {
   "SAR 7 Reminder Notice": "SAR 7 提醒通知",
   "Notice of Expiration of Certification": "資格到期通知",
   "Information/Verification Needed": "需要資料／證明文件",
-  "Request for Verification": "補充證明文件通知"
+  "Request for Verification": "補充證明文件通知",
+  // The official form edition a draft is filled on.
+  "Official PDF language: English. The CalFresh application (CF 285) and periodic report (SAR 7) can also be filled on the state's Spanish, Chinese or Vietnamese edition. Choose the form language when you prepare a form.": "官方 PDF 語言為英文。CalFresh 申請表（CF 285）和定期報告（SAR 7）也可以填寫在州政府的西班牙文、繁體中文或越南文版上。準備表格時可選擇表格語言。",
+  "Official form language": "官方表格語言",
+  "The state publishes this form in these languages. Your answers are written as you entered them and are not translated.": "州政府以這些語言發布此表格。您的回答會依您輸入的內容填寫，不會被翻譯。",
+  "Filled on the official {language} form.": "已填寫在官方{language}表格上。"
 };

@@ -1,0 +1,5819 @@
+{
+  "schemaVersion": "1.0",
+  "formId": "sar7b",
+  "edition": "12/23",
+  "templateSha256": "e5611c5bb29643ce7a100d7a1b143a68cc460ec38a33288da2221037e6a9030e",
+  "expectedPageCount": 14,
+  "geometry": [
+    {
+      "page": 1,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 2,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 3,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 4,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 5,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 6,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 7,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 8,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 9,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 10,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 11,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 12,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 13,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    },
+    {
+      "page": 14,
+      "mediaBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "cropBox": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "width": 612,
+      "height": 792
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewers": [],
+    "visualValidation": false
+  },
+  "bindings": [
+    {
+      "groupId": "sar.header",
+      "field": "household_name",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        182.16,
+        83.24000000000001,
+        332.991,
+        99.08000000000004
+      ],
+      "widget": "SAR7  11",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nombre del hogar",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "street",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        182.16,
+        107.72000000000003,
+        332.991,
+        123.55999999999995
+      ],
+      "widget": "SAR7  12",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Dirección",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "city",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        182.16,
+        130.20000000000005,
+        332.991,
+        146.03999999999996
+      ],
+      "widget": "SAR7  13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Ciudad/Pueblo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "zip",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        182.16,
+        152.67999999999995,
+        332.991,
+        168.51999999999998
+      ],
+      "widget": "SAR7  16",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Código postal; Salga del modo de formularios",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "date",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        449.96,
+        83.24000000000001,
+        574.871,
+        99.08000000000004
+      ],
+      "widget": "SAR7  17",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Fecha",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "case_name",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        449.957,
+        107.72000000000003,
+        574.868,
+        123.55999999999995
+      ],
+      "widget": "SAR7  18",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nombre del caso",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "case_number",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        449.957,
+        130.20000000000005,
+        574.868,
+        146.03999999999996
+      ],
+      "widget": "SAR7  34",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Número del caso",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "submit_month",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        471.48,
+        228.66499999999996,
+        559.671,
+        244.505
+      ],
+      "widget": "SAR7  35",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Para que sus beneficios sigan llegando a tiempo, envíe este formulario antes del 5 de; Introduzca el mes de envío; Salga del modo de formularios",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.header",
+      "field": "report_month",
+      "row": 0,
+      "page": 1,
+      "kind": "text",
+      "rect": [
+        471.26,
+        360.615,
+        564.86,
+        376.454
+      ],
+      "widget": "SAR7  10",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el mes del reporte. Salga del modo de formularios.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "street",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        36.72,
+        167.96000000000004,
+        422.64,
+        186.67999999999995
+      ],
+      "widget": "SAR7  37",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Actualizar la dirección del hogar - Introduzca la dirección",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "apartment",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        425.52,
+        169.03999999999996,
+        575.851,
+        187.76
+      ],
+      "widget": "SAR7  38",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Actualizar la dirección del hogar - Número del apartamento",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "city_state_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        37.0053,
+        200.27999999999997,
+        575.851,
+        219
+      ],
+      "widget": "SAR7  40",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Actualizar la dirección del hogar - Introduzca la ciudad, el estado y el código postal",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.home",
+      "field": "homeless",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        236.36,
+        48.24,
+        247.88
+      ],
+      "widget": "SAR7  39",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si está sin hogar.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "street",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        36.72,
+        279.48,
+        422.64,
+        298.2
+      ],
+      "widget": "SAR7  41",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Actualizar la dirección postal: física o apartado postal (si es diferente de la dirección de su hogar) Introduzca la dirección",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "apartment",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        425.669,
+        279.48,
+        576,
+        298.2
+      ],
+      "widget": "SAR7  48",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Actualizar la dirección postal - Número del apartamento",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "city_state_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        37.0053,
+        309,
+        575.851,
+        327.72
+      ],
+      "widget": "SAR7  42",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Actualizar la dirección postal - Introduzca la ciudad, el estado, y el código postal",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "general_delivery_zip",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        315.64,
+        466.12,
+        459.64,
+        478.36
+      ],
+      "widget": "SAR7  47",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el código postal de la oficina de correos a donde quiere recibir su correo.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "keep_same",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        352.2,
+        48.24,
+        363.72
+      ],
+      "widget": "SAR7  43",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si le gustaría mantener la misma dirección postal",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        395.4,
+        48.24,
+        406.92
+      ],
+      "widget": "SAR7  44",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Si está sin hogar, marque una de las siguientes - Opción 1 - Tengo una dirección postal y la agregué arriba.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "I have a mailing address and have added it above",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36.72,
+        417,
+        48.24,
+        428.52
+      ],
+      "widget": "SAR7  45",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 2 - Me gustaría utilizar la dirección postal del departamento de bienestar público del condado\n(Nota: debe comunicarse con la oficina de su condado para configurar esto).",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Use the County Welfare Department mailing address",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.mailing",
+      "field": "homeless_mail",
+      "row": 0,
+      "page": 3,
+      "kind": "checkbox",
+      "rect": [
+        36,
+        453.72,
+        47.52,
+        465.24
+      ],
+      "widget": "SAR7  46",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 3 - Me gustaría utilizar entrega en la oficina de correos. Escriba el código postal de la oficina de correos en el espacio a continuación. (Nota: asegúrese de que la oficina postal de su código postal acepte entrega convencional. Deberá comunicarse con la oficina de correos para configurar esto).",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Use General Delivery",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "home_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        68.64,
+        535.72,
+        419.64,
+        551.56
+      ],
+      "widget": "SAR7  49",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Actualice número(s) de teléfono - Número de teléfono de casa",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "cell_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        67.1952,
+        552.28,
+        422.638,
+        568.12
+      ],
+      "widget": "SAR7  50",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Número de teléfono móvil",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "other_phone",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        64.6376,
+        571.72,
+        415.638,
+        587.56
+      ],
+      "widget": "SAR7  51",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Otro número de teléfono",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.contact",
+      "field": "email",
+      "row": 0,
+      "page": 3,
+      "kind": "text",
+      "rect": [
+        128.989,
+        654.899,
+        481.789,
+        670.739
+      ],
+      "widget": "SAR7  55",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Actualice la dirección del correo electrónico - Dirección de correo electrónico",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "has_change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        194,
+        46.52,
+        205.51999999999998
+      ],
+      "widget": "SAR7  124a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Reporte y/o actualice los miembros del hogar: ¿Alguien se ha mudado a su hogar o ha salido de su hogar, o usted se ha mudado con alguien desde la última vez que reportó? Por ejemplo: niños recién nacidos, alguien se mudó a su hogar o dejó su hogar, adoptó a un niño, alguien comenzó o dejó de comprar y preparar comida con usted, etc; Sí, completar a continuación",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "has_change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        241.96,
+        194.67499999999995,
+        253.48,
+        206.19500000000005
+      ],
+      "widget": "SAR7  124a 2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Reporte y/o actualice los miembros del hogar: ¿Alguien se ha mudado a su hogar o ha salido de su hogar, o usted se ha mudado con alguien desde la última vez que reportó? Por ejemplo: niños recién nacidos, alguien se mudó a su hogar o dejó su hogar, adoptó a un niño, alguien comenzó o dejó de comprar y preparar comida con usted, etc; No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "name",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        36,
+        303.359,
+        144,
+        437.999
+      ],
+      "widget": "SAR7  122",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y apellido del miembro del hogar número 1 de 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_birth",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        144,
+        302.639,
+        227.52,
+        437.279
+      ],
+      "widget": "SAR7  123",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca le fecha de nacimiento (mes, día, año) del miembro del hogar número 1. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "relationship",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        228.24,
+        302.639,
+        322.56,
+        437.279
+      ],
+      "widget": "SAR7  124",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca la relación del miembro del hogar número 1 con el jefe de la familia. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "other_change",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        370.72,
+        348.639,
+        454.24,
+        363.039
+      ],
+      "widget": "SAR7  130",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Anote el tipo de cambio en su hogar.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        376.24,
+        370.239,
+        467.44,
+        384.639
+      ],
+      "widget": "SAR7  131",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique, línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain_more",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        327.6,
+        385.199,
+        460.08,
+        399.599
+      ],
+      "widget": "SAR7  132",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique, línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_change",
+      "row": 0,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        376.32,
+        419.559,
+        464.16,
+        433.959
+      ],
+      "widget": "SAR7  135",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Fecha del cambio (mes, día, año)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        308.279,
+        339.12,
+        319.799
+      ],
+      "widget": "SAR7  125",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #1 - Marque aquí para la opción # 1 - el miembro del hogar se mudó a su casa",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved In",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        401.12,
+        307.999,
+        412.64,
+        319.519
+      ],
+      "widget": "SAR7  127",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #1 - Marque aquí para la opción #2 - miembro del hogar dio a luz a un niño y vive en su casa en los últimos 6 meses.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Birth",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        321.599,
+        339.12,
+        333.119
+      ],
+      "widget": "SAR7  126",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #1 - Marque aquí para la opción #3 - el miembro del hogar número 1 salió del hogar en los últimos 6 meses",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved Out",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        419.2,
+        321.519,
+        430.72,
+        333.039
+      ],
+      "widget": "SAR7  128",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #1 - Marque aquí para la opción #4 - un miembro del hogar que vivía en su casa ha fallecido en los últimos 6 meses. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Death",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        326.96,
+        336.839,
+        338.48,
+        348.359
+      ],
+      "widget": "SAR7  298",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #1 - marque aquí para opción 5 - miembro del hogar número 1 - Ausencia temporal de su casa en los últimos 6 meses",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Temporary absence",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.32,
+        349.599,
+        338.84,
+        361.119
+      ],
+      "widget": "SAR7  129",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #1 - Marque aquí para la opción 6 - Hubo otra razón para un cambio (no incluida) en el tamaño de su hogar en los últimos 6 meses.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        483.68,
+        363.839,
+        495.2,
+        375.359
+      ],
+      "widget": "SAR7  133",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar número 1: ¿Compran y preparan comida juntos con regularidad? Sí",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 0,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        531.24,
+        364.359,
+        542.76,
+        375.879
+      ],
+      "widget": "SAR7  134",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar número 1: ¿Compran y preparan comida juntos con regularidad? No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "name",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        36,
+        438.719,
+        144,
+        573.359
+      ],
+      "widget": "SAR7  136",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y apellido del miembro del hogar número 2 of 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_birth",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        144,
+        437.999,
+        227.52,
+        572.639
+      ],
+      "widget": "SAR7  137",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca le fecha de nacimiento (mes, día, año) del miembro del hogar número 2.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "relationship",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        228.24,
+        437.999,
+        322.56,
+        572.639
+      ],
+      "widget": "SAR7  138",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca la relación del miembro del hogar número 2 con el jefe de la familia. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "other_change",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        373,
+        483.999,
+        456.52,
+        498.399
+      ],
+      "widget": "SAR7  144",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Anote el tipo de cambio en su hogar.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        376.52,
+        505.599,
+        466.36,
+        519.999
+      ],
+      "widget": "SAR7  145",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique, línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "explain_more",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        327.88,
+        519.559,
+        460.36,
+        533.9590000000001
+      ],
+      "widget": "SAR7  146",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique, línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "date_of_change",
+      "row": 1,
+      "page": 4,
+      "kind": "text",
+      "rect": [
+        375.16,
+        555.039,
+        463,
+        569.439
+      ],
+      "widget": "SAR7  160",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Fecha del cambio (mes, día, año)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        444.359,
+        339.12,
+        455.879
+      ],
+      "widget": "SAR7  139",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #2 - Marque aquí para la opción # 1 - el miembro del hogar se mudó a su casa",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved In",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        401.28,
+        443.719,
+        412.8,
+        455.239
+      ],
+      "widget": "SAR7  141",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #2 - Marque aquí para la opción #2 - miembro del hogar dio a luz a un niño y vive en su casa en los últimos 6 meses.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Birth",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        457.679,
+        339.12,
+        469.199
+      ],
+      "widget": "SAR7  140",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #2 - Marque aquí para la opción #3 - el miembro del hogar número 2 salió del hogar en los últimos 6 meses",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Moved Out",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        416.48,
+        457.239,
+        428,
+        468.759
+      ],
+      "widget": "SAR7  142",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #2 - Marque aquí para la opción #4 - un miembro del hogar que vivía en su casa ha fallecido en los últimos 6 meses. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Death",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.96,
+        472.199,
+        339.48,
+        483.719
+      ],
+      "widget": "SAR7  516",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #2 - marque aquí para opción 5 - miembro del hogar número 2 - Ausencia temporal de su casa en los últimos 6 meses",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Temporary absence",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "change",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        327.6,
+        485.159,
+        339.12,
+        496.679
+      ],
+      "widget": "SAR7  143",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar #2 - Marque aquí para la opción 6 - Hubo otra razón para un cambio (no incluida) en el tamaño de su hogar en los últimos 6 meses.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        483.4,
+        500.919,
+        494.92,
+        512.4390000000001
+      ],
+      "widget": "SAR7  147",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar número 2: ¿Compran y preparan comida juntos con regularidad? Sí",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.members",
+      "field": "buys_food_together",
+      "row": 1,
+      "page": 4,
+      "kind": "checkbox",
+      "rect": [
+        529.96,
+        500.439,
+        541.48,
+        511.959
+      ],
+      "widget": "SAR7  148",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Miembro del hogar número 2: ¿Compran y preparan comida juntos con regularidad? No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "has_income",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        248.39999999999998,
+        46.52,
+        259.91999999999996
+      ],
+      "widget": "SAR7  569a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Alguien en su hogar recibió ingresos derivados del trabajo o no derivados del trabajo durante el mes de reporte, o alguien espera tener un cambio en los ingresos derivados del trabajo o no derivados del trabajo dentro de los próximos seis meses? Por ejemplo: alguien comenzó, dejó o cambió de trabajo; tuvo un cambio en los beneficios de Seguro Social o desempleo; ganancias de lotería; y/o el hogar comenzó o dejó de obtener vivienda o servicios públicos gratis o a cambio de trabajo. Sí, completar a continuación. ",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "has_income",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        240.96,
+        248.39999999999998,
+        252.48,
+        259.91999999999996
+      ],
+      "widget": "SAR7  569a 2",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Alguien en su hogar recibió ingresos derivados del trabajo o no derivados del trabajo durante el mes de reporte, o alguien espera tener un cambio en los ingresos derivados del trabajo o no derivados del trabajo dentro de los próximos seis meses? Por ejemplo: alguien comenzó, dejó o cambió de trabajo; tuvo un cambio en los beneficios de Seguro Social o desempleo; ganancias de lotería; y/o el hogar comenzó o dejó de obtener vivienda o servicios públicos gratis o a cambio de trabajo.  No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "unearned_increased",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        318.24,
+        46.52,
+        329.76
+      ],
+      "widget": "SAR7  569a 3",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Para CalFresh solamente, ¿aumentó el total de ingresos no derivados del trabajo de todos los miembros del hogar dentro del plazo de su mes de reporte?  Sí, completar a continuación.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "unearned_increased",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        241.24,
+        317.96,
+        252.76,
+        329.48
+      ],
+      "widget": "SAR7  569a 4",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Para CalFresh solamente, ¿aumentó el total de ingresos no derivados del trabajo de todos los miembros del hogar dentro del plazo de su mes de reporte?  No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        36,
+        477.878,
+        132.48,
+        715.2788
+      ],
+      "widget": "SAR7  2011",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y el apellido del miembro del hogar para la fuente de ingresos número 1 de 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        477.09,
+        149.76,
+        488.61
+      ],
+      "widget": "SAR7  570",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos número 1 se recibió durante el mes del reporte",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        519.998,
+        149.04,
+        531.518
+      ],
+      "widget": "SAR7  569",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si empezaron los ingresos de la fuente de ingresos número 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        549.218,
+        149.04,
+        560.738
+      ],
+      "widget": "SAR7  568",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si pararon los ingresos de la fuente de ingresos número 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        578.438,
+        149.04,
+        589.958
+      ],
+      "widget": "SAR7  567",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si cambiaron los ingresos de la fuente de ingresos número 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        135.72,
+        626.638,
+        240.12,
+        643.918
+      ],
+      "widget": "SAR7  566",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique por qué los ingresos cambiaron para la fuente de ingresos número 1. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        133.95,
+        650.188,
+        238.35,
+        667.468
+      ],
+      "widget": "SAR7  565",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique por qué los ingresos cambiaron para la fuente de ingresos número 1. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        136.8,
+        701.4775999999999,
+        241.2,
+        715.1576
+      ],
+      "widget": "SAR7  564",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca la fecha (mes, día, año) del cambio en los ingresos número 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        244.8,
+        565.108,
+        337.68,
+        582.388
+      ],
+      "widget": "SAR7  562",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el nombre del empleador para la fuente de ingresos núm. 1. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        244.8,
+        583.988,
+        337.68,
+        601.268
+      ],
+      "widget": "SAR7  561",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el nombre del empleador para la fuente de ingresos núm. 1. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        246.96,
+        667.688,
+        339.84,
+        682.808
+      ],
+      "widget": "SAR7  559",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el tipo de ingreso que no proviene de un empleo para la fuente de ingresos número 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        426.24,
+        558.328,
+        496.08,
+        574.168
+      ],
+      "widget": "SAR7  553",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el monto del ingreso bruto total de la fuente de ingresos número 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        419.04,
+        632.968,
+        495.36,
+        646.648
+      ],
+      "widget": "SAR7  552",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca las fechas (mes, día, año) en que se recibieron los ingresos para la fuente de ingresos número 1. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        418.68,
+        648.088,
+        495,
+        661.768
+      ],
+      "widget": "SAR7  551",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca las fechas (mes, día, año) en que se recibieron los ingresos para la fuente de ingresos número 1. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 0,
+      "page": 5,
+      "kind": "text",
+      "rect": [
+        499.68,
+        531.9590000000001,
+        576,
+        545.639
+      ],
+      "widget": "SAR7  550",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Si está empleado, ingrese las horas trabajadas por mes para la fuente de ingresos número 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        509.988,
+        259.92,
+        521.508
+      ],
+      "widget": "SAR7  563",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos/nombre del empleador proviene de un empleo para la fuente de ingresos núm. 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        625.488,
+        259.92,
+        637.008
+      ],
+      "widget": "SAR7  560",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos número 1 no proviene de un empleo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        517.048,
+        360,
+        528.568
+      ],
+      "widget": "SAR7  558",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 1 se paga semanalmente",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        542.968,
+        361.44,
+        554.488
+      ],
+      "widget": "SAR7  557",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 1 se paga cada dos semanas",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        584.008,
+        361.44,
+        595.528
+      ],
+      "widget": "SAR7  556",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 1 se paga mensualmente",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        610.3679999999999,
+        360.72,
+        621.888
+      ],
+      "widget": "SAR7  555",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 1 se paga dos veces al mes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 0,
+      "page": 5,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        663.008,
+        361,
+        674.528
+      ],
+      "widget": "SAR7  554",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 1 se paga en un período de tiempo que no figura en la lista anterior",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        36,
+        191.798,
+        132.48,
+        430.279
+      ],
+      "widget": "SAR7  2012",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y el apellido del miembro del hogar para la fuente de ingresos número 2 de 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        193.86,
+        149.76,
+        205.38
+      ],
+      "widget": "SAR7  591",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos número 2 se recibió durante el mes del reporte",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        236.76800000000003,
+        149.04,
+        248.288
+      ],
+      "widget": "SAR7  590",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si empezaron los ingresos de la fuente de ingresos número 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        265.98800000000006,
+        149.04,
+        277.50800000000004
+      ],
+      "widget": "SAR7  589",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si pararon los ingresos de la fuente de ingresos número 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        295.208,
+        149.04,
+        306.728
+      ],
+      "widget": "SAR7  588",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si cambiaron los ingresos de la fuente de ingresos número 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        135.72,
+        343.408,
+        240.12,
+        360.688
+      ],
+      "widget": "SAR7  587",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique por qué los ingresos cambiaron para la fuente de ingresos número 2. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        134.64,
+        366.688,
+        239.04,
+        383.968
+      ],
+      "widget": "SAR7  586",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique por qué los ingresos cambiaron para la fuente de ingresos número 2. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        136.8,
+        413.748,
+        241.2,
+        427.428
+      ],
+      "widget": "SAR7  585",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca la fecha (mes, día, año) del cambio en los ingresos número 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        244.8,
+        279.62800000000004,
+        337.68,
+        296.908
+      ],
+      "widget": "SAR7  583",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el nombre del empleador para la fuente de ingresos núm. 2. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        244.8,
+        298.508,
+        337.68,
+        315.788
+      ],
+      "widget": "SAR7  582",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el nombre del empleador para la fuente de ingresos núm. 2. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        246.96,
+        382.208,
+        339.84,
+        397.328
+      ],
+      "widget": "SAR7  580",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el tipo de ingreso que no proviene de un empleo para la fuente de ingresos número 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        426.24,
+        272.84799999999996,
+        496.08,
+        288.688
+      ],
+      "widget": "SAR7  574",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el monto del ingreso bruto total de la fuente de ingresos número 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        419.04,
+        347.488,
+        495.36,
+        361.168
+      ],
+      "widget": "SAR7  573",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca las fechas (mes, día, año) en que se recibieron los ingresos para la fuente de ingresos número 2. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        418.68,
+        362.608,
+        495,
+        376.288
+      ],
+      "widget": "SAR7  572",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca las fechas (mes, día, año) en que se recibieron los ingresos para la fuente de ingresos número 2. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 1,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        499.68,
+        246.47900000000004,
+        576,
+        260.159
+      ],
+      "widget": "SAR7  571",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Si está empleado, ingrese las horas trabajadas por mes para la fuente de ingresos número 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        224.50800000000004,
+        259.92,
+        236.02800000000002
+      ],
+      "widget": "SAR7  584",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos/nombre del empleador proviene de un empleo para la fuente de ingresos núm.  2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        339.008,
+        259.92,
+        350.528
+      ],
+      "widget": "SAR7  581",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos número 2 no proviene de un empleo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        231.56799999999998,
+        361,
+        243.08799999999997
+      ],
+      "widget": "SAR7  579",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 2 se paga semanalmente",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        257.48800000000006,
+        361.44,
+        269.00800000000004
+      ],
+      "widget": "SAR7  578",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 2 se paga cada dos semanas",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        298.528,
+        361.44,
+        310.048
+      ],
+      "widget": "SAR7  577",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 2 se paga mensualmente",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        324.888,
+        360.72,
+        336.408
+      ],
+      "widget": "SAR7  576",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 2 se paga dos veces al mes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 1,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        377.528,
+        361,
+        389.048
+      ],
+      "widget": "SAR7  575",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 2 se paga en un período de tiempo que no figura en la lista anterior",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        36,
+        433.655,
+        132.48,
+        672.136
+      ],
+      "widget": "SAR7  2013",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y el apellido del miembro del hogar para la fuente de ingresos número 3 de 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        435.717,
+        149.76,
+        447.238
+      ],
+      "widget": "SAR7  612",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos número 3 se recibió durante el mes del reporte",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        478.625,
+        149.04,
+        490.145
+      ],
+      "widget": "SAR7  611",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si empezaron los ingresos de la fuente de ingresos número 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        507.845,
+        149.04,
+        519.365
+      ],
+      "widget": "SAR7  610",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si pararon los ingresos de la fuente de ingresos número 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        537.065,
+        149.04,
+        548.585
+      ],
+      "widget": "SAR7  609",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si cambiaron los ingresos de la fuente de ingresos número 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        135.72,
+        585.265,
+        240.12,
+        602.545
+      ],
+      "widget": "SAR7  608",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique por qué los ingresos cambiaron para la fuente de ingresos número 3. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        134.64,
+        608.545,
+        239.04,
+        625.825
+      ],
+      "widget": "SAR7  607",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique por qué los ingresos cambiaron para la fuente de ingresos número 3. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        136.8,
+        655.605,
+        241.2,
+        669.285
+      ],
+      "widget": "SAR7  606",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca la fecha (mes, día, año) del cambio en los ingresos número 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        244.8,
+        521.485,
+        337.68,
+        538.765
+      ],
+      "widget": "SAR7  604",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el nombre del empleador para la fuente de ingresos núm. 3. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        244.8,
+        540.365,
+        337.68,
+        557.645
+      ],
+      "widget": "SAR7  603",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el nombre del empleador para la fuente de ingresos núm. 3. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        246.96,
+        624.065,
+        339.84,
+        639.185
+      ],
+      "widget": "SAR7  601",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el tipo de ingreso que no proviene de un empleo para la fuente de ingresos número 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        426.24,
+        514.7049999999999,
+        496.08,
+        530.5450000000001
+      ],
+      "widget": "SAR7  595",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el monto del ingreso bruto total de la fuente de ingresos número 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        419.04,
+        589.345,
+        495.36,
+        603.025
+      ],
+      "widget": "SAR7  594",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca las fechas (mes, día, año) en que se recibieron los ingresos para la fuente de ingresos número 3. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        418.68,
+        604.465,
+        495,
+        618.145
+      ],
+      "widget": "SAR7  593",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca las fechas (mes, día, año) en que se recibieron los ingresos para la fuente de ingresos número 3. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 2,
+      "page": 6,
+      "kind": "text",
+      "rect": [
+        499.68,
+        488.336,
+        576,
+        502.016
+      ],
+      "widget": "SAR7  592",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Si está empleado, ingrese las horas trabajadas por mes para la fuente de ingresos número 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        466.365,
+        259.92,
+        477.885
+      ],
+      "widget": "SAR7  605",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos/nombre del empleador proviene de un empleo para la fuente de ingresos núm. 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        580.865,
+        259.92,
+        592.385
+      ],
+      "widget": "SAR7  602",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos número 3 no proviene de un empleo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        473.425,
+        361,
+        484.945
+      ],
+      "widget": "SAR7  600",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 3 se paga semanalmente",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        499.345,
+        361.44,
+        510.865
+      ],
+      "widget": "SAR7  599",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 3 se paga cada dos semanas",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        540.385,
+        361.44,
+        551.905
+      ],
+      "widget": "SAR7  598",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 3 se paga mensualmente",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        566.745,
+        360.72,
+        578.265
+      ],
+      "widget": "SAR7  597",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 3 se paga dos veces al mes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 2,
+      "page": 6,
+      "kind": "checkbox",
+      "rect": [
+        349.81,
+        621.785,
+        361.33,
+        633.3050000000001
+      ],
+      "widget": "SAR7  596",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 3 se paga en un período de tiempo que no figura en la lista anterior",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "person",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        36,
+        164.47799999999995,
+        132.48,
+        401.879
+      ],
+      "widget": "SAR7  2014",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y el apellido del miembro del hogar para la fuente de ingresos número 4 de 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "received_in_report_month",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        138.24,
+        165.94000000000005,
+        149.76,
+        177.46000000000004
+      ],
+      "widget": "SAR7  633",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos número 4 se recibió durante el mes del reporte",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "started",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        208.84799999999996,
+        149.04,
+        220.36800000000005
+      ],
+      "widget": "SAR7  632",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si empezaron los ingresos de la fuente de ingresos número 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "stopped",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        238.06799999999998,
+        149.04,
+        249.58799999999997
+      ],
+      "widget": "SAR7  631",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si pararon los ingresos de la fuente de ingresos número 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "changed",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        137.52,
+        267.288,
+        149.04,
+        278.808
+      ],
+      "widget": "SAR7  630",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si cambiaron los ingresos de la fuente de ingresos número 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        135.72,
+        315.488,
+        240.12,
+        332.768
+      ],
+      "widget": "SAR7  629",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique por qué los ingresos cambiaron para la fuente de ingresos número 4. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "explain_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        134.64,
+        338.768,
+        239.04,
+        356.048
+      ],
+      "widget": "SAR7  628",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Explique por qué los ingresos cambiaron para la fuente de ingresos número 4. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "date_of_change",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        136.8,
+        385.828,
+        241.2,
+        399.508
+      ],
+      "widget": "SAR7  627",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca la fecha (mes, día, año) del cambio en los ingresos número 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        244.8,
+        251.70799999999997,
+        337.68,
+        268.98800000000006
+      ],
+      "widget": "SAR7  625",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el nombre del empleador para la fuente de ingresos núm. 4. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "employer_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        244.8,
+        270.58799999999997,
+        337.68,
+        287.868
+      ],
+      "widget": "SAR7  624",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el nombre del empleador para la fuente de ingresos núm. 4. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "income_type",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        246.96,
+        354.288,
+        339.84,
+        369.408
+      ],
+      "widget": "SAR7  622",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el tipo de ingreso que no proviene de un empleo para la fuente de ingresos número 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "gross_in_report_month",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        426.24,
+        244.928,
+        496.08,
+        260.76800000000003
+      ],
+      "widget": "SAR7  616",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el monto del ingreso bruto total de la fuente de ingresos número 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        419.04,
+        319.568,
+        495.36,
+        333.248
+      ],
+      "widget": "SAR7  615",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca las fechas (mes, día, año) en que se recibieron los ingresos para la fuente de ingresos número 4. Línea 1 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "dates_received_more",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        418.68,
+        334.688,
+        495,
+        348.368
+      ],
+      "widget": "SAR7  614",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca las fechas (mes, día, año) en que se recibieron los ingresos para la fuente de ingresos número 4. Línea 2 de 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "hours_month",
+      "row": 3,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        499.68,
+        218.55899999999997,
+        576,
+        232.23900000000003
+      ],
+      "widget": "SAR7  613",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Si está empleado, ingrese las horas trabajadas por mes para la fuente de ingresos número 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        196.58799999999997,
+        259.92,
+        208.10799999999995
+      ],
+      "widget": "SAR7  626",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos/nombre del empleador proviene de un empleo para la fuente de ingresos núm. 4",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "From a job",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "source",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        248.4,
+        311.088,
+        259.92,
+        322.608
+      ],
+      "widget": "SAR7  623",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si la fuente de ingresos número 4 no proviene de un empleo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Not from a job",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        348.48,
+        203.64800000000002,
+        360,
+        215.168
+      ],
+      "widget": "SAR7  621",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 4 se paga semanalmente",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Weekly",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        229.56799999999998,
+        361.44,
+        241.08799999999997
+      ],
+      "widget": "SAR7  620",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 4 se paga cada dos semanas",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Every 2 weeks",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.92,
+        270.60799999999995,
+        361.44,
+        282.128
+      ],
+      "widget": "SAR7  619",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 4 se paga mensualmente",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Monthly",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.2,
+        296.968,
+        360.72,
+        308.488
+      ],
+      "widget": "SAR7  618",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 4 se paga dos veces al mes",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Twice a month",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.income",
+      "field": "frequency",
+      "row": 3,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        349.48,
+        349.608,
+        361,
+        361.128
+      ],
+      "widget": "SAR7  617",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Marque aquí si el ingreso número 4 se paga en un período de tiempo que no figura en la lista anterior",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "on_strike",
+      "row": 0,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        36,
+        518.94,
+        47.52,
+        530.46
+      ],
+      "widget": "SAR7  292",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Usted o algún miembro de su hogar dejó de trabajar debido a una huelga? Sí, completar a continuación",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "on_strike",
+      "row": 0,
+      "page": 7,
+      "kind": "checkbox",
+      "rect": [
+        234.92,
+        518.604,
+        246.44,
+        530.124
+      ],
+      "widget": "SAR7  296",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Usted o algún miembro de su hogar dejó de trabajar debido a una huelga? No, pase a la siguiente pregunta",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "person",
+      "row": 0,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        36,
+        623.52,
+        330.48,
+        651.6
+      ],
+      "widget": "SAR7  295",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nomre y el apellido del miembro del hogar que dejó de trabajar debdo a una huelga",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.strike",
+      "field": "gross_before",
+      "row": 0,
+      "page": 7,
+      "kind": "text",
+      "rect": [
+        430.92,
+        630,
+        523.8,
+        645.12
+      ],
+      "widget": "SAR7  294",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el ingreso bruto antes de declararse en huelga para este miembro del hogar. Salga del modo de formularios.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        351.64,
+        46.52,
+        363.16
+      ],
+      "widget": "SAR7  293",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Alguien en su hogar ha tenido un cambio en los recursos desde la última vez que reportó? Sí, completar a continuación",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "has_change",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        241.96,
+        351.64,
+        253.48,
+        363.16
+      ],
+      "widget": "SAR7  297",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Alguien en su hogar ha tenido un cambio en los recursos desde la última vez que reportó? No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        40.76,
+        435.832,
+        189.36,
+        671.272
+      ],
+      "widget": "Text Field 13",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y el apellido del miembro del hogar para el cambio en el recurso número 1 de 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        196.571,
+        435.832,
+        270.871,
+        671.272
+      ],
+      "widget": "Text Field 14",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tipo de recurso número 1",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        277.32,
+        610.072,
+        395.4,
+        671.272
+      ],
+      "widget": "Text Field 14a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Explique aquí",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        412.56,
+        432.952,
+        464.4,
+        671.272
+      ],
+      "widget": "Text Field 15",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el valor en dólares del recurso",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 0,
+      "page": 8,
+      "kind": "text",
+      "rect": [
+        470.16,
+        432.952,
+        573.12,
+        671.272
+      ],
+      "widget": "Text Field 16",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Fecha(s) de recepción del recurso, mes, día, año",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        432.952,
+        289.603,
+        444.472
+      ],
+      "widget": "SAR7  299",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Qué pasó con su recurso? Opción 1 de 8; Se compró",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        451.672,
+        289.603,
+        463.192
+      ],
+      "widget": "SAR7  300",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 2 de 8; se vendió",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        470.392,
+        289.603,
+        481.912
+      ],
+      "widget": "SAR7  301",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 3 de 8; se regaló",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        489.112,
+        289.603,
+        500.632
+      ],
+      "widget": "SAR7  302",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 4 de 8; se recibió de regalo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        507.832,
+        289.603,
+        519.352
+      ],
+      "widget": "SAR7  303",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 5 de 8; se intercambió",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        526.552,
+        289.603,
+        538.072
+      ],
+      "widget": "SAR7  304",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 6 de 8; se ganó",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        545.992,
+        289.603,
+        557.512
+      ],
+      "widget": "SAR7  305",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 7 de 8; se abrió/cerró (por ejemplo: una cuenta bancaria)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 0,
+      "page": 8,
+      "kind": "checkbox",
+      "rect": [
+        278.083,
+        594.072,
+        289.603,
+        605.592
+      ],
+      "widget": "SAR7  306",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 8 de 8; otro",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.82,
+        138.27200000000005,
+        189.42,
+        373.712
+      ],
+      "widget": "Text Field 17",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y el apellido del miembro del hogar para el cambio en el recurso número 2 de 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        196.631,
+        138.27200000000005,
+        270.931,
+        373.712
+      ],
+      "widget": "Text Field 18",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tipo de recurso número 2",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        278.143,
+        311.792,
+        405.36,
+        372.992
+      ],
+      "widget": "Text Field 18a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Explique aquí",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        419.76,
+        135.39200000000005,
+        464.46,
+        373.712
+      ],
+      "widget": "Text Field 19",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el valor en dólares del recurso",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 1,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        470.22,
+        135.39200000000005,
+        573.18,
+        373.712
+      ],
+      "widget": "Text Field 20",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Fecha(s) de recepción del recurso, mes, día, año",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        134.39200000000005,
+        289.663,
+        145.91200000000003
+      ],
+      "widget": "SAR7  307",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Qué pasó con su recurso? Opción 1 de 8; Se compró",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        154.11199999999997,
+        289.663,
+        165.63199999999995
+      ],
+      "widget": "SAR7  308",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 2 de 8; se vendió",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        172.832,
+        289.663,
+        184.35199999999998
+      ],
+      "widget": "SAR7  309",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 3 de 8; se regaló",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        191.55200000000002,
+        289.663,
+        203.072
+      ],
+      "widget": "SAR7  3010",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 4 de 8; se recibió de regalo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        210.27200000000005,
+        289.663,
+        221.79200000000003
+      ],
+      "widget": "SAR7  3011",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 5 de 8; se intercambió",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        228.99199999999996,
+        289.663,
+        240.51199999999994
+      ],
+      "widget": "SAR7  3012",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 6 de 8; se ganó",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        248.43200000000002,
+        289.663,
+        259.952
+      ],
+      "widget": "SAR7  3013",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 7 de 8; se abrió/cerró (por ejemplo: una cuenta bancaria)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 1,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        295.512,
+        289.663,
+        307.032
+      ],
+      "widget": "SAR7  3014",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 8 de 8; otro",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "person",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        40.82,
+        380.592,
+        189.42,
+        616.032
+      ],
+      "widget": "Text Field 21",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el primer nombre, segundo nombre y el apellido del miembro del hogar para el cambio en el recurso número 3 de 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "resource_type",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        196.631,
+        380.592,
+        270.931,
+        616.032
+      ],
+      "widget": "Text Field 22",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Tipo de recurso número 3",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "other_explain",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        278.143,
+        554.683,
+        405,
+        615.883
+      ],
+      "widget": "Text Field 22a",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Explique aquí",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "value",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        419.76,
+        377.712,
+        464.46,
+        616.032
+      ],
+      "widget": "Text Field 23",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Introduzca el valor en dólares del recurso",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "dates",
+      "row": 2,
+      "page": 9,
+      "kind": "text",
+      "rect": [
+        470.22,
+        377.712,
+        573.18,
+        616.032
+      ],
+      "widget": "Text Field 24",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": true,
+      "printedLabel": "Fecha(s) de recepción del recurso, mes, día, año",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        276.643,
+        379.962,
+        288.163,
+        391.482
+      ],
+      "widget": "SAR7  3015",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Qué pasó con su recurso? Opción 1 de 8; Se compró",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Bought",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        396.432,
+        289.663,
+        407.952
+      ],
+      "widget": "SAR7  3016",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 2 de 8; se vendió",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Sold",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        415.152,
+        289.663,
+        426.672
+      ],
+      "widget": "SAR7  3017",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 3 de 8; se regaló",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Gave away",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        433.872,
+        289.663,
+        445.392
+      ],
+      "widget": "SAR7  3018",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 4 de 8; se recibió de regalo",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Got as a gift",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        452.592,
+        289.663,
+        464.112
+      ],
+      "widget": "SAR7  3019",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 5 de 8; se intercambió",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Traded",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        471.312,
+        289.663,
+        482.832
+      ],
+      "widget": "SAR7  3020",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 6 de 8; se ganó",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Won",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        490.752,
+        289.663,
+        502.272
+      ],
+      "widget": "SAR7  3021",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 7 de 8; se abrió/cerró (por ejemplo: una cuenta bancaria)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Open/close",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.resources",
+      "field": "what_happened",
+      "row": 2,
+      "page": 9,
+      "kind": "checkbox",
+      "rect": [
+        278.143,
+        538.832,
+        289.663,
+        550.352
+      ],
+      "widget": "SAR7  3022",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 8 de 8; otro",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": "Other",
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "expenses_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        208.08000000000004,
+        46.52,
+        219.60000000000002
+      ],
+      "widget": "SAR7  3025",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Han cambiado sus gastos? Sí, cuéntenos sus gastos a continuación.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "expenses_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        322.56,
+        208.08000000000004,
+        334.08,
+        219.60000000000002
+      ],
+      "widget": "SAR7  3026",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Han cambiado sus gastos? No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "address_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        254.88,
+        46.52,
+        266.4
+      ],
+      "widget": "SAR7  3027",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Ha cambiado su dirección? Sí. Debe reportar sus nuevos gastos de vivienda y servicios públicos a continuación.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "address_changed",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        503.56,
+        254.88,
+        515.08,
+        266.4
+      ],
+      "widget": "SAR7  3028",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Ha cambiado su dirección? No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "rent_or_mortgage",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        343.12,
+        275.03999999999996,
+        420.16,
+        289.585
+      ],
+      "widget": "Text Field 25",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Cuál es su pago mensual de alquiler o hipoteca? Introduzca la cantidad en dólares.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "temporary_housing",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        338.4,
+        46.52,
+        349.92
+      ],
+      "widget": "SAR7  3029",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Si no tiene una dirección de residencia permanente, ¿gasta dinero en viviendas temporales como hoteles/moteles, campamentos, alojamiento o viviendas compartidas? Sí",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.expenses",
+      "field": "temporary_housing",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        106.56,
+        338.4,
+        118.08,
+        349.92
+      ],
+      "widget": "SAR7  3030",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Si no tiene una dirección de residencia permanente, ¿gasta dinero en viviendas temporales como hoteles/moteles, campamentos, alojamiento o viviendas compartidas? No",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "phone",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        394.42,
+        46.52,
+        405.94
+      ],
+      "widget": "SAR7  3031",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Paga alguno de los siguientes gastos? Marque todo lo que corresponda; Opción 1 de 9; Teléfono (incluido celular)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "electric_gas",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        417.6,
+        46.52,
+        429.12
+      ],
+      "widget": "SAR7  3032",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 2 de 9; Electricidad/Gas",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "water",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        442.292,
+        46.52,
+        453.812
+      ],
+      "widget": "SAR7  3034",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 4 de 9; Agua",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "trash",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        465.585,
+        46.52,
+        477.105
+      ],
+      "widget": "SAR7  3036",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 6 de 9; Basura",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "mobile_home_lot_rent",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        489.277,
+        46.52,
+        500.797
+      ],
+      "widget": "SAR7  3038",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 8 de 9; Alquiler de propiedad para casas móviles",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "property_tax",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        259.56,
+        417.6,
+        271.08,
+        429.12
+      ],
+      "widget": "SAR7  3033",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 3 de 9; Impuestos sobre la propiedad",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "insurance",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        259.56,
+        442.292,
+        271.08,
+        453.812
+      ],
+      "widget": "SAR7  3035",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 5 de 9; Seguro de hogar/de inquilino",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "hoa",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        259.56,
+        465.585,
+        271.08,
+        477.105
+      ],
+      "widget": "SAR7  3037",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 7 de 9; Tarifas de la Asociación de Propietarios (HOA)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "other",
+      "row": 0,
+      "page": 10,
+      "kind": "checkbox",
+      "rect": [
+        259.56,
+        489.277,
+        271.08,
+        500.797
+      ],
+      "widget": "SAR7  3039",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Opción 9 de 9; Otro (por favor especifique)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "property_tax_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        438.48,
+        416.088,
+        575.8,
+        430.632
+      ],
+      "widget": "Text Field 26",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca la cantidad de impuestos sobre la propiedad",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "insurance_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        434.16,
+        438.78,
+        575.8,
+        453.325
+      ],
+      "widget": "Text Field 27",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca el monto del seguro de hogar/inquilino",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "hoa_amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        488.88,
+        463.072,
+        575.8,
+        477.617
+      ],
+      "widget": "Text Field 28",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Introduzca la cantidad de las tarifas de la HOA",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.utilities",
+      "field": "other_specify",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        421.2,
+        487.765,
+        575.8,
+        502.309
+      ],
+      "widget": "Text Field 29",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Especifique otro; introduzca la cantidad si corresponde",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "payer",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        298.8,
+        537.941,
+        575.8,
+        552.485
+      ],
+      "widget": "Text Field 30",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cuidado de niños/dependientes; ¿Quién pagó por el cuidado de dependientes/niños",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        406.8,
+        556.633,
+        575.8,
+        571.178
+      ],
+      "widget": "Text Field 31",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Monto pagado por cuidado de dependientes/niños en el mes del reporte",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.care",
+      "field": "dependents",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        213.84,
+        575.326,
+        576.12,
+        589.87
+      ],
+      "widget": "Text Field 32",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nombres de dependientes/hijos",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.child_support",
+      "field": "payer",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        223.92,
+        655.683,
+        575.8,
+        670.227
+      ],
+      "widget": "Text Field 33",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Manutención infantil. Esta pregunta es para si alguien en su hogar le pagó manutención infantil a alguien que no es de su hogar. ¿Quién pagó la manutención infantil?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.child_support",
+      "field": "amount",
+      "row": 0,
+      "page": 10,
+      "kind": "text",
+      "rect": [
+        477,
+        674.886,
+        575.8,
+        689.431
+      ],
+      "widget": "Text Field 34",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cantidad de manutención que usted o un miembro de su hogar pagó en el mes del reporte",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.medical",
+      "field": "payer",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        225,
+        158.84000000000003,
+        575.52,
+        173.385
+      ],
+      "widget": "Text Field 35",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Quién pagó los gastos médicos?",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.medical",
+      "field": "amount",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        331.92,
+        182.60000000000002,
+        576.52,
+        197.14499999999998
+      ],
+      "widget": "Text Field 36",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Monto pagado por gastos médicos en el mes del reporte.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "has_winnings",
+      "row": 0,
+      "page": 11,
+      "kind": "checkbox",
+      "rect": [
+        35,
+        490.76,
+        46.52,
+        502.28
+      ],
+      "widget": "SAR7  3044",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "¿Alguien en su hogar ganó dinero apostando o jugando la lotería en los últimos seis meses? Sí, completar a continuación.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": true,
+      "exportValue": "Sí"
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "has_winnings",
+      "row": 0,
+      "page": 11,
+      "kind": "checkbox",
+      "rect": [
+        237.484,
+        490.76,
+        249.005,
+        502.28
+      ],
+      "widget": "SAR7  3045",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "No. Pase a la siguiente pregunta.",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer.",
+      "optionValue": false,
+      "exportValue": "No"
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "person",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        38.3714,
+        566.04,
+        281.36,
+        591.165
+      ],
+      "widget": "Text Field 37",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Nombre del miembro del hogar (primer nombre, segundo nombre, apellido)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "date",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        285.84,
+        566.04,
+        448.56,
+        591.165
+      ],
+      "widget": "Text Field 38",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Fecha de ganar (mes, día, año)",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    },
+    {
+      "groupId": "sar.gambling",
+      "field": "amount",
+      "row": 0,
+      "page": 11,
+      "kind": "text",
+      "rect": [
+        465.84,
+        566.04,
+        572.749,
+        591.165
+      ],
+      "widget": "Text Field 39",
+      "fontSize": 8,
+      "maxLength": 4000,
+      "font": "NotoSans-Regular",
+      "multiline": false,
+      "printedLabel": "Cantidad ganada",
+      "conditional": "Use only when applicable under this form instruction; ask rather than infer."
+    }
+  ],
+  "protectedRegions": [
+    {
+      "page": 1,
+      "rect": [
+        550.8,
+        55.72000000000003,
+        561.265,
+        64.97500000000002
+      ],
+      "reason": "not-yet-supported: SAR7  1"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.576,
+        151.46400000000006,
+        48.096,
+        162.98400000000004
+      ],
+      "reason": "manual-only: SAR7  19"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.855,
+        170.65200000000004,
+        48.375,
+        182.17200000000003
+      ],
+      "reason": "manual-only: SAR7  20"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36.72,
+        189.55200000000002,
+        48.24,
+        201.072
+      ],
+      "reason": "manual-only: SAR7  21"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        319.98,
+        47.52,
+        331.5
+      ],
+      "reason": "manual-only: SAR7  22"
+    },
+    {
+      "page": 2,
+      "rect": [
+        232.08,
+        319.98,
+        243.6,
+        331.5
+      ],
+      "reason": "manual-only: SAR7  23"
+    },
+    {
+      "page": 2,
+      "rect": [
+        269.06,
+        381.26,
+        575.5,
+        408.62
+      ],
+      "reason": "manual-only: SAR7  25"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        381.48,
+        267.84,
+        408.84
+      ],
+      "reason": "manual-only: SAR7  24"
+    },
+    {
+      "page": 2,
+      "rect": [
+        231.998,
+        466.92,
+        243.518,
+        478.44
+      ],
+      "reason": "manual-only: SAR7  27"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        467,
+        47.52,
+        478.52
+      ],
+      "reason": "manual-only: SAR7  26"
+    },
+    {
+      "page": 2,
+      "rect": [
+        36,
+        517.2,
+        267.84,
+        544.56
+      ],
+      "reason": "manual-only: SAR7  28"
+    },
+    {
+      "page": 2,
+      "rect": [
+        269.56,
+        517.2,
+        576,
+        544.56
+      ],
+      "reason": "manual-only: SAR7  29"
+    },
+    {
+      "page": 3,
+      "rect": [
+        36,
+        616,
+        47.52,
+        627.52
+      ],
+      "reason": "manual-only: SAR7  52"
+    },
+    {
+      "page": 3,
+      "rect": [
+        97.92,
+        616.36,
+        109.44,
+        627.88
+      ],
+      "reason": "manual-only: SAR7  53"
+    },
+    {
+      "page": 3,
+      "rect": [
+        550.36,
+        639.061,
+        561.88,
+        650.581
+      ],
+      "reason": "manual-only: SAR7  520"
+    },
+    {
+      "page": 3,
+      "rect": [
+        36.8686,
+        698.8188,
+        48.3886,
+        710.3387
+      ],
+      "reason": "manual-only: SAR7  56"
+    },
+    {
+      "page": 3,
+      "rect": [
+        98.0686,
+        698.8188,
+        109.589,
+        710.3387
+      ],
+      "reason": "manual-only: SAR7  57"
+    },
+    {
+      "page": 7,
+      "rect": [
+        36,
+        439.92,
+        47.52,
+        451.44
+      ],
+      "reason": "manual-only: SAR7  290"
+    },
+    {
+      "page": 7,
+      "rect": [
+        234.4,
+        441.36,
+        245.92,
+        452.88
+      ],
+      "reason": "manual-only: SAR7  517"
+    },
+    {
+      "page": 9,
+      "rect": [
+        35.06,
+        658.08,
+        46.58,
+        669.6
+      ],
+      "reason": "manual-only: SAR7  3023"
+    },
+    {
+      "page": 9,
+      "rect": [
+        181.9,
+        658.08,
+        193.42,
+        669.6
+      ],
+      "reason": "manual-only: SAR7  3024"
+    },
+    {
+      "page": 10,
+      "rect": [
+        546.76,
+        251.85500000000002,
+        558.28,
+        263.375
+      ],
+      "reason": "not-yet-supported: Text Field 41"
+    },
+    {
+      "page": 10,
+      "rect": [
+        35,
+        715.56,
+        46.52,
+        727.08
+      ],
+      "reason": "manual-only: SAR7  3040"
+    },
+    {
+      "page": 10,
+      "rect": [
+        239.56,
+        715.56,
+        251.08,
+        727.08
+      ],
+      "reason": "manual-only: SAR7  3041"
+    },
+    {
+      "page": 11,
+      "rect": [
+        35,
+        231.64,
+        46.52,
+        243.15999999999997
+      ],
+      "reason": "manual-only: SAR7  3042"
+    },
+    {
+      "page": 11,
+      "rect": [
+        181.245,
+        231.64,
+        192.764,
+        243.15999999999997
+      ],
+      "reason": "manual-only: SAR7  3043"
+    },
+    {
+      "page": 11,
+      "rect": [
+        35.3714,
+        637.76,
+        46.8914,
+        649.28
+      ],
+      "reason": "manual-only: SAR7  3046"
+    },
+    {
+      "page": 11,
+      "rect": [
+        181.856,
+        637.76,
+        193.376,
+        649.28
+      ],
+      "reason": "manual-only: SAR7  3047"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        253.89999999999998,
+        47.52,
+        265.41999999999996
+      ],
+      "reason": "manual-only: SAR7  481"
+    },
+    {
+      "page": 12,
+      "rect": [
+        310.32,
+        266.29999999999995,
+        576.84,
+        280.7
+      ],
+      "reason": "manual-only: SAR7  521"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        289.9,
+        47.52,
+        301.42
+      ],
+      "reason": "manual-only: SAR7  482"
+    },
+    {
+      "page": 12,
+      "rect": [
+        167.76,
+        301.355,
+        440.473,
+        315.755
+      ],
+      "reason": "manual-only: SAR7  522"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        324.58,
+        47.52,
+        336.1
+      ],
+      "reason": "manual-only: SAR7  483"
+    },
+    {
+      "page": 12,
+      "rect": [
+        166.122,
+        337.795,
+        441.162,
+        352.195
+      ],
+      "reason": "manual-only: SAR7  523"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        361.46,
+        47.52,
+        372.98
+      ],
+      "reason": "manual-only: SAR7  484"
+    },
+    {
+      "page": 12,
+      "rect": [
+        165.8,
+        374.3,
+        440.84,
+        388.7
+      ],
+      "reason": "manual-only: SAR7  524"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        397.1,
+        47.52,
+        408.62
+      ],
+      "reason": "manual-only: SAR7  485"
+    },
+    {
+      "page": 12,
+      "rect": [
+        166.8,
+        411.3,
+        441.84,
+        425.7
+      ],
+      "reason": "manual-only: SAR7  525"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        432.74,
+        47.52,
+        444.26
+      ],
+      "reason": "manual-only: SAR7  486"
+    },
+    {
+      "page": 12,
+      "rect": [
+        167.112,
+        445.625,
+        442.15199999999993,
+        460.025
+      ],
+      "reason": "manual-only: SAR7  526"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        469.42,
+        47.52,
+        480.94
+      ],
+      "reason": "manual-only: SAR7  487"
+    },
+    {
+      "page": 12,
+      "rect": [
+        167.452,
+        481.125,
+        442.492,
+        495.525
+      ],
+      "reason": "manual-only: SAR7  527"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        505.38,
+        47.52,
+        516.9
+      ],
+      "reason": "manual-only: SAR7  488"
+    },
+    {
+      "page": 12,
+      "rect": [
+        317.08,
+        518.6949999999999,
+        576.152,
+        533.095
+      ],
+      "reason": "manual-only: SAR7  528"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        541.1,
+        47.52,
+        552.62
+      ],
+      "reason": "manual-only: SAR7  489"
+    },
+    {
+      "page": 12,
+      "rect": [
+        295.913,
+        555.175,
+        570.952,
+        569.575
+      ],
+      "reason": "manual-only: SAR7  529"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        578.62,
+        47.8914,
+        590.14
+      ],
+      "reason": "manual-only: SAR7  489a"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        614.34,
+        47.8914,
+        625.86
+      ],
+      "reason": "manual-only: SAR7  489b"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36.3714,
+        650.06,
+        47.8914,
+        661.58
+      ],
+      "reason": "manual-only: SAR7  489c"
+    },
+    {
+      "page": 12,
+      "rect": [
+        36,
+        705.7,
+        47.52,
+        717.22
+      ],
+      "reason": "manual-only: SAR7  490"
+    },
+    {
+      "page": 12,
+      "rect": [
+        214.56,
+        705.78,
+        226.08,
+        717.3
+      ],
+      "reason": "manual-only: SAR7  518"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        176.14,
+        47.52,
+        187.65999999999997
+      ],
+      "reason": "manual-only: SAR7  492"
+    },
+    {
+      "page": 13,
+      "rect": [
+        250.56,
+        176.96400000000006,
+        262.08,
+        188.48400000000004
+      ],
+      "reason": "manual-only: SAR7  519"
+    },
+    {
+      "page": 13,
+      "rect": [
+        347.76,
+        233.08000000000004,
+        457.2,
+        284.92
+      ],
+      "reason": "manual-only: SAR7  497"
+    },
+    {
+      "page": 13,
+      "rect": [
+        457.56,
+        233.08000000000004,
+        576,
+        284.92
+      ],
+      "reason": "manual-only: SAR7  498"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        234.51999999999998,
+        212.4,
+        286.36
+      ],
+      "reason": "manual-only: SAR7  494"
+    },
+    {
+      "page": 13,
+      "rect": [
+        216.72,
+        237.39999999999998,
+        228.24,
+        248.91999999999996
+      ],
+      "reason": "manual-only: SAR7  495"
+    },
+    {
+      "page": 13,
+      "rect": [
+        216.72,
+        254.67999999999995,
+        228.24,
+        266.20000000000005
+      ],
+      "reason": "manual-only: SAR7  496"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        372.96,
+        47.52,
+        384.48
+      ],
+      "reason": "manual-only: SAR7  499"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        397.44,
+        47.52,
+        408.96
+      ],
+      "reason": "manual-only: SAR7  500"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        449.28,
+        47.52,
+        460.8
+      ],
+      "reason": "manual-only: SAR7  501"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        488.16,
+        47.52,
+        499.68
+      ],
+      "reason": "manual-only: SAR7  502"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        525.6,
+        47.52,
+        537.12
+      ],
+      "reason": "manual-only: SAR7  503"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        563.04,
+        47.52,
+        574.56
+      ],
+      "reason": "manual-only: SAR7  504"
+    },
+    {
+      "page": 13,
+      "rect": [
+        195.12,
+        595.6,
+        570.96,
+        612.88
+      ],
+      "reason": "manual-only: SAR7  506"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        600.48,
+        47.52,
+        612
+      ],
+      "reason": "manual-only: SAR7  505"
+    },
+    {
+      "page": 13,
+      "rect": [
+        36,
+        648,
+        47.52,
+        659.52
+      ],
+      "reason": "manual-only: SAR7  507"
+    },
+    {
+      "page": 13,
+      "rect": [
+        196.56,
+        648,
+        208.08,
+        659.52
+      ],
+      "reason": "manual-only: SAR7  508"
+    },
+    {
+      "page": 13,
+      "rect": [
+        71.28,
+        699.9321,
+        575,
+        730.52
+      ],
+      "reason": "manual-only: SAR7  509"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36,
+        424.8,
+        65.235,
+        442.08
+      ],
+      "reason": "not-yet-supported: SAR7  510"
+    },
+    {
+      "page": 14,
+      "rect": [
+        67.68,
+        424.8,
+        365.76,
+        456.48
+      ],
+      "reason": "manual-only: Signature Field 1"
+    },
+    {
+      "page": 14,
+      "rect": [
+        434.445,
+        440.64,
+        576,
+        460.2
+      ],
+      "reason": "manual-only: SAR7  511"
+    },
+    {
+      "page": 14,
+      "rect": [
+        69.84,
+        492.074,
+        367.9200000000001,
+        517.2
+      ],
+      "reason": "manual-only: Signature Field 2"
+    },
+    {
+      "page": 14,
+      "rect": [
+        433.005,
+        498.24,
+        574.56,
+        517.8
+      ],
+      "reason": "manual-only: SAR7  513"
+    },
+    {
+      "page": 14,
+      "rect": [
+        38.16,
+        501.12,
+        67.395,
+        518.4
+      ],
+      "reason": "not-yet-supported: SAR7  512"
+    },
+    {
+      "page": 14,
+      "rect": [
+        68.4,
+        554.594,
+        366.48,
+        579.72
+      ],
+      "reason": "manual-only: Signature Field 3"
+    },
+    {
+      "page": 14,
+      "rect": [
+        36,
+        560.16,
+        65.235,
+        577.44
+      ],
+      "reason": "not-yet-supported: SAR7  514"
+    },
+    {
+      "page": 14,
+      "rect": [
+        433.005,
+        560.16,
+        574.56,
+        579.72
+      ],
+      "reason": "manual-only: SAR7  515"
+    },
+    {
+      "page": 14,
+      "rect": [
+        543.6,
+        721.44,
+        559.44,
+        731.52
+      ],
+      "reason": "not-yet-supported: Text Field 42"
+    }
+  ],
+  "coordinateContract": "one-based pages, unrotated top-left PDF points; browser converts from bottom-left MediaBox",
+  "coverageComplete": false,
+  "continuation": "Unsupported overflow is reported for manual completion; no extra pages are silently copied.",
+  "language": "es",
+  "languageName": "Spanish",
+  "officialUrl": "https://www.cdss.ca.gov/Portals/9/TranslatedForms/Spanish/SAR_7B_Spanish.pdf",
+  "translationOf": "d2bfc272399e15a9fbd445c0ea829f3aa6ad16bfbb8ed1265e3fea95cadee342"
+}

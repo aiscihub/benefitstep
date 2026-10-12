@@ -1,6 +1,6 @@
 # BenefitStep
 
-Latest release: **0.3.11** — Traditional Chinese and Vietnamese interface languages, and Chrome Web Store listing languages for all five. See [release notes](releases/chrome-store-0.3.11/RELEASE_NOTES.md).
+Latest release: **0.3.12** — the CalFresh application and the SAR 7 report can be filled on the state's Spanish, Traditional Chinese or Vietnamese form; English stays the default. See [release notes](releases/chrome-store-0.3.12/RELEASE_NOTES.md).
 
 Prepare your benefits application package with a quick check, document review and downloadable application drafts.
 
@@ -36,7 +36,7 @@ Chrome's on-device AI is optional. On the Document step, select **Turn on on-dev
 
 ## Multilingual and household-review preview
 
-Use **Language / 语言** to switch between English, Spanish and Simplified Chinese. Draft translations cover the main workflow; some detailed explanations and official PDFs remain English.
+Use **Language / 语言** to switch between English, Spanish, Simplified Chinese, Traditional Chinese and Vietnamese. Draft translations cover the main workflow; some detailed explanations remain English. Official forms are filled in English by default. For the CalFresh application and the SAR 7 report, the form dialog also offers the state's Spanish, Traditional Chinese and Vietnamese editions.
 
 Choose **Enter household details**, then use the persistent **Edit household details** control on any workflow screen to enter your name, California address and household members. After you add documents, the dialog lists the names and addresses found on them, so you can choose instead of typing; check each choice against the original. Source checks compare recipient names, recipient/service addresses and dates before using financial details. Records outside the adjustable recent-document window (initially 90 days) are unusable for current preparation. This window is a local preparation setting, not an agency acceptance rule. Source corrections preserve original documents. Saving your own household removes explicitly marked fictional demo sources and questionnaire answers.
 
