@@ -1,82 +1,93 @@
 # BenefitStep
 
-Latest release: **0.3.12** — the CalFresh application and the SAR 7 report can be filled on the state's Spanish, Traditional Chinese or Vietnamese form; English stays the default. See [release notes](releases/chrome-store-0.3.12/RELEASE_NOTES.md).
+A free Chrome extension that helps California families prepare CalFresh and Medi-Cal paperwork from the documents they already have. It reads pay stubs, bills and receipts on your own computer, flags what does not match, and fills in unsigned drafts of the official forms. You check every value, then sign and submit the application yourself.
 
-Prepare your benefits application package with a quick check, document review and downloadable application drafts.
+[Website](https://aiscihub.github.io/benefitstep/) · [Chrome Web Store](https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi) · [Privacy policy](PRIVACY.md)
 
 ![BenefitStep workflow: Quick check, Documents, Review and Application](assets/benefit_workflow.png)
 
-*Workflow illustration; some screen details may differ from the current preview. Official PDF preview opens during the Application step.*
+*Illustration of the four steps. Screen details may differ from the current version.*
 
-## How to use BenefitStep
+## What it does
 
-1. **Quick check (optional):** Answer the initial questions for CalFresh, Medi-Cal or both, or select **Skip and add documents** to start from your documents. Results are preliminary, not eligibility decisions.
-2. **Documents:** Add the files or folder you already have—for example, pay stubs, rent receipts, utility bills or health insurance information. Or select **Try example documents** to explore with fictional data. Click the details-to-review link to see the extracted names, dates and amounts.
-3. **Review:** Check the items needing attention, then verify the details needing confirmation against their sources. Edit anything incorrect and click **Confirm reviewed details**. Changing reviewed information requires confirmation again before package generation.
-4. **Application:** Choose **Generate CalFresh package (CF285)** or **Generate Medi-Cal package (CCFRM604)** for a program you kept selected; the Quick check does not have to be answered first. Under **People in this application**, tick who the application is for. Review and confirm the application answers, preview the unsigned PDF, and download your application package. The draft opens with **What was filled**: each filled section, its PDF page and the document each value came from. Expand **Review details again** whenever you need to check the prepared answers.
+1. **Quick check (optional).** Answer a few questions to see how your income compares with the CalFresh income guide. It is a first look, not a decision.
+2. **Documents.** Add the pay stubs, rent receipts, bills and letters you already have, as PDFs or photos. BenefitStep finds the names, dates and amounts.
+3. **Review.** See each detail with the document it came from. Fix what is wrong and confirm what is right.
+4. **Application.** BenefitStep fills in the official form with what you confirmed, shows the draft, and lists what is still missing. Download the package and finish it yourself.
 
-**Download before closing or reloading.** Your work is temporary. Downloaded drafts may still have unresolved items; complete missing answers and signatures before submitting through the official application process. BenefitStep does not submit for you. Never submit fictional example documents.
+Your work is temporary: download the package before you close or reload the panel.
 
-This repository contains the **v0.3.6 Chrome Web Store submission candidate**, installable extension and release records. Earlier release packages and listing materials remain in `releases/`. Development tools and training data are maintained separately.
+## Forms
 
-## Install locally
+| Form | Used for | Can be filled in |
+| --- | --- | --- |
+| CF 285 | New CalFresh application | English, Spanish, Traditional Chinese, Vietnamese |
+| CCFRM604 | Medi-Cal application | English |
+| CF 37 | CalFresh recertification | English |
+| SAR 7 | CalFresh periodic report | English, Spanish, Traditional Chinese, Vietnamese |
 
-1. Download or clone this repository.
+These are California's own PDF forms. English is the default; the other editions are a choice on the Application step. Answers are written as you entered them and are not translated.
+
+The interface is available in English, Spanish, Simplified Chinese, Traditional Chinese and Vietnamese. The translations are drafts and some screens are still in English. See [MULTILINGUAL_INTEGRATION.md](MULTILINGUAL_INTEGRATION.md).
+
+## Install
+
+**From the Chrome Web Store:** open the [store page](https://chromewebstore.google.com/detail/benefitstep-%E2%80%94-benefits-ap/bcakkdmdiacifncmldgblfnahnghpifi) and choose **Add to Chrome**.
+
+**From this repository:**
+
+1. Download or clone the repository.
 2. Open `chrome://extensions` in desktop Chrome 138 or later.
-3. Enable **Developer mode**, select **Load unpacked**, and choose the [`extension/`](extension/) directory.
+3. Turn on **Developer mode**, choose **Load unpacked**, and select the [`extension/`](extension/) folder.
 4. Pin BenefitStep and open its side panel.
 
-No build command, Node.js, Python, server or account is required. Alternatively, unzip the [extension release ZIP](releases/chrome-store-0.3.6/benefitstep-0.3.6-chrome-store.zip) and load its extracted folder.
+There is nothing to build. The extension does not work on phones.
 
-## Document reading and on-device AI
+## Try it with fictional documents
 
-Readable PDFs are read by a local text reader. It handles ordinary statement layouts: dates such as `09/30/2026`, a period written on one line, amount rows without a colon and one-line addresses. Each document shows which reader read it, and the document summary counts the details from each reader.
+- In the panel, choose **Try example documents** to walk through every step with built-in example data.
+- [Earley household](demo/earley-household/README.md): a five-person household, from documents to both application drafts.
+- [Alex Demo](demo/test_example2/README.md): a smaller pack of four PDFs.
 
-Chrome's on-device AI is optional. On the Document step, select **Turn on on-device AI**; Chrome may download its built-in model once, and documents stay on the device. The model reads pictures, scanned pages and documents whose type the labels do not show; a picture or scan cannot be read without it. On other documents it only fills in a missing name, issuer, period or pay date, and never an amount. Its answers can be wrong, so check every detail against the source.
+Never submit an application made from the example documents.
 
-## Multilingual and household-review preview
+## Privacy
 
-Use **Language / 语言** to switch between English, Spanish, Simplified Chinese, Traditional Chinese and Vietnamese. Draft translations cover the main workflow; some detailed explanations remain English. Official forms are filled in English by default. For the CalFresh application and the SAR 7 report, the form dialog also offers the state's Spanish, Traditional Chinese and Vietnamese editions.
+- Your documents are read inside the extension. They are not sent to BenefitStep, a cloud AI service or any agency.
+- There is no account, no advertising and no analytics.
+- Nothing is kept after you close the panel unless you download it.
+- Photos and scans can be read by the AI built into Chrome, which runs on your computer. It stays off until you turn it on.
 
-Choose **Enter household details**, then use the persistent **Edit household details** control on any workflow screen to enter your name, California address and household members. After you add documents, the dialog lists the names and addresses found on them, so you can choose instead of typing; check each choice against the original. Source checks compare recipient names, recipient/service addresses and dates before using financial details. Records outside the adjustable recent-document window (initially 90 days) are unusable for current preparation. This window is a local preparation setting, not an agency acceptance rule. Source corrections preserve original documents. Saving your own household removes explicitly marked fictional demo sources and questionnaire answers.
+Full text: [PRIVACY.md](PRIVACY.md).
 
-Try the fictional [Alex Demo test pack](demo/test_example2/README.md), importing only its `pdfs/` folder. For a complete five-person run that ends with both application drafts, follow the [Earley household demo](demo/earley-household/README.md). Its `documents/` pack has three pictures that only on-device AI can read; its `pdfs/` pack needs no AI. Image values still need visual confirmation; GIFs use the first frame only. See [coverage and limitations](MULTILINGUAL_INTEGRATION.md).
+## Limits
 
-Validation for 0.3.6: the development suite passed 324 tests, and the 133 targeted Node checks in `tests/` passed against this repository layout. Offline installed-extension checks were run again and passed for household entry, stale-amount exclusion, source correction, language switching and all four Alex PDFs (57 confirmed facts, zero evidence-check findings). The Earley demo was run on the unzipped upload ZIP with both packs: all PDFs with on-device AI off, and the picture pack with it on. Each run ended with 72 fields on the CalFresh draft and 61 on the Medi-Cal draft. On-device AI read the three demo pictures correctly in every run, but that is a small sample of clean renderings; phone photos were not tried, and image decoding with the earlier sample images was not re-run. Browser checks need desktop Chrome and Python 3.
+- BenefitStep is not a government service. It is independent of BenefitsCal, the state and county offices.
+- It does not decide whether you qualify, and it does not sign or submit anything.
+- The forms it produces are unsigned drafts. The form mappings have not had independent review.
+- It can misread a document. Check every value against the original.
+- On 26 fictional test files, the text reader filled in 68 values and 66 matched the document. See [how it was tested](https://aiscihub.github.io/benefitstep/evaluation.html) and the [test files](demo/evaluation/README.md).
 
-## Chrome Web Store submission
+## In this repository
 
-Upload only **[benefitstep-0.3.6-chrome-store.zip](releases/chrome-store-0.3.6/benefitstep-0.3.6-chrome-store.zip)** as the extension package.
+| Folder | Contents |
+| --- | --- |
+| [`extension/`](extension/) | The extension as it is packaged for the store |
+| [`releases/`](releases/) | One folder per release: the upload ZIP, its checksum and release notes |
+| [`demo/`](demo/) | Fictional document packs and the evaluation test files |
+| [`docs/`](docs/) | The website |
+| [`tests/`](tests/), [`scripts/`](scripts/) | Tests and the evaluation script |
 
-The existing 0.3.2 [store materials](releases/chrome-store-0.3.2/store-assets/) include screenshots, icons, promotional images, listing text, the privacy policy and reviewer instructions. Follow the [submission checklist](releases/chrome-store-0.3.2/store-assets/SUBMISSION-CHECKLIST.md). The [store-assets ZIP](releases/chrome-store-0.3.2/benefitstep-0.3.2-store-assets.zip) is for listing preparation, not installation.
+## Tests
 
-The existing screenshots predate the persistent household editor, the on-device AI control and the summary of filled content, and need refreshing for 0.3.6.
+```sh
+node --test tests/*.test.mjs        # unit tests
+python3 tests/i18n-browser.py       # interface languages, in Chrome (also --chinese, --traditional, --vietnamese)
+node scripts/evaluate-reader.mjs    # the document-reader evaluation
+```
 
-Publication still needs a publicly hosted privacy-policy URL, publisher/support details, dashboard declarations and store review. This candidate has not been approved by the Chrome Web Store.
+The browser checks need desktop Chrome and Python 3.
 
-## What is included
+## License
 
-- `extension/`: complete browser runtime, local document model, policy engine, PDF libraries, official templates, fonts and required assets/licenses.
-- `releases/chrome-store-0.3.6/`: current upload ZIP, checksums, validation records and release notes.
-- `releases/chrome-store-0.3.2/`: earlier release and existing listing materials.
-- `demo/`: fictional document packs with step-by-step guides.
-- `LICENSE`: project license; bundled dependencies retain their own license notices.
-
-The `extension/` files match the current 0.3.6 upload ZIP. Use Load unpacked to try the new functionality. Runtime JavaScript is included because Chrome needs it to run the extension.
-
-## Privacy and preview limits
-
-Document processing and working answers stay in the extension; working data is temporary. Download a preparation package to keep a copy. The extension does not read BenefitsCal, sign forms or submit applications. Official links open external websites when selected. See the [privacy policy](releases/chrome-store-0.3.2/store-assets/privacy-policy.html).
-
-CalFresh and Medi-Cal outputs are **unsigned drafts**. Check the filled values and unresolved items before using them. Independent PDF mapping review remains incomplete. Fictional demo outputs must not be submitted. Preliminary screening is not an eligibility decision. BenefitStep is independent of BenefitsCal and government agencies.
-
-See [release notes](releases/chrome-store-0.3.6/RELEASE_NOTES.md) for validation and limitations.
-
-## Release 0.3.7 — October 8, 2026
-
-The current extension adds CalFresh renewal and periodic-report preparation, county-notice import, document-period guidance, and overlapping image sections to avoid submitting large full-page images for automatic downscaling. See [release notes](releases/chrome-store-0.3.7/RELEASE_NOTES.md) for validation and limitations.
-
-## Release 0.3.8 — October 10, 2026
-
-The current extension drops filler answers from on-device AI, such as "unknown" offered as an address, and reads a photo as one whole page when deciding what kind of document it is, which stops the pension letter and pharmacy statement in the demo from being typed as pay statements. The upload ZIP is [benefitstep-0.3.8-chrome-store.zip](releases/chrome-store-0.3.8/benefitstep-0.3.8-chrome-store.zip). See [release notes](releases/chrome-store-0.3.8/RELEASE_NOTES.md) for validation and limitations.
-
+[MIT](LICENSE). Bundled libraries keep their own licence notices under `extension/vendor/`.
